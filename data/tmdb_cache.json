@@ -745,6 +745,41 @@
     "operacosifantuttedirectodesdetheroyal": {
       "results": [],
       "fetched_at": "2026-11-11T12:10:46+01:00"
+    },
+    "metropolis": {
+      "results": [
+        {
+          "id": 19,
+          "title": "Metrópolis",
+          "original_title": "Metropolis"
+        },
+        {
+          "id": 290298,
+          "title": "African Metropolis",
+          "original_title": "African Metropolis"
+        },
+        {
+          "id": 507788,
+          "title": "Metropolis",
+          "original_title": "Metropolis"
+        },
+        {
+          "id": 9606,
+          "title": "Metrópolis",
+          "original_title": "メトロポリス"
+        },
+        {
+          "id": 995971,
+          "title": "Gadis Metropolis",
+          "original_title": "Gadis Metropolis"
+        },
+        {
+          "id": 258624,
+          "title": "Metropolis II",
+          "original_title": "Metropolis II"
+        }
+      ],
+      "fetched_at": "2026-11-11T12:12:55+01:00"
     }
   },
   "movies": {
@@ -4827,7 +4862,10 @@
         "Sanju Surendran"
       ],
       "runtime": 100,
-      "aliases": [],
+      "aliases": [
+        "If on a Winter's Night",
+        "어느 겨울 밤"
+      ],
       "releases": [
         {
           "country": "KR",
@@ -4841,7 +4879,8 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1532393",
-      "fetched_at": "2026-11-11T12:10:24+01:00"
+      "fetched_at": "2026-11-11T12:10:24+01:00",
+      "translations_checked": true
     },
     "1585239": {
       "id": "tmdb:1585239",
@@ -12027,7 +12066,9 @@
         "湯浅典子"
       ],
       "runtime": 100,
-      "aliases": [],
+      "aliases": [
+        "Performing Kaoru's Funeral"
+      ],
       "releases": [
         {
           "country": "JP",
@@ -12036,7 +12077,8 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1250411",
-      "fetched_at": "2026-11-11T12:10:43+01:00"
+      "fetched_at": "2026-11-11T12:10:43+01:00",
+      "translations_checked": true
     },
     "555004": {
       "id": "tmdb:555004",
@@ -12192,6 +12234,473 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/578597",
       "fetched_at": "2026-11-11T12:10:45+01:00"
+    },
+    "19": {
+      "id": "tmdb:19",
+      "tmdb_id": 19,
+      "title": "Metrópolis",
+      "original_title": "Metropolis",
+      "year": 1927,
+      "director": "Fritz Lang",
+      "directors": [
+        "Fritz Lang"
+      ],
+      "runtime": 153,
+      "aliases": [
+        "Metoroporisu",
+        "科学世界"
+      ],
+      "releases": [
+        {
+          "country": "AU",
+          "type": 2,
+          "date": "1928-04-07"
+        },
+        {
+          "country": "AU",
+          "type": 5,
+          "date": "2005-11-01"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "1927-11-04"
+        },
+        {
+          "country": "BR",
+          "type": 5,
+          "date": "1985-03-28"
+        },
+        {
+          "country": "CN",
+          "type": 1,
+          "date": "2011-06-18"
+        },
+        {
+          "country": "CN",
+          "type": 1,
+          "date": "2024-06-14"
+        },
+        {
+          "country": "CN",
+          "type": 4,
+          "date": "2014-05-17"
+        },
+        {
+          "country": "CN",
+          "type": 4,
+          "date": "2019-06-13"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "1927-01-10"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "1927-08-25"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "1927-02-06"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "1984-11-20"
+        },
+        {
+          "country": "ES",
+          "type": 5,
+          "date": "2003-12-16"
+        },
+        {
+          "country": "ES",
+          "type": 5,
+          "date": "2010-11-24"
+        },
+        {
+          "country": "ES",
+          "type": 5,
+          "date": "2012-08-29"
+        },
+        {
+          "country": "FI",
+          "type": 2,
+          "date": "1927-02-06"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "1927-02-06"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2011-10-19"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2015-07-14"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2021-11-13"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "1999-09-01"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2011-10-05"
+        },
+        {
+          "country": "GB",
+          "type": 2,
+          "date": "1984-05-01"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "1927-03-18"
+        },
+        {
+          "country": "GB",
+          "type": 5,
+          "date": "2010-11-22"
+        },
+        {
+          "country": "HK",
+          "type": 1,
+          "date": "2010-04-01"
+        },
+        {
+          "country": "IE",
+          "type": 4,
+          "date": "2010-09-10"
+        },
+        {
+          "country": "IT",
+          "type": 2,
+          "date": "2010-07-02"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "1928-10-01"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "1929-04-03"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "1985-01-26"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "1928-01-01"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "1985-05-23"
+        },
+        {
+          "country": "NL",
+          "type": 5,
+          "date": "2009-08-20"
+        },
+        {
+          "country": "NO",
+          "type": 3,
+          "date": "1927-02-06"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "1928-04-07"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "1927-04-04"
+        },
+        {
+          "country": "TW",
+          "type": 1,
+          "date": "2012-10-19"
+        },
+        {
+          "country": "US",
+          "type": 2,
+          "date": "2010-04-25"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "1927-03-06"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "1927-03-13"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "1984-08-10"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "1984-10-13"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "1990-01-01"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/19",
+      "fetched_at": "2026-11-11T12:12:56+01:00"
+    },
+    "290298": {
+      "id": "tmdb:290298",
+      "tmdb_id": 290298,
+      "title": "African Metropolis",
+      "original_title": "African Metropolis",
+      "year": 2014,
+      "director": "Jim Chuchu, Ahmed Ghoneimy, Folasakin Iwajomo, Marie Ka, Philippe Lacôte, Vincent Moloi",
+      "directors": [
+        "Jim Chuchu",
+        "Ahmed Ghoneimy",
+        "Folasakin Iwajomo",
+        "Marie Ka",
+        "Philippe Lacôte",
+        "Vincent Moloi"
+      ],
+      "runtime": 92,
+      "aliases": [],
+      "releases": [
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "2014-08-13"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2014-10-18"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2014-06-03"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/290298",
+      "fetched_at": "2026-11-11T12:12:56+01:00"
+    },
+    "507788": {
+      "id": "tmdb:507788",
+      "tmdb_id": 507788,
+      "title": "Metropolis",
+      "original_title": "Metropolis",
+      "year": 2015,
+      "director": "Hugues Hariche",
+      "directors": [
+        "Hugues Hariche"
+      ],
+      "runtime": 25,
+      "aliases": [],
+      "releases": [
+        {
+          "country": "FR",
+          "type": 6,
+          "date": "2015-07-13"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/507788",
+      "fetched_at": "2026-11-11T12:12:56+01:00"
+    },
+    "9606": {
+      "id": "tmdb:9606",
+      "tmdb_id": 9606,
+      "title": "Metrópolis",
+      "original_title": "メトロポリス",
+      "year": 2001,
+      "director": "りんたろう",
+      "directors": [
+        "りんたろう"
+      ],
+      "runtime": 107,
+      "aliases": [
+        "Metropolis",
+        "Metropolisz",
+        "Metrópolis",
+        "Metrópolis de Osamu Tezuka",
+        "Osamu Tezuka no Metoroporisu",
+        "Robotic Angel",
+        "Метрополис",
+        "Метрополіс",
+        "メトロポリス",
+        "大都會"
+      ],
+      "releases": [
+        {
+          "country": "AU",
+          "type": 5,
+          "date": "2002-04-01"
+        },
+        {
+          "country": "BR",
+          "type": 5,
+          "date": "2002-02-15"
+        },
+        {
+          "country": "CA",
+          "type": 5,
+          "date": "2002-01-01"
+        },
+        {
+          "country": "CH",
+          "type": 4,
+          "date": "2003-08-14"
+        },
+        {
+          "country": "CZ",
+          "type": 5,
+          "date": "2002-11-01"
+        },
+        {
+          "country": "CZ",
+          "type": 6,
+          "date": "2011-11-04"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2002-10-31"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2002-05-24"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2002-06-05"
+        },
+        {
+          "country": "GB",
+          "type": 5,
+          "date": "2002-04-01"
+        },
+        {
+          "country": "IT",
+          "type": 2,
+          "date": "2025-10-13"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2002-06-21"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "2001-05-26"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2003-01-17"
+        },
+        {
+          "country": "MX",
+          "type": 5,
+          "date": "2002-06-12"
+        },
+        {
+          "country": "PL",
+          "type": 6,
+          "date": "2003-07-24"
+        },
+        {
+          "country": "SE",
+          "type": 2,
+          "date": "2001-05-26"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2002-01-25"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2002-04-23"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/9606",
+      "fetched_at": "2026-11-11T12:12:56+01:00"
+    },
+    "995971": {
+      "id": "tmdb:995971",
+      "tmdb_id": 995971,
+      "title": "Gadis Metropolis",
+      "original_title": "Gadis Metropolis",
+      "year": 1992,
+      "director": "Slamet Riyadi",
+      "directors": [
+        "Slamet Riyadi"
+      ],
+      "runtime": 82,
+      "aliases": [],
+      "releases": [
+        {
+          "country": "ID",
+          "type": 3,
+          "date": "1992-09-22"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/995971",
+      "fetched_at": "2026-11-11T12:12:57+01:00"
+    },
+    "258624": {
+      "id": "tmdb:258624",
+      "tmdb_id": 258624,
+      "title": "Metropolis II",
+      "original_title": "Metropolis II",
+      "year": 2014,
+      "director": "Henry Joost, Ariel Schulman",
+      "directors": [
+        "Henry Joost",
+        "Ariel Schulman"
+      ],
+      "runtime": 6,
+      "aliases": [],
+      "releases": [
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2014-02-27"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/258624",
+      "fetched_at": "2026-11-11T12:12:57+01:00"
     }
   }
 }

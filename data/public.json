@@ -1,6 +1,6 @@
 {
   "version": "0.3.0",
-  "generated_at": "2026-11-11T12:10:46+01:00",
+  "generated_at": "2026-11-11T12:12:57+01:00",
   "coverage_complete": false,
   "cinemas": [
     {
@@ -383,8 +383,8 @@
     {
       "id": "cine-paz",
       "status": "ok",
-      "last_attempt": "2026-11-11T12:10:12+01:00",
-      "last_success": "2026-11-11T12:10:12+01:00",
+      "last_attempt": "2026-11-11T12:12:55+01:00",
+      "last_success": "2026-11-11T12:12:55+01:00",
       "url": "https://www.cinepazmadrid.es/es/cartelera"
     }
   ],
@@ -395,9 +395,9 @@
       "director": "Javier Calvo",
       "duration_minutes": 155,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/108195_1_W_0/la-bola-negra-digital",
-      "identity_status": "verified",
       "canonical_id": "tmdb:1422041",
       "tmdb_id": 1422041,
+      "identity_status": "verified",
       "identity_evidence": {
         "title_match": "exact_or_alias",
         "director": "Javier Calvo",
@@ -1008,9 +1008,9 @@
       "director": "Daniel Monzón",
       "duration_minutes": 136,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/113311_1_W_0/ruega-por-nosotras",
-      "identity_status": "verified",
       "canonical_id": "tmdb:1522071",
       "tmdb_id": 1522071,
+      "identity_status": "verified",
       "identity_evidence": {
         "title_match": "exact_or_alias",
         "director": "Daniel Monzón",
@@ -1042,9 +1042,9 @@
       "director": "David Pérez Sañudo",
       "duration_minutes": 109,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/113285_1_Z_1/sacamantecas-vose",
-      "identity_status": "verified",
       "canonical_id": "tmdb:1371661",
       "tmdb_id": 1371661,
+      "identity_status": "verified",
       "identity_evidence": {
         "title_match": "exact_or_alias",
         "director": "David Pérez Sañudo",
@@ -1076,9 +1076,9 @@
       "director": "Fred Cavayé",
       "duration_minutes": 178,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/113315_1_W_0/los-miserables",
-      "identity_status": "verified",
       "canonical_id": "tmdb:1241803",
       "tmdb_id": 1241803,
+      "identity_status": "verified",
       "identity_evidence": {
         "title_match": "exact_or_alias",
         "director": "Fred Cavayé",
@@ -1192,9 +1192,9 @@
       "director": "José Mota",
       "duration_minutes": 102,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/109595_1_W_0/arriba-tutto",
-      "identity_status": "verified",
       "canonical_id": "tmdb:1518395",
       "tmdb_id": 1518395,
+      "identity_status": "verified",
       "identity_evidence": {
         "title_match": "exact_or_alias",
         "director": "José Mota",
@@ -1226,9 +1226,9 @@
       "director": "Olivia Wilde",
       "duration_minutes": 106,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/111285_1_W_0/la-invitacion",
-      "identity_status": "verified",
       "canonical_id": "tmdb:950028",
       "tmdb_id": 950028,
+      "identity_status": "verified",
       "identity_evidence": {
         "title_match": "exact_or_alias",
         "director": "Olivia Wilde",
@@ -1652,9 +1652,9 @@
       "director": "Georgia Oakley",
       "duration_minutes": 132,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/111711_1_W_0/sentido-y-sensibilidad",
-      "identity_status": "verified",
       "canonical_id": "tmdb:1503762",
       "tmdb_id": 1503762,
+      "identity_status": "verified",
       "identity_evidence": {
         "title_match": "exact_or_alias",
         "director": "Georgia Oakley",
@@ -2038,9 +2038,9 @@
       "director": "Eric Toledano",
       "duration_minutes": 119,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/112601_1_W_0/tiempos-de-ilusion",
-      "identity_status": "verified",
       "canonical_id": "tmdb:1404684",
       "tmdb_id": 1404684,
+      "identity_status": "verified",
       "identity_evidence": {
         "title_match": "exact_or_alias",
         "director": "Eric Toledano",
@@ -2157,9 +2157,9 @@
       "director": "Katsuhiro Otomo",
       "duration_minutes": 124,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/18111_1_Z_1/akira-vose",
-      "identity_status": "verified",
       "canonical_id": "tmdb:149",
       "tmdb_id": 149,
+      "identity_status": "verified",
       "identity_evidence": {
         "title_match": "exact_or_alias",
         "director": "Katsuhiro Otomo",
@@ -2249,9 +2249,9 @@
       "director": "Marilyn Solaya",
       "duration_minutes": 125,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/113321_1_Z_1/estres-vose",
-      "identity_status": "verified",
       "canonical_id": "tmdb:1603658",
       "tmdb_id": 1603658,
+      "identity_status": "verified",
       "identity_evidence": {
         "title_match": "exact_or_alias",
         "director": "Marilyn Solaya",
@@ -2272,9 +2272,9 @@
       "director": "Zachary Wigon",
       "duration_minutes": 102,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/113441_1_Z_1/victorian-psycho",
-      "identity_status": "verified",
       "canonical_id": "tmdb:1379486",
       "tmdb_id": 1379486,
+      "identity_status": "verified",
       "identity_evidence": {
         "title_match": "exact_or_alias",
         "director": "Zachary Wigon",
@@ -2522,29 +2522,34 @@
       "director": "Sanju Surendran",
       "duration_minutes": 100,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/115381_1_Z_1/nuevas-miradas-de-cine-asiatico-if-on-a-winter-s-n",
-      "identity_status": "needs_review",
-      "identity_reason": "metadata_mismatch",
-      "identity_candidates": [
+      "identity_status": "verified",
+      "canonical_id": "tmdb:1532393",
+      "tmdb_id": 1532393,
+      "identity_evidence": {
+        "title_match": "exact_or_alias",
+        "director": "Sanju Surendran",
+        "duration_difference_minutes": 0,
+        "tmdb_url": "https://www.themoviedb.org/movie/1532393"
+      },
+      "canonical_title": "ഖിഡ്കി ഗാവ്",
+      "original_title": "ഖിഡ്കി ഗാവ്",
+      "year": 2025,
+      "aliases": [
+        "If on a Winter's Night",
+        "어느 겨울 밤"
+      ],
+      "tmdb_url": "https://www.themoviedb.org/movie/1532393",
+      "tmdb_runtime": 100,
+      "tmdb_releases": [
         {
-          "id": "tmdb:370613",
-          "title": "Sting - If On A Winter's Night",
-          "year": 2009,
-          "director": "",
-          "source_url": "https://www.themoviedb.org/movie/370613"
+          "country": "KR",
+          "type": 1,
+          "date": "2025-09-20"
         },
         {
-          "id": "tmdb:78319",
-          "title": "If on a Winter's Night ... Live from Durham Cathedral",
-          "year": 2009,
-          "director": "",
-          "source_url": "https://www.themoviedb.org/movie/78319"
-        },
-        {
-          "id": "tmdb:1532393",
-          "title": "ഖിഡ്കി ഗാവ്",
-          "year": 2025,
-          "director": "Sanju Surendran",
-          "source_url": "https://www.themoviedb.org/movie/1532393"
+          "country": "US",
+          "type": 1,
+          "date": "2026-04-14"
         }
       ]
     },
@@ -2554,9 +2559,9 @@
       "director": "Jordan Firstman",
       "duration_minutes": 126,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/115145_1_Z_1/club-kid-vose",
-      "identity_status": "verified",
       "canonical_id": "tmdb:1585239",
       "tmdb_id": 1585239,
+      "identity_status": "verified",
       "identity_evidence": {
         "title_match": "exact_or_alias",
         "director": "Jordan Firstman",
@@ -3015,9 +3020,9 @@
       "source_url": "https://www.cinepazmadrid.es/es/detalles/105357_1_Z_1/ladron-de-bicicletas-vose",
       "category": "repertory",
       "category_evidence_url": "https://www.cinepazmadrid.es/es/evento/400/mk2-classic",
-      "identity_status": "verified",
       "canonical_id": "tmdb:5156",
       "tmdb_id": 5156,
+      "identity_status": "verified",
       "identity_evidence": {
         "title_match": "exact_or_alias",
         "director": "Vittorio De Sica",
@@ -3211,9 +3216,9 @@
       "director": "Roberto Bueso",
       "duration_minutes": 120,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/115179_1_W_0/el-mal-padre",
-      "identity_status": "verified",
       "canonical_id": "tmdb:1736705",
       "tmdb_id": 1736705,
+      "identity_status": "verified",
       "identity_evidence": {
         "title_match": "exact_or_alias",
         "director": "Roberto Bueso",
@@ -3245,15 +3250,748 @@
       "director": " Jane Schoenbrun",
       "duration_minutes": 112,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/111197_1_Z_1/campamento-miasma-vose",
-      "identity_status": "needs_review",
-      "identity_reason": "metadata_mismatch",
-      "identity_candidates": [
+      "identity_status": "verified",
+      "canonical_id": "tmdb:1240889",
+      "tmdb_id": 1240889,
+      "identity_evidence": {
+        "title_match": "minor_typo",
+        "director": " Jane Schoenbrun",
+        "duration_difference_minutes": 6,
+        "tmdb_url": "https://www.themoviedb.org/movie/1240889"
+      },
+      "canonical_title": "Adolescencia, sexo y muerte en campamento Miasma",
+      "original_title": "Teenage Sex and Death at Camp Miasma",
+      "year": 2026,
+      "aliases": [
+        "A Bad Day at Camp Tivoli",
+        "Dục vọng tuổi mới lớn và Cái chết ở Trại Miasma",
+        "Sex a smrt v kempu Miasma",
+        "Sexe et mort chez les ados au Camp Miasma",
+        "มิอัสมา ค่ายสยองของสองเรา",
+        "瘴气营地的青春与死亡"
+      ],
+      "tmdb_url": "https://www.themoviedb.org/movie/1240889",
+      "tmdb_runtime": 106,
+      "tmdb_releases": [
         {
-          "id": "tmdb:1240889",
-          "title": "Adolescencia, sexo y muerte en campamento Miasma",
-          "year": 2026,
-          "director": "Jane Schoenbrun",
-          "source_url": "https://www.themoviedb.org/movie/1240889"
+          "country": "AG",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "AM",
+          "type": 1,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "AO",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "AR",
+          "type": 1,
+          "date": "2026-10-23"
+        },
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "2026-08-13"
+        },
+        {
+          "country": "AR",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "AS",
+          "type": 4,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "AT",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "AU",
+          "type": 1,
+          "date": "2026-06-06"
+        },
+        {
+          "country": "AU",
+          "type": 1,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "AU",
+          "type": 1,
+          "date": "2026-08-05"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2026-08-06"
+        },
+        {
+          "country": "AU",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "BA",
+          "type": 1,
+          "date": "2026-08-18"
+        },
+        {
+          "country": "BB",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "BE",
+          "type": 3,
+          "date": "2026-08-19"
+        },
+        {
+          "country": "BH",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2026-08-13"
+        },
+        {
+          "country": "BR",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "BS",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "CA",
+          "type": 1,
+          "date": "2026-07-17"
+        },
+        {
+          "country": "CA",
+          "type": 3,
+          "date": "2026-08-14"
+        },
+        {
+          "country": "CA",
+          "type": 4,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "CA",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "CA",
+          "type": 5,
+          "date": "2026-12-15"
+        },
+        {
+          "country": "CH",
+          "type": 1,
+          "date": "2026-07-04"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "2026-08-19"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "2026-08-20"
+        },
+        {
+          "country": "CK",
+          "type": 4,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "CL",
+          "type": 3,
+          "date": "2026-08-13"
+        },
+        {
+          "country": "CL",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "CN",
+          "type": 1,
+          "date": "2026-11-01"
+        },
+        {
+          "country": "CO",
+          "type": 3,
+          "date": "2026-08-13"
+        },
+        {
+          "country": "CY",
+          "type": 1,
+          "date": "2026-09-14"
+        },
+        {
+          "country": "CZ",
+          "type": 1,
+          "date": "2026-07-03"
+        },
+        {
+          "country": "CZ",
+          "type": 1,
+          "date": "2026-11-10"
+        },
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "2026-09-03"
+        },
+        {
+          "country": "DE",
+          "type": 1,
+          "date": "2026-07-02"
+        },
+        {
+          "country": "DE",
+          "type": 1,
+          "date": "2026-08-22"
+        },
+        {
+          "country": "DE",
+          "type": 1,
+          "date": "2026-10-03"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2026-08-20"
+        },
+        {
+          "country": "DE",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "DZ",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "EE",
+          "type": 1,
+          "date": "2026-11-06"
+        },
+        {
+          "country": "ES",
+          "type": 1,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "ES",
+          "type": 1,
+          "date": "2026-10-09"
+        },
+        {
+          "country": "ES",
+          "type": 1,
+          "date": "2026-10-30"
+        },
+        {
+          "country": "ES",
+          "type": 1,
+          "date": "2026-10-31"
+        },
+        {
+          "country": "ES",
+          "type": 1,
+          "date": "2026-11-12"
+        },
+        {
+          "country": "ES",
+          "type": 1,
+          "date": "2026-11-08"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2026-11-20"
+        },
+        {
+          "country": "FI",
+          "type": 1,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "2026-08-07"
+        },
+        {
+          "country": "FR",
+          "type": 1,
+          "date": "2026-05-13"
+        },
+        {
+          "country": "FR",
+          "type": 1,
+          "date": "2026-06-25"
+        },
+        {
+          "country": "FR",
+          "type": 1,
+          "date": "2026-09-11"
+        },
+        {
+          "country": "FR",
+          "type": 1,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "FR",
+          "type": 1,
+          "date": "2026-09-26"
+        },
+        {
+          "country": "FR",
+          "type": 2,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "GB",
+          "type": 1,
+          "date": "2026-06-06"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2026-08-21"
+        },
+        {
+          "country": "GB",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "GB",
+          "type": 5,
+          "date": "2026-12-14"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "GT",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "HK",
+          "type": 1,
+          "date": "2026-08-22"
+        },
+        {
+          "country": "HK",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "HU",
+          "type": 1,
+          "date": "2026-10-24"
+        },
+        {
+          "country": "ID",
+          "type": 1,
+          "date": "2026-10-23"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "2026-08-21"
+        },
+        {
+          "country": "IE",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "IL",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "IN",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "IS",
+          "type": 1,
+          "date": "2026-09-25"
+        },
+        {
+          "country": "IT",
+          "type": 1,
+          "date": "2026-05-25"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2026-08-19"
+        },
+        {
+          "country": "IT",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "JP",
+          "type": 1,
+          "date": "2026-11-02"
+        },
+        {
+          "country": "KR",
+          "type": 1,
+          "date": "2026-07-06"
+        },
+        {
+          "country": "KZ",
+          "type": 1,
+          "date": "2026-08-30"
+        },
+        {
+          "country": "LI",
+          "type": 1,
+          "date": "2026-08-07"
+        },
+        {
+          "country": "LV",
+          "type": 1,
+          "date": "2026-10-17"
+        },
+        {
+          "country": "MX",
+          "type": 1,
+          "date": "2026-07-26"
+        },
+        {
+          "country": "MX",
+          "type": 3,
+          "date": "2026-08-13"
+        },
+        {
+          "country": "MX",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "MY",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2026-08-20"
+        },
+        {
+          "country": "NL",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "NO",
+          "type": 1,
+          "date": "2026-09-19"
+        },
+        {
+          "country": "NO",
+          "type": 3,
+          "date": "2026-08-14"
+        },
+        {
+          "country": "NU",
+          "type": 4,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "NZ",
+          "type": 1,
+          "date": "2026-08-08"
+        },
+        {
+          "country": "NZ",
+          "type": 3,
+          "date": "2026-08-20"
+        },
+        {
+          "country": "NZ",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "PA",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "PE",
+          "type": 1,
+          "date": "2026-06-27"
+        },
+        {
+          "country": "PE",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "PF",
+          "type": 4,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "PH",
+          "type": 1,
+          "date": "2026-11-13"
+        },
+        {
+          "country": "PH",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "PL",
+          "type": 1,
+          "date": "2026-08-11"
+        },
+        {
+          "country": "PL",
+          "type": 1,
+          "date": "2026-10-23"
+        },
+        {
+          "country": "PL",
+          "type": 1,
+          "date": "2026-11-20"
+        },
+        {
+          "country": "PL",
+          "type": 3,
+          "date": "2026-09-04"
+        },
+        {
+          "country": "PR",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "PT",
+          "type": 1,
+          "date": "2026-09-19"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "RO",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "RS",
+          "type": 3,
+          "date": "2026-09-10"
+        },
+        {
+          "country": "SE",
+          "type": 1,
+          "date": "2026-08-13"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "2026-08-14"
+        },
+        {
+          "country": "SG",
+          "type": 1,
+          "date": "2026-10-26"
+        },
+        {
+          "country": "SI",
+          "type": 1,
+          "date": "2026-11-13"
+        },
+        {
+          "country": "SK",
+          "type": 1,
+          "date": "2026-09-10"
+        },
+        {
+          "country": "SK",
+          "type": 3,
+          "date": "2026-09-10"
+        },
+        {
+          "country": "TH",
+          "type": 1,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "TH",
+          "type": 1,
+          "date": "2026-10-30"
+        },
+        {
+          "country": "TH",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "TN",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "TR",
+          "type": 1,
+          "date": "2026-09-06"
+        },
+        {
+          "country": "TR",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "TT",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "TW",
+          "type": 1,
+          "date": "2026-10-18"
+        },
+        {
+          "country": "TW",
+          "type": 3,
+          "date": "2026-10-30"
+        },
+        {
+          "country": "UA",
+          "type": 1,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "UA",
+          "type": 3,
+          "date": "2026-10-29"
+        },
+        {
+          "country": "UM",
+          "type": 4,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2026-06-01"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2026-06-11"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2026-06-27"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2026-07-10"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2026-08-05"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2026-09-07"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2026-10-27"
+        },
+        {
+          "country": "US",
+          "type": 2,
+          "date": "2026-08-07"
+        },
+        {
+          "country": "US",
+          "type": 2,
+          "date": "2026-08-14"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2026-08-21"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2026-12-15"
+        },
+        {
+          "country": "UY",
+          "type": 3,
+          "date": "2026-09-24"
         }
       ]
     },
@@ -3263,9 +4001,9 @@
       "director": "Christopher Nolan",
       "duration_minutes": 150,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/16959_1_Z_1/origen-vose",
-      "identity_status": "verified",
       "canonical_id": "tmdb:27205",
       "tmdb_id": 27205,
+      "identity_status": "verified",
       "identity_evidence": {
         "title_match": "exact_or_alias",
         "director": "Christopher Nolan",
@@ -3898,9 +4636,9 @@
       "director": "Stephen Hopkins",
       "duration_minutes": 108,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/104073_1_Z_1/aeterna-depredador-2-vose",
-      "identity_status": "verified",
       "canonical_id": "tmdb:169",
       "tmdb_id": 169,
+      "identity_status": "verified",
       "identity_evidence": {
         "title_match": "exact_or_alias",
         "director": "Stephen Hopkins",
@@ -4092,9 +4830,9 @@
       "source_url": "https://www.cinepazmadrid.es/es/detalles/57674_1_Z_1/el-buscavidas-vose",
       "category": "repertory",
       "category_evidence_url": "https://www.cinepazmadrid.es/es/evento/400/mk2-classic",
-      "identity_status": "verified",
       "canonical_id": "tmdb:990",
       "tmdb_id": 990,
+      "identity_status": "verified",
       "identity_evidence": {
         "title_match": "exact_or_alias",
         "director": "Robert Rossen",
@@ -4263,9 +5001,9 @@
       "director": "Woody Allen",
       "duration_minutes": 104,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/22371_1_Z_1/delitos-y-faltas-vose",
-      "identity_status": "verified",
       "canonical_id": "tmdb:11562",
       "tmdb_id": 11562,
+      "identity_status": "verified",
       "identity_evidence": {
         "title_match": "exact_or_alias",
         "director": "Woody Allen",
@@ -4401,9 +5139,9 @@
       "source_url": "https://www.cinepazmadrid.es/es/detalles/18089_1_Z_1/el-apartamento-vose",
       "category": "repertory",
       "category_evidence_url": "https://www.cinepazmadrid.es/es/evento/400/mk2-classic",
-      "identity_status": "verified",
       "canonical_id": "tmdb:284",
       "tmdb_id": 284,
+      "identity_status": "verified",
       "identity_evidence": {
         "title_match": "exact_or_alias",
         "director": "Billy Wilder",
@@ -4714,9 +5452,9 @@
       "director": "Ridley Scott",
       "duration_minutes": 117,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/5076_1_Z_1/blade-runner-vose",
-      "identity_status": "verified",
       "canonical_id": "tmdb:78",
       "tmdb_id": 78,
+      "identity_status": "verified",
       "identity_evidence": {
         "title_match": "exact_or_alias",
         "director": "Ridley Scott",
@@ -5342,9 +6080,9 @@
       "director": "Joel Coen",
       "duration_minutes": 97,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/17997_1_Z_1/fargo-vose",
-      "identity_status": "verified",
       "canonical_id": "tmdb:275",
       "tmdb_id": 275,
+      "identity_status": "verified",
       "identity_evidence": {
         "title_match": "exact_or_alias",
         "director": "Joel Coen",
@@ -5725,9 +6463,9 @@
       "director": "Katski Flores",
       "duration_minutes": 122,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/115387_1_Z_1/nuevas-miradas-de-cine-asiatico-edjop-vose",
-      "identity_status": "verified",
       "canonical_id": "tmdb:1247041",
       "tmdb_id": 1247041,
+      "identity_status": "verified",
       "identity_evidence": {
         "title_match": "exact_or_alias",
         "director": "Katski Flores",
@@ -5766,9 +6504,9 @@
       "director": "Robert Zemeckis",
       "duration_minutes": 219,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/111417_1_Z_1/%E2%BFquien-engano-a-roger-rabbit--vose",
-      "identity_status": "verified",
       "canonical_id": "tmdb:856",
       "tmdb_id": 856,
+      "identity_status": "verified",
       "identity_evidence": {
         "title_match": "exact_or_alias",
         "director": "Robert Zemeckis",
@@ -5946,9 +6684,9 @@
       "source_url": "https://www.cinepazmadrid.es/es/detalles/72108_1_Z_1/el-bazar-de-las-sorpresas-vose",
       "category": "repertory",
       "category_evidence_url": "https://www.cinepazmadrid.es/es/evento/400/mk2-classic",
-      "identity_status": "verified",
       "canonical_id": "tmdb:20334",
       "tmdb_id": 20334,
+      "identity_status": "verified",
       "identity_evidence": {
         "title_match": "exact_or_alias",
         "director": "Ernst Lubitsch",
@@ -6020,9 +6758,9 @@
       "director": "Denis Villeneuve",
       "duration_minutes": 140,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/108191_0_Z_1/dune-parte-tres-vose",
-      "identity_status": "verified",
       "canonical_id": "tmdb:1170608",
       "tmdb_id": 1170608,
+      "identity_status": "verified",
       "identity_evidence": {
         "title_match": "exact_or_alias",
         "director": "Denis Villeneuve",
@@ -6463,9 +7201,9 @@
       "director": "Joe Dante",
       "duration_minutes": 106,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/8612_1_Z_1/gremlins-vose",
-      "identity_status": "verified",
       "canonical_id": "tmdb:927",
       "tmdb_id": 927,
+      "identity_status": "verified",
       "identity_evidence": {
         "title_match": "exact_or_alias",
         "director": "Joe Dante",
@@ -6753,9 +7491,9 @@
       "director": "Paul W.S. Anderson",
       "duration_minutes": 96,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/104075_1_Z_1/aeterna-horizonte-final-vose",
-      "identity_status": "verified",
       "canonical_id": "tmdb:8413",
       "tmdb_id": 8413,
+      "identity_status": "verified",
       "identity_evidence": {
         "title_match": "exact_or_alias",
         "director": "Paul W.S. Anderson",
@@ -7138,9 +7876,246 @@
       "director": "Fritz Lang",
       "duration_minutes": 149,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/111199_1_X_0/metropolis-live-by-morales-35mm",
-      "identity_status": "needs_review",
-      "identity_reason": "not_found",
-      "identity_candidates": []
+      "identity_status": "verified",
+      "canonical_id": "tmdb:19",
+      "tmdb_id": 19,
+      "identity_evidence": {
+        "title_match": "exact_or_alias",
+        "director": "Fritz Lang",
+        "duration_difference_minutes": 4,
+        "tmdb_url": "https://www.themoviedb.org/movie/19"
+      },
+      "canonical_title": "Metrópolis",
+      "original_title": "Metropolis",
+      "year": 1927,
+      "aliases": [
+        "Metoroporisu",
+        "科学世界"
+      ],
+      "tmdb_url": "https://www.themoviedb.org/movie/19",
+      "tmdb_runtime": 153,
+      "tmdb_releases": [
+        {
+          "country": "AU",
+          "type": 2,
+          "date": "1928-04-07"
+        },
+        {
+          "country": "AU",
+          "type": 5,
+          "date": "2005-11-01"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "1927-11-04"
+        },
+        {
+          "country": "BR",
+          "type": 5,
+          "date": "1985-03-28"
+        },
+        {
+          "country": "CN",
+          "type": 1,
+          "date": "2011-06-18"
+        },
+        {
+          "country": "CN",
+          "type": 1,
+          "date": "2024-06-14"
+        },
+        {
+          "country": "CN",
+          "type": 4,
+          "date": "2014-05-17"
+        },
+        {
+          "country": "CN",
+          "type": 4,
+          "date": "2019-06-13"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "1927-01-10"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "1927-08-25"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "1927-02-06"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "1984-11-20"
+        },
+        {
+          "country": "ES",
+          "type": 5,
+          "date": "2003-12-16"
+        },
+        {
+          "country": "ES",
+          "type": 5,
+          "date": "2010-11-24"
+        },
+        {
+          "country": "ES",
+          "type": 5,
+          "date": "2012-08-29"
+        },
+        {
+          "country": "FI",
+          "type": 2,
+          "date": "1927-02-06"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "1927-02-06"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2011-10-19"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2015-07-14"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2021-11-13"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "1999-09-01"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2011-10-05"
+        },
+        {
+          "country": "GB",
+          "type": 2,
+          "date": "1984-05-01"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "1927-03-18"
+        },
+        {
+          "country": "GB",
+          "type": 5,
+          "date": "2010-11-22"
+        },
+        {
+          "country": "HK",
+          "type": 1,
+          "date": "2010-04-01"
+        },
+        {
+          "country": "IE",
+          "type": 4,
+          "date": "2010-09-10"
+        },
+        {
+          "country": "IT",
+          "type": 2,
+          "date": "2010-07-02"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "1928-10-01"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "1929-04-03"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "1985-01-26"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "1928-01-01"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "1985-05-23"
+        },
+        {
+          "country": "NL",
+          "type": 5,
+          "date": "2009-08-20"
+        },
+        {
+          "country": "NO",
+          "type": 3,
+          "date": "1927-02-06"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "1928-04-07"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "1927-04-04"
+        },
+        {
+          "country": "TW",
+          "type": 1,
+          "date": "2012-10-19"
+        },
+        {
+          "country": "US",
+          "type": 2,
+          "date": "2010-04-25"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "1927-03-06"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "1927-03-13"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "1984-08-10"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "1984-10-13"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "1990-01-01"
+        }
+      ]
     },
     {
       "id": "paz:105225",
@@ -7204,7 +8179,7 @@
       "category": "premiere",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "initial_theatrical_release_window",
         "first_theatrical_date": "2026-09-25",
@@ -7245,7 +8220,7 @@
       "category": "premiere",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "initial_theatrical_release_window",
         "first_theatrical_date": "2026-09-25",
@@ -7286,7 +8261,7 @@
       "category": "premiere",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "initial_theatrical_release_window",
         "first_theatrical_date": "2026-09-25",
@@ -7327,7 +8302,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-11-06"
@@ -7358,7 +8333,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-11-06"
@@ -7389,7 +8364,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-11-06"
@@ -7420,7 +8395,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-11-06"
@@ -7451,7 +8426,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-11-06"
@@ -7482,7 +8457,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-11-06"
@@ -7513,7 +8488,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-10-14"
@@ -7546,7 +8521,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-10-14"
@@ -7579,7 +8554,7 @@
       "category": "premiere",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "initial_theatrical_release_window",
         "first_theatrical_date": "2026-10-09",
@@ -7612,7 +8587,7 @@
       "category": "premiere",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "initial_theatrical_release_window",
         "first_theatrical_date": "2026-06-25",
@@ -7652,7 +8627,7 @@
       "category": "premiere",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "initial_theatrical_release_window",
         "first_theatrical_date": "2026-09-23",
@@ -7692,7 +8667,7 @@
       "category": "unclassified",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "release_context_needs_review",
         "first_theatrical_date": "2026-04-15"
@@ -7724,7 +8699,7 @@
       "category": "premiere",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "initial_theatrical_release_window",
         "first_theatrical_date": "2026-09-25",
@@ -7765,7 +8740,7 @@
       "category": "premiere",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "initial_theatrical_release_window",
         "first_theatrical_date": "2026-09-25",
@@ -7806,7 +8781,7 @@
       "category": "premiere",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "initial_theatrical_release_window",
         "first_theatrical_date": "2026-09-25",
@@ -7847,7 +8822,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-11-06"
@@ -7878,7 +8853,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-11-06"
@@ -7909,7 +8884,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-11-06"
@@ -7940,7 +8915,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-11-06"
@@ -7971,7 +8946,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-11-06"
@@ -8002,7 +8977,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-10-14"
@@ -8035,7 +9010,7 @@
       "category": "premiere",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "initial_theatrical_release_window",
         "first_theatrical_date": "2026-10-09",
@@ -8068,7 +9043,7 @@
       "category": "premiere",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "initial_theatrical_release_window",
         "first_theatrical_date": "2026-06-25",
@@ -8108,7 +9083,7 @@
       "category": "premiere",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "initial_theatrical_release_window",
         "first_theatrical_date": "2026-09-23",
@@ -8148,7 +9123,7 @@
       "category": "unclassified",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "release_context_needs_review",
         "first_theatrical_date": "2026-04-15"
@@ -8180,7 +9155,7 @@
       "category": "repertory",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "prior_commercial_theatrical_release",
         "first_theatrical_date": "1988-07-16",
@@ -8226,7 +9201,7 @@
       "category": "unclassified",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "release_context_needs_review",
         "first_theatrical_date": null
@@ -8257,7 +9232,7 @@
       "category": "premiere",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "initial_theatrical_release_window",
         "first_theatrical_date": "2026-11-11",
@@ -8292,7 +9267,7 @@
       "category": "unclassified",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "canonical_id": null,
       "identity_status": "needs_review",
       "search_titles": [],
@@ -8317,12 +9292,20 @@
       "category": "unclassified",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
-      "canonical_id": null,
-      "identity_status": "needs_review",
-      "search_titles": [],
-      "tmdb_url": null,
-      "year": null
+      "last_seen": "2026-11-11T12:12:55+01:00",
+      "classification_evidence": {
+        "rule": "release_context_needs_review",
+        "first_theatrical_date": null
+      },
+      "canonical_id": "tmdb:1532393",
+      "identity_status": "verified",
+      "search_titles": [
+        "ഖിഡ്കി ഗാവ്",
+        "If on a Winter's Night",
+        "어느 겨울 밤"
+      ],
+      "tmdb_url": "https://www.themoviedb.org/movie/1532393",
+      "year": 2025
     },
     {
       "id": "paz:23344557",
@@ -8342,7 +9325,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-11-04"
@@ -8377,7 +9360,7 @@
       "category": "repertory",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "prior_commercial_theatrical_release",
         "first_theatrical_date": "1948-07-21",
@@ -8431,7 +9414,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": null
@@ -8462,12 +9445,25 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
-      "canonical_id": null,
-      "identity_status": "needs_review",
-      "search_titles": [],
-      "tmdb_url": null,
-      "year": null
+      "last_seen": "2026-11-11T12:12:55+01:00",
+      "classification_evidence": {
+        "rule": "cinema_premiere_label",
+        "first_theatrical_date": "2026-08-06"
+      },
+      "canonical_id": "tmdb:1240889",
+      "identity_status": "verified",
+      "search_titles": [
+        "Adolescencia, sexo y muerte en campamento Miasma",
+        "Teenage Sex and Death at Camp Miasma",
+        "A Bad Day at Camp Tivoli",
+        "Dục vọng tuổi mới lớn và Cái chết ở Trại Miasma",
+        "Sex a smrt v kempu Miasma",
+        "Sexe et mort chez les ados au Camp Miasma",
+        "มิอัสมา ค่ายสยองของสองเรา",
+        "瘴气营地的青春与死亡"
+      ],
+      "tmdb_url": "https://www.themoviedb.org/movie/1240889",
+      "year": 2026
     },
     {
       "id": "paz:23344555",
@@ -8487,7 +9483,7 @@
       "category": "repertory",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "prior_commercial_theatrical_release",
         "first_theatrical_date": "2010-07-15",
@@ -8576,7 +9572,7 @@
       "category": "repertory",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "prior_commercial_theatrical_release",
         "first_theatrical_date": "1990-11-21",
@@ -8622,7 +9618,7 @@
       "category": "unclassified",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "canonical_id": null,
       "identity_status": "needs_review",
       "search_titles": [],
@@ -8647,7 +9643,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-11-20"
@@ -8678,7 +9674,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-11-20"
@@ -8709,7 +9705,7 @@
       "category": "repertory",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "prior_commercial_theatrical_release",
         "first_theatrical_date": "1961-09-25",
@@ -8753,7 +9749,7 @@
       "category": "repertory",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "prior_commercial_theatrical_release",
         "first_theatrical_date": "1989-10-13",
@@ -8797,7 +9793,7 @@
       "category": "unclassified",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "canonical_id": null,
       "identity_status": "needs_review",
       "search_titles": [],
@@ -8822,7 +9818,7 @@
       "category": "unclassified",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "canonical_id": null,
       "identity_status": "needs_review",
       "search_titles": [],
@@ -8847,7 +9843,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "canonical_id": null,
       "identity_status": "needs_review",
       "search_titles": [],
@@ -8872,7 +9868,7 @@
       "category": "repertory",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "prior_commercial_theatrical_release",
         "first_theatrical_date": "1960-06-21",
@@ -8909,7 +9905,7 @@
       "category": "unclassified",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "canonical_id": null,
       "identity_status": "needs_review",
       "search_titles": [],
@@ -8934,7 +9930,7 @@
       "category": "repertory",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "prior_commercial_theatrical_release",
         "first_theatrical_date": "1982-06-25",
@@ -8994,7 +9990,7 @@
       "category": "repertory",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "prior_commercial_theatrical_release",
         "first_theatrical_date": "1996-03-08",
@@ -9030,7 +10026,7 @@
       "category": "premiere",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "initial_theatrical_release_window",
         "first_theatrical_date": "2026-09-16",
@@ -9064,7 +10060,7 @@
       "category": "repertory",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "prior_commercial_theatrical_release",
         "first_theatrical_date": "1988-06-22",
@@ -9111,7 +10107,7 @@
       "category": "repertory",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "prior_commercial_theatrical_release",
         "first_theatrical_date": "1940-01-12",
@@ -9159,7 +10155,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-12-15"
@@ -9204,7 +10200,7 @@
       "category": "repertory",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "prior_commercial_theatrical_release",
         "first_theatrical_date": "1984-06-08",
@@ -9246,7 +10242,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-12-15"
@@ -9291,7 +10287,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-12-15"
@@ -9336,7 +10332,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-12-15"
@@ -9381,7 +10377,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-12-15"
@@ -9426,7 +10422,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-12-15"
@@ -9471,7 +10467,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-12-15"
@@ -9516,7 +10512,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-12-15"
@@ -9561,7 +10557,7 @@
       "category": "repertory",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "prior_commercial_theatrical_release",
         "first_theatrical_date": "1997-08-15",
@@ -9597,7 +10593,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-12-15"
@@ -9642,7 +10638,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-12-15"
@@ -9687,7 +10683,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-12-15"
@@ -9732,7 +10728,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-12-15"
@@ -9777,7 +10773,7 @@
       "category": "unclassified",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "canonical_id": null,
       "identity_status": "needs_review",
       "search_titles": [],
@@ -9802,7 +10798,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-12-15"
@@ -9847,7 +10843,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-12-15"
@@ -9892,7 +10888,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-12-15"
@@ -9937,7 +10933,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-12-15"
@@ -9982,7 +10978,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-12-15"
@@ -10027,7 +11023,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-12-15"
@@ -10072,7 +11068,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-12-15"
@@ -10117,7 +11113,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-12-15"
@@ -10162,7 +11158,7 @@
       "category": "premiere",
       "source_category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "classification_evidence": {
         "rule": "cinema_premiere_label",
         "first_theatrical_date": "2026-12-15"
@@ -10207,7 +11203,7 @@
       "category": "unclassified",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "canonical_id": null,
       "identity_status": "needs_review",
       "search_titles": [],
@@ -10232,7 +11228,7 @@
       "category": "unclassified",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "canonical_id": null,
       "identity_status": "needs_review",
       "search_titles": [],
@@ -10257,7 +11253,7 @@
       "category": "unclassified",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "canonical_id": null,
       "identity_status": "needs_review",
       "search_titles": [],
@@ -10282,7 +11278,7 @@
       "category": "unclassified",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "canonical_id": null,
       "identity_status": "needs_review",
       "search_titles": [],
@@ -10307,7 +11303,7 @@
       "category": "unclassified",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "canonical_id": null,
       "identity_status": "needs_review",
       "search_titles": [],
@@ -10329,15 +11325,26 @@
       "source_url": "https://www.cinepazmadrid.es/es/detalles/111199_1_X_0/metropolis-live-by-morales-35mm",
       "status": "confirmed",
       "stale": false,
-      "category": "unclassified",
+      "category": "repertory",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
-      "canonical_id": null,
-      "identity_status": "needs_review",
-      "search_titles": [],
-      "tmdb_url": null,
-      "year": null
+      "last_seen": "2026-11-11T12:12:55+01:00",
+      "classification_evidence": {
+        "rule": "prior_commercial_theatrical_release",
+        "first_theatrical_date": "1927-01-10",
+        "minimum_days": 365,
+        "tmdb_url": "https://www.themoviedb.org/movie/19"
+      },
+      "canonical_id": "tmdb:19",
+      "identity_status": "verified",
+      "search_titles": [
+        "Metrópolis",
+        "Metropolis",
+        "Metoroporisu",
+        "科学世界"
+      ],
+      "tmdb_url": "https://www.themoviedb.org/movie/19",
+      "year": 1927
     },
     {
       "id": "paz:23344507",
@@ -10357,7 +11364,7 @@
       "category": "unclassified",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "canonical_id": null,
       "identity_status": "needs_review",
       "search_titles": [],
@@ -10382,7 +11389,7 @@
       "category": "unclassified",
       "source_category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T12:10:12+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00",
       "canonical_id": null,
       "identity_status": "needs_review",
       "search_titles": [],
@@ -10401,7 +11408,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "a5df200d6fdfe60a5f2c",
@@ -10413,7 +11420,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "0c18553c2abb9d993a5e",
@@ -10425,7 +11432,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "fa603e6bf43900a599a7",
@@ -10437,7 +11444,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "44cf065a3acc650fe945",
@@ -10449,7 +11456,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "718f70ca8ea10eb42772",
@@ -10461,7 +11468,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "8a35a59be91f13903dbc",
@@ -10473,7 +11480,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "df4aa23399014e2f3bd4",
@@ -10485,7 +11492,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "f194c28559413340dedb",
@@ -10497,7 +11504,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "9e095446c1d97927c95c",
@@ -10509,7 +11516,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "ebc649834e6fedce2d13",
@@ -10521,7 +11528,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "6873a16f2283362c4a5c",
@@ -10533,7 +11540,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "a36e25d184370dd4d60c",
@@ -10545,7 +11552,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "a327d4ae6cc3f79feb54",
@@ -10557,7 +11564,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "340c0fa80b7d9c2fef5e",
@@ -10569,7 +11576,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "08d833f708896a507e0d",
@@ -10581,7 +11588,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "79c188a3093ee00bfa8a",
@@ -10593,7 +11600,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "520a3b905d3388240de0",
@@ -10605,7 +11612,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "336026ead85aaac2b222",
@@ -10617,7 +11624,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "50c1a9ad7d4d769e96b7",
@@ -10629,7 +11636,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "7448c7ab7c92f4a72cc6",
@@ -10641,7 +11648,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "5c328c7a7d4064810b9e",
@@ -10653,7 +11660,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "575e1760db312a380162",
@@ -10665,7 +11672,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "1ea1f27517fb1ae61a45",
@@ -10677,7 +11684,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "e5204de8f75353b0405c",
@@ -10689,7 +11696,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "edf8e01534fc1f244d79",
@@ -10701,7 +11708,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "35c260e2a49231a794fa",
@@ -10713,7 +11720,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "990f6ea2975c271bc62c",
@@ -10725,7 +11732,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "b04cef5c6b73fbd07e11",
@@ -10737,7 +11744,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "8a3efbed11ad0852a9f2",
@@ -10749,7 +11756,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "229dcfc5303461a3a0bc",
@@ -10761,7 +11768,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "df463e05c7328d4a6c74",
@@ -10773,7 +11780,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "eb1754405d6f212e909c",
@@ -10785,7 +11792,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "c5a24392b2b63d3e4002",
@@ -10797,7 +11804,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T12:10:18+01:00",
-      "last_seen": "2026-11-11T12:10:18+01:00"
+      "last_seen": "2026-11-11T12:12:55+01:00"
     },
     {
       "id": "a61576f129a069fc5a38",
@@ -10809,7 +11816,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T12:10:21+01:00",
-      "last_seen": "2026-11-11T12:10:21+01:00"
+      "last_seen": "2026-11-11T12:12:55+01:00"
     },
     {
       "id": "3751c04d04d1a6db0826",
@@ -10821,31 +11828,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T12:10:23+01:00",
-      "last_seen": "2026-11-11T12:10:23+01:00"
-    },
-    {
-      "id": "28c42c915d46a273aaf6",
-      "source_id": "tmdb",
-      "code": "identity_metadata_mismatch",
-      "entity": "paz:115381",
-      "message": "Identidad pendiente: Nuevas miradas de cine asiático: If on a winter's night (VOSE) (metadata_mismatch).",
-      "url": "https://www.cinepazmadrid.es/es/detalles/115381_1_Z_1/nuevas-miradas-de-cine-asiatico-if-on-a-winter-s-n",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T12:10:24+01:00",
-      "last_seen": "2026-11-11T12:10:24+01:00"
-    },
-    {
-      "id": "f8694878c43a35d2eead",
-      "source_id": "tmdb",
-      "code": "identity_metadata_mismatch",
-      "entity": "paz:111197",
-      "message": "Identidad pendiente: Campamento miasma (VOSE) (metadata_mismatch).",
-      "url": "https://www.cinepazmadrid.es/es/detalles/111197_1_Z_1/campamento-miasma-vose",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T12:10:27+01:00",
-      "last_seen": "2026-11-11T12:10:27+01:00"
+      "last_seen": "2026-11-11T12:12:55+01:00"
     },
     {
       "id": "022611fa83a1013f4754",
@@ -10857,7 +11840,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T12:10:30+01:00",
-      "last_seen": "2026-11-11T12:10:30+01:00"
+      "last_seen": "2026-11-11T12:12:55+01:00"
     },
     {
       "id": "3ba9886498efcd122046",
@@ -10869,7 +11852,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T12:10:31+01:00",
-      "last_seen": "2026-11-11T12:10:31+01:00"
+      "last_seen": "2026-11-11T12:12:55+01:00"
     },
     {
       "id": "1ccf23df58bd744fdbaf",
@@ -10881,7 +11864,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T12:10:31+01:00",
-      "last_seen": "2026-11-11T12:10:31+01:00"
+      "last_seen": "2026-11-11T12:12:55+01:00"
     },
     {
       "id": "d5c4a920f1bc7f093992",
@@ -10893,7 +11876,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T12:10:31+01:00",
-      "last_seen": "2026-11-11T12:10:31+01:00"
+      "last_seen": "2026-11-11T12:12:55+01:00"
     },
     {
       "id": "52ec78e410abd35a0904",
@@ -10905,7 +11888,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T12:10:33+01:00",
-      "last_seen": "2026-11-11T12:10:33+01:00"
+      "last_seen": "2026-11-11T12:12:55+01:00"
     },
     {
       "id": "299a285325fc982239c7",
@@ -10917,7 +11900,7 @@
       "severity": "warning",
       "status": "open",
       "first_seen": "2026-11-11T12:10:37+01:00",
-      "last_seen": "2026-11-11T12:10:37+01:00"
+      "last_seen": "2026-11-11T12:12:55+01:00"
     },
     {
       "id": "db8ff288ca28510742a7",
@@ -10929,7 +11912,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T12:10:41+01:00",
-      "last_seen": "2026-11-11T12:10:41+01:00"
+      "last_seen": "2026-11-11T12:12:55+01:00"
     },
     {
       "id": "43ed1920d1c9757ba0a4",
@@ -10941,7 +11924,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T12:10:41+01:00",
-      "last_seen": "2026-11-11T12:10:41+01:00"
+      "last_seen": "2026-11-11T12:12:55+01:00"
     },
     {
       "id": "109ddef4cb25e6246f17",
@@ -10953,7 +11936,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T12:10:42+01:00",
-      "last_seen": "2026-11-11T12:10:42+01:00"
+      "last_seen": "2026-11-11T12:12:55+01:00"
     },
     {
       "id": "30809a79151b6e0c866e",
@@ -10965,7 +11948,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T12:10:43+01:00",
-      "last_seen": "2026-11-11T12:10:43+01:00"
+      "last_seen": "2026-11-11T12:12:55+01:00"
     },
     {
       "id": "be2c04519a52ee1d48d9",
@@ -10977,7 +11960,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T12:10:43+01:00",
-      "last_seen": "2026-11-11T12:10:43+01:00"
+      "last_seen": "2026-11-11T12:12:55+01:00"
     },
     {
       "id": "cd26bb2b2c5b59a73b49",
@@ -10989,19 +11972,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T12:10:44+01:00",
-      "last_seen": "2026-11-11T12:10:44+01:00"
-    },
-    {
-      "id": "25a3ef4c8b361e5cb8cd",
-      "source_id": "tmdb",
-      "code": "identity_not_found",
-      "entity": "paz:111199",
-      "message": "Identidad pendiente: METROPOLIS live by Morales 35mm (not_found).",
-      "url": "https://www.cinepazmadrid.es/es/detalles/111199_1_X_0/metropolis-live-by-morales-35mm",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T12:10:44+01:00",
-      "last_seen": "2026-11-11T12:10:44+01:00"
+      "last_seen": "2026-11-11T12:12:55+01:00"
     },
     {
       "id": "dbabe7b23cda5e3091cc",
@@ -11013,7 +11984,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T12:10:45+01:00",
-      "last_seen": "2026-11-11T12:10:45+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
     },
     {
       "id": "6cf80322bb76635ac843",
@@ -11025,7 +11996,19 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T12:10:46+01:00",
-      "last_seen": "2026-11-11T12:10:46+01:00"
+      "last_seen": "2026-11-11T12:12:57+01:00"
+    },
+    {
+      "id": "5e2842fef7ffc1a25ad4",
+      "source_id": "tmdb",
+      "code": "classification_pending",
+      "entity": "paz:115381",
+      "message": "Película identificada; falta confirmar el contexto del estreno: Nuevas miradas de cine asiático: If on a winter's night (VOSE)",
+      "url": "https://www.cinepazmadrid.es/es/detalles/115381_1_Z_1/nuevas-miradas-de-cine-asiatico-if-on-a-winter-s-n",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T12:12:55+01:00",
+      "last_seen": "2026-11-11T12:12:55+01:00"
     },
     {
       "id": "f781e2bfdda2d61c9577",
@@ -11611,15 +12594,54 @@
       "first_seen": "2026-11-11T11:10:18+01:00",
       "last_seen": "2026-11-11T11:10:18+01:00",
       "resolved_at": "2026-11-11T11:15:13+01:00"
+    },
+    {
+      "id": "28c42c915d46a273aaf6",
+      "source_id": "tmdb",
+      "code": "identity_metadata_mismatch",
+      "entity": "paz:115381",
+      "message": "Identidad pendiente: Nuevas miradas de cine asiático: If on a winter's night (VOSE) (metadata_mismatch).",
+      "url": "https://www.cinepazmadrid.es/es/detalles/115381_1_Z_1/nuevas-miradas-de-cine-asiatico-if-on-a-winter-s-n",
+      "severity": "info",
+      "status": "resolved",
+      "first_seen": "2026-11-11T12:10:24+01:00",
+      "last_seen": "2026-11-11T12:10:24+01:00",
+      "resolved_at": "2026-11-11T12:12:57+01:00"
+    },
+    {
+      "id": "f8694878c43a35d2eead",
+      "source_id": "tmdb",
+      "code": "identity_metadata_mismatch",
+      "entity": "paz:111197",
+      "message": "Identidad pendiente: Campamento miasma (VOSE) (metadata_mismatch).",
+      "url": "https://www.cinepazmadrid.es/es/detalles/111197_1_Z_1/campamento-miasma-vose",
+      "severity": "info",
+      "status": "resolved",
+      "first_seen": "2026-11-11T12:10:27+01:00",
+      "last_seen": "2026-11-11T12:10:27+01:00",
+      "resolved_at": "2026-11-11T12:12:57+01:00"
+    },
+    {
+      "id": "25a3ef4c8b361e5cb8cd",
+      "source_id": "tmdb",
+      "code": "identity_not_found",
+      "entity": "paz:111199",
+      "message": "Identidad pendiente: METROPOLIS live by Morales 35mm (not_found).",
+      "url": "https://www.cinepazmadrid.es/es/detalles/111199_1_X_0/metropolis-live-by-morales-35mm",
+      "severity": "info",
+      "status": "resolved",
+      "first_seen": "2026-11-11T12:10:44+01:00",
+      "last_seen": "2026-11-11T12:10:44+01:00",
+      "resolved_at": "2026-11-11T12:12:57+01:00"
     }
   ],
   "agent_status": "waiting_for_copilot",
   "tmdb": {
     "status": "ok",
-    "matched_movies": 27,
+    "matched_movies": 30,
     "total_movies": 44,
-    "api_requests": 153,
-    "checked_at": "2026-11-11T12:10:46+01:00",
+    "api_requests": 9,
+    "checked_at": "2026-11-11T12:12:57+01:00",
     "errors": []
   }
 }
