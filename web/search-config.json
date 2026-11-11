@@ -1,1 +1,1 @@
-{"tmdb_api_url": "https://cine-madrid-tmdb.garijo-io.workers.dev/search", "favorites_api_url": "https://cine-madrid-tmdb.garijo-io.workers.dev/favorites"}
+{"tmdb_api_url": "https://cine-madrid-tmdb.garijo-io.workers.dev/search", "favorites_api_url": "https://cine-madrid-tmdb.garijo-io.workers.dev/favorites", "public_favorites": true}
