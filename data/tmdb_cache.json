@@ -50724,6 +50724,1203 @@
       "vote_count": 6699,
       "vote_average": 8.474,
       "statistics_checked_at": "2026-11-11T15:40:52+01:00"
+    },
+    "157336": {
+      "id": "tmdb:157336",
+      "tmdb_id": 157336,
+      "title": "Interstellar",
+      "original_title": "Interstellar",
+      "year": 2014,
+      "director": "Christopher Nolan",
+      "directors": [
+        "Christopher Nolan"
+      ],
+      "runtime": 169,
+      "aliases": [
+        "Csillagok Között",
+        "Hố Đen Tử Thần",
+        "Interestelar",
+        "Interstellaire",
+        "Interstellar",
+        "Interstellar: Călătorind Prin Univers",
+        "Medzvezdje",
+        "Međuzvjezdani",
+        "Tarp žvaigždžių",
+        "Tähtedevaheline",
+        "Ulduzlararası",
+        "Yıldızlararası",
+        "Інтерстеллар",
+        "Інтэрстэлар",
+        "Интерстелар",
+        "Интерстеллар",
+        "Интерстеллэр",
+        "Међузвездани",
+        "Одод хооронд",
+        "Ինտերստելեր",
+        "בין כוכבים",
+        "أنترستيلر",
+        "انٹرسٹیلر",
+        "اینتر استلار",
+        "بين النجوم",
+        "در میان ستارگان",
+        "قائم بين النجوم",
+        "میان‌ ستاره‌ ای",
+        "इंटरस्टेलर",
+        "इन्टरस्टेलर",
+        "ਇੰਟਰਸਟੈਲਰ",
+        "இன்டர்‌ஸ்டெலர்",
+        "ఇంటర్ స్టెల్లర్",
+        "ഇന്റർസ്റ്റെല്ലാർ",
+        "อินเตอร์สเตลลาร์ ทะยานดาวกู้โลก",
+        "ვარსკვლავთშორისი",
+        "ინტერსტელარი",
+        "インターステラー",
+        "星际穿越",
+        "星際啓示錄",
+        "星際啟示錄",
+        "星際效應",
+        "인터스텔라"
+      ],
+      "releases": [
+        {
+          "country": "AE",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "AL",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "AM",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "AO",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "AR",
+          "type": 1,
+          "date": "2014-11-04"
+        },
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "AT",
+          "type": 4,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "AZ",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "BA",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "BD",
+          "type": 2,
+          "date": "2014-11-15"
+        },
+        {
+          "country": "BE",
+          "type": 3,
+          "date": "2014-11-05"
+        },
+        {
+          "country": "BG",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "BO",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "BR",
+          "type": 2,
+          "date": "2024-11-11"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2025-01-09"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2025-08-28"
+        },
+        {
+          "country": "BY",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "CA",
+          "type": 2,
+          "date": "2014-11-05"
+        },
+        {
+          "country": "CA",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "2014-11-05"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "CL",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "CN",
+          "type": 1,
+          "date": "2014-11-10"
+        },
+        {
+          "country": "CN",
+          "type": 1,
+          "date": "2026-09-05"
+        },
+        {
+          "country": "CN",
+          "type": 3,
+          "date": "2014-11-12"
+        },
+        {
+          "country": "CN",
+          "type": 3,
+          "date": "2020-08-02"
+        },
+        {
+          "country": "CO",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "CS",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "CY",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "DE",
+          "type": 2,
+          "date": "2024-09-26"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "DE",
+          "type": 5,
+          "date": "2015-03-31"
+        },
+        {
+          "country": "DE",
+          "type": 6,
+          "date": "2026-10-18"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "DO",
+          "type": 2,
+          "date": "2025-01-09"
+        },
+        {
+          "country": "EC",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "EE",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "EG",
+          "type": 3,
+          "date": "2014-11-05"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "ET",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "FR",
+          "type": 1,
+          "date": "2014-10-31"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2014-11-05"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2015-03-31"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2015-03-31"
+        },
+        {
+          "country": "FR",
+          "type": 6,
+          "date": "2017-09-24"
+        },
+        {
+          "country": "FR",
+          "type": 6,
+          "date": "2015-11-27"
+        },
+        {
+          "country": "FR",
+          "type": 6,
+          "date": "2026-10-18"
+        },
+        {
+          "country": "GB",
+          "type": 1,
+          "date": "2014-10-29"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2024-09-20"
+        },
+        {
+          "country": "GB",
+          "type": 4,
+          "date": "2015-03-31"
+        },
+        {
+          "country": "GB",
+          "type": 5,
+          "date": "2015-03-31"
+        },
+        {
+          "country": "GB",
+          "type": 5,
+          "date": "2024-12-09"
+        },
+        {
+          "country": "GE",
+          "type": 3,
+          "date": "2014-11-13"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "GR",
+          "type": 5,
+          "date": "2015-04-08"
+        },
+        {
+          "country": "GT",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "HK",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "HR",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "HU",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "ID",
+          "type": 2,
+          "date": "2025-02-26"
+        },
+        {
+          "country": "ID",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "IL",
+          "type": 2,
+          "date": "2026-01-29"
+        },
+        {
+          "country": "IL",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "IN",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "IQ",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "IS",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "2014-11-22"
+        },
+        {
+          "country": "KE",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "KH",
+          "type": 3,
+          "date": "2014-11-14"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "KW",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "KZ",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "LB",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "LT",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "LU",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "LV",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "MK",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "MO",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "MT",
+          "type": 3,
+          "date": "2014-11-12"
+        },
+        {
+          "country": "MX",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "MY",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "NG",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "NL",
+          "type": 5,
+          "date": "2015-03-31"
+        },
+        {
+          "country": "NL",
+          "type": 6,
+          "date": "2018-05-08"
+        },
+        {
+          "country": "NO",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "NZ",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "PA",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "PA",
+          "type": 3,
+          "date": "2025-01-09"
+        },
+        {
+          "country": "PE",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "PH",
+          "type": 2,
+          "date": "2025-01-15"
+        },
+        {
+          "country": "PH",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "PK",
+          "type": 3,
+          "date": "2014-11-14"
+        },
+        {
+          "country": "PL",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "PY",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "RO",
+          "type": 1,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "RO",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "RS",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "RU",
+          "type": 1,
+          "date": "2014-10-29"
+        },
+        {
+          "country": "RU",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "SG",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "SI",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "SK",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "TH",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "TR",
+          "type": 2,
+          "date": "2024-12-06"
+        },
+        {
+          "country": "TR",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "TT",
+          "type": 3,
+          "date": "2014-11-08"
+        },
+        {
+          "country": "TW",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "TZ",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "UA",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "UG",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2014-10-26"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2014-10-22"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2014-10-19"
+        },
+        {
+          "country": "US",
+          "type": 2,
+          "date": "2014-11-04"
+        },
+        {
+          "country": "US",
+          "type": 2,
+          "date": "2024-12-06"
+        },
+        {
+          "country": "US",
+          "type": 2,
+          "date": "2014-11-05"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2026-08-03"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2015-03-31"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2015-03-31"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2017-12-29"
+        },
+        {
+          "country": "UY",
+          "type": 3,
+          "date": "2014-11-06"
+        },
+        {
+          "country": "VE",
+          "type": 3,
+          "date": "2014-12-05"
+        },
+        {
+          "country": "VN",
+          "type": 2,
+          "date": "2022-12-07"
+        },
+        {
+          "country": "VN",
+          "type": 2,
+          "date": "2025-02-28"
+        },
+        {
+          "country": "VN",
+          "type": 3,
+          "date": "2014-11-07"
+        },
+        {
+          "country": "ZA",
+          "type": 3,
+          "date": "2014-11-07"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/157336",
+      "fetched_at": "2026-11-11T15:42:10+01:00"
+    },
+    "529107": {
+      "id": "tmdb:529107",
+      "tmdb_id": 529107,
+      "title": "Inside 'Interstellar'",
+      "original_title": "Inside 'Interstellar'",
+      "year": 2015,
+      "director": "Jordan Goldberg, Jason Hillhouse",
+      "directors": [
+        "Jordan Goldberg",
+        "Jason Hillhouse"
+      ],
+      "runtime": 122,
+      "aliases": [],
+      "releases": [
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2015-03-31"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/529107",
+      "fetched_at": "2026-11-11T15:42:11+01:00"
+    },
+    "398188": {
+      "id": "tmdb:398188",
+      "tmdb_id": 398188,
+      "title": "Interstellar Wars",
+      "original_title": "Interstellar Wars",
+      "year": 2016,
+      "director": "Marlene Mc'Cohen",
+      "directors": [
+        "Marlene Mc'Cohen"
+      ],
+      "runtime": 90,
+      "aliases": [
+        "Independence Wars: Insurgence",
+        "Межзвездные войны"
+      ],
+      "releases": [
+        {
+          "country": "DE",
+          "type": 5,
+          "date": "2016-05-23"
+        },
+        {
+          "country": "GB",
+          "type": 5,
+          "date": "2016-08-01"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2016-06-09"
+        },
+        {
+          "country": "NL",
+          "type": 5,
+          "date": "2016-07-21"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/398188",
+      "fetched_at": "2026-11-11T15:42:11+01:00"
+    },
+    "336592": {
+      "id": "tmdb:336592",
+      "tmdb_id": 336592,
+      "title": "La ciencia de Interstellar",
+      "original_title": "The Science of Interstellar",
+      "year": 2014,
+      "director": "Gail Willumsen",
+      "directors": [
+        "Gail Willumsen"
+      ],
+      "runtime": 51,
+      "aliases": [
+        "《星际穿越》中的科学"
+      ],
+      "releases": [
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2015-03-31"
+        },
+        {
+          "country": "US",
+          "type": 6,
+          "date": "2014-11-13"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/336592",
+      "fetched_at": "2026-11-11T15:42:11+01:00"
+    },
+    "287954": {
+      "id": "tmdb:287954",
+      "tmdb_id": 287954,
+      "title": "Lolita from Interstellar Space",
+      "original_title": "Lolita from Interstellar Space",
+      "year": 2014,
+      "director": "Dean McKendrick",
+      "directors": [
+        "Dean McKendrick"
+      ],
+      "runtime": 81,
+      "aliases": [
+        "穿越星际的洛丽塔"
+      ],
+      "releases": [
+        {
+          "country": "US",
+          "type": 6,
+          "date": "2014-03-08"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/287954",
+      "fetched_at": "2026-11-11T15:42:11+01:00"
+    },
+    "1391726": {
+      "id": "tmdb:1391726",
+      "tmdb_id": 1391726,
+      "title": "Interstellar Stella",
+      "original_title": "Interstellar Stella",
+      "year": 2006,
+      "director": "Al Holmes, Al Taylor",
+      "directors": [
+        "Al Holmes",
+        "Al Taylor"
+      ],
+      "runtime": 13,
+      "aliases": [],
+      "releases": [
+        {
+          "country": "GB",
+          "type": 1,
+          "date": "2006-12-11"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1391726",
+      "fetched_at": "2026-11-11T15:42:11+01:00"
+    },
+    "1443305": {
+      "id": "tmdb:1443305",
+      "tmdb_id": 1443305,
+      "title": "Container Interstellar",
+      "original_title": "Container Interstellar",
+      "year": 2001,
+      "director": "Helmut Herbst",
+      "directors": [
+        "Helmut Herbst"
+      ],
+      "runtime": 7,
+      "aliases": [],
+      "releases": [
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2001-01-01"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1443305",
+      "fetched_at": "2026-11-11T15:42:12+01:00"
+    },
+    "1282990": {
+      "id": "tmdb:1282990",
+      "tmdb_id": 1282990,
+      "title": "Interstellar Interference",
+      "original_title": "Interstellar Interference",
+      "year": 2023,
+      "director": "Joseph Diogo",
+      "directors": [
+        "Joseph Diogo"
+      ],
+      "runtime": 3,
+      "aliases": [],
+      "releases": [
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2023-04-22"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1282990",
+      "fetched_at": "2026-11-11T15:42:12+01:00"
+    },
+    "1642987": {
+      "id": "tmdb:1642987",
+      "tmdb_id": 1642987,
+      "title": "Primus Interstellar Drum Derby",
+      "original_title": "Primus Interstellar Drum Derby",
+      "year": 2025,
+      "director": "",
+      "directors": [],
+      "runtime": 0,
+      "aliases": [],
+      "releases": [
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2025-02-20"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1642987",
+      "fetched_at": "2026-11-11T15:42:12+01:00"
+    },
+    "1450827": {
+      "id": "tmdb:1450827",
+      "tmdb_id": 1450827,
+      "title": "Interstellar Political Prisoner",
+      "original_title": "Interstellar Political Prisoner",
+      "year": 2016,
+      "director": "Liao WANG",
+      "directors": [
+        "Liao WANG"
+      ],
+      "runtime": 16,
+      "aliases": [],
+      "releases": [
+        {
+          "country": "CN",
+          "type": 3,
+          "date": "2016-09-25"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1450827",
+      "fetched_at": "2026-11-11T15:42:12+01:00"
+    },
+    "301959": {
+      "id": "tmdb:301959",
+      "tmdb_id": 301959,
+      "title": "Interstellar: Nolan's Odyssey",
+      "original_title": "Interstellar: Nolan's Odyssey",
+      "year": 2014,
+      "director": "Dan Storey",
+      "directors": [
+        "Dan Storey"
+      ],
+      "runtime": 23,
+      "aliases": [],
+      "releases": [
+        {
+          "country": "GB",
+          "type": 6,
+          "date": "2014-11-05"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/301959",
+      "fetched_at": "2026-11-11T15:42:12+01:00"
+    },
+    "716603": {
+      "id": "tmdb:716603",
+      "tmdb_id": 716603,
+      "title": "Only Interstellar Pinball Lives Forever",
+      "original_title": "Only Interstellar Pinball Lives Forever",
+      "year": 2010,
+      "director": "Tristan Newcomb",
+      "directors": [
+        "Tristan Newcomb"
+      ],
+      "runtime": 69,
+      "aliases": [],
+      "releases": [
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2010-06-28"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/716603",
+      "fetched_at": "2026-11-11T15:42:13+01:00"
+    },
+    "460616": {
+      "id": "tmdb:460616",
+      "tmdb_id": 460616,
+      "title": "Interstellar Civil War: Shadows of the Empire",
+      "original_title": "Interstellar Civil War: Shadows of the Empire",
+      "year": 2017,
+      "director": "Albert Pyun",
+      "directors": [
+        "Albert Pyun"
+      ],
+      "runtime": 0,
+      "aliases": [],
+      "releases": [
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2018-04-15"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2017-03-18"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/460616",
+      "fetched_at": "2026-11-11T15:42:13+01:00"
+    },
+    "1786250": {
+      "id": "tmdb:1786250",
+      "tmdb_id": 1786250,
+      "title": "Short cuts - Interstellar de Christopher Nolan",
+      "original_title": "Short cuts - Interstellar de Christopher Nolan",
+      "year": 2026,
+      "director": "Aliénor Doublet",
+      "directors": [
+        "Aliénor Doublet"
+      ],
+      "runtime": 0,
+      "aliases": [],
+      "releases": [
+        {
+          "country": "FR",
+          "type": 6,
+          "date": "2026-10-01"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1786250",
+      "fetched_at": "2026-11-11T15:42:13+01:00"
+    },
+    "552531": {
+      "id": "tmdb:552531",
+      "tmdb_id": 552531,
+      "title": "The Prom Goer's Interstellar Excursion",
+      "original_title": "The Prom Goer's Interstellar Excursion",
+      "year": null,
+      "director": "",
+      "directors": [],
+      "runtime": 0,
+      "aliases": [],
+      "releases": [],
+      "source_url": "https://www.themoviedb.org/movie/552531",
+      "fetched_at": "2026-11-11T15:42:13+01:00"
+    },
+    "660698": {
+      "id": "tmdb:660698",
+      "tmdb_id": 660698,
+      "title": "Faster Than Light: the Dream of Interstellar Flight",
+      "original_title": "Faster Than Light: the Dream of Interstellar Flight",
+      "year": 2017,
+      "director": "Thomas Lucas",
+      "directors": [
+        "Thomas Lucas"
+      ],
+      "runtime": 46,
+      "aliases": [
+        "Vuelo interestelar"
+      ],
+      "releases": [
+        {
+          "country": "US",
+          "type": 6,
+          "date": "2017-06-07"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/660698",
+      "fetched_at": "2026-11-11T15:42:13+01:00"
+    },
+    "763179": {
+      "id": "tmdb:763179",
+      "tmdb_id": 763179,
+      "title": "Cosmic Journey: The Voyager Interstellar Mission and Message",
+      "original_title": "Cosmic Journey: The Voyager Interstellar Mission and Message",
+      "year": 2003,
+      "director": "Phyllis Geller",
+      "directors": [
+        "Phyllis Geller"
+      ],
+      "runtime": 90,
+      "aliases": [],
+      "releases": [
+        {
+          "country": "US",
+          "type": 6,
+          "date": "2003-01-16"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/763179",
+      "fetched_at": "2026-11-11T15:42:14+01:00"
+    },
+    "1501040": {
+      "id": "tmdb:1501040",
+      "tmdb_id": 1501040,
+      "title": "The Future is Now: A Look Back at Interstellar",
+      "original_title": "The Future is Now: A Look Back at Interstellar",
+      "year": 2024,
+      "director": "",
+      "directors": [],
+      "runtime": 23,
+      "aliases": [],
+      "releases": [
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2024-12-10"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1501040",
+      "fetched_at": "2026-11-11T15:42:14+01:00"
+    },
+    "986255": {
+      "id": "tmdb:986255",
+      "tmdb_id": 986255,
+      "title": "How to Colonize the Stars: The Challenge of Interstellar Flight",
+      "original_title": "How to Colonize the Stars: The Challenge of Interstellar Flight",
+      "year": 2009,
+      "director": "Christian Darkin",
+      "directors": [
+        "Christian Darkin"
+      ],
+      "runtime": 55,
+      "aliases": [],
+      "releases": [
+        {
+          "country": "US",
+          "type": 6,
+          "date": "2009-06-09"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/986255",
+      "fetched_at": "2026-11-11T15:42:14+01:00"
+    },
+    "261443": {
+      "id": "tmdb:261443",
+      "tmdb_id": 261443,
+      "title": "Angry Planet",
+      "original_title": "Angry Planet",
+      "year": 2008,
+      "director": "Andrew Bellware",
+      "directors": [
+        "Andrew Bellware"
+      ],
+      "runtime": 102,
+      "aliases": [
+        "Interstellar Outlaws",
+        "Planet Terminator",
+        "Solar Vengeance"
+      ],
+      "releases": [
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2008-01-01"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/261443",
+      "fetched_at": "2026-11-11T15:42:14+01:00"
     }
   }
 }

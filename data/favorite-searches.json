@@ -1,0 +1,191 @@
+[
+  {
+    "query": "Interstellar",
+    "page": 1,
+    "total_pages": 2,
+    "total_results": 28,
+    "movies": [
+      {
+        "id": "tmdb:157336",
+        "tmdb_id": 157336,
+        "title": "Interstellar",
+        "original_title": "Interstellar",
+        "year": 2014,
+        "director": "Christopher Nolan",
+        "source_url": "https://www.themoviedb.org/movie/157336"
+      },
+      {
+        "id": "tmdb:529107",
+        "tmdb_id": 529107,
+        "title": "Inside 'Interstellar'",
+        "original_title": "Inside 'Interstellar'",
+        "year": 2015,
+        "director": "Jordan Goldberg, Jason Hillhouse",
+        "source_url": "https://www.themoviedb.org/movie/529107"
+      },
+      {
+        "id": "tmdb:398188",
+        "tmdb_id": 398188,
+        "title": "Interstellar Wars",
+        "original_title": "Interstellar Wars",
+        "year": 2016,
+        "director": "Marlene Mc'Cohen",
+        "source_url": "https://www.themoviedb.org/movie/398188"
+      },
+      {
+        "id": "tmdb:336592",
+        "tmdb_id": 336592,
+        "title": "La ciencia de Interstellar",
+        "original_title": "The Science of Interstellar",
+        "year": 2014,
+        "director": "Gail Willumsen",
+        "source_url": "https://www.themoviedb.org/movie/336592"
+      },
+      {
+        "id": "tmdb:287954",
+        "tmdb_id": 287954,
+        "title": "Lolita from Interstellar Space",
+        "original_title": "Lolita from Interstellar Space",
+        "year": 2014,
+        "director": "Dean McKendrick",
+        "source_url": "https://www.themoviedb.org/movie/287954"
+      },
+      {
+        "id": "tmdb:1391726",
+        "tmdb_id": 1391726,
+        "title": "Interstellar Stella",
+        "original_title": "Interstellar Stella",
+        "year": 2006,
+        "director": "Al Holmes, Al Taylor",
+        "source_url": "https://www.themoviedb.org/movie/1391726"
+      },
+      {
+        "id": "tmdb:1443305",
+        "tmdb_id": 1443305,
+        "title": "Container Interstellar",
+        "original_title": "Container Interstellar",
+        "year": 2001,
+        "director": "Helmut Herbst",
+        "source_url": "https://www.themoviedb.org/movie/1443305"
+      },
+      {
+        "id": "tmdb:1282990",
+        "tmdb_id": 1282990,
+        "title": "Interstellar Interference",
+        "original_title": "Interstellar Interference",
+        "year": 2023,
+        "director": "Joseph Diogo",
+        "source_url": "https://www.themoviedb.org/movie/1282990"
+      },
+      {
+        "id": "tmdb:1642987",
+        "tmdb_id": 1642987,
+        "title": "Primus Interstellar Drum Derby",
+        "original_title": "Primus Interstellar Drum Derby",
+        "year": 2025,
+        "director": "",
+        "source_url": "https://www.themoviedb.org/movie/1642987"
+      },
+      {
+        "id": "tmdb:1450827",
+        "tmdb_id": 1450827,
+        "title": "Interstellar Political Prisoner",
+        "original_title": "Interstellar Political Prisoner",
+        "year": 2016,
+        "director": "Liao WANG",
+        "source_url": "https://www.themoviedb.org/movie/1450827"
+      },
+      {
+        "id": "tmdb:301959",
+        "tmdb_id": 301959,
+        "title": "Interstellar: Nolan's Odyssey",
+        "original_title": "Interstellar: Nolan's Odyssey",
+        "year": 2014,
+        "director": "Dan Storey",
+        "source_url": "https://www.themoviedb.org/movie/301959"
+      },
+      {
+        "id": "tmdb:716603",
+        "tmdb_id": 716603,
+        "title": "Only Interstellar Pinball Lives Forever",
+        "original_title": "Only Interstellar Pinball Lives Forever",
+        "year": 2010,
+        "director": "Tristan Newcomb",
+        "source_url": "https://www.themoviedb.org/movie/716603"
+      },
+      {
+        "id": "tmdb:460616",
+        "tmdb_id": 460616,
+        "title": "Interstellar Civil War: Shadows of the Empire",
+        "original_title": "Interstellar Civil War: Shadows of the Empire",
+        "year": 2017,
+        "director": "Albert Pyun",
+        "source_url": "https://www.themoviedb.org/movie/460616"
+      },
+      {
+        "id": "tmdb:1786250",
+        "tmdb_id": 1786250,
+        "title": "Short cuts - Interstellar de Christopher Nolan",
+        "original_title": "Short cuts - Interstellar de Christopher Nolan",
+        "year": 2026,
+        "director": "Aliénor Doublet",
+        "source_url": "https://www.themoviedb.org/movie/1786250"
+      },
+      {
+        "id": "tmdb:552531",
+        "tmdb_id": 552531,
+        "title": "The Prom Goer's Interstellar Excursion",
+        "original_title": "The Prom Goer's Interstellar Excursion",
+        "year": null,
+        "director": "",
+        "source_url": "https://www.themoviedb.org/movie/552531"
+      },
+      {
+        "id": "tmdb:660698",
+        "tmdb_id": 660698,
+        "title": "Faster Than Light: the Dream of Interstellar Flight",
+        "original_title": "Faster Than Light: the Dream of Interstellar Flight",
+        "year": 2017,
+        "director": "Thomas Lucas",
+        "source_url": "https://www.themoviedb.org/movie/660698"
+      },
+      {
+        "id": "tmdb:763179",
+        "tmdb_id": 763179,
+        "title": "Cosmic Journey: The Voyager Interstellar Mission and Message",
+        "original_title": "Cosmic Journey: The Voyager Interstellar Mission and Message",
+        "year": 2003,
+        "director": "Phyllis Geller",
+        "source_url": "https://www.themoviedb.org/movie/763179"
+      },
+      {
+        "id": "tmdb:1501040",
+        "tmdb_id": 1501040,
+        "title": "The Future is Now: A Look Back at Interstellar",
+        "original_title": "The Future is Now: A Look Back at Interstellar",
+        "year": 2024,
+        "director": "",
+        "source_url": "https://www.themoviedb.org/movie/1501040"
+      },
+      {
+        "id": "tmdb:986255",
+        "tmdb_id": 986255,
+        "title": "How to Colonize the Stars: The Challenge of Interstellar Flight",
+        "original_title": "How to Colonize the Stars: The Challenge of Interstellar Flight",
+        "year": 2009,
+        "director": "Christian Darkin",
+        "source_url": "https://www.themoviedb.org/movie/986255"
+      },
+      {
+        "id": "tmdb:261443",
+        "tmdb_id": 261443,
+        "title": "Angry Planet",
+        "original_title": "Angry Planet",
+        "year": 2008,
+        "director": "Andrew Bellware",
+        "source_url": "https://www.themoviedb.org/movie/261443"
+      }
+    ],
+    "searched_at": "2026-11-11T15:42:14+01:00"
+  }
+]
