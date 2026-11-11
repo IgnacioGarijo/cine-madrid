@@ -59,6 +59,9 @@ class AdapterTests(unittest.TestCase):
         from test_tmdb import movie
         self.assertIsNotNone(identity_match({'title':'Akira','director':'Otomo, Katsuhiro'},[movie()])[0])
         self.assertIsNone(identity_match({'title':'Akira','director':'Otomo'},[movie()])[0])
+        joint=movie();joint['directors'].append('Otra directora')
+        self.assertIsNotNone(identity_match({'title':'Akira','director':'Katsuhiro Otomo'},[joint])[0])
+        self.assertIsNotNone(identity_match({'title':'Akira','director':'Otra directora, Otomo Katsuhiro'},[joint])[0])
 
     def test_capitol_uses_session_tabs_instead_of_inventing_every_date_in_range(self):
         page='<a href="/es/cartelera/akira/">Akira</a>'
@@ -68,7 +71,7 @@ class AdapterTests(unittest.TestCase):
         self.assertEqual(session['director'],'Katsuhiro Otomo');self.assertEqual(len(r.result.sessions),1)
 
     def test_morasol_reads_explicit_advance_dates_and_excludes_private_passes(self):
-        session=dict(Id=1,NombreEvento='Concierto',FechaSesion='01/01/2027',Hora=' 18:30',Sala='1')
+        session=dict(Id=1,NombreEvento='Concierto',FechaSesion='01/01/2027 (*6)',Hora=' 18:30',Sala='1')
         page="<script>addToJSON('s', "+json.dumps({'1':session,'2':dict(session,Id=2,PasePrivado=1)})+")</script>"
         r=reader('morasol',page);morasol(r)
         self.assertEqual(len(r.result.sessions),1)

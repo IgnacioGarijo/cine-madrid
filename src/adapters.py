@@ -105,7 +105,7 @@ def renoir(reader):
             room_node=a.find_parent(class_='pase-cartelera')
             room_match=re.search(r'sala\s+(\S+)',text(room_node),re.I)
             reader.result.add(text(film),datetime.combine(day,datetime.min.time())+timedelta(hours=int(time_match[1]),minutes=int(time_match[2])),
-                urljoin(url,film['href']),director,minutes(description),a['href'],version,room_match[1] if room_match else '',native=a['href'].rstrip('/').split('/')[-1])
+                urljoin(url,film['href']),director,minutes(description),a['href'],version,room_match[1] if room_match else '',native=a['href'].rstrip('/').split('/')[-1],tags=event_tags(text(film)))
 
 def verdi(reader):
     c=reader.cinema;origin=urljoin(c['url'],'/')
@@ -231,7 +231,12 @@ def morasol(reader):
     for session in records.values():
         if session.get('PasePrivado'):continue
         title=session['NombreEvento'];url,duration=films.get(normalize(title),(c['url'],None))
-        start=datetime.strptime(session['FechaSesion']+' '+session['Hora'].strip(),'%d/%m/%Y %H:%M')
+        # FechaSesion may append a tariff footnote, e.g. '11/11/2026 (*6)'.
+        day=parse_day(session['FechaSesion'],reader.today)
+        time_match=re.fullmatch(r'\s*(\d{1,2}):(\d{2})\s*',session['Hora'])
+        if not time_match:
+            reader.partial(str(session['Id']),'Hora de sesión no reconocida.',url);continue
+        start=datetime.combine(day,datetime.min.time())+timedelta(hours=int(time_match[1]),minutes=int(time_match[2]))
         # The official ficha opens the correct sale flow; no guessed purchase URL.
         reader.result.add(title,start,url,duration=duration,room=str(session.get('Sala','')),native=session['Id'],tags=event_tags(session.get('InfoAdicional','')))
 

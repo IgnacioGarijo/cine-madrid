@@ -1,4 +1,4 @@
-import {madridDay, filterSessions, countByDay, monthCells} from './calendar-utils.js?v=0.4.0';
+import {madridDay, filterSessions, countByDay, monthCells} from './calendar-utils.js?v=0.4.1';
 
 const $ = selector => document.querySelector(selector);
 const all = selector => [...document.querySelectorAll(selector)];
@@ -72,7 +72,7 @@ function renderSessions(target, sessions) {
     const badges = el('div', undefined, 'badges');
     const tags = [session.version, session.format, nearLabel(cinema),
       session.category === 'repertory' ? 'Reposición verificada' : null,
-      session.stale || offlineData ? 'Última lectura guardada' : null, ...(session.special_tags || [])].filter(Boolean);
+      session.stale || offlineData ? 'Última lectura guardada' : null, ...(session.special_tags || []).map(tag => ({live_music:'Música en directo',discussion:'Coloquio',guests:'Con invitados',marathon:'Maratón o programa doble'}[tag] || tag))].filter(Boolean);
     for (const tag of tags) badges.append(el('span', tag, 'badge'));
     body.append(badges);
     if (session.tmdb_url) body.append(link(`Ficha TMDB${session.year ? ' · ' + session.year : ''} ↗`,session.tmdb_url,'tmdb-film-link'));

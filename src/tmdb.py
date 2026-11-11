@@ -16,7 +16,9 @@ def title_variants(title):
     cleaned = re.sub(r'\(\s*\)', ' ', cleaned)
     cleaned = re.sub(r'\s+', ' ', cleaned).strip(' -:')
     variants = [cleaned]
-    event_free = re.sub(r'\b(?:live\s+by|con\s+acompañamiento\s+de|con\s+música\s+de)\b.*$', '',cleaned,flags=re.I).strip()
+    without_cycle = re.sub(r'\s*\[[^\]]*\]\s*',' ',cleaned).strip()
+    if without_cycle != cleaned:variants.append(without_cycle)
+    event_free = re.sub(r'\b(?:live\s+by|con\s+acompañamiento\s+de|con\s+música\s+(?:de|en\s+directo))\b.*$', '',cleaned,flags=re.I).strip()
     if event_free != cleaned: variants.append(event_free)
     if ':' in cleaned:
         variants.append(cleaned.split(':',1)[1].strip())
@@ -43,7 +45,7 @@ def director_matches(source, movie):
     tokens=lambda value:set(re.findall(r'[a-z0-9]+',unicodedata.normalize('NFKD',value.casefold()).encode('ascii','ignore').decode()))
     credited=tokens(source.get('director',''))
     names=[tokens(d) for d in movie.get('directors',[])]
-    return bool(credited and names and credited==set().union(*names))
+    return bool(credited and names and (credited in names or credited==set().union(*names)))
 
 
 def identity_match(source, candidates):

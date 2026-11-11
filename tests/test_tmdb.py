@@ -47,6 +47,8 @@ class TMDBTests(unittest.TestCase):
         self.assertIn('DEPREDADOR 2',title_variants('AETERNA: DEPREDADOR 2 (VOSE)'))
         self.assertIn('Akira',title_variants('Akira (VOSE)'))
         self.assertIn('METROPOLIS',title_variants('METROPOLIS live by Morales 35mm'))
+        self.assertIn('TODO SOBRE MI MADRE',title_variants('TODO SOBRE MI MADRE [WILDER CINEMA]'))
+        self.assertIn('EL HOMBRE MOSCA',title_variants('EL HOMBRE MOSCA CON MÚSICA EN DIRECTO'))
 
     def test_abbreviated_title_still_requires_director_and_duration(self):
         m=movie(title='Adolescencia, sexo y muerte en campamento Miasma',director='Jane Schoenbrun',runtime=110)
