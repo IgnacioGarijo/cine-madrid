@@ -1,0 +1,6 @@
+{
+  "repertory_min_days": 365,
+  "current_release_max_days": 180,
+  "request_budget": 300,
+  "description": "Identidad respaldada por título o alias y dirección. Reposición automática si existe estreno comercial en salas, nacional o internacional, al menos 365 días antes de la sesión. La ventana inicial de 180 días se considera estreno actual. Entre ambas ventanas se revisa el contexto; los ciclos de clásicos son evidencia independiente. Las premières de festivales no bastan."
+}

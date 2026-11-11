@@ -2,8 +2,9 @@ import argparse
 import shutil
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from .core import ROOT,MADRID,Incidents,now,read_json,write_json,trusted_identity
+from .core import ROOT,MADRID,Incidents,now,read_json,write_json,trusted_identity,normalize,clean_title
 from .sources import Fetcher,PAZ_URL,CLASSIC_URL,SOURCE_ID,parse_paz,classic_members
+from .tmdb import enrich
 
 def run(refresh=True, newsletter=False):
     path=ROOT/'data/public.json'
@@ -42,31 +43,58 @@ def run(refresh=True, newsletter=False):
             incidents.add(SOURCE_ID,'read_failed','source','No se pudo actualizar la cartelera ('+type(exc).__name__+'). Se conserva la última lectura válida.',PAZ_URL,'error')
             sessions=[dict(s,stale=True) for s in sessions]
             sources=[dict(id=SOURCE_ID,status='error',last_attempt=now(),last_success=next((x.get('last_success') for x in old.get('sources',[]) if x['id']==SOURCE_ID),None),url=PAZ_URL)]
+    previous_movies={m['id']:m for m in old.get('movies',[])}
+    unchanged_ids=set()
     for movie in movies:
+        previous=previous_movies.get(movie['id'],{})
+        unchanged=(normalize(clean_title(movie['title']))==normalize(clean_title(previous.get('title','')))
+                   and normalize(movie.get('director',''))==normalize(previous.get('director','')))
+        if unchanged:unchanged_ids.add(movie['id'])
+        if refresh and unchanged and previous.get('identity_status')=='verified':
+            for field in ['canonical_id','tmdb_id','identity_status','identity_evidence','canonical_title','original_title',
+                          'year','aliases','tmdb_url','tmdb_runtime','tmdb_releases']:
+                if field in previous: movie[field]=previous[field]
         identity=trusted_identity(movie,catalog)
-        if identity:
+        if identity and movie.get('identity_status')!='verified':
             movie.update(canonical_id=identity['id'],identity_status='verified')
-        else:
-            movie['identity_status']='pending_agent'
-            if refresh:
-                incidents.add(SOURCE_ID,'identity_pending',movie['id'],'Identidad pendiente de verificar: '+movie['title'],movie['source_url'],'info')
+        movie.setdefault('identity_status','pending_tmdb')
+    tmdb_status=old.get('tmdb',{'status':'not_configured','matched_movies':0,'total_movies':len(movies)})
+    if refresh:
+        cache=read_json(ROOT/'data/tmdb_cache.json',{})
+        rules=read_json(ROOT/'config/classification.json')
+        tmdb_status=enrich(movies,sessions,cache,rules,incidents)
+        write_json(ROOT/'data/tmdb_cache.json',cache)
+        if tmdb_status['status']=='ok':checked.add('tmdb')
     movie_map={m['id']:m for m in movies}
     for s in sessions:
         m=movie_map.get(s['movie_id'],{})
         s['canonical_id']=m.get('canonical_id')
         s['identity_status']=m.get('identity_status','pending_agent')
-        # Classification needs original release AND context; no age-only guess.
+        s['search_titles']=list(dict.fromkeys(t for t in [m.get('canonical_title'),m.get('original_title'),*m.get('aliases',[])] if t))
+        s['tmdb_url']=m.get('tmdb_url')
+        s['year']=m.get('year')
+        # Explicit classic programmes remain independent classification evidence.
         if m.get('category'): s['category']=m['category']
+        if refresh and m.get('identity_status')=='verified' and 'classification_evidence' not in s:
+            previous_session=next((p for p in old.get('sessions',[]) if p['id']==s['id']),None)
+            if previous_session and m['id'] in unchanged_ids:
+                for field in ['category','classification_evidence']:
+                    if field in previous_session:s[field]=previous_session[field]
     for cinema in cinemas:
         if cinema['id']!=SOURCE_ID:
             incidents.add(cinema['id'],'source_pending',cinema['id'],'Fuente pendiente de integrar; no se incluyen sus sesiones.',cinema.get('url',''),'info')
     inventory_ids={c['id'] for c in cinemas}
     checked.update(i['source_id'] for i in old.get('incidents',[]) if i['code']=='source_pending' and i['source_id'] not in inventory_ids)
-    data=dict(version='0.2.1',generated_at=now(),coverage_complete=False,cinemas=cinemas,sources=sources,
-              movies=movies,sessions=sessions,incidents=incidents.finish(checked),agent_status='waiting_for_copilot')
+    data=dict(version='0.3.0',generated_at=now(),coverage_complete=False,cinemas=cinemas,sources=sources,
+              movies=movies,sessions=sessions,incidents=incidents.finish(checked),agent_status='waiting_for_copilot',tmdb=tmdb_status)
     write_json(path,data)
     build(data,newsletter)
     print(f"Sesiones: {len(sessions)} | películas: {len(movies)} | fuentes activas: {sum(s['status']=='ok' for s in sources)} | incidencias abiertas: {sum(i['status']=='open' for i in data['incidents'])}")
+    if refresh:
+        print(f"TMDB: {tmdb_status['status']} | identificadas: {tmdb_status['matched_movies']}/{tmdb_status['total_movies']} | consultas: {tmdb_status['api_requests']}")
+        for movie in movies:
+            categories=sorted({s['category'] for s in sessions if s['movie_id']==movie['id']})
+            print(f"{movie['title']} | {movie.get('canonical_id','sin identificar')} | {movie['identity_status']} | {','.join(categories)}")
 
 def ics_escape(value):
     return str(value).replace('\\','\\\\').replace('\n','\\n').replace(',','\\,').replace(';','\\;')
@@ -98,7 +126,14 @@ def build(data,newsletter=False):
     dist=ROOT/'dist'
     dist.mkdir(exist_ok=True)
     shutil.copytree(ROOT/'web',dist,dirs_exist_ok=True)
-    shutil.copy2(ROOT/'config/catalog.json',dist/'catalog.json')
+    catalog={m['id']:m for m in read_json(ROOT/'config/catalog.json',[])}
+    for movie in data['movies']:
+        if movie.get('identity_status')=='verified' and movie.get('tmdb_id'):
+            catalog[movie['canonical_id']]={
+                'id':movie['canonical_id'],'tmdb_id':movie['tmdb_id'],'title':movie['canonical_title'],
+                'original_title':movie.get('original_title',''),'aliases':movie.get('aliases',[]),
+                'year':movie.get('year'),'director':movie.get('director',''),'source_url':movie['tmdb_url']}
+    write_json(dist/'catalog.json',sorted(catalog.values(),key=lambda m:m['title'].casefold()))
     write_json(dist/'data.json',data)
     (dist/'calendario.ics').write_text(calendar(data),encoding='utf-8',newline='')
     (dist/'.nojekyll').touch()

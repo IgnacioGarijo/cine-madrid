@@ -36,12 +36,11 @@ jobs:
       - run: node --test tests/calendar.test.mjs tests/pwa.test.mjs
       - name: Leer fuentes y construir
         env:
+          TMDB_READ_TOKEN: ${{ secrets.TMDB_READ_TOKEN }}
           PUBLISH_NEWSLETTER: ${{ inputs.newsletter || github.event.schedule == '17 17 * * 4' }}
         run: |
           if [ "$PUBLISH_NEWSLETTER" = "true" ]; then
             python -m src.pipeline --newsletter
-          elif [ "${{ github.event_name }}" = "push" ]; then
-            python -m src.pipeline --build-only
           else
             python -m src.pipeline
           fi

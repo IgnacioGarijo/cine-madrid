@@ -1,4 +1,4 @@
-# Cine Madrid · v0.2.1
+# Cine Madrid · v0.3.0
 
 Agenda personal de cine en Madrid capital, reposiciones y programación futura.
 

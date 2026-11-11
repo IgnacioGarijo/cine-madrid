@@ -86,7 +86,8 @@ def parse_paz(html, today, incidents):
                     version='VOSE' if 'VOSE' in (title+' '+text) else 'Sin especificar',
                     format=next((x for x in ['70mm','35mm','4K'] if x.casefold() in (title+' '+text).casefold()),None),
                     booking_url=urljoin(PAZ_URL,link['href']),source_url=detail_url,status='confirmed',stale=False,
-                    category='premiere' if block.select_one('.cartel-novedad') else 'unclassified',special_tags=[])
+                    category='premiere' if block.select_one('.cartel-novedad') else 'unclassified',
+                    source_category='premiere' if block.select_one('.cartel-novedad') else 'unclassified',special_tags=[])
     if not sessions: raise ValueError('No se han leído sesiones; se conserva la última lectura válida.')
     return list(sessions.values()),list(movies.values())
 

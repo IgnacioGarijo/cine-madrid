@@ -1,4 +1,4 @@
-import {madridDay, filterSessions, countByDay, monthCells} from './calendar-utils.js?v=0.2.1';
+import {madridDay, filterSessions, countByDay, monthCells} from './calendar-utils.js?v=0.3.0';
 
 const $ = selector => document.querySelector(selector);
 const all = selector => [...document.querySelectorAll(selector)];
@@ -75,6 +75,7 @@ function renderSessions(target, sessions) {
       session.stale || offlineData ? 'Última lectura guardada' : null, ...(session.special_tags || [])].filter(Boolean);
     for (const tag of tags) badges.append(el('span', tag, 'badge'));
     body.append(badges);
+    if (session.tmdb_url) body.append(link(`Ficha TMDB${session.year ? ' · ' + session.year : ''} ↗`,session.tmdb_url,'tmdb-film-link'));
     const slots = el('div', undefined, 'times');
     for (const item of list) {
       const slot = el('div', undefined, 'slot');
@@ -188,8 +189,8 @@ function renderWatch() {
 }
 function renderCatalog() {
   const box = $('#catalog'); box.replaceChildren();
-  const query = norm($('#catalog-query').value);
-  for (const movie of catalog.filter(m => !query || norm(m.title + ' ' + m.director + ' ' + m.year).includes(query))) {
+    const query = norm($('#catalog-query').value);
+  for (const movie of catalog.filter(m => !query || [m.title,m.original_title,m.director,String(m.year),...(m.aliases || [])].some(title => norm(title).includes(query)))) {
     const card = el('article', undefined, 'card'), added = watch.some(m => m.id === movie.id);
     card.append(el('h3',movie.title), el('p', `${movie.year} · ${movie.director}`));
     const button = el('button', added ? 'En tus favoritas' : '+ Añadir a favoritas');
@@ -226,7 +227,8 @@ async function boot() {
     const active = data.sources.filter(s => s.status === 'ok').length;
     $('#coverage').textContent = `Cobertura parcial · ${active} fuente${active === 1 ? '' : 's'} leída${active === 1 ? '' : 's'} correctamente · ${data.cinemas.length} espacios en inventario provisional. Las demás carteleras están pendientes de integrar.`;
     $('#inventory-count').textContent = `${data.cinemas.length} espacios`;
-    $('#agent-status').textContent = 'Agente pendiente de activar con Copilot. Las identidades sin verificar no generan avisos de coincidencia. Telegram y búsqueda general por TMDB pendientes de credenciales.';
+    const tmdb = data.tmdb || {};
+    $('#agent-status').textContent = `TMDB: ${tmdb.status === 'ok' ? 'conectado' : tmdb.status === 'partial' ? 'lectura parcial' : 'pendiente o no disponible'} · ${tmdb.matched_movies || 0}/${tmdb.total_movies || data.movies.length} películas identificadas en la última consulta. Copilot sigue pendiente para las ambigüedades. Las identidades sin verificar no generan avisos de coincidencia.`;
     for (const cinema of data.cinemas) {
       if (cinema.status === 'active') {
         const option = el('option',cinema.name); option.value = cinema.id; $('#cinema').append(option);

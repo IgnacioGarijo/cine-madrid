@@ -8,7 +8,7 @@ export function filterSessions(sessions, filters, {today = madridDay(), ignoreDa
   return sessions.filter(session => {
     const day = session.start.slice(0, 10), time = session.start.slice(11, 16);
     return day >= today
-      && (!query || normalize(session.title + ' ' + (session.director || '')).includes(query))
+      && (!query || [session.title,session.director,...(session.search_titles || [])].some(title => normalize(title).includes(query)))
       && (ignoreDay || !filters.day || day === filters.day)
       && (!filters.cinema || session.cinema_id === filters.cinema)
       && (!filters.category || (filters.category === 'special' ? session.special_tags?.length > 0 : session.category === filters.category))

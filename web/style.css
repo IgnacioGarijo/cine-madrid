@@ -38,6 +38,10 @@ dialog { width:min(860px,calc(100% - 32px)); max-height:calc(100dvh - 40px); pad
 .calendar-key { display:flex; align-items:center; justify-content:space-between; gap:8px; font-size:11px; color:var(--muted); flex-wrap:wrap; margin-top:8px; }.calendar-key i { display:inline-block; width:8px; height:8px; border-radius:50%; background:var(--orange); margin-right:4px; }.calendar-key button { border:0; padding:8px 0; font-size:11px; }.calendar-day-heading { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px; margin-top:18px; }.calendar-day-heading h3 { margin:0; font-size:18px; }.calendar-day-heading button { font-size:12px; }.calendar-export { border-top:1px solid var(--line); padding-top:16px; margin-top:20px; }.calendar-export a { display:inline-flex; align-items:center; min-height:44px; font-size:13px; }.calendar-export small { display:block; font-size:11px; color:var(--muted); }
 .install-dialog { max-width:470px; }.install-dialog img { border-radius:17px; }.install-dialog p { font-size:14px; }.skip-link { position:fixed; left:12px; top:-100px; padding:12px; background:var(--ink); color:white; z-index:10; }.skip-link:focus { top:12px; }.sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
 [hidden] { display:none!important; }
+.tmdb-film-link { display:inline-flex; align-items:center; min-height:44px; font-size:11px; color:var(--muted); }
+.tmdb-credit { margin-top:22px; padding-top:16px; border-top:1px solid var(--line); }
+.tmdb-credit img { width:100px; height:auto; }
+.tmdb-credit p { font-size:12px; color:var(--muted); }
 @media(min-width:760px) { .filters { grid-template-columns:minmax(0,1fr) 310px; align-items:end; }.advanced-filters { grid-column:1/-1; } }
 @media(max-width:759px) {
   header,main,footer { padding-left:max(18px,env(safe-area-inset-left)); padding-right:max(18px,env(safe-area-inset-right)); }
