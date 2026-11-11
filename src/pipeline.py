@@ -94,7 +94,7 @@ def run(refresh=True, newsletter=False):
             incidents.add(cinema['id'],'source_pending',cinema['id'],cinema.get('reading_note','Fuente pendiente de integrar; no se incluyen sus sesiones.'),cinema.get('url',''),'info')
     inventory_ids={c['id'] for c in cinemas}
     checked.update(i['source_id'] for i in old.get('incidents',[]) if i['code']=='source_pending' and i['source_id'] not in inventory_ids)
-    data=dict(version='0.6.0',generated_at=now(),coverage_complete=False,cinemas=cinemas,sources=sources,
+    data=dict(version='0.6.1',generated_at=now(),coverage_complete=False,cinemas=cinemas,sources=sources,
               movies=movies,sessions=sessions,incidents=incidents.finish(checked),agent_status='waiting_for_copilot',tmdb=tmdb_status)
     write_json(path,data)
     build(data,newsletter)

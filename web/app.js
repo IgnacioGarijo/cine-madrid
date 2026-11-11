@@ -1,6 +1,6 @@
-import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.6.0';
+import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.6.1';
 
-import {addressCandidates, validOrigin} from './search-utils.js?v=0.6.0';
+import {addressCandidates, validOrigin} from './search-utils.js?v=0.6.1';
 
 const $ = selector => document.querySelector(selector);
 const all = selector => [...document.querySelectorAll(selector)];
@@ -69,13 +69,10 @@ function renderSessions(target, sessions, {contextSessions=sessions}={}) {
     const title = movie.canonical_title || first.title;
     heading.append(el('h3',title));
     const meta = [movie.year || first.year, movie.director || first.director].filter(Boolean).join(' · ');
-    if (meta) heading.append(el('p',meta,'meta'));
-    const badges = el('div',undefined,'badges');
-    if (group.sessions.some(s => s.category === 'repertory')) badges.append(el('span','Reposición','badge'));
-    if (group.sessions.some(s => s.special_tags?.length)) badges.append(el('span','Incluye eventos','badge event-badge'));
-    if (group.vote_count !== null) badges.append(el('span',new Intl.NumberFormat('es-ES').format(group.vote_count)+' valoraciones TMDB','badge'));
-    heading.append(badges);
-    if (first.tmdb_url) heading.append(link('Ficha TMDB ↗',first.tmdb_url,'tmdb-film-link'));
+    const metadata = el('p',undefined,'meta');
+    if (meta) metadata.append(el('span',meta));
+    if (first.tmdb_url) metadata.append(link('Ficha TMDB ↗',first.tmdb_url,'tmdb-film-link'));
+    if (metadata.childNodes.length) heading.append(metadata);
     article.append(heading);
     const available=context.get(group.key) || group.sessions;
     const dates=filmDays(available), dateControl=el('label',undefined,'movie-date-control'), dateSelect=el('select');
@@ -204,7 +201,11 @@ function renderCalendar() {
     button.disabled = cell.day < today;
     button.append(el('span', cell.number, 'day-number'));
     if (count) button.append(el('span', `${count} ${count === 1 ? 'sesión' : 'sesiones'}`, 'day-count'));
-    button.onclick = () => setDay(cell.day, {focus:true});
+    button.onclick = () => {
+      setDay(cell.day);
+      $('#calendar-dialog').close();
+      $('#calendar-preview').focus({preventScroll:true});
+    };
     grid.append(button);
   }
   $('#show-day-in-list').hidden = !selected;
