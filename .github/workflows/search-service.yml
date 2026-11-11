@@ -24,6 +24,7 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install -r requirements.txt
+      - run: python -m unittest discover -s tests -q
       - run: node --test services/tmdb/worker.test.mjs tests/calendar.test.mjs tests/pwa.test.mjs
       - name: Desplegar y comprobar Cloudflare
         env:
