@@ -47,6 +47,14 @@ test('multiple cinemas and the combined repertory/events filter preserve their u
   const source=[{id:1,cinema_id:'a',category:'repertory'},{id:2,cinema_id:'b',category:'premiere',special_tags:['live_music']},{id:3,cinema_id:'c',category:'repertory'},{id:4,cinema_id:'a',category:'premiere'}].map(s=>({...s,start:'2026-11-12T20:00:00+01:00'}));
   assert.deepEqual(filterSessions(source,{cinemas:['a','b'],category:'repertory_events'},{today:'2026-11-11'}).map(s=>s.id),[1,2]);
 });
+
+test('category selections combine their union and an empty selection shows no films',()=>{
+  const sessions=[{id:1,category:'repertory'},{id:2,category:'premiere'},{id:3,category:'unclassified'},{id:4,category:'unclassified',special_tags:['live_music']}].map(s=>({...s,start:'2026-11-12T20:00:00+01:00'}));
+  const options={today:'2026-11-11'};
+  assert.deepEqual(filterSessions(sessions,{categories:['repertory_events','premiere']},options).map(s=>s.id),[1,2,4]);
+  assert.deepEqual(filterSessions(sessions,{categories:[]},options),[]);
+  assert.equal(filterSessions(sessions,{categories:['repertory_events','premiere','unclassified']},options).length,4);
+});
 test('one film unites cinemas, days and aliases without conflating unverified homonyms', () => {
   const base={canonical_id:'tmdb:149',identity_status:'verified',version:'VOSE'};
   const sessions=[{...base,movie_id:'a:1',title:'Akira',cinema_id:'a',start:'2026-11-12T20:00:00+01:00'},{...base,movie_id:'b:2',title:'AKIRA (1988)',cinema_id:'b',start:'2026-11-13T21:00:00+01:00'},

@@ -1,4 +1,4 @@
-:root { --ink:#122c2a; --paper:#f5f3ec; --orange:#ce4b27; --muted:#5e706b; --line:#d7ded2; --pale:#e9eddf; --white:#fffef9; }
+:root { --ink:#293f4e; --paper:#faf7f2; --orange:#954c59; --muted:#65747c; --line:#ded9d4; --pale:#eee8e4; --white:#fffdfa; }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; scrollbar-gutter:stable; }
 body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
@@ -73,3 +73,25 @@ dialog { width:min(860px,calc(100% - 32px)); max-height:calc(100dvh - 40px); pad
 .calendar-aside{padding:12px;display:flex;align-items:center;justify-content:space-between;gap:10px}.calendar-caption .selected-date{font-size:13px;margin:0 0 6px}.calendar-preview{margin:0;width:140px;flex-shrink:0}.calendar-dialog .dialog-header{position:sticky;top:-24px;background:var(--paper);padding:10px 0;z-index:3}.collapse-calendar{font-size:12px;padding:8px 10px;min-height:44px}.calendar-collapse-bottom{margin-top:16px}.calendar-day-heading:has(h3:empty){margin-top:0}
 .address-suggestions{display:grid;gap:6px;margin-top:10px}.address-option{justify-content:flex-start;text-align:left;background:var(--white);font-size:13px}.favorite-search{max-height:52dvh;overflow-y:auto}.favorite-row{align-items:center}
 @media(max-width:759px){.cinema-dropdown .cinema-options{grid-template-columns:1fr;max-height:290px}.calendar-aside{padding:12px}.calendar-preview{width:135px}.calendar-caption .selected-date{max-width:150px}.calendar-dialog .dialog-header{top:-18px}.quick-controls{justify-content:flex-end}.quick-controls>button{min-width:0}.movie-date-control{width:100%}}
+
+/* Cinema Paradiso: blue projection light, burgundy seats and a light ivory canvas. */
+header { width:100%; min-height:280px; align-items:flex-end; padding:32px max(32px,calc((100% - 1116px)/2)); background:linear-gradient(90deg,rgba(22,37,49,.62),rgba(22,37,49,.05) 75%),url('images/cinema-paradiso.jpg') center 44%/cover; }
+.brand { color:#fffaf4; text-shadow:0 2px 14px #18283599; }.brand-mark { color:#ead3c7; }.tagline { color:#f3eae3; }
+.install-button { align-self:flex-start; color:#fffaf4; background:#293f4e55; border-color:#fff8; backdrop-filter:blur(5px); }.install-button:hover { background:#293f4eaa; }
+.primary:hover { background:#405b6e; }input,select { border-color:#cdd0d2; }dialog::backdrop { background:#25374688; }
+.filters { grid-template-columns:minmax(0,1fr) auto; align-items:center; gap:10px; }.filters .search-label input { height:48px; }.quick-controls>button { min-width:0; min-height:48px; white-space:nowrap; }
+.filters>.advanced-filters { grid-column:1/-1; }
+.category-options { display:grid; grid-template-columns:1.4fr .8fr 1fr; gap:6px; }.category-options button { min-width:0; white-space:nowrap; font-size:12px; padding:8px 6px; }
+.results-heading { flex-wrap:nowrap; margin-bottom:6px; }.results-heading .sort-control { width:auto; max-width:195px; flex-shrink:1; }.sort-control select { min-height:40px; font-size:12px; padding:8px 25px 8px 10px; }
+.movie-heading { display:block; margin-bottom:8px; line-height:1.7; }.movie-heading h3 { display:inline; margin:0 10px 0 0; }.movie-heading .meta { display:inline; margin:0; }.movie-heading .meta>span { margin-right:10px; }.movie-heading .tmdb-film-link { white-space:nowrap; }
+.movie-date-control { margin:8px 0 7px; }
+.calendar-aside { display:block; padding:0; border:0; background:transparent; }.calendar-preview { width:100%; margin:0; padding:12px; gap:6px; background:var(--white); }.mini-month { font-size:13px; }.mini-calendar { max-width:300px; margin:auto; gap:2px; }.mini-calendar span { font-size:11px; line-height:21px; }.mini-calendar .has-sessions { background:#e3e9ed; }.calendar-day.has-sessions { border-color:#bac6cf; }.calendar-day.selected .day-count { color:#e3e9ed; }
+.slot { border-color:#c6cbd0; }.slot.event-slot { background:#f8edef; }.event-label,.event-badge { background:#eed5db; color:#753445; }
+@media(max-width:759px) {
+  header { min-height:220px; padding:22px 18px; background-position:62% 43%; }.brand { gap:6px; }.brand h1 { font-size:38px; }.brand-mark { font-size:34px; }.tagline { font-size:12px; }.install-button { padding:7px; }.install-button>span:last-child { display:none; }
+  .filters { grid-template-columns:minmax(0,1fr) auto; gap:8px; }.search-label input { font-size:14px; padding-left:32px; }.search-icon { left:10px; font-size:25px; }.quick-controls>button { padding:8px; font-size:11px; gap:4px; }
+  .category-options { gap:5px; }.category-options button { font-size:clamp(10px,2.8vw,12px); padding:8px 4px; }
+  .session-layout { gap:20px; }.calendar-aside { padding:0; max-width:380px; width:100%; justify-self:center; }.calendar-preview { width:100%; padding:10px 14px; }.mini-calendar span { font-size:11px; line-height:19px; }.mini-month { font-size:12px; }
+  .results-heading h2 { font-size:20px; }.results-heading .sort-control { max-width:170px; }.movie-group h3 { font-size:20px; }
+}
+@media(max-width:360px) { header { min-height:205px; }.brand h1 { font-size:34px; }.brand-mark { display:none; }.quick-controls>button { font-size:10px; }.category-options button { font-size:10px; }.sort-control select { font-size:11px; } }

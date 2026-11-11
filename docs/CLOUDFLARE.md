@@ -10,19 +10,19 @@ El servicio está preparado en `services/tmdb`. La web permanece en GitHub Pages
 4. Abre https://github.com/IgnacioGarijo/cine-madrid/settings/secrets/actions y crea dos **Repository secrets**:
    - `CLOUDFLARE_ACCOUNT_ID`: el identificador del paso 2.
    - `CLOUDFLARE_API_TOKEN`: el token del paso 3.
-   - Para editar favoritas desde la app: `FAVORITES_OWNER_SECRET`, una contraseña personal larga. Se copia como secreto al Worker; no se publica en Pages.
+   - Opcional, sólo si se desactiva la edición pública: `FAVORITES_OWNER_SECRET`. No se publica en Pages.
    No pegues el token en una issue, en el código ni en el chat.
 5. Ve a https://github.com/IgnacioGarijo/cine-madrid/actions/workflows/search-service.yml y pulsa **Run workflow**, rama `main`.
 
 El flujo despliega el Worker, copia directamente el secreto `TMDB_READ_TOKEN` que ya existe en GitHub a un secreto de Cloudflare, comprueba una búsqueda y conecta la URL pública en la web. No necesitas volver a copiar la clave de TMDB. La configuración de Pages solo cambia si la comprobación funciona.
 
-Después, escribe «Piratas del» en Añadir película. Las sugerencias se consultan automáticamente mientras escribes. Al pulsar Añadir, la película se guarda directamente. La primera vez en cada dispositivo se solicita la contraseña personal y se recuerda una sesión durante 30 días. La contraseña no se guarda en el navegador: se guarda un token de sesión firmado. Cerrar acceso de edición lo elimina de ese dispositivo. Cambiar el secreto del Worker invalida todas las sesiones.
+Después, escribe «Piratas del» en Añadir película. Las sugerencias se consultan automáticamente mientras escribes. Al pulsar Añadir, la película se guarda directamente. Desde v0.8.0 la edición es pública por petición del propietario: cualquiera puede añadir y quitar películas sin contraseña. `PUBLIC_FAVORITES=true` controla el acceso en el servidor y `public_favorites` en la configuración publicada adapta la interfaz. Se mantiene la validación de identidad TMDB, el control de origen y el límite de peticiones.
 
-La lista pública vive en un Durable Object SQLite del plan Free. Se inicializa una sola vez con `config/favorites.json`; los despliegues posteriores conservan sus datos. GET `/favorites` permite consultar la lista al navegador y al bot. Añadir y quitar requieren una sesión válida y el origen de la app. El servidor vuelve a consultar TMDB por ID antes de guardar título, año, dirección y alias. El navegador conserva una copia de lectura para cuando no hay conexión; no presenta cambios fallidos como guardados. La publicación diaria actualiza además la copia del repositorio y deja incidencia si no consigue leerla.
+La lista pública vive en un Durable Object SQLite del plan Free. Se inicializa una sola vez con `config/favorites.json`; los despliegues posteriores conservan sus datos. GET `/favorites` permite consultar la lista al navegador y al bot. El servidor vuelve a consultar TMDB por ID antes de guardar título, año, dirección y alias. El navegador conserva una copia de lectura para cuando no hay conexión; no presenta cambios fallidos como guardados. La publicación diaria actualiza además la copia del repositorio y deja incidencia si no consigue leerla. La modalidad opcional con contraseña conserva sesiones firmadas de 30 días.
 
 ## Qué está verificado y qué falta
 
-- Pruebas de búsqueda, sesiones, caducidad, acceso denegado, identidad verificada, persistencia, duplicados y errores de TMDB. Las escrituras de favoritas están protegidas y no se permiten URLs de destino arbitrarias.
+- Pruebas de búsqueda, edición pública, sesiones opcionales, caducidad, control de origen, identidad verificada, persistencia, duplicados y errores de TMDB. No se permiten URLs de destino arbitrarias.
 - Respuestas de búsqueda en caché durante 15 minutos y límite de 30 peticiones por minuto por IP y ubicación de Cloudflare. Las redes compartidas pueden compartir ese límite; no es una cuota global estricta.
 - La clave no aparece en el código, la configuración publicada, las respuestas ni los argumentos de los comandos de despliegue.
 - Servicio activado el 11 de noviembre de 2026 en `https://cine-madrid-tmdb.garijo-io.workers.dev/search`, tras corregir los permisos del token. El flujo [43056790212](https://github.com/IgnacioGarijo/cine-madrid/actions/runs/43056790212) desplegó el Worker y publicó Pages. Verificados HTTP 200 y sugerencias automáticas en la web para «Piratas del», con títulos, años e identificadores TMDB en los enlaces de Añadir. La búsqueda mediante GitHub se conserva como alternativa si falla el servicio.

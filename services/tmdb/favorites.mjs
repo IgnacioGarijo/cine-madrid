@@ -69,17 +69,19 @@ export async function handleFavorites(request,env,{upstreamFetch=fetch}={}) {
   if(!publicRead && request.headers.get('Origin')!==allowed)return json({error:'origin_not_allowed'},403);
   if(!env.FAVORITES)return json({error:'not_configured'},503);
   if(publicRead)return env.FAVORITES.get(env.FAVORITES.idFromName('public-watchlist')).fetch(new Request('https://favorites/favorites'));
-  if(!env.FAVORITES_OWNER_SECRET)return json({error:'owner_not_configured'},503);
+  const publicEditing=env.PUBLIC_FAVORITES==='true';
+  if(!publicEditing && !env.FAVORITES_OWNER_SECRET)return json({error:'owner_not_configured'},503);
   const sessionRoute=url.pathname==='/session' && request.method==='POST';
   const limiter=sessionRoute ? env.AUTH_RATE_LIMITER : env.SEARCH_RATE_LIMITER;
   if(!limiter)return json({error:'not_configured'},503);
   if(!(await limiter.limit({key:request.headers.get('CF-Connecting-IP') || 'unknown'})).success)return json({error:'rate_limited'},429);
   if(sessionRoute) {
+    if(!env.FAVORITES_OWNER_SECRET)return json({error:'owner_not_configured'},503);
     let input;try{input=await body(request);}catch{return json({error:'invalid_request'},400);}
     if(typeof input.secret!=='string' || input.secret.length>256 || !await sameSecret(input.secret,env.FAVORITES_OWNER_SECRET))return json({error:'unauthorized'},401);
     return json(await newSession(env.FAVORITES_OWNER_SECRET));
   }
-  if(!await validSession(request.headers.get('Authorization')?.replace(/^Bearer /,''),env.FAVORITES_OWNER_SECRET))return json({error:'unauthorized'},401);
+  if(!publicEditing && !await validSession(request.headers.get('Authorization')?.replace(/^Bearer /,''),env.FAVORITES_OWNER_SECRET))return json({error:'unauthorized'},401);
   const store=env.FAVORITES.get(env.FAVORITES.idFromName('public-watchlist'));
   if(request.method==='DELETE' && /^\/favorites\/[1-9]\d{0,9}$/.test(url.pathname))return store.fetch(new Request('https://favorites'+url.pathname,{method:'DELETE'}));
   if(request.method!=='POST' || url.pathname!=='/favorites')return json({error:'not_found'},404);

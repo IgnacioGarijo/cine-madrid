@@ -62,3 +62,15 @@ test('CORS preflight allows authenticated changes only from the site',async()=>{
   const response=await handle(request('/favorites','OPTIONS'),settings);
   assert.equal(response.status,204);assert.match(response.headers.get('Access-Control-Allow-Headers'),/Authorization/);
 });
+
+test('public editing saves verified films without a password and retains origin and rate checks',async()=>{
+  const {settings}=fixture();settings.PUBLIC_FAVORITES='true';delete settings.FAVORITES_OWNER_SECRET;
+  const deps={upstreamFetch:async()=>Response.json(movie)};
+  const response=await handle(request('/favorites','POST',{tmdb_id:149}),settings,deps);
+  assert.equal(response.status,200);assert.ok((await response.json()).some(m=>m.id==='tmdb:149'));
+  const foreign=new Request('https://test.workers.dev/favorites/149',{method:'DELETE',headers:{Origin:'https://other.test'}});
+  assert.equal((await handle(foreign,settings)).status,403);
+  assert.equal((await handle(request('/favorites/149','DELETE'),settings)).status,200);
+  settings.SEARCH_RATE_LIMITER.limit=async()=>({success:false});
+  assert.equal((await handle(request('/favorites','POST',{tmdb_id:149}),settings,deps)).status,429);
+});

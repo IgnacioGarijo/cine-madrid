@@ -43,8 +43,10 @@ def diagnose_access():
             print(label+': no se pudo completar la comprobación.', flush=True)
 
 def main():
-    for key in SECRET_NAMES:
+    for key in SECRET_NAMES[:3]:
         if not os.getenv(key):raise SystemExit('Falta el secreto de Actions '+key+'. Consulta docs/CLOUDFLARE.md.')
+    public_favorites=json.loads(Path(CONFIG).read_text(encoding='utf-8')).get('vars',{}).get('PUBLIC_FAVORITES')=='true'
+    if not public_favorites and not os.getenv('FAVORITES_OWNER_SECRET'):raise SystemExit('Falta el secreto FAVORITES_OWNER_SECRET para el acceso privado.')
     try:
         output=run(['deploy'])
     except SystemExit:
@@ -54,7 +56,8 @@ def main():
     if not match:raise SystemExit('No se reconoce la URL de despliegue; no se modifica la web.')
     base=match[0]
     run(['secret','put','TMDB_READ_TOKEN'],input=os.environ['TMDB_READ_TOKEN'])
-    run(['secret','put','FAVORITES_OWNER_SECRET'],input=os.environ['FAVORITES_OWNER_SECRET'])
+    if os.getenv('FAVORITES_OWNER_SECRET'):
+        run(['secret','put','FAVORITES_OWNER_SECRET'],input=os.environ['FAVORITES_OWNER_SECRET'])
     for attempt in range(6):
         try:
             response=requests.get(base+'/search',params={'q':'Piratas del'},headers={'Origin':'https://ignaciogarijo.github.io'},timeout=15)
@@ -62,17 +65,18 @@ def main():
         except requests.RequestException:pass
         if attempt==5:raise SystemExit('El servicio no responde correctamente; no se modifica la configuración de Pages.')
         time.sleep(3)
-    for attempt in range(6):
-        try:
-            response=requests.post(base+'/session',json={'secret':os.environ['FAVORITES_OWNER_SECRET']},headers={'Origin':'https://ignaciogarijo.github.io'},timeout=15)
-            if response.ok and response.json().get('token'):break
-            status=response.status_code
-        except (requests.RequestException,ValueError):status='sin respuesta'
-        if attempt==5:raise SystemExit('No se pudo verificar el acceso de edición (HTTP '+str(status)+'); no se modifica Pages.')
-        time.sleep(5)
+    if not public_favorites:
+        for attempt in range(6):
+            try:
+                response=requests.post(base+'/session',json={'secret':os.environ['FAVORITES_OWNER_SECRET']},headers={'Origin':'https://ignaciogarijo.github.io'},timeout=15)
+                if response.ok and response.json().get('token'):break
+                status=response.status_code
+            except (requests.RequestException,ValueError):status='sin respuesta'
+            if attempt==5:raise SystemExit('No se pudo verificar el acceso de edición (HTTP '+str(status)+'); no se modifica Pages.')
+            time.sleep(5)
     response=requests.get(base+'/favorites',timeout=15)
     if not response.ok or not isinstance(response.json(),list):raise SystemExit('No se pudo comprobar la lista compartida; no se modifica Pages.')
-    (ROOT/'web/search-config.json').write_text(json.dumps({'tmdb_api_url':base+'/search','favorites_api_url':base+'/favorites'})+'\n',encoding='utf-8')
+    (ROOT/'web/search-config.json').write_text(json.dumps({'tmdb_api_url':base+'/search','favorites_api_url':base+'/favorites','public_favorites':public_favorites})+'\n',encoding='utf-8')
     print('Servicio de sugerencias comprobado:',base)
 
 if __name__ == '__main__':

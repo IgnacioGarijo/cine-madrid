@@ -1,6 +1,6 @@
-import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.7.0';
+import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.8.0';
 
-import {addressCandidates, validOrigin} from './search-utils.js?v=0.7.0';
+import {addressCandidates, validOrigin} from './search-utils.js?v=0.8.0';
 
 const $ = selector => document.querySelector(selector);
 const all = selector => [...document.querySelectorAll(selector)];
@@ -35,10 +35,10 @@ let data, catalog = [], watch = [], origin = stored('cm-origin', null);
 let offlineData = false, installPrompt = null;
 let filmDaySelections = new WeakMap();
 let searchApi = '', liveFavoriteResults = null, favoriteTimer, favoriteController, favoriteSequence = 0, favoriteError = '';
-let favoritesApi = '', ownerSession = stored('cm-owner-session',null), pendingFavoriteAction = null, favoriteSaving = false;
+let favoritesApi = '', publicFavorites = false, ownerSession = stored('cm-owner-session',null), pendingFavoriteAction = null, favoriteSaving = false;
 let addressTimer, addressController, addressSequence = 0;
-let selectedCinemas = new Set(), selectedCategory = '', favoriteSearches = [], favoritePage = 1;
-const categories = [['','Toda la cartelera'],['repertory_events','Reposiciones y eventos'],['premiere','Estrenos'],['unclassified','Pendiente de clasificar']];
+let selectedCinemas = new Set(), selectedCategories = new Set(['repertory_events','premiere','unclassified']), favoriteSearches = [], favoritePage = 1;
+const categories = [['repertory_events','Repos. y eventos'],['premiere','Estrenos'],['unclassified','Por clasificar']];
 const eventName = tag => ({live_music:'Música en directo',discussion:'Coloquio',guests:'Con invitados',marathon:'Maratón o programa doble'}[tag] || tag);
 if (!Array.isArray(watch)) watch = [];
 const initialDay = madridDay();
@@ -77,7 +77,7 @@ function renderSessions(target, sessions, {contextSessions=sessions}={}) {
     article.append(heading);
     const available=context.get(group.key) || group.sessions;
     const dates=filmDays(available), dateControl=el('label',undefined,'movie-date-control'), dateSelect=el('select');
-    dateControl.append(el('span','Fecha'));dateSelect.setAttribute('aria-label','Fecha para '+title);
+    dateSelect.setAttribute('aria-label','Fecha para '+title);
     for (const day of dates) {const option=el('option',fmt.format(dayDate(day)));option.value=day;dateSelect.append(option);}
     dateSelect.value=chooseFilmDay(available,values().day,selections.get(group.key));
     dateSelect.disabled=dates.length<2;dateControl.append(dateSelect);
@@ -146,8 +146,9 @@ function renderFilterChoices() {
   for (const id of ['category-options','calendar-category-options']) {
     const box=$('#'+id);box.replaceChildren();
     for (const [key,name] of categories) {
-      const button=el('button',name);button.type='button';button.setAttribute('aria-pressed',String(selectedCategory===key));
-      button.onclick=()=>{selectedCategory=key;render();};box.append(button);
+      const button=el('button',name);button.type='button';button.setAttribute('aria-pressed',String(selectedCategories.has(key)));
+      button.title=key==='repertory_events'?'Reposiciones y eventos':key==='unclassified'?'Pendiente de clasificar':'Estrenos';
+      button.onclick=()=>{selectedCategories.has(key)?selectedCategories.delete(key):selectedCategories.add(key);render();};box.append(button);
     }
   }
   for (const button of all('[data-cinema-action]')) {
@@ -161,7 +162,7 @@ function renderFilterChoices() {
 }
 
 function values() {
-  return {...Object.fromEntries(all('#filters [data-filter]').map(input => [input.dataset.filter,input.value])),cinemas:[...selectedCinemas],category:selectedCategory};
+  return {...Object.fromEntries(all('#filters [data-filter], #sort').map(input => [input.dataset.filter,input.value])),cinemas:[...selectedCinemas],categories:[...selectedCategories]};
 }
 function syncFilters() {
   const filters = values();
@@ -185,8 +186,6 @@ function renderCalendar() {
   const title = monthName.format(new Date(Date.UTC(calendarYear, calendarMonth, 1)));
   $('#mini-month').textContent = title;
   $('#calendar-month').textContent = title;
-  $('#selected-day-label').textContent=selected ? fmt.format(dayDate(selected)) : '';
-  $('#selected-day-label').hidden=!selected;
   const mini = $('#mini-calendar'); mini.replaceChildren();
   for (const day of ['L','M','X','J','V','S','D']) mini.append(el('span', day, 'mini-weekday'));
   const grid = $('#calendar-grid'); grid.replaceChildren();
@@ -218,8 +217,7 @@ function render() {
   if (!data) return;
   renderFilterChoices(); syncFilters();
   const list = sorted(filterSessions(data.sessions, values()));
-  const films=renderSessions($('#results'),list,{contextSessions:filterSessions(data.sessions,values(),{ignoreDay:true})});
-  $('#result-count').textContent = `${films} ${films===1?'película':'películas'}`;
+  renderSessions($('#results'),list,{contextSessions:filterSessions(data.sessions,values(),{ignoreDay:true})});
   renderCalendar();
 }
 function setView(name, updateHash = true) {
@@ -240,7 +238,7 @@ function favoriteRequest(movie, operation = 'Añadir', page = 1) {
 }
 function ownerToken() {return ownerSession?.expires>Date.now() ? ownerSession.token : '';}
 function renderOwnerAccess() {
-  $('#owner-access').hidden=!favoritesApi;
+  $('#owner-access').hidden=!favoritesApi || publicFavorites;
   $('#owner-access').textContent=ownerToken() ? 'Cerrar acceso de edición' : 'Acceso de edición';
 }
 function requestOwnerAccess(action=null) {
@@ -255,13 +253,13 @@ async function loadFavorites() {
 }
 async function changeFavorite(movie,remove=false) {
   if(favoriteSaving)return;
-  if(!ownerToken()) {requestOwnerAccess(()=>changeFavorite(movie,remove));return;}
+  if(!publicFavorites && !ownerToken()) {requestOwnerAccess(()=>changeFavorite(movie,remove));return;}
   favoriteSaving=true;renderCatalog();renderWatch();let failure='';
   const status=$('#watch-status');status.textContent=remove ? 'Quitando película…' : 'Guardando película…';
   $('#favorite-search-status').textContent=status.textContent;
   try {
     const response=await fetch(favoritesApi+(remove ? '/'+movie.tmdb_id : ''),{
-      method:remove?'DELETE':'POST',headers:{'Content-Type':'application/json',Authorization:'Bearer '+ownerToken()},
+      method:remove?'DELETE':'POST',headers:{'Content-Type':'application/json',...(!publicFavorites?{Authorization:'Bearer '+ownerToken()}:{})},
       ...(remove ? {} : {body:JSON.stringify({tmdb_id:movie.tmdb_id})})});
     if(response.status===401) {
       ownerSession=null;store('cm-owner-session',null);requestOwnerAccess(()=>changeFavorite(movie,remove));return;
@@ -377,6 +375,7 @@ async function boot() {
     const searchConfig=responses[5].ok ? await responses[5].json() : {};
     searchApi=searchConfig.tmdb_api_url || '';
     favoritesApi=searchConfig.favorites_api_url || '';
+    publicFavorites=searchConfig.public_favorites === true;
     renderOwnerAccess();
     if(favoritesApi) {
       watch=stored('cm-watch-cache',watch);
@@ -384,6 +383,7 @@ async function boot() {
     }
     if (searchApi) $('#favorite-help').textContent='Escribe un título y selecciona una película de todo TMDB. Guardarla en la lista pública se confirma con tu cuenta de GitHub. La clave permanece protegida en el servidor.';
     if(favoritesApi)$('#favorite-help').textContent='Busca una película y pulsa Añadir. El acceso de edición se recuerda durante 30 días en este dispositivo.';
+    if(publicFavorites)$('#favorite-help').textContent='Busca una película y pulsa Añadir. La lista es pública y se comparte entre todos los dispositivos.';
     const posts = responses[2].ok ? await responses[2].json() : [];
     $('#updated').textContent = 'Último intento: ' + new Date(data.generated_at).toLocaleString('es-ES');
     const active = data.sources.filter(s => s.status === 'ok').length;
@@ -436,16 +436,15 @@ $('#filters').oninput = event => {
 $('#calendar-filters').onsubmit = event => event.preventDefault();
 $('#calendar-filters').oninput = event => {
   const key = event.target.dataset.filter;
-  if (key) { $('#filters [data-filter="' + key + '"]').value = event.target.value; render(); }
+  if (key) { $('[data-filter="' + key + '"]').value = event.target.value; render(); }
 };
 $('#toggle-filters').onclick = () => {
   const expanded = $('#toggle-filters').getAttribute('aria-expanded') === 'true';
   $('#toggle-filters').setAttribute('aria-expanded', String(!expanded)); $('#advanced-filters').hidden = expanded;
 };
-$('#reset-filters').onclick = () => { all('#filters [data-filter]').forEach(input => {input.value = input.id==='sort' ? 'time' : '';});selectedCinemas.clear();selectedCategory='';filmDaySelections=new WeakMap();render(); };
+$('#reset-filters').onclick = () => { all('#filters [data-filter], #sort').forEach(input => {input.value = input.id==='sort' ? 'time' : '';});selectedCinemas.clear();selectedCategories=new Set(categories.map(([key])=>key));filmDaySelections=new WeakMap();render(); };
+$('#sort').onchange=render;
 all('[data-cinema-action]').forEach(button => {button.onclick=()=>{selectedCinemas=new Set(button.dataset.cinemaAction==='nearby' ? nearbyCinemas(data.cinemas.filter(c=>c.status==='active'),origin) : []);render();};});
-$('#today-button').onclick = () => setDay(madridDay());
-$('#all-days-button').onclick = () => setDay('');
 $('#calendar-clear-day').onclick = () => setDay('');
 $('#calendar-preview').onclick = () => { renderCalendar(); $('#calendar-dialog').showModal(); };
 $('#show-day-in-list').onclick = () => { $('#calendar-dialog').close(); $('#results').scrollIntoView({block:'start'}); };

@@ -7,12 +7,14 @@ export function filterSessions(sessions, filters, {today = madridDay(), ignoreDa
   const query = normalize(filters.query);
   return sessions.filter(session => {
     const day = session.start.slice(0, 10), time = session.start.slice(11, 16);
+    const matchesCategory = category => category === 'repertory_events' ? session.category === 'repertory' || session.special_tags?.length > 0 : category === 'special' ? session.special_tags?.length > 0 : session.category === category;
     return day >= today
       && (!query || [session.title,session.director,...(session.search_titles || [])].some(title => normalize(title).includes(query)))
       && (ignoreDay || !filters.day || day === filters.day)
       && (!filters.cinema || session.cinema_id === filters.cinema)
       && (!filters.cinemas?.length || filters.cinemas.includes(session.cinema_id))
-      && (!filters.category || (filters.category === 'repertory_events' ? (session.category === 'repertory' || session.special_tags?.length > 0) : filters.category === 'special' ? session.special_tags?.length > 0 : session.category === filters.category))
+      && (!filters.category || matchesCategory(filters.category))
+      && (!Array.isArray(filters.categories) || filters.categories.some(matchesCategory))
       && (!filters.format || session.format === filters.format)
       && (!filters.version || session.version === filters.version)
       && (!filters.after || time >= filters.after)
