@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {monthCells, countByDay, filterSessions, madridDay,groupFilms,rankCinemas,nearbyCinemas} from '../web/calendar-utils.js';
+import {monthCells, countByDay, filterSessions, madridDay,groupFilms,rankCinemas,nearbyCinemas,filmDays,chooseFilmDay} from '../web/calendar-utils.js';
+import {addressCandidates,validOrigin} from '../web/search-utils.js';
 
 test('month uses Monday-first layout and includes the leap day', () => {
   const cells = monthCells(2028, 1);
@@ -63,4 +64,19 @@ test('cinemas rank by distance with unknown coordinates last and near selection 
   const origin={lat:40,lon:-3}, cinemas=[{id:'far',name:'Far',lat:40.1,lon:-3},{id:'unknown',name:'Unknown'},{id:'near',name:'Near',lat:40.005,lon:-3}];
   assert.deepEqual(rankCinemas(cinemas,origin).map(c=>c.id),['near','far','unknown']);
   assert.deepEqual(nearbyCinemas(cinemas,origin),['near']);
+});
+
+test('film date defaults to the calendar date or next performance and allows its own override',()=>{
+  const sessions=[{start:'2026-11-11T12:00:00+01:00'},{start:'2026-11-12T19:30:00+01:00'},{start:'2026-11-15T20:00:00+01:00'}];
+  const now=new Date('2026-11-11T15:00:00+01:00');
+  assert.deepEqual(filmDays(sessions),['2026-11-11','2026-11-12','2026-11-15']);
+  assert.equal(chooseFilmDay(sessions,'','',now),'2026-11-12');
+  assert.equal(chooseFilmDay(sessions,'2026-11-15','',now),'2026-11-15');
+  assert.equal(chooseFilmDay(sessions,'2026-11-15','2026-11-12',now),'2026-11-12');
+  assert.equal(chooseFilmDay(sessions,'2026-11-30','2026-12-01',now),'2026-11-12');
+});
+test('recognized addresses preserve the exact address and reject unresolved coordinates',()=>{
+  const candidates=addressCandidates([{address:'CALLE FUENCARRAL 125, Madrid',type:'portal',lat:40.43,lng:-3.70},{address:'CALLE FUENCARRAL, Madrid',type:'callejero',lat:0,lng:0},{address:'Madrid',type:'municipio'}]);
+  assert.equal(candidates.length,2);assert.equal(candidates[0].label,'CALLE FUENCARRAL 125, Madrid');
+  assert.equal(validOrigin(candidates[0]),true);assert.equal(validOrigin(candidates[1]),false);
 });

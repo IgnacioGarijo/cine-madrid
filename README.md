@@ -1,8 +1,16 @@
-# Cine Madrid · v0.5.0
+# Cine Madrid · v0.6.0
 
 Agenda personal de cine en Madrid capital y salas IMAX de la región, reposiciones y programación futura.
 
 Web: https://ignaciogarijo.github.io/cine-madrid/
+
+## Interfaz compacta en v0.6.0
+
+- Cines en un desplegable personalizado, con selección múltiple, colores y orden por cercanía.
+- El calendario es el único selector global de fecha, con botones explícitos para replegarlo. Se elimina el campo de fecha duplicado y los textos «Elige un día».
+- Cada película muestra los pases de un día, con su propio selector. Por defecto se utiliza la fecha global seleccionada, o el día de su siguiente pase. El selector permite consultar otras fechas de esa película sin cambiar el calendario global.
+- Mi origen ofrece direcciones reconocidas al escribir, mediante CartoCiudad (IGN/CNIG). Seleccionar una guarda sus coordenadas solo en ese navegador y repliega la sección. No se utiliza Nominatim para autocompletar.
+- Sugerencias de todo TMDB preparadas mediante un pequeño Worker gratuito, con clave protegida, caché y límite de peticiones. **Pendientes de activar:** crear la cuenta de Cloudflare y configurar dos secretos en GitHub. El flujo conecta la web automáticamente después de comprobar el servicio. Consulta [los pasos de activación](docs/CLOUDFLARE.md). Hasta entonces permanece disponible la búsqueda mediante Actions; no se anuncia como búsqueda instantánea activa.
 
 ## Actualización v0.5.0
 

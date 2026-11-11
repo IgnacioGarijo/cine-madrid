@@ -52,6 +52,17 @@ export function groupFilms(sessions, order='time', now=new Date()) {
   return result.sort((a,b) => (order==='votes' ? (b.vote_count ?? -1)-(a.vote_count ?? -1) : 0) || a.next-b.next || a.first.localeCompare(b.first));
 }
 
+export function filmDays(sessions) {
+  return [...new Set(sessions.map(session=>session.start.slice(0,10)))].sort();
+}
+export function chooseFilmDay(sessions, calendarDay='', override='', now=new Date()) {
+  const days=filmDays(sessions);
+  if (days.includes(override)) return override;
+  if (days.includes(calendarDay)) return calendarDay;
+  const next=sessions.filter(session=>new Date(session.start)>=now).sort((a,b)=>a.start.localeCompare(b.start))[0];
+  return next ? next.start.slice(0,10) : days[0] || '';
+}
+
 export function countByDay(sessions) {
   const counts = new Map();
   for (const session of sessions) {

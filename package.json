@@ -1,1 +1,9 @@
-{"name":"cine-madrid","version":"0.5.0","private":true,"type":"module","scripts":{"test":"node --test tests/calendar.test.mjs tests/pwa.test.mjs"}}
+{
+  "name": "cine-madrid",
+  "version": "0.6.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/calendar.test.mjs tests/pwa.test.mjs services/tmdb/worker.test.mjs"
+  }
+}

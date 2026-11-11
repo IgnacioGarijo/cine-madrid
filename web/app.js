@@ -1,4 +1,6 @@
-import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms} from './calendar-utils.js?v=0.5.0';
+import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.6.0';
+
+import {addressCandidates, validOrigin} from './search-utils.js?v=0.6.0';
 
 const $ = selector => document.querySelector(selector);
 const all = selector => [...document.querySelectorAll(selector)];
@@ -31,6 +33,9 @@ function store(key, value) {
 }
 let data, catalog = [], watch = [], origin = stored('cm-origin', null);
 let offlineData = false, installPrompt = null;
+let filmDaySelections = new WeakMap();
+let searchApi = '', liveFavoriteResults = null, favoriteTimer, favoriteController, favoriteSequence = 0, favoriteError = '';
+let addressTimer, addressController, addressSequence = 0;
 let selectedCinemas = new Set(), selectedCategory = '', favoriteSearches = [], favoritePage = 1;
 const categories = [['','Toda la cartelera'],['repertory_events','Reposiciones y eventos'],['premiere','Estrenos'],['unclassified','Pendiente de clasificar']];
 const eventName = tag => ({live_music:'Música en directo',discussion:'Coloquio',guests:'Con invitados',marathon:'Maratón o programa doble'}[tag] || tag);
@@ -52,9 +57,12 @@ function gcal(session, cinema) {
   return 'https://calendar.google.com/calendar/render?' + params;
 }
 
-function renderSessions(target, sessions) {
+function renderSessions(target, sessions, {contextSessions=sessions}={}) {
   target.replaceChildren();
   const groups = groupFilms(sessions,values().sort || 'time');
+  const context=new Map(groupFilms(contextSessions,values().sort || 'time').map(group=>[group.key,group.sessions]));
+  if (!filmDaySelections.has(target)) filmDaySelections.set(target,new Map());
+  const selections=filmDaySelections.get(target);
   for (const group of groups) {
     const first = group.sessions[0], movie = data.movies.find(m => m.id === first.movie_id) || {};
     const article = el('article',undefined,'film movie-group'), heading = el('div',undefined,'movie-heading');
@@ -69,20 +77,30 @@ function renderSessions(target, sessions) {
     heading.append(badges);
     if (first.tmdb_url) heading.append(link('Ficha TMDB ↗',first.tmdb_url,'tmdb-film-link'));
     article.append(heading);
-    const cinemaIds = new Set(group.sessions.map(s => s.cinema_id));
+    const available=context.get(group.key) || group.sessions;
+    const dates=filmDays(available), dateControl=el('label',undefined,'movie-date-control'), dateSelect=el('select');
+    dateControl.append(el('span','Fecha'));dateSelect.setAttribute('aria-label','Fecha para '+title);
+    for (const day of dates) {const option=el('option',fmt.format(dayDate(day)));option.value=day;dateSelect.append(option);}
+    dateSelect.value=chooseFilmDay(available,values().day,selections.get(group.key));
+    dateSelect.disabled=dates.length<2;dateControl.append(dateSelect);
+    const screenings=el('div',undefined,'movie-screenings');article.append(dateControl,screenings);
+    const renderDay=()=>{
+      screenings.replaceChildren();
+      const visibleSessions=available.filter(session=>session.start.slice(0,10)===dateSelect.value);
+    const cinemaIds = new Set(visibleSessions.map(s => s.cinema_id));
     for (const cinema of rankCinemas(data.cinemas.filter(c => cinemaIds.has(c.id)),origin)) {
       const block = el('section',undefined,'cinema-program'), name = el('h4',cinema.name);
       if (nearLabel(cinema)) name.append(el('span',nearLabel(cinema),'cinema-distance'));
       block.append(name);
       const days = new Map();
-      for (const session of group.sessions.filter(s => s.cinema_id === cinema.id)) {
+      for (const session of visibleSessions.filter(s => s.cinema_id === cinema.id)) {
         const key = session.start.slice(0,10);
         if (!days.has(key)) days.set(key,[]);
         days.get(key).push(session);
       }
       for (const [day,list] of days) {
         const row = el('div',undefined,'screening-day');
-        row.append(el('h5',fmt.format(dayDate(day))));
+
         const slots = el('div',undefined,'times');
         for (const item of list) {
           const special = item.special_tags?.length > 0;
@@ -98,8 +116,10 @@ function renderSessions(target, sessions) {
         }
         row.append(slots);block.append(row);
       }
-      article.append(block);
+      screenings.append(block);
     }
+    };
+    dateSelect.onchange=()=>{selections.set(group.key,dateSelect.value);renderDay();};renderDay();
     target.append(article);
   }
   if (!groups.length) target.append(el('p','No hay películas con estos filtros.','empty'));
@@ -137,8 +157,9 @@ function renderFilterChoices() {
     button.disabled=!isAll && !close.length;
     button.setAttribute('aria-pressed',String(isAll ? !selectedCinemas.size : close.length>0 && selectedCinemas.size===close.length && close.every(id=>selectedCinemas.has(id))));
   }
-  $('#cinema-selection-summary').textContent = selectedCinemas.size ? '· '+selectedCinemas.size+' seleccionados' : '· todos';
-  $('#cinema-order-note').textContent = origin ? 'Por cercanía a tu origen · distancias en línea recta. Desliza para ver todos.' : 'Guarda tu dirección en Mi origen para ordenar por cercanía y seleccionar los cercanos. Desliza para ver todos.';
+  const selectionLabel=selectedCinemas.size ? '· '+selectedCinemas.size+(selectedCinemas.size===1?' seleccionado':' seleccionados') : '· todos';
+  $('#cinema-selection-summary').textContent=selectionLabel;$('#calendar-cinema-summary').textContent=selectionLabel;
+  $('#cinema-order-note').textContent = origin ? 'Por cercanía a tu origen · distancias en línea recta.' : 'Guarda tu dirección en Mi origen para ordenar por cercanía y seleccionar los cercanos.';
 }
 
 function values() {
@@ -152,6 +173,7 @@ function syncFilters() {
 }
 function sorted(sessions) { return [...sessions].sort((a,b)=>a.start.localeCompare(b.start)); }
 function setDay(day, {focus = false} = {}) {
+  filmDaySelections=new WeakMap();
   $('#day').value = day;
   if (day) { calendarYear = Number(day.slice(0,4)); calendarMonth = Number(day.slice(5,7)) - 1; }
   render();
@@ -165,8 +187,8 @@ function renderCalendar() {
   const title = monthName.format(new Date(Date.UTC(calendarYear, calendarMonth, 1)));
   $('#mini-month').textContent = title;
   $('#calendar-month').textContent = title;
-  $('#selected-day-label').textContent = selected ? shortDay.format(dayDate(selected)) : 'Elige un día';
-  $('#calendar-summary').textContent = selected ? 'Toca el calendario para cambiar de día.' : 'Sesiones por fecha, con tus filtros.';
+  $('#selected-day-label').textContent=selected ? fmt.format(dayDate(selected)) : '';
+  $('#selected-day-label').hidden=!selected;
   const mini = $('#mini-calendar'); mini.replaceChildren();
   for (const day of ['L','M','X','J','V','S','D']) mini.append(el('span', day, 'mini-weekday'));
   const grid = $('#calendar-grid'); grid.replaceChildren();
@@ -186,16 +208,16 @@ function renderCalendar() {
     grid.append(button);
   }
   $('#show-day-in-list').hidden = !selected;
-  $('#calendar-day-title').textContent = selected ? fmt.format(dayDate(selected)) : 'Selecciona un día';
-  if (selected) renderSessions($('#calendar-day-sessions'), sorted(filterSessions(data.sessions, filters)));
-  else $('#calendar-day-sessions').replaceChildren(el('p', 'Elige una fecha para ver sus películas y horarios.', 'fine'));
+  $('#calendar-day-title').textContent = selected ? fmt.format(dayDate(selected)) : '';
+  if (selected) renderSessions($('#calendar-day-sessions'), sorted(filterSessions(data.sessions, filters)),{contextSessions:matching});
+  else $('#calendar-day-sessions').replaceChildren();
 }
 function render() {
   if (!data) return;
   renderFilterChoices(); syncFilters();
   const list = sorted(filterSessions(data.sessions, values()));
-  const films=renderSessions($('#results'),list);
-  $('#result-count').textContent = `${films} ${films===1?'película':'películas'} · ${list.length} ${list.length===1?'pase':'pases'}`;
+  const films=renderSessions($('#results'),list,{contextSessions:filterSessions(data.sessions,values(),{ignoreDay:true})});
+  $('#result-count').textContent = `${films} ${films===1?'película':'películas'}`;
   renderCalendar();
 }
 function setView(name, updateHash = true) {
@@ -227,11 +249,11 @@ function renderWatch() {
 function renderCatalog() {
   const box = $('#catalog'); box.replaceChildren();$('#favorite-pagination').replaceChildren();
   const raw = $('#catalog-query').value.trim(), query = norm(raw), request = $('#request-favorite');
-  request.hidden=query.length<2;request.href=favoriteRequest(raw,'Buscar',favoritePage);
+  request.hidden=query.length<2 || (!!searchApi && !favoriteError);request.href=favoriteRequest(raw,'Buscar',favoritePage);
   const status=$('#favorite-search-status');
   if (query.length<2) {status.textContent='Escribe un título para buscar en todo TMDB.';return;}
-  const results=favoriteSearches.find(s=>norm(s.query)===query && s.page===favoritePage);
-  if (!results) {status.textContent='Confirma Buscar en TMDB en GitHub y vuelve a esta ventana. Los resultados se cargarán automáticamente; la búsqueda no añade películas a la lista.';return;}
+  const results=liveFavoriteResults && norm(liveFavoriteResults.query)===query && liveFavoriteResults.page===favoritePage ? liveFavoriteResults : favoriteSearches.find(s=>norm(s.query)===query && s.page===favoritePage);
+  if (!results) {status.textContent=favoriteError || (searchApi ? 'Buscando sugerencias en TMDB…' : 'Las sugerencias instantáneas están pendientes de conectar Cloudflare. Puedes utilizar Buscar en TMDB mediante GitHub mientras tanto.');return;}
   status.textContent=`${results.total_results} resultados en TMDB · página ${results.page} de ${results.total_pages || 1} · ${new Date(results.searched_at).toLocaleString('es-ES')}`;
   for (const movie of results.movies) {
     const row=el('div',undefined,'favorite-row'), name=el('span');
@@ -243,8 +265,29 @@ function renderCatalog() {
   if (!results.movies.length) box.append(el('p','No hay resultados para ese título.','fine'));
   for (const [page,label] of [[favoritePage-1,'Página anterior'],[favoritePage+1,'Página siguiente']]) {
     if (page<1 || page>results.total_pages) continue;
-    const button=link(label+' ↗',favoriteRequest(raw,'Buscar',page),'button');
-    button.onclick=()=>{favoritePage=page;renderCatalog();};$('#favorite-pagination').append(button);
+    if (searchApi) {
+      const button=el('button',label);button.type='button';button.onclick=()=>{favoritePage=page;queryFavoriteSuggestions();};$('#favorite-pagination').append(button);
+    } else {
+      const button=link(label+' ↗',favoriteRequest(raw,'Buscar',page),'button');button.onclick=()=>{favoritePage=page;renderCatalog();};$('#favorite-pagination').append(button);
+    }
+  }
+}
+async function queryFavoriteSuggestions() {
+  if (!searchApi) {renderCatalog();return;}
+  favoriteController?.abort();const controller=new AbortController();favoriteController=controller;
+  const sequence=++favoriteSequence, query=$('#catalog-query').value.trim(), page=favoritePage;
+  liveFavoriteResults=null;favoriteError='';
+  if (query.length<2) {renderCatalog();return;}
+  renderCatalog();
+  try {
+    const url=new URL(searchApi);url.searchParams.set('q',query);url.searchParams.set('page',String(page));
+    const response=await fetch(url,{signal:controller.signal});if (!response.ok) throw new Error();
+    const payload=await response.json();
+    if (sequence!==favoriteSequence || $('#catalog-query').value.trim()!==query) return;
+    liveFavoriteResults={...payload,query,page,searched_at:new Date().toISOString()};renderCatalog();
+  } catch(error) {
+    if (controller.signal.aborted || sequence!==favoriteSequence) return;
+    favoriteError='No se pudieron cargar las sugerencias. Puedes reintentar o utilizar la búsqueda de GitHub.';renderCatalog();
   }
 }
 async function refreshFavoriteSearches() {
@@ -275,13 +318,16 @@ function connectionState() {
 }
 async function boot() {
   try {
-    const responses = await Promise.all([fetch('data.json',{cache:'no-cache'}), fetch('catalog.json',{cache:'no-cache'}), fetch('newsletters.json',{cache:'no-cache'}), fetch('favorites.json',{cache:'no-cache'}),fetch('favorite-searches.json',{cache:'no-cache'})]);
+    const responses = await Promise.all([fetch('data.json',{cache:'no-cache'}), fetch('catalog.json',{cache:'no-cache'}), fetch('newsletters.json',{cache:'no-cache'}), fetch('favorites.json',{cache:'no-cache'}),fetch('favorite-searches.json',{cache:'no-cache'}),fetch('search-config.json',{cache:'no-cache'})]);
     if (!responses[0].ok) throw new Error('Datos no disponibles');
     offlineData = responses[0].headers.get('X-Cine-Madrid-Cache') === 'offline';
     data = await responses[0].json();
     catalog = responses[1].ok ? await responses[1].json() : [];
     watch = responses[3].ok ? await responses[3].json() : [];
     favoriteSearches=responses[4].ok ? await responses[4].json() : [];
+    const searchConfig=responses[5].ok ? await responses[5].json() : {};
+    searchApi=searchConfig.tmdb_api_url || '';
+    if (searchApi) $('#favorite-help').textContent='Escribe un título y selecciona una película de todo TMDB. Guardarla en la lista pública se confirma con tu cuenta de GitHub. La clave permanece protegida en el servidor.';
     const posts = responses[2].ok ? await responses[2].json() : [];
     $('#updated').textContent = 'Último intento: ' + new Date(data.generated_at).toLocaleString('es-ES');
     const active = data.sources.filter(s => s.status === 'ok').length;
@@ -312,7 +358,7 @@ async function boot() {
     setView(route === 'calendario' ? 'cartelera' : route || 'cartelera', false);
     if (route === 'calendario') $('#calendar-dialog').showModal();
     const search=new URLSearchParams(location.search).get('favorite_search');
-    if (search) {setView('pendientes');$('#catalog-query').value=search;favoritePage=Math.max(1,Number(new URLSearchParams(location.search).get('favorite_page')) || 1);renderCatalog();$('#favorite-dialog').showModal();}
+    if (search) {setView('pendientes');$('#catalog-query').value=search;favoritePage=Math.max(1,Number(new URLSearchParams(location.search).get('favorite_page')) || 1);renderCatalog();$('#favorite-dialog').showModal();if(searchApi) queryFavoriteSuggestions();}
   } catch {
     $('#fatal').hidden = false; $('#fatal').textContent = 'No se pudo cargar la cartelera. Conéctate a Internet y vuelve a abrir la página.';
     $('#updated').textContent = 'Datos no disponibles';
@@ -340,7 +386,7 @@ $('#toggle-filters').onclick = () => {
   const expanded = $('#toggle-filters').getAttribute('aria-expanded') === 'true';
   $('#toggle-filters').setAttribute('aria-expanded', String(!expanded)); $('#advanced-filters').hidden = expanded;
 };
-$('#reset-filters').onclick = () => { all('#filters [data-filter]').forEach(input => {input.value = input.id==='sort' ? 'time' : '';});selectedCinemas.clear();selectedCategory='';render(); };
+$('#reset-filters').onclick = () => { all('#filters [data-filter]').forEach(input => {input.value = input.id==='sort' ? 'time' : '';});selectedCinemas.clear();selectedCategory='';filmDaySelections=new WeakMap();render(); };
 all('[data-cinema-action]').forEach(button => {button.onclick=()=>{selectedCinemas=new Set(button.dataset.cinemaAction==='nearby' ? nearbyCinemas(data.cinemas.filter(c=>c.status==='active'),origin) : []);render();};});
 $('#today-button').onclick = () => setDay(madridDay());
 $('#all-days-button').onclick = () => setDay('');
@@ -357,24 +403,48 @@ all('[data-close]').forEach(button => {button.onclick = () => $('#' + button.dat
 all('dialog').forEach(dialog => {dialog.onclick = event => {if (event.target === dialog && (event.clientX < dialog.getBoundingClientRect().left || event.clientX > dialog.getBoundingClientRect().right || event.clientY < dialog.getBoundingClientRect().top || event.clientY > dialog.getBoundingClientRect().bottom)) dialog.close();};});
 $('#show-location').onclick = () => { $('#location-settings').open = true; $('#origin').focus(); };
 $('#issue-filter').onchange = renderIncidents;
-$('#catalog-query').oninput = () => {favoritePage=1;renderCatalog();};
+$('#catalog-query').oninput = () => {clearTimeout(favoriteTimer);favoriteController?.abort();favoriteSequence++;favoritePage=1;favoriteError='';liveFavoriteResults=null;renderCatalog();if(searchApi) favoriteTimer=setTimeout(queryFavoriteSuggestions,450);};
 setInterval(refreshFavoriteSearches,15000);window.addEventListener('focus',refreshFavoriteSearches);
-$('#add-favorite').onclick = () => { $('#catalog-query').value = '';favoritePage=1;renderCatalog(); $('#favorite-dialog').showModal(); $('#catalog-query').focus(); };
-$('#origin-form').onsubmit = async event => {
-  event.preventDefault(); const address = $('#origin').value.trim(); if (!address) return;
-  $('#origin-status').textContent = 'Buscando dirección…';
+$('#add-favorite').onclick = () => { $('#catalog-query').value = '';favoritePage=1;favoriteError='';liveFavoriteResults=null;renderCatalog(); $('#favorite-dialog').showModal(); $('#catalog-query').focus(); };
+async function selectOrigin(candidate) {
   try {
-    const url = 'https://nominatim.openstreetmap.org/search?' + new URLSearchParams({q:address + ', Madrid, España',format:'json',limit:'1'});
-    const response = await fetch(url); if (!response.ok) throw new Error();
-    const places = await response.json(); if (!places.length) throw new Error();
-    origin = {lat:Number(places[0].lat),lon:Number(places[0].lon)};
-    const saved = store('cm-origin',origin);
-    $('#origin-status').textContent = saved ? 'Origen guardado en este navegador. Distancias en línea recta.' : 'Origen aplicado. Este navegador no permite guardarlo.'; render();
-  } catch { $('#origin-status').textContent = 'No se pudo localizar la dirección. Prueba con calle y número.'; }
-};
-$('#clear-origin').onclick = () => {
-  origin = null; try {localStorage.removeItem('cm-origin');} catch { /* Private browsing may block storage. */ }
-  $('#origin').value = ''; $('#origin-status').textContent = 'Origen eliminado.'; render();
+    if (!validOrigin(candidate)) {
+      $('#origin-status').textContent='Comprobando dirección…';
+      const url='https://www.cartociudad.es/geocoder/api/geocoder/find?'+new URLSearchParams({q:candidate.label});
+      const response=await fetch(url);if (!response.ok) throw new Error();
+      const value=await response.json(), point=Array.isArray(value) ? value[0] : value;
+      candidate={...candidate,lat:Number(point.lat),lon:Number(point.lng)};
+    }
+    if (!validOrigin(candidate)) throw new Error();
+    origin={lat:candidate.lat,lon:candidate.lon,label:candidate.label};
+    const saved=store('cm-origin',origin);$('#origin').value=candidate.label;
+    $('#origin-status').textContent=saved ? 'Origen guardado en este navegador.' : 'Origen aplicado; el navegador no permite guardarlo.';
+    $('#address-suggestions').replaceChildren();$('#location-settings').open=false;render();
+    $('#filters .cinema-dropdown summary').focus();
+  } catch {$('#origin-status').textContent='No se pudo comprobar esa dirección. Añade el número o prueba otra opción.';}
+}
+async function lookupAddresses() {
+  addressController?.abort();const controller=new AbortController();addressController=controller;
+  const sequence=++addressSequence, query=$('#origin').value.trim();
+  $('#address-suggestions').replaceChildren();if(query.length<4) return;
+  $('#origin-status').textContent='Buscando direcciones reconocidas…';
+  try {
+    const q=/madrid/i.test(query) ? query : query+', Madrid';
+    const url='https://www.cartociudad.es/geocoder/api/geocoder/candidates?'+new URLSearchParams({q,limit:'5',no_process:'municipio,poblacion,toponimo'});
+    const response=await fetch(url,{signal:controller.signal});if(!response.ok) throw new Error();
+    const candidates=addressCandidates(await response.json());
+    if(sequence!==addressSequence || $('#origin').value.trim()!==query) return;
+    for(const candidate of candidates) {
+      const button=el('button',candidate.label,'address-option');button.type='button';button.onclick=()=>selectOrigin(candidate);$('#address-suggestions').append(button);
+    }
+    $('#origin-status').textContent=candidates.length ? 'Selecciona una dirección para guardarla.' : 'No se encontraron direcciones. Prueba con calle y número.';
+  } catch(error) {if(!controller.signal.aborted && sequence===addressSequence) $('#origin-status').textContent='No se pudieron consultar las direcciones. Vuelve a pulsar Buscar dirección.';}
+}
+$('#origin').oninput=()=>{clearTimeout(addressTimer);addressController?.abort();addressSequence++;$('#address-suggestions').replaceChildren();$('#origin-status').textContent='';if($('#origin').value.trim().length>=4) addressTimer=setTimeout(lookupAddresses,650);};
+$('#origin-form').onsubmit=event=>{event.preventDefault();clearTimeout(addressTimer);lookupAddresses();};
+$('#clear-origin').onclick=()=>{
+  clearTimeout(addressTimer);addressController?.abort();addressSequence++;origin=null;try{localStorage.removeItem('cm-origin');}catch{}
+  $('#origin').value='';$('#address-suggestions').replaceChildren();$('#origin-status').textContent='Origen eliminado.';render();
 };
 
 window.addEventListener('beforeinstallprompt', event => { event.preventDefault(); installPrompt = event; });
