@@ -39,7 +39,7 @@ def run(refresh=True, newsletter=False):
                     films += [m for m in old.get('movies',[]) if m['id'] in {x['movie_id'] for x in missing} and m['id'] not in film_ids]
                 sessions+=fresh;movies+=films
                 partial=any(i['source_id']==cid and i['code']=='partial_read' for i in incidents.current.values())
-                sources.append(dict(id=cid,status='partial' if partial else 'ok',last_attempt=now(),last_success=now(),url=cinema['url'],pages_read=len(pages),
+                sources.append(dict(id=cid,status='partial' if partial else 'ok',last_attempt=now(),last_success=now(),url=cinema.get('schedule_url',cinema['url']),source_label=cinema.get('schedule_label','Fuente oficial'),pages_read=len(pages),
                     first_session=min(x['start'] for x in fresh),last_session=max(x['start'] for x in fresh)))
                 print(f"Fuente {cid}: {len(fresh)} sesiones / {len(pages)} páginas",flush=True)
             except Exception as exc:
@@ -58,7 +58,7 @@ def run(refresh=True, newsletter=False):
         if unchanged:unchanged_ids.add(movie['id'])
         if refresh and unchanged and previous.get('identity_status')=='verified':
             for field in ['canonical_id','tmdb_id','identity_status','identity_evidence','canonical_title','original_title',
-                          'year','aliases','tmdb_url','tmdb_runtime','tmdb_releases']:
+                          'year','aliases','tmdb_url','tmdb_runtime','tmdb_releases','vote_count','vote_average']:
                 if field in previous: movie[field]=previous[field]
         identity=trusted_identity(movie,catalog)
         if identity and movie.get('identity_status')!='verified':
@@ -79,6 +79,9 @@ def run(refresh=True, newsletter=False):
         s['search_titles']=list(dict.fromkeys(t for t in [m.get('canonical_title'),m.get('original_title'),*m.get('aliases',[])] if t))
         s['tmdb_url']=m.get('tmdb_url')
         s['year']=m.get('year')
+        s['vote_count']=m.get('vote_count')
+        s['vote_average']=m.get('vote_average')
+        s['source_work_id']=m.get('source_work_id')
         # Explicit classic programmes remain independent classification evidence.
         if m.get('category'): s['category']=m['category']
         if refresh and m.get('identity_status')=='verified' and 'classification_evidence' not in s:
@@ -91,7 +94,7 @@ def run(refresh=True, newsletter=False):
             incidents.add(cinema['id'],'source_pending',cinema['id'],cinema.get('reading_note','Fuente pendiente de integrar; no se incluyen sus sesiones.'),cinema.get('url',''),'info')
     inventory_ids={c['id'] for c in cinemas}
     checked.update(i['source_id'] for i in old.get('incidents',[]) if i['code']=='source_pending' and i['source_id'] not in inventory_ids)
-    data=dict(version='0.4.2',generated_at=now(),coverage_complete=False,cinemas=cinemas,sources=sources,
+    data=dict(version='0.5.0',generated_at=now(),coverage_complete=False,cinemas=cinemas,sources=sources,
               movies=movies,sessions=sessions,incidents=incidents.finish(checked),agent_status='waiting_for_copilot',tmdb=tmdb_status)
     write_json(path,data)
     build(data,newsletter)
@@ -142,6 +145,7 @@ def build(data,newsletter=False):
     write_json(dist/'catalog.json',sorted(catalog.values(),key=lambda m:m['title'].casefold()))
     write_json(dist/'data.json',data)
     write_json(dist/'favorites.json',read_json(ROOT/'config/favorites.json',[]))
+    write_json(dist/'favorite-searches.json',read_json(ROOT/'data/favorite-searches.json',[]))
     (dist/'calendario.ics').write_text(calendar(data),encoding='utf-8',newline='')
     (dist/'.nojekyll').touch()
     posts=ROOT/'data/newsletters'

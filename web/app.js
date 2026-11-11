@@ -1,4 +1,4 @@
-import {madridDay, filterSessions, countByDay, monthCells} from './calendar-utils.js?v=0.4.2';
+import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms} from './calendar-utils.js?v=0.5.0';
 
 const $ = selector => document.querySelector(selector);
 const all = selector => [...document.querySelectorAll(selector)];
@@ -31,17 +31,14 @@ function store(key, value) {
 }
 let data, catalog = [], watch = [], origin = stored('cm-origin', null);
 let offlineData = false, installPrompt = null;
+let selectedCinemas = new Set(), selectedCategory = '', favoriteSearches = [], favoritePage = 1;
+const categories = [['','Toda la cartelera'],['repertory_events','Reposiciones y eventos'],['premiere','Estrenos'],['unclassified','Pendiente de clasificar']];
+const eventName = tag => ({live_music:'Música en directo',discussion:'Coloquio',guests:'Con invitados',marathon:'Maratón o programa doble'}[tag] || tag);
 if (!Array.isArray(watch)) watch = [];
 const initialDay = madridDay();
 let calendarYear = Number(initialDay.slice(0,4)), calendarMonth = Number(initialDay.slice(5,7)) - 1;
 
-function distance(cinema) {
-  if (!origin || !Number.isFinite(cinema?.lat) || !Number.isFinite(cinema?.lon)) return null;
-  const radians = x => x * Math.PI / 180;
-  const a = radians(cinema.lat - origin.lat), b = radians(cinema.lon - origin.lon);
-  const q = Math.sin(a / 2) ** 2 + Math.cos(radians(origin.lat)) * Math.cos(radians(cinema.lat)) * Math.sin(b / 2) ** 2;
-  return 6371 * 2 * Math.atan2(Math.sqrt(q), Math.sqrt(Math.max(0, 1 - q)));
-}
+function distance(cinema) { return distanceKm(origin,cinema); }
 function nearLabel(cinema) {
   const d = distance(cinema);
   return d === null ? '' : `${d <= 1 ? '🟢' : d <= 2 ? '🟡' : d <= 4 ? '🟠' : '🟣'} ${d.toFixed(1)} km en línea recta`;
@@ -57,57 +54,103 @@ function gcal(session, cinema) {
 
 function renderSessions(target, sessions) {
   target.replaceChildren();
-  const groups = new Map();
-  for (const session of sessions) {
-    const key = [session.start.slice(0,10), session.movie_id, session.cinema_id, session.version, session.format].join('|');
-    if (!groups.has(key)) groups.set(key, []);
-    groups.get(key).push(session);
-  }
-  let number = 0;
-  for (const list of groups.values()) {
-    const session = list[0], cinema = data.cinemas.find(c => c.id === session.cinema_id) || {name:session.cinema_id, address:''};
-    const row = el('article', undefined, 'film'), body = el('div');
-    row.append(el('div', String(++number).padStart(2, '0'), 'film-number'));
-    body.append(el('h3', session.title), el('p', `${fmt.format(new Date(session.start))} · ${cinema.name}${session.director ? ' · ' + session.director : ''}`, 'meta'));
-    const badges = el('div', undefined, 'badges');
-    const tags = [session.version, session.format, nearLabel(cinema),
-      session.category === 'repertory' ? 'Reposición verificada' : null,
-      session.stale || offlineData ? 'Última lectura guardada' : null, ...(session.special_tags || []).map(tag => ({live_music:'Música en directo',discussion:'Coloquio',guests:'Con invitados',marathon:'Maratón o programa doble'}[tag] || tag))].filter(Boolean);
-    for (const tag of tags) badges.append(el('span', tag, 'badge'));
-    body.append(badges);
-    if (session.tmdb_url) body.append(link(`Ficha TMDB${session.year ? ' · ' + session.year : ''} ↗`,session.tmdb_url,'tmdb-film-link'));
-    const slots = el('div', undefined, 'times');
-    for (const item of list) {
-      const slot = el('div', undefined, 'slot');
-      slot.append(link(clock.format(new Date(item.start)), item.booking_url), el('small', item.stale || offlineData ? 'Consultar cambios ↗' : 'Entradas ↗'));
-      if (!item.stale && item.duration_minutes) slot.append(link('+ Calendario', gcal(item, cinema), 'add-calendar'));
-      else slot.append(link('Consultar ficha', item.source_url, 'add-calendar'));
-      slots.append(slot);
+  const groups = groupFilms(sessions,values().sort || 'time');
+  for (const group of groups) {
+    const first = group.sessions[0], movie = data.movies.find(m => m.id === first.movie_id) || {};
+    const article = el('article',undefined,'film movie-group'), heading = el('div',undefined,'movie-heading');
+    const title = movie.canonical_title || first.title;
+    heading.append(el('h3',title));
+    const meta = [movie.year || first.year, movie.director || first.director].filter(Boolean).join(' · ');
+    if (meta) heading.append(el('p',meta,'meta'));
+    const badges = el('div',undefined,'badges');
+    if (group.sessions.some(s => s.category === 'repertory')) badges.append(el('span','Reposición','badge'));
+    if (group.sessions.some(s => s.special_tags?.length)) badges.append(el('span','Incluye eventos','badge event-badge'));
+    if (group.vote_count !== null) badges.append(el('span',new Intl.NumberFormat('es-ES').format(group.vote_count)+' valoraciones TMDB','badge'));
+    heading.append(badges);
+    if (first.tmdb_url) heading.append(link('Ficha TMDB ↗',first.tmdb_url,'tmdb-film-link'));
+    article.append(heading);
+    const cinemaIds = new Set(group.sessions.map(s => s.cinema_id));
+    for (const cinema of rankCinemas(data.cinemas.filter(c => cinemaIds.has(c.id)),origin)) {
+      const block = el('section',undefined,'cinema-program'), name = el('h4',cinema.name);
+      if (nearLabel(cinema)) name.append(el('span',nearLabel(cinema),'cinema-distance'));
+      block.append(name);
+      const days = new Map();
+      for (const session of group.sessions.filter(s => s.cinema_id === cinema.id)) {
+        const key = session.start.slice(0,10);
+        if (!days.has(key)) days.set(key,[]);
+        days.get(key).push(session);
+      }
+      for (const [day,list] of days) {
+        const row = el('div',undefined,'screening-day');
+        row.append(el('h5',fmt.format(dayDate(day))));
+        const slots = el('div',undefined,'times');
+        for (const item of list) {
+          const special = item.special_tags?.length > 0;
+          const slot = el('div',undefined,'slot'+(special?' event-slot':''));
+          slot.append(link(clock.format(new Date(item.start)),item.booking_url));
+          const version = [item.version !== 'Sin especificar' ? item.version : '',item.format,item.room ? 'Sala '+item.room : ''].filter(Boolean).join(' · ');
+          if (version) slot.append(el('small',version));
+          if (special) slot.append(el('span',item.special_tags.map(eventName).join(' · '),'event-label'));
+          if (item.stale || offlineData) slot.append(el('small','Consultar cambios ↗'));
+          if (!item.stale && item.duration_minutes) slot.append(link('+ Calendario',gcal(item,cinema),'add-calendar'));
+          else slot.append(link('Consultar ficha',item.source_url,'add-calendar'));
+          slots.append(slot);
+        }
+        row.append(slots);block.append(row);
+      }
+      article.append(block);
     }
-    row.append(body, slots); target.append(row);
+    target.append(article);
   }
-  if (!groups.size) target.append(el('p', 'No hay sesiones con estos filtros.', 'empty'));
+  if (!groups.length) target.append(el('p','No hay películas con estos filtros.','empty'));
+  return groups.length;
+}
+function renderFilterChoices() {
+  if (!data) return;
+  const cinemas = rankCinemas(data.cinemas.filter(c => c.status === 'active'),origin);
+  const close = nearbyCinemas(cinemas,origin);
+  for (const id of ['cinema-options','calendar-cinema-options']) {
+    const box = $('#'+id), scroll = box.scrollLeft;
+    const focusId = box.contains(document.activeElement) ? document.activeElement?.dataset.cinemaId : null;
+    box.replaceChildren();
+    for (const cinema of cinemas) {
+      const d = distance(cinema), label = el('label',undefined,'cinema-chip'+(selectedCinemas.has(cinema.id)?' selected':''));
+      label.dataset.distance = d===null ? 'unknown' : d<=1 ? 'near' : d<=2 ? 'walk' : d<=4 ? 'medium' : 'far';
+      const input = el('input');input.type='checkbox';input.checked=selectedCinemas.has(cinema.id);input.dataset.cinemaId=cinema.id;
+      input.oninput = event => {event.stopPropagation();input.checked ? selectedCinemas.add(cinema.id) : selectedCinemas.delete(cinema.id);render();};
+      const name = el('span',cinema.name);
+      const dot = el('span',d===null ? (origin ? 'Distancia sin datos' : 'Sin origen') : d.toFixed(1)+' km','chip-distance');
+      label.append(input,name,dot);box.append(label);
+    }
+    box.scrollLeft=scroll;
+    if (focusId) box.querySelector('[data-cinema-id="'+focusId+'"]').focus({preventScroll:true});
+  }
+  for (const id of ['category-options','calendar-category-options']) {
+    const box=$('#'+id);box.replaceChildren();
+    for (const [key,name] of categories) {
+      const button=el('button',name);button.type='button';button.setAttribute('aria-pressed',String(selectedCategory===key));
+      button.onclick=()=>{selectedCategory=key;render();};box.append(button);
+    }
+  }
+  for (const button of all('[data-cinema-action]')) {
+    const isAll=button.dataset.cinemaAction==='all';
+    button.disabled=!isAll && !close.length;
+    button.setAttribute('aria-pressed',String(isAll ? !selectedCinemas.size : close.length>0 && selectedCinemas.size===close.length && close.every(id=>selectedCinemas.has(id))));
+  }
+  $('#cinema-selection-summary').textContent = selectedCinemas.size ? '· '+selectedCinemas.size+' seleccionados' : '· todos';
+  $('#cinema-order-note').textContent = origin ? 'Por cercanía a tu origen · distancias en línea recta. Desliza para ver todos.' : 'Guarda tu dirección en Mi origen para ordenar por cercanía y seleccionar los cercanos. Desliza para ver todos.';
 }
 
 function values() {
-  return Object.fromEntries(all('#filters [data-filter]').map(input => [input.dataset.filter, input.value]));
+  return {...Object.fromEntries(all('#filters [data-filter]').map(input => [input.dataset.filter,input.value])),cinemas:[...selectedCinemas],category:selectedCategory};
 }
 function syncFilters() {
   const filters = values();
   for (const input of all('#calendar-filters [data-filter]')) input.value = filters[input.dataset.filter] || '';
-  const count = ['cinema','category','version','format','after','before'].filter(key => filters[key]).length;
+  const count = ['version','format','after','before'].filter(key => filters[key]).length;
   $('#filter-count').textContent = count || '';
 }
-function sorted(sessions) {
-  return sessions.sort((a,b) => {
-    if (origin) {
-      const da = distance(data.cinemas.find(c => c.id === a.cinema_id));
-      const db = distance(data.cinemas.find(c => c.id === b.cinema_id));
-      if (da !== db) return (da ?? Infinity) - (db ?? Infinity);
-    }
-    return a.start.localeCompare(b.start);
-  });
-}
+function sorted(sessions) { return [...sessions].sort((a,b)=>a.start.localeCompare(b.start)); }
 function setDay(day, {focus = false} = {}) {
   $('#day').value = day;
   if (day) { calendarYear = Number(day.slice(0,4)); calendarMonth = Number(day.slice(5,7)) - 1; }
@@ -149,10 +192,10 @@ function renderCalendar() {
 }
 function render() {
   if (!data) return;
-  syncFilters();
+  renderFilterChoices(); syncFilters();
   const list = sorted(filterSessions(data.sessions, values()));
-  renderSessions($('#results'), list);
-  $('#result-count').textContent = `${list.length} ${list.length === 1 ? 'sesión' : 'sesiones'}`;
+  const films=renderSessions($('#results'),list);
+  $('#result-count').textContent = `${films} ${films===1?'película':'películas'} · ${list.length} ${list.length===1?'pase':'pases'}`;
   renderCalendar();
 }
 function setView(name, updateHash = true) {
@@ -168,8 +211,8 @@ function setView(name, updateHash = true) {
   window.scrollTo({top:0, behavior:'instant'});
 }
 
-function favoriteRequest(movie, operation = 'Añadir') {
-  return 'https://github.com/IgnacioGarijo/cine-madrid/issues/new?' + new URLSearchParams({template:'favorita.yml',operation,movie});
+function favoriteRequest(movie, operation = 'Añadir', page = 1) {
+  return 'https://github.com/IgnacioGarijo/cine-madrid/issues/new?' + new URLSearchParams({template:'favorita.yml',operation,movie,page:String(page)});
 }
 function renderWatch() {
   const box = $('#watchlist'); box.replaceChildren();
@@ -182,18 +225,36 @@ function renderWatch() {
   if (!watch.length) box.append(el('li','Todavía no hay películas guardadas.','empty'));
 }
 function renderCatalog() {
-  const box = $('#catalog'); box.replaceChildren();
-  const raw = $('#catalog-query').value.trim(), query = norm(raw);
-  const request = $('#request-favorite'); request.hidden = query.length < 2;
-  request.href = favoriteRequest(raw);
-  if (query.length < 2) return;
-  const matches = catalog.filter(m => [m.title,m.original_title,...(m.aliases || [])].some(title => norm(title).includes(query))).slice(0,8);
-  for (const movie of matches) {
-    const row = el('div',undefined,'favorite-row'), name = el('span');
-    name.append(el('strong',movie.title),el('small',`${movie.year || ''} · ${movie.director || ''}`));
-    const added = watch.some(m => m.id === movie.id);
+  const box = $('#catalog'); box.replaceChildren();$('#favorite-pagination').replaceChildren();
+  const raw = $('#catalog-query').value.trim(), query = norm(raw), request = $('#request-favorite');
+  request.hidden=query.length<2;request.href=favoriteRequest(raw,'Buscar',favoritePage);
+  const status=$('#favorite-search-status');
+  if (query.length<2) {status.textContent='Escribe un título para buscar en todo TMDB.';return;}
+  const results=favoriteSearches.find(s=>norm(s.query)===query && s.page===favoritePage);
+  if (!results) {status.textContent='Confirma Buscar en TMDB en GitHub y vuelve a esta ventana. Los resultados se cargarán automáticamente; la búsqueda no añade películas a la lista.';return;}
+  status.textContent=`${results.total_results} resultados en TMDB · página ${results.page} de ${results.total_pages || 1} · ${new Date(results.searched_at).toLocaleString('es-ES')}`;
+  for (const movie of results.movies) {
+    const row=el('div',undefined,'favorite-row'), name=el('span');
+    name.append(el('strong',movie.title),el('small',`${movie.year || 'Sin año'} · ${movie.director || movie.original_title || ''}`));
+    name.append(link('Ver ficha TMDB ↗',movie.source_url,'fine'));
+    const added=watch.some(m=>m.id===movie.id);
     row.append(name,added ? el('span','Guardada','fine') : link('Añadir ↗',favoriteRequest(movie.id),'button'));box.append(row);
   }
+  if (!results.movies.length) box.append(el('p','No hay resultados para ese título.','fine'));
+  for (const [page,label] of [[favoritePage-1,'Página anterior'],[favoritePage+1,'Página siguiente']]) {
+    if (page<1 || page>results.total_pages) continue;
+    const button=link(label+' ↗',favoriteRequest(raw,'Buscar',page),'button');
+    button.onclick=()=>{favoritePage=page;renderCatalog();};$('#favorite-pagination').append(button);
+  }
+}
+async function refreshFavoriteSearches() {
+  if (!$('#favorite-dialog').open) return;
+  try {
+    const response=await fetch('favorite-searches.json',{cache:'no-cache'});
+    if (response.ok) {favoriteSearches=await response.json();renderCatalog();}
+    const favorites=await fetch('favorites.json',{cache:'no-cache'});
+    if (favorites.ok) {watch=await favorites.json();renderWatch();}
+  } catch { /* Preserve the last public results when offline. */ }
 }
 function renderIncidents() {
   if (!data) return;
@@ -214,12 +275,13 @@ function connectionState() {
 }
 async function boot() {
   try {
-    const responses = await Promise.all([fetch('data.json',{cache:'no-cache'}), fetch('catalog.json',{cache:'no-cache'}), fetch('newsletters.json',{cache:'no-cache'}), fetch('favorites.json',{cache:'no-cache'})]);
+    const responses = await Promise.all([fetch('data.json',{cache:'no-cache'}), fetch('catalog.json',{cache:'no-cache'}), fetch('newsletters.json',{cache:'no-cache'}), fetch('favorites.json',{cache:'no-cache'}),fetch('favorite-searches.json',{cache:'no-cache'})]);
     if (!responses[0].ok) throw new Error('Datos no disponibles');
     offlineData = responses[0].headers.get('X-Cine-Madrid-Cache') === 'offline';
     data = await responses[0].json();
     catalog = responses[1].ok ? await responses[1].json() : [];
     watch = responses[3].ok ? await responses[3].json() : [];
+    favoriteSearches=responses[4].ok ? await responses[4].json() : [];
     const posts = responses[2].ok ? await responses[2].json() : [];
     $('#updated').textContent = 'Último intento: ' + new Date(data.generated_at).toLocaleString('es-ES');
     const active = data.sources.filter(s => s.status === 'ok').length;
@@ -228,16 +290,14 @@ async function boot() {
     const tmdb = data.tmdb || {};
     $('#agent-status').textContent = `TMDB: ${tmdb.status === 'ok' ? 'conectado' : tmdb.status === 'partial' ? 'lectura parcial' : 'pendiente o no disponible'} · ${tmdb.matched_movies || 0}/${tmdb.total_movies || data.movies.length} películas identificadas en la última consulta. Copilot sigue pendiente para las ambigüedades. Las identidades sin verificar no generan avisos de coincidencia.`;
     for (const cinema of data.cinemas) {
-      if (cinema.status === 'active') {
-        const option = el('option',cinema.name); option.value = cinema.id; $('#cinema').append(option);
-      }
       const row = el('div',undefined,'source-row');
       const reading = data.sources.find(s => s.id === cinema.id);
       const state = reading?.status === 'ok' ? 'Lectura correcta' : reading?.status === 'partial' ? 'Lectura parcial' : reading?.status === 'error' ? 'Error de lectura' : 'Pendiente';
       row.append(cinema.url ? link(cinema.name,cinema.url) : el('strong',cinema.name),el('span',`${state}${cinema.municipality && cinema.municipality !== 'Madrid' ? ' · ' + cinema.municipality : ''}${cinema.formats?.includes('IMAX') ? ' · Tiene sala IMAX' : ''}${reading?.last_session ? ' · Pases hasta ' + reading.last_session.slice(0,10) : ''}`));
+      if (cinema.schedule_url) row.append(link('Horarios · '+(cinema.schedule_label || 'fuente alternativa'),cinema.schedule_url));
       $('#sources').append(row);
     }
-    for (const key of ['cinema','category','version','format']) {
+    for (const key of ['version','format','sort']) {
       const source = $('#' + key), target = $('#calendar-' + key); target.replaceChildren();
       for (const option of source.options) target.append(option.cloneNode(true));
     }
@@ -251,6 +311,8 @@ async function boot() {
     const route = location.hash.slice(1);
     setView(route === 'calendario' ? 'cartelera' : route || 'cartelera', false);
     if (route === 'calendario') $('#calendar-dialog').showModal();
+    const search=new URLSearchParams(location.search).get('favorite_search');
+    if (search) {setView('pendientes');$('#catalog-query').value=search;favoritePage=Math.max(1,Number(new URLSearchParams(location.search).get('favorite_page')) || 1);renderCatalog();$('#favorite-dialog').showModal();}
   } catch {
     $('#fatal').hidden = false; $('#fatal').textContent = 'No se pudo cargar la cartelera. Conéctate a Internet y vuelve a abrir la página.';
     $('#updated').textContent = 'Datos no disponibles';
@@ -278,7 +340,8 @@ $('#toggle-filters').onclick = () => {
   const expanded = $('#toggle-filters').getAttribute('aria-expanded') === 'true';
   $('#toggle-filters').setAttribute('aria-expanded', String(!expanded)); $('#advanced-filters').hidden = expanded;
 };
-$('#reset-filters').onclick = () => { all('#filters [data-filter]').forEach(input => {input.value = '';}); render(); };
+$('#reset-filters').onclick = () => { all('#filters [data-filter]').forEach(input => {input.value = input.id==='sort' ? 'time' : '';});selectedCinemas.clear();selectedCategory='';render(); };
+all('[data-cinema-action]').forEach(button => {button.onclick=()=>{selectedCinemas=new Set(button.dataset.cinemaAction==='nearby' ? nearbyCinemas(data.cinemas.filter(c=>c.status==='active'),origin) : []);render();};});
 $('#today-button').onclick = () => setDay(madridDay());
 $('#all-days-button').onclick = () => setDay('');
 $('#calendar-clear-day').onclick = () => setDay('');
@@ -294,8 +357,9 @@ all('[data-close]').forEach(button => {button.onclick = () => $('#' + button.dat
 all('dialog').forEach(dialog => {dialog.onclick = event => {if (event.target === dialog && (event.clientX < dialog.getBoundingClientRect().left || event.clientX > dialog.getBoundingClientRect().right || event.clientY < dialog.getBoundingClientRect().top || event.clientY > dialog.getBoundingClientRect().bottom)) dialog.close();};});
 $('#show-location').onclick = () => { $('#location-settings').open = true; $('#origin').focus(); };
 $('#issue-filter').onchange = renderIncidents;
-$('#catalog-query').oninput = renderCatalog;
-$('#add-favorite').onclick = () => { $('#catalog-query').value = ''; renderCatalog(); $('#favorite-dialog').showModal(); $('#catalog-query').focus(); };
+$('#catalog-query').oninput = () => {favoritePage=1;renderCatalog();};
+setInterval(refreshFavoriteSearches,15000);window.addEventListener('focus',refreshFavoriteSearches);
+$('#add-favorite').onclick = () => { $('#catalog-query').value = '';favoritePage=1;renderCatalog(); $('#favorite-dialog').showModal(); $('#catalog-query').focus(); };
 $('#origin-form').onsubmit = async event => {
   event.preventDefault(); const address = $('#origin').value.trim(); if (!address) return;
   $('#origin-status').textContent = 'Buscando dirección…';

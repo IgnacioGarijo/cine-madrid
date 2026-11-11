@@ -12,8 +12,8 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-  <link rel="stylesheet" href="style.css?v=0.4.2">
-  <script src="app.js?v=0.4.2" type="module"></script>
+  <link rel="stylesheet" href="style.css?v=0.5.0">
+  <script src="app.js?v=0.5.0" type="module"></script>
 </head>
 <body>
 <a class="skip-link" href="#cartelera">Ir a la cartelera</a>
@@ -27,14 +27,18 @@
   <section id="cartelera" class="view" aria-label="Cartelera y calendario">
     <form id="filters" class="filters" role="search">
       <label class="search-label"><span class="sr-only">Película o dirección cinematográfica</span><span class="search-icon" aria-hidden="true">⌕</span><input id="query" data-filter="query" type="search" placeholder="Película o cineasta…" autocomplete="off"></label>
-      <div class="quick-controls"><label class="day-label">Día<input id="day" data-filter="day" type="date"></label><button type="button" id="toggle-filters" aria-expanded="false" aria-controls="advanced-filters">Filtros <span id="filter-count"></span><span aria-hidden="true">☷</span></button></div>
+      <div class="quick-controls"><label class="day-label">Día<input id="day" data-filter="day" type="date"></label><button type="button" id="toggle-filters" aria-expanded="false" aria-controls="advanced-filters">Más filtros <span id="filter-count"></span><span aria-hidden="true">☷</span></button></div>
+      <fieldset class="primary-filter"><legend>Cines <span id="cinema-selection-summary" class="fine"></span></legend>
+        <div class="cinema-actions"><button type="button" data-cinema-action="all">Todos</button><button type="button" data-cinema-action="nearby">Cercanos · hasta 2 km</button><button type="button" id="show-location">Mi origen</button></div>
+        <p class="fine cinema-hint" id="cinema-order-note">Selecciona varios cines. Desliza para ver todos.</p><div id="cinema-options" class="cinema-options" aria-label="Seleccionar cines"></div>
+      </fieldset>
+      <fieldset class="primary-filter"><legend>Programación</legend><div id="category-options" class="category-options"></div></fieldset>
+      <label class="sort-control">Ordenar películas<select id="sort" data-filter="sort"><option value="time">Próxima sesión</option><option value="votes">Más valoraciones en TMDB</option></select></label>
       <div id="advanced-filters" class="advanced-filters" hidden>
-        <label>Cine<select id="cinema" data-filter="cinema"><option value="">Todos los integrados</option></select></label>
-        <label>Programación<select id="category" data-filter="category"><option value="">Toda la cartelera</option><option value="repertory">Reposiciones verificadas</option><option value="premiere">Marcadas como estreno</option><option value="unclassified">Pendiente de clasificar</option><option value="special">Eventos especiales</option></select></label>
-        <label>Versión<select id="version" data-filter="version"><option value="">Todas</option><option>VOSE</option></select></label>
-        <label>Formato<select id="format" data-filter="format"><option value="">Todos</option><option value="IMAX">IMAX</option></select></label>
+        <label>Versión<select id="version" data-filter="version"><option value="">Todas</option><option>VOSE</option><option>Doblada</option><option>VO</option></select></label>
+        <label>Formato<select id="format" data-filter="format"><option value="">Todos</option><option value="IMAX">IMAX</option><option>35mm</option><option>70mm</option><option>4K</option></select></label>
         <label>Desde las<input id="after" data-filter="after" type="time"></label><label>Hasta las<input id="before" data-filter="before" type="time"></label>
-        <div class="filter-actions"><button type="button" id="reset-filters">Limpiar filtros</button><button type="button" id="show-location">Cercanía a mi origen</button></div>
+        <div class="filter-actions"><button type="button" id="reset-filters">Limpiar filtros</button></div>
       </div>
     </form>
     <details class="location" id="location-settings"><summary>Mi origen</summary><p>Se guarda solo en este navegador. Al buscar una dirección se envía a OpenStreetMap. Distancias en línea recta; los tiempos andando están pendientes.</p><form id="origin-form"><label>Dirección de origen<input id="origin" autocomplete="street-address" placeholder="Calle y número, Madrid"></label><button class="primary" type="submit">Guardar origen</button><button type="button" id="clear-origin">Borrar origen</button></form><p id="origin-status" aria-live="polite"></p><p class="legend"><span>🟢 Hasta 1 km</span><span>🟡 1–2 km</span><span>🟠 2–4 km</span><span>🟣 Más de 4 km</span></p></details>
@@ -43,7 +47,7 @@
         <div class="calendar-caption"><span class="eyebrow">CALENDARIO</span><h2 id="selected-day-label">Elige un día</h2><p id="calendar-summary">Consulta las próximas sesiones.</p><div class="day-actions"><button type="button" id="today-button">Hoy</button><button type="button" id="all-days-button">Todos los días</button></div></div>
         <button type="button" id="calendar-preview" disabled class="calendar-preview" aria-haspopup="dialog" aria-controls="calendar-dialog" aria-label="Ampliar calendario"><span id="mini-month" class="mini-month"></span><span id="mini-calendar" class="mini-calendar" aria-hidden="true"></span><span class="expand-calendar">Ampliar <span aria-hidden="true">↗</span></span></button>
       </aside>
-      <div class="results-area"><div class="results-heading"><h2>Sesiones</h2><span id="result-count" aria-live="polite">Cargando sesiones…</span></div><div id="results" class="results" aria-live="polite"></div></div>
+      <div class="results-area"><div class="results-heading"><h2>Películas</h2><span id="result-count" aria-live="polite">Cargando películas…</span></div><div id="results" class="results" aria-live="polite"></div></div>
     </div>
   </section>
 
@@ -56,11 +60,16 @@
   <section id="estado" class="view" hidden tabindex="-1"><div class="section-title"><h2>Fuentes e incidencias</h2><button type="button" data-go="cartelera">Volver a Cartelera</button></div><p id="coverage" class="notice"></p><p id="updated" class="fine"></p><p id="connection-status" class="fine"></p><p id="agent-status" class="fine"></p><div class="section-title"><h3>Inventario de espacios</h3><span id="inventory-count" class="fine"></span></div><p class="fine">Inventario provisional por contrastar. «Pendiente» significa que aún no recogemos sus sesiones, no que el cine esté cerrado.</p><div id="sources" class="source-list"></div><div class="section-title"><h3>Registro de incidencias</h3><select id="issue-filter" aria-label="Estado de incidencia"><option value="open">Abiertas</option><option value="resolved">Resueltas</option><option value="">Todas</option></select></div><div id="incidents"></div><div class="tmdb-credit"><a href="https://www.themoviedb.org" target="_blank" rel="noopener"><img src="icons/tmdb.svg" alt="The Movie Database (TMDB)"></a><p>This product uses the TMDB API but is not endorsed or certified by TMDB.</p><p>Identificación por título o alias y dirección. Reposición automática: estreno comercial al menos un año antes de la sesión; las premières de festivales no bastan. Los casos intermedios quedan pendientes de revisión.</p></div></section>
   <div id="fatal" role="alert" hidden></div>
 </main>
-<footer><div><span>Cine Madrid <b aria-hidden="true">✳</b></span><span class="version">v0.4.2</span></div><div class="footer-links"><button type="button" id="open-status">Fuentes e incidencias</button><button type="button" id="install-help">Añadir al móvil</button><a href="https://github.com/IgnacioGarijo/cine-madrid">Proyecto ↗</a></div><p id="offline-label" class="fine" hidden>Sin conexión · Última cartelera guardada</p></footer>
+<footer><div><span>Cine Madrid <b aria-hidden="true">✳</b></span><span class="version">v0.5.0</span></div><div class="footer-links"><button type="button" id="open-status">Fuentes e incidencias</button><button type="button" id="install-help">Añadir al móvil</button><a href="https://github.com/IgnacioGarijo/cine-madrid">Proyecto ↗</a></div><p id="offline-label" class="fine" hidden>Sin conexión · Última cartelera guardada</p></footer>
 
 <dialog id="calendar-dialog" class="calendar-dialog" aria-labelledby="calendar-dialog-title">
   <div class="dialog-header"><h2 id="calendar-dialog-title">Calendario</h2><button type="button" data-close="calendar-dialog" class="icon-button" aria-label="Cerrar calendario">✕</button></div>
-  <form id="calendar-filters" class="calendar-filters" role="search" aria-label="Filtros del calendario"><label class="search-label"><span class="sr-only">Película o cineasta en calendario</span><span class="search-icon" aria-hidden="true">⌕</span><input data-filter="query" type="search" placeholder="Película o cineasta…"></label><details><summary>Filtros del calendario <span class="fine">· compartidos con Cartelera</span></summary><div class="advanced-filters"><label>Cine<select data-filter="cinema" id="calendar-cinema"><option value="">Todos los integrados</option></select></label><label>Programación<select data-filter="category" id="calendar-category"></select></label><label>Versión<select data-filter="version" id="calendar-version"></select></label><label>Formato<select data-filter="format" id="calendar-format"></select></label><label>Desde las<input data-filter="after" type="time"></label><label>Hasta las<input data-filter="before" type="time"></label></div></details></form>
+  <form id="calendar-filters" class="calendar-filters" role="search" aria-label="Filtros del calendario">
+    <label class="search-label"><span class="sr-only">Película o cineasta en calendario</span><span class="search-icon" aria-hidden="true">⌕</span><input data-filter="query" type="search" placeholder="Película o cineasta…"></label>
+    <fieldset class="primary-filter"><legend>Cines</legend><div class="cinema-actions"><button type="button" data-cinema-action="all">Todos</button><button type="button" data-cinema-action="nearby">Cercanos · hasta 2 km</button></div><div id="calendar-cinema-options" class="cinema-options" aria-label="Seleccionar cines en el calendario"></div></fieldset>
+    <fieldset class="primary-filter"><legend>Programación</legend><div id="calendar-category-options" class="category-options"></div></fieldset>
+    <details><summary>Más filtros · compartidos con Cartelera</summary><div class="advanced-filters"><label>Versión<select data-filter="version" id="calendar-version"></select></label><label>Formato<select data-filter="format" id="calendar-format"></select></label><label>Desde las<input data-filter="after" type="time"></label><label>Hasta las<input data-filter="before" type="time"></label><label>Ordenar películas<select data-filter="sort" id="calendar-sort"></select></label></div></details>
+  </form>
   <div class="month-navigation"><button type="button" id="previous-month" class="icon-button" aria-label="Mes anterior">‹</button><h3 id="calendar-month" aria-live="polite"></h3><button type="button" id="next-month" class="icon-button" aria-label="Mes siguiente">›</button></div>
   <div class="weekday-labels" aria-hidden="true"><span>L</span><span>M</span><span>X</span><span>J</span><span>V</span><span>S</span><span>D</span></div><div id="calendar-grid" class="calendar-grid" role="group" aria-label="Días del mes"></div>
   <div class="calendar-key"><span><i aria-hidden="true"></i> Hay sesiones con tus filtros</span><button type="button" id="calendar-clear-day">Quitar día seleccionado</button></div>
@@ -69,10 +78,10 @@
 </dialog>
 <dialog id="favorite-dialog" class="install-dialog" aria-labelledby="favorite-title">
   <div class="dialog-header"><h2 id="favorite-title">Añadir una película</h2><button type="button" data-close="favorite-dialog" class="icon-button" aria-label="Cerrar búsqueda">✕</button></div>
-  <label>Película<input id="catalog-query" type="search" placeholder="Título, título y año o enlace de TMDB…" autocomplete="off"></label>
-  <div id="catalog" class="favorite-search"></div>
-  <a id="request-favorite" class="button primary" hidden target="_blank" rel="noopener">Buscar y añadir con GitHub ↗</a>
-  <p class="fine">Confirma la solicitud con tu cuenta de GitHub. Solo la cuenta propietaria modifica esta lista pública; el cambio aparece tras la actualización automática. Si hay títulos iguales, podrás elegir la ficha correcta.</p>
+  <label>Película<input id="catalog-query" type="search" placeholder="Buscar en todo TMDB…" autocomplete="off"></label>
+  <p id="favorite-search-status" class="fine" role="status"></p><div id="catalog" class="favorite-search"></div><div id="favorite-pagination" class="actions"></div>
+  <a id="request-favorite" class="button primary" hidden target="_blank" rel="noopener">Buscar en TMDB ↗</a>
+  <p class="fine">La búsqueda consulta todo TMDB, aunque la película no esté en cartelera. Confírmala en GitHub y vuelve aquí: los resultados aparecen tras la actualización automática. Elige después la película que quieres guardar para recibir avisos. Solo la cuenta propietaria modifica la lista; la clave de TMDB permanece protegida.</p>
 </dialog>
 <dialog id="install-dialog" class="install-dialog" aria-labelledby="install-title"><div class="dialog-header"><h2 id="install-title">Cine Madrid en tu móvil</h2><button type="button" data-close="install-dialog" class="icon-button" aria-label="Cerrar instrucciones">✕</button></div><img src="icons/icon-192.png" width="72" height="72" alt="Icono de Cine Madrid"><p>Un icono en tu pantalla de inicio y acceso en una ventana propia.</p><div><h3>Android</h3><p>Abre esta web en Chrome y utiliza el menú <strong>Instalar aplicación</strong> o <strong>Añadir a pantalla de inicio</strong>.</p></div><div><h3>iPhone</h3><p>Abre esta web en Safari. Pulsa <strong>Compartir → Añadir a pantalla de inicio</strong> y confirma. Si aparece «Abrir como app web», actívalo.</p></div><p class="fine">Tras una primera visita con conexión podrás consultar la última cartelera guardada. Los horarios y enlaces de entradas necesitan conexión para comprobar cambios.</p></dialog>
 </body>

@@ -1,7 +1,8 @@
 import json
 import unittest
 from datetime import date
-from src.adapters import Reader,renoir,verdi,cba,artistic,cineteca,capitol,morasol
+from src.adapters import Reader,renoir,verdi,cba,artistic,cineteca,capitol,morasol,cinerama
+from unittest.mock import patch
 from src.core import Incidents
 from src.sources import parse_paz
 from src.tmdb import identity_match
@@ -76,5 +77,17 @@ class AdapterTests(unittest.TestCase):
         r=reader('morasol',page);morasol(r)
         self.assertEqual(len(r.result.sessions),1)
         self.assertEqual(next(iter(r.result.sessions.values()))['start'],'2027-01-01T18:30:00+01:00')
+
+    def test_secondary_source_uses_exact_dates_and_session_format(self):
+        page='<h1>Cinesa Parquesur</h1><article class="cine-row"><a class="cine-row__t" href="https://source.example/film/akira">Akira</a><div class="cine-ver" data-ver="vose"><a class="cine-hr" data-hora="2026-11-12 20:00" data-fmt="imax" href="https://www.cinesa.es/peliculas/akira/?cinema=005">20:00</a><a class="cine-hr" data-hora="2026-11-13 19:00" data-fmt="" href="https://www.cinesa.es/peliculas/akira/?cinema=005">19:00</a></div></article>'
+        r=reader('cinerama',page);r.cinema.update(schedule_url='https://source.example/cinema',source_names=['Cinesa Parquesur'],booking_origins=['https://www.cinesa.es/'])
+        with patch('src.adapters._film_cache',{'https://source.example/film/akira':dict(director='Katsuhiro Otomo',duration=124,fetched_day=TODAY.isoformat())}):cinerama(r)
+        sessions,movies=r.result.finish();self.assertEqual(len(sessions),2)
+        self.assertEqual(sessions[0]['start'],'2026-11-12T20:00:00+01:00');self.assertEqual(sessions[0]['format'],'IMAX');self.assertIsNone(sessions[1]['format'])
+        self.assertEqual(sessions[0]['version'],'VOSE');self.assertEqual(movies[0]['source_work_id'],'cinerama:https://source.example/film/akira')
+
+    def test_secondary_source_rejects_a_different_venue(self):
+        r=reader('cinerama','<h1>Otro cine</h1>');r.cinema.update(schedule_url='https://source.example/cinema',source_names=['Cinesa Parquesur'])
+        with self.assertRaises(ValueError):cinerama(r)
 
 if __name__=='__main__':unittest.main()

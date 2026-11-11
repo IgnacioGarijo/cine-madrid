@@ -5,7 +5,7 @@ import re
 from datetime import date,datetime,timedelta
 from urllib.parse import urljoin,urlparse,parse_qs
 from bs4 import BeautifulSoup
-from .core import MADRID,stable_id,normalize
+from .core import ROOT,MADRID,stable_id,normalize,read_json,write_json,now
 from .sources import Fetcher,parse_paz,parse_day,event_tags,classic_members,CLASSIC_URL
 
 MONTHS={normalize(name):index for index,name in enumerate(['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'],1)}
@@ -42,7 +42,7 @@ def json_nodes(soup):
 class Result:
     def __init__(self,cinema,today):
         self.cinema=cinema;self.today=today;self.sessions={};self.movies={};self.pages=[]
-    def add(self,title,start,url,director='',duration=None,booking=None,version=None,room='',native=None,category='unclassified',tags=None):
+    def add(self,title,start,url,director='',duration=None,booking=None,version=None,room='',native=None,category='unclassified',tags=None,format=None,work_id=None):
         if isinstance(start,str):start=datetime.fromisoformat(start.replace('Z','+00:00'))
         if start.tzinfo is None:start=start.replace(tzinfo=MADRID)
         start=start.astimezone(MADRID)
@@ -53,11 +53,12 @@ class Result:
         if version is None:
             version='VOSE' if re.search(r'V\.?\s*O\.?\s*S\.?\s*E\.?|subtitulad[ao].*castellano',title,re.I) else 'Doblada' if re.search(r'doblad[ao]',title,re.I) else 'Sin especificar'
         movie=dict(id=mid,source_id=cid,title=title,director=director.strip(),duration_minutes=duration,source_url=url)
+        if work_id:movie['source_work_id']=work_id
         self.movies[mid]=movie
         sid=cid+':session:'+str(native or stable_id(mid,start.isoformat(),room,version))
         self.sessions[sid]=dict(id=sid,source_id=cid,cinema_id=cid,movie_id=mid,title=title,director=director.strip(),
             start=start.isoformat(),duration_minutes=duration,booking_url=booking or url,source_url=url,version=version,room=room,
-            format=None,status='confirmed',stale=False,source_category=category,category=category,special_tags=tags or [])
+            format=format,status='confirmed',stale=False,source_category=category,category=category,special_tags=tags or [])
     def finish(self):
         return list(self.sessions.values()),list(self.movies.values())
 
@@ -241,6 +242,45 @@ def morasol(reader):
         reader.result.add(title,start,url,duration=duration,room=str(session.get('Sala','')),native=session['Id'],tags=event_tags(session.get('InfoAdicional','')))
 
 ADAPTERS={'mk2':mk2,'renoir':renoir,'verdi':verdi,'cba':cba,'artistic':artistic,'cineteca':cineteca,'capitol':capitol,'morasol':morasol}
+
+_film_cache=None
+def cinerama(reader):
+    """Attributed secondary source, with explicit dates and original-chain booking links."""
+    global _film_cache
+    if _film_cache is None:_film_cache=read_json(ROOT/'data/cinerama_cache.json',{})
+    c=reader.cinema;url=c['schedule_url'];soup=reader.soup(url)
+    heading=text(soup.select_one('h1'))
+    if not any(normalize(n) in normalize(heading) for n in c['source_names']):
+        raise ValueError('La página de horarios no corresponde al recinto configurado')
+    rows=soup.select('article.cine-row')
+    if not rows:raise ValueError('No se reconocen horarios en la fuente alternativa')
+    for row in rows:
+        title_node=row.select_one('a.cine-row__t[href]')
+        if title_node is None:continue
+        film_url=urljoin(url,title_node['href']);metadata=_film_cache.get(film_url,{})
+        if not metadata or metadata.get('fetched_day','')<(reader.today-timedelta(days=7)).isoformat():
+            try:
+                detail=reader.soup(film_url)
+                movie=next((m for m in json_nodes(detail) if m.get('@type')=='Movie'),{})
+                directors=movie.get('director',[])
+                if isinstance(directors,dict):directors=[directors]
+                director=', '.join(d.get('name','') for d in directors if isinstance(d,dict))
+                raw=movie.get('duration','');duration_match=re.fullmatch(r'PT(?:(\d+)H)?(?:(\d+)M)?',raw)
+                duration=(int(duration_match[1] or 0)*60+int(duration_match[2] or 0)) if duration_match else None
+                metadata=dict(director=director,duration=duration,fetched_day=reader.today.isoformat())
+                _film_cache[film_url]=metadata;write_json(ROOT/'data/cinerama_cache.json',_film_cache)
+            except Exception:reader.partial(film_url,'No se pudo actualizar la ficha de la fuente alternativa.',film_url)
+        for a in row.select('a.cine-hr[data-hora][href]'):
+            if not a['href'].startswith(tuple(c['booking_origins'])):continue
+            start=datetime.strptime(a['data-hora'],'%Y-%m-%d %H:%M')
+            if start.date()<reader.today:continue
+            version_node=a.find_parent(class_='cine-ver');vo=version_node.get('data-ver','') if version_node else ''
+            version='VOSE' if 'vose' in vo.casefold() else 'Doblada' if vo=='doblada' else 'VO' if vo=='vo' else 'Sin especificar'
+            format=a.get('data-fmt','').upper() or None
+            reader.result.add(text(title_node),start,url,metadata.get('director',''),metadata.get('duration'),a['href'],version,
+                format=format,work_id='cinerama:'+film_url)
+
+ADAPTERS['cinerama']=cinerama
 
 def read_cinema(cinema,today,incidents):
     reader=Reader(cinema,today,incidents)

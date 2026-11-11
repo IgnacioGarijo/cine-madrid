@@ -13,15 +13,23 @@ def field(body,label):
     match=re.search(r'^### '+re.escape(label)+r'\s*\n(.*?)(?=\n### |\Z)',body,re.M|re.S)
     return match[1].strip() if match else ''
 
-def request_url(movie,operation='Añadir'):
-    return 'https://github.com/IgnacioGarijo/cine-madrid/issues/new?'+urlencode({'template':'favorita.yml','operation':operation,'movie':movie})
+def request_url(movie,operation='Añadir',page=1):
+    return 'https://github.com/IgnacioGarijo/cine-madrid/issues/new?'+urlencode({'template':'favorita.yml','operation':operation,'movie':movie,'page':page})
 
-def apply_request(event,owner,favorites,client):
+def apply_request(event,owner,favorites,client,searches=None):
     issue=event.get('issue',{})
     if issue.get('user',{}).get('login')!=owner or not issue.get('title','').startswith('Favoritas:'):
         return favorites,None,False
     operation=field(issue.get('body',''),'Operación');query=field(issue.get('body',''),'Película')
-    if operation not in ('Añadir','Quitar') or not query:return favorites,'Solicitud incompleta.',False
+    if operation not in ('Añadir','Quitar','Buscar') or not query or len(query)>300:return favorites,'Solicitud incompleta.',False
+    if operation=='Buscar':
+        raw_page=field(issue.get('body',''),'Página') or '1'
+        if not raw_page.isdigit() or not 1<=int(raw_page)<=500:return favorites,'Página no válida.',False
+        result=client.search_catalog(query,int(raw_page))
+        if searches is not None:
+            searches[:]=[result,*[s for s in searches if (s['query'].casefold(),s['page'])!=(query.casefold(),int(raw_page))]][:30]
+        url='https://ignaciogarijo.github.io/cine-madrid/?'+urlencode({'favorite_search':query,'favorite_page':raw_page})+'#pendientes'
+        return favorites,'Búsqueda completada en todo TMDB. [Volver a la web y elegir una película]('+url+'). La lista de favoritas no cambia hasta que confirmes Añadir.',True
     explicit=re.fullmatch(r'(?:https://www\.themoviedb\.org/movie/|tmdb:)(\d+)(?:-[^/?#]*)?/?',query)
     if operation=='Quitar':
         matches=[m for m in favorites if m['id']==query or m['title']==query or (explicit and m['id']=='tmdb:'+explicit[1])]
@@ -50,10 +58,14 @@ def main():
     repo=os.environ['GITHUB_REPOSITORY'];owner=repo.split('/')[0]
     if not args.respond:
         event=read_json(os.environ['GITHUB_EVENT_PATH']);path=ROOT/'config/favorites.json'
+        if os.getenv('FAVORITE_SEARCH'):
+            event={'issue':{'user':{'login':owner},'title':'Favoritas: búsqueda','body':'### Operación\n\nBuscar\n\n### Película\n\n'+os.environ['FAVORITE_SEARCH']+'\n\n### Página\n\n'+os.getenv('FAVORITE_PAGE','1'),'number':0}}
         cache=read_json(ROOT/'data/tmdb_cache.json',{})
-        updated,reply,success=apply_request(event,owner,read_json(path,[]),Client(os.getenv('TMDB_READ_TOKEN',''),cache))
+        searches=read_json(ROOT/'data/favorite-searches.json',[])
+        updated,reply,success=apply_request(event,owner,read_json(path,[]),Client(os.getenv('TMDB_READ_TOKEN',''),cache),searches)
         if reply is not None:
             write_json(path,updated);write_json(ROOT/'data/tmdb_cache.json',cache)
+            write_json(ROOT/'data/favorite-searches.json',searches)
             write_json(reply_path,dict(number=event['issue']['number'],body=reply,success=success))
     elif reply_path.exists():
         reply=read_json(reply_path)

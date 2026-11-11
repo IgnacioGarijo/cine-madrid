@@ -16,15 +16,16 @@
   {
     "id": "mk2-cines-palacio-de-hielo",
     "name": "MK2 CINES PALACIO DE HIELO",
-    "address": "",
-    "lat": null,
-    "lon": null,
+    "address": "Calle de Silvano, 77",
+    "lat": 40.4632266,
+    "lon": -3.6369408,
     "url": "https://www.mk2palaciodehielo.es/es/cartelera",
     "status": "active",
     "inventory_status": "verified_source",
     "provenance": "https://www.mk2palaciodehielo.es/es/cartelera",
     "municipality": "Madrid",
-    "adapter": "mk2"
+    "adapter": "mk2",
+    "coordinate_source": "https://www.mk2palaciodehielo.es/es/cartelera"
   },
   {
     "id": "cine-paz",
@@ -173,74 +174,146 @@
   {
     "id": "cinesa-proyecciones",
     "name": "CINESA PROYECCIONES",
-    "address": "",
-    "lat": null,
-    "lon": null,
+    "address": "Calle de Fuencarral, 136, 28010 Madrid",
+    "lat": 40.43148,
+    "lon": -3.703273,
     "url": "https://www.cinesa.es/",
-    "status": "pending",
+    "status": "active",
     "inventory_status": "needs_review",
     "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
-    "municipality": "Madrid"
+    "municipality": "Madrid",
+    "adapter": "cinerama",
+    "schedule_url": "https://cinerama.es/cartelera/cine/cinesa-proyecciones-3d/",
+    "source_names": [
+      "Cinesa Proyecciones"
+    ],
+    "reading_note": "Horarios de Cinerama (fuente alternativa); entradas enlazadas a la cadena original.",
+    "booking_origins": [
+      "https://www.cinesa.es/",
+      "https://web.cinesa.es/"
+    ],
+    "schedule_label": "Cinerama · fuente alternativa",
+    "coordinate_source": "https://cinerama.es/cartelera/cine/cinesa-proyecciones-3d/"
   },
   {
     "id": "cinesa-principe-p-o-isense",
     "name": "CINESA PRINCIPE PÍO · ISENSE",
-    "address": "",
-    "lat": null,
-    "lon": null,
+    "address": "Paseo de la Florida, 2,, 28008 Madrid",
+    "lat": 40.422874,
+    "lon": -3.721284,
     "url": "https://www.cinesa.es/",
-    "status": "pending",
+    "status": "active",
     "inventory_status": "needs_review",
     "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
-    "municipality": "Madrid"
+    "municipality": "Madrid",
+    "adapter": "cinerama",
+    "schedule_url": "https://cinerama.es/cartelera/cine/cinesa-principe-pio-3d/",
+    "source_names": [
+      "Cinesa Príncipe Pío"
+    ],
+    "reading_note": "Horarios de Cinerama (fuente alternativa); entradas enlazadas a la cadena original.",
+    "booking_origins": [
+      "https://www.cinesa.es/",
+      "https://web.cinesa.es/"
+    ],
+    "schedule_label": "Cinerama · fuente alternativa",
+    "coordinate_source": "https://cinerama.es/cartelera/cine/cinesa-principe-pio-3d/"
   },
   {
     "id": "cinesa-m-ndez-lvaro-isense",
     "name": "CINESA MÉNDEZ ÁLVARO – ISENSE",
-    "address": "",
-    "lat": null,
-    "lon": null,
+    "address": "Calle del Acanto, 2, 28045 Madrid",
+    "lat": 40.39696,
+    "lon": -3.675878,
     "url": "https://www.cinesa.es/",
-    "status": "pending",
+    "status": "active",
     "inventory_status": "needs_review",
     "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
-    "municipality": "Madrid"
+    "municipality": "Madrid",
+    "adapter": "cinerama",
+    "schedule_url": "https://cinerama.es/cartelera/cine/cinesa-mendez-alvaro-isens-3d/",
+    "source_names": [
+      "Cinesa Méndez Álvaro"
+    ],
+    "reading_note": "Horarios de Cinerama (fuente alternativa); entradas enlazadas a la cadena original.",
+    "booking_origins": [
+      "https://www.cinesa.es/",
+      "https://web.cinesa.es/"
+    ],
+    "schedule_label": "Cinerama · fuente alternativa",
+    "coordinate_source": "https://cinerama.es/cartelera/cine/cinesa-mendez-alvaro-isens-3d/"
   },
   {
     "id": "cinesa-las-rosas",
     "name": "CINESA LAS ROSAS",
-    "address": "",
-    "lat": null,
-    "lon": null,
+    "address": "Av de Guadalajara, 2, 28032 Madrid",
+    "lat": 40.418603,
+    "lon": -3.620442,
     "url": "https://www.cinesa.es/",
-    "status": "pending",
+    "status": "active",
     "inventory_status": "needs_review",
     "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
-    "municipality": "Madrid"
+    "municipality": "Madrid",
+    "adapter": "cinerama",
+    "schedule_url": "https://cinerama.es/cartelera/cine/cinesa-las-rosas-3d/",
+    "source_names": [
+      "Cinesa Las Rosas"
+    ],
+    "reading_note": "Horarios de Cinerama (fuente alternativa); entradas enlazadas a la cadena original.",
+    "booking_origins": [
+      "https://www.cinesa.es/",
+      "https://web.cinesa.es/"
+    ],
+    "schedule_label": "Cinerama · fuente alternativa",
+    "coordinate_source": "https://cinerama.es/cartelera/cine/cinesa-las-rosas-3d/"
   },
   {
     "id": "cinesa-la-gavia",
     "name": "CINESA LA GAVIA",
-    "address": "",
-    "lat": null,
-    "lon": null,
+    "address": "Calle de Adolfo Bioy Casares 2, 28051 Madrid",
+    "lat": 40.367722,
+    "lon": -3.597958,
     "url": "https://www.cinesa.es/",
-    "status": "pending",
+    "status": "active",
     "inventory_status": "needs_review",
     "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
-    "municipality": "Madrid"
+    "municipality": "Madrid",
+    "adapter": "cinerama",
+    "schedule_url": "https://cinerama.es/cartelera/cine/cinesa-la-gavia-3d/",
+    "source_names": [
+      "Cinesa La Gavia"
+    ],
+    "reading_note": "Horarios de Cinerama (fuente alternativa); entradas enlazadas a la cadena original.",
+    "booking_origins": [
+      "https://www.cinesa.es/",
+      "https://web.cinesa.es/"
+    ],
+    "schedule_label": "Cinerama · fuente alternativa",
+    "coordinate_source": "https://cinerama.es/cartelera/cine/cinesa-la-gavia-3d/"
   },
   {
     "id": "cinesa-manoteras",
     "name": "CINESA MANOTERAS",
-    "address": "",
-    "lat": null,
-    "lon": null,
+    "address": "Avenida de Manoteras, 40, 28050 Madrid",
+    "lat": 40.486298,
+    "lon": -3.66605,
     "url": "https://www.cinesa.es/",
-    "status": "pending",
+    "status": "active",
     "inventory_status": "needs_review",
     "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
-    "municipality": "Madrid"
+    "municipality": "Madrid",
+    "adapter": "cinerama",
+    "schedule_url": "https://cinerama.es/cartelera/cine/cinesa-manoteras/",
+    "source_names": [
+      "Cinesa Manoteras"
+    ],
+    "reading_note": "Horarios de Cinerama (fuente alternativa); entradas enlazadas a la cadena original.",
+    "booking_origins": [
+      "https://www.cinesa.es/",
+      "https://web.cinesa.es/"
+    ],
+    "schedule_label": "Cinerama · fuente alternativa",
+    "coordinate_source": "https://cinerama.es/cartelera/cine/cinesa-manoteras/"
   },
   {
     "id": "cine-yelmo-ideal",
@@ -371,13 +444,14 @@
     "name": "Cine Estudio · Círculo de Bellas Artes",
     "url": "https://www.circulobellasartes.com/cine-estudio/",
     "address": "Calle del Marqués de Casa Riera, 4",
-    "lat": null,
-    "lon": null,
+    "lat": 40.4182071,
+    "lon": -3.6965142,
     "status": "active",
     "inventory_status": "verified_source",
     "provenance": "https://www.circulobellasartes.com/cine-estudio/",
     "municipality": "Madrid",
-    "adapter": "cba"
+    "adapter": "cba",
+    "coordinate_source": "https://www.openstreetmap.org/way/4291319"
   },
   {
     "id": "fundacion-japon",
@@ -431,54 +505,84 @@
     "id": "kinepolis-ciudad-imagen",
     "name": "Kinépolis Ciudad de la Imagen",
     "municipality": "Pozuelo de Alarcón",
-    "address": "",
-    "lat": 40.3938601,
-    "lon": -3.7964807,
+    "address": "Edgar Neville, S/N, 28223 Pozuelo",
+    "lat": 40.3940847,
+    "lon": -3.7972675,
     "url": "https://kinepolis.es/cines/kinepolis-madrid-ciudad-de-la-imagen/informacion/",
-    "status": "pending",
+    "status": "active",
     "inventory_status": "verified_venue",
     "formats": [
       "IMAX"
     ],
     "format_evidence_url": "https://www.imax.com/theatre/kinepolis-madrid-imax",
     "provenance": "https://www.imax.com/theatre/kinepolis-madrid-imax",
-    "reading_note": "Recinto IMAX confirmado. Lectura automática pendiente: la fuente o su proveedor de horarios restringe el acceso. No se infiere el formato de cada sesión.",
-    "coordinate_source": "https://www.openstreetmap.org/way/4291773"
+    "reading_note": "Horarios de Cinerama (fuente alternativa); entradas enlazadas a la cadena original.",
+    "coordinate_source": "https://cinerama.es/cartelera/cine/kinepolis-ciudad-de-la-imagen/",
+    "adapter": "cinerama",
+    "schedule_url": "https://cinerama.es/cartelera/cine/kinepolis-ciudad-de-la-imagen/",
+    "source_names": [
+      "Kinépolis Ciudad de la Imagen"
+    ],
+    "booking_origins": [
+      "https://kinepolis.es/"
+    ],
+    "schedule_label": "Cinerama · fuente alternativa"
   },
   {
     "id": "cinesa-parquesur",
     "name": "Cinesa Parquesur",
     "municipality": "Leganés",
-    "address": "",
-    "lat": 40.3389348,
-    "lon": -3.7312437,
+    "address": "Avenida de Gran Bretaña, 28916 Leganés",
+    "lat": 40.338868,
+    "lon": -3.731676,
     "url": "https://www.cinesa.es/cines/parquesur/",
-    "status": "pending",
+    "status": "active",
     "inventory_status": "verified_venue",
     "formats": [
       "IMAX"
     ],
     "format_evidence_url": "https://www.imax.com/theatre/cinesa-parquesur-imax",
     "provenance": "https://www.imax.com/theatre/cinesa-parquesur-imax",
-    "reading_note": "Recinto IMAX confirmado. Lectura automática pendiente: la fuente o su proveedor de horarios restringe el acceso. No se infiere el formato de cada sesión.",
-    "coordinate_source": "https://www.openstreetmap.org/node/1553399887"
+    "reading_note": "Horarios de Cinerama (fuente alternativa); entradas enlazadas a la cadena original.",
+    "coordinate_source": "https://cinerama.es/cartelera/cine/cinesa-parquesur-3d/",
+    "adapter": "cinerama",
+    "schedule_url": "https://cinerama.es/cartelera/cine/cinesa-parquesur-3d/",
+    "source_names": [
+      "Cinesa Parquesur"
+    ],
+    "booking_origins": [
+      "https://www.cinesa.es/",
+      "https://web.cinesa.es/"
+    ],
+    "schedule_label": "Cinerama · fuente alternativa"
   },
   {
     "id": "cinesa-heron-city-las-rozas",
     "name": "Cinesa Heron City Las Rozas",
     "municipality": "Las Rozas de Madrid",
-    "address": "",
-    "lat": 40.5158718,
-    "lon": -3.8969057,
+    "address": "Calle Camilo Jose Cela, 2, 28232 Las Rozas",
+    "lat": 40.515852,
+    "lon": -3.896964,
     "url": "https://www.cinesa.es/cines/las-rozas/",
-    "status": "pending",
+    "status": "active",
     "inventory_status": "verified_venue",
     "formats": [
       "IMAX"
     ],
     "format_evidence_url": "https://www.heroncity.com/madrid/heron-city-las-rozas/imax",
     "provenance": "https://www.heroncity.com/madrid/heron-city-las-rozas/imax",
-    "reading_note": "Recinto IMAX confirmado. Lectura automática pendiente: la fuente o su proveedor de horarios restringe el acceso. No se infiere el formato de cada sesión.",
-    "coordinate_source": "https://www.openstreetmap.org/node/2046053159"
+    "reading_note": "Horarios de Cinerama (fuente alternativa); entradas enlazadas a la cadena original.",
+    "coordinate_source": "https://cinerama.es/cartelera/cine/cinesa-heron-city-las-rozas-3d/",
+    "adapter": "cinerama",
+    "schedule_url": "https://cinerama.es/cartelera/cine/cinesa-heron-city-las-rozas-3d/",
+    "source_names": [
+      "Cinesa Las Rozas",
+      "Cinesa Heron City"
+    ],
+    "booking_origins": [
+      "https://www.cinesa.es/",
+      "https://web.cinesa.es/"
+    ],
+    "schedule_label": "Cinerama · fuente alternativa"
   }
 ]

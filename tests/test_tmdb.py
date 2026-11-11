@@ -102,4 +102,10 @@ class TMDBTests(unittest.TestCase):
         client=Client('test-token',{'movies':{'149':cached}})
         self.assertEqual(client.movie(149)['id'],'tmdb:149');get.assert_not_called()
 
+    @patch('src.tmdb.Client.get',return_value={'vote_count':5000,'vote_average':8.1})
+    def test_vote_count_is_cached_separately_and_is_not_the_average_score(self,get):
+        client=Client('test',{});m=movie()
+        client.statistics(m);client.statistics(m)
+        self.assertEqual(m['vote_count'],5000);self.assertEqual(m['vote_average'],8.1);self.assertEqual(get.call_count,1)
+
 if __name__=='__main__':unittest.main()

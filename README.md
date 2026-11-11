@@ -1,8 +1,18 @@
-# Cine Madrid · v0.4.2
+# Cine Madrid · v0.5.0
 
 Agenda personal de cine en Madrid capital y salas IMAX de la región, reposiciones y programación futura.
 
 Web: https://ignaciogarijo.github.io/cine-madrid/
+
+## Actualización v0.5.0
+
+- Cartelera agrupada por película: una identidad TMDB verificada reúne sus títulos, cines y días. Las identidades pendientes se mantienen separadas para no mezclar homónimas. Cada horario conserva versión, formato, sala y calendario individual.
+- Cines y programación siempre visibles, sin menús desplegables. Selección múltiple compartida con el calendario, colores por distancia y grupo de cines a 2 km o menos. El origen se guarda exclusivamente en cada navegador; hay que configurarlo una vez desde Mi origen. Los 20 cines con adaptador tienen coordenadas públicas.
+- Orden por próxima sesión o por número de valoraciones de TMDB (no por nota media). Las cifras se actualizan diariamente y las películas sin dato quedan al final del orden por valoraciones.
+- Reposiciones y eventos comparten categoría. Los pases con eventos explícitos se distinguen en naranja; otros pases de la misma película conservan su aspecto normal.
+- Kinépolis Ciudad de la Imagen y ocho Cinesa (seis en Madrid capital, Parquesur y Heron City Las Rozas) leen Cinerama como fuente alternativa, con fechas explícitas y enlaces de compra de la cadena. Kinépolis devuelve 403 por bloqueo de IP y el proveedor de horarios de Cinesa devuelve errores de disponibilidad. No se han eludido controles. El origen alternativo aparece en Fuentes e incidencias. Solo se marca IMAX cuando la sesión lo indica.
+- Añadir favoritas busca en todo TMDB mediante Actions, con paginación. No se limita al catálogo de cartelera. El usuario confirma Buscar en GitHub y vuelve a la web para elegir el resultado; esa búsqueda no añade películas por sí sola. Requiere iniciar sesión en la cuenta propietaria y esperar la publicación; no es búsqueda instantánea. La clave permanece en GitHub. Las consultas y sus resultados son públicos.
+- La lista pública es la fuente de las alertas del bot privado. Telegram sigue necesitando sus credenciales y activación; conectar la lista no equivale a activar ni verificar la entrega de mensajes.
 
 ## Diseño móvil y aplicación instalable
 
@@ -24,7 +34,7 @@ Verificación del calendario y la PWA: `node --test tests/calendar.test.mjs test
 - **Parcial:** inventario de cines y espacios. No es todavía un censo validado de todos los cines de Madrid. El listado de Fiesta del Cine es una fuente inicial, no una garantía de exhaustividad ni de municipio correcto.
 - **Pendiente:** los conectores restantes, incluidas las fuentes restringidas de Kinépolis y Cinesa; rutas andando, agente Copilot y clasificación editorial completa. Las películas no identificadas se muestran sin confirmar y no originan falsas coincidencias con pendientes.
 - **Favoritas públicas:** `config/favorites.json` contiene la lista compartida, inicialmente Mad Max: Fury Road e Interstellar. La web muestra solo una lista y el botón Añadir. El diálogo busca fichas disponibles o permite escribir cualquier película. La confirmación se realiza mediante una solicitud de GitHub; únicamente la cuenta propietaria puede modificar la lista. Las ambigüedades generan candidatos para confirmar. Las solicitudes de visitantes no ejecutan el proceso.
-- **IMAX:** Kinépolis Ciudad de la Imagen (Pozuelo), Cinesa Parquesur (Leganés) y Heron City Las Rozas están en el inventario con evidencia del recinto. Tener una sala IMAX no convierte todas sus sesiones en IMAX. El filtro de formato utiliza solo etiquetas explícitas de sesión. Sus horarios siguen pendientes de integración por restricciones de acceso detectadas.
+- **IMAX:** Kinépolis Ciudad de la Imagen (Pozuelo), Cinesa Parquesur (Leganés) y Heron City Las Rozas están en el inventario con evidencia del recinto. Tener una sala IMAX no convierte todas sus sesiones en IMAX. El filtro de formato utiliza solo etiquetas explícitas de sesión. Sus horarios se leen mediante la fuente alternativa indicada en el registro de fuentes.
 - **Privado:** dirección y bot en `cine-madrid-personal`. La lista pública no expone la configuración del bot ni su lista privada; los avisos siguen utilizando la lista privada hasta conectar ambas expresamente.
 
 ## Ejecutar en Windows

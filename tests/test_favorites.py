@@ -25,4 +25,16 @@ class FavoriteTests(unittest.TestCase):
         self.assertEqual(result,[]);self.assertFalse(success);self.assertIn('1996',reply);self.assertIn('2004',reply)
         self.assertIn('movie=tmdb%3A1',reply)
 
+    def test_global_search_returns_movies_outside_the_billboard_without_adding(self):
+        client=Mock();client.search_catalog.return_value={'query':'Interstellar','page':1,'total_pages':3,'total_results':45,'movies':[{'id':'tmdb:157336','title':'Interstellar'}]}
+        records=[];favorites=[{'id':'tmdb:76341','title':'Mad Max: Fury Road'}]
+        result,reply,success=apply_request(event(operation='Buscar',movie='Interstellar'),'owner',favorites,client,records)
+        self.assertEqual(result,favorites);self.assertTrue(success);self.assertEqual(records[0]['total_results'],45)
+        self.assertIn('favorite_search=Interstellar',reply);client.search_catalog.assert_called_once_with('Interstellar',1)
+
+    def test_visitors_cannot_trigger_tmdb_searches(self):
+        client=Mock();records=[]
+        apply_request(event(operation='Buscar',movie='Interstellar',owner='visitor'),'owner',[],client,records)
+        client.search_catalog.assert_not_called();self.assertEqual(records,[])
+
 if __name__=='__main__':unittest.main()

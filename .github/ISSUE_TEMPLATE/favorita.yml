@@ -9,10 +9,16 @@ body:
     id: operation
     attributes:
       label: Operación
-      options: [Añadir, Quitar]
+      options: [Añadir, Quitar, Buscar]
       default: 0
     validations:
       required: true
+  - type: input
+    id: page
+    attributes:
+      label: Página
+      description: Solo se utiliza para buscar en TMDB.
+      value: '1'
   - type: input
     id: movie
     attributes:

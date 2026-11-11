@@ -158,6 +158,19 @@ class Client:
         movie['translations_checked']=True
         self.cache['movies'][str(movie['tmdb_id'])]=movie
         return movie
+    def statistics(self,movie):
+        if not self.fresh({'fetched_at':movie.get('statistics_checked_at','1970-01-01T00:00:00+00:00')},days=1):
+            value=self.get('movie/'+str(movie['tmdb_id']),language='es-ES')
+            movie.update(vote_count=value.get('vote_count'),vote_average=value.get('vote_average'),statistics_checked_at=now())
+            self.cache['movies'][str(movie['tmdb_id'])]=movie
+        return movie
+
+    def search_catalog(self,query,page=1):
+        payload=self.get('search/movie',query=query,language='es-ES',include_adult='false',page=page)
+        movies=[self.movie(m['id']) for m in payload.get('results',[])]
+        return {'query':query,'page':page,'total_pages':min(payload.get('total_pages',1),500),'total_results':payload.get('total_results',0),
+                'movies':[{k:m.get(k) for k in ['id','tmdb_id','title','original_title','year','director','source_url']} for m in movies],'searched_at':now()}
+
     def resolve(self,source):
         if not source.get('director') and not source.get('source_year') and not re.search(r'\b(?:19|20)\d{2}\b',source['title']):
             return None,'missing_director',[]
@@ -198,9 +211,13 @@ def enrich(movies,sessions,cache,config,incidents,token=None):
             incidents.add('tmdb','identity_'+evidence,movie['id'],'Identidad pendiente: '+movie['title']+' ('+evidence+').',movie['source_url'],'info')
             continue
         matched+=1
+        try:client.statistics(identity)
+        except TMDBError:
+            incidents.add('tmdb','ratings_unavailable','service','No se pudo actualizar el número de valoraciones. Las películas sin ese dato se ordenan al final.','https://www.themoviedb.org/','info')
         movie.update(canonical_id=identity['id'],tmdb_id=identity['tmdb_id'],identity_status='verified',identity_evidence=evidence,
                      canonical_title=identity['title'],original_title=identity['original_title'],year=identity['year'],
                      aliases=identity['aliases'],tmdb_url=identity['source_url'],tmdb_runtime=identity.get('runtime'),tmdb_releases=identity['releases'])
+        movie.update(vote_count=identity.get('vote_count'),vote_average=identity.get('vote_average'))
         movie.pop('identity_candidates',None);movie.pop('identity_reason',None)
         for session in (s for s in sessions if s['movie_id']==movie['id']):
             source_label=source_category or session.get('source_category',session['category'])

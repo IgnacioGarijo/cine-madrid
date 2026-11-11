@@ -1,0 +1,207 @@
+{
+  "https://cinerama.es/peliculas/la-bola-negra/": {
+    "director": "Javier Calvo, Javier Ambrossi",
+    "duration": 159,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/el-gato-con-sombrero-the-cat-in-the-hat/": {
+    "director": "Alessandro Carloni, Erica Rivinoja",
+    "duration": 114,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/ruega-por-nosotras/": {
+    "director": "Daniel Monzón",
+    "duration": null,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/wildwood/": {
+    "director": "Travis Knight",
+    "duration": 132,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/sentido-y-sensibilidad/": {
+    "director": "Georgia Oakley",
+    "duration": 132,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/los-miserables-les-miserables/": {
+    "director": "Fred Cavayé",
+    "duration": 178,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/clayface/": {
+    "director": "James Watkins",
+    "duration": 108,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/godzilla-minus-zero/": {
+    "director": "Takashi Yamazaki",
+    "duration": 125,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/the-odyssey/": {
+    "director": "Christopher Nolan",
+    "duration": 172,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/en-el-corazon-de-la-bestia-heart-of-the-beast/": {
+    "director": "David Ayer",
+    "duration": 101,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/karateka/": {
+    "director": "Aritz Moreno",
+    "duration": 110,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/hope/": {
+    "director": "Na Hong-Jin",
+    "duration": 156,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/george-michael-the-faith-tour/": {
+    "director": "David Austin, Andrew Morahan",
+    "duration": 113,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/verity-la-sombra-de-un-engano/": {
+    "director": "Michael Showalter",
+    "duration": 116,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/scrooge-y-los-fantasmas-de-la-navidad-ebenezer-a-christmas-carol/": {
+    "director": "Ti West",
+    "duration": 117,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/sacamantecas/": {
+    "director": "David Pérez Sañudo",
+    "duration": 109,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/leones-en-invierno/": {
+    "director": "Albert Pintó",
+    "duration": 117,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/other-mommy/": {
+    "director": "Rob Savage",
+    "duration": 93,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/resident-evil/": {
+    "director": "Zach Cregger",
+    "duration": 93,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/ramayana-el-nacimiento-de-una-leyenda/": {
+    "director": "Nitesh Tiwari",
+    "duration": null,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/fiesta-pagana/": {
+    "director": "Álvaro Brechner",
+    "duration": null,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/wicker/": {
+    "director": "Eleanor Wilson, Alex Huston Fischer",
+    "duration": 105,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/arriba-tutto/": {
+    "director": "José Mota",
+    "duration": 102,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/tiempos-de-ilusion/": {
+    "director": "Eric Toledano, Olivier Nakache",
+    "duration": 118,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/street-fighter/": {
+    "director": "Kitao Sakurai",
+    "duration": 119,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/la-oveja-shaun-mision-calabaza/": {
+    "director": "Matthew Walker, Steve Cox",
+    "duration": 81,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/la-invitacion-the-invite/": {
+    "director": "Olivia Wilde",
+    "duration": 107,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/el-ser-querido/": {
+    "director": "Rodrigo Sorogoyen",
+    "duration": 135,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/digger/": {
+    "director": "Alejandro G. Iñárritu",
+    "duration": 128,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/leviticus/": {
+    "director": "Adrian Chiarella",
+    "duration": 88,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/tadeo-jones-4/": {
+    "director": "Enrique Gato",
+    "duration": 94,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/ratones-al-ataque-operacion-navidad-hvis-ingen-gar-i-fella/": {
+    "director": "Henrik Martin Dahlsbakken",
+    "duration": 80,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/victorian-psycho/": {
+    "director": "Zachary Wigon",
+    "duration": 102,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/washington-el-origen-de-un-lider-young-washington/": {
+    "director": "Jon Erwin",
+    "duration": 121,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/wild-horse-nine/": {
+    "director": "Martin McDonagh",
+    "duration": 116,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/coyote-vs-acme/": {
+    "director": "Dave Green",
+    "duration": 103,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/the-social-reckoning/": {
+    "director": "Aaron Sorkin",
+    "duration": 112,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/spider-man-brand-new-day/": {
+    "director": "Destin Daniel Cretton",
+    "duration": 144,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/chopin-chopin-chopin/": {
+    "director": "Michal Kwiecinski",
+    "duration": 133,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/el-poder-del-rosario/": {
+    "director": "Tiago Benetti",
+    "duration": 106,
+    "fetched_day": "2026-11-11"
+  },
+  "https://cinerama.es/peliculas/esta-soledad/": {
+    "director": "Javier Giner",
+    "duration": 110,
+    "fetched_day": "2026-11-11"
+  }
+}
