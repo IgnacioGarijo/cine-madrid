@@ -1,5 +1,15 @@
 # Implementación acordada y estado
 
+## Cartelera por películas y búsqueda global en v0.5.0
+
+- 20 conectores: los 11 anteriores y Kinépolis Ciudad de la Imagen, Cinesa Proyecciones, Príncipe Pío, Méndez Álvaro, Las Rosas, La Gavia, Manoteras, Parquesur y Las Rozas. Estos nueve recintos utilizan Cinerama con atribución y enlaces originales de compra, tras comprobar el 403 de Kinépolis y los fallos de disponibilidad del proveedor de Cinesa. Los controles no se eluden.
+- Una película reúne cines, fechas y horarios; las identidades TMDB verificadas reúnen alias. Las homónimas sin identificar se mantienen separadas. Los datos de formato y evento se conservan por pase.
+- Selección múltiple de cines siempre visible, ordenada por distancia cuando existe origen local, con colores y grupo hasta 2 km. Los 20 recintos cuentan con coordenadas públicas; la dirección del usuario no se publica.
+- Programación siempre visible. Reposiciones y eventos comparten categoría y los eventos tienen color naranja. El calendario comparte las selecciones.
+- Orden por próxima sesión o número de valoraciones de TMDB, actualizado diariamente. No se confunde la cantidad de valoraciones con su media.
+- Favoritas permite buscar en todo TMDB con paginación mediante Actions, sin exponer secretos en Pages. Confirmar Buscar en GitHub no añade nada: se vuelve a la web para seleccionar una ficha y confirmar Añadir. No es búsqueda instantánea.
+- La lista pública alimenta las alertas privadas de Telegram; faltan sus credenciales para activar y comprobar la entrega real. No se considera una entrega de mensajes verificada por haber pasado pruebas locales.
+
 ## Ampliación y favoritas públicas en v0.4.2
 
 - Adaptadores independientes para Cine Paz, Palacio de Hielo, Verdi Madrid, Cines Princesa, Renoir Plaza de España, Renoir Retiro, Morasol, Capitol, Cineteca, Artistic Metropol y Cine Estudio del CBA. Cada fuente conserva su estado, fechas extremas leídas e incidencias; una caída no descarta las demás.
