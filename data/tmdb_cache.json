@@ -3896,6 +3896,98 @@
     "elpoderdelrosario": {
       "results": [],
       "fetched_at": "2026-11-11T15:40:52+01:00"
+    },
+    "aeternatemblorestremors": {
+      "results": [],
+      "fetched_at": "2026-11-11T16:36:38+01:00"
+    },
+    "temblorestremors": {
+      "results": [
+        {
+          "id": 515357,
+          "title": "Temblores",
+          "original_title": "Temblores"
+        },
+        {
+          "id": 9362,
+          "title": "Temblores",
+          "original_title": "Tremors"
+        },
+        {
+          "id": 11069,
+          "title": "Temblores 2: La respuesta",
+          "original_title": "Tremors 2: Aftershocks"
+        },
+        {
+          "id": 670266,
+          "title": "Temblores 7: Shrieker Island",
+          "original_title": "Tremors: Shrieker Island"
+        },
+        {
+          "id": 10829,
+          "title": "Temblores 3: Regreso a Perfección",
+          "original_title": "Tremors 3: Back to Perfection"
+        },
+        {
+          "id": 339530,
+          "title": "Temblores 5: El legado",
+          "original_title": "Tremors 5: Bloodlines"
+        }
+      ],
+      "fetched_at": "2026-11-11T16:36:39+01:00"
+    },
+    "aeternadarkwater": {
+      "results": [],
+      "fetched_at": "2026-11-11T16:36:40+01:00"
+    },
+    "darkwater": {
+      "results": [
+        {
+          "id": 9009,
+          "title": "Dark Water (La huella)",
+          "original_title": "Dark Water"
+        },
+        {
+          "id": 12205,
+          "title": "Dark Water",
+          "original_title": "仄暗い水の底から"
+        },
+        {
+          "id": 294258,
+          "title": "Dark Water",
+          "original_title": "Dark Water"
+        },
+        {
+          "id": 1494750,
+          "title": "Dark Water",
+          "original_title": "Dark Water"
+        },
+        {
+          "id": 495433,
+          "title": "Dark Water",
+          "original_title": "Dark Water"
+        },
+        {
+          "id": 1453157,
+          "title": "Dark Water",
+          "original_title": "Dark Water"
+        }
+      ],
+      "fetched_at": "2026-11-11T16:36:40+01:00"
+    },
+    "aeternaelquintoelemento": {
+      "results": [],
+      "fetched_at": "2026-11-11T16:36:41+01:00"
+    },
+    "elquintoelemento": {
+      "results": [
+        {
+          "id": 18,
+          "title": "El quinto elemento",
+          "original_title": "Le Cinquième Élément"
+        }
+      ],
+      "fetched_at": "2026-11-11T16:36:41+01:00"
     }
   },
   "movies": {
@@ -51921,6 +52013,1563 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/261443",
       "fetched_at": "2026-11-11T15:42:14+01:00"
+    },
+    "515357": {
+      "id": "tmdb:515357",
+      "tmdb_id": 515357,
+      "title": "Temblores",
+      "original_title": "Temblores",
+      "year": 2019,
+      "director": "Jayro Bustamante",
+      "directors": [
+        "Jayro Bustamante"
+      ],
+      "runtime": 107,
+      "aliases": [
+        "Tremblements"
+      ],
+      "releases": [
+        {
+          "country": "AU",
+          "type": 1,
+          "date": "2019-04-17"
+        },
+        {
+          "country": "BR",
+          "type": 4,
+          "date": "2021-10-28"
+        },
+        {
+          "country": "CA",
+          "type": 1,
+          "date": "2019-10-06"
+        },
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "2020-02-20"
+        },
+        {
+          "country": "DE",
+          "type": 2,
+          "date": "2019-02-08"
+        },
+        {
+          "country": "ES",
+          "type": 1,
+          "date": "2019-09-20"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2020-09-04"
+        },
+        {
+          "country": "FR",
+          "type": 1,
+          "date": "2019-03-24"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2019-05-01"
+        },
+        {
+          "country": "FR",
+          "type": 6,
+          "date": "2022-03-17"
+        },
+        {
+          "country": "GB",
+          "type": 1,
+          "date": "2019-10-07"
+        },
+        {
+          "country": "GR",
+          "type": 1,
+          "date": "2019-09-23"
+        },
+        {
+          "country": "GR",
+          "type": 4,
+          "date": "2020-12-15"
+        },
+        {
+          "country": "IL",
+          "type": 1,
+          "date": "2019-07-27"
+        },
+        {
+          "country": "MT",
+          "type": 1,
+          "date": "2019-06-18"
+        },
+        {
+          "country": "MX",
+          "type": 1,
+          "date": "2019-03-12"
+        },
+        {
+          "country": "NL",
+          "type": 1,
+          "date": "2019-08-15"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2019-08-22"
+        },
+        {
+          "country": "PT",
+          "type": 1,
+          "date": "2019-06-28"
+        },
+        {
+          "country": "RO",
+          "type": 1,
+          "date": "2019-06-04"
+        },
+        {
+          "country": "SK",
+          "type": 3,
+          "date": "2020-02-20"
+        },
+        {
+          "country": "TR",
+          "type": 1,
+          "date": "2019-04-10"
+        },
+        {
+          "country": "TW",
+          "type": 1,
+          "date": "2019-06-30"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2019-10-18"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2019-05-31"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/515357",
+      "fetched_at": "2026-11-11T16:36:39+01:00"
+    },
+    "9362": {
+      "id": "tmdb:9362",
+      "tmdb_id": 9362,
+      "title": "Temblores",
+      "original_title": "Tremors",
+      "year": 1990,
+      "director": "Ron Underwood",
+      "directors": [
+        "Ron Underwood"
+      ],
+      "runtime": 95,
+      "aliases": [
+        "O Ataque dos Vermes Malditos",
+        "Temblores: Terror Bajo la Tierra",
+        "Terror Bajo Tierra",
+        "Terror Bajo la Ciudad",
+        "Terror bajo la tierra",
+        "Terror en lo profundo",
+        "Wstrząsy",
+        "Yeraltı Canavarı",
+        "פחד עד מוות",
+        "深淵異形",
+        "深渊异形：冷血魔虫",
+        "불가사리"
+      ],
+      "releases": [
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "1990-05-10"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "1990-04-12"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "1990-06-08"
+        },
+        {
+          "country": "CL",
+          "type": 6,
+          "date": "1996-04-17"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "1990-05-17"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "1990-05-11"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "1990-04-27"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "1990-06-01"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "1990-05-22"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "1990-06-28"
+        },
+        {
+          "country": "HU",
+          "type": 3,
+          "date": "1990-07-12"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "1990-06-29"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "1990-01-19"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "1990-06-15"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "1990-09-08"
+        },
+        {
+          "country": "MX",
+          "type": 3,
+          "date": "1990-06-14"
+        },
+        {
+          "country": "MX",
+          "type": 5,
+          "date": "1998-04-28"
+        },
+        {
+          "country": "MX",
+          "type": 6,
+          "date": "1994-11-20"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "1990-04-27"
+        },
+        {
+          "country": "NL",
+          "type": 5,
+          "date": "2013-08-07"
+        },
+        {
+          "country": "NL",
+          "type": 6,
+          "date": "2002-03-09"
+        },
+        {
+          "country": "PH",
+          "type": 3,
+          "date": "1990-09-13"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "1990-05-18"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "1990-05-11"
+        },
+        {
+          "country": "SE",
+          "type": 5,
+          "date": "2010-10-27"
+        },
+        {
+          "country": "SE",
+          "type": 5,
+          "date": "2000-12-05"
+        },
+        {
+          "country": "SE",
+          "type": 5,
+          "date": "1991-04-10"
+        },
+        {
+          "country": "SG",
+          "type": 5,
+          "date": "1998-04-28"
+        },
+        {
+          "country": "SK",
+          "type": 6,
+          "date": "1998-06-26"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "1990-01-19"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "1999-01-01"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/9362",
+      "fetched_at": "2026-11-11T16:36:39+01:00",
+      "vote_count": 3781,
+      "vote_average": 6.957,
+      "statistics_checked_at": "2026-11-11T16:36:40+01:00"
+    },
+    "11069": {
+      "id": "tmdb:11069",
+      "tmdb_id": 11069,
+      "title": "Temblores 2: La respuesta",
+      "original_title": "Tremors 2: Aftershocks",
+      "year": 1996,
+      "director": "S.S. Wilson",
+      "directors": [
+        "S.S. Wilson"
+      ],
+      "runtime": 99,
+      "aliases": [
+        "O Ataque dos Vermes Malditos 2",
+        "Terror Bajo Tierra 2 La Respuesta",
+        "Terror bajo tierra 2",
+        "Tremors 2",
+        "Tremors 2 Die Rueckkehr der Raketenwuermer",
+        "Tremors II",
+        "Tremors II Aftershocks",
+        "Wstrząsy 2: Wielkie larwy wróciły",
+        "Yeraltı Canavarı 2",
+        "深淵異形2",
+        "불가사리 2"
+      ],
+      "releases": [
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "1996-04-09"
+        },
+        {
+          "country": "DE",
+          "type": 5,
+          "date": "1996-07-18"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2007-10-11"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "1996-06-14"
+        },
+        {
+          "country": "SE",
+          "type": 5,
+          "date": "1996-06-19"
+        },
+        {
+          "country": "SE",
+          "type": 5,
+          "date": "2014-02-05"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "1996-04-09"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/11069",
+      "fetched_at": "2026-11-11T16:36:39+01:00"
+    },
+    "670266": {
+      "id": "tmdb:670266",
+      "tmdb_id": 670266,
+      "title": "Temblores 7: Shrieker Island",
+      "original_title": "Tremors: Shrieker Island",
+      "year": 2020,
+      "director": "Don Michael Paul",
+      "directors": [
+        "Don Michael Paul"
+      ],
+      "runtime": 102,
+      "aliases": [
+        "O Ataque dos Vermes Malditos 7: Ilha dos Shriekers",
+        "Terror Bajo La Tierra 7- Isla Shrieker",
+        "Tremors 7",
+        "Tremors 7 : Shrieker Island",
+        "Tremors: Island Fury",
+        "Yeraltı Canavarı 7: Çığlıkçı Adası",
+        "Дрожь земли: Остров крикунов",
+        "從地心竄出：地獸島",
+        "深淵異形7︰蟲島激戰",
+        "深淵異形︰蟲島激戰"
+      ],
+      "releases": [
+        {
+          "country": "BR",
+          "type": 4,
+          "date": "2023-01-27"
+        },
+        {
+          "country": "DE",
+          "type": 5,
+          "date": "2020-11-26"
+        },
+        {
+          "country": "FI",
+          "type": 6,
+          "date": "2020-10-20"
+        },
+        {
+          "country": "GB",
+          "type": 5,
+          "date": "2020-11-16"
+        },
+        {
+          "country": "RO",
+          "type": 4,
+          "date": "2025-11-01"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2020-10-20"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2020-10-20"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/670266",
+      "fetched_at": "2026-11-11T16:36:39+01:00"
+    },
+    "10829": {
+      "id": "tmdb:10829",
+      "tmdb_id": 10829,
+      "title": "Temblores 3: Regreso a Perfección",
+      "original_title": "Tremors 3: Back to Perfection",
+      "year": 2001,
+      "director": "Brent Maddock",
+      "directors": [
+        "Brent Maddock"
+      ],
+      "runtime": 103,
+      "aliases": [
+        "O Ataque dos Vermes Malditos 3: De Volta à Perfeição",
+        "Terror Bajo Tierra 3 Regreso a Perfección",
+        "Tremors 3",
+        "Tremors 3 - Die Rache Der Raketenwürmer",
+        "Tremors 3 Le retour",
+        "Tremors III Back To Perfection",
+        "Wstrząsy 3: Powrót do Perfekcji",
+        "Yeraltı Canavarı 3",
+        "Дрожь земли 3: Возвращение чудовищ",
+        "深淵異形3",
+        "불가사리 3"
+      ],
+      "releases": [
+        {
+          "country": "DE",
+          "type": 5,
+          "date": "2002-05-23"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2002-10-08"
+        },
+        {
+          "country": "GB",
+          "type": 5,
+          "date": "2001-10-02"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2002-10-25"
+        },
+        {
+          "country": "NL",
+          "type": 5,
+          "date": "2002-07-25"
+        },
+        {
+          "country": "NL",
+          "type": 5,
+          "date": "2013-08-07"
+        },
+        {
+          "country": "NL",
+          "type": 6,
+          "date": "2003-08-23"
+        },
+        {
+          "country": "SE",
+          "type": 5,
+          "date": "2002-06-19"
+        },
+        {
+          "country": "SE",
+          "type": 5,
+          "date": "2014-02-05"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2001-10-02"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/10829",
+      "fetched_at": "2026-11-11T16:36:39+01:00"
+    },
+    "339530": {
+      "id": "tmdb:339530",
+      "tmdb_id": 339530,
+      "title": "Temblores 5: El legado",
+      "original_title": "Tremors 5: Bloodlines",
+      "year": 2015,
+      "director": "Don Michael Paul",
+      "directors": [
+        "Don Michael Paul"
+      ],
+      "runtime": 95,
+      "aliases": [
+        "O Ataque dos Vermes Malditos 5: Linhas de Sangue",
+        "Terror Bajo Tierra 5",
+        "Tremors V Bloodlines",
+        "Wstrząsy 5",
+        "Yeraltı Canavarı 5",
+        "深淵異形5"
+      ],
+      "releases": [
+        {
+          "country": "DE",
+          "type": 5,
+          "date": "2015-12-03"
+        },
+        {
+          "country": "FI",
+          "type": 6,
+          "date": "2015-10-06"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2022-08-16"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2016-01-05"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2016-01-05"
+        },
+        {
+          "country": "NL",
+          "type": 5,
+          "date": "2015-10-14"
+        },
+        {
+          "country": "SE",
+          "type": 5,
+          "date": "2015-10-12"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2015-10-06"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/339530",
+      "fetched_at": "2026-11-11T16:36:39+01:00"
+    },
+    "9009": {
+      "id": "tmdb:9009",
+      "tmdb_id": 9009,
+      "title": "Dark Water (La huella)",
+      "original_title": "Dark Water",
+      "year": 2005,
+      "director": "Walter Salles",
+      "directors": [
+        "Walter Salles"
+      ],
+      "runtime": 105,
+      "aliases": [
+        "Agua Turbia",
+        "Agua turbia",
+        "Dark Water",
+        "Dark Water US Remake",
+        "Eau trouble",
+        "Karanlik su",
+        "La Huella",
+        "Mračne vode",
+        "Temacna voda",
+        "Tumma vesi",
+        "Στοιχειωμένο νερό",
+        "Тёмная вода"
+      ],
+      "releases": [
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "2005-07-28"
+        },
+        {
+          "country": "AT",
+          "type": 3,
+          "date": "2005-09-22"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2005-10-20"
+        },
+        {
+          "country": "BE",
+          "type": 3,
+          "date": "2005-08-31"
+        },
+        {
+          "country": "BG",
+          "type": 3,
+          "date": "2005-10-07"
+        },
+        {
+          "country": "BH",
+          "type": 3,
+          "date": "2005-08-10"
+        },
+        {
+          "country": "BM",
+          "type": 3,
+          "date": "2005-12-09"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2005-08-12"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "2005-08-31"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "2005-09-22"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "2005-10-21"
+        },
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "2005-09-22"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2005-09-22"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "2005-08-26"
+        },
+        {
+          "country": "EE",
+          "type": 3,
+          "date": "2005-08-12"
+        },
+        {
+          "country": "EG",
+          "type": 3,
+          "date": "2005-12-21"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2005-08-26"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "2005-07-29"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2005-08-31"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2021-02-23"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2006-03-15"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2005-07-22"
+        },
+        {
+          "country": "GR",
+          "type": 1,
+          "date": "2005-09-18"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2005-09-29"
+        },
+        {
+          "country": "HK",
+          "type": 3,
+          "date": "2005-09-08"
+        },
+        {
+          "country": "HU",
+          "type": 3,
+          "date": "2005-09-15"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "2005-08-19"
+        },
+        {
+          "country": "IL",
+          "type": 3,
+          "date": "2005-07-21"
+        },
+        {
+          "country": "IS",
+          "type": 3,
+          "date": "2005-07-22"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2005-10-07"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "2005-11-12"
+        },
+        {
+          "country": "LT",
+          "type": 3,
+          "date": "2005-08-05"
+        },
+        {
+          "country": "LV",
+          "type": 3,
+          "date": "2005-07-29"
+        },
+        {
+          "country": "MX",
+          "type": 3,
+          "date": "2005-08-19"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2005-11-10"
+        },
+        {
+          "country": "NO",
+          "type": 3,
+          "date": "2005-08-26"
+        },
+        {
+          "country": "PA",
+          "type": 3,
+          "date": "2005-08-26"
+        },
+        {
+          "country": "PE",
+          "type": 3,
+          "date": "2005-09-15"
+        },
+        {
+          "country": "PH",
+          "type": 3,
+          "date": "2005-09-21"
+        },
+        {
+          "country": "PL",
+          "type": 3,
+          "date": "2005-08-19"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "2005-07-28"
+        },
+        {
+          "country": "RO",
+          "type": 3,
+          "date": "2005-11-04"
+        },
+        {
+          "country": "RU",
+          "type": 3,
+          "date": "2005-10-13"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "2005-08-12"
+        },
+        {
+          "country": "SG",
+          "type": 3,
+          "date": "2005-09-29"
+        },
+        {
+          "country": "TH",
+          "type": 3,
+          "date": "2006-02-21"
+        },
+        {
+          "country": "TR",
+          "type": 3,
+          "date": "2005-07-22"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2005-06-27"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2005-07-08"
+        },
+        {
+          "country": "ZA",
+          "type": 3,
+          "date": "2005-09-09"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/9009",
+      "fetched_at": "2026-11-11T16:36:40+01:00"
+    },
+    "12205": {
+      "id": "tmdb:12205",
+      "tmdb_id": 12205,
+      "title": "Dark Water",
+      "original_title": "仄暗い水の底から",
+      "year": 2002,
+      "director": "中田秀夫",
+      "directors": [
+        "中田秀夫"
+      ],
+      "runtime": 101,
+      "aliases": [
+        "Acqua scura",
+        "Agua turbia",
+        "Aguas oscuras",
+        "Dark Water - Besuch aus dem jenseits",
+        "From the Depths of Dark Water",
+        "Honogurai mizu no soko kara",
+        "ほのぐらいみずのそこから",
+        "鬼水怪談"
+      ],
+      "releases": [
+        {
+          "country": "DE",
+          "type": 1,
+          "date": "2002-02-07"
+        },
+        {
+          "country": "DE",
+          "type": 1,
+          "date": "2003-08-15"
+        },
+        {
+          "country": "DE",
+          "type": 4,
+          "date": "2026-10-24"
+        },
+        {
+          "country": "DE",
+          "type": 5,
+          "date": "2003-09-04"
+        },
+        {
+          "country": "DE",
+          "type": 6,
+          "date": "2026-10-30"
+        },
+        {
+          "country": "FR",
+          "type": 1,
+          "date": "2021-10-16"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2003-02-26"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2022-04-13"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2026-10-24"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2003-12-02"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2023-04-19"
+        },
+        {
+          "country": "FR",
+          "type": 6,
+          "date": "2026-10-30"
+        },
+        {
+          "country": "GB",
+          "type": 1,
+          "date": "2002-08-17"
+        },
+        {
+          "country": "GB",
+          "type": 1,
+          "date": "2002-10-27"
+        },
+        {
+          "country": "GB",
+          "type": 2,
+          "date": "2021-10-29"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2003-06-06"
+        },
+        {
+          "country": "GB",
+          "type": 5,
+          "date": "2016-10-10"
+        },
+        {
+          "country": "HK",
+          "type": 5,
+          "date": "2002-08-15"
+        },
+        {
+          "country": "IE",
+          "type": 4,
+          "date": "2003-06-06"
+        },
+        {
+          "country": "IT",
+          "type": 5,
+          "date": "2005-04-28"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "2002-01-19"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2003-02-26"
+        },
+        {
+          "country": "RU",
+          "type": 3,
+          "date": "2003-05-15"
+        },
+        {
+          "country": "RU",
+          "type": 3,
+          "date": "2024-06-27"
+        },
+        {
+          "country": "RU",
+          "type": 4,
+          "date": "2024-07-15"
+        },
+        {
+          "country": "RU",
+          "type": 5,
+          "date": "2004-04-14"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2002-11-09"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2003-04-06"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2005-06-21"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/12205",
+      "fetched_at": "2026-11-11T16:36:40+01:00"
+    },
+    "294258": {
+      "id": "tmdb:294258",
+      "tmdb_id": 294258,
+      "title": "Dark Water",
+      "original_title": "Dark Water",
+      "year": 1980,
+      "director": "Andrew Bogle",
+      "directors": [
+        "Andrew Bogle"
+      ],
+      "runtime": 28,
+      "aliases": [
+        "Schwarzes Wasser"
+      ],
+      "releases": [
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "1980-01-01"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/294258",
+      "fetched_at": "2026-11-11T16:36:40+01:00"
+    },
+    "1494750": {
+      "id": "tmdb:1494750",
+      "tmdb_id": 1494750,
+      "title": "Dark Water",
+      "original_title": "Dark Water",
+      "year": 2016,
+      "director": "Christine Hitt",
+      "directors": [
+        "Christine Hitt"
+      ],
+      "runtime": 8,
+      "aliases": [],
+      "releases": [
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2016-08-04"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1494750",
+      "fetched_at": "2026-11-11T16:36:40+01:00"
+    },
+    "495433": {
+      "id": "tmdb:495433",
+      "tmdb_id": 495433,
+      "title": "Dark Water",
+      "original_title": "Dark Water",
+      "year": 2001,
+      "director": "Ron Chartier",
+      "directors": [
+        "Ron Chartier"
+      ],
+      "runtime": 92,
+      "aliases": [
+        "Agua Negra",
+        "Agua Turbia"
+      ],
+      "releases": [
+        {
+          "country": "CA",
+          "type": 2,
+          "date": "2001-08-17"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/495433",
+      "fetched_at": "2026-11-11T16:36:41+01:00"
+    },
+    "1453157": {
+      "id": "tmdb:1453157",
+      "tmdb_id": 1453157,
+      "title": "Dark Water",
+      "original_title": "Dark Water",
+      "year": 2025,
+      "director": "Ethan Hunt",
+      "directors": [
+        "Ethan Hunt"
+      ],
+      "runtime": 4,
+      "aliases": [],
+      "releases": [
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2025-03-07"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1453157",
+      "fetched_at": "2026-11-11T16:36:41+01:00"
+    },
+    "18": {
+      "id": "tmdb:18",
+      "tmdb_id": 18,
+      "title": "El quinto elemento",
+      "original_title": "Le Cinquième Élément",
+      "year": 1997,
+      "director": "Luc Besson",
+      "directors": [
+        "Luc Besson"
+      ],
+      "runtime": 127,
+      "aliases": [
+        "Beşinci Element",
+        "Det Femte Elementet",
+        "El cinquè element",
+        "Le 5ème élément",
+        "The 5th Element"
+      ],
+      "releases": [
+        {
+          "country": "AE",
+          "type": 5,
+          "date": "2020-08-24"
+        },
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "1997-05-02"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "1997-05-15"
+        },
+        {
+          "country": "BE",
+          "type": 3,
+          "date": "1997-05-08"
+        },
+        {
+          "country": "BR",
+          "type": 1,
+          "date": "1997-05-16"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "1997-05-23"
+        },
+        {
+          "country": "BR",
+          "type": 6,
+          "date": "2003-02-03"
+        },
+        {
+          "country": "BR",
+          "type": 6,
+          "date": "1998-10-13"
+        },
+        {
+          "country": "CA",
+          "type": 3,
+          "date": "1997-05-09"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "1997-05-08"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "1997-08-28"
+        },
+        {
+          "country": "CN",
+          "type": 1,
+          "date": "2015-04-17"
+        },
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "1997-09-11"
+        },
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "2025-10-16"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "1997-08-28"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2024-02-06"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "1997-08-01"
+        },
+        {
+          "country": "EE",
+          "type": 3,
+          "date": "1998-01-09"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "1997-05-30"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "1997-06-06"
+        },
+        {
+          "country": "FR",
+          "type": 1,
+          "date": "1997-05-07"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "1997-05-07"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2005-11-22"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2009-06-11"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2023-12-21"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "1998-04-08"
+        },
+        {
+          "country": "FR",
+          "type": 6,
+          "date": "2025-12-14"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "1997-06-06"
+        },
+        {
+          "country": "GB",
+          "type": 4,
+          "date": "2020-01-31"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "1997-10-30"
+        },
+        {
+          "country": "HK",
+          "type": 3,
+          "date": "1997-05-22"
+        },
+        {
+          "country": "HU",
+          "type": 3,
+          "date": "1997-10-16"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "1997-06-13"
+        },
+        {
+          "country": "IL",
+          "type": 1,
+          "date": "1997-07-10"
+        },
+        {
+          "country": "IL",
+          "type": 3,
+          "date": "1997-07-10"
+        },
+        {
+          "country": "IN",
+          "type": 3,
+          "date": "1997-08-19"
+        },
+        {
+          "country": "IS",
+          "type": 1,
+          "date": "2018-09-29"
+        },
+        {
+          "country": "IS",
+          "type": 3,
+          "date": "1997-06-13"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "1997-10-30"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "1997-09-13"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "1997-07-17"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2013-11-20"
+        },
+        {
+          "country": "KW",
+          "type": 3,
+          "date": "1997-07-02"
+        },
+        {
+          "country": "LT",
+          "type": 3,
+          "date": "1998-02-20"
+        },
+        {
+          "country": "LU",
+          "type": 3,
+          "date": "1997-05-09"
+        },
+        {
+          "country": "MX",
+          "type": 3,
+          "date": "1997-05-23"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "1997-05-29"
+        },
+        {
+          "country": "NL",
+          "type": 5,
+          "date": "2010-06-15"
+        },
+        {
+          "country": "NL",
+          "type": 6,
+          "date": "2005-08-15"
+        },
+        {
+          "country": "NO",
+          "type": 3,
+          "date": "1997-08-08"
+        },
+        {
+          "country": "NZ",
+          "type": 3,
+          "date": "1997-05-14"
+        },
+        {
+          "country": "PA",
+          "type": 3,
+          "date": "1997-05-16"
+        },
+        {
+          "country": "PH",
+          "type": 3,
+          "date": "1997-07-09"
+        },
+        {
+          "country": "PL",
+          "type": 3,
+          "date": "1997-10-17"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "1997-08-29"
+        },
+        {
+          "country": "RO",
+          "type": 3,
+          "date": "1998-01-02"
+        },
+        {
+          "country": "RS",
+          "type": 3,
+          "date": "1997-10-01"
+        },
+        {
+          "country": "RU",
+          "type": 3,
+          "date": "1997-09-27"
+        },
+        {
+          "country": "RU",
+          "type": 3,
+          "date": "2025-12-18"
+        },
+        {
+          "country": "RU",
+          "type": 5,
+          "date": "1998-03-01"
+        },
+        {
+          "country": "RU",
+          "type": 5,
+          "date": "2010-11-03"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "1997-08-22"
+        },
+        {
+          "country": "SE",
+          "type": 5,
+          "date": "2009-11-04"
+        },
+        {
+          "country": "SE",
+          "type": 5,
+          "date": "2000-12-22"
+        },
+        {
+          "country": "SE",
+          "type": 5,
+          "date": "1998-01-14"
+        },
+        {
+          "country": "SG",
+          "type": 3,
+          "date": "1997-05-15"
+        },
+        {
+          "country": "SI",
+          "type": 3,
+          "date": "1997-09-25"
+        },
+        {
+          "country": "SK",
+          "type": 3,
+          "date": "1997-10-09"
+        },
+        {
+          "country": "TR",
+          "type": 3,
+          "date": "1997-10-10"
+        },
+        {
+          "country": "TW",
+          "type": 3,
+          "date": "2017-06-16"
+        },
+        {
+          "country": "UA",
+          "type": 3,
+          "date": "1997-09-27"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "1997-05-09"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2017-05-14"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "1997-11-25"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2006-06-20"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2005-01-11"
+        },
+        {
+          "country": "UY",
+          "type": 3,
+          "date": "1997-05-30"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/18",
+      "fetched_at": "2026-11-11T16:36:41+01:00",
+      "vote_count": 12349,
+      "vote_average": 7.594,
+      "statistics_checked_at": "2026-11-11T16:36:41+01:00"
     }
   }
 }
