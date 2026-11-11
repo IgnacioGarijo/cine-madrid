@@ -46,6 +46,23 @@ class TMDBTests(unittest.TestCase):
     def test_prefix_and_format_are_removed_for_search(self):
         self.assertIn('DEPREDADOR 2',title_variants('AETERNA: DEPREDADOR 2 (VOSE)'))
         self.assertIn('Akira',title_variants('Akira (VOSE)'))
+        self.assertIn('METROPOLIS',title_variants('METROPOLIS live by Morales 35mm'))
+
+    def test_abbreviated_title_still_requires_director_and_duration(self):
+        m=movie(title='Adolescencia, sexo y muerte en campamento Miasma',director='Jane Schoenbrun',runtime=110)
+        source=dict(title='Campamento miasma (VOSE)',director='Jane Schoenbrun',duration_minutes=112)
+        self.assertIsNotNone(identity_match(source,[m])[0])
+        self.assertIsNone(identity_match(dict(source,duration_minutes=180),[m])[0])
+
+    @patch('src.tmdb.Client.get')
+    def test_translations_are_retrieved_and_persisted_automatically(self,get):
+        get.return_value={'translations':[{'data':{'title':"If on a Winter's Night"}}]}
+        m=movie(id=1,title='Título en el idioma original',director='Sanju Surendran')
+        client=Client('test-token',{})
+        translated=client.with_translations(m)
+        self.assertIn("If on a Winter's Night",translated['aliases'])
+        self.assertIsNotNone(identity_match(dict(title="If on a winter's night",director='Sanju Surendran'),[translated])[0])
+        client.with_translations(translated);self.assertEqual(get.call_count,1)
 
     def test_recent_theatrical_release_stays_current(self):
         m=movie(releases=[{'country':'ES','type':3,'date':'2026-10-30'}])

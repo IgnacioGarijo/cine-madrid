@@ -20,6 +20,7 @@ Verificación del calendario y la PWA: `node --test tests/calendar.test.mjs test
 
 - **Integrado:** cartelera propia de mk2 Cine Paz, incluidos los días futuros ocultos por el selector de su web.
 - **Disponible:** búsqueda, filtros, agenda, enlaces de entradas, exportación iCalendar y Google Calendar por sesión, inventario e incidencias.
+- **TMDB:** consulta desatendida desde Actions con `TMDB_READ_TOKEN`. Los alias se descargan automáticamente; se contrastan con la dirección y, en casos dudosos, año y duración. Se conservan el título y la duración publicados por el cine. Los resultados se reutilizan desde una caché de metadatos públicos.
 - **Parcial:** inventario de cines y espacios. No es todavía un censo validado de todos los cines de Madrid. El listado de Fiesta del Cine es una fuente inicial, no una garantía de exhaustividad ni de municipio correcto.
 - **Pendiente:** resto de conectores, rutas andando, agente Copilot y clasificación editorial completa. Las películas no identificadas se muestran sin confirmar y no originan falsas coincidencias con pendientes.
 - **Privado:** lista central de pendientes, dirección y bot en `cine-madrid-personal`. La lista local del navegador es independiente; exportar/importar permite trasladarla entre navegadores.
@@ -40,7 +41,17 @@ La web es estática y no requiere Node ni un servidor permanente. Se ha elegido 
 
 GitHub Actions recoge la fuente a las 06:17 UTC (07:17 en invierno y 08:17 en verano en Madrid). El boletín se genera los jueves a las 17:17 UTC. Son horarios objetivo; GitHub puede retrasar o perder ejecuciones programadas y suspenderlas en repositorios públicos sin actividad durante 60 días. Una ejecución manual permite actualizar.
 
-Los cambios de código publican los últimos datos válidos. Las actualizaciones programadas recogen fuentes y vuelven a publicar. Los datos se conservan en `data/public.json`; las ediciones, en `data/newsletters/`. Los fallos se registran, conservando la última lectura válida. Una caída brusca de volumen preserva las sesiones ausentes como no verificadas. La ausencia de una sesión en una lectura **no confirma su cancelación**.
+Las actualizaciones programadas, las ejecuciones manuales y los cambios de código recogen las fuentes, consultan TMDB y vuelven a publicar. Los datos se conservan en `data/public.json`; las ediciones, en `data/newsletters/`. Los fallos se registran, conservando la última lectura válida. Una caída brusca de volumen preserva las sesiones ausentes como no verificadas. La ausencia de una sesión en una lectura **no confirma su cancelación**.
+
+## Identidad y clasificación
+
+El secreto se utiliza solo en el proceso Python de Actions, nunca en el navegador ni en los archivos publicados. `data/tmdb_cache.json` contiene exclusivamente metadatos públicos y consultas por títulos públicos. Caché de búsquedas: un día; fichas: siete días; límite inicial: 300 solicitudes por ejecución, con reintentos acotados. Si falla la API se conservan las identidades verificadas que siguen correspondiendo a la misma ficha de origen y se registra el problema.
+
+La identificación automática exige título/alias y dirección compatibles. Las erratas leves necesitan corroboración por duración. Las homónimas con la misma dirección no se aceptan sin otra evidencia discriminante. Los casos sin dirección, sin resultados o contradictorios se distinguen en las incidencias; no se atribuyen todos a una supuesta necesidad de Copilot.
+
+Las reglas de clasificación están en `config/classification.json`: una identidad confirmada con estreno comercial en salas (tipos 2/3 de TMDB) al menos 365 días antes de la sesión es una reposición. Se usa el primer estreno comercial nacional o internacional, aunque exista un reestreno reciente en España. Una première de festival (tipo 1) no basta. Las sesiones dentro de los primeros 180 días del estreno comercial se clasifican como estreno actual. Entre ambas ventanas se revisa el contexto, conservando las etiquetas explícitas del cine. El ciclo de clásicos es evidencia independiente. Estos umbrales son reglas iniciales del proyecto, no categorías oficiales de TMDB.
+
+La búsqueda y el calendario incorporan los títulos originales y alias de las fichas identificadas. Favoritas permite buscar las fichas ya identificadas además de las dos iniciales. La búsqueda global de películas ajenas a la cartelera sigue disponible a través del gestor privado con la credencial configurada.
 
 ## Modelo y privacidad
 
@@ -56,7 +67,7 @@ Cada incidencia tiene código, fuente, entidad, primera y última detección, gr
 
 - Programación y entradas: cada cine conserva su enlace original; mk2 Cine Paz: https://www.cinepazmadrid.es/es/cartelera
 - Inventario inicial comercial: https://www.fiestadelcine.com/salas-adheridas/ (candidatos por contrastar y completar con centros culturales).
-- Fichas: TMDB. This product uses the TMDB API but is not endorsed or certified by TMDB. El uso de la API queda pendiente de la credencial y de completar su atribución conforme a sus requisitos antes de activarla.
+- Fichas: TMDB. This product uses the TMDB API but is not endorsed or certified by TMDB. El logo oficial y el aviso se muestran en Fuentes e incidencias.
 
 Se consulta robots.txt y no se eluden controles de acceso. Incorporar cada nueva fuente requiere revisar acceso, estructura, condiciones y pruebas con datos reales. No se redistribuyen carteles ni sinopsis.
 

@@ -15,6 +15,8 @@ def title_variants(title):
     cleaned = re.sub(r'\(\s*\)', ' ', cleaned)
     cleaned = re.sub(r'\s+', ' ', cleaned).strip(' -:')
     variants = [cleaned]
+    event_free = re.sub(r'\b(?:live\s+by|con\s+acompañamiento\s+de|con\s+música\s+de)\b.*$', '',cleaned,flags=re.I).strip()
+    if event_free != cleaned: variants.append(event_free)
     if ':' in cleaned:
         variants.append(cleaned.split(':',1)[1].strip())
     variants += re.findall(r'\(([^)]+)\)', cleaned)
@@ -30,6 +32,8 @@ def title_score(source, movie):
     aliases = {normalize(t) for t in [movie['title'],movie.get('original_title',''),*movie.get('aliases',[])] if t}
     if any(value in aliases for value in variants): return 5
     if any(len(alias)>=8 and alias in value for value in variants for alias in aliases): return 3
+    # A cinema may abbreviate a longer official title. It still needs director AND runtime corroboration.
+    if any(len(value)>=10 and value in alias for value in variants for alias in aliases): return 2
     similarity = max((SequenceMatcher(None,value,alias).ratio() for value in variants for alias in aliases),default=0)
     return 2 if similarity >= .92 else 0
 
@@ -91,7 +95,8 @@ def slim_movie(payload):
     return dict(id='tmdb:'+str(payload['id']),tmdb_id=payload['id'],title=payload.get('title') or payload['original_title'],
                 original_title=payload.get('original_title',''),year=int(payload['release_date'][:4]) if payload.get('release_date') else None,
                 director=', '.join(directors),directors=directors,runtime=payload.get('runtime'),
-                aliases=sorted({t['title'] for t in payload.get('alternative_titles',{}).get('titles',[]) if t.get('title')}),
+                aliases=sorted({t['title'] for t in payload.get('alternative_titles',{}).get('titles',[]) if t.get('title')}
+                               | {t.get('data',{}).get('title') for t in payload.get('translations',{}).get('translations',[]) if t.get('data',{}).get('title')}),
                 releases=releases,source_url='https://www.themoviedb.org/movie/'+str(payload['id']),fetched_at=now())
 
 class Client:
@@ -132,13 +137,25 @@ class Client:
         movie=slim_movie(self.get('movie/'+str(id),language='es-ES',append_to_response='credits,alternative_titles,release_dates'))
         self.cache['movies'][str(id)]=movie
         return movie
+    def with_translations(self,movie):
+        if movie.get('translations_checked'):return movie
+        data=self.get('movie/'+str(movie['tmdb_id'])+'/translations')
+        translated={t.get('data',{}).get('title') for t in data.get('translations',[]) if t.get('data',{}).get('title')}
+        movie['aliases']=sorted(set(movie['aliases'])|translated)
+        movie['translations_checked']=True
+        self.cache['movies'][str(movie['tmdb_id'])]=movie
+        return movie
     def resolve(self,source):
         seen={}; searched=[]
         for query in title_variants(source['title']):
             searched.append(query)
             for result in self.search(query):
                 if result['id'] not in seen:
-                    seen[result['id']]=self.movie(result['id'])
+                    candidate=self.movie(result['id'])
+                    if (normalize(source.get('director','')) in {normalize(d) for d in candidate['directors']}
+                            and not title_score(source,candidate)):
+                        candidate=self.with_translations(candidate)
+                    seen[result['id']]=candidate
             match,evidence=identity_match(source,list(seen.values()))
             if match: return match,evidence,[]
             if evidence=='ambiguous':break

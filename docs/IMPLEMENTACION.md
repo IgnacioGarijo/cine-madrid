@@ -1,5 +1,14 @@
 # Implementación acordada y estado
 
+## Integración TMDB en v0.3.0
+
+- Secretos configurados en ambos repositorios; la cartelera usa el secreto del repositorio público exclusivamente dentro de Actions.
+- Búsqueda por títulos originales, traducciones y alias automáticos; verificación por dirección, con año/duración como evidencia adicional y control de homónimos.
+- Caché persistente de metadatos públicos, errores de API y de identificación diferenciados y conservación de verificaciones anteriores ante fallos temporales.
+- Identidad y clasificación por sesión independientes: las fechas de primeras salidas comerciales internacionales permiten reconocer reposiciones; los pases de festivales no bastan. Reglas iniciales configurables de 365 días para reposición automática y 180 días para continuidad del estreno actual, con revisión contextual en la zona intermedia.
+- Enlaces a la ficha TMDB y año en la cartelera; alias incorporados a búsqueda y calendario. Favoritas ofrece las fichas identificadas en la cartelera.
+- Copilot queda pendiente para ambigüedades e interpretación de eventos, sin bloquear las coincidencias claras de TMDB.
+
 ## Cambios de interfaz en v0.2.1
 
 - Diseño orientado a móvil: cabecera con Cine Madrid en grande, filtros secundarios plegables y controles táctiles.
@@ -34,7 +43,7 @@ Madrid capital. Todos los cines comerciales y espacios con cine regular como obj
 
 ### B. Identidad y agente
 
-- Activar TMDB: títulos originales, traducciones y alias automáticos, año, dirección, reparto y fechas internacionales.
+- TMDB activado para títulos, alias, año, dirección y fechas internacionales; ampliar corroboración con reparto cuando una fuente lo publique.
 - Generar candidatos y enviar al agente los casos ambiguos, sin aceptar una semejanza de título como identidad confirmada.
 - El agente consulta fichas y contexto; devuelve candidatos, evidencia y decisión estructurada. Guardar equivalencias y correcciones persistentes.
 - Definir «reposiciones» por recuperación de películas previamente estrenadas nacional o internacionalmente. Distinguir la continuidad del estreno actual y premières de festivales; no aplicar solo un umbral de antigüedad.
@@ -44,7 +53,7 @@ Madrid capital. Todos los cines comerciales y espacios con cine regular como obj
 
 ### C. Experiencia personal
 
-- Activar credenciales de Telegram y TMDB mediante secretos de Actions.
+- Credencial TMDB configurada. Activar las credenciales de Telegram cuando el usuario cree su bot.
 - Validar mensajes desde el móvil, bloqueo de otros usuarios, botones de selección, persistencia de pendientes y no repetición de avisos normales.
 - Sincronización futura entre navegador y lista privada: requiere autenticación y un servicio accesible o una exportación/importación explícita. Nunca poner un token privado en la web pública.
 - El bot usa sondeo cada 30 minutos; no garantiza respuesta instantánea. El sondeo permanece desactivado hasta configurar ENABLE_TELEGRAM=true para no consumir cuota sin utilidad. Si se necesita inmediatez, evaluar webhook y alojamiento adicional.
