@@ -96,9 +96,9 @@ header { width:100%; min-height:280px; align-items:flex-end; padding:32px max(32
 }
 @media(max-width:360px) { header { min-height:205px; }.brand h1 { font-size:34px; }.brand-mark { display:none; }.quick-controls>button { font-size:10px; }.category-options button { font-size:10px; }.sort-control select { font-size:11px; } }
 
-.movie-heading { display:flex; align-items:baseline; gap:10px; white-space:nowrap; overflow:hidden; }
+.movie-heading { display:flex; align-items:baseline; gap:10px; white-space:nowrap; overflow:hidden; background:var(--ink); color:var(--white); padding:10px 12px; border:0; border-radius:8px; }
 .movie-heading h3 { flex:0 1 auto; min-width:0; margin:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
-.movie-heading .meta { flex:0 2 auto; min-width:0; margin:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.movie-heading .meta { flex:0 2 auto; min-width:0; margin:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color:#e1e8ed; }
 .movie-heading .meta>span { margin:0; }
 .calendar-preview { border:1px solid var(--line); border-radius:10px; }
 .mini-toolbar { display:grid; grid-template-columns:30px minmax(0,1fr) 30px 30px; align-items:center; gap:3px; width:100%; }
