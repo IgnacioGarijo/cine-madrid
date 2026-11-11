@@ -62,8 +62,14 @@ def main():
         except requests.RequestException:pass
         if attempt==5:raise SystemExit('El servicio no responde correctamente; no se modifica la configuración de Pages.')
         time.sleep(3)
-    response=requests.post(base+'/session',json={'secret':os.environ['FAVORITES_OWNER_SECRET']},headers={'Origin':'https://ignaciogarijo.github.io'},timeout=15)
-    if not response.ok or not response.json().get('token'):raise SystemExit('No se pudo verificar el acceso de edición; no se modifica Pages.')
+    for attempt in range(6):
+        try:
+            response=requests.post(base+'/session',json={'secret':os.environ['FAVORITES_OWNER_SECRET']},headers={'Origin':'https://ignaciogarijo.github.io'},timeout=15)
+            if response.ok and response.json().get('token'):break
+            status=response.status_code
+        except (requests.RequestException,ValueError):status='sin respuesta'
+        if attempt==5:raise SystemExit('No se pudo verificar el acceso de edición (HTTP '+str(status)+'); no se modifica Pages.')
+        time.sleep(5)
     response=requests.get(base+'/favorites',timeout=15)
     if not response.ok or not isinstance(response.json(),list):raise SystemExit('No se pudo comprobar la lista compartida; no se modifica Pages.')
     (ROOT/'web/search-config.json').write_text(json.dumps({'tmdb_api_url':base+'/search','favorites_api_url':base+'/favorites'})+'\n',encoding='utf-8')
