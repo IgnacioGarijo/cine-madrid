@@ -12,6 +12,7 @@ export function filterSessions(sessions, filters, {today = madridDay(), ignoreDa
       && (ignoreDay || !filters.day || day === filters.day)
       && (!filters.cinema || session.cinema_id === filters.cinema)
       && (!filters.category || (filters.category === 'special' ? session.special_tags?.length > 0 : session.category === filters.category))
+      && (!filters.format || session.format === filters.format)
       && (!filters.version || session.version === filters.version)
       && (!filters.after || time >= filters.after)
       && (!filters.before || time <= filters.before);

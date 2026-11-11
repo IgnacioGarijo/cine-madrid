@@ -2,6 +2,8 @@ name: Actualizar y publicar
 on:
   push:
     branches: [main]
+  issues:
+    types: [opened, reopened]
   workflow_dispatch:
     inputs:
       newsletter:
@@ -13,6 +15,7 @@ on:
     - cron: '17 17 * * 4'
 permissions:
   contents: write
+  issues: write
   pages: write
   id-token: write
 concurrency:
@@ -20,8 +23,9 @@ concurrency:
   cancel-in-progress: false
 jobs:
   publish:
+    if: github.event_name != 'issues' || (github.event.issue.user.login == github.repository_owner && startsWith(github.event.issue.title, 'Favoritas:'))
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 25
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -34,6 +38,11 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python -m unittest discover -s tests -v
       - run: node --test tests/calendar.test.mjs tests/pwa.test.mjs
+      - name: Actualizar favoritas públicas
+        if: github.event_name == 'issues'
+        env:
+          TMDB_READ_TOKEN: ${{ secrets.TMDB_READ_TOKEN }}
+        run: python -m src.favorites
       - name: Leer fuentes y construir
         env:
           TMDB_READ_TOKEN: ${{ secrets.TMDB_READ_TOKEN }}
@@ -48,7 +57,7 @@ jobs:
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add data
+          git add data config/favorites.json
           if ! git diff --cached --quiet; then
             git commit -m "Actualizar cartelera e incidencias"
             git push
@@ -60,3 +69,8 @@ jobs:
       - name: Publicar GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Confirmar cambio publicado
+        if: github.event_name == 'issues'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python -m src.favorites --respond

@@ -1,0 +1,23 @@
+name: Gestionar favoritas públicas
+description: Añadir o quitar una película de la lista pública de Cine Madrid.
+title: 'Favoritas: actualizar lista'
+body:
+  - type: markdown
+    attributes:
+      value: 'La lista es pública. Solo las solicitudes de la cuenta propietaria modifican la lista. Confirma con Create.'
+  - type: dropdown
+    id: operation
+    attributes:
+      label: Operación
+      options: [Añadir, Quitar]
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: movie
+    attributes:
+      label: Película
+      description: Título y año, enlace de TMDB o identificador tmdb.
+      placeholder: Interstellar 2014
+    validations:
+      required: true

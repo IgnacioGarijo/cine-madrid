@@ -33,7 +33,8 @@ class Fetcher:
         time.sleep(.3)
         r = self.session.get(url, timeout=35)
         r.raise_for_status()
-        return r.content.decode('utf-8', errors='replace')
+        try:return r.content.decode('utf-8')
+        except UnicodeDecodeError:return r.content.decode(r.apparent_encoding or 'windows-1252',errors='replace')
 
 def parse_day(label, today):
     if label.casefold() == 'hoy': return today
@@ -47,7 +48,7 @@ def parse_day(label, today):
         result = result.replace(year=year+1)
     return result
 
-def parse_paz(html, today, incidents):
+def parse_paz(html, today, incidents, source_id=SOURCE_ID, source_url=PAZ_URL, id_prefix='paz'):
     soup = BeautifulSoup(html, 'html.parser')
     labels = soup.select('.rotulo_dia[data-num]')
     if not labels: raise ValueError('La estructura de la cartelera ha cambiado: no hay fechas.')
@@ -56,36 +57,36 @@ def parse_paz(html, today, incidents):
         label_text = label.get_text(' ', strip=True)
         try: day = parse_day(label_text, today)
         except ValueError as exc:
-            incidents.add(SOURCE_ID,'date_ambiguous', label_text,str(exc), PAZ_URL); continue
+            incidents.add(source_id,'date_ambiguous', label_text,str(exc), source_url); continue
         container = soup.select_one('.cines-' + label['data-num'])
         if container is None:
-            incidents.add(SOURCE_ID,'layout_changed',label_text,'Fecha publicada sin bloque de sesiones.',PAZ_URL);continue
+            incidents.add(source_id,'layout_changed',label_text,'Fecha publicada sin bloque de sesiones.',source_url);continue
         for block in container.select('.horarios'):
             title_tag = block.select_one('.peli b')
             detail = block.select_one('.peli a[href]')
             if not title_tag or not detail:
-                incidents.add(SOURCE_ID,'layout_changed',label_text,'Sesión sin título o ficha reconocible.',PAZ_URL);continue
+                incidents.add(source_id,'layout_changed',label_text,'Sesión sin título o ficha reconocible.',source_url);continue
             title=title_tag.get_text(' ',strip=True)
-            detail_url=urljoin(PAZ_URL,detail['href'])
+            detail_url=urljoin(source_url,detail['href'])
             director=next((p.get_text(' ',strip=True)[3:] for p in block.select('.peli p') if p.get_text(' ',strip=True).startswith('de ')), '')
             duration=re.search(r'(\d+) minutos',block.get_text(' ',strip=True),re.I)
-            movie_id='paz:' + re.search(r'/detalles/([^/]+)',detail_url).group(1).split('_')[0]
+            movie_id=id_prefix+':' + re.search(r'/detalles/([^/]+)',detail_url).group(1).split('_')[0]
             movies[movie_id]=dict(id=movie_id,title=title,director=director,duration_minutes=int(duration[1]) if duration else None,source_url=detail_url)
             for link in block.select('.horas a[href]'):
                 text=link.get_text(' ',strip=True)
                 match=re.search(r'(\d{1,2}):(\d{2})',text)
                 if not match:
-                    incidents.add(SOURCE_ID,'time_ambiguous',link.get('data-ho',title),'Horario no reconocido: '+text,detail_url);continue
+                    incidents.add(source_id,'time_ambiguous',link.get('data-ho',title),'Horario no reconocido: '+text,detail_url);continue
                 hour,minute=map(int,match.groups())
                 if hour>29 or minute>59:
-                    incidents.add(SOURCE_ID,'time_ambiguous',title,text,detail_url);continue
+                    incidents.add(source_id,'time_ambiguous',title,text,detail_url);continue
                 dt=datetime.combine(day,datetime.min.time(),tzinfo=MADRID)+timedelta(hours=hour,minutes=minute)
-                sid='paz:'+link['data-ho'] if link.get('data-ho') else stable_id(SOURCE_ID,movie_id,dt.isoformat(),text)
-                sessions[sid]=dict(id=sid,source_id=SOURCE_ID,cinema_id=SOURCE_ID,movie_id=movie_id,title=title,director=director,
+                sid=id_prefix+':'+link['data-ho'] if link.get('data-ho') else stable_id(source_id,movie_id,dt.isoformat(),text)
+                sessions[sid]=dict(id=sid,source_id=source_id,cinema_id=source_id,movie_id=movie_id,title=title,director=director,
                     start=dt.isoformat(),duration_minutes=movies[movie_id]['duration_minutes'],
                     version='VOSE' if 'VOSE' in (title+' '+text) else 'Sin especificar',
                     format=next((x for x in ['70mm','35mm','4K'] if x.casefold() in (title+' '+text).casefold()),None),
-                    booking_url=urljoin(PAZ_URL,link['href']),source_url=detail_url,status='confirmed',stale=False,
+                    booking_url=urljoin(source_url,link['href']),source_url=detail_url,status='confirmed',stale=False,
                     category='premiere' if block.select_one('.cartel-novedad') else 'unclassified',
                     source_category='premiere' if block.select_one('.cartel-novedad') else 'unclassified',special_tags=[])
     if not sessions: raise ValueError('No se han leído sesiones; se conserva la última lectura válida.')

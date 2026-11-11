@@ -3,12 +3,15 @@
     "id": "verdi-madrid",
     "name": "VERDI MADRID",
     "address": "",
-    "lat": null,
-    "lon": null,
-    "url": "https://www.cines-verdi.com/",
-    "status": "pending",
-    "inventory_status": "needs_review",
-    "provenance": "https://www.fiestadelcine.com/salas-adheridas/"
+    "lat": 40.4365689,
+    "lon": -3.704078,
+    "url": "https://madrid.cines-verdi.com/cartelera",
+    "status": "active",
+    "inventory_status": "verified_source",
+    "provenance": "https://madrid.cines-verdi.com/cartelera",
+    "municipality": "Madrid",
+    "adapter": "verdi",
+    "coordinate_source": "https://www.openstreetmap.org/node/1016578413"
   },
   {
     "id": "mk2-cines-palacio-de-hielo",
@@ -16,10 +19,12 @@
     "address": "",
     "lat": null,
     "lon": null,
-    "url": "https://www.mk2palaciodehielo.es",
-    "status": "pending",
-    "inventory_status": "needs_review",
-    "provenance": "https://www.fiestadelcine.com/salas-adheridas/"
+    "url": "https://www.mk2palaciodehielo.es/es/cartelera",
+    "status": "active",
+    "inventory_status": "verified_source",
+    "provenance": "https://www.mk2palaciodehielo.es/es/cartelera",
+    "municipality": "Madrid",
+    "adapter": "mk2"
   },
   {
     "id": "cine-paz",
@@ -30,8 +35,10 @@
     "url": "https://www.cinepazmadrid.es/es/cartelera",
     "status": "active",
     "inventory_status": "verified_source",
-    "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
-    "coordinate_source": "https://www.openstreetmap.org/node/1357992373"
+    "provenance": "https://www.cinepazmadrid.es/es/cartelera",
+    "coordinate_source": "https://www.openstreetmap.org/node/1357992373",
+    "municipality": "Madrid",
+    "adapter": "mk2"
   },
   {
     "id": "golem-madrid",
@@ -42,40 +49,50 @@
     "url": "https://www.golem.es/",
     "status": "pending",
     "inventory_status": "needs_review",
-    "provenance": "https://www.fiestadelcine.com/salas-adheridas/"
+    "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
+    "municipality": "Madrid"
   },
   {
     "id": "renoir-princesa",
-    "name": "RENOIR PRINCESA",
+    "name": "Cines Princesa (11 salas)",
     "address": "",
-    "lat": null,
-    "lon": null,
-    "url": "https://www.cinesrenoir.com/",
-    "status": "pending",
-    "inventory_status": "needs_review",
-    "provenance": "https://www.fiestadelcine.com/salas-adheridas/"
+    "lat": 40.4249833,
+    "lon": -3.7129287,
+    "url": "https://www.cinesrenoir.com/cine/cines-princesa/cartelera/",
+    "status": "active",
+    "inventory_status": "verified_source",
+    "provenance": "https://www.cinesrenoir.com/cine/cines-princesa/cartelera/",
+    "municipality": "Madrid",
+    "adapter": "renoir",
+    "coordinate_source": "https://www.openstreetmap.org/node/622204565"
   },
   {
     "id": "renoir-plaza-espa-a",
     "name": "RENOIR PLAZA ESPAÑA",
     "address": "",
-    "lat": null,
-    "lon": null,
-    "url": "https://www.cinesrenoir.com/",
-    "status": "pending",
-    "inventory_status": "needs_review",
-    "provenance": "https://www.fiestadelcine.com/salas-adheridas/"
+    "lat": 40.4244029,
+    "lon": -3.7134171,
+    "url": "https://www.cinesrenoir.com/cine/renoir-plaza-de-espana/cartelera/",
+    "status": "active",
+    "inventory_status": "verified_source",
+    "provenance": "https://www.cinesrenoir.com/cine/renoir-plaza-de-espana/cartelera/",
+    "municipality": "Madrid",
+    "adapter": "renoir",
+    "coordinate_source": "https://www.openstreetmap.org/node/622204566"
   },
   {
     "id": "renoir-retiro",
     "name": "RENOIR RETIRO",
     "address": "",
-    "lat": null,
-    "lon": null,
-    "url": "https://www.cinesrenoir.com/",
-    "status": "pending",
-    "inventory_status": "needs_review",
-    "provenance": "https://www.fiestadelcine.com/salas-adheridas/"
+    "lat": 40.4200969,
+    "lon": -3.6764364,
+    "url": "https://www.cinesrenoir.com/cine/renoir-retiro/cartelera/",
+    "status": "active",
+    "inventory_status": "verified_source",
+    "provenance": "https://www.cinesrenoir.com/cine/renoir-retiro/cartelera/",
+    "municipality": "Madrid",
+    "adapter": "renoir",
+    "coordinate_source": "https://www.openstreetmap.org/way/262485837"
   },
   {
     "id": "cines-embajadores",
@@ -86,7 +103,8 @@
     "url": "https://cinesembajadores.es/madrid/",
     "status": "pending",
     "inventory_status": "needs_review",
-    "provenance": "https://www.fiestadelcine.com/salas-adheridas/"
+    "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
+    "municipality": "Madrid"
   },
   {
     "id": "cines-embajadores-r-o",
@@ -97,29 +115,36 @@
     "url": "https://cinesembajadores.es/madrid/",
     "status": "pending",
     "inventory_status": "needs_review",
-    "provenance": "https://www.fiestadelcine.com/salas-adheridas/"
+    "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
+    "municipality": "Madrid"
   },
   {
     "id": "conde-duque-auditorio-morasol",
     "name": "CONDE DUQUE AUDITORIO MORASOL",
     "address": "",
-    "lat": null,
-    "lon": null,
-    "url": "https://condeduquemorasol.com/",
-    "status": "pending",
-    "inventory_status": "needs_review",
-    "provenance": "https://www.fiestadelcine.com/salas-adheridas/"
+    "lat": 40.4482515,
+    "lon": -3.6757867,
+    "url": "https://condeduquemorasol.com/index?pag=cartelera",
+    "status": "active",
+    "inventory_status": "verified_source",
+    "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
+    "municipality": "Madrid",
+    "adapter": "morasol",
+    "coordinate_source": "https://www.openstreetmap.org/node/7155001346"
   },
   {
     "id": "cine-capitol",
     "name": "CINE CAPITOL",
-    "address": "",
-    "lat": null,
-    "lon": null,
+    "address": "Gran Vía, 41",
+    "lat": 40.4205118,
+    "lon": -3.7066782,
     "url": "https://www.capitolgranvia.com/",
-    "status": "pending",
-    "inventory_status": "needs_review",
-    "provenance": "https://www.fiestadelcine.com/salas-adheridas/"
+    "status": "active",
+    "inventory_status": "verified_source",
+    "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
+    "municipality": "Madrid",
+    "adapter": "capitol",
+    "coordinate_source": "https://www.openstreetmap.org/node/184049531"
   },
   {
     "id": "ocine-urban-caleido",
@@ -130,7 +155,8 @@
     "url": "https://cinesocine.es/",
     "status": "pending",
     "inventory_status": "needs_review",
-    "provenance": "https://www.fiestadelcine.com/salas-adheridas/"
+    "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
+    "municipality": "Madrid"
   },
   {
     "id": "odeon-multicines-alcala-norte",
@@ -141,7 +167,8 @@
     "url": "https://odeonmulticines.com/",
     "status": "pending",
     "inventory_status": "needs_review",
-    "provenance": "https://www.fiestadelcine.com/salas-adheridas/"
+    "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
+    "municipality": "Madrid"
   },
   {
     "id": "cinesa-proyecciones",
@@ -152,7 +179,8 @@
     "url": "https://www.cinesa.es/",
     "status": "pending",
     "inventory_status": "needs_review",
-    "provenance": "https://www.fiestadelcine.com/salas-adheridas/"
+    "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
+    "municipality": "Madrid"
   },
   {
     "id": "cinesa-principe-p-o-isense",
@@ -163,7 +191,8 @@
     "url": "https://www.cinesa.es/",
     "status": "pending",
     "inventory_status": "needs_review",
-    "provenance": "https://www.fiestadelcine.com/salas-adheridas/"
+    "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
+    "municipality": "Madrid"
   },
   {
     "id": "cinesa-m-ndez-lvaro-isense",
@@ -174,7 +203,8 @@
     "url": "https://www.cinesa.es/",
     "status": "pending",
     "inventory_status": "needs_review",
-    "provenance": "https://www.fiestadelcine.com/salas-adheridas/"
+    "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
+    "municipality": "Madrid"
   },
   {
     "id": "cinesa-las-rosas",
@@ -185,7 +215,8 @@
     "url": "https://www.cinesa.es/",
     "status": "pending",
     "inventory_status": "needs_review",
-    "provenance": "https://www.fiestadelcine.com/salas-adheridas/"
+    "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
+    "municipality": "Madrid"
   },
   {
     "id": "cinesa-la-gavia",
@@ -196,7 +227,8 @@
     "url": "https://www.cinesa.es/",
     "status": "pending",
     "inventory_status": "needs_review",
-    "provenance": "https://www.fiestadelcine.com/salas-adheridas/"
+    "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
+    "municipality": "Madrid"
   },
   {
     "id": "cinesa-manoteras",
@@ -207,7 +239,8 @@
     "url": "https://www.cinesa.es/",
     "status": "pending",
     "inventory_status": "needs_review",
-    "provenance": "https://www.fiestadelcine.com/salas-adheridas/"
+    "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
+    "municipality": "Madrid"
   },
   {
     "id": "cine-yelmo-ideal",
@@ -218,7 +251,8 @@
     "url": "https://yelmocines.es/",
     "status": "pending",
     "inventory_status": "needs_review",
-    "provenance": "https://www.fiestadelcine.com/salas-adheridas/"
+    "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
+    "municipality": "Madrid"
   },
   {
     "id": "cine-yelmo-islazul",
@@ -229,7 +263,8 @@
     "url": "https://yelmocines.es/",
     "status": "pending",
     "inventory_status": "needs_review",
-    "provenance": "https://www.fiestadelcine.com/salas-adheridas/"
+    "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
+    "municipality": "Madrid"
   },
   {
     "id": "cine-yelmo-palafox",
@@ -240,7 +275,8 @@
     "url": "https://yelmocines.es/",
     "status": "pending",
     "inventory_status": "needs_review",
-    "provenance": "https://www.fiestadelcine.com/salas-adheridas/"
+    "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
+    "municipality": "Madrid"
   },
   {
     "id": "cine-yelmo-plenilunio",
@@ -251,7 +287,8 @@
     "url": "https://yelmocines.es/",
     "status": "pending",
     "inventory_status": "needs_review",
-    "provenance": "https://www.fiestadelcine.com/salas-adheridas/"
+    "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
+    "municipality": "Madrid"
   },
   {
     "id": "peque-o-cine-estudio",
@@ -262,7 +299,8 @@
     "url": "https://www.pcineestudio.es/",
     "status": "pending",
     "inventory_status": "needs_review",
-    "provenance": "https://www.fiestadelcine.com/salas-adheridas/"
+    "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
+    "municipality": "Madrid"
   },
   {
     "id": "cine-yelmo-la-vaguada",
@@ -273,40 +311,48 @@
     "url": "https://www.yelmocines.es",
     "status": "pending",
     "inventory_status": "needs_review",
-    "provenance": "https://www.fiestadelcine.com/salas-adheridas/"
+    "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
+    "municipality": "Madrid"
   },
   {
     "id": "cine-dore",
     "name": "Filmoteca Española · Cine Doré",
-    "url": "https://www.cultura.gob.es/cultura/areas/cine/mc/fe/programacion.html",
+    "url": "https://www.cultura.gob.es/cultura/areas/cine/mc/fe/portada.htm",
     "address": "Calle de Santa Isabel, 3",
     "lat": null,
     "lon": null,
     "status": "pending",
     "inventory_status": "needs_review",
-    "provenance": "https://www.cultura.gob.es/cultura/areas/cine/mc/fe/programacion.html"
+    "provenance": "https://www.cultura.gob.es/cultura/areas/cine/mc/fe/programacion.html",
+    "municipality": "Madrid"
   },
   {
     "id": "cineteca",
     "name": "Cineteca Madrid",
-    "url": "https://www.cinetecamadrid.com/",
+    "url": "https://www.cinetecamadrid.com/programacion",
     "address": "Plaza de Legazpi, 8",
-    "lat": null,
-    "lon": null,
-    "status": "pending",
-    "inventory_status": "needs_review",
-    "provenance": "https://www.cinetecamadrid.com/"
+    "lat": 40.3915379,
+    "lon": -3.6964168,
+    "status": "active",
+    "inventory_status": "verified_source",
+    "provenance": "https://www.cinetecamadrid.com/programacion",
+    "municipality": "Madrid",
+    "adapter": "cineteca",
+    "coordinate_source": "https://www.openstreetmap.org/node/3619677863"
   },
   {
     "id": "artistic-metropol",
     "name": "Artistic Metropol",
-    "url": "https://artisticmetropol.es/",
+    "url": "https://artisticmetropol.es/calendario-de-sesiones/",
     "address": "Calle de las Cigarreras, 6",
-    "lat": null,
-    "lon": null,
-    "status": "pending",
-    "inventory_status": "needs_review",
-    "provenance": "https://artisticmetropol.es/"
+    "lat": 40.4049046,
+    "lon": -3.7074611,
+    "status": "active",
+    "inventory_status": "verified_source",
+    "provenance": "https://artisticmetropol.es/calendario-de-sesiones/",
+    "municipality": "Madrid",
+    "adapter": "artistic",
+    "coordinate_source": "https://www.openstreetmap.org/node/2277540330"
   },
   {
     "id": "sala-equis",
@@ -317,18 +363,21 @@
     "lon": null,
     "status": "pending",
     "inventory_status": "needs_review",
-    "provenance": "https://salaequis.es/"
+    "provenance": "https://salaequis.es/",
+    "municipality": "Madrid"
   },
   {
     "id": "cine-estudio",
     "name": "Cine Estudio · Círculo de Bellas Artes",
-    "url": "https://www.circulobellasartes.com/cine/",
-    "address": "Calle del Marqués de Casa Riera, 2",
+    "url": "https://www.circulobellasartes.com/cine-estudio/",
+    "address": "Calle del Marqués de Casa Riera, 4",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "inventory_status": "needs_review",
-    "provenance": "https://www.circulobellasartes.com/cine/"
+    "status": "active",
+    "inventory_status": "verified_source",
+    "provenance": "https://www.circulobellasartes.com/cine-estudio/",
+    "municipality": "Madrid",
+    "adapter": "cba"
   },
   {
     "id": "fundacion-japon",
@@ -339,7 +388,8 @@
     "lon": null,
     "status": "pending",
     "inventory_status": "needs_review",
-    "provenance": "https://www.fundacionjapon.es/"
+    "provenance": "https://www.fundacionjapon.es/",
+    "municipality": "Madrid"
   },
   {
     "id": "casa-america",
@@ -350,7 +400,8 @@
     "lon": null,
     "status": "pending",
     "inventory_status": "needs_review",
-    "provenance": "https://www.casamerica.es/cine"
+    "provenance": "https://www.casamerica.es/cine",
+    "municipality": "Madrid"
   },
   {
     "id": "instituto-frances",
@@ -361,7 +412,8 @@
     "lon": null,
     "status": "pending",
     "inventory_status": "needs_review",
-    "provenance": "https://www.institutfrancais.es/madrid/"
+    "provenance": "https://www.institutfrancais.es/madrid/",
+    "municipality": "Madrid"
   },
   {
     "id": "academia-cine",
@@ -372,6 +424,61 @@
     "lon": null,
     "status": "pending",
     "inventory_status": "needs_review",
-    "provenance": "https://www.academiadecine.com/actividades/"
+    "provenance": "https://www.academiadecine.com/actividades/",
+    "municipality": "Madrid"
+  },
+  {
+    "id": "kinepolis-ciudad-imagen",
+    "name": "Kinépolis Ciudad de la Imagen",
+    "municipality": "Pozuelo de Alarcón",
+    "address": "",
+    "lat": 40.3938601,
+    "lon": -3.7964807,
+    "url": "https://kinepolis.es/cines/kinepolis-madrid-ciudad-de-la-imagen/informacion/",
+    "status": "pending",
+    "inventory_status": "verified_venue",
+    "formats": [
+      "IMAX"
+    ],
+    "format_evidence_url": "https://www.imax.com/theatre/kinepolis-madrid-imax",
+    "provenance": "https://www.imax.com/theatre/kinepolis-madrid-imax",
+    "reading_note": "Recinto IMAX confirmado. Lectura automática pendiente: la fuente o su proveedor de horarios restringe el acceso. No se infiere el formato de cada sesión.",
+    "coordinate_source": "https://www.openstreetmap.org/way/4291773"
+  },
+  {
+    "id": "cinesa-parquesur",
+    "name": "Cinesa Parquesur",
+    "municipality": "Leganés",
+    "address": "",
+    "lat": 40.3389348,
+    "lon": -3.7312437,
+    "url": "https://www.cinesa.es/cines/parquesur/",
+    "status": "pending",
+    "inventory_status": "verified_venue",
+    "formats": [
+      "IMAX"
+    ],
+    "format_evidence_url": "https://www.imax.com/theatre/cinesa-parquesur-imax",
+    "provenance": "https://www.imax.com/theatre/cinesa-parquesur-imax",
+    "reading_note": "Recinto IMAX confirmado. Lectura automática pendiente: la fuente o su proveedor de horarios restringe el acceso. No se infiere el formato de cada sesión.",
+    "coordinate_source": "https://www.openstreetmap.org/node/1553399887"
+  },
+  {
+    "id": "cinesa-heron-city-las-rozas",
+    "name": "Cinesa Heron City Las Rozas",
+    "municipality": "Las Rozas de Madrid",
+    "address": "",
+    "lat": 40.5158718,
+    "lon": -3.8969057,
+    "url": "https://www.cinesa.es/cines/las-rozas/",
+    "status": "pending",
+    "inventory_status": "verified_venue",
+    "formats": [
+      "IMAX"
+    ],
+    "format_evidence_url": "https://www.heroncity.com/madrid/heron-city-las-rozas/imax",
+    "provenance": "https://www.heroncity.com/madrid/heron-city-las-rozas/imax",
+    "reading_note": "Recinto IMAX confirmado. Lectura automática pendiente: la fuente o su proveedor de horarios restringe el acceso. No se infiere el formato de cada sesión.",
+    "coordinate_source": "https://www.openstreetmap.org/node/2046053159"
   }
 ]

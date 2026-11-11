@@ -35,3 +35,9 @@ test('only special events survive the event filter and past days are excluded', 
 test('today follows Madrid even before midnight UTC', () => {
   assert.equal(madridDay(new Date('2026-11-11T23:30:00Z')), '2026-11-12');
 });
+
+test('IMAX filter uses the individual session format, not the cinema facilities', () => {
+  const sessions = [{id:1,title:'A',cinema_id:'same',start:'2026-11-12T18:00:00+01:00',format:'IMAX'},
+    {id:2,title:'A',cinema_id:'same',start:'2026-11-12T20:00:00+01:00',format:null}];
+  assert.deepEqual(filterSessions(sessions,{format:'IMAX'},{today:'2026-11-11'}).map(s=>s.id),[1]);
+});

@@ -5,6 +5,7 @@ from pathlib import Path
 from .core import ROOT,MADRID,Incidents,now,read_json,write_json,trusted_identity,normalize,clean_title
 from .sources import Fetcher,PAZ_URL,CLASSIC_URL,SOURCE_ID,parse_paz,classic_members
 from .tmdb import enrich
+from .adapters import read_cinema
 
 def run(refresh=True, newsletter=False):
     path=ROOT/'data/public.json'
@@ -18,31 +19,36 @@ def run(refresh=True, newsletter=False):
     checked=set()
     sources=old.get('sources',[])
     if refresh:
-        checked.add(SOURCE_ID)
-        try:
-            fetcher=Fetcher()
-            sessions,movies=parse_paz(fetcher.get(PAZ_URL),today,incidents)
+        sessions=[];movies=[];sources=[]
+        for cinema in cinemas:
+            cid=cinema['id']
+            if not cinema.get('adapter'):continue
+            checked.add(cid)
+            previous=[x for x in old.get('sessions',[]) if x['cinema_id']==cid and x['start'][:10]>=today.isoformat()]
+            prior_source=next((x for x in old.get('sources',[]) if x['id']==cid),{})
             try:
-                classic=classic_members(fetcher.get(CLASSIC_URL))
-                if not classic:
-                    incidents.add(SOURCE_ID,'cycle_unreadable','classic','La página del ciclo no ofrece fichas reconocibles; no se infieren fechas.',CLASSIC_URL)
-                for movie in movies:
-                    if movie['id'] in classic:
-                        movie.update(category='repertory',category_evidence_url=CLASSIC_URL)
-            except Exception:
-                incidents.add(SOURCE_ID,'cycle_read_failed','classic','No se pudo leer el ciclo Classic. La cartelera se mantiene; su clasificación queda pendiente.',CLASSIC_URL)
-            for s in sessions:s['last_seen']=now()
-            previous=[x for x in old.get('sessions',[]) if x['start'][:10]>=today.isoformat()]
-            if previous and len(sessions)<len(previous)*.5:
-                incidents.add(SOURCE_ID,'unexpected_drop','sessions','La fuente devuelve menos de la mitad de las sesiones anteriores; verificar cobertura.',PAZ_URL)
-                known={s['id'] for s in sessions}
-                sessions += [dict(s,stale=True,status='unverified') for s in previous if s['id'] not in known]
-            sources=[dict(id=SOURCE_ID,status='ok',last_attempt=now(),last_success=now(),url=PAZ_URL)]
-        except Exception as exc:
-            # Never log HTTP exception URLs: third-party URLs may contain secrets.
-            incidents.add(SOURCE_ID,'read_failed','source','No se pudo actualizar la cartelera ('+type(exc).__name__+'). Se conserva la última lectura válida.',PAZ_URL,'error')
-            sessions=[dict(s,stale=True) for s in sessions]
-            sources=[dict(id=SOURCE_ID,status='error',last_attempt=now(),last_success=next((x.get('last_success') for x in old.get('sources',[]) if x['id']==SOURCE_ID),None),url=PAZ_URL)]
+                fresh,films,pages=read_cinema(cinema,today,incidents)
+                for session in fresh:session['last_seen']=now()
+                partial=any(i['source_id']==cid and i['code']=='partial_read' for i in incidents.current.values())
+                if previous and (len(fresh)<len(previous)*.5 or partial):
+                    if len(fresh)<len(previous)*.5:incidents.add(cid,'unexpected_drop','sessions','La fuente devuelve menos de la mitad de las sesiones anteriores; verificar cobertura.',cinema['url'])
+                    known={x['id'] for x in fresh}
+                    missing=[dict(x,stale=True,status='unverified') for x in previous if x['id'] not in known]
+                    fresh+=missing
+                    film_ids={m['id'] for m in films}
+                    films += [m for m in old.get('movies',[]) if m['id'] in {x['movie_id'] for x in missing} and m['id'] not in film_ids]
+                sessions+=fresh;movies+=films
+                partial=any(i['source_id']==cid and i['code']=='partial_read' for i in incidents.current.values())
+                sources.append(dict(id=cid,status='partial' if partial else 'ok',last_attempt=now(),last_success=now(),url=cinema['url'],pages_read=len(pages),
+                    first_session=min(x['start'] for x in fresh),last_session=max(x['start'] for x in fresh)))
+                print(f"Fuente {cid}: {len(fresh)} sesiones / {len(pages)} páginas",flush=True)
+            except Exception as exc:
+                incidents.add(cid,'read_failed','source','No se pudo actualizar la cartelera ('+type(exc).__name__+'). Se conserva la última lectura válida.',cinema['url'],'error')
+                sessions += [dict(x,stale=True,status='unverified') for x in previous]
+                film_ids={x['movie_id'] for x in previous}
+                movies += [m for m in old.get('movies',[]) if m['id'] in film_ids]
+                sources.append(dict(id=cid,status='error',last_attempt=now(),last_success=prior_source.get('last_success'),url=cinema['url']))
+                print(f"Fuente {cid}: error {type(exc).__name__}",flush=True)
     previous_movies={m['id']:m for m in old.get('movies',[])}
     unchanged_ids=set()
     for movie in movies:
@@ -81,11 +87,11 @@ def run(refresh=True, newsletter=False):
                 for field in ['category','classification_evidence']:
                     if field in previous_session:s[field]=previous_session[field]
     for cinema in cinemas:
-        if cinema['id']!=SOURCE_ID:
-            incidents.add(cinema['id'],'source_pending',cinema['id'],'Fuente pendiente de integrar; no se incluyen sus sesiones.',cinema.get('url',''),'info')
+        if not cinema.get('adapter'):
+            incidents.add(cinema['id'],'source_pending',cinema['id'],cinema.get('reading_note','Fuente pendiente de integrar; no se incluyen sus sesiones.'),cinema.get('url',''),'info')
     inventory_ids={c['id'] for c in cinemas}
     checked.update(i['source_id'] for i in old.get('incidents',[]) if i['code']=='source_pending' and i['source_id'] not in inventory_ids)
-    data=dict(version='0.3.0',generated_at=now(),coverage_complete=False,cinemas=cinemas,sources=sources,
+    data=dict(version='0.4.0',generated_at=now(),coverage_complete=False,cinemas=cinemas,sources=sources,
               movies=movies,sessions=sessions,incidents=incidents.finish(checked),agent_status='waiting_for_copilot',tmdb=tmdb_status)
     write_json(path,data)
     build(data,newsletter)
@@ -135,6 +141,7 @@ def build(data,newsletter=False):
                 'year':movie.get('year'),'director':movie.get('director',''),'source_url':movie['tmdb_url']}
     write_json(dist/'catalog.json',sorted(catalog.values(),key=lambda m:m['title'].casefold()))
     write_json(dist/'data.json',data)
+    write_json(dist/'favorites.json',read_json(ROOT/'config/favorites.json',[]))
     (dist/'calendario.ics').write_text(calendar(data),encoding='utf-8',newline='')
     (dist/'.nojekyll').touch()
     posts=ROOT/'data/newsletters'

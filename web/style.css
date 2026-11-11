@@ -54,3 +54,9 @@ dialog { width:min(860px,calc(100% - 32px)); max-height:calc(100dvh - 40px); pad
 }
 @media(max-width:360px) { .brand-mark { display:none; }.brand h1 { font-size:36px; }.install-button>span:last-child { display:none; }.calendar-preview { width:100px; }.calendar-caption h2 { font-size:18px; }.day-actions button { padding:7px 5px; font-size:10px; }.calendar-key { font-size:10px; }.calendar-day .day-count { font-size:8px; } }
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+
+.favorite-list{list-style:none;padding:0;margin:1rem 0 2rem}
+.favorite-row{display:flex;align-items:center;justify-content:space-between;gap:1rem;border-bottom:1px solid var(--line,#d5d2c8);padding:1rem 0}
+.favorite-row span{min-width:0}.favorite-row strong{display:block}.favorite-row small{display:block;color:var(--muted,#666);margin-top:.25rem}.favorite-remove{font-size:.8rem;white-space:nowrap}
+.favorite-search{margin:1rem 0}.favorite-row .button{flex-shrink:0}#favorite-dialog input{width:100%;margin-top:.5rem}#request-favorite{margin:.5rem 0}
+@media(max-width:480px){#pendientes .section-title{align-items:flex-start;flex-direction:column}.favorite-row{gap:.6rem}.favorite-row .button{padding:.6rem}.source-row{flex-wrap:wrap}}

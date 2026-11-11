@@ -1,4 +1,4 @@
-import {madridDay, filterSessions, countByDay, monthCells} from './calendar-utils.js?v=0.3.0';
+import {madridDay, filterSessions, countByDay, monthCells} from './calendar-utils.js?v=0.4.0';
 
 const $ = selector => document.querySelector(selector);
 const all = selector => [...document.querySelectorAll(selector)];
@@ -29,7 +29,7 @@ function stored(key, fallback) {
 function store(key, value) {
   try { localStorage.setItem(key, JSON.stringify(value)); return true; } catch { return false; }
 }
-let data, catalog = [], watch = stored('cm-watch', []), origin = stored('cm-origin', null);
+let data, catalog = [], watch = [], origin = stored('cm-origin', null);
 let offlineData = false, installPrompt = null;
 if (!Array.isArray(watch)) watch = [];
 const initialDay = madridDay();
@@ -95,7 +95,7 @@ function values() {
 function syncFilters() {
   const filters = values();
   for (const input of all('#calendar-filters [data-filter]')) input.value = filters[input.dataset.filter] || '';
-  const count = ['cinema','category','version','after','before'].filter(key => filters[key]).length;
+  const count = ['cinema','category','version','format','after','before'].filter(key => filters[key]).length;
   $('#filter-count').textContent = count || '';
 }
 function sorted(sessions) {
@@ -168,34 +168,31 @@ function setView(name, updateHash = true) {
   window.scrollTo({top:0, behavior:'instant'});
 }
 
-function saveWatch() {
-  const saved = store('cm-watch', watch);
-  $('#watch-status').textContent = saved ? '' : 'Este navegador no permite guardar la selección. Puedes exportarla.';
-  renderWatch();
+function favoriteRequest(movie, operation = 'Añadir') {
+  return 'https://github.com/IgnacioGarijo/cine-madrid/issues/new?' + new URLSearchParams({template:'favorita.yml',operation,movie});
 }
 function renderWatch() {
   const box = $('#watchlist'); box.replaceChildren();
   for (const movie of watch) {
-    const card = el('article', undefined, 'card');
-    card.append(el('h3', movie.title), el('p', `${movie.year || ''} · ${movie.director || ''}`));
-    const matches = data?.sessions.filter(s => s.canonical_id === movie.id && !s.stale && s.start.slice(0,10) >= madridDay()) || [];
-    card.append(el('p', matches.length ? `${matches.length} sesiones identificadas` : 'Sin sesiones identificadas en las fuentes integradas.'));
-    const button = el('button', 'Quitar de favoritas');
-    button.onclick = () => { watch = watch.filter(m => m.id !== movie.id); saveWatch(); };
-    card.append(button); box.append(card);
+    const row = el('li', undefined, 'favorite-row'), name = el('span');
+    name.append(el('strong',movie.title));
+    if (movie.year) name.append(el('small',String(movie.year)));
+    row.append(name,link('Quitar ↗',favoriteRequest(movie.id,'Quitar'),'favorite-remove'));box.append(row);
   }
-  if (!watch.length) box.append(el('p', 'Todavía no has guardado favoritas en este navegador.', 'empty'));
-  renderCatalog();
+  if (!watch.length) box.append(el('li','Todavía no hay películas guardadas.','empty'));
 }
 function renderCatalog() {
   const box = $('#catalog'); box.replaceChildren();
-    const query = norm($('#catalog-query').value);
-  for (const movie of catalog.filter(m => !query || [m.title,m.original_title,m.director,String(m.year),...(m.aliases || [])].some(title => norm(title).includes(query)))) {
-    const card = el('article', undefined, 'card'), added = watch.some(m => m.id === movie.id);
-    card.append(el('h3',movie.title), el('p', `${movie.year} · ${movie.director}`));
-    const button = el('button', added ? 'En tus favoritas' : '+ Añadir a favoritas');
-    button.disabled = added; button.onclick = () => { watch.push(movie); saveWatch(); };
-    card.append(button, link('Ver ficha ↗', movie.source_url)); box.append(card);
+  const raw = $('#catalog-query').value.trim(), query = norm(raw);
+  const request = $('#request-favorite'); request.hidden = query.length < 2;
+  request.href = favoriteRequest(raw);
+  if (query.length < 2) return;
+  const matches = catalog.filter(m => [m.title,m.original_title,...(m.aliases || [])].some(title => norm(title).includes(query))).slice(0,8);
+  for (const movie of matches) {
+    const row = el('div',undefined,'favorite-row'), name = el('span');
+    name.append(el('strong',movie.title),el('small',`${movie.year || ''} · ${movie.director || ''}`));
+    const added = watch.some(m => m.id === movie.id);
+    row.append(name,added ? el('span','Guardada','fine') : link('Añadir ↗',favoriteRequest(movie.id),'button'));box.append(row);
   }
 }
 function renderIncidents() {
@@ -217,11 +214,12 @@ function connectionState() {
 }
 async function boot() {
   try {
-    const responses = await Promise.all([fetch('data.json',{cache:'no-cache'}), fetch('catalog.json',{cache:'no-cache'}), fetch('newsletters.json',{cache:'no-cache'})]);
+    const responses = await Promise.all([fetch('data.json',{cache:'no-cache'}), fetch('catalog.json',{cache:'no-cache'}), fetch('newsletters.json',{cache:'no-cache'}), fetch('favorites.json',{cache:'no-cache'})]);
     if (!responses[0].ok) throw new Error('Datos no disponibles');
     offlineData = responses[0].headers.get('X-Cine-Madrid-Cache') === 'offline';
     data = await responses[0].json();
     catalog = responses[1].ok ? await responses[1].json() : [];
+    watch = responses[3].ok ? await responses[3].json() : [];
     const posts = responses[2].ok ? await responses[2].json() : [];
     $('#updated').textContent = 'Último intento: ' + new Date(data.generated_at).toLocaleString('es-ES');
     const active = data.sources.filter(s => s.status === 'ok').length;
@@ -234,10 +232,12 @@ async function boot() {
         const option = el('option',cinema.name); option.value = cinema.id; $('#cinema').append(option);
       }
       const row = el('div',undefined,'source-row');
-      row.append(cinema.url ? link(cinema.name,cinema.url) : el('strong',cinema.name),el('span',cinema.status === 'active' ? 'Conector integrado' : 'Pendiente'));
+      const reading = data.sources.find(s => s.id === cinema.id);
+      const state = reading?.status === 'ok' ? 'Lectura correcta' : reading?.status === 'partial' ? 'Lectura parcial' : reading?.status === 'error' ? 'Error de lectura' : 'Pendiente';
+      row.append(cinema.url ? link(cinema.name,cinema.url) : el('strong',cinema.name),el('span',`${state}${cinema.municipality && cinema.municipality !== 'Madrid' ? ' · ' + cinema.municipality : ''}${cinema.formats?.includes('IMAX') ? ' · Tiene sala IMAX' : ''}${reading?.last_session ? ' · Pases hasta ' + reading.last_session.slice(0,10) : ''}`));
       $('#sources').append(row);
     }
-    for (const key of ['cinema','category','version']) {
+    for (const key of ['cinema','category','version','format']) {
       const source = $('#' + key), target = $('#calendar-' + key); target.replaceChildren();
       for (const option of source.options) target.append(option.cloneNode(true));
     }
@@ -295,18 +295,7 @@ all('dialog').forEach(dialog => {dialog.onclick = event => {if (event.target ===
 $('#show-location').onclick = () => { $('#location-settings').open = true; $('#origin').focus(); };
 $('#issue-filter').onchange = renderIncidents;
 $('#catalog-query').oninput = renderCatalog;
-$('#export-watchlist').onclick = () => {
-  const url = URL.createObjectURL(new Blob([JSON.stringify(watch,null,2)],{type:'application/json'})), anchor = el('a');
-  anchor.href = url; anchor.download = 'cine-madrid-pendientes.json'; anchor.click(); setTimeout(() => URL.revokeObjectURL(url),1000);
-};
-$('#import-watchlist').onchange = async event => {
-  try {
-    const incoming = JSON.parse(await event.target.files[0].text());
-    if (!Array.isArray(incoming) || !incoming.every(m => typeof m.id === 'string' && typeof m.title === 'string')) throw new Error();
-    watch = incoming.map(m => ({id:m.id,title:m.title,year:m.year,director:m.director})); saveWatch();
-    $('#watch-status').textContent = 'Selección local importada. Los avisos utilizan la lista privada.';
-  } catch { $('#watch-status').textContent = 'Archivo no válido. Usa una exportación de favoritas.'; }
-};
+$('#add-favorite').onclick = () => { $('#catalog-query').value = ''; renderCatalog(); $('#favorite-dialog').showModal(); $('#catalog-query').focus(); };
 $('#origin-form').onsubmit = async event => {
   event.preventDefault(); const address = $('#origin').value.trim(); if (!address) return;
   $('#origin-status').textContent = 'Buscando dirección…';

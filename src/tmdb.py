@@ -2,6 +2,7 @@
 import os
 import re
 import time
+import unicodedata
 from datetime import date, datetime, timedelta
 from difflib import SequenceMatcher
 import requests
@@ -37,16 +38,26 @@ def title_score(source, movie):
     similarity = max((SequenceMatcher(None,value,alias).ratio() for value in variants for alias in aliases),default=0)
     return 2 if similarity >= .92 else 0
 
+def director_matches(source, movie):
+    # Some venues write 'Kurosawa, Akira' or credit several directors together.
+    tokens=lambda value:set(re.findall(r'[a-z0-9]+',unicodedata.normalize('NFKD',value.casefold()).encode('ascii','ignore').decode()))
+    credited=tokens(source.get('director',''))
+    names=[tokens(d) for d in movie.get('directors',[])]
+    return bool(credited and names and credited==set().union(*names))
+
+
 def identity_match(source, candidates):
-    """A title is insufficient. A credited director is mandatory for auto-resolution."""
+    """Require independent evidence: director, or exact title and an explicit film year."""
     director = normalize(source.get('director',''))
-    if not director: return None, 'missing_director'
     accepted = []
     years = {int(y) for y in re.findall(r'\b((?:19|20)\d{2})\b',source['title'])}
+    if source.get('source_year'):years.add(int(source['source_year']))
+    if not director and len(years)!=1:return None, 'missing_director'
     for movie in candidates:
-        if director not in {normalize(d) for d in movie.get('directors',[])}: continue
+        if director and not director_matches(source,movie): continue
         if years and movie.get('year') not in years: continue
         score = title_score(source,movie)
+        if not director and score!=5:continue
         if not score: continue
         duration = source.get('duration_minutes'); runtime = movie.get('runtime')
         gap = abs(duration-runtime) if duration and runtime else None
@@ -62,7 +73,7 @@ def identity_match(source, candidates):
     if len(accepted)!=1: return None, 'ambiguous'
     score,gap,movie=accepted[0]
     return movie, {'title_match':'exact_or_alias' if score==5 else 'combined_titles' if score==3 else 'minor_typo',
-                   'director':source['director'], 'duration_difference_minutes':gap,
+                   'director':source.get('director',''), 'explicit_year':next(iter(years)) if len(years)==1 else None, 'duration_difference_minutes':gap,
                    'tmdb_url':movie['source_url']}
 
 def classify(movie, session_day, source_category, config):
@@ -146,13 +157,15 @@ class Client:
         self.cache['movies'][str(movie['tmdb_id'])]=movie
         return movie
     def resolve(self,source):
+        if not source.get('director') and not source.get('source_year') and not re.search(r'\b(?:19|20)\d{2}\b',source['title']):
+            return None,'missing_director',[]
         seen={}; searched=[]
         for query in title_variants(source['title']):
             searched.append(query)
             for result in self.search(query):
                 if result['id'] not in seen:
                     candidate=self.movie(result['id'])
-                    if (normalize(source.get('director','')) in {normalize(d) for d in candidate['directors']}
+                    if (director_matches(source,candidate)
                             and not title_score(source,candidate)):
                         candidate=self.with_translations(candidate)
                     seen[result['id']]=candidate
