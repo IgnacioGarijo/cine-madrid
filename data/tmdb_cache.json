@@ -3551,6 +3551,121 @@
         }
       ],
       "fetched_at": "2026-11-11T12:49:58+01:00"
+    },
+    "todosobremimadre": {
+      "results": [
+        {
+          "id": 99,
+          "title": "Todo sobre mi madre",
+          "original_title": "Todo sobre mi madre"
+        },
+        {
+          "id": 1444301,
+          "title": "Todo sobre mi madre",
+          "original_title": "Todo sobre mi madre"
+        }
+      ],
+      "fetched_at": "2026-11-11T12:54:12+01:00"
+    },
+    "dersuuzalaelcazador": {
+      "results": [
+        {
+          "id": 9764,
+          "title": "Dersu Uzala (El cazador)",
+          "original_title": "Дерсу Узала"
+        }
+      ],
+      "fetched_at": "2026-11-11T12:54:13+01:00"
+    },
+    "numakagepiscinapublica": {
+      "results": [
+        {
+          "id": 1485195,
+          "title": "沼影市民プール",
+          "original_title": "沼影市民プール"
+        }
+      ],
+      "fetched_at": "2026-11-11T12:54:13+01:00"
+    },
+    "elhombremosca": {
+      "results": [
+        {
+          "id": 22596,
+          "title": "El hombre mosca",
+          "original_title": "Safety Last!"
+        },
+        {
+          "id": 1123085,
+          "title": "El hombre de las moscas",
+          "original_title": "El hombre de las moscas"
+        },
+        {
+          "id": 239201,
+          "title": "透明人間と蝿男",
+          "original_title": "透明人間と蝿男"
+        }
+      ],
+      "fetched_at": "2026-11-11T12:54:14+01:00"
+    },
+    "sesespromeoyjulietaballetdiferido2026": {
+      "results": [],
+      "fetched_at": "2026-11-11T12:54:15+01:00"
+    },
+    "sesespromeoyjulietaballetdiferido": {
+      "results": [],
+      "fetched_at": "2026-11-11T12:54:15+01:00"
+    },
+    "sesespellagodeloscisnesballetdiferido2027": {
+      "results": [],
+      "fetched_at": "2026-11-11T12:54:15+01:00"
+    },
+    "sesespellagodeloscisnesballetdiferido": {
+      "results": [],
+      "fetched_at": "2026-11-11T12:54:15+01:00"
+    },
+    "sesespconciertofindeanodirectofilarmonicadeberlin2026": {
+      "results": [],
+      "fetched_at": "2026-11-11T12:54:15+01:00"
+    },
+    "sesespconciertofindeanodirectofilarmonicadeberlin": {
+      "results": [],
+      "fetched_at": "2026-11-11T12:54:16+01:00"
+    },
+    "sesespdonquijoteballetdiferido2027": {
+      "results": [],
+      "fetched_at": "2026-11-11T12:54:16+01:00"
+    },
+    "sesespdonquijoteballetdiferido": {
+      "results": [],
+      "fetched_at": "2026-11-11T12:54:16+01:00"
+    },
+    "sesespelcascanuecesballetdiferidosesionespecialfamilias2026": {
+      "results": [],
+      "fetched_at": "2026-11-11T12:54:16+01:00"
+    },
+    "sesespelcascanuecesballetdiferidosesionespecialfamilias": {
+      "results": [],
+      "fetched_at": "2026-11-11T12:54:16+01:00"
+    },
+    "sesespelcascanuecesballetdirecto2026": {
+      "results": [],
+      "fetched_at": "2026-11-11T12:54:17+01:00"
+    },
+    "sesespelcascanuecesballetdirecto": {
+      "results": [],
+      "fetched_at": "2026-11-11T12:54:17+01:00"
+    },
+    "sesesplecorsarieballetdiferido2027": {
+      "results": [],
+      "fetched_at": "2026-11-11T12:54:17+01:00"
+    },
+    "sesesplecorsarieballetdiferido": {
+      "results": [],
+      "fetched_at": "2026-11-11T12:54:17+01:00"
+    },
+    "sentidoysensibilidad2026": {
+      "results": [],
+      "fetched_at": "2026-11-11T12:54:18+01:00"
     }
   },
   "movies": {
@@ -43684,6 +43799,454 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1084814",
       "fetched_at": "2026-11-11T12:49:58+01:00"
+    },
+    "99": {
+      "id": "tmdb:99",
+      "tmdb_id": 99,
+      "title": "Todo sobre mi madre",
+      "original_title": "Todo sobre mi madre",
+      "year": 1999,
+      "director": "Pedro Almodóvar",
+      "directors": [
+        "Pedro Almodóvar"
+      ],
+      "runtime": 101,
+      "aliases": [
+        "Alles über meine Mutter",
+        "Allt om min mamma",
+        "Alt om min mor",
+        "Annem Hakkında Her Şey",
+        "Mindent anyámról",
+        "Sve o mojoj majci",
+        "Totul despre mama mea",
+        "Tudo Sobre Minha Mãe",
+        "Tutto su mia madre",
+        "Vse o moji materi",
+        "Vše o mé matce",
+        "Wszystko o mojej matce",
+        "Όλα για τη μητέρα μου",
+        "Всё о моей матери",
+        "オール・アバウト・マイ・マザー",
+        "我的母亲",
+        "论尽我阿妈",
+        "내 어머니의 모든 것"
+      ],
+      "releases": [
+        {
+          "country": "BE",
+          "type": 2,
+          "date": "1999-04-16"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "1999-10-08"
+        },
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "2000-05-18"
+        },
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "2008-06-26"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "1999-11-04"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "1999-04-16"
+        },
+        {
+          "country": "EE",
+          "type": 3,
+          "date": "2000-04-21"
+        },
+        {
+          "country": "ES",
+          "type": 1,
+          "date": "1999-04-08"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "1999-04-16"
+        },
+        {
+          "country": "FR",
+          "type": 1,
+          "date": "1999-05-15"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "1999-05-19"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2017-04-20"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2000-04-26"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2017-04-01"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "1999-08-27"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "1999-10-29"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2024-07-25"
+        },
+        {
+          "country": "JP",
+          "type": 2,
+          "date": "2000-04-29"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2000-01-29"
+        },
+        {
+          "country": "MX",
+          "type": 3,
+          "date": "1999-04-16"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2000-03-02"
+        },
+        {
+          "country": "NL",
+          "type": 5,
+          "date": "2000-11-15"
+        },
+        {
+          "country": "NL",
+          "type": 6,
+          "date": "2005-01-22"
+        },
+        {
+          "country": "PL",
+          "type": 3,
+          "date": "1999-10-01"
+        },
+        {
+          "country": "PL",
+          "type": 5,
+          "date": "2003-03-28"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "1999-11-19"
+        },
+        {
+          "country": "UA",
+          "type": 1,
+          "date": "2026-04-24"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "1999-09-24"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "1999-10-07"
+        },
+        {
+          "country": "US",
+          "type": 2,
+          "date": "1999-11-24"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2000-03-31"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/99",
+      "fetched_at": "2026-11-11T12:54:12+01:00"
+    },
+    "1444301": {
+      "id": "tmdb:1444301",
+      "tmdb_id": 1444301,
+      "title": "Todo sobre mi madre",
+      "original_title": "Todo sobre mi madre",
+      "year": null,
+      "director": "Eduardo Valenzuela",
+      "directors": [
+        "Eduardo Valenzuela"
+      ],
+      "runtime": 0,
+      "aliases": [],
+      "releases": [],
+      "source_url": "https://www.themoviedb.org/movie/1444301",
+      "fetched_at": "2026-11-11T12:54:13+01:00"
+    },
+    "1485195": {
+      "id": "tmdb:1485195",
+      "tmdb_id": 1485195,
+      "title": "沼影市民プール",
+      "original_title": "沼影市民プール",
+      "year": 2026,
+      "director": "太田信吾",
+      "directors": [
+        "太田信吾"
+      ],
+      "runtime": 84,
+      "aliases": [
+        "沼影市民プール"
+      ],
+      "releases": [
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "2026-09-05"
+        },
+        {
+          "country": "KR",
+          "type": 1,
+          "date": "2025-09-20"
+        },
+        {
+          "country": "KR",
+          "type": 6,
+          "date": "2026-08-30"
+        },
+        {
+          "country": "NZ",
+          "type": 1,
+          "date": "2025-07-01"
+        },
+        {
+          "country": "TW",
+          "type": 1,
+          "date": "2026-06-30"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1485195",
+      "fetched_at": "2026-11-11T12:54:13+01:00"
+    },
+    "22596": {
+      "id": "tmdb:22596",
+      "tmdb_id": 22596,
+      "title": "El hombre mosca",
+      "original_title": "Safety Last!",
+      "year": 1923,
+      "director": "Fred C. Newmeyer, Sam Taylor",
+      "directors": [
+        "Fred C. Newmeyer",
+        "Sam Taylor"
+      ],
+      "runtime": 70,
+      "aliases": [
+        "Aki mer, az nyer",
+        "Ausgerechnet Wolkenkratzer",
+        "El hombre mosca",
+        "Güvenlik Sonra Gelir!",
+        "Harold iskukunnossa",
+        "Monte là-dessus!",
+        "O Homem Mosca",
+        "Preferisco l'ascensore",
+        "På Vej til den syvende Himmel",
+        "Resitev v zadnjem trenutku",
+        "Sicherheit spielt keine Rolle",
+        "Upp genom luften",
+        "Безпека в останню чергу!",
+        "Наконец в безопасности!",
+        "安全ラスト！",
+        "最后安全！",
+        "마침내 안전!",
+        "세이프티 라스트",
+        "안전 불감증",
+        "안전불감증",
+        "안전은 뒷전!"
+      ],
+      "releases": [
+        {
+          "country": "CH",
+          "type": 4,
+          "date": "2021-08-04"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "1924-05-01"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "1924-01-10"
+        },
+        {
+          "country": "EE",
+          "type": 3,
+          "date": "1925-02-05"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2026-04-01"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "1924-12-26"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "1923-03-12"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "1924-02-03"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "1924-12-08"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "1923-12-13"
+        },
+        {
+          "country": "NO",
+          "type": 3,
+          "date": "1924-01-29"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "1923-09-17"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "1923-04-01"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/22596",
+      "fetched_at": "2026-11-11T12:54:14+01:00"
+    },
+    "1123085": {
+      "id": "tmdb:1123085",
+      "tmdb_id": 1123085,
+      "title": "El hombre de las moscas",
+      "original_title": "El hombre de las moscas",
+      "year": 2022,
+      "director": "Lucía Nieto Salazar",
+      "directors": [
+        "Lucía Nieto Salazar"
+      ],
+      "runtime": 8,
+      "aliases": [],
+      "releases": [
+        {
+          "country": "UY",
+          "type": 3,
+          "date": "2022-04-15"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1123085",
+      "fetched_at": "2026-11-11T12:54:14+01:00"
+    },
+    "239201": {
+      "id": "tmdb:239201",
+      "tmdb_id": 239201,
+      "title": "透明人間と蝿男",
+      "original_title": "透明人間と蝿男",
+      "year": 1957,
+      "director": "村山三男",
+      "directors": [
+        "村山三男"
+      ],
+      "runtime": 96,
+      "aliases": [
+        "El hombre invisible contra la mosca",
+        "Invisible Man and Fly Man",
+        "The Murdering Mite",
+        "Tomeiningen To Haiotoko",
+        "Toumei ningen to hae otoko",
+        "Transparent Man and Fly Man",
+        "Tōmei Ningen to Hae Otoko"
+      ],
+      "releases": [
+        {
+          "country": "CA",
+          "type": 5,
+          "date": "2021-03-16"
+        },
+        {
+          "country": "GB",
+          "type": 5,
+          "date": "2021-03-15"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "1957-08-25"
+        },
+        {
+          "country": "JP",
+          "type": 5,
+          "date": "2005-01-01"
+        },
+        {
+          "country": "JP",
+          "type": 5,
+          "date": "2014-01-01"
+        },
+        {
+          "country": "US",
+          "type": 2,
+          "date": "1959-06-20"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2021-03-16"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2013-01-01"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2024-04-29"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/239201",
+      "fetched_at": "2026-11-11T12:54:14+01:00"
     }
   }
 }
