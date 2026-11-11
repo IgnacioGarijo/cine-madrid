@@ -23,10 +23,33 @@ def run(arguments,input=None):
         raise SystemExit('Cloudflare no ha completado '+arguments[0]+':\n'+safe_diagnostic(result.stdout+'\n'+result.stderr))
     return result.stdout
 
+def diagnose_access():
+    """Report access checks, never account names, identifiers or token contents."""
+    headers = {'Authorization': 'Bearer '+os.environ['CLOUDFLARE_API_TOKEN']}
+    account = os.environ['CLOUDFLARE_ACCOUNT_ID']
+    print('Formato del identificador de cuenta:', 'correcto' if re.fullmatch(r'[a-f0-9]{32}', account) else 'incorrecto', flush=True)
+    for label, path in [('Cuentas accesibles', '/accounts?per_page=50'),
+                        ('Acceso a Workers', '/accounts/'+account+'/workers/scripts')]:
+        try:
+            response = requests.get('https://api.cloudflare.com/client/v4'+path, headers=headers, timeout=15)
+            body = response.json()
+            print(label+': HTTP '+str(response.status_code), flush=True)
+            if label == 'Cuentas accesibles' and body.get('success'):
+                accounts = body.get('result', [])
+                print('La cuenta configurada figura en las cuentas accesibles:', any(item.get('id') == account for item in accounts), flush=True)
+            for error in body.get('errors', []):
+                print(safe_diagnostic(str(error.get('code'))+': '+str(error.get('message'))), flush=True)
+        except (requests.RequestException, ValueError):
+            print(label+': no se pudo completar la comprobación.', flush=True)
+
 def main():
     for key in SECRET_NAMES:
         if not os.getenv(key):raise SystemExit('Falta el secreto de Actions '+key+'. Consulta docs/CLOUDFLARE.md.')
-    output=run(['deploy'])
+    try:
+        output=run(['deploy'])
+    except SystemExit:
+        diagnose_access()
+        raise
     match=re.search(r'https://cine-madrid-tmdb\.[a-z0-9-]+\.workers\.dev',output)
     if not match:raise SystemExit('No se reconoce la URL de despliegue; no se modifica la web.')
     base=match[0]
