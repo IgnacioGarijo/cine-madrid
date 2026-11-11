@@ -1,5 +1,15 @@
 # Implementación acordada y estado
 
+## Ampliación y favoritas públicas en v0.4.1
+
+- Adaptadores independientes para Cine Paz, Palacio de Hielo, Verdi Madrid, Cines Princesa, Renoir Plaza de España, Renoir Retiro, Morasol, Capitol, Cineteca, Artistic Metropol y Cine Estudio del CBA. Cada fuente conserva su estado, fechas extremas leídas e incidencias; una caída no descarta las demás.
+- Lectura de todos los días publicados por los selectores de Renoir y mk2, paginación y pases explícitos de Cineteca, eventos estructurados de Artistic, pestañas de Capitol y fechas de sesión de Morasol, incluidas sus notas de tarifa.
+- Alcance ampliado para incluir IMAX fuera del municipio: Kinépolis Ciudad de la Imagen, Cinesa Parquesur y Heron City Las Rozas. Recintos confirmados; horarios pendientes de conectar por restricciones detectadas en sus fuentes. El filtro IMAX solo acepta sesiones etiquetadas expresamente, no todas las de esos complejos.
+- Favoritas muestra únicamente la lista pública compartida y Añadir película. El diálogo de búsqueda se abre a petición. Las solicitudes confirmadas en GitHub por el propietario actualizan la lista mediante Actions; las homónimas requieren confirmar una ficha. Las solicitudes de visitantes no modifican datos.
+- TMDB admite la dirección con nombre/apellido invertidos y créditos conjuntos. Si falta dirección, se exige título exacto o alias y año explícito de la película, con candidato único. Los sufijos de ciclos y música en directo se separan para buscar, conservando el título original.
+- Las etiquetas de música en directo, coloquio, invitados y maratón se muestran en castellano. No se usa el pie de una web como evidencia de que todos sus pases tengan música en directo.
+- La lista privada y la configuración de Telegram siguen separadas de las favoritas públicas; no se han publicado datos de configuración privados ni activado Telegram.
+
 ## Integración TMDB en v0.3.0
 
 - Secretos configurados en ambos repositorios; la cartelera usa el secreto del repositorio público exclusivamente dentro de Actions.
@@ -19,7 +29,7 @@
 
 ## Alcance
 
-Madrid capital. Todos los cines comerciales y espacios con cine regular como objetivo de cobertura, con actualización diaria, búsqueda uniforme, reposiciones, eventos especiales, ciclos futuros, calendario, pendientes y boletín privado por Telegram con archivo público.
+Madrid capital y complejos IMAX del resto de la región. Todos los cines comerciales y espacios con cine regular como objetivo de cobertura, con actualización diaria, búsqueda uniforme, reposiciones, eventos especiales, ciclos futuros, calendario, pendientes y boletín privado por Telegram con archivo público.
 
 ## Entregado en v0.1.1
 
@@ -72,5 +82,5 @@ Madrid capital. Todos los cines comerciales y espacios con cine regular como obj
 - La misma obra se reconoce bajo variantes no introducidas por el usuario, con pruebas de La La Land e In the Mood for Love y sus combinaciones; las pruebas actuales solo comprueban alias respaldados y homónimos. Falta probar el agente real.
 - Fechas de Cine Paz proceden de su propia cartelera, no de textos de mk2 general.
 - Un fallo conserva datos y produce una incidencia; no se traduce en «no hay sesiones».
-- Ningún pendiente, dirección ni token privado aparece en los archivos públicos.
+- Ninguna dirección, token ni lista privada aparece en los archivos públicos. Las favoritas públicas se comparten por decisión expresa del propietario.
 - Comprobar de extremo a extremo fuente, identidad, búsqueda, calendario y aviso recibido antes de declarar completa la automatización.
