@@ -4,7 +4,7 @@
 
 Madrid capital. Todos los cines comerciales y espacios con cine regular como objetivo de cobertura, con actualización diaria, búsqueda uniforme, reposiciones, eventos especiales, ciclos futuros, calendario, pendientes y boletín privado por Telegram con archivo público.
 
-## Entregado en v0.1
+## Entregado en v0.1.1
 
 1. Repositorios público y privado, copias locales en C:\Github.
 2. Conector independiente de Cine Paz: fechas reales del selector, Hoy/Mañana, días explícitos, cambio de año y sesiones por su identificador de origen. No se reutilizan los días de mk2 general.

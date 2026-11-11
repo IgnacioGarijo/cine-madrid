@@ -9,6 +9,7 @@ from .core import MADRID, stable_id
 
 USER_AGENT = 'CineMadridPersonal/0.1 (+https://github.com/IgnacioGarijo/cine-madrid)'
 PAZ_URL = 'https://www.cinepazmadrid.es/es/cartelera'
+CLASSIC_URL = 'https://www.cinepazmadrid.es/es/evento/400/mk2-classic'
 SOURCE_ID = 'cine-paz'
 
 class Fetcher:
@@ -94,3 +95,9 @@ def event_tags(text):
     rules={'live_music':r'(?:acompañamiento|música|piano|pianista|banda sonora).{0,55}(?:en directo|en vivo)',
            'discussion':r'\bcoloquio\b', 'guests':r'con la presencia de', 'marathon':r'\bmaratón\b|programa doble'}
     return [key for key,pattern in rules.items() if re.search(pattern,text,re.I)]
+
+def classic_members(html):
+    """Use linked film IDs only. Never infer dates from the cycle's prose."""
+    soup=BeautifulSoup(html,'html.parser')
+    return {'paz:'+m[1].split('_')[0] for a in soup.select('.contenedor_horarios .film-list-item a[href]')
+            if (m:=re.search(r'/detalles/([^/]+)',a['href']))}

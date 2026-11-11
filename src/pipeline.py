@@ -3,7 +3,7 @@ import shutil
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from .core import ROOT,MADRID,Incidents,now,read_json,write_json,trusted_identity
-from .sources import Fetcher,PAZ_URL,SOURCE_ID,parse_paz
+from .sources import Fetcher,PAZ_URL,CLASSIC_URL,SOURCE_ID,parse_paz,classic_members
 
 def run(refresh=True, newsletter=False):
     path=ROOT/'data/public.json'
@@ -19,7 +19,17 @@ def run(refresh=True, newsletter=False):
     if refresh:
         checked.add(SOURCE_ID)
         try:
-            sessions,movies=parse_paz(Fetcher().get(PAZ_URL),today,incidents)
+            fetcher=Fetcher()
+            sessions,movies=parse_paz(fetcher.get(PAZ_URL),today,incidents)
+            try:
+                classic=classic_members(fetcher.get(CLASSIC_URL))
+                if not classic:
+                    incidents.add(SOURCE_ID,'cycle_unreadable','classic','La página del ciclo no ofrece fichas reconocibles; no se infieren fechas.',CLASSIC_URL)
+                for movie in movies:
+                    if movie['id'] in classic:
+                        movie.update(category='repertory',category_evidence_url=CLASSIC_URL)
+            except Exception:
+                incidents.add(SOURCE_ID,'cycle_read_failed','classic','No se pudo leer el ciclo Classic. La cartelera se mantiene; su clasificación queda pendiente.',CLASSIC_URL)
             for s in sessions:s['last_seen']=now()
             previous=[x for x in old.get('sessions',[]) if x['start'][:10]>=today.isoformat()]
             if previous and len(sessions)<len(previous)*.5:
@@ -50,7 +60,9 @@ def run(refresh=True, newsletter=False):
     for cinema in cinemas:
         if cinema['id']!=SOURCE_ID:
             incidents.add(cinema['id'],'source_pending',cinema['id'],'Fuente pendiente de integrar; no se incluyen sus sesiones.',cinema.get('url',''),'info')
-    data=dict(version='0.1.0',generated_at=now(),coverage_complete=False,cinemas=cinemas,sources=sources,
+    inventory_ids={c['id'] for c in cinemas}
+    checked.update(i['source_id'] for i in old.get('incidents',[]) if i['code']=='source_pending' and i['source_id'] not in inventory_ids)
+    data=dict(version='0.1.1',generated_at=now(),coverage_complete=False,cinemas=cinemas,sources=sources,
               movies=movies,sessions=sessions,incidents=incidents.finish(checked),agent_status='waiting_for_copilot')
     write_json(path,data)
     build(data,newsletter)
@@ -96,7 +108,7 @@ def build(data,newsletter=False):
         today=datetime.now(MADRID).date()
         selected=[s for s in data['sessions'] if s['category']=='repertory' and today.isoformat()<=s['start'][:10]<(today+timedelta(days=7)).isoformat() and not s.get('stale')]
         post={'id':today.isoformat(),'published_at':now(),'sessions':selected,'coverage_complete':False,
-              'note':'Selección automática de reposiciones verificadas. Cobertura parcial; identidades pendientes excluidas.'}
+              'note':'Selección de reposiciones respaldadas por la fuente. Cobertura parcial; la identidad entre distintas fuentes puede seguir pendiente.'}
         write_json(posts/(today.isoformat()+'.json'),post)
     write_json(dist/'newsletters.json',[read_json(p) for p in sorted(posts.glob('*.json'),reverse=True)])
 

@@ -1,6 +1,6 @@
 {
-  "version": "0.1.0",
-  "generated_at": "2026-11-11T11:13:35+01:00",
+  "version": "0.1.1",
+  "generated_at": "2026-11-11T11:17:19+01:00",
   "coverage_complete": false,
   "cinemas": [
     {
@@ -29,12 +29,13 @@
       "id": "cine-paz",
       "name": "MK2 CINE PAZ",
       "address": "Calle de Fuencarral, 125",
-      "lat": null,
-      "lon": null,
+      "lat": 40.4308724,
+      "lon": -3.7034022,
       "url": "https://www.cinepazmadrid.es/es/cartelera",
       "status": "active",
       "inventory_status": "verified_source",
-      "provenance": "https://www.fiestadelcine.com/salas-adheridas/"
+      "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
+      "coordinate_source": "https://www.openstreetmap.org/node/1357992373"
     },
     {
       "id": "golem-madrid",
@@ -382,8 +383,8 @@
     {
       "id": "cine-paz",
       "status": "ok",
-      "last_attempt": "2026-11-11T11:10:18+01:00",
-      "last_success": "2026-11-11T11:10:18+01:00",
+      "last_attempt": "2026-11-11T11:16:03+01:00",
+      "last_success": "2026-11-11T11:16:03+01:00",
       "url": "https://www.cinepazmadrid.es/es/cartelera"
     }
   ],
@@ -506,6 +507,8 @@
       "director": "Vittorio De Sica",
       "duration_minutes": 80,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/105357_1_Z_1/ladron-de-bicicletas-vose",
+      "category": "repertory",
+      "category_evidence_url": "https://www.cinepazmadrid.es/es/evento/400/mk2-classic",
       "identity_status": "pending_agent"
     },
     {
@@ -554,6 +557,8 @@
       "director": "Robert Rossen",
       "duration_minutes": 135,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/57674_1_Z_1/el-buscavidas-vose",
+      "category": "repertory",
+      "category_evidence_url": "https://www.cinepazmadrid.es/es/evento/400/mk2-classic",
       "identity_status": "pending_agent"
     },
     {
@@ -594,6 +599,8 @@
       "director": "Billy Wilder",
       "duration_minutes": 125,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/18089_1_Z_1/el-apartamento-vose",
+      "category": "repertory",
+      "category_evidence_url": "https://www.cinepazmadrid.es/es/evento/400/mk2-classic",
       "identity_status": "pending_agent"
     },
     {
@@ -642,6 +649,8 @@
       "director": "Ernst Lubitsch",
       "duration_minutes": 94,
       "source_url": "https://www.cinepazmadrid.es/es/detalles/72108_1_Z_1/el-bazar-de-las-sorpresas-vose",
+      "category": "repertory",
+      "category_evidence_url": "https://www.cinepazmadrid.es/es/evento/400/mk2-classic",
       "identity_status": "pending_agent"
     },
     {
@@ -759,7 +768,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -780,7 +789,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -801,7 +810,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -822,7 +831,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -843,7 +852,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -864,7 +873,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -885,7 +894,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -906,7 +915,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -927,7 +936,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -948,7 +957,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -969,7 +978,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -990,7 +999,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1011,7 +1020,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1032,7 +1041,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1053,7 +1062,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1074,7 +1083,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1095,7 +1104,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1116,7 +1125,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1137,7 +1146,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1158,7 +1167,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1179,7 +1188,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1200,7 +1209,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1221,7 +1230,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1242,7 +1251,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1263,7 +1272,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1284,7 +1293,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1305,7 +1314,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1326,7 +1335,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1347,7 +1356,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1368,7 +1377,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1389,7 +1398,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1410,7 +1419,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1431,7 +1440,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1452,7 +1461,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1471,9 +1480,9 @@
       "source_url": "https://www.cinepazmadrid.es/es/detalles/105357_1_Z_1/ladron-de-bicicletas-vose",
       "status": "confirmed",
       "stale": false,
-      "category": "unclassified",
+      "category": "repertory",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1494,7 +1503,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1515,7 +1524,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1536,7 +1545,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1557,7 +1566,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1578,7 +1587,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1599,7 +1608,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1620,7 +1629,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1639,9 +1648,9 @@
       "source_url": "https://www.cinepazmadrid.es/es/detalles/57674_1_Z_1/el-buscavidas-vose",
       "status": "confirmed",
       "stale": false,
-      "category": "unclassified",
+      "category": "repertory",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1662,7 +1671,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1683,7 +1692,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1704,7 +1713,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1725,7 +1734,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1744,9 +1753,9 @@
       "source_url": "https://www.cinepazmadrid.es/es/detalles/18089_1_Z_1/el-apartamento-vose",
       "status": "confirmed",
       "stale": false,
-      "category": "unclassified",
+      "category": "repertory",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1767,7 +1776,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1788,7 +1797,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1809,7 +1818,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1830,7 +1839,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1851,7 +1860,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1870,9 +1879,9 @@
       "source_url": "https://www.cinepazmadrid.es/es/detalles/72108_1_Z_1/el-bazar-de-las-sorpresas-vose",
       "status": "confirmed",
       "stale": false,
-      "category": "unclassified",
+      "category": "repertory",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1893,7 +1902,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1914,7 +1923,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1935,7 +1944,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1956,7 +1965,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1977,7 +1986,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1998,7 +2007,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2019,7 +2028,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2040,7 +2049,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2061,7 +2070,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2082,7 +2091,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2103,7 +2112,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2124,7 +2133,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2145,7 +2154,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2166,7 +2175,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2187,7 +2196,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2208,7 +2217,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2229,7 +2238,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2250,7 +2259,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2271,7 +2280,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2292,7 +2301,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2313,7 +2322,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2334,7 +2343,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2355,7 +2364,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2376,7 +2385,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2397,7 +2406,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2418,7 +2427,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2439,7 +2448,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2460,7 +2469,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2481,7 +2490,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2502,7 +2511,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2523,7 +2532,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2544,7 +2553,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:16:03+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     }
@@ -2560,7 +2569,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "a5df200d6fdfe60a5f2c",
@@ -2572,7 +2581,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "0c18553c2abb9d993a5e",
@@ -2584,7 +2593,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "fa603e6bf43900a599a7",
@@ -2596,7 +2605,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "44cf065a3acc650fe945",
@@ -2608,7 +2617,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "718f70ca8ea10eb42772",
@@ -2620,7 +2629,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "8a35a59be91f13903dbc",
@@ -2632,7 +2641,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "df4aa23399014e2f3bd4",
@@ -2644,7 +2653,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "f194c28559413340dedb",
@@ -2656,7 +2665,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "9e095446c1d97927c95c",
@@ -2668,7 +2677,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "ebc649834e6fedce2d13",
@@ -2680,7 +2689,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "6873a16f2283362c4a5c",
@@ -2692,7 +2701,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "a36e25d184370dd4d60c",
@@ -2704,7 +2713,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "a327d4ae6cc3f79feb54",
@@ -2716,7 +2725,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "340c0fa80b7d9c2fef5e",
@@ -2728,7 +2737,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "08d833f708896a507e0d",
@@ -2740,7 +2749,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "79c188a3093ee00bfa8a",
@@ -2752,7 +2761,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "520a3b905d3388240de0",
@@ -2764,7 +2773,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "336026ead85aaac2b222",
@@ -2776,7 +2785,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "50c1a9ad7d4d769e96b7",
@@ -2788,7 +2797,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "7448c7ab7c92f4a72cc6",
@@ -2800,7 +2809,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "5c328c7a7d4064810b9e",
@@ -2812,7 +2821,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "575e1760db312a380162",
@@ -2824,7 +2833,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "1ea1f27517fb1ae61a45",
@@ -2836,7 +2845,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "e5204de8f75353b0405c",
@@ -2848,7 +2857,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "edf8e01534fc1f244d79",
@@ -2860,7 +2869,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "35c260e2a49231a794fa",
@@ -2872,7 +2881,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "990f6ea2975c271bc62c",
@@ -2884,7 +2893,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "b04cef5c6b73fbd07e11",
@@ -2896,7 +2905,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "8a3efbed11ad0852a9f2",
@@ -2908,7 +2917,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "229dcfc5303461a3a0bc",
@@ -2920,7 +2929,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "df463e05c7328d4a6c74",
@@ -2932,7 +2941,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "eb1754405d6f212e909c",
@@ -2944,7 +2953,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
+      "last_seen": "2026-11-11T11:17:19+01:00"
     },
     {
       "id": "f781e2bfdda2d61c9577",
@@ -2956,7 +2965,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "476492d1fd9c26eedb91",
@@ -2968,7 +2977,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "1ceabfd572705af40c5f",
@@ -2980,7 +2989,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "6473ab678da4b5ee0c96",
@@ -2992,7 +3001,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "ef6fdc519aa1a5bc4287",
@@ -3004,7 +3013,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "192c5353620f783d2301",
@@ -3016,7 +3025,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "a495b30de4f27860a5dc",
@@ -3028,7 +3037,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "c0c18e5e767459e8c7ac",
@@ -3040,7 +3049,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "56c9d353e310d907b1ff",
@@ -3052,7 +3061,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "4746f5992242e6a54d8e",
@@ -3064,7 +3073,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "55b59a4265a41cab639d",
@@ -3076,7 +3085,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "8a4c5e7beb8a1578c123",
@@ -3088,7 +3097,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "59229690dbcfd34a0f82",
@@ -3100,7 +3109,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "54558fcd7ece20cbd035",
@@ -3112,7 +3121,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "38a51fb8c7e117f2fe2a",
@@ -3124,7 +3133,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "6741f91b509ca0485f00",
@@ -3136,7 +3145,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "c69152cc3c14321af3c1",
@@ -3148,7 +3157,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "7b8a046665bf81892daf",
@@ -3160,7 +3169,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "9e9be0a472717d7e4a00",
@@ -3172,7 +3181,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "aea2997e225bc60b6938",
@@ -3184,7 +3193,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "ac5f36b3619ef588032e",
@@ -3196,7 +3205,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "c1f9c9da635893770d0b",
@@ -3208,7 +3217,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "a403332af638c406de77",
@@ -3220,7 +3229,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "340d6758e272fe2f0f2d",
@@ -3232,7 +3241,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "31c21d16483cec204c7e",
@@ -3244,7 +3253,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "acde14885fcbd512a674",
@@ -3256,7 +3265,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "643c38473eb77b28dbbe",
@@ -3268,7 +3277,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "ef9511a639a0d60eefff",
@@ -3280,7 +3289,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "f8ec0770c0d489a84e75",
@@ -3292,7 +3301,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "134f010c87a8c6dbbf2d",
@@ -3304,7 +3313,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "266d0597e46de7eedc2a",
@@ -3316,7 +3325,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "7d70c82972a62e94e42f",
@@ -3328,7 +3337,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "e1c1ac1af632e7147fd3",
@@ -3340,7 +3349,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "6e533c1cf8beace41a98",
@@ -3352,7 +3361,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "910ec5a2a3ea5696ae5a",
@@ -3364,7 +3373,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "5275e1361f2aaeb69dad",
@@ -3376,7 +3385,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "251a86922785f0680780",
@@ -3388,7 +3397,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "0efdd5a361d1359adcaf",
@@ -3400,7 +3409,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "5f35ce7595194a8c23c2",
@@ -3412,7 +3421,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "96558128da7ca0fe4351",
@@ -3424,7 +3433,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "d1c2ae7f51445055c1eb",
@@ -3436,7 +3445,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "b75fd7f469e57af2e613",
@@ -3448,7 +3457,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "d65063edc34009066060",
@@ -3460,7 +3469,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "4d5ee510e4c71c0fcb8c",
@@ -3472,7 +3481,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:16:03+01:00"
     },
     {
       "id": "69fe2a49efac10b8f9fa",
@@ -3482,9 +3491,10 @@
       "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
       "url": "https://kinepolis.es/",
       "severity": "info",
-      "status": "open",
+      "status": "resolved",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:10:18+01:00",
+      "resolved_at": "2026-11-11T11:15:13+01:00"
     }
   ],
   "agent_status": "waiting_for_copilot"

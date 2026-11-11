@@ -1,7 +1,7 @@
 import unittest
 from datetime import date
 from src.core import Incidents,trusted_identity
-from src.sources import parse_paz,parse_day,event_tags
+from src.sources import parse_paz,parse_day,event_tags,classic_members
 from src.pipeline import calendar
 
 def html(title='Deseando amar', director='Wong Kar-wai', hour='20:00', day='Lunes 16/11'):
@@ -43,6 +43,10 @@ class PipelineTests(unittest.TestCase):
     def test_live_music_is_not_a_recorded_concert(self):
         self.assertEqual(event_tags('Proyección de concierto grabado'),[])
         self.assertIn('live_music',event_tags('Con acompañamiento de piano en directo'))
+
+    def test_cycle_excludes_advertised_premieres_in_sidebar(self):
+        page='<div class="contenedor_horarios"><div class="film-list-item"><a href="/es/detalles/123_1_Z_1/classic">Clásico</a></div></div><aside><a href="/es/detalles/999_0_W_0/premiere">Estreno anunciado</a></aside>'
+        self.assertEqual(classic_members(page),{'paz:123'})
 
     def test_calendar_utc_and_escaping(self):
         data=dict(generated_at='2026-11-11T10:00:00+01:00',cinemas=[dict(id='paz',name='Cine',address='Calle, 1')],sessions=[dict(id='1',cinema_id='paz',title='Título; prueba',start='2026-11-16T20:00:00+01:00',status='confirmed',duration_minutes=120,source_url='https://example.org',booking_url='https://example.org')])

@@ -25,12 +25,13 @@
     "id": "cine-paz",
     "name": "MK2 CINE PAZ",
     "address": "Calle de Fuencarral, 125",
-    "lat": null,
-    "lon": null,
+    "lat": 40.4308724,
+    "lon": -3.7034022,
     "url": "https://www.cinepazmadrid.es/es/cartelera",
     "status": "active",
     "inventory_status": "verified_source",
-    "provenance": "https://www.fiestadelcine.com/salas-adheridas/"
+    "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
+    "coordinate_source": "https://www.openstreetmap.org/node/1357992373"
   },
   {
     "id": "golem-madrid",
