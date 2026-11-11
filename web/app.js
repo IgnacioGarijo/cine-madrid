@@ -1,4 +1,4 @@
-import {madridDay, filterSessions, countByDay, monthCells} from './calendar-utils.js?v=0.2.0';
+import {madridDay, filterSessions, countByDay, monthCells} from './calendar-utils.js?v=0.2.1';
 
 const $ = selector => document.querySelector(selector);
 const all = selector => [...document.querySelectorAll(selector)];
@@ -114,6 +114,7 @@ function setDay(day, {focus = false} = {}) {
   if (focus) $('#calendar-grid').querySelector(`[data-day="${day}"]`)?.focus({preventScroll:true});
 }
 function renderCalendar() {
+  if (!data) return;
   const filters = values(), selected = filters.day, today = madridDay();
   const matching = filterSessions(data.sessions, filters, {ignoreDay:true});
   const counts = countByDay(matching), cells = monthCells(calendarYear, calendarMonth);
@@ -197,6 +198,7 @@ function renderCatalog() {
   }
 }
 function renderIncidents() {
+  if (!data) return;
   const box = $('#incidents'), filter = $('#issue-filter').value; box.replaceChildren();
   for (const issue of data.incidents.filter(i => !filter || i.status === filter)) {
     const row = el('article', undefined, 'incident ' + issue.severity);
@@ -238,6 +240,7 @@ async function boot() {
       for (const option of source.options) target.append(option.cloneNode(true));
     }
     render(); renderWatch(); renderIncidents(); connectionState();
+    $('#calendar-preview').disabled = false;
     if (!posts.length) $('#newsletters').append(el('p','Todavía no hay ediciones publicadas.','empty'));
     for (const post of posts) {
       const article = el('article',undefined,'card'); article.append(el('h3',post.id),el('p',post.note));

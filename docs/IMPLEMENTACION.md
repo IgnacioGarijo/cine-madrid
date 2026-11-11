@@ -1,6 +1,6 @@
 # Implementación acordada y estado
 
-## Cambios de interfaz en v0.2.0
+## Cambios de interfaz en v0.2.1
 
 - Diseño orientado a móvil: cabecera con Cine Madrid en grande, filtros secundarios plegables y controles táctiles.
 - Solo Cartelera, Favoritas y Boletín en navegación principal. Fuentes e incidencias y cobertura accesibles desde el pie.
