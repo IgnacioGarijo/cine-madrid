@@ -1,5 +1,13 @@
 # Implementación acordada y estado
 
+## Cambios de interfaz en v0.2.0
+
+- Diseño orientado a móvil: cabecera con Cine Madrid en grande, filtros secundarios plegables y controles táctiles.
+- Solo Cartelera, Favoritas y Boletín en navegación principal. Fuentes e incidencias y cobertura accesibles desde el pie.
+- Calendario mensual real en Cartelera, compacto y ampliable. Misma búsqueda y filtros; selección de fechas compartida y navegación entre meses.
+- Aplicación web instalable, iconos para Android/iOS y acceso a los últimos datos públicos guardados sin conexión. Instalación en teléfono real pendiente de comprobar con el usuario.
+- Cuenta TMDB creada por el usuario; la credencial de API sigue pendiente. El nombre de usuario no sustituye al token.
+
 ## Alcance
 
 Madrid capital. Todos los cines comerciales y espacios con cine regular como objetivo de cobertura, con actualización diaria, búsqueda uniforme, reposiciones, eventos especiales, ciclos futuros, calendario, pendientes y boletín privado por Telegram con archivo público.

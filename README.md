@@ -1,8 +1,20 @@
-# Cine Madrid · v0.1.1
+# Cine Madrid · v0.2.0
 
 Agenda personal de cine en Madrid capital, reposiciones y programación futura.
 
 Web: https://ignaciogarijo.github.io/cine-madrid/
+
+## Diseño móvil y aplicación instalable
+
+Tres pestañas: Cartelera, Favoritas y Boletín. Las fuentes, la cobertura y las incidencias se consultan desde el pie. La cabecera muestra el nombre y «Una ciudad. Muchas pantallas.», sin portada promocional.
+
+Cartelera incorpora un calendario mensual compacto que se amplía al pulsar. Comparte búsqueda, cine, tipo de programación, versión y horas con la lista; el calendario conserva visibles las demás fechas compatibles aunque haya un día seleccionado. Seleccionar un día actualiza ambas vistas. Sus filtros también se pueden modificar desde el calendario ampliado. La descarga `.ics` sigue siendo del calendario completo, como indica su enlace.
+
+La web incluye un manifiesto PWA con iconos para Android y Apple y apertura independiente. En Android, usar Instalar o el menú del navegador. En iPhone, abrir en Safari → Compartir → Añadir a pantalla de inicio. La instalación física en un teléfono requiere realizar ese paso en el propio dispositivo y todavía no ha sido comprobada en un teléfono real.
+
+El service worker conserva la aplicación y la última cartelera pública para consultas sin conexión, dentro del ámbito `/cine-madrid/`. Los datos se solicitan primero a la red; si se recuperan de caché se indica en el pie y en Fuentes e incidencias. Las entradas y las actualizaciones requieren conexión. No se almacenan peticiones a TMDB, Telegram, geocodificación ni otros proyectos del mismo dominio. Favoritas y origen conservan las claves locales de la versión anterior.
+
+Verificación del calendario y la PWA: `node --test tests/calendar.test.mjs tests/pwa.test.mjs`.
 
 ## Estado real
 
