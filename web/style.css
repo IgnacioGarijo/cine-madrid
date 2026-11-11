@@ -41,6 +41,7 @@ dialog { width:min(860px,calc(100% - 32px)); max-height:calc(100dvh - 40px); pad
 .movie-heading .meta { display:flex; align-items:baseline; flex-wrap:wrap; gap:4px 12px; }
 .tmdb-film-link { display:inline; font-size:11px; color:var(--muted); padding:4px 0; }
 .tmdb-credit { margin-top:22px; padding-top:16px; border-top:1px solid var(--line); }
+#owner-form { display:grid; gap:14px; }#owner-form label { display:grid; gap:8px; }#owner-access { font-size:12px; margin-left:8px; }
 .tmdb-credit img { width:100px; height:auto; }
 .tmdb-credit p { font-size:12px; color:var(--muted); }
 @media(min-width:760px) { .filters { grid-template-columns:minmax(0,1fr) 310px; align-items:end; }.advanced-filters { grid-column:1/-1; } }

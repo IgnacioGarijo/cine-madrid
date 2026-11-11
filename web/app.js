@@ -1,6 +1,6 @@
-import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.6.1';
+import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.7.0';
 
-import {addressCandidates, validOrigin} from './search-utils.js?v=0.6.1';
+import {addressCandidates, validOrigin} from './search-utils.js?v=0.7.0';
 
 const $ = selector => document.querySelector(selector);
 const all = selector => [...document.querySelectorAll(selector)];
@@ -35,6 +35,7 @@ let data, catalog = [], watch = [], origin = stored('cm-origin', null);
 let offlineData = false, installPrompt = null;
 let filmDaySelections = new WeakMap();
 let searchApi = '', liveFavoriteResults = null, favoriteTimer, favoriteController, favoriteSequence = 0, favoriteError = '';
+let favoritesApi = '', ownerSession = stored('cm-owner-session',null), pendingFavoriteAction = null, favoriteSaving = false;
 let addressTimer, addressController, addressSequence = 0;
 let selectedCinemas = new Set(), selectedCategory = '', favoriteSearches = [], favoritePage = 1;
 const categories = [['','Toda la cartelera'],['repertory_events','Reposiciones y eventos'],['premiere','Estrenos'],['unclassified','Pendiente de clasificar']];
@@ -237,13 +238,55 @@ function setView(name, updateHash = true) {
 function favoriteRequest(movie, operation = 'Añadir', page = 1) {
   return 'https://github.com/IgnacioGarijo/cine-madrid/issues/new?' + new URLSearchParams({template:'favorita.yml',operation,movie,page:String(page)});
 }
+function ownerToken() {return ownerSession?.expires>Date.now() ? ownerSession.token : '';}
+function renderOwnerAccess() {
+  $('#owner-access').hidden=!favoritesApi;
+  $('#owner-access').textContent=ownerToken() ? 'Cerrar acceso de edición' : 'Acceso de edición';
+}
+function requestOwnerAccess(action=null) {
+  pendingFavoriteAction=action;$('#owner-password').value='';$('#owner-error').textContent='';
+  $('#owner-dialog').showModal();$('#owner-password').focus();
+}
+async function loadFavorites() {
+  const response=await fetch(favoritesApi || 'favorites.json',{cache:'no-store'});
+  if(!response.ok)throw Error('favorites_unavailable');
+  const movies=await response.json();if(!Array.isArray(movies))throw Error('invalid_favorites');
+  watch=movies;store('cm-watch-cache',movies);renderWatch();renderCatalog();
+}
+async function changeFavorite(movie,remove=false) {
+  if(favoriteSaving)return;
+  if(!ownerToken()) {requestOwnerAccess(()=>changeFavorite(movie,remove));return;}
+  favoriteSaving=true;renderCatalog();renderWatch();let failure='';
+  const status=$('#watch-status');status.textContent=remove ? 'Quitando película…' : 'Guardando película…';
+  $('#favorite-search-status').textContent=status.textContent;
+  try {
+    const response=await fetch(favoritesApi+(remove ? '/'+movie.tmdb_id : ''),{
+      method:remove?'DELETE':'POST',headers:{'Content-Type':'application/json',Authorization:'Bearer '+ownerToken()},
+      ...(remove ? {} : {body:JSON.stringify({tmdb_id:movie.tmdb_id})})});
+    if(response.status===401) {
+      ownerSession=null;store('cm-owner-session',null);requestOwnerAccess(()=>changeFavorite(movie,remove));return;
+    }
+    if(!response.ok)throw Error('save_failed');
+    const movies=await response.json();if(!Array.isArray(movies))throw Error('save_failed');
+    watch=movies;store('cm-watch-cache',movies);
+    status.textContent=(remove ? 'Quitada: ' : 'Guardada: ')+movie.title+'.';
+    if(!remove)$('#favorite-dialog').close();
+  } catch {
+    failure='No se pudo guardar el cambio. Tu lista conserva el estado anterior. Vuelve a intentarlo.';
+    status.textContent=failure;
+  } finally {favoriteSaving=false;renderWatch();renderOwnerAccess();renderCatalog();if(failure)$('#favorite-search-status').textContent=failure;}
+}
 function renderWatch() {
   const box = $('#watchlist'); box.replaceChildren();
   for (const movie of watch) {
     const row = el('li', undefined, 'favorite-row'), name = el('span');
     name.append(el('strong',movie.title));
     if (movie.year) name.append(el('small',String(movie.year)));
-    row.append(name,link('Quitar ↗',favoriteRequest(movie.id,'Quitar'),'favorite-remove'));box.append(row);
+    if(favoritesApi) {
+      const button=el('button','Quitar','favorite-remove');button.type='button';button.disabled=favoriteSaving;
+      button.onclick=()=>changeFavorite(movie,true);row.append(name,button);
+    } else row.append(name,link('Quitar ↗',favoriteRequest(movie.id,'Quitar'),'favorite-remove'));
+    box.append(row);
   }
   if (!watch.length) box.append(el('li','Todavía no hay películas guardadas.','empty'));
 }
@@ -261,7 +304,12 @@ function renderCatalog() {
     name.append(el('strong',movie.title),el('small',`${movie.year || 'Sin año'} · ${movie.director || movie.original_title || ''}`));
     name.append(link('Ver ficha TMDB ↗',movie.source_url,'fine'));
     const added=watch.some(m=>m.id===movie.id);
-    row.append(name,added ? el('span','Guardada','fine') : link('Añadir ↗',favoriteRequest(movie.id),'button'));box.append(row);
+    let action=added ? el('span','Guardada','fine') : link('Añadir ↗',favoriteRequest(movie.id),'button');
+    if(!added && favoritesApi) {
+      action=el('button','Añadir','button');action.type='button';action.disabled=favoriteSaving;
+      action.onclick=()=>changeFavorite(movie);
+    }
+    row.append(name,action);box.append(row);
   }
   if (!results.movies.length) box.append(el('p','No hay resultados para ese título.','fine'));
   for (const [page,label] of [[favoritePage-1,'Página anterior'],[favoritePage+1,'Página siguiente']]) {
@@ -292,12 +340,12 @@ async function queryFavoriteSuggestions() {
   }
 }
 async function refreshFavoriteSearches() {
-  if (!$('#favorite-dialog').open) return;
+  if(favoriteSaving)return;
+  if (!$('#favorite-dialog').open && $('#pendientes').hidden) return;
   try {
     const response=await fetch('favorite-searches.json',{cache:'no-cache'});
     if (response.ok) {favoriteSearches=await response.json();renderCatalog();}
-    const favorites=await fetch('favorites.json',{cache:'no-cache'});
-    if (favorites.ok) {watch=await favorites.json();renderWatch();}
+    await loadFavorites();
   } catch { /* Preserve the last public results when offline. */ }
 }
 function renderIncidents() {
@@ -328,7 +376,14 @@ async function boot() {
     favoriteSearches=responses[4].ok ? await responses[4].json() : [];
     const searchConfig=responses[5].ok ? await responses[5].json() : {};
     searchApi=searchConfig.tmdb_api_url || '';
+    favoritesApi=searchConfig.favorites_api_url || '';
+    renderOwnerAccess();
+    if(favoritesApi) {
+      watch=stored('cm-watch-cache',watch);
+      try {await loadFavorites();} catch {$('#watch-status').textContent='Sin conexión con tu lista. Se muestra la última copia guardada.';}
+    }
     if (searchApi) $('#favorite-help').textContent='Escribe un título y selecciona una película de todo TMDB. Guardarla en la lista pública se confirma con tu cuenta de GitHub. La clave permanece protegida en el servidor.';
+    if(favoritesApi)$('#favorite-help').textContent='Busca una película y pulsa Añadir. El acceso de edición se recuerda durante 30 días en este dispositivo.';
     const posts = responses[2].ok ? await responses[2].json() : [];
     $('#updated').textContent = 'Último intento: ' + new Date(data.generated_at).toLocaleString('es-ES');
     const active = data.sources.filter(s => s.status === 'ok').length;
@@ -407,6 +462,21 @@ $('#issue-filter').onchange = renderIncidents;
 $('#catalog-query').oninput = () => {clearTimeout(favoriteTimer);favoriteController?.abort();favoriteSequence++;favoritePage=1;favoriteError='';liveFavoriteResults=null;renderCatalog();if(searchApi) favoriteTimer=setTimeout(queryFavoriteSuggestions,450);};
 setInterval(refreshFavoriteSearches,15000);window.addEventListener('focus',refreshFavoriteSearches);
 $('#add-favorite').onclick = () => { $('#catalog-query').value = '';favoritePage=1;favoriteError='';liveFavoriteResults=null;renderCatalog(); $('#favorite-dialog').showModal(); $('#catalog-query').focus(); };
+$('#owner-access').onclick=()=>{
+  if(ownerToken()) {ownerSession=null;store('cm-owner-session',null);renderOwnerAccess();$('#watch-status').textContent='Acceso de edición cerrado en este dispositivo.';}
+  else requestOwnerAccess();
+};
+$('#owner-form').onsubmit=async event=>{
+  event.preventDefault();const button=$('#owner-submit');button.disabled=true;$('#owner-error').textContent='Comprobando acceso…';
+  try {
+    const response=await fetch(new URL('/session',favoritesApi),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({secret:$('#owner-password').value})});
+    if(!response.ok) {$('#owner-error').textContent=response.status===429 ? 'Demasiados intentos. Espera un minuto y vuelve a probar.' : response.status===401 ? 'La contraseña no es correcta.' : 'No se pudo conectar. Vuelve a intentarlo.';return;}
+    ownerSession=await response.json();store('cm-owner-session',ownerSession);$('#owner-password').value='';$('#owner-dialog').close();renderOwnerAccess();
+    const action=pendingFavoriteAction;pendingFavoriteAction=null;if(action)await action();
+  } catch {$('#owner-error').textContent='No se pudo conectar. Vuelve a intentarlo.';}
+  finally {button.disabled=false;}
+};
+$('#owner-dialog').addEventListener('close',()=>{$('#owner-password').value='';});
 async function selectOrigin(candidate) {
   try {
     if (!validOrigin(candidate)) {

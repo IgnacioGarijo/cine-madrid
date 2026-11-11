@@ -25,19 +25,20 @@ jobs:
           python-version: '3.12'
       - run: pip install -r requirements.txt
       - run: python -m unittest discover -s tests -q
-      - run: node --test services/tmdb/worker.test.mjs tests/calendar.test.mjs tests/pwa.test.mjs
+      - run: node --test services/tmdb/*.test.mjs tests/calendar.test.mjs tests/pwa.test.mjs
       - name: Desplegar y comprobar Cloudflare
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           TMDB_READ_TOKEN: ${{ secrets.TMDB_READ_TOKEN }}
+          FAVORITES_OWNER_SECRET: ${{ secrets.FAVORITES_OWNER_SECRET }}
         run: python services/tmdb/deploy.py
       - run: python -m src.pipeline --build-only
       - name: Guardar conexión pública
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add web/search-config.json data/public.json
+          git add web/search-config.json data/public.json config/favorites.json
           if ! git diff --cached --quiet; then
             git commit -m "Conectar sugerencias instantáneas de TMDB"
             git push

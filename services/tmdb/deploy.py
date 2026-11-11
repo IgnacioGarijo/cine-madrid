@@ -5,7 +5,7 @@ import requests
 
 ROOT=Path(__file__).resolve().parents[2]
 CONFIG=str(ROOT/'services/tmdb/wrangler.jsonc')
-SECRET_NAMES = ('CLOUDFLARE_API_TOKEN', 'CLOUDFLARE_ACCOUNT_ID', 'TMDB_READ_TOKEN')
+SECRET_NAMES = ('CLOUDFLARE_API_TOKEN', 'CLOUDFLARE_ACCOUNT_ID', 'TMDB_READ_TOKEN', 'FAVORITES_OWNER_SECRET')
 
 def safe_diagnostic(message):
     """Keep actionable CLI errors while masking credentials before logging."""
@@ -54,6 +54,7 @@ def main():
     if not match:raise SystemExit('No se reconoce la URL de despliegue; no se modifica la web.')
     base=match[0]
     run(['secret','put','TMDB_READ_TOKEN'],input=os.environ['TMDB_READ_TOKEN'])
+    run(['secret','put','FAVORITES_OWNER_SECRET'],input=os.environ['FAVORITES_OWNER_SECRET'])
     for attempt in range(6):
         try:
             response=requests.get(base+'/search',params={'q':'Piratas del'},headers={'Origin':'https://ignaciogarijo.github.io'},timeout=15)
@@ -61,7 +62,11 @@ def main():
         except requests.RequestException:pass
         if attempt==5:raise SystemExit('El servicio no responde correctamente; no se modifica la configuración de Pages.')
         time.sleep(3)
-    (ROOT/'web/search-config.json').write_text(json.dumps({'tmdb_api_url':base+'/search'})+'\n',encoding='utf-8')
+    response=requests.post(base+'/session',json={'secret':os.environ['FAVORITES_OWNER_SECRET']},headers={'Origin':'https://ignaciogarijo.github.io'},timeout=15)
+    if not response.ok or not response.json().get('token'):raise SystemExit('No se pudo verificar el acceso de edición; no se modifica Pages.')
+    response=requests.get(base+'/favorites',timeout=15)
+    if not response.ok or not isinstance(response.json(),list):raise SystemExit('No se pudo comprobar la lista compartida; no se modifica Pages.')
+    (ROOT/'web/search-config.json').write_text(json.dumps({'tmdb_api_url':base+'/search','favorites_api_url':base+'/favorites'})+'\n',encoding='utf-8')
     print('Servicio de sugerencias comprobado:',base)
 
 if __name__ == '__main__':

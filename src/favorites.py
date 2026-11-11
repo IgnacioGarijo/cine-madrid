@@ -9,6 +9,13 @@ import requests
 from .core import ROOT,read_json,write_json
 from .tmdb import Client,title_variants
 
+def sync_shared_favorites(url):
+    response=requests.get(url,timeout=15);response.raise_for_status();movies=response.json()
+    if not isinstance(movies,list) or not all(isinstance(m,dict) and isinstance(m.get('tmdb_id'),int) and m.get('id')=='tmdb:'+str(m['tmdb_id']) and isinstance(m.get('title'),str) for m in movies):
+        raise ValueError('Lista compartida no válida')
+    write_json(ROOT/'config/favorites.json',movies)
+    return movies
+
 def field(body,label):
     match=re.search(r'^### '+re.escape(label)+r'\s*\n(.*?)(?=\n### |\Z)',body,re.M|re.S)
     return match[1].strip() if match else ''
