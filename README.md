@@ -1,4 +1,4 @@
-# Cine Madrid · v0.4.1
+# Cine Madrid · v0.4.2
 
 Agenda personal de cine en Madrid capital y salas IMAX de la región, reposiciones y programación futura.
 

@@ -1,4 +1,4 @@
-import {madridDay, filterSessions, countByDay, monthCells} from './calendar-utils.js?v=0.4.1';
+import {madridDay, filterSessions, countByDay, monthCells} from './calendar-utils.js?v=0.4.2';
 
 const $ = selector => document.querySelector(selector);
 const all = selector => [...document.querySelectorAll(selector)];

@@ -1,6 +1,6 @@
 # Implementación acordada y estado
 
-## Ampliación y favoritas públicas en v0.4.1
+## Ampliación y favoritas públicas en v0.4.2
 
 - Adaptadores independientes para Cine Paz, Palacio de Hielo, Verdi Madrid, Cines Princesa, Renoir Plaza de España, Renoir Retiro, Morasol, Capitol, Cineteca, Artistic Metropol y Cine Estudio del CBA. Cada fuente conserva su estado, fechas extremas leídas e incidencias; una caída no descarta las demás.
 - Lectura de todos los días publicados por los selectores de Renoir y mk2, paginación y pases explícitos de Cineteca, eventos estructurados de Artistic, pestañas de Capitol y fechas de sesión de Morasol, incluidas sus notas de tarifa.

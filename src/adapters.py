@@ -233,7 +233,7 @@ def morasol(reader):
         title=session['NombreEvento'];url,duration=films.get(normalize(title),(c['url'],None))
         # FechaSesion may append a tariff footnote, e.g. '11/11/2026 (*6)'.
         day=parse_day(session['FechaSesion'],reader.today)
-        time_match=re.fullmatch(r'\s*(\d{1,2}):(\d{2})\s*',session['Hora'])
+        time_match=re.fullmatch(r'\s*(\d{1,2}):(\d{2})\s*',session.get('Horatxt') or session['Hora'])
         if not time_match:
             reader.partial(str(session['Id']),'Hora de sesión no reconocida.',url);continue
         start=datetime.combine(day,datetime.min.time())+timedelta(hours=int(time_match[1]),minutes=int(time_match[2]))

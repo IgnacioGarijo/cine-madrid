@@ -1,1 +1,1 @@
-{"name":"cine-madrid","version":"0.4.1","private":true,"type":"module","scripts":{"test":"node --test tests/calendar.test.mjs tests/pwa.test.mjs"}}
+{"name":"cine-madrid","version":"0.4.2","private":true,"type":"module","scripts":{"test":"node --test tests/calendar.test.mjs tests/pwa.test.mjs"}}

@@ -71,7 +71,7 @@ class AdapterTests(unittest.TestCase):
         self.assertEqual(session['director'],'Katsuhiro Otomo');self.assertEqual(len(r.result.sessions),1)
 
     def test_morasol_reads_explicit_advance_dates_and_excludes_private_passes(self):
-        session=dict(Id=1,NombreEvento='Concierto',FechaSesion='01/01/2027 (*6)',Hora=' 18:30',Sala='1')
+        session=dict(Id=1,NombreEvento='Concierto',FechaSesion='01/01/2027 (*6)',Hora='(*6) 18:30',Horatxt='18:30',Sala='1')
         page="<script>addToJSON('s', "+json.dumps({'1':session,'2':dict(session,Id=2,PasePrivado=1)})+")</script>"
         r=reader('morasol',page);morasol(r)
         self.assertEqual(len(r.result.sessions),1)
