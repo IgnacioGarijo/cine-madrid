@@ -3666,6 +3666,236 @@
     "sentidoysensibilidad2026": {
       "results": [],
       "fetched_at": "2026-11-11T12:54:18+01:00"
+    },
+    "operacosifantuttedirectodesdetheroyalopera": {
+      "results": [],
+      "fetched_at": "2026-11-11T15:40:28+01:00"
+    },
+    "laodisea": {
+      "results": [
+        {
+          "id": 1368337,
+          "title": "La Odisea",
+          "original_title": "The Odyssey"
+        },
+        {
+          "id": 1698863,
+          "title": "La odisea",
+          "original_title": "The Odyssey"
+        },
+        {
+          "id": 596054,
+          "title": "La odisea de los giles",
+          "original_title": "La odisea de los giles"
+        },
+        {
+          "id": 777011,
+          "title": "La odisea de Vasi",
+          "original_title": "La odisea de Vasi"
+        },
+        {
+          "id": 1269665,
+          "title": "La Odisea de Kamatsu",
+          "original_title": "La Odisea de Kamatsu"
+        },
+        {
+          "id": 999140,
+          "title": "La odisea de Dandelion",
+          "original_title": "Planètes"
+        }
+      ],
+      "fetched_at": "2026-11-11T15:40:30+01:00"
+    },
+    "enelcorazondelabestia": {
+      "results": [
+        {
+          "id": 1263337,
+          "title": "En el corazón de la bestia",
+          "original_title": "Heart of the Beast"
+        }
+      ],
+      "fetched_at": "2026-11-11T15:40:32+01:00"
+    },
+    "veritylasombradeunengano": {
+      "results": [
+        {
+          "id": 1283515,
+          "title": "Verity. La sombra de un engaño",
+          "original_title": "Verity"
+        }
+      ],
+      "fetched_at": "2026-11-11T15:40:33+01:00"
+    },
+    "laotramadre": {
+      "results": [
+        {
+          "id": 1400837,
+          "title": "La otra madre",
+          "original_title": "Other Mommy"
+        },
+        {
+          "id": 261463,
+          "title": "La otra madre",
+          "original_title": "Im falschen Leben"
+        },
+        {
+          "id": 87116,
+          "title": "La otra madre",
+          "original_title": "Visages d'enfants"
+        },
+        {
+          "id": 715758,
+          "title": "La otra madre",
+          "original_title": "Another Mother"
+        }
+      ],
+      "fetched_at": "2026-11-11T15:40:33+01:00"
+    },
+    "residentevil": {
+      "results": [
+        {
+          "id": 1423191,
+          "title": "Resident Evil",
+          "original_title": "Resident Evil"
+        },
+        {
+          "id": 460458,
+          "title": "Resident Evil. Bienvenidos a Raccoon City",
+          "original_title": "Resident Evil: Welcome to Raccoon City"
+        },
+        {
+          "id": 1576,
+          "title": "Resident Evil",
+          "original_title": "Resident Evil"
+        },
+        {
+          "id": 1577,
+          "title": "Resident Evil 2: Apocalipsis",
+          "original_title": "Resident Evil: Apocalypse"
+        },
+        {
+          "id": 7737,
+          "title": "Resident Evil III. Extinción",
+          "original_title": "Resident Evil: Extinction"
+        },
+        {
+          "id": 1083862,
+          "title": "Resident Evil: Death Island",
+          "original_title": "バイオハザード：デスアイランド"
+        }
+      ],
+      "fetched_at": "2026-11-11T15:40:35+01:00"
+    },
+    "streetfighter": {
+      "results": [
+        {
+          "id": 1153576,
+          "title": "Street Fighter",
+          "original_title": "Street Fighter"
+        },
+        {
+          "id": 11667,
+          "title": "Street Fighter: La última batalla",
+          "original_title": "Street Fighter"
+        },
+        {
+          "id": 16228,
+          "title": "Street Fighter Alpha: Generations",
+          "original_title": "Street Fighter Alpha: Generations"
+        },
+        {
+          "id": 17433,
+          "title": "Street Fighter Alpha",
+          "original_title": "ストリートファイターZERO - THE ANIMATION -"
+        },
+        {
+          "id": 15268,
+          "title": "Street Fighter: La leyenda",
+          "original_title": "Street Fighter: The Legend of Chun-Li"
+        },
+        {
+          "id": 12613,
+          "title": "Street Fighter II: La película",
+          "original_title": "ストリートファイター II MOVIE"
+        }
+      ],
+      "fetched_at": "2026-11-11T15:40:36+01:00"
+    },
+    "mailinthespiral": {
+      "results": [],
+      "fetched_at": "2026-11-11T15:40:41+01:00"
+    },
+    "silviacriatura": {
+      "results": [],
+      "fetched_at": "2026-11-11T15:40:42+01:00"
+    },
+    "ovnisavistamientosextranosenmadrid2026": {
+      "results": [
+        {
+          "id": 1699186,
+          "title": "Ovnis: Avistamientos Extraños en Madrid",
+          "original_title": "Ovnis: Avistamientos Extraños en Madrid"
+        }
+      ],
+      "fetched_at": "2026-11-11T15:40:47+01:00"
+    },
+    "avistamientosextranosenmadrid2026": {
+      "results": [],
+      "fetched_at": "2026-11-11T15:40:47+01:00"
+    },
+    "ovnisavistamientosextranosenmadrid": {
+      "results": [
+        {
+          "id": 1699186,
+          "title": "Ovnis: Avistamientos Extraños en Madrid",
+          "original_title": "Ovnis: Avistamientos Extraños en Madrid"
+        }
+      ],
+      "fetched_at": "2026-11-11T15:40:47+01:00"
+    },
+    "avistamientosextranosenmadrid": {
+      "results": [
+        {
+          "id": 1699186,
+          "title": "Ovnis: Avistamientos Extraños en Madrid",
+          "original_title": "Ovnis: Avistamientos Extraños en Madrid"
+        }
+      ],
+      "fetched_at": "2026-11-11T15:40:48+01:00"
+    },
+    "tadeojonesylalamparamaravillosa": {
+      "results": [
+        {
+          "id": 1187326,
+          "title": "Tadeo Jones y La Lámpara Maravillosa",
+          "original_title": "Tadeo Jones y La Lámpara Maravillosa"
+        }
+      ],
+      "fetched_at": "2026-11-11T15:40:50+01:00"
+    },
+    "coyotevsacme": {
+      "results": [
+        {
+          "id": 1204680,
+          "title": "Coyote vs. Acme",
+          "original_title": "Coyote vs. Acme"
+        }
+      ],
+      "fetched_at": "2026-11-11T15:40:51+01:00"
+    },
+    "spidermanbrandnewday": {
+      "results": [
+        {
+          "id": 969681,
+          "title": "Spider-Man: Brand New Day",
+          "original_title": "Spider-Man: Brand New Day"
+        }
+      ],
+      "fetched_at": "2026-11-11T15:40:51+01:00"
+    },
+    "elpoderdelrosario": {
+      "results": [],
+      "fetched_at": "2026-11-11T15:40:52+01:00"
     }
   },
   "movies": {
@@ -4274,7 +4504,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1422041",
-      "fetched_at": "2026-11-11T12:10:12+01:00"
+      "fetched_at": "2026-11-11T12:10:12+01:00",
+      "vote_count": 208,
+      "vote_average": 8.0,
+      "statistics_checked_at": "2026-11-11T15:40:17+01:00"
     },
     "1522071": {
       "id": "tmdb:1522071",
@@ -4301,7 +4534,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1522071",
-      "fetched_at": "2026-11-11T12:10:13+01:00"
+      "fetched_at": "2026-11-11T12:10:13+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:18+01:00"
     },
     "1371661": {
       "id": "tmdb:1371661",
@@ -4328,7 +4564,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1371661",
-      "fetched_at": "2026-11-11T12:10:13+01:00"
+      "fetched_at": "2026-11-11T12:10:13+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:19+01:00"
     },
     "1723586": {
       "id": "tmdb:1723586",
@@ -4842,7 +5081,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1241803",
-      "fetched_at": "2026-11-11T12:10:14+01:00"
+      "fetched_at": "2026-11-11T12:10:14+01:00",
+      "vote_count": 68,
+      "vote_average": 7.2,
+      "statistics_checked_at": "2026-11-11T15:40:17+01:00"
     },
     "586863": {
       "id": "tmdb:586863",
@@ -5410,7 +5652,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1518395",
-      "fetched_at": "2026-11-11T12:10:15+01:00"
+      "fetched_at": "2026-11-11T12:10:15+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:15+01:00"
     },
     "950028": {
       "id": "tmdb:950028",
@@ -5829,7 +6074,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/950028",
-      "fetched_at": "2026-11-11T12:10:16+01:00"
+      "fetched_at": "2026-11-11T12:10:16+01:00",
+      "vote_count": 945,
+      "vote_average": 7.202,
+      "statistics_checked_at": "2026-11-11T15:40:17+01:00"
     },
     "403262": {
       "id": "tmdb:403262",
@@ -6558,7 +6806,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1503762",
-      "fetched_at": "2026-11-11T12:10:17+01:00"
+      "fetched_at": "2026-11-11T12:10:17+01:00",
+      "vote_count": 163,
+      "vote_average": 7.2,
+      "statistics_checked_at": "2026-11-11T15:40:18+01:00"
     },
     "4584": {
       "id": "tmdb:4584",
@@ -6829,7 +7080,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1404684",
-      "fetched_at": "2026-11-11T12:10:18+01:00"
+      "fetched_at": "2026-11-11T12:10:18+01:00",
+      "vote_count": 225,
+      "vote_average": 7.269,
+      "statistics_checked_at": "2026-11-11T15:40:19+01:00"
     },
     "149": {
       "id": "tmdb:149",
@@ -6914,7 +7168,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/149",
-      "fetched_at": "2026-11-11T12:10:18+01:00"
+      "fetched_at": "2026-11-11T12:10:18+01:00",
+      "vote_count": 5111,
+      "vote_average": 7.9,
+      "statistics_checked_at": "2026-11-11T15:40:22+01:00"
     },
     "404579": {
       "id": "tmdb:404579",
@@ -7301,7 +7558,10 @@
       "aliases": [],
       "releases": [],
       "source_url": "https://www.themoviedb.org/movie/1603658",
-      "fetched_at": "2026-11-11T12:10:20+01:00"
+      "fetched_at": "2026-11-11T12:10:20+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:26+01:00"
     },
     "677961": {
       "id": "tmdb:677961",
@@ -7656,7 +7916,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1379486",
-      "fetched_at": "2026-11-11T12:10:22+01:00"
+      "fetched_at": "2026-11-11T12:10:22+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:26+01:00"
     },
     "107392": {
       "id": "tmdb:107392",
@@ -7766,7 +8029,10 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1532393",
       "fetched_at": "2026-11-11T12:10:24+01:00",
-      "translations_checked": true
+      "translations_checked": true,
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:26+01:00"
     },
     "1585239": {
       "id": "tmdb:1585239",
@@ -8218,7 +8484,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1585239",
-      "fetched_at": "2026-11-11T12:10:24+01:00"
+      "fetched_at": "2026-11-11T12:10:24+01:00",
+      "vote_count": 13,
+      "vote_average": 8.038,
+      "statistics_checked_at": "2026-11-11T15:40:15+01:00"
     },
     "1264961": {
       "id": "tmdb:1264961",
@@ -8501,7 +8770,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/5156",
-      "fetched_at": "2026-11-11T12:10:26+01:00"
+      "fetched_at": "2026-11-11T12:10:26+01:00",
+      "vote_count": 2800,
+      "vote_average": 8.2,
+      "statistics_checked_at": "2026-11-11T15:40:23+01:00"
     },
     "1736705": {
       "id": "tmdb:1736705",
@@ -8528,7 +8800,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1736705",
-      "fetched_at": "2026-11-11T12:10:26+01:00"
+      "fetched_at": "2026-11-11T12:10:26+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:16+01:00"
     },
     "1240889": {
       "id": "tmdb:1240889",
@@ -9272,7 +9547,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1240889",
-      "fetched_at": "2026-11-11T12:10:27+01:00"
+      "fetched_at": "2026-11-11T12:10:27+01:00",
+      "vote_count": 393,
+      "vote_average": 6.1,
+      "statistics_checked_at": "2026-11-11T15:40:27+01:00"
     },
     "27205": {
       "id": "tmdb:27205",
@@ -9900,7 +10178,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/27205",
-      "fetched_at": "2026-11-11T12:10:27+01:00"
+      "fetched_at": "2026-11-11T12:10:27+01:00",
+      "vote_count": 40705,
+      "vote_average": 8.373,
+      "statistics_checked_at": "2026-11-11T15:40:23+01:00"
     },
     "115874": {
       "id": "tmdb:115874",
@@ -10581,7 +10862,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/169",
-      "fetched_at": "2026-11-11T12:10:29+01:00"
+      "fetched_at": "2026-11-11T12:10:29+01:00",
+      "vote_count": 4091,
+      "vote_average": 6.33,
+      "statistics_checked_at": "2026-11-11T15:40:27+01:00"
     },
     "38258": {
       "id": "tmdb:38258",
@@ -10962,7 +11246,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/990",
-      "fetched_at": "2026-11-11T12:10:30+01:00"
+      "fetched_at": "2026-11-11T12:10:30+01:00",
+      "vote_count": 1136,
+      "vote_average": 7.665,
+      "statistics_checked_at": "2026-11-11T15:40:23+01:00"
     },
     "11562": {
       "id": "tmdb:11562",
@@ -11061,7 +11348,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/11562",
-      "fetched_at": "2026-11-11T12:10:30+01:00"
+      "fetched_at": "2026-11-11T12:10:30+01:00",
+      "vote_count": 990,
+      "vote_average": 7.427,
+      "statistics_checked_at": "2026-11-11T15:40:23+01:00"
     },
     "1155285": {
       "id": "tmdb:1155285",
@@ -11379,7 +11669,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/284",
-      "fetched_at": "2026-11-11T12:10:32+01:00"
+      "fetched_at": "2026-11-11T12:10:32+01:00",
+      "vote_count": 2841,
+      "vote_average": 8.187,
+      "statistics_checked_at": "2026-11-11T15:40:25+01:00"
     },
     "151397": {
       "id": "tmdb:151397",
@@ -12148,7 +12441,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/78",
-      "fetched_at": "2026-11-11T12:10:33+01:00"
+      "fetched_at": "2026-11-11T12:10:33+01:00",
+      "vote_count": 15621,
+      "vote_average": 7.937,
+      "statistics_checked_at": "2026-11-11T15:40:25+01:00"
     },
     "335984": {
       "id": "tmdb:335984",
@@ -13206,7 +13502,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/275",
-      "fetched_at": "2026-11-11T12:10:35+01:00"
+      "fetched_at": "2026-11-11T12:10:35+01:00",
+      "vote_count": 9583,
+      "vote_average": 7.848,
+      "statistics_checked_at": "2026-11-11T15:40:25+01:00"
     },
     "1243063": {
       "id": "tmdb:1243063",
@@ -13358,7 +13657,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1247041",
-      "fetched_at": "2026-11-11T12:10:37+01:00"
+      "fetched_at": "2026-11-11T12:10:37+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:27+01:00"
     },
     "747249": {
       "id": "tmdb:747249",
@@ -13551,7 +13853,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/856",
-      "fetched_at": "2026-11-11T12:10:37+01:00"
+      "fetched_at": "2026-11-11T12:10:37+01:00",
+      "vote_count": 6441,
+      "vote_average": 7.543,
+      "statistics_checked_at": "2026-11-11T15:40:27+01:00"
     },
     "20334": {
       "id": "tmdb:20334",
@@ -13618,7 +13923,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/20334",
-      "fetched_at": "2026-11-11T12:10:38+01:00"
+      "fetched_at": "2026-11-11T12:10:38+01:00",
+      "vote_count": 887,
+      "vote_average": 8.051,
+      "statistics_checked_at": "2026-11-11T15:40:25+01:00"
     },
     "1170608": {
       "id": "tmdb:1170608",
@@ -14054,7 +14362,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1170608",
-      "fetched_at": "2026-11-11T12:10:38+01:00"
+      "fetched_at": "2026-11-11T12:10:38+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:16+01:00"
     },
     "927": {
       "id": "tmdb:927",
@@ -14337,7 +14648,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/927",
-      "fetched_at": "2026-11-11T12:10:39+01:00"
+      "fetched_at": "2026-11-11T12:10:39+01:00",
+      "vote_count": 7264,
+      "vote_average": 7.147,
+      "statistics_checked_at": "2026-11-11T15:40:26+01:00"
     },
     "1569299": {
       "id": "tmdb:1569299",
@@ -14846,7 +15160,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/8413",
-      "fetched_at": "2026-11-11T12:10:40+01:00"
+      "fetched_at": "2026-11-11T12:10:40+01:00",
+      "vote_count": 3572,
+      "vote_average": 6.598,
+      "statistics_checked_at": "2026-11-11T15:40:28+01:00"
     },
     "603495": {
       "id": "tmdb:603495",
@@ -15359,7 +15676,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/19",
-      "fetched_at": "2026-11-11T12:12:56+01:00"
+      "fetched_at": "2026-11-11T12:12:56+01:00",
+      "vote_count": 3262,
+      "vote_average": 8.084,
+      "statistics_checked_at": "2026-11-11T15:40:28+01:00"
     },
     "290298": {
       "id": "tmdb:290298",
@@ -16031,7 +16351,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1496903",
-      "fetched_at": "2026-11-11T12:48:21+01:00"
+      "fetched_at": "2026-11-11T12:48:21+01:00",
+      "vote_count": 5,
+      "vote_average": 9.4,
+      "statistics_checked_at": "2026-11-11T15:40:15+01:00"
     },
     "159810": {
       "id": "tmdb:159810",
@@ -16097,7 +16420,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1784105",
-      "fetched_at": "2026-11-11T12:48:22+01:00"
+      "fetched_at": "2026-11-11T12:48:22+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:15+01:00"
     },
     "213": {
       "id": "tmdb:213",
@@ -16512,7 +16838,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/213",
-      "fetched_at": "2026-11-11T12:48:22+01:00"
+      "fetched_at": "2026-11-11T12:48:22+01:00",
+      "vote_count": 4733,
+      "vote_average": 7.963,
+      "statistics_checked_at": "2026-11-11T15:40:15+01:00"
     },
     "651124": {
       "id": "tmdb:651124",
@@ -17455,7 +17784,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/31332",
-      "fetched_at": "2026-11-11T12:48:24+01:00"
+      "fetched_at": "2026-11-11T12:48:24+01:00",
+      "vote_count": 99,
+      "vote_average": 6.742,
+      "statistics_checked_at": "2026-11-11T15:40:16+01:00"
     },
     "1074074": {
       "id": "tmdb:1074074",
@@ -17691,7 +18023,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1074074",
-      "fetched_at": "2026-11-11T12:48:24+01:00"
+      "fetched_at": "2026-11-11T12:48:24+01:00",
+      "vote_count": 113,
+      "vote_average": 6.9,
+      "statistics_checked_at": "2026-11-11T15:40:16+01:00"
     },
     "970398": {
       "id": "tmdb:970398",
@@ -17763,7 +18098,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/970398",
-      "fetched_at": "2026-11-11T12:48:24+01:00"
+      "fetched_at": "2026-11-11T12:48:24+01:00",
+      "vote_count": 7,
+      "vote_average": 7.5,
+      "statistics_checked_at": "2026-11-11T15:40:16+01:00"
     },
     "1058424": {
       "id": "tmdb:1058424",
@@ -19167,7 +19505,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1477104",
-      "fetched_at": "2026-11-11T12:48:27+01:00"
+      "fetched_at": "2026-11-11T12:48:27+01:00",
+      "vote_count": 61,
+      "vote_average": 7.328,
+      "statistics_checked_at": "2026-11-11T15:40:17+01:00"
     },
     "1437703": {
       "id": "tmdb:1437703",
@@ -19339,7 +19680,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1437703",
-      "fetched_at": "2026-11-11T12:48:27+01:00"
+      "fetched_at": "2026-11-11T12:48:27+01:00",
+      "vote_count": 25,
+      "vote_average": 7.4,
+      "statistics_checked_at": "2026-11-11T15:40:18+01:00"
     },
     "1177908": {
       "id": "tmdb:1177908",
@@ -19702,7 +20046,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/11621",
-      "fetched_at": "2026-11-11T12:48:29+01:00"
+      "fetched_at": "2026-11-11T12:48:29+01:00",
+      "vote_count": 3887,
+      "vote_average": 7.789,
+      "statistics_checked_at": "2026-11-11T15:40:18+01:00"
     },
     "891621": {
       "id": "tmdb:891621",
@@ -20205,7 +20552,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/891621",
-      "fetched_at": "2026-11-11T12:48:29+01:00"
+      "fetched_at": "2026-11-11T12:48:29+01:00",
+      "vote_count": 137,
+      "vote_average": 8.1,
+      "statistics_checked_at": "2026-11-11T15:40:18+01:00"
     },
     "47735": {
       "id": "tmdb:47735",
@@ -20294,7 +20644,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/47735",
-      "fetched_at": "2026-11-11T12:48:30+01:00"
+      "fetched_at": "2026-11-11T12:48:30+01:00",
+      "vote_count": 411,
+      "vote_average": 7.343,
+      "statistics_checked_at": "2026-11-11T15:40:19+01:00"
     },
     "1308767": {
       "id": "tmdb:1308767",
@@ -20379,7 +20732,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1308767",
-      "fetched_at": "2026-11-11T12:48:30+01:00"
+      "fetched_at": "2026-11-11T12:48:30+01:00",
+      "vote_count": 142,
+      "vote_average": 7.7,
+      "statistics_checked_at": "2026-11-11T15:40:19+01:00"
     },
     "1117898": {
       "id": "tmdb:1117898",
@@ -20661,7 +21017,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1117898",
-      "fetched_at": "2026-11-11T12:48:31+01:00"
+      "fetched_at": "2026-11-11T12:48:31+01:00",
+      "vote_count": 20,
+      "vote_average": 7.1,
+      "statistics_checked_at": "2026-11-11T15:40:20+01:00"
     },
     "1405002": {
       "id": "tmdb:1405002",
@@ -20685,7 +21044,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1405002",
-      "fetched_at": "2026-11-11T12:48:31+01:00"
+      "fetched_at": "2026-11-11T12:48:31+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:20+01:00"
     },
     "656908": {
       "id": "tmdb:656908",
@@ -21102,7 +21464,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/656908",
-      "fetched_at": "2026-11-11T12:48:31+01:00"
+      "fetched_at": "2026-11-11T12:48:31+01:00",
+      "vote_count": 33,
+      "vote_average": 7.7,
+      "statistics_checked_at": "2026-11-11T15:40:20+01:00"
     },
     "1381071": {
       "id": "tmdb:1381071",
@@ -21551,7 +21916,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1381071",
-      "fetched_at": "2026-11-11T12:48:32+01:00"
+      "fetched_at": "2026-11-11T12:48:32+01:00",
+      "vote_count": 143,
+      "vote_average": 7.78,
+      "statistics_checked_at": "2026-11-11T15:40:20+01:00"
     },
     "940721": {
       "id": "tmdb:940721",
@@ -23093,7 +23461,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1365224",
-      "fetched_at": "2026-11-11T12:48:32+01:00"
+      "fetched_at": "2026-11-11T12:48:32+01:00",
+      "vote_count": 1,
+      "vote_average": 9.5,
+      "statistics_checked_at": "2026-11-11T15:40:20+01:00"
     },
     "1317884": {
       "id": "tmdb:1317884",
@@ -23801,7 +24172,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1400940",
-      "fetched_at": "2026-11-11T12:48:34+01:00"
+      "fetched_at": "2026-11-11T12:48:34+01:00",
+      "vote_count": 425,
+      "vote_average": 7.426,
+      "statistics_checked_at": "2026-11-11T15:40:21+01:00"
     },
     "791523": {
       "id": "tmdb:791523",
@@ -24142,7 +24516,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/791523",
-      "fetched_at": "2026-11-11T12:48:34+01:00"
+      "fetched_at": "2026-11-11T12:48:34+01:00",
+      "vote_count": 248,
+      "vote_average": 8.5,
+      "statistics_checked_at": "2026-11-11T15:40:21+01:00"
     },
     "1744346": {
       "id": "tmdb:1744346",
@@ -24166,7 +24543,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1744346",
-      "fetched_at": "2026-11-11T12:48:34+01:00"
+      "fetched_at": "2026-11-11T12:48:34+01:00",
+      "vote_count": 3,
+      "vote_average": 7.7,
+      "statistics_checked_at": "2026-11-11T15:40:21+01:00"
     },
     "1548369": {
       "id": "tmdb:1548369",
@@ -24202,7 +24582,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1548369",
-      "fetched_at": "2026-11-11T12:48:35+01:00"
+      "fetched_at": "2026-11-11T12:48:35+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:21+01:00"
     },
     "1689329": {
       "id": "tmdb:1689329",
@@ -24224,7 +24607,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1689329",
-      "fetched_at": "2026-11-11T12:48:35+01:00"
+      "fetched_at": "2026-11-11T12:48:35+01:00",
+      "vote_count": 5,
+      "vote_average": 5.6,
+      "statistics_checked_at": "2026-11-11T15:40:22+01:00"
     },
     "1567605": {
       "id": "tmdb:1567605",
@@ -24500,7 +24886,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1567605",
-      "fetched_at": "2026-11-11T12:48:35+01:00"
+      "fetched_at": "2026-11-11T12:48:35+01:00",
+      "vote_count": 6,
+      "vote_average": 8.333,
+      "statistics_checked_at": "2026-11-11T15:40:22+01:00"
     },
     "1437511": {
       "id": "tmdb:1437511",
@@ -24757,7 +25146,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1437511",
-      "fetched_at": "2026-11-11T12:48:36+01:00"
+      "fetched_at": "2026-11-11T12:48:36+01:00",
+      "vote_count": 2,
+      "vote_average": 9.0,
+      "statistics_checked_at": "2026-11-11T15:40:22+01:00"
     },
     "1291143": {
       "id": "tmdb:1291143",
@@ -25037,7 +25429,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1427833",
-      "fetched_at": "2026-11-11T12:48:36+01:00"
+      "fetched_at": "2026-11-11T12:48:36+01:00",
+      "vote_count": 22,
+      "vote_average": 6.5,
+      "statistics_checked_at": "2026-11-11T15:40:22+01:00"
     },
     "1300968": {
       "id": "tmdb:1300968",
@@ -25654,7 +26049,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1377237",
-      "fetched_at": "2026-11-11T12:48:38+01:00"
+      "fetched_at": "2026-11-11T12:48:38+01:00",
+      "vote_count": 827,
+      "vote_average": 8.24,
+      "statistics_checked_at": "2026-11-11T15:40:23+01:00"
     },
     "1393326": {
       "id": "tmdb:1393326",
@@ -25905,7 +26303,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1393326",
-      "fetched_at": "2026-11-11T12:48:39+01:00"
+      "fetched_at": "2026-11-11T12:48:39+01:00",
+      "vote_count": 117,
+      "vote_average": 6.8,
+      "statistics_checked_at": "2026-11-11T15:40:24+01:00"
     },
     "1679600": {
       "id": "tmdb:1679600",
@@ -26012,7 +26413,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1421155",
-      "fetched_at": "2026-11-11T12:48:39+01:00"
+      "fetched_at": "2026-11-11T12:48:39+01:00",
+      "vote_count": 13,
+      "vote_average": 6.7,
+      "statistics_checked_at": "2026-11-11T15:40:24+01:00"
     },
     "879": {
       "id": "tmdb:879",
@@ -26277,7 +26681,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/879",
-      "fetched_at": "2026-11-11T12:48:40+01:00"
+      "fetched_at": "2026-11-11T12:48:40+01:00",
+      "vote_count": 5953,
+      "vote_average": 6.844,
+      "statistics_checked_at": "2026-11-11T15:40:24+01:00"
     },
     "748819": {
       "id": "tmdb:748819",
@@ -26507,7 +26914,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1408",
-      "fetched_at": "2026-11-11T12:48:41+01:00"
+      "fetched_at": "2026-11-11T12:48:41+01:00",
+      "vote_count": 663,
+      "vote_average": 5.803,
+      "statistics_checked_at": "2026-11-11T15:40:24+01:00"
     },
     "22": {
       "id": "tmdb:22",
@@ -26908,7 +27318,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/22",
-      "fetched_at": "2026-11-11T12:48:42+01:00"
+      "fetched_at": "2026-11-11T12:48:42+01:00",
+      "vote_count": 23076,
+      "vote_average": 7.838,
+      "statistics_checked_at": "2026-11-11T15:40:25+01:00"
     },
     "1003596": {
       "id": "tmdb:1003596",
@@ -27214,7 +27627,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1003596",
-      "fetched_at": "2026-11-11T12:48:42+01:00"
+      "fetched_at": "2026-11-11T12:48:42+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:26+01:00"
     },
     "1820088": {
       "id": "tmdb:1820088",
@@ -27779,7 +28195,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1248832",
-      "fetched_at": "2026-11-11T12:48:43+01:00"
+      "fetched_at": "2026-11-11T12:48:43+01:00",
+      "vote_count": 511,
+      "vote_average": 7.5,
+      "statistics_checked_at": "2026-11-11T15:40:28+01:00"
     },
     "656272": {
       "id": "tmdb:656272",
@@ -28283,7 +28702,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1281331",
-      "fetched_at": "2026-11-11T12:48:44+01:00"
+      "fetched_at": "2026-11-11T12:48:44+01:00",
+      "vote_count": 140,
+      "vote_average": 7.0,
+      "statistics_checked_at": "2026-11-11T15:40:28+01:00"
     },
     "818192": {
       "id": "tmdb:818192",
@@ -28411,7 +28833,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1547311",
-      "fetched_at": "2026-11-11T12:48:45+01:00"
+      "fetched_at": "2026-11-11T12:48:45+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:29+01:00"
     },
     "677979": {
       "id": "tmdb:677979",
@@ -28889,7 +29314,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1564614",
-      "fetched_at": "2026-11-11T12:48:46+01:00"
+      "fetched_at": "2026-11-11T12:48:46+01:00",
+      "vote_count": 652,
+      "vote_average": 6.8,
+      "statistics_checked_at": "2026-11-11T15:40:29+01:00"
     },
     "1050676": {
       "id": "tmdb:1050676",
@@ -29287,7 +29715,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1195803",
-      "fetched_at": "2026-11-11T12:48:47+01:00"
+      "fetched_at": "2026-11-11T12:48:47+01:00",
+      "vote_count": 44,
+      "vote_average": 7.557,
+      "statistics_checked_at": "2026-11-11T15:40:29+01:00"
     },
     "11208": {
       "id": "tmdb:11208",
@@ -30196,7 +30627,10 @@
       "aliases": [],
       "releases": [],
       "source_url": "https://www.themoviedb.org/movie/1736729",
-      "fetched_at": "2026-11-11T12:48:50+01:00"
+      "fetched_at": "2026-11-11T12:48:50+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:29+01:00"
     },
     "772091": {
       "id": "tmdb:772091",
@@ -30826,7 +31260,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/9764",
-      "fetched_at": "2026-11-11T12:48:52+01:00"
+      "fetched_at": "2026-11-11T12:48:52+01:00",
+      "vote_count": 668,
+      "vote_average": 7.926,
+      "statistics_checked_at": "2026-11-11T15:40:30+01:00"
     },
     "754671": {
       "id": "tmdb:754671",
@@ -31719,7 +32156,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/748681",
-      "fetched_at": "2026-11-11T12:48:55+01:00"
+      "fetched_at": "2026-11-11T12:48:55+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:30+01:00"
     },
     "166528": {
       "id": "tmdb:166528",
@@ -32175,7 +32615,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1596326",
-      "fetched_at": "2026-11-11T12:48:56+01:00"
+      "fetched_at": "2026-11-11T12:48:56+01:00",
+      "vote_count": 1,
+      "vote_average": 8.0,
+      "statistics_checked_at": "2026-11-11T15:40:38+01:00"
     },
     "1813385": {
       "id": "tmdb:1813385",
@@ -32384,7 +32827,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1783255",
-      "fetched_at": "2026-11-11T12:48:59+01:00"
+      "fetched_at": "2026-11-11T12:48:59+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:38+01:00"
     },
     "53522": {
       "id": "tmdb:53522",
@@ -32553,7 +32999,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1643070",
-      "fetched_at": "2026-11-11T12:49:00+01:00"
+      "fetched_at": "2026-11-11T12:49:00+01:00",
+      "vote_count": 1,
+      "vote_average": 6.0,
+      "statistics_checked_at": "2026-11-11T15:40:39+01:00"
     },
     "738521": {
       "id": "tmdb:738521",
@@ -32700,7 +33149,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1461893",
-      "fetched_at": "2026-11-11T12:49:01+01:00"
+      "fetched_at": "2026-11-11T12:49:01+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:39+01:00"
     },
     "1813387": {
       "id": "tmdb:1813387",
@@ -32716,7 +33168,10 @@
       "aliases": [],
       "releases": [],
       "source_url": "https://www.themoviedb.org/movie/1813387",
-      "fetched_at": "2026-11-11T12:49:02+01:00"
+      "fetched_at": "2026-11-11T12:49:02+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:39+01:00"
     },
     "209256": {
       "id": "tmdb:209256",
@@ -32763,7 +33218,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1429768",
-      "fetched_at": "2026-11-11T12:49:03+01:00"
+      "fetched_at": "2026-11-11T12:49:03+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:39+01:00"
     },
     "1385540": {
       "id": "tmdb:1385540",
@@ -33722,7 +34180,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1417935",
-      "fetched_at": "2026-11-11T12:49:06+01:00"
+      "fetched_at": "2026-11-11T12:49:06+01:00",
+      "vote_count": 4,
+      "vote_average": 6.0,
+      "statistics_checked_at": "2026-11-11T15:40:40+01:00"
     },
     "41651": {
       "id": "tmdb:41651",
@@ -33863,7 +34324,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1596315",
-      "fetched_at": "2026-11-11T12:49:07+01:00"
+      "fetched_at": "2026-11-11T12:49:07+01:00",
+      "vote_count": 2,
+      "vote_average": 8.5,
+      "statistics_checked_at": "2026-11-11T15:40:40+01:00"
     },
     "399570": {
       "id": "tmdb:399570",
@@ -34027,7 +34491,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/324064",
-      "fetched_at": "2026-11-11T12:49:08+01:00"
+      "fetched_at": "2026-11-11T12:49:08+01:00",
+      "vote_count": 16,
+      "vote_average": 5.9,
+      "statistics_checked_at": "2026-11-11T15:40:40+01:00"
     },
     "767159": {
       "id": "tmdb:767159",
@@ -34265,7 +34732,10 @@
       "aliases": [],
       "releases": [],
       "source_url": "https://www.themoviedb.org/movie/1812741",
-      "fetched_at": "2026-11-11T12:49:10+01:00"
+      "fetched_at": "2026-11-11T12:49:10+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:40+01:00"
     },
     "1567485": {
       "id": "tmdb:1567485",
@@ -34287,7 +34757,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1567485",
-      "fetched_at": "2026-11-11T12:49:11+01:00"
+      "fetched_at": "2026-11-11T12:49:11+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:40+01:00"
     },
     "72808": {
       "id": "tmdb:72808",
@@ -34562,7 +35035,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1677612",
-      "fetched_at": "2026-11-11T12:49:13+01:00"
+      "fetched_at": "2026-11-11T12:49:13+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:41+01:00"
     },
     "1532455": {
       "id": "tmdb:1532455",
@@ -34673,7 +35149,10 @@
       "aliases": [],
       "releases": [],
       "source_url": "https://www.themoviedb.org/movie/1658250",
-      "fetched_at": "2026-11-11T12:49:14+01:00"
+      "fetched_at": "2026-11-11T12:49:14+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:41+01:00"
     },
     "1251455": {
       "id": "tmdb:1251455",
@@ -34704,7 +35183,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1251455",
-      "fetched_at": "2026-11-11T12:49:14+01:00"
+      "fetched_at": "2026-11-11T12:49:14+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:41+01:00"
     },
     "1326868": {
       "id": "tmdb:1326868",
@@ -34728,7 +35210,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1326868",
-      "fetched_at": "2026-11-11T12:49:15+01:00"
+      "fetched_at": "2026-11-11T12:49:15+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:42+01:00"
     },
     "1300610": {
       "id": "tmdb:1300610",
@@ -34762,7 +35247,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1300610",
-      "fetched_at": "2026-11-11T12:49:15+01:00"
+      "fetched_at": "2026-11-11T12:49:15+01:00",
+      "vote_count": 1,
+      "vote_average": 7.0,
+      "statistics_checked_at": "2026-11-11T15:40:42+01:00"
     },
     "149657": {
       "id": "tmdb:149657",
@@ -36294,7 +36782,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1176962",
-      "fetched_at": "2026-11-11T12:49:17+01:00"
+      "fetched_at": "2026-11-11T12:49:17+01:00",
+      "vote_count": 65,
+      "vote_average": 7.6,
+      "statistics_checked_at": "2026-11-11T15:40:42+01:00"
     },
     "624407": {
       "id": "tmdb:624407",
@@ -36583,7 +37074,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1465974",
-      "fetched_at": "2026-11-11T12:49:18+01:00"
+      "fetched_at": "2026-11-11T12:49:18+01:00",
+      "vote_count": 1,
+      "vote_average": 10.0,
+      "statistics_checked_at": "2026-11-11T15:40:42+01:00"
     },
     "1483077": {
       "id": "tmdb:1483077",
@@ -36645,7 +37139,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1755943",
-      "fetched_at": "2026-11-11T12:49:19+01:00"
+      "fetched_at": "2026-11-11T12:49:19+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:43+01:00"
     },
     "601569": {
       "id": "tmdb:601569",
@@ -36941,7 +37438,10 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1523438",
       "fetched_at": "2026-11-11T12:49:21+01:00",
-      "translations_checked": true
+      "translations_checked": true,
+      "vote_count": 1,
+      "vote_average": 4.5,
+      "statistics_checked_at": "2026-11-11T15:40:43+01:00"
     },
     "1430250": {
       "id": "tmdb:1430250",
@@ -37108,7 +37608,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/355122",
-      "fetched_at": "2026-11-11T12:49:23+01:00"
+      "fetched_at": "2026-11-11T12:49:23+01:00",
+      "vote_count": 4,
+      "vote_average": 8.2,
+      "statistics_checked_at": "2026-11-11T15:40:43+01:00"
     },
     "1615764": {
       "id": "tmdb:1615764",
@@ -37152,7 +37655,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1615764",
-      "fetched_at": "2026-11-11T12:49:23+01:00"
+      "fetched_at": "2026-11-11T12:49:23+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:43+01:00"
     },
     "593744": {
       "id": "tmdb:593744",
@@ -37269,7 +37775,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1561574",
-      "fetched_at": "2026-11-11T12:49:24+01:00"
+      "fetched_at": "2026-11-11T12:49:24+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:44+01:00"
     },
     "1740884": {
       "id": "tmdb:1740884",
@@ -37296,7 +37805,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1740884",
-      "fetched_at": "2026-11-11T12:49:25+01:00"
+      "fetched_at": "2026-11-11T12:49:25+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:44+01:00"
     },
     "1805163": {
       "id": "tmdb:1805163",
@@ -37318,7 +37830,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1805163",
-      "fetched_at": "2026-11-11T12:49:25+01:00"
+      "fetched_at": "2026-11-11T12:49:25+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:44+01:00"
     },
     "972731": {
       "id": "tmdb:972731",
@@ -37491,7 +38006,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1443239",
-      "fetched_at": "2026-11-11T12:49:27+01:00"
+      "fetched_at": "2026-11-11T12:49:27+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:44+01:00"
     },
     "1721367": {
       "id": "tmdb:1721367",
@@ -37715,7 +38233,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1623608",
-      "fetched_at": "2026-11-11T12:49:29+01:00"
+      "fetched_at": "2026-11-11T12:49:29+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:44+01:00"
     },
     "1432596": {
       "id": "tmdb:1432596",
@@ -37983,7 +38504,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1432596",
-      "fetched_at": "2026-11-11T12:49:29+01:00"
+      "fetched_at": "2026-11-11T12:49:29+01:00",
+      "vote_count": 87,
+      "vote_average": 7.6,
+      "statistics_checked_at": "2026-11-11T15:40:45+01:00"
     },
     "1368519": {
       "id": "tmdb:1368519",
@@ -38032,7 +38556,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1368519",
-      "fetched_at": "2026-11-11T12:49:30+01:00"
+      "fetched_at": "2026-11-11T12:49:30+01:00",
+      "vote_count": 99,
+      "vote_average": 6.7,
+      "statistics_checked_at": "2026-11-11T15:40:45+01:00"
     },
     "1023733": {
       "id": "tmdb:1023733",
@@ -38636,7 +39163,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/964849",
-      "fetched_at": "2026-11-11T12:49:34+01:00"
+      "fetched_at": "2026-11-11T12:49:34+01:00",
+      "vote_count": 174,
+      "vote_average": 5.902,
+      "statistics_checked_at": "2026-11-11T15:40:45+01:00"
     },
     "744263": {
       "id": "tmdb:744263",
@@ -38875,7 +39405,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/76804",
-      "fetched_at": "2026-11-11T12:49:36+01:00"
+      "fetched_at": "2026-11-11T12:49:36+01:00",
+      "vote_count": 89,
+      "vote_average": 6.9,
+      "statistics_checked_at": "2026-11-11T15:40:45+01:00"
     },
     "1447888": {
       "id": "tmdb:1447888",
@@ -39886,7 +40419,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/11470",
-      "fetched_at": "2026-11-11T12:49:38+01:00"
+      "fetched_at": "2026-11-11T12:49:38+01:00",
+      "vote_count": 1600,
+      "vote_average": 4.87,
+      "statistics_checked_at": "2026-11-11T15:40:46+01:00"
     },
     "1288955": {
       "id": "tmdb:1288955",
@@ -40302,7 +40838,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/21484",
-      "fetched_at": "2026-11-11T12:49:40+01:00"
+      "fetched_at": "2026-11-11T12:49:40+01:00",
+      "vote_count": 1508,
+      "vote_average": 7.3,
+      "statistics_checked_at": "2026-11-11T15:40:46+01:00"
     },
     "416079": {
       "id": "tmdb:416079",
@@ -40744,7 +41283,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/33172",
-      "fetched_at": "2026-11-11T12:49:42+01:00"
+      "fetched_at": "2026-11-11T12:49:42+01:00",
+      "vote_count": 113,
+      "vote_average": 5.221,
+      "statistics_checked_at": "2026-11-11T15:40:46+01:00"
     },
     "70247": {
       "id": "tmdb:70247",
@@ -41197,7 +41739,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/46885",
-      "fetched_at": "2026-11-11T12:49:46+01:00"
+      "fetched_at": "2026-11-11T12:49:46+01:00",
+      "vote_count": 127,
+      "vote_average": 5.453,
+      "statistics_checked_at": "2026-11-11T15:40:46+01:00"
     },
     "10016": {
       "id": "tmdb:10016",
@@ -41313,7 +41858,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/10016",
-      "fetched_at": "2026-11-11T12:49:47+01:00"
+      "fetched_at": "2026-11-11T12:49:47+01:00",
+      "vote_count": 1323,
+      "vote_average": 5.149,
+      "statistics_checked_at": "2026-11-11T15:40:46+01:00"
     },
     "336782": {
       "id": "tmdb:336782",
@@ -41335,7 +41883,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/336782",
-      "fetched_at": "2026-11-11T12:49:47+01:00"
+      "fetched_at": "2026-11-11T12:49:47+01:00",
+      "vote_count": 4,
+      "vote_average": 8.1,
+      "statistics_checked_at": "2026-11-11T15:40:48+01:00"
     },
     "1384434": {
       "id": "tmdb:1384434",
@@ -41703,7 +42254,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1458914",
-      "fetched_at": "2026-11-11T12:49:49+01:00"
+      "fetched_at": "2026-11-11T12:49:49+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:48+01:00"
     },
     "1783208": {
       "id": "tmdb:1783208",
@@ -41862,7 +42416,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1151260",
-      "fetched_at": "2026-11-11T12:49:50+01:00"
+      "fetched_at": "2026-11-11T12:49:50+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:48+01:00"
     },
     "2193": {
       "id": "tmdb:2193",
@@ -42412,7 +42969,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1362262",
-      "fetched_at": "2026-11-11T12:49:51+01:00"
+      "fetched_at": "2026-11-11T12:49:51+01:00",
+      "vote_count": 5,
+      "vote_average": 7.2,
+      "statistics_checked_at": "2026-11-11T15:40:48+01:00"
     },
     "1025407": {
       "id": "tmdb:1025407",
@@ -42499,7 +43059,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1025407",
-      "fetched_at": "2026-11-11T12:49:52+01:00"
+      "fetched_at": "2026-11-11T12:49:52+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:49+01:00"
     },
     "1661926": {
       "id": "tmdb:1661926",
@@ -42938,7 +43501,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1316999",
-      "fetched_at": "2026-11-11T12:49:53+01:00"
+      "fetched_at": "2026-11-11T12:49:53+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:49+01:00"
     },
     "53370": {
       "id": "tmdb:53370",
@@ -43413,7 +43979,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1651231",
-      "fetched_at": "2026-11-11T12:49:57+01:00"
+      "fetched_at": "2026-11-11T12:49:57+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:49+01:00"
     },
     "1393615": {
       "id": "tmdb:1393615",
@@ -43563,7 +44132,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1393615",
-      "fetched_at": "2026-11-11T12:49:58+01:00"
+      "fetched_at": "2026-11-11T12:49:58+01:00",
+      "vote_count": 7,
+      "vote_average": 8.0,
+      "statistics_checked_at": "2026-11-11T15:40:49+01:00"
     },
     "1522183": {
       "id": "tmdb:1522183",
@@ -43702,7 +44274,10 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1522183",
       "fetched_at": "2026-11-11T12:49:58+01:00",
-      "translations_checked": true
+      "translations_checked": true,
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:50+01:00"
     },
     "1084814": {
       "id": "tmdb:1084814",
@@ -43798,7 +44373,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1084814",
-      "fetched_at": "2026-11-11T12:49:58+01:00"
+      "fetched_at": "2026-11-11T12:49:58+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-11T15:40:50+01:00"
     },
     "99": {
       "id": "tmdb:99",
@@ -43989,7 +44567,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/99",
-      "fetched_at": "2026-11-11T12:54:12+01:00"
+      "fetched_at": "2026-11-11T12:54:12+01:00",
+      "vote_count": 2142,
+      "vote_average": 7.6,
+      "statistics_checked_at": "2026-11-11T15:40:29+01:00"
     },
     "1444301": {
       "id": "tmdb:1444301",
@@ -44154,7 +44735,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/22596",
-      "fetched_at": "2026-11-11T12:54:14+01:00"
+      "fetched_at": "2026-11-11T12:54:14+01:00",
+      "vote_count": 614,
+      "vote_average": 7.743,
+      "statistics_checked_at": "2026-11-11T15:40:30+01:00"
     },
     "1123085": {
       "id": "tmdb:1123085",
@@ -44247,6 +44831,5899 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/239201",
       "fetched_at": "2026-11-11T12:54:14+01:00"
+    },
+    "1368337": {
+      "id": "tmdb:1368337",
+      "tmdb_id": 1368337,
+      "title": "La Odisea",
+      "original_title": "The Odyssey",
+      "year": 2026,
+      "director": "Christopher Nolan",
+      "directors": [
+        "Christopher Nolan"
+      ],
+      "runtime": 173,
+      "aliases": [
+        "L'Odyssée",
+        "La Odisea",
+        "Odisseya",
+        "Odisėja",
+        "Odysseen",
+        "The Odyssey",
+        "Οδύσσεια",
+        "Адысея",
+        "האודיסיאה",
+        "ادیسه",
+        "دی اوڈیسی",
+        "ओडिसी",
+        "দ্য অডিচি",
+        "দ্য ওডিসি",
+        "奧德賽"
+      ],
+      "releases": [
+        {
+          "country": "AE",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "AG",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "AL",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "AM",
+          "type": 3,
+          "date": "2026-07-23"
+        },
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "AT",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "AW",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "AZ",
+          "type": 3,
+          "date": "2026-07-23"
+        },
+        {
+          "country": "BA",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "BD",
+          "type": 3,
+          "date": "2026-07-17"
+        },
+        {
+          "country": "BE",
+          "type": 3,
+          "date": "2026-07-15"
+        },
+        {
+          "country": "BG",
+          "type": 3,
+          "date": "2026-07-17"
+        },
+        {
+          "country": "BH",
+          "type": 3,
+          "date": "2026-07-15"
+        },
+        {
+          "country": "BO",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "BR",
+          "type": 4,
+          "date": "2026-11-18"
+        },
+        {
+          "country": "BY",
+          "type": 3,
+          "date": "2026-07-25"
+        },
+        {
+          "country": "CA",
+          "type": 3,
+          "date": "2026-07-17"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "2026-07-15"
+        },
+        {
+          "country": "CL",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "CN",
+          "type": 1,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "CN",
+          "type": 2,
+          "date": "2026-08-01"
+        },
+        {
+          "country": "CN",
+          "type": 3,
+          "date": "2026-08-14"
+        },
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "EE",
+          "type": 3,
+          "date": "2026-07-17"
+        },
+        {
+          "country": "EG",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2026-07-17"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "2026-07-17"
+        },
+        {
+          "country": "FO",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "FR",
+          "type": 1,
+          "date": "2026-07-08"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2026-07-15"
+        },
+        {
+          "country": "GB",
+          "type": 1,
+          "date": "2026-07-06"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2026-07-17"
+        },
+        {
+          "country": "GE",
+          "type": 3,
+          "date": "2026-07-23"
+        },
+        {
+          "country": "GP",
+          "type": 3,
+          "date": "2026-07-15"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "GT",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "GY",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "HK",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "HN",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "HR",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "HU",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "ID",
+          "type": 3,
+          "date": "2026-07-15"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "2026-07-17"
+        },
+        {
+          "country": "IL",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "IL",
+          "type": 4,
+          "date": "2026-11-18"
+        },
+        {
+          "country": "IN",
+          "type": 1,
+          "date": "2026-07-10"
+        },
+        {
+          "country": "IN",
+          "type": 3,
+          "date": "2026-07-17"
+        },
+        {
+          "country": "IQ",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "IS",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "2026-09-11"
+        },
+        {
+          "country": "KH",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "KN",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2026-08-05"
+        },
+        {
+          "country": "KW",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "KZ",
+          "type": 3,
+          "date": "2026-07-23"
+        },
+        {
+          "country": "LA",
+          "type": 3,
+          "date": "2026-07-15"
+        },
+        {
+          "country": "LC",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "LI",
+          "type": 1,
+          "date": "2026-08-01"
+        },
+        {
+          "country": "LK",
+          "type": 3,
+          "date": "2026-07-17"
+        },
+        {
+          "country": "LT",
+          "type": 3,
+          "date": "2026-07-17"
+        },
+        {
+          "country": "LU",
+          "type": 3,
+          "date": "2026-07-17"
+        },
+        {
+          "country": "LV",
+          "type": 3,
+          "date": "2026-07-15"
+        },
+        {
+          "country": "ME",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "MN",
+          "type": 3,
+          "date": "2026-07-17"
+        },
+        {
+          "country": "MO",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "MT",
+          "type": 3,
+          "date": "2026-07-17"
+        },
+        {
+          "country": "MX",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "MY",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "NI",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "NO",
+          "type": 3,
+          "date": "2026-07-17"
+        },
+        {
+          "country": "NP",
+          "type": 3,
+          "date": "2026-07-17"
+        },
+        {
+          "country": "NZ",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "OM",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "PA",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "PE",
+          "type": 1,
+          "date": "2026-08-14"
+        },
+        {
+          "country": "PE",
+          "type": 3,
+          "date": "2026-07-17"
+        },
+        {
+          "country": "PH",
+          "type": 3,
+          "date": "2026-07-15"
+        },
+        {
+          "country": "PH",
+          "type": 4,
+          "date": "2026-11-18"
+        },
+        {
+          "country": "PK",
+          "type": 3,
+          "date": "2026-07-17"
+        },
+        {
+          "country": "PL",
+          "type": 3,
+          "date": "2026-07-17"
+        },
+        {
+          "country": "PR",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "QA",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "RS",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "SA",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "2026-07-17"
+        },
+        {
+          "country": "SG",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "SI",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "SK",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "TH",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "TR",
+          "type": 3,
+          "date": "2026-07-17"
+        },
+        {
+          "country": "TT",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "TW",
+          "type": 3,
+          "date": "2026-07-17"
+        },
+        {
+          "country": "UA",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2026-07-14"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2026-07-17"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2026-11-17"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2026-11-17"
+        },
+        {
+          "country": "UZ",
+          "type": 3,
+          "date": "2026-07-23"
+        },
+        {
+          "country": "VN",
+          "type": 3,
+          "date": "2026-07-17"
+        },
+        {
+          "country": "XK",
+          "type": 3,
+          "date": "2026-07-16"
+        },
+        {
+          "country": "ZA",
+          "type": 3,
+          "date": "2026-07-17"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1368337",
+      "fetched_at": "2026-11-11T15:40:31+01:00",
+      "vote_count": 4612,
+      "vote_average": 8.019,
+      "statistics_checked_at": "2026-11-11T15:40:32+01:00"
+    },
+    "1698863": {
+      "id": "tmdb:1698863",
+      "tmdb_id": 1698863,
+      "title": "La odisea",
+      "original_title": "The Odyssey",
+      "year": 2026,
+      "director": "Marcel Walz",
+      "directors": [
+        "Marcel Walz"
+      ],
+      "runtime": 86,
+      "aliases": [
+        "Odisseya",
+        "奧德賽傳說"
+      ],
+      "releases": [
+        {
+          "country": "ES",
+          "type": 4,
+          "date": "2026-07-03"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2026-07-03"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1698863",
+      "fetched_at": "2026-11-11T15:40:31+01:00"
+    },
+    "596054": {
+      "id": "tmdb:596054",
+      "tmdb_id": 596054,
+      "title": "La odisea de los giles",
+      "original_title": "La odisea de los giles",
+      "year": 2019,
+      "director": "Sebastián Borensztein",
+      "directors": [
+        "Sebastián Borensztein"
+      ],
+      "runtime": 118,
+      "aliases": [
+        "A Odisseia dos Tontos",
+        "Balekok a pácban",
+        "Criminales como nosotros - Glorreiche Verlierer",
+        "Criminali come noi",
+        "Glorreiche Verlierer",
+        "Heroic Losers",
+        "Kahramanca Kaybedenler",
+        "Les Z-Héros",
+        "Les losers héroïques",
+        "Pechowi szczęściarze",
+        "Ηρωικά χαμένοι",
+        "Героические лузеры",
+        "Героични каръци",
+        "Одиссея полудурков",
+        "明日に向かって笑え！",
+        "英勇废柴",
+        "英雄主义败类"
+      ],
+      "releases": [
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "2019-08-15"
+        },
+        {
+          "country": "AU",
+          "type": 1,
+          "date": "2021-04-20"
+        },
+        {
+          "country": "AU",
+          "type": 5,
+          "date": "2021-10-04"
+        },
+        {
+          "country": "BR",
+          "type": 1,
+          "date": "2019-10-28"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2019-10-31"
+        },
+        {
+          "country": "CA",
+          "type": 1,
+          "date": "2019-09-08"
+        },
+        {
+          "country": "CA",
+          "type": 3,
+          "date": "2021-07-09"
+        },
+        {
+          "country": "DE",
+          "type": 4,
+          "date": "2020-11-26"
+        },
+        {
+          "country": "ES",
+          "type": 1,
+          "date": "2019-09-21"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2019-11-29"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2020-08-06"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2020-02-20"
+        },
+        {
+          "country": "JP",
+          "type": 4,
+          "date": "2021-08-06"
+        },
+        {
+          "country": "PL",
+          "type": 4,
+          "date": "2020-05-14"
+        },
+        {
+          "country": "RU",
+          "type": 3,
+          "date": "2020-04-09"
+        },
+        {
+          "country": "UY",
+          "type": 3,
+          "date": "2019-08-22"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/596054",
+      "fetched_at": "2026-11-11T15:40:31+01:00"
+    },
+    "777011": {
+      "id": "tmdb:777011",
+      "tmdb_id": 777011,
+      "title": "La odisea de Vasi",
+      "original_title": "La odisea de Vasi",
+      "year": 2020,
+      "director": "Vasileios Papatheocharis",
+      "directors": [
+        "Vasileios Papatheocharis"
+      ],
+      "runtime": 104,
+      "aliases": [
+        "La Odisea de Vasi"
+      ],
+      "releases": [
+        {
+          "country": "GR",
+          "type": 1,
+          "date": "2020-11-13"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/777011",
+      "fetched_at": "2026-11-11T15:40:31+01:00"
+    },
+    "1269665": {
+      "id": "tmdb:1269665",
+      "tmdb_id": 1269665,
+      "title": "La Odisea de Kamatsu",
+      "original_title": "La Odisea de Kamatsu",
+      "year": 2024,
+      "director": "Leo Liberman, Sofía López Mañán",
+      "directors": [
+        "Leo Liberman",
+        "Sofía López Mañán"
+      ],
+      "runtime": 60,
+      "aliases": [],
+      "releases": [
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "2024-04-21"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1269665",
+      "fetched_at": "2026-11-11T15:40:31+01:00"
+    },
+    "999140": {
+      "id": "tmdb:999140",
+      "tmdb_id": 999140,
+      "title": "La odisea de Dandelion",
+      "original_title": "Planètes",
+      "year": 2026,
+      "director": "Momoko Seto",
+      "directors": [
+        "Momoko Seto"
+      ],
+      "runtime": 75,
+      "aliases": [
+        "El Gran Viaje",
+        "행성들"
+      ],
+      "releases": [
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "2026-07-23"
+        },
+        {
+          "country": "AU",
+          "type": 1,
+          "date": "2025-11-27"
+        },
+        {
+          "country": "CA",
+          "type": 1,
+          "date": "2025-09-04"
+        },
+        {
+          "country": "CH",
+          "type": 1,
+          "date": "2025-10-01"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "2026-03-12"
+        },
+        {
+          "country": "CN",
+          "type": 1,
+          "date": "2025-09-24"
+        },
+        {
+          "country": "CO",
+          "type": 3,
+          "date": "2026-07-23"
+        },
+        {
+          "country": "EG",
+          "type": 1,
+          "date": "2025-11-19"
+        },
+        {
+          "country": "FR",
+          "type": 1,
+          "date": "2025-05-21"
+        },
+        {
+          "country": "FR",
+          "type": 1,
+          "date": "2025-06-09"
+        },
+        {
+          "country": "FR",
+          "type": 1,
+          "date": "2025-01-23"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2026-03-11"
+        },
+        {
+          "country": "HK",
+          "type": 1,
+          "date": "2026-08-22"
+        },
+        {
+          "country": "ID",
+          "type": 1,
+          "date": "2025-10-01"
+        },
+        {
+          "country": "KR",
+          "type": 1,
+          "date": "2025-10-25"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2026-04-30"
+        },
+        {
+          "country": "NZ",
+          "type": 1,
+          "date": "2026-03-19"
+        },
+        {
+          "country": "PA",
+          "type": 3,
+          "date": "2026-08-06"
+        },
+        {
+          "country": "SG",
+          "type": 1,
+          "date": "2026-10-11"
+        },
+        {
+          "country": "TW",
+          "type": 1,
+          "date": "2025-11-09"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/999140",
+      "fetched_at": "2026-11-11T15:40:32+01:00"
+    },
+    "1263337": {
+      "id": "tmdb:1263337",
+      "tmdb_id": 1263337,
+      "title": "En el corazón de la bestia",
+      "original_title": "Heart of the Beast",
+      "year": 2026,
+      "director": "David Ayer",
+      "directors": [
+        "David Ayer"
+      ],
+      "runtime": 101,
+      "aliases": [
+        "Au cœur de la bête",
+        "Coração Selvagem",
+        "El corazon de la bestia",
+        "Heart of the Beast - Heróis Inseparáveis",
+        "Skarbās zemes sirdī",
+        "V srdci divočiny",
+        "Vahşetin Kalbi",
+        "W sercu dziczy",
+        "หัวใจผจญไพร",
+        "狂野雄心"
+      ],
+      "releases": [
+        {
+          "country": "AE",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "AR",
+          "type": 1,
+          "date": "2026-09-23"
+        },
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "AT",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "AZ",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "BE",
+          "type": 3,
+          "date": "2026-09-23"
+        },
+        {
+          "country": "BG",
+          "type": 3,
+          "date": "2026-09-25"
+        },
+        {
+          "country": "BH",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "CA",
+          "type": 3,
+          "date": "2026-09-25"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "2026-09-30"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "CL",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "CN",
+          "type": 3,
+          "date": "2026-09-30"
+        },
+        {
+          "country": "CO",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "EC",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "EE",
+          "type": 3,
+          "date": "2026-09-25"
+        },
+        {
+          "country": "ES",
+          "type": 1,
+          "date": "2026-09-22"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2026-09-25"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "2026-09-25"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2026-09-23"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2026-09-23"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "GT",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "HK",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "HU",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "ID",
+          "type": 3,
+          "date": "2026-09-23"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "2026-09-23"
+        },
+        {
+          "country": "IL",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "IL",
+          "type": 4,
+          "date": "2026-11-23"
+        },
+        {
+          "country": "IN",
+          "type": 3,
+          "date": "2026-09-25"
+        },
+        {
+          "country": "IQ",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "2026-09-25"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2026-10-28"
+        },
+        {
+          "country": "KW",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "KZ",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "LU",
+          "type": 3,
+          "date": "2026-09-23"
+        },
+        {
+          "country": "LV",
+          "type": 3,
+          "date": "2026-09-25"
+        },
+        {
+          "country": "MO",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "MX",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "MY",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "NO",
+          "type": 3,
+          "date": "2026-09-25"
+        },
+        {
+          "country": "NZ",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "OM",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "PE",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "PH",
+          "type": 3,
+          "date": "2026-09-23"
+        },
+        {
+          "country": "PL",
+          "type": 3,
+          "date": "2026-09-25"
+        },
+        {
+          "country": "PR",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "PY",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "QA",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "RO",
+          "type": 2,
+          "date": "2026-09-19"
+        },
+        {
+          "country": "SA",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "2026-09-25"
+        },
+        {
+          "country": "SG",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "SK",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "TH",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "TR",
+          "type": 3,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "TW",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "UA",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2026-09-25"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2026-11-10"
+        },
+        {
+          "country": "UY",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "VN",
+          "type": 3,
+          "date": "2026-09-25"
+        },
+        {
+          "country": "ZA",
+          "type": 3,
+          "date": "2026-09-25"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1263337",
+      "fetched_at": "2026-11-11T15:40:32+01:00",
+      "vote_count": 607,
+      "vote_average": 7.4,
+      "statistics_checked_at": "2026-11-11T15:40:33+01:00"
+    },
+    "1283515": {
+      "id": "tmdb:1283515",
+      "tmdb_id": 1283515,
+      "title": "Verity. La sombra de un engaño",
+      "original_title": "Verity",
+      "year": 2026,
+      "director": "Michael Showalter",
+      "directors": [
+        "Michael Showalter"
+      ],
+      "runtime": 117,
+      "aliases": [
+        "Petlik tõde",
+        "Pravda, nebo lež",
+        "Resnica o Verity",
+        "Veritija",
+        "Veritinin gizli gündəliyi",
+        "Verity – Dunkle Geheimnisse",
+        "Verity. Coraz większy mrok",
+        "Verity: Bí Mật Bị Chôn Vùi",
+        "Verity: Gerçeğin Diğer Kıyısı",
+        "Verity: La sombra de un engaño",
+        "Verityn varjo",
+        "Veritė",
+        "Το Ημερολόγιο της Βέριτι",
+        "Верітi",
+        "Վերիթի",
+        "תעתוע",
+        "فيريتي",
+        "وریتی",
+        "ویریٹی",
+        "वेरिटी",
+        "เงื่อนวิปลาส",
+        "ვერიტი",
+        "ヴェリティ／真実",
+        "不存在的罪人",
+        "베러티"
+      ],
+      "releases": [
+        {
+          "country": "AE",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "AZ",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "BE",
+          "type": 3,
+          "date": "2026-09-30"
+        },
+        {
+          "country": "BG",
+          "type": 3,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "BH",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "CA",
+          "type": 3,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "CL",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "CO",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "EC",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "EE",
+          "type": 3,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "FI",
+          "type": 2,
+          "date": "2026-09-30"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "FR",
+          "type": 1,
+          "date": "2026-09-21"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2026-09-30"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "GT",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "HK",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "ID",
+          "type": 3,
+          "date": "2026-09-30"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "IL",
+          "type": 3,
+          "date": "2026-09-30"
+        },
+        {
+          "country": "IN",
+          "type": 3,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "IQ",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "JP",
+          "type": 1,
+          "date": "2026-10-29"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "2026-11-06"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2026-10-22"
+        },
+        {
+          "country": "KZ",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "LT",
+          "type": 3,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "LV",
+          "type": 3,
+          "date": "2026-09-30"
+        },
+        {
+          "country": "MO",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "MX",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "NZ",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "OM",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "PE",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "PH",
+          "type": 3,
+          "date": "2026-09-30"
+        },
+        {
+          "country": "PL",
+          "type": 3,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "PR",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "PY",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "RS",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "SA",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "SG",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "TH",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "TR",
+          "type": 3,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "TW",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "UA",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2026-09-29"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2026-10-27"
+        },
+        {
+          "country": "VN",
+          "type": 3,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "ZA",
+          "type": 3,
+          "date": "2026-10-02"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1283515",
+      "fetched_at": "2026-11-11T15:40:33+01:00",
+      "vote_count": 663,
+      "vote_average": 7.003,
+      "statistics_checked_at": "2026-11-11T15:40:33+01:00"
+    },
+    "1400837": {
+      "id": "tmdb:1400837",
+      "tmdb_id": 1400837,
+      "title": "La otra madre",
+      "original_title": "Other Mommy",
+      "year": 2026,
+      "director": "Rob Savage",
+      "directors": [
+        "Rob Savage"
+      ],
+      "runtime": 93,
+      "aliases": [
+        "Autre maman",
+        "Digər Ana",
+        "Druga mama",
+        "Grandma's House",
+        "Incidents Around the House",
+        "La Otra Madre",
+        "Madre Siniestra",
+        "Malfaisante",
+        "Mammina",
+        "Outra Mamãe",
+        "แม่...หลอน",
+        "სხვა დედიკო",
+        "아더 마미"
+      ],
+      "releases": [
+        {
+          "country": "AE",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "2026-10-29"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "AZ",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "BE",
+          "type": 3,
+          "date": "2026-10-07"
+        },
+        {
+          "country": "BG",
+          "type": 3,
+          "date": "2026-10-09"
+        },
+        {
+          "country": "BH",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "BO",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "BZ",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "CA",
+          "type": 3,
+          "date": "2026-10-09"
+        },
+        {
+          "country": "CL",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "CO",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "CR",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "2026-10-29"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2026-10-29"
+        },
+        {
+          "country": "EC",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "EE",
+          "type": 3,
+          "date": "2026-10-09"
+        },
+        {
+          "country": "EG",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2026-10-09"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "2026-10-09"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2026-10-14"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2026-10-09"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "GT",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "HK",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "HN",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "HU",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "ID",
+          "type": 3,
+          "date": "2026-10-07"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "2026-10-09"
+        },
+        {
+          "country": "IL",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "IQ",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "2026-11-20"
+        },
+        {
+          "country": "KH",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2026-11-18"
+        },
+        {
+          "country": "KW",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "KZ",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "LT",
+          "type": 3,
+          "date": "2026-10-30"
+        },
+        {
+          "country": "LV",
+          "type": 3,
+          "date": "2026-10-09"
+        },
+        {
+          "country": "MO",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "MX",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "MY",
+          "type": 3,
+          "date": "2026-10-09"
+        },
+        {
+          "country": "NI",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2026-10-29"
+        },
+        {
+          "country": "NO",
+          "type": 3,
+          "date": "2026-10-09"
+        },
+        {
+          "country": "NZ",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "OM",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "PA",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "PE",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "PH",
+          "type": 3,
+          "date": "2026-10-07"
+        },
+        {
+          "country": "PK",
+          "type": 3,
+          "date": "2026-10-09"
+        },
+        {
+          "country": "PL",
+          "type": 3,
+          "date": "2026-10-23"
+        },
+        {
+          "country": "PR",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "PY",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "QA",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "RS",
+          "type": 3,
+          "date": "2026-10-29"
+        },
+        {
+          "country": "SA",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "2026-10-09"
+        },
+        {
+          "country": "SG",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "SV",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "TH",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "TR",
+          "type": 3,
+          "date": "2026-10-09"
+        },
+        {
+          "country": "TW",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "UA",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2026-10-09"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2026-11-10"
+        },
+        {
+          "country": "UY",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "VE",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "VN",
+          "type": 3,
+          "date": "2026-10-09"
+        },
+        {
+          "country": "ZA",
+          "type": 3,
+          "date": "2026-10-16"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1400837",
+      "fetched_at": "2026-11-11T15:40:34+01:00",
+      "vote_count": 228,
+      "vote_average": 5.805,
+      "statistics_checked_at": "2026-11-11T15:40:34+01:00"
+    },
+    "261463": {
+      "id": "tmdb:261463",
+      "tmdb_id": 261463,
+      "title": "La otra madre",
+      "original_title": "Im falschen Leben",
+      "year": 2011,
+      "director": "Christiane Balthasar",
+      "directors": [
+        "Christiane Balthasar"
+      ],
+      "runtime": 88,
+      "aliases": [],
+      "releases": [
+        {
+          "country": "DE",
+          "type": 6,
+          "date": "2011-11-16"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/261463",
+      "fetched_at": "2026-11-11T15:40:34+01:00"
+    },
+    "87116": {
+      "id": "tmdb:87116",
+      "tmdb_id": 87116,
+      "title": "La otra madre",
+      "original_title": "Visages d'enfants",
+      "year": 1925,
+      "director": "Jacques Feyder",
+      "directors": [
+        "Jacques Feyder"
+      ],
+      "runtime": 114,
+      "aliases": [
+        "A Segunda Mãe",
+        "Alles voor moeder",
+        "Children's Faces",
+        "De av første ekteskap",
+        "Die Stimme des Blutes",
+        "Kindergesichter",
+        "La otra madre",
+        "Le due madri",
+        "Mother",
+        "Nach dem Tode der Mutter",
+        "Saint-Bernard",
+        "Stedbørn",
+        "Twarze dzieci",
+        "Visões de Criança",
+        "Второй брак",
+        "Детские лица"
+      ],
+      "releases": [
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "1925-05-08"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "1925-01-24"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/87116",
+      "fetched_at": "2026-11-11T15:40:34+01:00"
+    },
+    "715758": {
+      "id": "tmdb:715758",
+      "tmdb_id": 715758,
+      "title": "La otra madre",
+      "original_title": "Another Mother",
+      "year": 2020,
+      "director": "Anthony C. Ferrante",
+      "directors": [
+        "Anthony C. Ferrante"
+      ],
+      "runtime": 90,
+      "aliases": [
+        "Stalked by My Husband's Ex",
+        "Stalked by the Killer Ex"
+      ],
+      "releases": [
+        {
+          "country": "FR",
+          "type": 6,
+          "date": "2021-03-08"
+        },
+        {
+          "country": "US",
+          "type": 6,
+          "date": "2020-07-25"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/715758",
+      "fetched_at": "2026-11-11T15:40:34+01:00"
+    },
+    "1423191": {
+      "id": "tmdb:1423191",
+      "tmdb_id": 1423191,
+      "title": "Resident Evil",
+      "original_title": "Resident Evil",
+      "year": 2026,
+      "director": "Zach Cregger",
+      "directors": [
+        "Zach Cregger"
+      ],
+      "runtime": 94,
+      "aliases": [
+        "Absoliutus blogis",
+        "Biohazard",
+        "Resident Evil: Noche cero",
+        "เรสซิเดนท์ อีวิล",
+        "ᱨᱮᱥᱤᱰᱮᱱᱴ ᱤᱵᱷᱟᱞ"
+      ],
+      "releases": [
+        {
+          "country": "AE",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "AG",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "AL",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "AM",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "AR",
+          "type": 2,
+          "date": "2026-10-29"
+        },
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "AT",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "AW",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "AZ",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "BA",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "BB",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "BE",
+          "type": 3,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "BG",
+          "type": 3,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "BH",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "BN",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "BO",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "CA",
+          "type": 3,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "CA",
+          "type": 4,
+          "date": "2026-11-03"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "CL",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "CN",
+          "type": 3,
+          "date": "2026-10-05"
+        },
+        {
+          "country": "CO",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "CR",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "DE",
+          "type": 5,
+          "date": "2027-02-28"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "DO",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "EC",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "EE",
+          "type": 3,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "EG",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "GB",
+          "type": 5,
+          "date": "2026-12-28"
+        },
+        {
+          "country": "GE",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "GH",
+          "type": 3,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "GP",
+          "type": 3,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "GT",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "GY",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "HK",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "HN",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "HR",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "HU",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "ID",
+          "type": 3,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "IL",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "IL",
+          "type": 4,
+          "date": "2026-12-03"
+        },
+        {
+          "country": "IN",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "IQ",
+          "type": 3,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "JM",
+          "type": 3,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "2026-10-09"
+        },
+        {
+          "country": "KE",
+          "type": 3,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "KG",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "KH",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "KN",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "KW",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "KZ",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "LA",
+          "type": 3,
+          "date": "2026-09-23"
+        },
+        {
+          "country": "LC",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "LT",
+          "type": 3,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "LU",
+          "type": 3,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "LV",
+          "type": 3,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "MA",
+          "type": 3,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "ME",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "MM",
+          "type": 3,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "MN",
+          "type": 3,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "MO",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "MT",
+          "type": 3,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "MX",
+          "type": 3,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "MY",
+          "type": 3,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "NI",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "NO",
+          "type": 3,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "NP",
+          "type": 3,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "NZ",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "OM",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "PA",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "PE",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "PH",
+          "type": 3,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "PL",
+          "type": 3,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "PL",
+          "type": 4,
+          "date": "2026-11-03"
+        },
+        {
+          "country": "PR",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "PY",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "QA",
+          "type": 3,
+          "date": "2026-09-19"
+        },
+        {
+          "country": "RO",
+          "type": 3,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "RO",
+          "type": 4,
+          "date": "2026-11-03"
+        },
+        {
+          "country": "RS",
+          "type": 2,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "RS",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "SA",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "SG",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "SI",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "SK",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "SN",
+          "type": 3,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "TH",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "TJ",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "TN",
+          "type": 3,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "TR",
+          "type": 3,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "TT",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "TW",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "UA",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "UG",
+          "type": 3,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2026-11-03"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2026-12-29"
+        },
+        {
+          "country": "UY",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "VE",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "VN",
+          "type": 3,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "XK",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "ZA",
+          "type": 3,
+          "date": "2026-09-23"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1423191",
+      "fetched_at": "2026-11-11T15:40:35+01:00",
+      "vote_count": 2015,
+      "vote_average": 7.5,
+      "statistics_checked_at": "2026-11-11T15:40:36+01:00"
+    },
+    "460458": {
+      "id": "tmdb:460458",
+      "tmdb_id": 460458,
+      "title": "Resident Evil. Bienvenidos a Raccoon City",
+      "original_title": "Resident Evil: Welcome to Raccoon City",
+      "year": 2021,
+      "director": "Johannes Roberts",
+      "directors": [
+        "Johannes Roberts"
+      ],
+      "runtime": 107,
+      "aliases": [
+        "A kaptár - Raccoon City visszavár",
+        "Resident Evil - Welcome to Raccoon City",
+        "Resident Evil: Bienvenidos a Raccoon City",
+        "Resident Evil: Welcome to Raccoon City",
+        "Resident Evil: Καλώς ήλθατε στην Raccoon City",
+        "Vùng Đất Quỷ Dữ: Quỷ Dữ Trỗi Dậy",
+        "Обитель зла: Раккун Сити",
+        "ผีชีวะ: ปฐมบทแห่งเมืองผีดิบ",
+        "恶灵古堡首部曲：拉昆市",
+        "新生化危機",
+        "生化危机：欢迎来到浣熊市",
+        "레지던트 이블: 웰컴 투 라쿤 시티"
+      ],
+      "releases": [
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2021-12-09"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2021-12-02"
+        },
+        {
+          "country": "BR",
+          "type": 4,
+          "date": "2022-01-19"
+        },
+        {
+          "country": "CA",
+          "type": 3,
+          "date": "2021-11-24"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "2021-11-25"
+        },
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "2021-12-02"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2021-11-25"
+        },
+        {
+          "country": "EE",
+          "type": 3,
+          "date": "2021-12-31"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2021-11-26"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2021-11-24"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2022-03-24"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2023-05-04"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2022-03-24"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2021-12-03"
+        },
+        {
+          "country": "GR",
+          "type": 5,
+          "date": "2022-02-09"
+        },
+        {
+          "country": "HU",
+          "type": 3,
+          "date": "2022-01-06"
+        },
+        {
+          "country": "HU",
+          "type": 4,
+          "date": "2022-05-06"
+        },
+        {
+          "country": "HU",
+          "type": 5,
+          "date": "2022-04-08"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "2021-12-03"
+        },
+        {
+          "country": "IN",
+          "type": 3,
+          "date": "2021-11-26"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2021-11-25"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "2022-01-28"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2022-01-19"
+        },
+        {
+          "country": "KZ",
+          "type": 3,
+          "date": "2021-12-02"
+        },
+        {
+          "country": "LT",
+          "type": 3,
+          "date": "2021-12-03"
+        },
+        {
+          "country": "MX",
+          "type": 4,
+          "date": "2021-12-02"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2022-01-20"
+        },
+        {
+          "country": "PL",
+          "type": 4,
+          "date": "2021-12-03"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "2021-12-08"
+        },
+        {
+          "country": "RO",
+          "type": 3,
+          "date": "2021-11-26"
+        },
+        {
+          "country": "RU",
+          "type": 3,
+          "date": "2021-11-25"
+        },
+        {
+          "country": "SG",
+          "type": 3,
+          "date": "2021-12-02"
+        },
+        {
+          "country": "SK",
+          "type": 3,
+          "date": "2021-12-02"
+        },
+        {
+          "country": "TH",
+          "type": 3,
+          "date": "2022-01-27"
+        },
+        {
+          "country": "TR",
+          "type": 3,
+          "date": "2021-12-03"
+        },
+        {
+          "country": "TW",
+          "type": 3,
+          "date": "2021-11-26"
+        },
+        {
+          "country": "UA",
+          "type": 3,
+          "date": "2021-12-02"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2021-11-24"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2021-12-21"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2022-02-08"
+        },
+        {
+          "country": "VN",
+          "type": 3,
+          "date": "2021-12-31"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/460458",
+      "fetched_at": "2026-11-11T15:40:35+01:00"
+    },
+    "1576": {
+      "id": "tmdb:1576",
+      "tmdb_id": 1576,
+      "title": "Resident Evil",
+      "original_title": "Resident Evil",
+      "year": 2002,
+      "director": "Paul W. S. Anderson",
+      "directors": [
+        "Paul W. S. Anderson"
+      ],
+      "runtime": 96,
+      "aliases": [
+        "Biohazard",
+        "El huésped maldito",
+        "Oselya zla",
+        "Pritajeno zlo",
+        "Resident Evil the Movie",
+        "Resident Evil: Genesis",
+        "Resident Evil: Ground Zero",
+        "Răul rezident",
+        "Zarazno zlo",
+        "الشر المقيم",
+        "生化危机1",
+        "레지던트 이블 1"
+      ],
+      "releases": [
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "2002-08-22"
+        },
+        {
+          "country": "AT",
+          "type": 3,
+          "date": "2002-03-22"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2002-04-25"
+        },
+        {
+          "country": "BE",
+          "type": 3,
+          "date": "2002-07-17"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2002-05-30"
+        },
+        {
+          "country": "CA",
+          "type": 3,
+          "date": "2002-03-15"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "2002-05-09"
+        },
+        {
+          "country": "CO",
+          "type": 3,
+          "date": "2002-08-02"
+        },
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "2002-08-15"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2002-03-21"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "2002-07-26"
+        },
+        {
+          "country": "EE",
+          "type": 3,
+          "date": "2002-10-25"
+        },
+        {
+          "country": "EG",
+          "type": 3,
+          "date": "2002-08-28"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2002-06-28"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "2002-05-30"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2002-04-03"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2002-07-12"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2002-05-24"
+        },
+        {
+          "country": "HK",
+          "type": 3,
+          "date": "2002-05-30"
+        },
+        {
+          "country": "HU",
+          "type": 3,
+          "date": "2002-08-22"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "2002-07-12"
+        },
+        {
+          "country": "IL",
+          "type": 3,
+          "date": "2002-12-26"
+        },
+        {
+          "country": "IS",
+          "type": 3,
+          "date": "2002-05-10"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2002-07-05"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "2002-08-31"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2002-06-13"
+        },
+        {
+          "country": "KW",
+          "type": 3,
+          "date": "2003-04-22"
+        },
+        {
+          "country": "KZ",
+          "type": 3,
+          "date": "2002-07-19"
+        },
+        {
+          "country": "MX",
+          "type": 3,
+          "date": "2002-06-14"
+        },
+        {
+          "country": "MY",
+          "type": 3,
+          "date": "2002-03-28"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2002-09-12"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2002-07-17"
+        },
+        {
+          "country": "NO",
+          "type": 3,
+          "date": "2002-05-10"
+        },
+        {
+          "country": "NZ",
+          "type": 3,
+          "date": "2002-05-05"
+        },
+        {
+          "country": "PE",
+          "type": 3,
+          "date": "2002-07-04"
+        },
+        {
+          "country": "PH",
+          "type": 3,
+          "date": "2002-07-03"
+        },
+        {
+          "country": "PH",
+          "type": 3,
+          "date": "2002-05-29"
+        },
+        {
+          "country": "PL",
+          "type": 3,
+          "date": "2002-07-26"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "2002-07-26"
+        },
+        {
+          "country": "RO",
+          "type": 1,
+          "date": "2002-10-24"
+        },
+        {
+          "country": "RU",
+          "type": 3,
+          "date": "2002-07-18"
+        },
+        {
+          "country": "RU",
+          "type": 5,
+          "date": "2009-06-18"
+        },
+        {
+          "country": "RU",
+          "type": 5,
+          "date": "2002-10-15"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "2002-04-10"
+        },
+        {
+          "country": "SE",
+          "type": 5,
+          "date": "2002-11-12"
+        },
+        {
+          "country": "SG",
+          "type": 3,
+          "date": "2002-03-28"
+        },
+        {
+          "country": "SK",
+          "type": 3,
+          "date": "2002-10-10"
+        },
+        {
+          "country": "SK",
+          "type": 6,
+          "date": "2005-07-09"
+        },
+        {
+          "country": "TR",
+          "type": 3,
+          "date": "2002-09-20"
+        },
+        {
+          "country": "TW",
+          "type": 3,
+          "date": "2002-05-10"
+        },
+        {
+          "country": "UA",
+          "type": 3,
+          "date": "2002-07-19"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2002-03-12"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2002-03-15"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2002-06-04"
+        },
+        {
+          "country": "UY",
+          "type": 3,
+          "date": "2002-08-16"
+        },
+        {
+          "country": "ZA",
+          "type": 3,
+          "date": "2002-08-02"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1576",
+      "fetched_at": "2026-11-11T15:40:35+01:00"
+    },
+    "1577": {
+      "id": "tmdb:1577",
+      "tmdb_id": 1577,
+      "title": "Resident Evil 2: Apocalipsis",
+      "original_title": "Resident Evil: Apocalypse",
+      "year": 2004,
+      "director": "Alexander Witt",
+      "directors": [
+        "Alexander Witt"
+      ],
+      "runtime": 94,
+      "aliases": [
+        "Biohazard II: Apocalypse",
+        "Oselia zla 2: Apokalipsys",
+        "Pritajeno zlo - Apokalipsa",
+        "Resident Evil 2",
+        "Resident Evil 2 -  Apocalypse",
+        "Resident Evil 2 - Apocalipse",
+        "Resident Evil 2 - Apocalypse",
+        "Resident Evil 2 - Apocolypse",
+        "Resident Evil 2: Apocalypse",
+        "Resident Evil Apocalypse",
+        "Resident Evil Apocalypse Extended",
+        "Resident Evil II - Apocalypse",
+        "Resident Evil. Apocalypse",
+        "Resident Evil: Apokálypsi",
+        "Resident Evil：Apocalypse",
+        "Zarazno zlo: Apokalipsis",
+        "Оселя зла 2: Апокаліпсис",
+        "الشر المقيم : نهاية العالم",
+        "バイオハザード2",
+        "生化危机2：启示录",
+        "레지던트 이블 2",
+        "레지던트 이블 2-아포칼립스",
+        "레지던트 이블 2: 아포칼립스"
+      ],
+      "releases": [
+        {
+          "country": "AE",
+          "type": 3,
+          "date": "2004-09-29"
+        },
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "2004-10-28"
+        },
+        {
+          "country": "AT",
+          "type": 3,
+          "date": "2004-09-23"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2004-10-21"
+        },
+        {
+          "country": "BE",
+          "type": 3,
+          "date": "2004-10-06"
+        },
+        {
+          "country": "BG",
+          "type": 3,
+          "date": "2005-02-04"
+        },
+        {
+          "country": "BH",
+          "type": 3,
+          "date": "2004-09-29"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2004-10-08"
+        },
+        {
+          "country": "CA",
+          "type": 3,
+          "date": "2004-09-10"
+        },
+        {
+          "country": "CL",
+          "type": 3,
+          "date": "2004-11-25"
+        },
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "2005-01-06"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2004-09-23"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "2004-09-10"
+        },
+        {
+          "country": "EE",
+          "type": 3,
+          "date": "2005-01-07"
+        },
+        {
+          "country": "EG",
+          "type": 3,
+          "date": "2004-12-29"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2004-11-05"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "2004-10-08"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2004-10-06"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2004-10-08"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2004-10-22"
+        },
+        {
+          "country": "HK",
+          "type": 3,
+          "date": "2004-10-07"
+        },
+        {
+          "country": "HR",
+          "type": 3,
+          "date": "2004-12-30"
+        },
+        {
+          "country": "HU",
+          "type": 3,
+          "date": "2005-01-13"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "2004-10-08"
+        },
+        {
+          "country": "IL",
+          "type": 3,
+          "date": "2005-01-06"
+        },
+        {
+          "country": "IN",
+          "type": 3,
+          "date": "2004-11-26"
+        },
+        {
+          "country": "IS",
+          "type": 3,
+          "date": "2004-10-01"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2004-11-05"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "2004-09-11"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2004-11-05"
+        },
+        {
+          "country": "KW",
+          "type": 3,
+          "date": "2004-11-24"
+        },
+        {
+          "country": "KZ",
+          "type": 3,
+          "date": "2004-11-12"
+        },
+        {
+          "country": "LT",
+          "type": 3,
+          "date": "2005-01-07"
+        },
+        {
+          "country": "MX",
+          "type": 3,
+          "date": "2004-09-24"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2005-01-13"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2004-10-06"
+        },
+        {
+          "country": "NO",
+          "type": 3,
+          "date": "2004-11-26"
+        },
+        {
+          "country": "PA",
+          "type": 3,
+          "date": "2004-10-22"
+        },
+        {
+          "country": "PE",
+          "type": 3,
+          "date": "2004-11-04"
+        },
+        {
+          "country": "PH",
+          "type": 3,
+          "date": "2004-09-29"
+        },
+        {
+          "country": "PL",
+          "type": 3,
+          "date": "2004-10-29"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "2004-10-14"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "2004-10-08"
+        },
+        {
+          "country": "SE",
+          "type": 5,
+          "date": "2005-02-16"
+        },
+        {
+          "country": "SE",
+          "type": 5,
+          "date": "2007-03-28"
+        },
+        {
+          "country": "SG",
+          "type": 3,
+          "date": "2004-09-30"
+        },
+        {
+          "country": "SK",
+          "type": 3,
+          "date": "2005-01-06"
+        },
+        {
+          "country": "TH",
+          "type": 3,
+          "date": "2004-10-14"
+        },
+        {
+          "country": "TR",
+          "type": 3,
+          "date": "2004-12-03"
+        },
+        {
+          "country": "TW",
+          "type": 3,
+          "date": "2004-09-17"
+        },
+        {
+          "country": "UA",
+          "type": 3,
+          "date": "2004-11-11"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2004-09-10"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2004-12-28"
+        },
+        {
+          "country": "UY",
+          "type": 3,
+          "date": "2004-11-19"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1577",
+      "fetched_at": "2026-11-11T15:40:36+01:00"
+    },
+    "7737": {
+      "id": "tmdb:7737",
+      "tmdb_id": 7737,
+      "title": "Resident Evil III. Extinción",
+      "original_title": "Resident Evil: Extinction",
+      "year": 2007,
+      "director": "Russell Mulcahy",
+      "directors": [
+        "Russell Mulcahy"
+      ],
+      "runtime": 95,
+      "aliases": [
+        "Biohazard III",
+        "Resident Evil 3",
+        "Resident Evil 3 - A Extinção",
+        "Resident Evil 3 - Extinction",
+        "Resident Evil 3: Extinction",
+        "Resident Evil 3: La Extinción",
+        "Resident Evil Extinction",
+        "Resident Evil III: Extinction",
+        "Resident Evil. Extinction",
+        "Resident Evil: Extinción",
+        "Resident Evil: La Extinción",
+        "Resident Evil：Extinction",
+        "Обитель зла 3: Вимирання",
+        "Оселя зла 3",
+        "Оселя зла: Вимирання",
+        "الشر المقيم : الانقراض",
+        "生化危机3：灭绝",
+        "레지던트 이블 3",
+        "레지던트 이블 3-인류의 멸망"
+      ],
+      "releases": [
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2007-10-11"
+        },
+        {
+          "country": "BG",
+          "type": 3,
+          "date": "2007-11-02"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2007-10-05"
+        },
+        {
+          "country": "CA",
+          "type": 3,
+          "date": "2007-09-21"
+        },
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "2007-11-15"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2007-09-27"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "2008-03-25"
+        },
+        {
+          "country": "EE",
+          "type": 3,
+          "date": "2007-10-05"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2007-10-31"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2007-10-03"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2007-10-12"
+        },
+        {
+          "country": "HU",
+          "type": 3,
+          "date": "2007-10-11"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "2007-10-12"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2007-10-12"
+        },
+        {
+          "country": "JP",
+          "type": 4,
+          "date": "2007-11-03"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2007-10-18"
+        },
+        {
+          "country": "KZ",
+          "type": 3,
+          "date": "2007-09-27"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2007-10-12"
+        },
+        {
+          "country": "NO",
+          "type": 3,
+          "date": "2007-11-30"
+        },
+        {
+          "country": "NZ",
+          "type": 3,
+          "date": "2007-10-25"
+        },
+        {
+          "country": "PL",
+          "type": 4,
+          "date": "2007-11-16"
+        },
+        {
+          "country": "RU",
+          "type": 3,
+          "date": "2007-09-20"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "2007-10-05"
+        },
+        {
+          "country": "SE",
+          "type": 5,
+          "date": "2008-02-06"
+        },
+        {
+          "country": "TR",
+          "type": 3,
+          "date": "2007-10-19"
+        },
+        {
+          "country": "TW",
+          "type": 3,
+          "date": "2007-09-21"
+        },
+        {
+          "country": "UA",
+          "type": 3,
+          "date": "2007-09-20"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2007-09-21"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/7737",
+      "fetched_at": "2026-11-11T15:40:36+01:00"
+    },
+    "1083862": {
+      "id": "tmdb:1083862",
+      "tmdb_id": 1083862,
+      "title": "Resident Evil: Death Island",
+      "original_title": "バイオハザード：デスアイランド",
+      "year": 2023,
+      "director": "羽住英一郎",
+      "directors": [
+        "羽住英一郎"
+      ],
+      "runtime": 87,
+      "aliases": [
+        "BIOHAZARD: Death Island",
+        "Resident Evil (Animated) 4 Death Island",
+        "האויב שבפנים: אי המוות",
+        "生化危机：死亡岛",
+        "바이오 하자드: 데스 아일랜드"
+      ],
+      "releases": [
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2023-07-06"
+        },
+        {
+          "country": "BR",
+          "type": 4,
+          "date": "2023-09-07"
+        },
+        {
+          "country": "BR",
+          "type": 4,
+          "date": "2024-01-03"
+        },
+        {
+          "country": "CA",
+          "type": 5,
+          "date": "2023-07-25"
+        },
+        {
+          "country": "CN",
+          "type": 2,
+          "date": "2023-07-07"
+        },
+        {
+          "country": "DE",
+          "type": 4,
+          "date": "2023-10-05"
+        },
+        {
+          "country": "DE",
+          "type": 5,
+          "date": "2023-10-19"
+        },
+        {
+          "country": "DK",
+          "type": 5,
+          "date": "2023-08-14"
+        },
+        {
+          "country": "ES",
+          "type": 5,
+          "date": "2023-08-23"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2023-07-25"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2023-08-02"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2023-07-06"
+        },
+        {
+          "country": "HK",
+          "type": 3,
+          "date": "2023-06-29"
+        },
+        {
+          "country": "ID",
+          "type": 3,
+          "date": "2023-07-14"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "2023-07-07"
+        },
+        {
+          "country": "JP",
+          "type": 5,
+          "date": "2023-10-25"
+        },
+        {
+          "country": "KR",
+          "type": 4,
+          "date": "2023-07-05"
+        },
+        {
+          "country": "MX",
+          "type": 3,
+          "date": "2023-06-22"
+        },
+        {
+          "country": "PL",
+          "type": 4,
+          "date": "2023-07-25"
+        },
+        {
+          "country": "PR",
+          "type": 4,
+          "date": "2023-07-25"
+        },
+        {
+          "country": "PR",
+          "type": 4,
+          "date": "2023-11-09"
+        },
+        {
+          "country": "PR",
+          "type": 5,
+          "date": "2023-07-25"
+        },
+        {
+          "country": "SG",
+          "type": 3,
+          "date": "2023-06-22"
+        },
+        {
+          "country": "TH",
+          "type": 2,
+          "date": "2023-06-29"
+        },
+        {
+          "country": "TR",
+          "type": 3,
+          "date": "2023-07-21"
+        },
+        {
+          "country": "TW",
+          "type": 3,
+          "date": "2023-06-29"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2023-07-25"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2023-11-09"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2023-07-25"
+        },
+        {
+          "country": "VN",
+          "type": 3,
+          "date": "2023-07-07"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1083862",
+      "fetched_at": "2026-11-11T15:40:36+01:00"
+    },
+    "1153576": {
+      "id": "tmdb:1153576",
+      "tmdb_id": 1153576,
+      "title": "Street Fighter",
+      "original_title": "Street Fighter",
+      "year": 2026,
+      "director": "Kitao Sakurai",
+      "directors": [
+        "Kitao Sakurai"
+      ],
+      "runtime": 120,
+      "aliases": [
+        "Street Fighter: Filmas",
+        "Street Fighter: le film",
+        "สตรีท ไฟเตอร์"
+      ],
+      "releases": [
+        {
+          "country": "AE",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "AT",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "AZ",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "BE",
+          "type": 3,
+          "date": "2026-10-14"
+        },
+        {
+          "country": "BH",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "BR",
+          "type": 4,
+          "date": "2026-11-11"
+        },
+        {
+          "country": "CA",
+          "type": 3,
+          "date": "2026-10-16"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "2026-10-14"
+        },
+        {
+          "country": "CL",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "CO",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "EC",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2026-10-16"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "2026-10-16"
+        },
+        {
+          "country": "FR",
+          "type": 2,
+          "date": "2026-10-13"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2026-10-14"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2026-10-16"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "GT",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "HK",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "HR",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "HU",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "ID",
+          "type": 3,
+          "date": "2026-10-14"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "2026-10-16"
+        },
+        {
+          "country": "IL",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "IN",
+          "type": 3,
+          "date": "2026-10-16"
+        },
+        {
+          "country": "IQ",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "2026-10-16"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2026-10-14"
+        },
+        {
+          "country": "KR",
+          "type": 4,
+          "date": "2026-11-11"
+        },
+        {
+          "country": "KW",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "KZ",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "LT",
+          "type": 3,
+          "date": "2026-10-16"
+        },
+        {
+          "country": "LV",
+          "type": 3,
+          "date": "2026-10-16"
+        },
+        {
+          "country": "MO",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "MX",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "MY",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "NO",
+          "type": 3,
+          "date": "2026-10-16"
+        },
+        {
+          "country": "NP",
+          "type": 3,
+          "date": "2026-10-16"
+        },
+        {
+          "country": "NZ",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "OM",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "PE",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "PH",
+          "type": 3,
+          "date": "2026-10-14"
+        },
+        {
+          "country": "PL",
+          "type": 3,
+          "date": "2026-10-16"
+        },
+        {
+          "country": "PR",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "PY",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "QA",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "RO",
+          "type": 3,
+          "date": "2026-10-16"
+        },
+        {
+          "country": "RU",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "SA",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "2026-10-16"
+        },
+        {
+          "country": "SG",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "TH",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "TR",
+          "type": 3,
+          "date": "2026-10-16"
+        },
+        {
+          "country": "TW",
+          "type": 3,
+          "date": "2026-10-16"
+        },
+        {
+          "country": "UA",
+          "type": 3,
+          "date": "2026-10-15"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2026-10-16"
+        },
+        {
+          "country": "VN",
+          "type": 3,
+          "date": "2026-10-16"
+        },
+        {
+          "country": "ZA",
+          "type": 3,
+          "date": "2026-10-16"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1153576",
+      "fetched_at": "2026-11-11T15:40:37+01:00",
+      "vote_count": 226,
+      "vote_average": 6.347,
+      "statistics_checked_at": "2026-11-11T15:40:38+01:00"
+    },
+    "11667": {
+      "id": "tmdb:11667",
+      "tmdb_id": 11667,
+      "title": "Street Fighter: La última batalla",
+      "original_title": "Street Fighter",
+      "year": 1994,
+      "director": "Steven E. de Souza",
+      "directors": [
+        "Steven E. de Souza"
+      ],
+      "runtime": 102,
+      "aliases": [
+        "Küçə Döyüşçüsü",
+        "Sokak Dövüşçüsü",
+        "Son Savaş",
+        "Street Fighter 1",
+        "Street Fighter: A Última Batalha",
+        "Street Fighter: The Movie",
+        "街頭霸王"
+      ],
+      "releases": [
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "1995-01-12"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "1995-09-19"
+        },
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "1995-04-13"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "1995-04-27"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "1994-12-23"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "1995-03-24"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "1995-04-12"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "1995-05-18"
+        },
+        {
+          "country": "HU",
+          "type": 3,
+          "date": "1995-06-22"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "1995-06-23"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "1995-04-13"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "1995-05-06"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "1995-06-30"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "1994-12-23"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/11667",
+      "fetched_at": "2026-11-11T15:40:37+01:00"
+    },
+    "16228": {
+      "id": "tmdb:16228",
+      "tmdb_id": 16228,
+      "title": "Street Fighter Alpha: Generations",
+      "original_title": "Street Fighter Alpha: Generations",
+      "year": 2005,
+      "director": "桑名郁朗",
+      "directors": [
+        "桑名郁朗"
+      ],
+      "runtime": 45,
+      "aliases": [
+        "Street Fighter Alpha - Generations",
+        "Street Fighter ZERO: Generations",
+        "ストリートファイターZERO: ジェネレーションズ",
+        "街头霸王ZERO：世代",
+        "街头霸王阿尔法：世代"
+      ],
+      "releases": [
+        {
+          "country": "AU",
+          "type": 5,
+          "date": "2005-10-25"
+        },
+        {
+          "country": "JP",
+          "type": 5,
+          "date": "2009-08-05"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2005-10-25"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/16228",
+      "fetched_at": "2026-11-11T15:40:37+01:00"
+    },
+    "17433": {
+      "id": "tmdb:17433",
+      "tmdb_id": 17433,
+      "title": "Street Fighter Alpha",
+      "original_title": "ストリートファイターZERO - THE ANIMATION -",
+      "year": 1999,
+      "director": "Shigeyasu Yamauchi",
+      "directors": [
+        "Shigeyasu Yamauchi"
+      ],
+      "runtime": 93,
+      "aliases": [
+        "STREETFIGHTER ZERO -THE ANIMATION-",
+        "Street Fighter Alpha",
+        "Street Fighter Alpha - Der Film",
+        "Street Fighter Alpha: O Filme",
+        "Street Fighter Zero",
+        "ストリートファイターZERO",
+        "街头霸王 零",
+        "街头霸王ZERO",
+        "街头霸王阿尔法"
+      ],
+      "releases": [
+        {
+          "country": "AU",
+          "type": 5,
+          "date": "2001-06-28"
+        },
+        {
+          "country": "BR",
+          "type": 4,
+          "date": "2020-06-05"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2001-07-11"
+        },
+        {
+          "country": "JP",
+          "type": 2,
+          "date": "1999-12-22"
+        },
+        {
+          "country": "MX",
+          "type": 5,
+          "date": "2001-01-30"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2001-01-30"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/17433",
+      "fetched_at": "2026-11-11T15:40:37+01:00"
+    },
+    "15268": {
+      "id": "tmdb:15268",
+      "tmdb_id": 15268,
+      "title": "Street Fighter: La leyenda",
+      "original_title": "Street Fighter: The Legend of Chun-Li",
+      "year": 2009,
+      "director": "Andrzej Bartkowiak",
+      "directors": [
+        "Andrzej Bartkowiak"
+      ],
+      "runtime": 97,
+      "aliases": [
+        "Street Fight - A Lenda de Chun-li",
+        "Street Fighter - Die Legende von Chun-Li",
+        "Street Fighter - La Leggenda di Chun-Li",
+        "Street Fighter - The Legend of Chun-Li",
+        "Street Fighter: La leyenda"
+      ],
+      "releases": [
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2009-08-14"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2011-06-01"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "2009-02-28"
+        },
+        {
+          "country": "KZ",
+          "type": 3,
+          "date": "2009-02-27"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2009-02-27"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/15268",
+      "fetched_at": "2026-11-11T15:40:38+01:00"
+    },
+    "12613": {
+      "id": "tmdb:12613",
+      "tmdb_id": 12613,
+      "title": "Street Fighter II: La película",
+      "original_title": "ストリートファイター II MOVIE",
+      "year": 1994,
+      "director": "杉井ギサブロー",
+      "directors": [
+        "杉井ギサブロー"
+      ],
+      "runtime": 98,
+      "aliases": [
+        "Street Fighter 2",
+        "Street Fighter 2 - The Animated Movie",
+        "Street Fighter II - La Pelicula Animada",
+        "Street Fighter II Le Film",
+        "Street Fighter II: La caricatura",
+        "Street Fighter II: La película",
+        "Sutorîto Faitâ II gekijô-ban",
+        "Uliczny wojownik II",
+        "Уличный боец II",
+        "街头霸王2",
+        "街头霸王2：动画剧场版",
+        "스트리트 파이터 II 극장판",
+        "스트리트 파이터 II 무비",
+        "스트리트 파이터 II: 무비",
+        "스트리트 파이터 II; 무비"
+      ],
+      "releases": [
+        {
+          "country": "AU",
+          "type": 2,
+          "date": "1994-08-06"
+        },
+        {
+          "country": "BR",
+          "type": 5,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "1994-08-08"
+        },
+        {
+          "country": "ES",
+          "type": 5,
+          "date": "2014-11-15"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "1994-08-08"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "1994-08-06"
+        },
+        {
+          "country": "MX",
+          "type": 3,
+          "date": "1994-08-08"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "1996-01-16"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/12613",
+      "fetched_at": "2026-11-11T15:40:38+01:00"
+    },
+    "1699186": {
+      "id": "tmdb:1699186",
+      "tmdb_id": 1699186,
+      "title": "Ovnis: Avistamientos Extraños en Madrid",
+      "original_title": "Ovnis: Avistamientos Extraños en Madrid",
+      "year": null,
+      "director": "Alberto Carpintero",
+      "directors": [
+        "Alberto Carpintero"
+      ],
+      "runtime": 82,
+      "aliases": [],
+      "releases": [
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2026-06-16"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1699186",
+      "fetched_at": "2026-11-11T15:40:47+01:00"
+    },
+    "1187326": {
+      "id": "tmdb:1187326",
+      "tmdb_id": 1187326,
+      "title": "Tadeo Jones y La Lámpara Maravillosa",
+      "original_title": "Tadeo Jones y La Lámpara Maravillosa",
+      "year": 2026,
+      "director": "Enrique Gato",
+      "directors": [
+        "Enrique Gato"
+      ],
+      "runtime": 94,
+      "aliases": [
+        "As Aventuras de Tadeo 4",
+        "As Aventuras de Tadeo e a Tábua de Esmeralda",
+        "Tad (4) l'explorateur et la Lampe magique",
+        "تاد والمصباح السحري"
+      ],
+      "releases": [
+        {
+          "country": "AE",
+          "type": 3,
+          "date": "2026-09-03"
+        },
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "2026-09-10"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "BH",
+          "type": 3,
+          "date": "2026-09-03"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "2026-08-26"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "2026-10-22"
+        },
+        {
+          "country": "CL",
+          "type": 3,
+          "date": "2026-09-10"
+        },
+        {
+          "country": "CO",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2026-08-26"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2026-08-26"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2026-09-11"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "GT",
+          "type": 3,
+          "date": "2026-09-03"
+        },
+        {
+          "country": "IL",
+          "type": 3,
+          "date": "2026-09-10"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2026-10-22"
+        },
+        {
+          "country": "KW",
+          "type": 3,
+          "date": "2026-09-03"
+        },
+        {
+          "country": "MX",
+          "type": 3,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "OM",
+          "type": 3,
+          "date": "2026-09-03"
+        },
+        {
+          "country": "PE",
+          "type": 3,
+          "date": "2026-09-10"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "QA",
+          "type": 3,
+          "date": "2026-09-03"
+        },
+        {
+          "country": "SA",
+          "type": 3,
+          "date": "2026-09-03"
+        },
+        {
+          "country": "SG",
+          "type": 3,
+          "date": "2026-09-03"
+        },
+        {
+          "country": "TR",
+          "type": 3,
+          "date": "2026-08-28"
+        },
+        {
+          "country": "UA",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "ZA",
+          "type": 3,
+          "date": "2026-08-28"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1187326",
+      "fetched_at": "2026-11-11T15:40:50+01:00",
+      "vote_count": 94,
+      "vote_average": 8.213,
+      "statistics_checked_at": "2026-11-11T15:40:50+01:00"
+    },
+    "1204680": {
+      "id": "tmdb:1204680",
+      "tmdb_id": 1204680,
+      "title": "Coyote vs. Acme",
+      "original_title": "Coyote vs. Acme",
+      "year": 2026,
+      "director": "David Green",
+      "directors": [
+        "David Green"
+      ],
+      "runtime": 103,
+      "aliases": [
+        "Coyote vs Acme",
+        "Gråben vs Acme",
+        "Koijots pret Acme",
+        "Kojot proti sistemu",
+        "Kojot vrací úder",
+        "Kojotas prieš Akmę",
+        "Koyote melawan Acme",
+        "Pera Kojot protiv sistema",
+        "Prérifarkas Visszavág",
+        "Ptica trkačica: Kojot protiv sustava",
+        "Struś Pędziwiatr i zemsta Kojota",
+        "Койот проти Акме",
+        "Којотот против системот",
+        "Хитрый Койот",
+        "كايوتي ضد أكمي",
+        "โคโยตี ปะทะ แอคมี",
+        "კოიოტი აკმის წინააღმდეგ",
+        "コヨーテVSアクメ",
+        "歪心狼对阵ACME",
+        "코요테 vs. 아크메"
+      ],
+      "releases": [
+        {
+          "country": "AE",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "AU",
+          "type": 1,
+          "date": "2026-08-22"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "AZ",
+          "type": 3,
+          "date": "2026-09-10"
+        },
+        {
+          "country": "BE",
+          "type": 3,
+          "date": "2026-10-14"
+        },
+        {
+          "country": "BG",
+          "type": 1,
+          "date": "2026-08-28"
+        },
+        {
+          "country": "BG",
+          "type": 3,
+          "date": "2026-09-04"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "CA",
+          "type": 2,
+          "date": "2026-08-24"
+        },
+        {
+          "country": "CA",
+          "type": 3,
+          "date": "2026-08-28"
+        },
+        {
+          "country": "CL",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "CO",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "2026-09-10"
+        },
+        {
+          "country": "EC",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "EE",
+          "type": 3,
+          "date": "2026-09-04"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "FR",
+          "type": 1,
+          "date": "2026-09-25"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2026-10-22"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2026-12-01"
+        },
+        {
+          "country": "GB",
+          "type": 2,
+          "date": "2026-08-21"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2026-08-28"
+        },
+        {
+          "country": "GB",
+          "type": 4,
+          "date": "2026-10-05"
+        },
+        {
+          "country": "GB",
+          "type": 5,
+          "date": "2026-11-09"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2026-10-29"
+        },
+        {
+          "country": "GT",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "HU",
+          "type": 3,
+          "date": "2026-09-24"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "2026-08-21"
+        },
+        {
+          "country": "IL",
+          "type": 3,
+          "date": "2026-08-20"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2026-09-02"
+        },
+        {
+          "country": "KZ",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "LB",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "LT",
+          "type": 3,
+          "date": "2026-08-28"
+        },
+        {
+          "country": "LV",
+          "type": 3,
+          "date": "2026-09-01"
+        },
+        {
+          "country": "ME",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "MT",
+          "type": 3,
+          "date": "2026-08-26"
+        },
+        {
+          "country": "MX",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "NI",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2026-10-28"
+        },
+        {
+          "country": "NO",
+          "type": 3,
+          "date": "2026-09-11"
+        },
+        {
+          "country": "NZ",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "OM",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "PA",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "PE",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "PL",
+          "type": 3,
+          "date": "2026-11-20"
+        },
+        {
+          "country": "PR",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "PY",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "QA",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "RO",
+          "type": 3,
+          "date": "2026-09-11"
+        },
+        {
+          "country": "RS",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "RU",
+          "type": 3,
+          "date": "2026-09-10"
+        },
+        {
+          "country": "SA",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "2026-09-18"
+        },
+        {
+          "country": "SG",
+          "type": 3,
+          "date": "2026-09-03"
+        },
+        {
+          "country": "SI",
+          "type": 3,
+          "date": "2026-09-03"
+        },
+        {
+          "country": "SK",
+          "type": 3,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "SV",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "TR",
+          "type": 3,
+          "date": "2026-08-28"
+        },
+        {
+          "country": "UA",
+          "type": 3,
+          "date": "2026-09-01"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2026-08-17"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2026-07-25"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2026-08-26"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2026-08-28"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2026-09-29"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2026-11-02"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2026-12-01"
+        },
+        {
+          "country": "UY",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "VE",
+          "type": 3,
+          "date": "2026-08-27"
+        },
+        {
+          "country": "ZA",
+          "type": 3,
+          "date": "2026-09-18"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1204680",
+      "fetched_at": "2026-11-11T15:40:51+01:00"
+    },
+    "969681": {
+      "id": "tmdb:969681",
+      "tmdb_id": 969681,
+      "title": "Spider-Man: Brand New Day",
+      "original_title": "Spider-Man: Brand New Day",
+      "year": 2026,
+      "director": "Destin Daniel Cretton",
+      "directors": [
+        "Destin Daniel Cretton"
+      ],
+      "runtime": 145,
+      "aliases": [
+        "Homem-Aranha 4",
+        "Hörümçək Adam: Tamamilə Yeni Gün",
+        "Marvel Studios' Spider-Man: Brand New Day",
+        "Spider-Man - Brand New Day",
+        "Spider-Man 4",
+        "Spider-Man. Całkiem nowy dzień",
+        "Spider-Man: un nuevo día",
+        "Spider-man: Un nuevo día",
+        "Человек-паук 4",
+        "Человек-паук КВМ 4",
+        "ספיידרמן 4",
+        "ספיידרמן:יום חדש דנדש",
+        "اسپایدر من : روز کاملاً جدید",
+        "مرد عنکبوتی : روز کاملاً جدید",
+        "স্পাইডার-ম্যান: ব্র্যান্ড নিউ ডে",
+        "ສະໄປເດີ-ແມນ: ແບນ ນິວ ເດ",
+        "ადამიანი-ობობა: ახალი დღე",
+        "មនុស្សពីងពាង: ថ្ងៃថ្មីសន្លាង",
+        "蜘蛛侠4",
+        "스파이더맨 4"
+      ],
+      "releases": [
+        {
+          "country": "AE",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "AG",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "AL",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "AT",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "AW",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "AZ",
+          "type": 3,
+          "date": "2026-08-06"
+        },
+        {
+          "country": "BA",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "BD",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "BE",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "BG",
+          "type": 1,
+          "date": "2026-07-28"
+        },
+        {
+          "country": "BG",
+          "type": 3,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "BH",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "BO",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "CA",
+          "type": 3,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "CA",
+          "type": 4,
+          "date": "2026-10-06"
+        },
+        {
+          "country": "CA",
+          "type": 5,
+          "date": "2026-12-15"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "CL",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "CN",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "CO",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "CR",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "DE",
+          "type": 4,
+          "date": "2026-10-06"
+        },
+        {
+          "country": "DE",
+          "type": 5,
+          "date": "2026-12-17"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "EC",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "EE",
+          "type": 3,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "FO",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2026-11-26"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2026-12-02"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "GB",
+          "type": 4,
+          "date": "2026-10-06"
+        },
+        {
+          "country": "GB",
+          "type": 5,
+          "date": "2026-12-14"
+        },
+        {
+          "country": "GE",
+          "type": 3,
+          "date": "2026-08-06"
+        },
+        {
+          "country": "GH",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "GP",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "GT",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "GT",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "GY",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "HK",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "HN",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "HR",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "HU",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "ID",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "IL",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "IL",
+          "type": 4,
+          "date": "2026-10-06"
+        },
+        {
+          "country": "IN",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "IQ",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "IS",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "KH",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "KN",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "KW",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "KZ",
+          "type": 3,
+          "date": "2026-08-06"
+        },
+        {
+          "country": "LA",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "LB",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "LC",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "LK",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "LT",
+          "type": 3,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "LU",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "LV",
+          "type": 1,
+          "date": "2026-07-28"
+        },
+        {
+          "country": "LV",
+          "type": 2,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "LV",
+          "type": 3,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "MA",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "ME",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "MK",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "MM",
+          "type": 3,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "MN",
+          "type": 3,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "MO",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "MT",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "MX",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "MY",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "NI",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "NO",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "NP",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "NZ",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "OM",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "PA",
+          "type": 1,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "PA",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "PE",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "PH",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "PK",
+          "type": 3,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "PL",
+          "type": 3,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "PR",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "PR",
+          "type": 4,
+          "date": "2026-10-06"
+        },
+        {
+          "country": "PR",
+          "type": 5,
+          "date": "2026-12-15"
+        },
+        {
+          "country": "QA",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "RO",
+          "type": 4,
+          "date": "2026-10-06"
+        },
+        {
+          "country": "SA",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "SG",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "SI",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "SK",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "SN",
+          "type": 3,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "TH",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "TJ",
+          "type": 3,
+          "date": "2026-08-06"
+        },
+        {
+          "country": "TN",
+          "type": 3,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "TR",
+          "type": 3,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "TT",
+          "type": 3,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "TW",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "UA",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2026-07-27"
+        },
+        {
+          "country": "US",
+          "type": 2,
+          "date": "2026-08-06"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2026-10-06"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2026-12-15"
+        },
+        {
+          "country": "UY",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "UZ",
+          "type": 3,
+          "date": "2026-08-06"
+        },
+        {
+          "country": "VE",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "VI",
+          "type": 4,
+          "date": "2026-10-06"
+        },
+        {
+          "country": "VI",
+          "type": 5,
+          "date": "2026-12-15"
+        },
+        {
+          "country": "VN",
+          "type": 3,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "XK",
+          "type": 3,
+          "date": "2026-07-29"
+        },
+        {
+          "country": "ZA",
+          "type": 3,
+          "date": "2026-07-31"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/969681",
+      "fetched_at": "2026-11-11T15:40:51+01:00",
+      "vote_count": 6699,
+      "vote_average": 8.474,
+      "statistics_checked_at": "2026-11-11T15:40:52+01:00"
     }
   }
 }
