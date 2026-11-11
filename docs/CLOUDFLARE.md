@@ -6,7 +6,7 @@ El servicio está preparado en `services/tmdb`. La web permanece en GitHub Pages
 
 1. Crea tu cuenta en https://dash.cloudflare.com/sign-up. Entra en **Workers & Pages** y completa el inicio de **Workers Free**, incluido el subdominio `workers.dev` si lo solicita. No necesitas comprar un dominio ni elegir Workers Paid.
 2. Copia el **Account ID** de tu cuenta de Cloudflare. Es el identificador de cuenta que aparece en su panel.
-3. En https://dash.cloudflare.com/profile/api-tokens pulsa **Create Token** y utiliza la plantilla **Edit Cloudflare Workers**. Limita los recursos de cuenta a tu propia cuenta. Crea el token y copia su valor: Cloudflare solo lo muestra una vez.
+3. En https://dash.cloudflare.com/profile/api-tokens pulsa **Create Token**. Para un Worker existente, el token necesita **Workers → Editor** para ese Worker (o el permiso heredado **Account → Workers Scripts → Edit** en esa cuenta). Comprueba los permisos efectivos aunque utilices la plantilla **Edit Cloudflare Workers**. Crear un Worker nuevo requiere **Workers → Admin** a nivel de producto; puedes evitar ese permiso creando primero desde el panel un Worker Hello World llamado exactamente `cine-madrid-tmdb`. Limita los recursos a tu propia cuenta y, cuando sea posible, a ese Worker. Crea el token y copia su valor: Cloudflare solo lo muestra una vez.
 4. Abre https://github.com/IgnacioGarijo/cine-madrid/settings/secrets/actions y crea dos **Repository secrets**:
    - `CLOUDFLARE_ACCOUNT_ID`: el identificador del paso 2.
    - `CLOUDFLARE_API_TOKEN`: el token del paso 3.
@@ -22,6 +22,10 @@ Después, escribe «Piratas del» en Añadir película. Las sugerencias se consu
 - Código y pruebas del servicio preparados; solo permite consultar el buscador de películas de TMDB, sin operaciones de escritura ni URLs de destino arbitrarias.
 - Respuestas de búsqueda en caché durante 15 minutos y límite de 30 peticiones por minuto por IP y ubicación de Cloudflare. Las redes compartidas pueden compartir ese límite; no es una cuota global estricta.
 - La clave no aparece en el código, la configuración publicada, las respuestas ni los argumentos de los comandos de despliegue.
-- El despliegue real y las sugerencias instantáneas están pendientes de crear la cuenta y configurar los dos secretos. La búsqueda anterior mediante GitHub sigue disponible hasta entonces.
+- El Worker `cine-madrid-tmdb.garijo-io.workers.dev` ya existe. La activación del 11 de noviembre de 2026 sigue bloqueada: el token accede a la cuenta y lista Workers, pero Cloudflare rechaza el acceso al servicio concreto (`No access to the specified service`). La web mantiene la búsqueda mediante GitHub hasta que se complete un despliegue y una consulta verificados.
+
+La alternativa mediante GitHub también busca en todo TMDB y guarda el identificador de la película seleccionada, su año, título original y alias. Cambiar de buscador no cambia la identidad utilizada para las alertas. La coincidencia con la cartelera requiere que esa sesión tenga una identidad verificada; las ambigüedades siguen figurando en incidencias.
 
 Referencias: [despliegue desde GitHub Actions](https://developers.cloudflare.com/workers/ci-cd/external-cicd/github-actions/), [secretos de Workers](https://developers.cloudflare.com/workers/configuration/secrets/), [Workers Free](https://developers.cloudflare.com/workers/platform/pricing/).
+
+Permisos actuales: [roles y permisos de Workers](https://developers.cloudflare.com/workers/authorization/workers/).

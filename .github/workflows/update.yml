@@ -6,6 +6,10 @@ on:
     types: [opened, reopened]
   workflow_dispatch:
     inputs:
+      build_only:
+        description: Publicar la web con la cartelera ya guardada
+        type: boolean
+        default: false
       favorite_search:
         description: Buscar en todo TMDB para añadir favoritas
         type: string
@@ -64,8 +68,9 @@ jobs:
           TMDB_READ_TOKEN: ${{ secrets.TMDB_READ_TOKEN }}
           FAVORITE_SEARCH: ${{ inputs.favorite_search }}
           PUBLISH_NEWSLETTER: ${{ inputs.newsletter || github.event.schedule == '17 17 * * 4' }}
+          BUILD_ONLY: ${{ inputs.build_only }}
         run: |
-          if [ "$GITHUB_EVENT_NAME" = "issues" ] || [ -n "$FAVORITE_SEARCH" ]; then
+          if [ "$GITHUB_EVENT_NAME" = "issues" ] || [ -n "$FAVORITE_SEARCH" ] || [ "$BUILD_ONLY" = "true" ]; then
             python -m src.pipeline --build-only
           elif [ "$PUBLISH_NEWSLETTER" = "true" ]; then
             python -m src.pipeline --newsletter
