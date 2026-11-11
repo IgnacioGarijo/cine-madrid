@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "generated_at": "2026-11-11T11:13:35+01:00",
+  "generated_at": "2026-11-11T11:14:49+01:00",
   "coverage_complete": false,
   "cinemas": [
     {
@@ -382,8 +382,8 @@
     {
       "id": "cine-paz",
       "status": "ok",
-      "last_attempt": "2026-11-11T11:10:18+01:00",
-      "last_success": "2026-11-11T11:10:18+01:00",
+      "last_attempt": "2026-11-11T11:14:49+01:00",
+      "last_success": "2026-11-11T11:14:49+01:00",
       "url": "https://www.cinepazmadrid.es/es/cartelera"
     }
   ],
@@ -759,7 +759,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -780,7 +780,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -801,7 +801,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -822,7 +822,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -843,7 +843,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -864,7 +864,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -885,7 +885,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -906,7 +906,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -927,7 +927,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -948,7 +948,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -969,7 +969,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -990,7 +990,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1011,7 +1011,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1032,7 +1032,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1053,7 +1053,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1074,7 +1074,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1095,7 +1095,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1116,7 +1116,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1137,7 +1137,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1158,7 +1158,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1179,7 +1179,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1200,7 +1200,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1221,7 +1221,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1242,7 +1242,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1263,7 +1263,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1284,7 +1284,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1305,7 +1305,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1326,7 +1326,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1347,7 +1347,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1368,7 +1368,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1389,7 +1389,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1410,7 +1410,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1431,7 +1431,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1452,7 +1452,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1473,7 +1473,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1494,7 +1494,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1515,7 +1515,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1536,7 +1536,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1557,7 +1557,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1578,7 +1578,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1599,7 +1599,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1620,7 +1620,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1641,7 +1641,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1662,7 +1662,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1683,7 +1683,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1704,7 +1704,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1725,7 +1725,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1746,7 +1746,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1767,7 +1767,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1788,7 +1788,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1809,7 +1809,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1830,7 +1830,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1851,7 +1851,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1872,7 +1872,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1893,7 +1893,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1914,7 +1914,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1935,7 +1935,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1956,7 +1956,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1977,7 +1977,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -1998,7 +1998,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2019,7 +2019,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2040,7 +2040,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2061,7 +2061,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2082,7 +2082,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2103,7 +2103,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2124,7 +2124,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2145,7 +2145,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2166,7 +2166,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2187,7 +2187,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2208,7 +2208,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2229,7 +2229,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2250,7 +2250,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2271,7 +2271,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2292,7 +2292,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2313,7 +2313,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2334,7 +2334,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2355,7 +2355,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2376,7 +2376,7 @@
       "stale": false,
       "category": "premiere",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2397,7 +2397,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2418,7 +2418,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2439,7 +2439,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2460,7 +2460,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2481,7 +2481,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2502,7 +2502,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2523,7 +2523,7 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     },
@@ -2544,408 +2544,12 @@
       "stale": false,
       "category": "unclassified",
       "special_tags": [],
-      "last_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00",
       "canonical_id": null,
       "identity_status": "pending_agent"
     }
   ],
   "incidents": [
-    {
-      "id": "89a0435a9a1fc1f9255c",
-      "source_id": "verdi-madrid",
-      "code": "source_pending",
-      "entity": "verdi-madrid",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://www.cines-verdi.com/",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "a5df200d6fdfe60a5f2c",
-      "source_id": "mk2-cines-palacio-de-hielo",
-      "code": "source_pending",
-      "entity": "mk2-cines-palacio-de-hielo",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://www.mk2palaciodehielo.es",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "0c18553c2abb9d993a5e",
-      "source_id": "golem-madrid",
-      "code": "source_pending",
-      "entity": "golem-madrid",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://www.golem.es/",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "fa603e6bf43900a599a7",
-      "source_id": "renoir-princesa",
-      "code": "source_pending",
-      "entity": "renoir-princesa",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://www.cinesrenoir.com/",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "44cf065a3acc650fe945",
-      "source_id": "renoir-plaza-espa-a",
-      "code": "source_pending",
-      "entity": "renoir-plaza-espa-a",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://www.cinesrenoir.com/",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "718f70ca8ea10eb42772",
-      "source_id": "renoir-retiro",
-      "code": "source_pending",
-      "entity": "renoir-retiro",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://www.cinesrenoir.com/",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "8a35a59be91f13903dbc",
-      "source_id": "cines-embajadores",
-      "code": "source_pending",
-      "entity": "cines-embajadores",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://cinesembajadores.es/madrid/",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "df4aa23399014e2f3bd4",
-      "source_id": "cines-embajadores-r-o",
-      "code": "source_pending",
-      "entity": "cines-embajadores-r-o",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://cinesembajadores.es/madrid/",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "f194c28559413340dedb",
-      "source_id": "conde-duque-auditorio-morasol",
-      "code": "source_pending",
-      "entity": "conde-duque-auditorio-morasol",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://condeduquemorasol.com/",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "9e095446c1d97927c95c",
-      "source_id": "cine-capitol",
-      "code": "source_pending",
-      "entity": "cine-capitol",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://www.capitolgranvia.com/",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "ebc649834e6fedce2d13",
-      "source_id": "ocine-urban-caleido",
-      "code": "source_pending",
-      "entity": "ocine-urban-caleido",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://cinesocine.es/",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "6873a16f2283362c4a5c",
-      "source_id": "odeon-multicines-alcala-norte",
-      "code": "source_pending",
-      "entity": "odeon-multicines-alcala-norte",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://odeonmulticines.com/",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "a36e25d184370dd4d60c",
-      "source_id": "cinesa-proyecciones",
-      "code": "source_pending",
-      "entity": "cinesa-proyecciones",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://www.cinesa.es/",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "a327d4ae6cc3f79feb54",
-      "source_id": "cinesa-principe-p-o-isense",
-      "code": "source_pending",
-      "entity": "cinesa-principe-p-o-isense",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://www.cinesa.es/",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "340c0fa80b7d9c2fef5e",
-      "source_id": "cinesa-m-ndez-lvaro-isense",
-      "code": "source_pending",
-      "entity": "cinesa-m-ndez-lvaro-isense",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://www.cinesa.es/",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "08d833f708896a507e0d",
-      "source_id": "cinesa-las-rosas",
-      "code": "source_pending",
-      "entity": "cinesa-las-rosas",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://www.cinesa.es/",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "79c188a3093ee00bfa8a",
-      "source_id": "cinesa-la-gavia",
-      "code": "source_pending",
-      "entity": "cinesa-la-gavia",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://www.cinesa.es/",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "520a3b905d3388240de0",
-      "source_id": "cinesa-manoteras",
-      "code": "source_pending",
-      "entity": "cinesa-manoteras",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://www.cinesa.es/",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "336026ead85aaac2b222",
-      "source_id": "cine-yelmo-ideal",
-      "code": "source_pending",
-      "entity": "cine-yelmo-ideal",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://yelmocines.es/",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "50c1a9ad7d4d769e96b7",
-      "source_id": "cine-yelmo-islazul",
-      "code": "source_pending",
-      "entity": "cine-yelmo-islazul",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://yelmocines.es/",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "7448c7ab7c92f4a72cc6",
-      "source_id": "cine-yelmo-palafox",
-      "code": "source_pending",
-      "entity": "cine-yelmo-palafox",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://yelmocines.es/",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "5c328c7a7d4064810b9e",
-      "source_id": "cine-yelmo-plenilunio",
-      "code": "source_pending",
-      "entity": "cine-yelmo-plenilunio",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://yelmocines.es/",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "575e1760db312a380162",
-      "source_id": "peque-o-cine-estudio",
-      "code": "source_pending",
-      "entity": "peque-o-cine-estudio",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://www.pcineestudio.es/",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "1ea1f27517fb1ae61a45",
-      "source_id": "cine-yelmo-la-vaguada",
-      "code": "source_pending",
-      "entity": "cine-yelmo-la-vaguada",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://www.yelmocines.es",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "e5204de8f75353b0405c",
-      "source_id": "cine-dore",
-      "code": "source_pending",
-      "entity": "cine-dore",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://www.cultura.gob.es/cultura/areas/cine/mc/fe/programacion.html",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "edf8e01534fc1f244d79",
-      "source_id": "cineteca",
-      "code": "source_pending",
-      "entity": "cineteca",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://www.cinetecamadrid.com/",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "35c260e2a49231a794fa",
-      "source_id": "artistic-metropol",
-      "code": "source_pending",
-      "entity": "artistic-metropol",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://artisticmetropol.es/",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "990f6ea2975c271bc62c",
-      "source_id": "sala-equis",
-      "code": "source_pending",
-      "entity": "sala-equis",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://salaequis.es/",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "b04cef5c6b73fbd07e11",
-      "source_id": "cine-estudio",
-      "code": "source_pending",
-      "entity": "cine-estudio",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://www.circulobellasartes.com/cine/",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "8a3efbed11ad0852a9f2",
-      "source_id": "fundacion-japon",
-      "code": "source_pending",
-      "entity": "fundacion-japon",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://www.fundacionjapon.es/",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "229dcfc5303461a3a0bc",
-      "source_id": "casa-america",
-      "code": "source_pending",
-      "entity": "casa-america",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://www.casamerica.es/cine",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "df463e05c7328d4a6c74",
-      "source_id": "instituto-frances",
-      "code": "source_pending",
-      "entity": "instituto-frances",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://www.institutfrancais.es/madrid/",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
-    {
-      "id": "eb1754405d6f212e909c",
-      "source_id": "academia-cine",
-      "code": "source_pending",
-      "entity": "academia-cine",
-      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
-      "url": "https://www.academiadecine.com/actividades/",
-      "severity": "info",
-      "status": "open",
-      "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:13:35+01:00"
-    },
     {
       "id": "f781e2bfdda2d61c9577",
       "source_id": "cine-paz",
@@ -2956,7 +2560,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "476492d1fd9c26eedb91",
@@ -2968,7 +2572,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "1ceabfd572705af40c5f",
@@ -2980,7 +2584,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "6473ab678da4b5ee0c96",
@@ -2992,7 +2596,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "ef6fdc519aa1a5bc4287",
@@ -3004,7 +2608,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "192c5353620f783d2301",
@@ -3016,7 +2620,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "a495b30de4f27860a5dc",
@@ -3028,7 +2632,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "c0c18e5e767459e8c7ac",
@@ -3040,7 +2644,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "56c9d353e310d907b1ff",
@@ -3052,7 +2656,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "4746f5992242e6a54d8e",
@@ -3064,7 +2668,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "55b59a4265a41cab639d",
@@ -3076,7 +2680,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "8a4c5e7beb8a1578c123",
@@ -3088,7 +2692,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "59229690dbcfd34a0f82",
@@ -3100,7 +2704,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "54558fcd7ece20cbd035",
@@ -3112,7 +2716,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "38a51fb8c7e117f2fe2a",
@@ -3124,7 +2728,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "6741f91b509ca0485f00",
@@ -3136,7 +2740,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "c69152cc3c14321af3c1",
@@ -3148,7 +2752,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "7b8a046665bf81892daf",
@@ -3160,7 +2764,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "9e9be0a472717d7e4a00",
@@ -3172,7 +2776,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "aea2997e225bc60b6938",
@@ -3184,7 +2788,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "ac5f36b3619ef588032e",
@@ -3196,7 +2800,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "c1f9c9da635893770d0b",
@@ -3208,7 +2812,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "a403332af638c406de77",
@@ -3220,7 +2824,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "340d6758e272fe2f0f2d",
@@ -3232,7 +2836,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "31c21d16483cec204c7e",
@@ -3244,7 +2848,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "acde14885fcbd512a674",
@@ -3256,7 +2860,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "643c38473eb77b28dbbe",
@@ -3268,7 +2872,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "ef9511a639a0d60eefff",
@@ -3280,7 +2884,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "f8ec0770c0d489a84e75",
@@ -3292,7 +2896,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "134f010c87a8c6dbbf2d",
@@ -3304,7 +2908,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "266d0597e46de7eedc2a",
@@ -3316,7 +2920,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "7d70c82972a62e94e42f",
@@ -3328,7 +2932,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "e1c1ac1af632e7147fd3",
@@ -3340,7 +2944,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "6e533c1cf8beace41a98",
@@ -3352,7 +2956,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "910ec5a2a3ea5696ae5a",
@@ -3364,7 +2968,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "5275e1361f2aaeb69dad",
@@ -3376,7 +2980,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "251a86922785f0680780",
@@ -3388,7 +2992,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "0efdd5a361d1359adcaf",
@@ -3400,7 +3004,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "5f35ce7595194a8c23c2",
@@ -3412,7 +3016,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "96558128da7ca0fe4351",
@@ -3424,7 +3028,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "d1c2ae7f51445055c1eb",
@@ -3436,7 +3040,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "b75fd7f469e57af2e613",
@@ -3448,7 +3052,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "d65063edc34009066060",
@@ -3460,7 +3064,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "4d5ee510e4c71c0fcb8c",
@@ -3472,7 +3076,403 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T11:10:18+01:00"
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "89a0435a9a1fc1f9255c",
+      "source_id": "verdi-madrid",
+      "code": "source_pending",
+      "entity": "verdi-madrid",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://www.cines-verdi.com/",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "a5df200d6fdfe60a5f2c",
+      "source_id": "mk2-cines-palacio-de-hielo",
+      "code": "source_pending",
+      "entity": "mk2-cines-palacio-de-hielo",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://www.mk2palaciodehielo.es",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "0c18553c2abb9d993a5e",
+      "source_id": "golem-madrid",
+      "code": "source_pending",
+      "entity": "golem-madrid",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://www.golem.es/",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "fa603e6bf43900a599a7",
+      "source_id": "renoir-princesa",
+      "code": "source_pending",
+      "entity": "renoir-princesa",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://www.cinesrenoir.com/",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "44cf065a3acc650fe945",
+      "source_id": "renoir-plaza-espa-a",
+      "code": "source_pending",
+      "entity": "renoir-plaza-espa-a",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://www.cinesrenoir.com/",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "718f70ca8ea10eb42772",
+      "source_id": "renoir-retiro",
+      "code": "source_pending",
+      "entity": "renoir-retiro",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://www.cinesrenoir.com/",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "8a35a59be91f13903dbc",
+      "source_id": "cines-embajadores",
+      "code": "source_pending",
+      "entity": "cines-embajadores",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://cinesembajadores.es/madrid/",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "df4aa23399014e2f3bd4",
+      "source_id": "cines-embajadores-r-o",
+      "code": "source_pending",
+      "entity": "cines-embajadores-r-o",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://cinesembajadores.es/madrid/",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "f194c28559413340dedb",
+      "source_id": "conde-duque-auditorio-morasol",
+      "code": "source_pending",
+      "entity": "conde-duque-auditorio-morasol",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://condeduquemorasol.com/",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "9e095446c1d97927c95c",
+      "source_id": "cine-capitol",
+      "code": "source_pending",
+      "entity": "cine-capitol",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://www.capitolgranvia.com/",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "ebc649834e6fedce2d13",
+      "source_id": "ocine-urban-caleido",
+      "code": "source_pending",
+      "entity": "ocine-urban-caleido",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://cinesocine.es/",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "6873a16f2283362c4a5c",
+      "source_id": "odeon-multicines-alcala-norte",
+      "code": "source_pending",
+      "entity": "odeon-multicines-alcala-norte",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://odeonmulticines.com/",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "a36e25d184370dd4d60c",
+      "source_id": "cinesa-proyecciones",
+      "code": "source_pending",
+      "entity": "cinesa-proyecciones",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://www.cinesa.es/",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "a327d4ae6cc3f79feb54",
+      "source_id": "cinesa-principe-p-o-isense",
+      "code": "source_pending",
+      "entity": "cinesa-principe-p-o-isense",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://www.cinesa.es/",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "340c0fa80b7d9c2fef5e",
+      "source_id": "cinesa-m-ndez-lvaro-isense",
+      "code": "source_pending",
+      "entity": "cinesa-m-ndez-lvaro-isense",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://www.cinesa.es/",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "08d833f708896a507e0d",
+      "source_id": "cinesa-las-rosas",
+      "code": "source_pending",
+      "entity": "cinesa-las-rosas",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://www.cinesa.es/",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "79c188a3093ee00bfa8a",
+      "source_id": "cinesa-la-gavia",
+      "code": "source_pending",
+      "entity": "cinesa-la-gavia",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://www.cinesa.es/",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "520a3b905d3388240de0",
+      "source_id": "cinesa-manoteras",
+      "code": "source_pending",
+      "entity": "cinesa-manoteras",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://www.cinesa.es/",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "336026ead85aaac2b222",
+      "source_id": "cine-yelmo-ideal",
+      "code": "source_pending",
+      "entity": "cine-yelmo-ideal",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://yelmocines.es/",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "50c1a9ad7d4d769e96b7",
+      "source_id": "cine-yelmo-islazul",
+      "code": "source_pending",
+      "entity": "cine-yelmo-islazul",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://yelmocines.es/",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "7448c7ab7c92f4a72cc6",
+      "source_id": "cine-yelmo-palafox",
+      "code": "source_pending",
+      "entity": "cine-yelmo-palafox",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://yelmocines.es/",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "5c328c7a7d4064810b9e",
+      "source_id": "cine-yelmo-plenilunio",
+      "code": "source_pending",
+      "entity": "cine-yelmo-plenilunio",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://yelmocines.es/",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "575e1760db312a380162",
+      "source_id": "peque-o-cine-estudio",
+      "code": "source_pending",
+      "entity": "peque-o-cine-estudio",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://www.pcineestudio.es/",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "1ea1f27517fb1ae61a45",
+      "source_id": "cine-yelmo-la-vaguada",
+      "code": "source_pending",
+      "entity": "cine-yelmo-la-vaguada",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://www.yelmocines.es",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "e5204de8f75353b0405c",
+      "source_id": "cine-dore",
+      "code": "source_pending",
+      "entity": "cine-dore",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://www.cultura.gob.es/cultura/areas/cine/mc/fe/programacion.html",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "edf8e01534fc1f244d79",
+      "source_id": "cineteca",
+      "code": "source_pending",
+      "entity": "cineteca",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://www.cinetecamadrid.com/",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "35c260e2a49231a794fa",
+      "source_id": "artistic-metropol",
+      "code": "source_pending",
+      "entity": "artistic-metropol",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://artisticmetropol.es/",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "990f6ea2975c271bc62c",
+      "source_id": "sala-equis",
+      "code": "source_pending",
+      "entity": "sala-equis",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://salaequis.es/",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "b04cef5c6b73fbd07e11",
+      "source_id": "cine-estudio",
+      "code": "source_pending",
+      "entity": "cine-estudio",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://www.circulobellasartes.com/cine/",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "8a3efbed11ad0852a9f2",
+      "source_id": "fundacion-japon",
+      "code": "source_pending",
+      "entity": "fundacion-japon",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://www.fundacionjapon.es/",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "229dcfc5303461a3a0bc",
+      "source_id": "casa-america",
+      "code": "source_pending",
+      "entity": "casa-america",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://www.casamerica.es/cine",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "df463e05c7328d4a6c74",
+      "source_id": "instituto-frances",
+      "code": "source_pending",
+      "entity": "instituto-frances",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://www.institutfrancais.es/madrid/",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
+    },
+    {
+      "id": "eb1754405d6f212e909c",
+      "source_id": "academia-cine",
+      "code": "source_pending",
+      "entity": "academia-cine",
+      "message": "Fuente pendiente de integrar; no se incluyen sus sesiones.",
+      "url": "https://www.academiadecine.com/actividades/",
+      "severity": "info",
+      "status": "open",
+      "first_seen": "2026-11-11T11:10:18+01:00",
+      "last_seen": "2026-11-11T11:14:49+01:00"
     },
     {
       "id": "69fe2a49efac10b8f9fa",
