@@ -1,6 +1,6 @@
-import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.8.0';
+import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.8.1';
 
-import {addressCandidates, validOrigin} from './search-utils.js?v=0.8.0';
+import {addressCandidates, validOrigin} from './search-utils.js?v=0.8.1';
 
 const $ = selector => document.querySelector(selector);
 const all = selector => [...document.querySelectorAll(selector)];
@@ -72,7 +72,7 @@ function renderSessions(target, sessions, {contextSessions=sessions}={}) {
     const meta = [movie.year || first.year, movie.director || first.director].filter(Boolean).join(' · ');
     const metadata = el('p',undefined,'meta');
     if (meta) metadata.append(el('span',meta));
-    if (first.tmdb_url) metadata.append(link('Ficha TMDB ↗',first.tmdb_url,'tmdb-film-link'));
+    metadata.title=meta;
     if (metadata.childNodes.length) heading.append(metadata);
     article.append(heading);
     const available=context.get(group.key) || group.sessions;
@@ -192,7 +192,12 @@ function renderCalendar() {
   for (const cell of cells) {
     const count = counts.get(cell.day) || 0;
     const classes = `${count ? ' has-sessions' : ''}${cell.day === selected ? ' selected' : ''}${cell.inMonth ? '' : ' outside'}${cell.day === today ? ' today' : ''}`;
-    mini.append(el('span', cell.number, classes.trim()));
+    const miniDay=el('button',cell.number,'mini-day'+classes);miniDay.type='button';miniDay.dataset.day=cell.day;
+    miniDay.setAttribute('aria-label',`${fmt.format(dayDate(cell.day))}, ${count} ${count===1?'sesión':'sesiones'}`);
+    miniDay.setAttribute('aria-pressed',String(cell.day===selected));miniDay.disabled=cell.day<today;
+    if(cell.day===today)miniDay.setAttribute('aria-current','date');
+    miniDay.onclick=()=>{setDay(cell.day);$('#mini-calendar').querySelector(`[data-day="${cell.day}"]`)?.focus({preventScroll:true});};
+    mini.append(miniDay);
     const button = el('button', undefined, 'calendar-day' + classes);
     button.type = 'button'; button.dataset.day = cell.day;
     button.setAttribute('aria-label', `${fmt.format(dayDate(cell.day))}, ${count} ${count === 1 ? 'sesión' : 'sesiones'}`);
@@ -204,7 +209,7 @@ function renderCalendar() {
     button.onclick = () => {
       setDay(cell.day);
       $('#calendar-dialog').close();
-      $('#calendar-preview').focus({preventScroll:true});
+      $('#mini-calendar').querySelector(`[data-day="${cell.day}"]`)?.focus({preventScroll:true});
     };
     grid.append(button);
   }
@@ -404,7 +409,7 @@ async function boot() {
       for (const option of source.options) target.append(option.cloneNode(true));
     }
     render(); renderWatch(); renderIncidents(); connectionState();
-    $('#calendar-preview').disabled = false;
+    $('#calendar-expand').disabled = false;
     if (!posts.length) $('#newsletters').append(el('p','Todavía no hay ediciones publicadas.','empty'));
     for (const post of posts) {
       const article = el('article',undefined,'card'); article.append(el('h3',post.id),el('p',post.note));
@@ -446,7 +451,7 @@ $('#reset-filters').onclick = () => { all('#filters [data-filter], #sort').forEa
 $('#sort').onchange=render;
 all('[data-cinema-action]').forEach(button => {button.onclick=()=>{selectedCinemas=new Set(button.dataset.cinemaAction==='nearby' ? nearbyCinemas(data.cinemas.filter(c=>c.status==='active'),origin) : []);render();};});
 $('#calendar-clear-day').onclick = () => setDay('');
-$('#calendar-preview').onclick = () => { renderCalendar(); $('#calendar-dialog').showModal(); };
+$('#calendar-expand').onclick = () => { renderCalendar(); $('#calendar-dialog').showModal(); };
 $('#show-day-in-list').onclick = () => { $('#calendar-dialog').close(); $('#results').scrollIntoView({block:'start'}); };
 function shiftMonth(amount) {
   const next = new Date(Date.UTC(calendarYear, calendarMonth + amount, 1));
@@ -454,6 +459,8 @@ function shiftMonth(amount) {
 }
 $('#previous-month').onclick = () => shiftMonth(-1);
 $('#next-month').onclick = () => shiftMonth(1);
+$('#mini-previous-month').onclick=()=>shiftMonth(-1);
+$('#mini-next-month').onclick=()=>shiftMonth(1);
 all('[data-close]').forEach(button => {button.onclick = () => $('#' + button.dataset.close).close();});
 all('dialog').forEach(dialog => {dialog.onclick = event => {if (event.target === dialog && (event.clientX < dialog.getBoundingClientRect().left || event.clientX > dialog.getBoundingClientRect().right || event.clientY < dialog.getBoundingClientRect().top || event.clientY > dialog.getBoundingClientRect().bottom)) dialog.close();};});
 $('#show-location').onclick = () => { $('#location-settings').open = true; $('#origin').focus(); };

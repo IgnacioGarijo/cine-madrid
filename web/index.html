@@ -12,8 +12,8 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-  <link rel="stylesheet" href="style.css?v=0.8.0">
-  <script src="app.js?v=0.8.0" type="module"></script>
+  <link rel="stylesheet" href="style.css?v=0.8.1">
+  <script src="app.js?v=0.8.1" type="module"></script>
 </head>
 <body>
 <a class="skip-link" href="#cartelera">Ir a la cartelera</a>
@@ -49,7 +49,10 @@
     </details>
     <div class="session-layout">
       <aside class="calendar-aside" aria-label="Calendario compacto">
-        <button type="button" id="calendar-preview" disabled class="calendar-preview" aria-haspopup="dialog" aria-controls="calendar-dialog" aria-label="Ampliar calendario"><span id="mini-month" class="mini-month"></span><span id="mini-calendar" class="mini-calendar" aria-hidden="true"></span></button>
+        <div id="calendar-preview" class="calendar-preview">
+          <div class="mini-toolbar"><button type="button" id="mini-previous-month" aria-label="Mes anterior en calendario">‹</button><span id="mini-month" class="mini-month" aria-live="polite"></span><button type="button" id="mini-next-month" aria-label="Mes siguiente en calendario">›</button><button type="button" id="calendar-expand" disabled aria-haspopup="dialog" aria-controls="calendar-dialog" aria-label="Ampliar calendario">⤢</button></div>
+          <div id="mini-calendar" class="mini-calendar" role="group" aria-label="Elegir día"></div>
+        </div>
       </aside>
       <div class="results-area"><div class="results-heading"><h2>Películas</h2><label class="sort-control"><span class="sr-only">Ordenar películas</span><select id="sort" data-filter="sort"><option value="time">Próxima sesión</option><option value="votes" title="Número de valoraciones en TMDB">Más conocidas</option></select></label></div><div id="results" class="results" aria-live="polite"></div></div>
     </div>
@@ -64,7 +67,7 @@
   <section id="estado" class="view" hidden tabindex="-1"><div class="section-title"><h2>Fuentes e incidencias</h2><button type="button" data-go="cartelera">Volver a Cartelera</button></div><p id="coverage" class="notice"></p><p id="updated" class="fine"></p><p id="connection-status" class="fine"></p><p id="agent-status" class="fine"></p><div class="section-title"><h3>Inventario de espacios</h3><span id="inventory-count" class="fine"></span></div><p class="fine">Inventario provisional por contrastar. «Pendiente» significa que aún no recogemos sus sesiones, no que el cine esté cerrado.</p><div id="sources" class="source-list"></div><div class="section-title"><h3>Registro de incidencias</h3><select id="issue-filter" aria-label="Estado de incidencia"><option value="open">Abiertas</option><option value="resolved">Resueltas</option><option value="">Todas</option></select></div><div id="incidents"></div><div class="tmdb-credit"><a href="https://www.themoviedb.org" target="_blank" rel="noopener"><img src="icons/tmdb.svg" alt="The Movie Database (TMDB)"></a><p>This product uses the TMDB API but is not endorsed or certified by TMDB.</p><p>Identificación por título o alias y dirección. Reposición automática: estreno comercial al menos un año antes de la sesión; las premières de festivales no bastan. Los casos intermedios quedan pendientes de revisión.</p></div></section>
   <div id="fatal" role="alert" hidden></div>
 </main>
-<footer><div><span>Cine Madrid <b aria-hidden="true">✳</b></span><span class="version">v0.8.0</span></div><div class="footer-links"><button type="button" id="open-status">Fuentes e incidencias</button><button type="button" id="install-help">Añadir al móvil</button><a href="https://github.com/IgnacioGarijo/cine-madrid">Proyecto ↗</a></div><p id="offline-label" class="fine" hidden>Sin conexión · Última cartelera guardada</p></footer>
+<footer><div><span>Cine Madrid <b aria-hidden="true">✳</b></span><span class="version">v0.8.1</span></div><div class="footer-links"><button type="button" id="open-status">Fuentes e incidencias</button><button type="button" id="install-help">Añadir al móvil</button><a href="https://github.com/IgnacioGarijo/cine-madrid">Proyecto ↗</a></div><p id="offline-label" class="fine" hidden>Sin conexión · Última cartelera guardada</p></footer>
 
 <dialog id="calendar-dialog" class="calendar-dialog" aria-labelledby="calendar-dialog-title">
   <div class="dialog-header"><h2 id="calendar-dialog-title">Calendario</h2><button type="button" data-close="calendar-dialog" class="collapse-calendar">Replegar calendario</button></div>

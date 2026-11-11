@@ -95,3 +95,19 @@ header { width:100%; min-height:280px; align-items:flex-end; padding:32px max(32
   .results-heading h2 { font-size:20px; }.results-heading .sort-control { max-width:170px; }.movie-group h3 { font-size:20px; }
 }
 @media(max-width:360px) { header { min-height:205px; }.brand h1 { font-size:34px; }.brand-mark { display:none; }.quick-controls>button { font-size:10px; }.category-options button { font-size:10px; }.sort-control select { font-size:11px; } }
+
+.movie-heading { display:flex; align-items:baseline; gap:10px; white-space:nowrap; overflow:hidden; }
+.movie-heading h3 { flex:0 1 auto; min-width:0; margin:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.movie-heading .meta { flex:0 2 auto; min-width:0; margin:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.movie-heading .meta>span { margin:0; }
+.calendar-preview { border:1px solid var(--line); border-radius:10px; }
+.mini-toolbar { display:grid; grid-template-columns:30px minmax(0,1fr) 30px 30px; align-items:center; gap:3px; width:100%; }
+.mini-toolbar button { min-width:0; min-height:32px; padding:2px; border:0; border-radius:6px; font-size:20px; }
+.mini-toolbar .mini-month { text-align:center; }
+.mini-calendar .mini-day { min-width:0; min-height:36px; padding:0; border:1px solid transparent; border-radius:8px; font-size:11px; line-height:1; }
+.mini-calendar .mini-day.has-sessions { background:#e3e9ed; font-weight:700; }
+.mini-calendar .mini-day.today { text-decoration:underline; text-underline-offset:3px; }
+.mini-calendar .mini-day:disabled { opacity:.3; }
+.mini-calendar .mini-day.selected,.mini-calendar .mini-day.selected:hover { background:var(--orange); color:#fff; border-color:var(--orange); box-shadow:0 0 0 1px var(--orange); opacity:1; }
+.calendar-grid .calendar-day.selected { background:var(--orange); border-color:var(--orange); color:#fff; }
+.calendar-grid .calendar-day.selected .day-count { color:#fff; }
