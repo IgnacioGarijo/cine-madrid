@@ -1,8 +1,8 @@
-import {createAccount} from './account.js?v=0.10.1';
-import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.10.1';
+import {createAccount} from './account.js?v=0.10.2';
+import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.10.2';
 
-import {addressCandidates, validOrigin} from './search-utils.js?v=0.10.1';
-import {posterURL} from './poster-utils.js?v=0.10.1';
+import {addressCandidates, validOrigin} from './search-utils.js?v=0.10.2';
+import {posterURL} from './poster-utils.js?v=0.10.2';
 
 const $ = selector => document.querySelector(selector);
 const all = selector => [...document.querySelectorAll(selector)];
@@ -365,7 +365,7 @@ async function queryFavoriteSuggestions() {
   if (!searchApi) {renderCatalog();return;}
   favoriteController?.abort();const controller=new AbortController();favoriteController=controller;
   const sequence=++favoriteSequence, query=$('#catalog-query').value.trim(), page=favoritePage;
-  liveFavoriteResults=null;favoriteError='';
+  liveFavoriteResults=null;favoriteError='';$('.favorite-results-panel').scrollTop=0;
   if (query.length<2) {renderCatalog();return;}
   renderCatalog();
   try {
@@ -464,7 +464,7 @@ async function boot() {
     setView(route === 'calendario' ? 'cartelera' : route || 'cartelera', false);
     if (route === 'calendario') $('#calendar-dialog').showModal();
     const search=new URLSearchParams(location.search).get('favorite_search');
-    if (search) {setView('pendientes');$('#catalog-query').value=search;favoritePage=Math.max(1,Number(new URLSearchParams(location.search).get('favorite_page')) || 1);renderCatalog();$('#favorite-dialog').showModal();if(searchApi) queryFavoriteSuggestions();}
+    if (search) {setView('pendientes');$('#catalog-query').value=search;favoritePage=Math.max(1,Number(new URLSearchParams(location.search).get('favorite_page')) || 1);renderCatalog();syncFavoriteViewport();$('#favorite-dialog').showModal();if(searchApi) queryFavoriteSuggestions();}
   } catch {
     $('#fatal').hidden = false; $('#fatal').textContent = 'No se pudo cargar la cartelera. Conéctate a Internet y vuelve a abrir la página.';
     $('#updated').textContent = 'Datos no disponibles';
@@ -510,9 +510,18 @@ all('[data-close]').forEach(button => {button.onclick = () => $('#' + button.dat
 all('dialog').forEach(dialog => {dialog.onclick = event => {if (event.target === dialog && (event.clientX < dialog.getBoundingClientRect().left || event.clientX > dialog.getBoundingClientRect().right || event.clientY < dialog.getBoundingClientRect().top || event.clientY > dialog.getBoundingClientRect().bottom)) dialog.close();};});
 $('#show-location').onclick = () => { setView('cuenta'); $('#location-settings').open = true; $('#origin').focus(); };
 $('#issue-filter').onchange = renderIncidents;
+function syncFavoriteViewport(){
+  const viewport=window.visualViewport, dialog=$('#favorite-dialog');
+  dialog.style.setProperty('--favorite-viewport-height',(viewport?.height || window.innerHeight)+'px');
+  dialog.style.setProperty('--favorite-viewport-top',(viewport?.offsetTop || 0)+'px');
+}
+function refreshFavoriteViewport(){if($('#favorite-dialog').open)syncFavoriteViewport();}
+window.visualViewport?.addEventListener('resize',refreshFavoriteViewport);
+window.visualViewport?.addEventListener('scroll',refreshFavoriteViewport);
+window.addEventListener('resize',refreshFavoriteViewport);
 $('#catalog-query').oninput = () => {clearTimeout(favoriteTimer);favoriteController?.abort();favoriteSequence++;favoritePage=1;favoriteError='';liveFavoriteResults=null;renderCatalog();if(searchApi) favoriteTimer=setTimeout(queryFavoriteSuggestions,450);};
 setInterval(refreshFavoriteSearches,15000);window.addEventListener('focus',refreshFavoriteSearches);
-$('#add-favorite').onclick = () => { $('#catalog-query').value = '';favoritePage=1;favoriteError='';liveFavoriteResults=null;renderCatalog(); $('#favorite-dialog').showModal(); $('#catalog-query').focus(); };
+$('#add-favorite').onclick = () => { $('#catalog-query').value = '';favoritePage=1;favoriteError='';liveFavoriteResults=null;renderCatalog(); syncFavoriteViewport();$('#favorite-dialog').showModal(); $('#catalog-query').focus({preventScroll:true}); };
 async function selectOrigin(candidate) {
   const epoch=accountEpoch;
   try {
