@@ -3899,15 +3899,10 @@
     },
     "aeternatemblorestremors": {
       "results": [],
-      "fetched_at": "2026-11-11T16:36:38+01:00"
+      "fetched_at": "2026-11-12T23:52:10+01:00"
     },
     "temblorestremors": {
       "results": [
-        {
-          "id": 515357,
-          "title": "Temblores",
-          "original_title": "Temblores"
-        },
         {
           "id": 9362,
           "title": "Temblores",
@@ -3919,9 +3914,9 @@
           "original_title": "Tremors 2: Aftershocks"
         },
         {
-          "id": 670266,
-          "title": "Temblores 7: Shrieker Island",
-          "original_title": "Tremors: Shrieker Island"
+          "id": 496704,
+          "title": "Temblores 6: Un día en el infierno",
+          "original_title": "Tremors: A Cold Day in Hell"
         },
         {
           "id": 10829,
@@ -3929,16 +3924,21 @@
           "original_title": "Tremors 3: Back to Perfection"
         },
         {
-          "id": 339530,
-          "title": "Temblores 5: El legado",
-          "original_title": "Tremors 5: Bloodlines"
+          "id": 10891,
+          "title": "Temblores 4: Comienza la leyenda",
+          "original_title": "Tremors 4: The Legend Begins"
+        },
+        {
+          "id": 670266,
+          "title": "Temblores 7: Shrieker Island",
+          "original_title": "Tremors: Shrieker Island"
         }
       ],
-      "fetched_at": "2026-11-11T16:36:39+01:00"
+      "fetched_at": "2026-11-12T23:52:10+01:00"
     },
     "aeternadarkwater": {
       "results": [],
-      "fetched_at": "2026-11-11T16:36:40+01:00"
+      "fetched_at": "2026-11-12T23:52:10+01:00"
     },
     "darkwater": {
       "results": [
@@ -3958,12 +3958,12 @@
           "original_title": "Dark Water"
         },
         {
-          "id": 1494750,
+          "id": 495433,
           "title": "Dark Water",
           "original_title": "Dark Water"
         },
         {
-          "id": 495433,
+          "id": 1494750,
           "title": "Dark Water",
           "original_title": "Dark Water"
         },
@@ -3973,11 +3973,11 @@
           "original_title": "Dark Water"
         }
       ],
-      "fetched_at": "2026-11-11T16:36:40+01:00"
+      "fetched_at": "2026-11-12T23:52:11+01:00"
     },
     "aeternaelquintoelemento": {
       "results": [],
-      "fetched_at": "2026-11-11T16:36:41+01:00"
+      "fetched_at": "2026-11-12T23:52:11+01:00"
     },
     "elquintoelemento": {
       "results": [
@@ -3987,7 +3987,7 @@
           "original_title": "Le Cinquième Élément"
         }
       ],
-      "fetched_at": "2026-11-11T16:36:41+01:00"
+      "fetched_at": "2026-11-12T23:52:11+01:00"
     },
     "rompemadridbosquedesombra20aniversario": {
       "results": [],
@@ -6586,6 +6586,70 @@
         }
       ],
       "fetched_at": "2026-11-12T14:56:04+01:00"
+    },
+    "eraseunavezenhollywoodwildercinema": {
+      "results": [],
+      "fetched_at": "2026-11-12T23:52:11+01:00"
+    },
+    "eraseunavezenhollywood": {
+      "results": [
+        {
+          "id": 466272,
+          "title": "Érase una vez en… Hollywood",
+          "original_title": "Once Upon a Time in… Hollywood"
+        },
+        {
+          "id": 33740,
+          "title": "Érase una vez en Hollywood",
+          "original_title": "That's Entertainment!"
+        },
+        {
+          "id": 77448,
+          "title": "Érase una vez en Hollywood III",
+          "original_title": "That's Entertainment! III"
+        },
+        {
+          "id": 780961,
+          "title": "Frank Capra: érase una vez en Hollywood",
+          "original_title": "Frank Capra, il était une fois l'Amérique"
+        }
+      ],
+      "fetched_at": "2026-11-12T23:52:11+01:00"
+    },
+    "aftersun": {
+      "results": [
+        {
+          "id": 965150,
+          "title": "Aftersun",
+          "original_title": "Aftersun"
+        },
+        {
+          "id": 1624266,
+          "title": "Aftersun",
+          "original_title": "Aftersun"
+        },
+        {
+          "id": 969829,
+          "title": "Aftersun",
+          "original_title": "Aftersun"
+        },
+        {
+          "id": 1098585,
+          "title": "Aftersun",
+          "original_title": "Aftersun"
+        }
+      ],
+      "fetched_at": "2026-11-12T23:52:12+01:00"
+    },
+    "deseandoamarinthemoodforlove": {
+      "results": [
+        {
+          "id": 843,
+          "title": "Deseando amar",
+          "original_title": "花樣年華"
+        }
+      ],
+      "fetched_at": "2026-11-12T23:52:13+01:00"
     }
   },
   "movies": {
@@ -55196,9 +55260,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/9362",
       "fetched_at": "2026-11-11T16:36:39+01:00",
-      "vote_count": 3781,
-      "vote_average": 6.957,
-      "statistics_checked_at": "2026-11-11T16:36:40+01:00",
+      "vote_count": 3783,
+      "vote_average": 6.958,
+      "statistics_checked_at": "2026-11-12T23:52:10+01:00",
       "poster_path": "/gGg2haDaZF3vklYQXPPQ6ccCNj0.jpg",
       "poster_checked_at": "2026-11-12T09:55:15+01:00"
     },
@@ -56423,9 +56487,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/18",
       "fetched_at": "2026-11-11T16:36:41+01:00",
-      "vote_count": 12349,
+      "vote_count": 12357,
       "vote_average": 7.594,
-      "statistics_checked_at": "2026-11-11T16:36:41+01:00",
+      "statistics_checked_at": "2026-11-12T23:52:11+01:00",
       "poster_path": "/wnps5IL8YpeJpZvciDRXt7yZF8a.jpg",
       "poster_checked_at": "2026-11-12T09:55:15+01:00"
     },
@@ -84332,6 +84396,1655 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/400136",
       "fetched_at": "2026-11-12T16:32:37+01:00"
+    },
+    "496704": {
+      "id": "tmdb:496704",
+      "tmdb_id": 496704,
+      "title": "Temblores 6: Un día en el infierno",
+      "original_title": "Tremors: A Cold Day in Hell",
+      "year": 2018,
+      "director": "Don Michael Paul",
+      "directors": [
+        "Don Michael Paul"
+      ],
+      "runtime": 98,
+      "poster_path": "/y2YZnTT9zdxRdXBKRb0K7BoM0jF.jpg",
+      "aliases": [
+        "O Ataque dos Vermes Malditos 6: Um Dia Frio no Inferno",
+        "Tremors 6",
+        "Tremors 6  Ein kalter Tag in der Hoelle",
+        "Tremors 6 - A Cold Day in Hell",
+        "Tremors 6 - A cold day in hell",
+        "Tremors VI A Cold Day in Hell",
+        "Yeraltı Canavarı 6: Cehennemde Soğuk Bir Gün",
+        "Дрожь земли 6",
+        "异形魔怪6：极寒之日",
+        "异形魔怪：极寒之日",
+        "從地心竄出6",
+        "深淵異形6：冷血魔蟲",
+        "深淵異形：冷血魔蟲"
+      ],
+      "releases": [
+        {
+          "country": "BR",
+          "type": 4,
+          "date": "2018-11-03"
+        },
+        {
+          "country": "DE",
+          "type": 5,
+          "date": "2018-05-31"
+        },
+        {
+          "country": "ES",
+          "type": 5,
+          "date": "2018-05-13"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "2018-05-01"
+        },
+        {
+          "country": "GB",
+          "type": 5,
+          "date": "2018-05-14"
+        },
+        {
+          "country": "SE",
+          "type": 5,
+          "date": "2018-05-07"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2018-05-01"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/496704",
+      "fetched_at": "2026-11-12T23:52:10+01:00"
+    },
+    "10891": {
+      "id": "tmdb:10891",
+      "tmdb_id": 10891,
+      "title": "Temblores 4: Comienza la leyenda",
+      "original_title": "Tremors 4: The Legend Begins",
+      "year": 2004,
+      "director": "S.S. Wilson",
+      "directors": [
+        "S.S. Wilson"
+      ],
+      "runtime": 100,
+      "poster_path": "/hzjNWXlOnL85gkmW404OvAxGXtj.jpg",
+      "aliases": [
+        "O Ataque dos Vermes Malditos 4: O Começo da Lenda",
+        "Terror Bajo Tierra 4 Comienza la Leyenda",
+        "Tremors 4 - Agli inizi della leggenda",
+        "Tremors 4 The Legend Begins",
+        "Tremors 4. - A legenda elkezdődik",
+        "Tremors IV - The Legend Begins",
+        "Tremors IV The Legend Begins",
+        "Wstrząsy 4: Początek legendy",
+        "Yeraltı Canavarı 4: Efsane Başlıyor",
+        "深淵異形4",
+        "불가사리 4"
+      ],
+      "releases": [
+        {
+          "country": "DE",
+          "type": 5,
+          "date": "2004-05-06"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2007-10-11"
+        },
+        {
+          "country": "GB",
+          "type": 5,
+          "date": "2004-01-02"
+        },
+        {
+          "country": "JP",
+          "type": 4,
+          "date": "2004-05-28"
+        },
+        {
+          "country": "SE",
+          "type": 5,
+          "date": "2004-11-24"
+        },
+        {
+          "country": "SE",
+          "type": 5,
+          "date": "2014-02-05"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2004-01-02"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/10891",
+      "fetched_at": "2026-11-12T23:52:10+01:00"
+    },
+    "466272": {
+      "id": "tmdb:466272",
+      "tmdb_id": 466272,
+      "title": "Érase una vez en… Hollywood",
+      "original_title": "Once Upon a Time in… Hollywood",
+      "year": 2019,
+      "director": "Quentin Tarantino",
+      "directors": [
+        "Quentin Tarantino"
+      ],
+      "runtime": 162,
+      "poster_path": "/vKSyaptSA7zZ9H8mSfaDnvyQl9k.jpg",
+      "aliases": [
+        "Bir Dəfə... Hollivudda",
+        "Bir Zamanlar Hollywood'da",
+        "Bir Zamanlar... Hollywood'da",
+        "Bir paytlar Gollivudda",
+        "Hǎoláiwù wǎngshì",
+        "Mek angam holivudum",
+        "Once Upon a Time in Hollywood",
+        "Once Upon a Time in... Hollywood",
+        "Ükskord Hollywoodis",
+        "Било једном... у Холивуду",
+        "Մեկ Անգամ Հոլիվուդում",
+        "กาลครั้งหนึ่งใน...ฮอลลีวู้ด",
+        "원스 어폰 어 타임 인 할리우드",
+        "원스 어폰 어 타임 인... 할리우드"
+      ],
+      "releases": [
+        {
+          "country": "AE",
+          "type": 3,
+          "date": "2019-08-15"
+        },
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "2019-08-22"
+        },
+        {
+          "country": "AT",
+          "type": 3,
+          "date": "2019-08-15"
+        },
+        {
+          "country": "AU",
+          "type": 1,
+          "date": "2019-08-03"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2019-08-15"
+        },
+        {
+          "country": "AW",
+          "type": 3,
+          "date": "2019-08-29"
+        },
+        {
+          "country": "BE",
+          "type": 3,
+          "date": "2019-08-14"
+        },
+        {
+          "country": "BG",
+          "type": 3,
+          "date": "2019-08-09"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2019-08-15"
+        },
+        {
+          "country": "BR",
+          "type": 4,
+          "date": "2019-11-27"
+        },
+        {
+          "country": "CA",
+          "type": 3,
+          "date": "2019-07-26"
+        },
+        {
+          "country": "CH",
+          "type": 1,
+          "date": "2019-08-10"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "2019-08-14"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "2019-08-15"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "2019-09-18"
+        },
+        {
+          "country": "CL",
+          "type": 3,
+          "date": "2019-08-22"
+        },
+        {
+          "country": "CO",
+          "type": 3,
+          "date": "2019-08-15"
+        },
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "2019-08-15"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2019-08-15"
+        },
+        {
+          "country": "DE",
+          "type": 5,
+          "date": "2019-12-19"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "2019-07-25"
+        },
+        {
+          "country": "EE",
+          "type": 3,
+          "date": "2019-08-16"
+        },
+        {
+          "country": "ES",
+          "type": 1,
+          "date": "2019-07-24"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2019-08-15"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "2019-08-16"
+        },
+        {
+          "country": "FR",
+          "type": 1,
+          "date": "2019-05-21"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2019-08-14"
+        },
+        {
+          "country": "FR",
+          "type": 6,
+          "date": "2025-07-13"
+        },
+        {
+          "country": "FR",
+          "type": 6,
+          "date": "2021-04-23"
+        },
+        {
+          "country": "GB",
+          "type": 1,
+          "date": "2019-07-30"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2019-08-14"
+        },
+        {
+          "country": "GB",
+          "type": 4,
+          "date": "2019-12-09"
+        },
+        {
+          "country": "GB",
+          "type": 5,
+          "date": "2019-12-09"
+        },
+        {
+          "country": "GE",
+          "type": 3,
+          "date": "2019-08-07"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2019-08-22"
+        },
+        {
+          "country": "HK",
+          "type": 3,
+          "date": "2019-08-29"
+        },
+        {
+          "country": "HK",
+          "type": 3,
+          "date": "2019-07-25"
+        },
+        {
+          "country": "HR",
+          "type": 3,
+          "date": "2019-08-08"
+        },
+        {
+          "country": "HU",
+          "type": 3,
+          "date": "2019-08-08"
+        },
+        {
+          "country": "ID",
+          "type": 3,
+          "date": "2019-08-27"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "2019-08-14"
+        },
+        {
+          "country": "IL",
+          "type": 3,
+          "date": "2019-08-08"
+        },
+        {
+          "country": "IN",
+          "type": 3,
+          "date": "2019-07-26"
+        },
+        {
+          "country": "IS",
+          "type": 3,
+          "date": "2019-08-14"
+        },
+        {
+          "country": "IT",
+          "type": 1,
+          "date": "2019-08-02"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2019-09-18"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "2019-08-30"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2019-09-25"
+        },
+        {
+          "country": "KW",
+          "type": 3,
+          "date": "2019-08-15"
+        },
+        {
+          "country": "KZ",
+          "type": 3,
+          "date": "2019-08-08"
+        },
+        {
+          "country": "LB",
+          "type": 3,
+          "date": "2019-07-26"
+        },
+        {
+          "country": "LB",
+          "type": 3,
+          "date": "2019-08-15"
+        },
+        {
+          "country": "LK",
+          "type": 3,
+          "date": "2019-07-26"
+        },
+        {
+          "country": "LT",
+          "type": 3,
+          "date": "2019-08-09"
+        },
+        {
+          "country": "LV",
+          "type": 1,
+          "date": "2019-08-13"
+        },
+        {
+          "country": "LV",
+          "type": 3,
+          "date": "2019-08-16"
+        },
+        {
+          "country": "MM",
+          "type": 3,
+          "date": "2019-08-29"
+        },
+        {
+          "country": "MX",
+          "type": 3,
+          "date": "2019-08-16"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2019-08-15"
+        },
+        {
+          "country": "NO",
+          "type": 3,
+          "date": "2019-08-16"
+        },
+        {
+          "country": "NZ",
+          "type": 3,
+          "date": "2019-08-15"
+        },
+        {
+          "country": "PE",
+          "type": 3,
+          "date": "2019-08-15"
+        },
+        {
+          "country": "PH",
+          "type": 3,
+          "date": "2019-08-28"
+        },
+        {
+          "country": "PK",
+          "type": 3,
+          "date": "2019-08-16"
+        },
+        {
+          "country": "PL",
+          "type": 1,
+          "date": "2019-08-03"
+        },
+        {
+          "country": "PL",
+          "type": 3,
+          "date": "2019-08-09"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "2019-08-08"
+        },
+        {
+          "country": "QA",
+          "type": 3,
+          "date": "2019-08-15"
+        },
+        {
+          "country": "RO",
+          "type": 3,
+          "date": "2019-08-16"
+        },
+        {
+          "country": "RS",
+          "type": 3,
+          "date": "2019-08-14"
+        },
+        {
+          "country": "RU",
+          "type": 3,
+          "date": "2019-08-08"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "2019-08-16"
+        },
+        {
+          "country": "SG",
+          "type": 1,
+          "date": "2019-08-07"
+        },
+        {
+          "country": "SG",
+          "type": 3,
+          "date": "2019-08-15"
+        },
+        {
+          "country": "SK",
+          "type": 3,
+          "date": "2019-08-15"
+        },
+        {
+          "country": "TH",
+          "type": 3,
+          "date": "2019-09-12"
+        },
+        {
+          "country": "TR",
+          "type": 3,
+          "date": "2019-08-23"
+        },
+        {
+          "country": "TW",
+          "type": 3,
+          "date": "2019-07-24"
+        },
+        {
+          "country": "UA",
+          "type": 3,
+          "date": "2019-08-15"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2019-07-22"
+        },
+        {
+          "country": "US",
+          "type": 2,
+          "date": "2026-10-30"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2019-07-26"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2019-10-25"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2019-11-25"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2019-12-10"
+        },
+        {
+          "country": "US",
+          "type": 6,
+          "date": "2020-03-27"
+        },
+        {
+          "country": "UY",
+          "type": 3,
+          "date": "2019-08-15"
+        },
+        {
+          "country": "VN",
+          "type": 3,
+          "date": "2019-08-16"
+        },
+        {
+          "country": "ZA",
+          "type": 3,
+          "date": "2019-08-02"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/466272",
+      "fetched_at": "2026-11-12T23:52:11+01:00",
+      "vote_count": 15551,
+      "vote_average": 7.418,
+      "statistics_checked_at": "2026-11-12T23:52:12+01:00"
+    },
+    "33740": {
+      "id": "tmdb:33740",
+      "tmdb_id": 33740,
+      "title": "Érase una vez en Hollywood",
+      "original_title": "That's Entertainment!",
+      "year": 1974,
+      "director": "Jack Haley Jr.",
+      "directors": [
+        "Jack Haley Jr."
+      ],
+      "runtime": 135,
+      "poster_path": "/4RdWkWn4tVVtFjsSLBBXaVExtCq.jpg",
+      "aliases": [
+        "That's Entertainment: 50 Years of MGM"
+      ],
+      "releases": [
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "1974-11-07"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "1974-12-20"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "1974-06-21"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "1975-03-14"
+        },
+        {
+          "country": "DE",
+          "type": 5,
+          "date": "2006-11-24"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "1974-12-26"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "1975-12-15"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "1975-03-21"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "1975-01-03"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "1974-10-03"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "1975-04-18"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "1975-03-22"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "1975-12-12"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "1974-11-22"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "1974-06-21"
+        },
+        {
+          "country": "UY",
+          "type": 3,
+          "date": "1975-03-20"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/33740",
+      "fetched_at": "2026-11-12T23:52:12+01:00"
+    },
+    "77448": {
+      "id": "tmdb:77448",
+      "tmdb_id": 77448,
+      "title": "Érase una vez en Hollywood III",
+      "original_title": "That's Entertainment! III",
+      "year": 1994,
+      "director": "Michael J. Sheridan, Bud Friedgen",
+      "directors": [
+        "Michael J. Sheridan",
+        "Bud Friedgen"
+      ],
+      "runtime": 120,
+      "poster_path": "/g6urKxs7CnXe3TNcKGkS8VVFlxh.jpg",
+      "aliases": [
+        "Il était une fois à Hollywood 3"
+      ],
+      "releases": [
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "1994-08-04"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "1994-10-26"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "1994-07-01"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/77448",
+      "fetched_at": "2026-11-12T23:52:12+01:00"
+    },
+    "780961": {
+      "id": "tmdb:780961",
+      "tmdb_id": 780961,
+      "title": "Frank Capra: érase una vez en Hollywood",
+      "original_title": "Frank Capra, il était une fois l'Amérique",
+      "year": 2020,
+      "director": "Dimitri Kourtchine",
+      "directors": [
+        "Dimitri Kourtchine"
+      ],
+      "runtime": 0,
+      "poster_path": "/g1fcdaMuvsEgzqLOMJeUNV3AyiZ.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "DE",
+          "type": 4,
+          "date": "2020-12-22"
+        },
+        {
+          "country": "DE",
+          "type": 6,
+          "date": "2020-12-29"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2020-12-29"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2020-12-22"
+        },
+        {
+          "country": "FR",
+          "type": 6,
+          "date": "2020-12-29"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/780961",
+      "fetched_at": "2026-11-12T23:52:12+01:00"
+    },
+    "965150": {
+      "id": "tmdb:965150",
+      "tmdb_id": 965150,
+      "title": "Aftersun",
+      "original_title": "Aftersun",
+      "year": 2022,
+      "director": "Charlotte Wells",
+      "directors": [
+        "Charlotte Wells"
+      ],
+      "runtime": 101,
+      "poster_path": "/zJd2NwGzciSMppCHividNSROIZR.jpg",
+      "aliases": [
+        "Akharei Ha'Shemesh",
+        "Güneş Sonrası",
+        "Poslije sunca",
+        "کرم پس از آفتاب",
+        "アフターサン",
+        "日麗",
+        "晒后修复霜",
+        "晒后假日",
+        "애프터썬"
+      ],
+      "releases": [
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "2022-11-24"
+        },
+        {
+          "country": "AR",
+          "type": 4,
+          "date": "2023-01-06"
+        },
+        {
+          "country": "AT",
+          "type": 1,
+          "date": "2022-10-21"
+        },
+        {
+          "country": "AT",
+          "type": 3,
+          "date": "2022-12-15"
+        },
+        {
+          "country": "AT",
+          "type": 4,
+          "date": "2023-03-17"
+        },
+        {
+          "country": "AU",
+          "type": 1,
+          "date": "2022-10-22"
+        },
+        {
+          "country": "AU",
+          "type": 1,
+          "date": "2022-08-17"
+        },
+        {
+          "country": "AU",
+          "type": 1,
+          "date": "2022-10-28"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2023-02-23"
+        },
+        {
+          "country": "AU",
+          "type": 5,
+          "date": "2024-10-16"
+        },
+        {
+          "country": "BR",
+          "type": 1,
+          "date": "2022-10-20"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2022-12-01"
+        },
+        {
+          "country": "BR",
+          "type": 4,
+          "date": "2023-01-06"
+        },
+        {
+          "country": "CA",
+          "type": 1,
+          "date": "2022-09-12"
+        },
+        {
+          "country": "CA",
+          "type": 1,
+          "date": "2022-09-30"
+        },
+        {
+          "country": "CA",
+          "type": 1,
+          "date": "2022-10-09"
+        },
+        {
+          "country": "CA",
+          "type": 2,
+          "date": "2022-10-28"
+        },
+        {
+          "country": "CA",
+          "type": 4,
+          "date": "2022-12-20"
+        },
+        {
+          "country": "CA",
+          "type": 4,
+          "date": "2023-09-07"
+        },
+        {
+          "country": "CL",
+          "type": 3,
+          "date": "2022-11-17"
+        },
+        {
+          "country": "CN",
+          "type": 1,
+          "date": "2023-04-20"
+        },
+        {
+          "country": "CN",
+          "type": 1,
+          "date": "2023-06-09"
+        },
+        {
+          "country": "CN",
+          "type": 4,
+          "date": "2023-08-23"
+        },
+        {
+          "country": "CO",
+          "type": 3,
+          "date": "2022-11-17"
+        },
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "2023-05-18"
+        },
+        {
+          "country": "DE",
+          "type": 1,
+          "date": "2022-10-22"
+        },
+        {
+          "country": "DE",
+          "type": 1,
+          "date": "2022-06-28"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2022-12-15"
+        },
+        {
+          "country": "DE",
+          "type": 4,
+          "date": "2023-03-17"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "2023-02-02"
+        },
+        {
+          "country": "EE",
+          "type": 3,
+          "date": "2023-02-03"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2022-12-16"
+        },
+        {
+          "country": "ES",
+          "type": 4,
+          "date": "2023-03-17"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "2023-04-14"
+        },
+        {
+          "country": "FR",
+          "type": 1,
+          "date": "2022-05-21"
+        },
+        {
+          "country": "FR",
+          "type": 1,
+          "date": "2022-09-04"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2023-02-01"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2026-04-22"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2023-06-14"
+        },
+        {
+          "country": "FR",
+          "type": 6,
+          "date": "2023-11-13"
+        },
+        {
+          "country": "FR",
+          "type": 6,
+          "date": "2026-06-02"
+        },
+        {
+          "country": "GB",
+          "type": 1,
+          "date": "2022-10-13"
+        },
+        {
+          "country": "GB",
+          "type": 1,
+          "date": "2022-08-12"
+        },
+        {
+          "country": "GB",
+          "type": 1,
+          "date": "2022-11-17"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2022-11-18"
+        },
+        {
+          "country": "GB",
+          "type": 4,
+          "date": "2023-01-06"
+        },
+        {
+          "country": "GB",
+          "type": 5,
+          "date": "2023-02-20"
+        },
+        {
+          "country": "GR",
+          "type": 1,
+          "date": "2022-10-03"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2022-12-29"
+        },
+        {
+          "country": "HK",
+          "type": 1,
+          "date": "2023-04-01"
+        },
+        {
+          "country": "HK",
+          "type": 3,
+          "date": "2023-05-11"
+        },
+        {
+          "country": "ID",
+          "type": 2,
+          "date": "2025-11-01"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "2022-11-18"
+        },
+        {
+          "country": "IE",
+          "type": 4,
+          "date": "2023-01-06"
+        },
+        {
+          "country": "IN",
+          "type": 4,
+          "date": "2023-01-06"
+        },
+        {
+          "country": "IT",
+          "type": 4,
+          "date": "2023-01-06"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "2023-05-26"
+        },
+        {
+          "country": "KR",
+          "type": 1,
+          "date": "2022-10-06"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2023-02-01"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2024-08-28"
+        },
+        {
+          "country": "LT",
+          "type": 1,
+          "date": "2023-03-16"
+        },
+        {
+          "country": "LT",
+          "type": 3,
+          "date": "2023-03-27"
+        },
+        {
+          "country": "MX",
+          "type": 3,
+          "date": "2022-11-17"
+        },
+        {
+          "country": "NL",
+          "type": 1,
+          "date": "2023-01-18"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2023-02-23"
+        },
+        {
+          "country": "NL",
+          "type": 4,
+          "date": "2023-05-30"
+        },
+        {
+          "country": "NL",
+          "type": 4,
+          "date": "2023-08-31"
+        },
+        {
+          "country": "RU",
+          "type": 3,
+          "date": "2023-03-16"
+        },
+        {
+          "country": "SE",
+          "type": 1,
+          "date": "2023-01-30"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "2023-02-17"
+        },
+        {
+          "country": "SG",
+          "type": 1,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "SG",
+          "type": 2,
+          "date": "2023-01-12"
+        },
+        {
+          "country": "TH",
+          "type": 1,
+          "date": "2022-12-05"
+        },
+        {
+          "country": "TH",
+          "type": 3,
+          "date": "2023-01-19"
+        },
+        {
+          "country": "TR",
+          "type": 1,
+          "date": "2022-10-07"
+        },
+        {
+          "country": "TR",
+          "type": 1,
+          "date": "2022-09-19"
+        },
+        {
+          "country": "TR",
+          "type": 1,
+          "date": "2022-10-03"
+        },
+        {
+          "country": "TR",
+          "type": 3,
+          "date": "2022-12-28"
+        },
+        {
+          "country": "TR",
+          "type": 4,
+          "date": "2023-01-06"
+        },
+        {
+          "country": "TW",
+          "type": 3,
+          "date": "2023-02-10"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2022-10-08"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2022-09-03"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2022-09-28"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2022-10-05"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2022-10-07"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2022-10-09"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2022-10-18"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2022-10-22"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2022-10-23"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2022-11-02"
+        },
+        {
+          "country": "US",
+          "type": 2,
+          "date": "2022-10-21"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2022-12-20"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2022-12-13"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2024-06-21"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2023-07-01"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2023-04-07"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/965150",
+      "fetched_at": "2026-11-12T23:52:12+01:00",
+      "vote_count": 2048,
+      "vote_average": 7.656,
+      "statistics_checked_at": "2026-11-12T23:52:13+01:00"
+    },
+    "1624266": {
+      "id": "tmdb:1624266",
+      "tmdb_id": 1624266,
+      "title": "Aftersun",
+      "original_title": "Aftersun",
+      "year": 2024,
+      "director": "Tillottam Pawar",
+      "directors": [
+        "Tillottam Pawar"
+      ],
+      "runtime": 2,
+      "poster_path": "/9HdSZZYlDFFV86UoTDUQvidloFP.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "IN",
+          "type": 4,
+          "date": "2024-03-22"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1624266",
+      "fetched_at": "2026-11-12T23:52:13+01:00"
+    },
+    "969829": {
+      "id": "tmdb:969829",
+      "tmdb_id": 969829,
+      "title": "Aftersun",
+      "original_title": "Aftersun",
+      "year": 2022,
+      "director": "Lluís Galter",
+      "directors": [
+        "Lluís Galter"
+      ],
+      "runtime": 70,
+      "poster_path": "/6zoDf55fbzR0pBRcFoTaY94RG14.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "ES",
+          "type": 1,
+          "date": "2022-05-01"
+        },
+        {
+          "country": "KR",
+          "type": 1,
+          "date": "2022-09-24"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/969829",
+      "fetched_at": "2026-11-12T23:52:13+01:00"
+    },
+    "1098585": {
+      "id": "tmdb:1098585",
+      "tmdb_id": 1098585,
+      "title": "Aftersun",
+      "original_title": "Aftersun",
+      "year": 2006,
+      "director": "Peter Lydon",
+      "directors": [
+        "Peter Lydon"
+      ],
+      "runtime": 60,
+      "poster_path": "/moSPIeULld5WnsNsjKVv6gvFYkj.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "GB",
+          "type": 6,
+          "date": "2006-09-08"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1098585",
+      "fetched_at": "2026-11-12T23:52:13+01:00"
+    },
+    "843": {
+      "id": "tmdb:843",
+      "tmdb_id": 843,
+      "title": "Deseando amar",
+      "original_title": "花樣年華",
+      "year": 2000,
+      "director": "Wong Kar-wai",
+      "directors": [
+        "Wong Kar-wai"
+      ],
+      "runtime": 95,
+      "poster_path": "/r1kobz0ceeNdxzCntkSL5Rzkevi.jpg",
+      "aliases": [
+        "Amor à Flor da Pele",
+        "Aşk Zamanı",
+        "Dalam Gejolak Cinta",
+        "Desando Amar",
+        "Fa yeung nin wa",
+        "Fa yeung nin wah",
+        "Huāyàng Niánhuá",
+        "In The Mood For Love",
+        "In the Mood for Love",
+        "In the Mood for Love - Der Klang der Liebe",
+        "Stvorení pre lásku",
+        "花样年华",
+        "花様年華：2000",
+        "花樣年華",
+        "화양연화 리마스터링"
+      ],
+      "releases": [
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2001-03-29"
+        },
+        {
+          "country": "BE",
+          "type": 3,
+          "date": "2000-09-29"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2001-02-23"
+        },
+        {
+          "country": "CA",
+          "type": 3,
+          "date": "2001-03-09"
+        },
+        {
+          "country": "CH",
+          "type": 4,
+          "date": "2001-02-15"
+        },
+        {
+          "country": "CN",
+          "type": 1,
+          "date": "2021-12-30"
+        },
+        {
+          "country": "CN",
+          "type": 1,
+          "date": "2025-02-12"
+        },
+        {
+          "country": "CN",
+          "type": 3,
+          "date": "2025-02-14"
+        },
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "2003-05-22"
+        },
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "2026-02-26"
+        },
+        {
+          "country": "DE",
+          "type": 5,
+          "date": "2021-11-25"
+        },
+        {
+          "country": "ES",
+          "type": 1,
+          "date": "2000-09-26"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2001-02-16"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "2021-07-02"
+        },
+        {
+          "country": "FR",
+          "type": 1,
+          "date": "2000-05-20"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2000-11-08"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2001-09-05"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2023-06-21"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2000-10-27"
+        },
+        {
+          "country": "GB",
+          "type": 5,
+          "date": "2001-04-16"
+        },
+        {
+          "country": "GB",
+          "type": 5,
+          "date": "2022-11-14"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2001-01-26"
+        },
+        {
+          "country": "GR",
+          "type": 5,
+          "date": "2002-01-21"
+        },
+        {
+          "country": "HK",
+          "type": 3,
+          "date": "2000-09-29"
+        },
+        {
+          "country": "HK",
+          "type": 3,
+          "date": "2021-04-29"
+        },
+        {
+          "country": "HK",
+          "type": 3,
+          "date": "2025-04-10"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "2000-10-27"
+        },
+        {
+          "country": "IT",
+          "type": 2,
+          "date": "2025-02-17"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2021-04-28"
+        },
+        {
+          "country": "JP",
+          "type": 2,
+          "date": "2024-08-30"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "2001-03-31"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "2022-08-19"
+        },
+        {
+          "country": "KR",
+          "type": 1,
+          "date": "2020-10-27"
+        },
+        {
+          "country": "KR",
+          "type": 1,
+          "date": "2000-10-14"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2000-10-20"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2025-12-31"
+        },
+        {
+          "country": "LT",
+          "type": 3,
+          "date": "2001-08-31"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2001-03-15"
+        },
+        {
+          "country": "NL",
+          "type": 5,
+          "date": "2006-04-06"
+        },
+        {
+          "country": "NL",
+          "type": 6,
+          "date": "2002-10-11"
+        },
+        {
+          "country": "RU",
+          "type": 3,
+          "date": "2001-01-26"
+        },
+        {
+          "country": "RU",
+          "type": 3,
+          "date": "2021-03-04"
+        },
+        {
+          "country": "RU",
+          "type": 3,
+          "date": "2022-06-30"
+        },
+        {
+          "country": "TH",
+          "type": 3,
+          "date": "2020-10-29"
+        },
+        {
+          "country": "TR",
+          "type": 3,
+          "date": "2001-09-28"
+        },
+        {
+          "country": "UA",
+          "type": 3,
+          "date": "2021-03-04"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2001-02-02"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/843",
+      "fetched_at": "2026-11-12T23:52:13+01:00",
+      "vote_count": 3467,
+      "vote_average": 8.085,
+      "statistics_checked_at": "2026-11-12T23:52:14+01:00"
     }
   }
 }
