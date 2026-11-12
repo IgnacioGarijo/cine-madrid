@@ -44,14 +44,18 @@
   {
     "id": "golem-madrid",
     "name": "GOLEM MADRID",
-    "address": "",
-    "lat": null,
-    "lon": null,
+    "address": "Calle de Martín de los Heros, 14",
+    "lat": 40.42470339769375,
+    "lon": -3.713695436552562,
     "url": "https://www.golem.es/",
-    "status": "pending",
-    "inventory_status": "needs_review",
+    "status": "active",
+    "inventory_status": "verified_venue",
     "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
-    "municipality": "Madrid"
+    "municipality": "Madrid",
+    "adapter": "golem",
+    "schedule_url": "https://golem.es/golem/golem-madrid/",
+    "schedule_label": "Fuente oficial",
+    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Calle+de+Mart%C3%ADn+de+los+Heros%2C+14%2C+Madrid"
   },
   {
     "id": "renoir-princesa",
@@ -98,26 +102,36 @@
   {
     "id": "cines-embajadores",
     "name": "CINES EMBAJADORES",
-    "address": "",
-    "lat": null,
-    "lon": null,
+    "address": "Glorieta de Santa María de la Cabeza, 5",
+    "lat": 40.400691337097406,
+    "lon": -3.6984799807249567,
     "url": "https://cinesembajadores.es/madrid/",
-    "status": "pending",
-    "inventory_status": "needs_review",
+    "status": "active",
+    "inventory_status": "verified_venue",
     "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
-    "municipality": "Madrid"
+    "municipality": "Madrid",
+    "adapter": "publicine_embajadores",
+    "schedule_url": "https://www.publicine.net/cartelera-cine/madrid/cines-embajadores",
+    "schedule_label": "Publicine · fuente alternativa",
+    "reading_note": "Horarios de Publicine; horizonte limitado a las fechas que publica la fuente.",
+    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Glorieta+de+Santa+Mar%C3%ADa+de+la+Cabeza%2C+5%2C+Madrid"
   },
   {
     "id": "cines-embajadores-r-o",
     "name": "CINES EMBAJADORES RÍO",
-    "address": "",
-    "lat": null,
-    "lon": null,
+    "address": "Calle de Ercilla, 53",
+    "lat": 40.400040832840254,
+    "lon": -3.70054335916634,
     "url": "https://cinesembajadores.es/madrid/",
-    "status": "pending",
-    "inventory_status": "needs_review",
+    "status": "active",
+    "inventory_status": "verified_venue",
     "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
-    "municipality": "Madrid"
+    "municipality": "Madrid",
+    "adapter": "publicine_embajadores",
+    "schedule_url": "https://www.publicine.net/cartelera-cine/madrid/cines-embajadores-rio",
+    "schedule_label": "Publicine · fuente alternativa",
+    "reading_note": "Horarios de Publicine; horizonte limitado a las fechas que publica la fuente.",
+    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Calle+de+Ercilla%2C+53%2C+Madrid"
   },
   {
     "id": "conde-duque-auditorio-morasol",
@@ -150,26 +164,35 @@
   {
     "id": "ocine-urban-caleido",
     "name": "OCINE URBAN CALEIDO",
-    "address": "",
-    "lat": null,
-    "lon": null,
-    "url": "https://cinesocine.es/",
-    "status": "pending",
-    "inventory_status": "needs_review",
+    "address": "Paseo de la Castellana, 259",
+    "lat": 40.47768885196862,
+    "lon": -3.688324874157579,
+    "url": "https://ocineurbancaleido.es/",
+    "status": "active",
+    "inventory_status": "verified_venue",
     "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
-    "municipality": "Madrid"
+    "municipality": "Madrid",
+    "adapter": "ocine_caleido",
+    "schedule_url": "https://tickets.ocineurbancaleido.es/",
+    "schedule_label": "Fuente oficial",
+    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Paseo+de+la+Castellana%2C+259%2C+Madrid"
   },
   {
     "id": "odeon-multicines-alcala-norte",
     "name": "ODEON MULTICINES ALCALA NORTE",
-    "address": "",
-    "lat": null,
-    "lon": null,
+    "address": "Calle de Alcalá, 414",
+    "lat": 40.437530944093574,
+    "lon": -3.638326009300523,
     "url": "https://odeonmulticines.com/",
-    "status": "pending",
-    "inventory_status": "needs_review",
+    "status": "active",
+    "inventory_status": "verified_venue",
     "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
-    "municipality": "Madrid"
+    "municipality": "Madrid",
+    "adapter": "odeon",
+    "schedule_url": "https://odeonmulticines.com/odeon-alcala-norte/peliculas",
+    "schedule_label": "Fuente oficial",
+    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Calle+de+Alcal%C3%A1%2C+414%2C+Madrid",
+    "reading_note": "Horarios oficiales; algunas fichas no publican director ni año de producción y quedan pendientes de identificación con TMDB."
   },
   {
     "id": "cinesa-proyecciones",
@@ -318,86 +341,148 @@
   {
     "id": "cine-yelmo-ideal",
     "name": "CINE YELMO IDEAL",
-    "address": "",
-    "lat": null,
-    "lon": null,
+    "address": "Calle del Doctor Cortezo, 6",
+    "lat": 40.413811953336456,
+    "lon": -3.7037999595065476,
     "url": "https://yelmocines.es/",
-    "status": "pending",
-    "inventory_status": "needs_review",
+    "status": "active",
+    "inventory_status": "verified_venue",
     "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
-    "municipality": "Madrid"
+    "municipality": "Madrid",
+    "adapter": "cinerama",
+    "schedule_url": "https://cinerama.es/cartelera/cine/yelmo-cines-ideal-madrid-v-o/",
+    "schedule_label": "Cinerama · fuente alternativa",
+    "source_names": [
+      "Yelmo Ideal"
+    ],
+    "booking_origins": [
+      "https://cineyelmo.com/"
+    ],
+    "reading_note": "Horarios de Cinerama; las entradas enlazan a la cadena original.",
+    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Calle+del+Doctor+Cortezo%2C+6%2C+Madrid"
   },
   {
     "id": "cine-yelmo-islazul",
     "name": "CINE YELMO ISLAZUL",
-    "address": "",
-    "lat": null,
-    "lon": null,
+    "address": "Calle de la Calderilla, 1",
+    "lat": 40.36500685746085,
+    "lon": -3.7375927706409042,
     "url": "https://yelmocines.es/",
-    "status": "pending",
-    "inventory_status": "needs_review",
+    "status": "active",
+    "inventory_status": "verified_venue",
     "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
-    "municipality": "Madrid"
+    "municipality": "Madrid",
+    "adapter": "cinerama",
+    "schedule_url": "https://cinerama.es/cartelera/cine/yelmo-cines-islazul/",
+    "schedule_label": "Cinerama · fuente alternativa",
+    "source_names": [
+      "Yelmo Islazul"
+    ],
+    "booking_origins": [
+      "https://cineyelmo.com/"
+    ],
+    "reading_note": "Horarios de Cinerama; las entradas enlazan a la cadena original.",
+    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Calle+de+la+Calderilla%2C+1%2C+Madrid"
   },
   {
     "id": "cine-yelmo-palafox",
     "name": "CINE YELMO PALAFOX",
-    "address": "",
-    "lat": null,
-    "lon": null,
+    "address": "Calle de Luchana, 15",
+    "lat": 40.430080547877196,
+    "lon": -3.7009447483070255,
     "url": "https://yelmocines.es/",
-    "status": "pending",
-    "inventory_status": "needs_review",
+    "status": "active",
+    "inventory_status": "verified_venue",
     "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
-    "municipality": "Madrid"
+    "municipality": "Madrid",
+    "adapter": "cinerama",
+    "schedule_url": "https://cinerama.es/cartelera/cine/yelmo-cines-luxury-palafox/",
+    "schedule_label": "Cinerama · fuente alternativa",
+    "source_names": [
+      "Yelmo Palafox"
+    ],
+    "booking_origins": [
+      "https://cineyelmo.com/"
+    ],
+    "reading_note": "Horarios de Cinerama; las entradas enlazan a la cadena original.",
+    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Calle+de+Luchana%2C+15%2C+Madrid"
   },
   {
     "id": "cine-yelmo-plenilunio",
     "name": "CINE YELMO PLENILUNIO",
-    "address": "",
-    "lat": null,
-    "lon": null,
+    "address": "Calle Aracne, s/n",
+    "lat": 40.446875561617,
+    "lon": -3.5866719584797,
     "url": "https://yelmocines.es/",
-    "status": "pending",
-    "inventory_status": "needs_review",
+    "status": "active",
+    "inventory_status": "verified_venue",
     "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
-    "municipality": "Madrid"
+    "municipality": "Madrid",
+    "adapter": "cinerama",
+    "schedule_url": "https://cinerama.es/cartelera/cine/yelmo-cines-plenilunio/",
+    "schedule_label": "Cinerama · fuente alternativa",
+    "source_names": [
+      "Yelmo Plenilunio"
+    ],
+    "booking_origins": [
+      "https://cineyelmo.com/"
+    ],
+    "reading_note": "Horarios de Cinerama; las entradas enlazan a la cadena original.",
+    "coordinate_source": "https://cinerama.es/cartelera/cine/yelmo-cines-plenilunio/"
   },
   {
     "id": "peque-o-cine-estudio",
     "name": "PEQUEÑO CINE ESTUDIO",
-    "address": "",
-    "lat": null,
-    "lon": null,
+    "address": "Calle de Magallanes, 1",
+    "lat": 40.43235143894043,
+    "lon": -3.7054012584565132,
     "url": "https://www.pcineestudio.es/",
-    "status": "pending",
-    "inventory_status": "needs_review",
+    "status": "active",
+    "inventory_status": "verified_venue",
     "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
-    "municipality": "Madrid"
+    "municipality": "Madrid",
+    "adapter": "pequeno_cine",
+    "schedule_url": "https://www.pcineestudio.es/en-cartel",
+    "schedule_label": "Fuente oficial",
+    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Calle+de+Magallanes%2C+1%2C+Madrid"
   },
   {
     "id": "cine-yelmo-la-vaguada",
     "name": "CINE YELMO LA VAGUADA",
-    "address": "",
-    "lat": null,
-    "lon": null,
+    "address": "Avenida de Monforte de Lemos, 36",
+    "lat": 40.4792065549199,
+    "lon": -3.7082713620899534,
     "url": "https://www.yelmocines.es",
-    "status": "pending",
-    "inventory_status": "needs_review",
+    "status": "active",
+    "inventory_status": "verified_venue",
     "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
-    "municipality": "Madrid"
+    "municipality": "Madrid",
+    "adapter": "cinerama",
+    "schedule_url": "https://cinerama.es/cartelera/cine/la-vaguada/",
+    "schedule_label": "Cinerama · fuente alternativa",
+    "source_names": [
+      "Yelmo La Vaguada"
+    ],
+    "booking_origins": [
+      "https://cineyelmo.com/"
+    ],
+    "reading_note": "Horarios de Cinerama; las entradas enlazan a la cadena original.",
+    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Avenida+de+Monforte+de+Lemos%2C+36%2C+Madrid"
   },
   {
     "id": "cine-dore",
     "name": "Filmoteca Española · Cine Doré",
-    "url": "https://www.cultura.gob.es/cultura/areas/cine/mc/fe/portada.htm",
+    "url": "https://entradasfilmoteca.sacatuentrada.es/es",
     "address": "Calle de Santa Isabel, 3",
-    "lat": null,
-    "lon": null,
-    "status": "pending",
-    "inventory_status": "needs_review",
-    "provenance": "https://www.cultura.gob.es/cultura/areas/cine/mc/fe/programacion.html",
-    "municipality": "Madrid"
+    "lat": 40.41183366901034,
+    "lon": -3.6991712866448667,
+    "status": "active",
+    "inventory_status": "verified_venue",
+    "provenance": "https://www.cultura.gob.es/cultura/areas/cine/mc/fe/programacion-actividades/proyecciones.html",
+    "municipality": "Madrid",
+    "adapter": "filmoteca",
+    "schedule_label": "Fuente oficial",
+    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Calle+de+Santa+Isabel%2C+3%2C+Madrid"
   },
   {
     "id": "cineteca",
@@ -432,12 +517,16 @@
     "name": "Sala Equis",
     "url": "https://salaequis.es/",
     "address": "Calle del Duque de Alba, 4",
-    "lat": null,
-    "lon": null,
-    "status": "pending",
-    "inventory_status": "needs_review",
+    "lat": 40.41197479970576,
+    "lon": -3.70587490405168,
+    "status": "active",
+    "inventory_status": "verified_venue",
     "provenance": "https://salaequis.es/",
-    "municipality": "Madrid"
+    "municipality": "Madrid",
+    "adapter": "sala_equis",
+    "schedule_url": "https://salaequis.es/taquilla/",
+    "schedule_label": "Fuente oficial",
+    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Calle+del+Duque+de+Alba%2C+4%2C+Madrid"
   },
   {
     "id": "cine-estudio",
@@ -456,14 +545,15 @@
   {
     "id": "fundacion-japon",
     "name": "Fundación Japón Madrid",
-    "url": "https://www.fundacionjapon.es/",
+    "url": "https://md.jpf.go.jp/es/",
     "address": "",
     "lat": null,
     "lon": null,
     "status": "pending",
     "inventory_status": "needs_review",
     "provenance": "https://www.fundacionjapon.es/",
-    "municipality": "Madrid"
+    "municipality": "Madrid",
+    "reading_note": "La programación localizada se celebra en otras sedes, incluido Cine Doré. Falta una agenda de pases verificable para una sala propia; no se duplican sesiones de otros recintos."
   },
   {
     "id": "casa-america",
@@ -472,34 +562,42 @@
     "address": "Plaza de Cibeles, s/n",
     "lat": null,
     "lon": null,
-    "status": "pending",
-    "inventory_status": "needs_review",
+    "status": "active",
+    "inventory_status": "verified_venue",
     "provenance": "https://www.casamerica.es/cine",
-    "municipality": "Madrid"
+    "municipality": "Madrid",
+    "adapter": "casa_america",
+    "schedule_label": "Fuente oficial"
   },
   {
     "id": "instituto-frances",
     "name": "Instituto Francés de Madrid",
-    "url": "https://www.institutfrancais.es/madrid/",
+    "url": "https://www.institutfrancais.es/madrid/eventos/",
     "address": "Calle del Marqués de la Ensenada, 12",
-    "lat": null,
-    "lon": null,
-    "status": "pending",
-    "inventory_status": "needs_review",
+    "lat": 40.42473967166815,
+    "lon": -3.6922473189650695,
+    "status": "active",
+    "inventory_status": "verified_venue",
     "provenance": "https://www.institutfrancais.es/madrid/",
-    "municipality": "Madrid"
+    "municipality": "Madrid",
+    "adapter": "instituto_frances",
+    "schedule_label": "Fuente oficial",
+    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Calle+del+Marqu%C3%A9s+de+la+Ensenada%2C+12%2C+Madrid"
   },
   {
     "id": "academia-cine",
     "name": "Academia de Cine",
-    "url": "https://www.academiadecine.com/actividades/",
+    "url": "https://entradas.apps.academiadecine.com/actividades",
     "address": "Calle de Zurbano, 3",
-    "lat": null,
-    "lon": null,
-    "status": "pending",
-    "inventory_status": "needs_review",
+    "lat": 40.427517223876706,
+    "lon": -3.693906037559841,
+    "status": "active",
+    "inventory_status": "verified_venue",
     "provenance": "https://www.academiadecine.com/actividades/",
-    "municipality": "Madrid"
+    "municipality": "Madrid",
+    "adapter": "academia_cine",
+    "schedule_label": "Fuente oficial",
+    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Calle+de+Zurbano%2C+3%2C+Madrid"
   },
   {
     "id": "kinepolis-ciudad-imagen",
@@ -584,5 +682,80 @@
       "https://web.cinesa.es/"
     ],
     "schedule_label": "Cinerama · fuente alternativa"
+  },
+  {
+    "id": "cines-callao",
+    "name": "Cines Callao",
+    "address": "Plaza del Callao, 3",
+    "municipality": "Madrid",
+    "lat": 40.41999964872043,
+    "lon": -3.705415734481351,
+    "url": "https://cinescallao.es/cartelera-de-cine/",
+    "adapter": "callao",
+    "status": "active",
+    "inventory_status": "verified_venue",
+    "provenance": "https://cinescallao.es/cartelera-de-cine/",
+    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Plaza+del+Callao%2C+3%2C+Madrid"
+  },
+  {
+    "id": "sala-berlanga",
+    "name": "Sala Berlanga",
+    "address": "Calle de Andrés Mellado, 53",
+    "municipality": "Madrid",
+    "lat": 40.43593302869253,
+    "lon": -3.714414892830059,
+    "url": "https://salaberlanga.com/programacion-de-actividades/",
+    "adapter": "berlanga",
+    "status": "active",
+    "inventory_status": "verified_venue",
+    "provenance": "https://salaberlanga.com/programacion-de-actividades/",
+    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Calle+de+Andr%C3%A9s+Mellado%2C+53%2C+Madrid"
+  },
+  {
+    "id": "palacio-prensa",
+    "name": "Palacio de la Prensa",
+    "address": "Plaza del Callao, 4",
+    "municipality": "Madrid",
+    "lat": 40.41985024033621,
+    "lon": -3.7054749101230438,
+    "url": "https://palaciodelaprensa.com/",
+    "status": "active",
+    "inventory_status": "verified_venue",
+    "provenance": "https://pprensa.janto.es/",
+    "reading_note": "Lectura parcial: horarios del día visibles en SensaCine. Sus otras fechas anunciadas requieren consulta manual; no se inventan horas.",
+    "adapter": "palacio_prensa",
+    "schedule_url": "https://www.sensacine.com/cines/cine/E0559/",
+    "schedule_label": "SensaCine · fuente alternativa",
+    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Plaza+del+Callao%2C+4%2C+Madrid"
+  },
+  {
+    "id": "museo-reina-sofia",
+    "name": "Museo Reina Sofía · Cine Sabatini",
+    "address": "Calle de Santa Isabel, 52",
+    "municipality": "Madrid",
+    "lat": 40.40864029339192,
+    "lon": -3.6939504103292973,
+    "url": "https://www.museoreinasofia.es/cine-nuevos-medios/",
+    "adapter": "reina_sofia",
+    "status": "active",
+    "inventory_status": "verified_venue",
+    "provenance": "https://www.museoreinasofia.es/cine-nuevos-medios/",
+    "reading_note": "Se leen pases individuales del Cine Sabatini; los programas múltiples sin horas separadas se registran como ambiguos.",
+    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Calle+de+Santa+Isabel%2C+52%2C+Madrid"
+  },
+  {
+    "id": "casa-mexico",
+    "name": "Fundación Casa de México en España",
+    "address": "Calle de Alberto Aguilera, 20",
+    "municipality": "Madrid",
+    "lat": 40.43012128882594,
+    "lon": -3.7095460727718854,
+    "url": "https://www.casademexico.es/cine-en-casa-de-mexico/",
+    "adapter": "casa_mexico",
+    "status": "active",
+    "inventory_status": "verified_venue",
+    "provenance": "https://www.casademexico.es/cine-en-casa-de-mexico/",
+    "reading_note": "Pases individuales de los ciclos publicados; los programas sin desglose inequívoco generan una incidencia.",
+    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Calle+de+Alberto+Aguilera%2C+20%2C+Madrid"
   }
 ]

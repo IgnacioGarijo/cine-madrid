@@ -19,6 +19,13 @@ class Fetcher:
         self.robots = {}
 
     def get(self, url):
+        return self._request('GET', url)
+
+    def post(self, url, data=None, *, json=None):
+        """Public read-only form queries; caller must never submit a purchase."""
+        return self._request('POST', url, data=data, json=json)
+
+    def _request(self, method, url, **kwargs):
         origin = urljoin(url, '/')
         if origin not in self.robots:
             robots_url = urljoin(origin, 'robots.txt')
@@ -31,7 +38,7 @@ class Fetcher:
         if not self.robots[origin].can_fetch(USER_AGENT, url):
             raise ValueError('La fuente no permite esta lectura en robots.txt.')
         time.sleep(.3)
-        r = self.session.get(url, timeout=35)
+        r = self.session.request(method, url, timeout=35, **kwargs)
         r.raise_for_status()
         try:return r.content.decode('utf-8')
         except UnicodeDecodeError:return r.content.decode(r.apparent_encoding or 'windows-1252',errors='replace')

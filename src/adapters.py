@@ -41,7 +41,7 @@ def json_nodes(soup):
 
 class Result:
     def __init__(self,cinema,today):
-        self.cinema=cinema;self.today=today;self.sessions={};self.movies={};self.pages=[]
+        self.cinema=cinema;self.today=today;self.sessions={};self.movies={};self.pages=[];self.empty_confirmed=False
     def add(self,title,start,url,director='',duration=None,booking=None,version=None,room='',native=None,category='unclassified',tags=None,format=None,work_id=None):
         if isinstance(start,str):start=datetime.fromisoformat(start.replace('Z','+00:00'))
         if start.tzinfo is None:start=start.replace(tzinfo=MADRID)
@@ -282,9 +282,22 @@ def cinerama(reader):
 
 ADAPTERS['cinerama']=cinerama
 
+# Imported on demand: modules reuse Reader helpers without a circular import at startup.
+ADDITIONAL_ADAPTERS={
+    'golem':'commercial','odeon':'commercial',
+    'publicine_embajadores':'independent','filmoteca':'cultural','casa_america':'cultural',
+    'instituto_frances':'cultural','academia_cine':'cultural','reina_sofia':'cultural','casa_mexico':'cultural',
+    'callao':'extra','berlanga':'extra','sala_equis':'special','pequeno_cine':'special','ocine_caleido':'special','palacio_prensa':'special',
+}
+
 def read_cinema(cinema,today,incidents):
     reader=Reader(cinema,today,incidents)
-    ADAPTERS[cinema['adapter']](reader)
+    adapter=cinema['adapter']
+    if adapter not in ADAPTERS:
+        from importlib import import_module
+        module=import_module('.adapters_'+ADDITIONAL_ADAPTERS[adapter],package=__package__)
+        ADAPTERS[adapter]=getattr(module,adapter)
+    ADAPTERS[adapter](reader)
     sessions,movies=reader.result.finish()
-    if not sessions:raise ValueError('No se han leído sesiones futuras verificables; se conserva la última lectura válida')
+    if not sessions and not reader.result.empty_confirmed:raise ValueError('No se han leído sesiones futuras verificables; se conserva la última lectura válida')
     return sessions,movies,reader.result.pages

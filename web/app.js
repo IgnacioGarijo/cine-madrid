@@ -1,8 +1,8 @@
-import {createAccount} from './account.js?v=0.10.2';
-import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.10.2';
+import {createAccount} from './account.js?v=0.11.0';
+import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.11.0';
 
-import {addressCandidates, validOrigin} from './search-utils.js?v=0.10.2';
-import {posterURL} from './poster-utils.js?v=0.10.2';
+import {addressCandidates, validOrigin} from './search-utils.js?v=0.11.0';
+import {posterURL} from './poster-utils.js?v=0.11.0';
 
 const $ = selector => document.querySelector(selector);
 const all = selector => [...document.querySelectorAll(selector)];
@@ -436,16 +436,17 @@ async function boot() {
     renderAccount();
     const posts = responses[2].ok ? await responses[2].json() : [];
     $('#updated').textContent = 'Último intento: ' + new Date(data.generated_at).toLocaleString('es-ES');
-    const active = data.sources.filter(s => s.status === 'ok').length;
-    $('#coverage').textContent = `Cobertura parcial · ${active} fuente${active === 1 ? '' : 's'} leída${active === 1 ? '' : 's'} correctamente · ${data.cinemas.length} espacios en inventario provisional. Las demás carteleras están pendientes de integrar.`;
+    const active = data.sources.filter(s => ['ok','empty'].includes(s.status)).length;
+    $('#coverage').textContent = `Cobertura parcial · ${active} fuente${active === 1 ? '' : 's'} leída${active === 1 ? '' : 's'} correctamente · ${data.cinemas.length} recintos en inventario. Consulta el detalle de lecturas parciales y fuentes pendientes debajo.`;
     $('#inventory-count').textContent = `${data.cinemas.length} espacios`;
     const tmdb = data.tmdb || {};
     $('#agent-status').textContent = `TMDB: ${tmdb.status === 'ok' ? 'conectado' : tmdb.status === 'partial' ? 'lectura parcial' : 'pendiente o no disponible'} · ${tmdb.matched_movies || 0}/${tmdb.total_movies || data.movies.length} películas identificadas en la última consulta. Copilot sigue pendiente para las ambigüedades. Las identidades sin verificar no generan avisos de coincidencia.`;
     for (const cinema of data.cinemas) {
       const row = el('div',undefined,'source-row');
       const reading = data.sources.find(s => s.id === cinema.id);
-      const state = reading?.status === 'ok' ? 'Lectura correcta' : reading?.status === 'partial' ? 'Lectura parcial' : reading?.status === 'error' ? 'Error de lectura' : 'Pendiente';
+      const state = reading?.status === 'ok' ? 'Lectura correcta' : reading?.status === 'partial' ? 'Lectura parcial' : reading?.status === 'error' ? 'Error de lectura' : reading?.status === 'empty' ? 'Sin sesiones anunciadas' : 'Pendiente';
       row.append(cinema.url ? link(cinema.name,cinema.url) : el('strong',cinema.name),el('span',`${state}${cinema.municipality && cinema.municipality !== 'Madrid' ? ' · ' + cinema.municipality : ''}${cinema.formats?.includes('IMAX') ? ' · Tiene sala IMAX' : ''}${reading?.last_session ? ' · Pases hasta ' + reading.last_session.slice(0,10) : ''}`));
+      if (cinema.reading_note) row.append(el('small',cinema.reading_note,'fine'));
       if (cinema.schedule_url) row.append(link('Horarios · '+(cinema.schedule_label || 'fuente alternativa'),cinema.schedule_url));
       $('#sources').append(row);
     }

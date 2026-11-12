@@ -37,7 +37,7 @@ def run(refresh=True, newsletter=False, posters_only=False):
             try:
                 fresh,films,pages=read_cinema(cinema,today,incidents)
                 for session in fresh:session['last_seen']=now()
-                partial=any(i['source_id']==cid and i['code']=='partial_read' for i in incidents.current.values())
+                partial=any(i['source_id']==cid and i['code'] in ('partial_read','unexpected_drop') for i in incidents.current.values())
                 if previous and (len(fresh)<len(previous)*.5 or partial):
                     if len(fresh)<len(previous)*.5:incidents.add(cid,'unexpected_drop','sessions','La fuente devuelve menos de la mitad de las sesiones anteriores; verificar cobertura.',cinema['url'])
                     known={x['id'] for x in fresh}
@@ -46,12 +46,13 @@ def run(refresh=True, newsletter=False, posters_only=False):
                     film_ids={m['id'] for m in films}
                     films += [m for m in old.get('movies',[]) if m['id'] in {x['movie_id'] for x in missing} and m['id'] not in film_ids]
                 sessions+=fresh;movies+=films
-                partial=any(i['source_id']==cid and i['code']=='partial_read' for i in incidents.current.values())
-                sources.append(dict(id=cid,status='partial' if partial else 'ok',last_attempt=now(),last_success=now(),url=cinema.get('schedule_url',cinema['url']),source_label=cinema.get('schedule_label','Fuente oficial'),pages_read=len(pages),
-                    first_session=min(x['start'] for x in fresh),last_session=max(x['start'] for x in fresh)))
+                partial=any(i['source_id']==cid and i['code'] in ('partial_read','unexpected_drop') for i in incidents.current.values())
+                sources.append(dict(id=cid,status='partial' if partial else 'ok' if fresh else 'empty',last_attempt=now(),last_success=now(),url=cinema.get('schedule_url',cinema['url']),source_label=cinema.get('schedule_label','Fuente oficial'),pages_read=len(pages),
+                    first_session=min((x['start'] for x in fresh),default=None),last_session=max((x['start'] for x in fresh),default=None)))
                 print(f"Fuente {cid}: {len(fresh)} sesiones / {len(pages)} páginas",flush=True)
             except Exception as exc:
-                incidents.add(cid,'read_failed','source','No se pudo actualizar la cartelera ('+type(exc).__name__+'). Se conserva la última lectura válida.',cinema['url'],'error')
+                detail=str(exc).replace('\n',' ')[:220]
+                incidents.add(cid,'read_failed','source','No se pudo actualizar la cartelera ('+type(exc).__name__+': '+detail+'). Se conserva la última lectura válida.',cinema.get('schedule_url',cinema['url']),'error')
                 sessions += [dict(x,stale=True,status='unverified') for x in previous]
                 film_ids={x['movie_id'] for x in previous}
                 movies += [m for m in old.get('movies',[]) if m['id'] in film_ids]
@@ -106,7 +107,7 @@ def run(refresh=True, newsletter=False, posters_only=False):
             incidents.add(cinema['id'],'source_pending',cinema['id'],cinema.get('reading_note','Fuente pendiente de integrar; no se incluyen sus sesiones.'),cinema.get('url',''),'info')
     inventory_ids={c['id'] for c in cinemas}
     checked.update(i['source_id'] for i in old.get('incidents',[]) if i['code']=='source_pending' and i['source_id'] not in inventory_ids)
-    data=dict(version='0.10.2',generated_at=now(),coverage_complete=False,cinemas=cinemas,sources=sources,
+    data=dict(version='0.11.0',generated_at=now(),coverage_complete=False,cinemas=cinemas,sources=sources,
               movies=movies,sessions=sessions,incidents=incidents.finish(checked),agent_status='waiting_for_copilot',tmdb=tmdb_status)
     write_json(path,data)
     build(data,newsletter)
