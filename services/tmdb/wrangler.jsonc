@@ -3,11 +3,54 @@
   "main": "worker.mjs",
   "compatibility_date": "2026-11-11",
   "workers_dev": true,
-  "vars": {"ALLOWED_ORIGIN": "https://ignaciogarijo.github.io", "PUBLIC_FAVORITES": "true"},
+  "vars": {
+    "ALLOWED_ORIGIN": "https://ignaciogarijo.github.io",
+    "PUBLIC_FAVORITES": "false",
+    "SUPABASE_URL": "https://pwsgkteftgodyynoxfgg.supabase.co",
+    "SUPABASE_PUBLISHABLE_KEY": "sb_publishable_1NHYJPD4I8su_FOCbGr55Q_o3MwCAFG"
+  },
   "ratelimits": [
-    {"name":"SEARCH_RATE_LIMITER","namespace_id":"1001","simple":{"limit":30,"period":60}},
-    {"name":"AUTH_RATE_LIMITER","namespace_id":"1002","simple":{"limit":5,"period":60}}
+    {
+      "name": "SEARCH_RATE_LIMITER",
+      "namespace_id": "1001",
+      "simple": {
+        "limit": 30,
+        "period": 60
+      }
+    },
+    {
+      "name": "AUTH_RATE_LIMITER",
+      "namespace_id": "1002",
+      "simple": {
+        "limit": 5,
+        "period": 60
+      }
+    }
   ],
-  "durable_objects": {"bindings":[{"name":"FAVORITES","class_name":"Favorites"}]},
-  "migrations": [{"tag":"favorites-v1","new_sqlite_classes":["Favorites"]}]
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "FAVORITES",
+        "class_name": "Favorites"
+      },
+      {
+        "name": "ACCOUNTS",
+        "class_name": "AccountData"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "favorites-v1",
+      "new_sqlite_classes": [
+        "Favorites"
+      ]
+    },
+    {
+      "tag": "accounts-v1",
+      "new_sqlite_classes": [
+        "AccountData"
+      ]
+    }
+  ]
 }

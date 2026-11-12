@@ -26,7 +26,7 @@ async function sameSecret(a,b) {
   const [left,right]=await Promise.all([digest(a),digest(b)]);
   return left.reduce((difference,value,index)=>difference | (value^right[index]),0)===0;
 }
-async function body(request) {
+export async function body(request) {
   if (Number(request.headers.get('Content-Length') || 0)>2048) throw Error('large');
   if(!request.body)throw Error('missing');
   const reader=request.body.getReader(),chunks=[];let size=0;
@@ -43,11 +43,11 @@ async function body(request) {
 
 // One object serializes changes from every device; redeploying never reseeds it.
 export class Favorites {
-  constructor(state) {this.state=state;}
+  constructor(state,seed=initialMovies) {this.state=state;this.seed=seed;}
   async fetch(request) {
     return this.state.blockConcurrencyWhile(async()=>{
       let movies=await this.state.storage.get('movies');
-      if (!movies) {movies=structuredClone(initialMovies);await this.state.storage.put('movies',movies);}
+      if (!movies) {movies=structuredClone(this.seed);await this.state.storage.put('movies',movies);}
       if(request.method==='POST') {
         const movie=await request.json();
         if (!movies.some(item=>item.id===movie.id)) {
@@ -69,6 +69,7 @@ export async function handleFavorites(request,env,{upstreamFetch=fetch}={}) {
   if(!publicRead && request.headers.get('Origin')!==allowed)return json({error:'origin_not_allowed'},403);
   if(!env.FAVORITES)return json({error:'not_configured'},503);
   if(publicRead)return env.FAVORITES.get(env.FAVORITES.idFromName('public-watchlist')).fetch(new Request('https://favorites/favorites'));
+  if(env.SUPABASE_URL && !env.ACCOUNT_VERIFIED)return json({error:'legacy_list_read_only'},410);
   const publicEditing=env.PUBLIC_FAVORITES==='true';
   if(!publicEditing && !env.FAVORITES_OWNER_SECRET)return json({error:'owner_not_configured'},503);
   const sessionRoute=url.pathname==='/session' && request.method==='POST';

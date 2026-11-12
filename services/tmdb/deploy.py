@@ -45,8 +45,10 @@ def diagnose_access():
 def main():
     for key in SECRET_NAMES[:3]:
         if not os.getenv(key):raise SystemExit('Falta el secreto de Actions '+key+'. Consulta docs/CLOUDFLARE.md.')
-    public_favorites=json.loads(Path(CONFIG).read_text(encoding='utf-8')).get('vars',{}).get('PUBLIC_FAVORITES')=='true'
-    if not public_favorites and not os.getenv('FAVORITES_OWNER_SECRET'):raise SystemExit('Falta el secreto FAVORITES_OWNER_SECRET para el acceso privado.')
+    settings=json.loads(Path(CONFIG).read_text(encoding='utf-8')).get('vars',{})
+    public_favorites=settings.get('PUBLIC_FAVORITES')=='true'
+    accounts=bool(settings.get('SUPABASE_URL'))
+    if not accounts and not public_favorites and not os.getenv('FAVORITES_OWNER_SECRET'):raise SystemExit('Falta el secreto FAVORITES_OWNER_SECRET para el acceso privado.')
     try:
         output=run(['deploy'])
     except SystemExit:
@@ -65,7 +67,7 @@ def main():
         except requests.RequestException:pass
         if attempt==5:raise SystemExit('El servicio no responde correctamente; no se modifica la configuración de Pages.')
         time.sleep(3)
-    if not public_favorites:
+    if not public_favorites and not accounts:
         for attempt in range(6):
             try:
                 response=requests.post(base+'/session',json={'secret':os.environ['FAVORITES_OWNER_SECRET']},headers={'Origin':'https://ignaciogarijo.github.io'},timeout=15)
@@ -76,7 +78,14 @@ def main():
             time.sleep(5)
     response=requests.get(base+'/favorites',timeout=15)
     if not response.ok or not isinstance(response.json(),list):raise SystemExit('No se pudo comprobar la lista compartida; no se modifica Pages.')
-    (ROOT/'web/search-config.json').write_text(json.dumps({'tmdb_api_url':base+'/search','favorites_api_url':base+'/favorites','public_favorites':public_favorites})+'\n',encoding='utf-8')
+    config={'tmdb_api_url':base+'/search','favorites_api_url':base+'/favorites','public_favorites':public_favorites}
+    if accounts:
+        config.update(supabase_url=settings['SUPABASE_URL'],supabase_publishable_key=settings['SUPABASE_PUBLISHABLE_KEY'])
+        headers={'Origin':settings['ALLOWED_ORIGIN']}
+        for path in ['/me/favorites','/me/profile']:
+            response=requests.get(base+path,headers=headers,timeout=15)
+            if response.status_code!=401:raise SystemExit('La ruta privada no rechaza accesos sin sesión; no se publica Pages.')
+    (ROOT/'web/search-config.json').write_text(json.dumps(config)+'\n',encoding='utf-8')
     print('Servicio de sugerencias comprobado:',base)
 
 if __name__ == '__main__':

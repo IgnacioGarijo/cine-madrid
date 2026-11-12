@@ -130,3 +130,5 @@ header { width:100%; min-height:280px; align-items:flex-end; padding:32px max(32
 @media(max-width:360px) {
   .movie-heading { grid-template-columns:56px minmax(0,1fr); gap:10px; padding:10px; }.film-poster { width:56px; }.movie-heading h3 { font-size:18px; }
 }
+
+.account-bar{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;margin:.5rem 0 .8rem}.account-bar p{flex:1 1 180px;margin:0;overflow-wrap:anywhere}.account-bar button{font-size:.8rem;padding:.5rem .7rem}#import-favorites,#import-origin{margin:.4rem 0 .8rem}button:disabled{opacity:.6;cursor:default}

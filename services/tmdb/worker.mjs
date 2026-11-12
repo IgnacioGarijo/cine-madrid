@@ -1,20 +1,23 @@
 const reply=(body,status,origin)=>new Response(JSON.stringify(body),{status,headers:{'Content-Type':'application/json; charset=utf-8','Access-Control-Allow-Origin':origin,'Vary':'Origin','Cache-Control':'no-store'}});
 
+import {handleAccount} from './accounts.mjs';
+export {AccountData} from './accounts.mjs';
 import {handleFavorites} from './favorites.mjs';
 export {Favorites} from './favorites.mjs';
 
 export async function handle(request,env,{upstreamFetch=fetch,cache=globalThis.caches?.default}={}) {
   const url=new URL(request.url), allowed=env.ALLOWED_ORIGIN || 'https://ignaciogarijo.github.io';
   if (url.pathname==='/health' && request.method==='GET') return reply({ready:!!env.TMDB_READ_TOKEN},200,allowed);
+  const accountRoute=url.pathname.startsWith('/me/');
   const favoritesRoute=url.pathname==='/favorites' || url.pathname==='/session' || /^\/favorites\/\d+$/.test(url.pathname);
-  if (favoritesRoute && request.method!=='OPTIONS') {
-    const result=await handleFavorites(request,env,{upstreamFetch});
+  if ((favoritesRoute || accountRoute) && request.method!=='OPTIONS') {
+    const result=await (accountRoute ? handleAccount : handleFavorites)(request,env,{upstreamFetch});
     const response=new Response(result.body,result);
     response.headers.set('Access-Control-Allow-Origin',allowed);response.headers.set('Vary','Origin');
     return response;
   }
   if (request.headers.get('Origin')!==allowed) return reply({error:'origin_not_allowed'},403,allowed);
-  if (request.method==='OPTIONS') return new Response(null,{status:204,headers:{'Access-Control-Allow-Origin':allowed,'Access-Control-Allow-Methods':'GET, POST, DELETE, OPTIONS','Access-Control-Allow-Headers':'Authorization, Content-Type','Access-Control-Max-Age':'600','Vary':'Origin'}});
+  if (request.method==='OPTIONS') return new Response(null,{status:204,headers:{'Access-Control-Allow-Origin':allowed,'Access-Control-Allow-Methods':'GET, POST, PUT, DELETE, OPTIONS','Access-Control-Allow-Headers':'Authorization, Content-Type','Access-Control-Max-Age':'600','Vary':'Origin'}});
   if (request.method!=='GET' || url.pathname!=='/search') return reply({error:'not_found'},404,allowed);
   const query=(url.searchParams.get('q') || '').trim(), rawPage=url.searchParams.get('page') || '1', page=Number(rawPage);
   if (query.length<2 || query.length>100 || !/^\d+$/.test(rawPage) || page<1 || page>500) return reply({error:'invalid_query'},400,allowed);

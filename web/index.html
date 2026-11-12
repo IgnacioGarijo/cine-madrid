@@ -12,8 +12,8 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-  <link rel="stylesheet" href="style.css?v=0.9.0">
-  <script src="app.js?v=0.9.0" type="module"></script>
+  <link rel="stylesheet" href="style.css?v=0.10.0">
+  <script src="app.js?v=0.10.0" type="module"></script>
 </head>
 <body>
 <a class="skip-link" href="#cartelera">Ir a la cartelera</a>
@@ -22,6 +22,7 @@
   <button id="install-button" class="install-button" aria-label="Instalar Cine Madrid como app"><span aria-hidden="true">↧</span><span>Instalar</span></button>
 </header>
 <main>
+  <div class="account-bar"><p id="account-label" class="fine">Conectando con las cuentas…</p><button id="google-login" type="button" disabled>Entrar con Google</button><button id="account-logout" type="button" hidden>Cerrar sesión</button></div>
   <nav aria-label="Secciones principales"><button data-view="cartelera" class="active" aria-current="page">Cartelera</button><button data-view="pendientes">Favoritas</button><button data-view="boletin">Boletín</button></nav>
 
   <section id="cartelera" class="view" aria-label="Cartelera y calendario">
@@ -43,7 +44,7 @@
     <details class="location" id="location-settings"><summary>Mi origen</summary>
       <p>La dirección se guarda solo en este navegador. Al escribir se consulta CartoCiudad (IGN). Elige una dirección reconocida para guardarla.</p>
       <form id="origin-form"><label>Dirección de origen<input id="origin" autocomplete="off" placeholder="Calle y número, Madrid" aria-controls="address-suggestions" aria-autocomplete="list"></label><button class="primary" type="submit">Buscar dirección</button><button type="button" id="clear-origin">Borrar origen</button></form>
-      <div id="address-suggestions" class="address-suggestions" aria-label="Direcciones reconocidas"></div><p id="origin-status" aria-live="polite"></p>
+      <button id="import-origin" type="button" hidden>Usar el origen de este navegador</button><div id="address-suggestions" class="address-suggestions" aria-label="Direcciones reconocidas"></div><p id="origin-status" aria-live="polite"></p>
       <p class="fine"><a href="https://www.cartociudad.es/" target="_blank" rel="noopener">Direcciones: CartoCiudad · IGN/CNIG</a>. Distancias en línea recta.</p>
       <p class="legend"><span>🟢 Hasta 1 km</span><span>🟡 1–2 km</span><span>🟠 2–4 km</span><span>🟣 Más de 4 km</span></p>
     </details>
@@ -60,14 +61,14 @@
 
   <section id="pendientes" class="view" hidden>
     <div class="section-title"><h2>Películas favoritas</h2><button id="add-favorite" type="button" class="primary">+ Añadir película</button></div>
-    <p class="fine">Lista pública · la misma desde cualquier dispositivo. <button id="owner-access" type="button" hidden>Acceso de edición</button></p><ul id="watchlist" class="favorite-list"></ul>
+    <p class="fine">Lista pública · la misma desde cualquier dispositivo.</p><button id="import-favorites" type="button" hidden>Importar las favoritas anteriores</button><ul id="watchlist" class="favorite-list"></ul>
     <p id="watch-status" role="status" class="fine"></p>
   </section>
   <section id="boletin" class="view" hidden><h2>El boletín</h2><p>Reposiciones, eventos especiales y próximos ciclos.</p><div id="newsletters"></div></section>
   <section id="estado" class="view" hidden tabindex="-1"><div class="section-title"><h2>Fuentes e incidencias</h2><button type="button" data-go="cartelera">Volver a Cartelera</button></div><p id="coverage" class="notice"></p><p id="updated" class="fine"></p><p id="connection-status" class="fine"></p><p id="agent-status" class="fine"></p><div class="section-title"><h3>Inventario de espacios</h3><span id="inventory-count" class="fine"></span></div><p class="fine">Inventario provisional por contrastar. «Pendiente» significa que aún no recogemos sus sesiones, no que el cine esté cerrado.</p><div id="sources" class="source-list"></div><div class="section-title"><h3>Registro de incidencias</h3><select id="issue-filter" aria-label="Estado de incidencia"><option value="open">Abiertas</option><option value="resolved">Resueltas</option><option value="">Todas</option></select></div><div id="incidents"></div><div class="tmdb-credit"><a href="https://www.themoviedb.org" target="_blank" rel="noopener"><img src="icons/tmdb.svg" alt="The Movie Database (TMDB)"></a><p>This product uses the TMDB API but is not endorsed or certified by TMDB.</p><p>Identificación por título o alias y dirección. Reposición automática: estreno comercial al menos un año antes de la sesión; las premières de festivales no bastan. Los casos intermedios quedan pendientes de revisión.</p></div></section>
   <div id="fatal" role="alert" hidden></div>
 </main>
-<footer><div><span>Cine Madrid <b aria-hidden="true">✳</b></span><span class="version">v0.9.0</span></div><div class="footer-links"><button type="button" id="open-status">Fuentes e incidencias</button><button type="button" id="install-help">Añadir al móvil</button><a href="https://github.com/IgnacioGarijo/cine-madrid">Proyecto ↗</a></div><p id="offline-label" class="fine" hidden>Sin conexión · Última cartelera guardada</p></footer>
+<footer><div><span>Cine Madrid <b aria-hidden="true">✳</b></span><span class="version">v0.10.0</span></div><div class="footer-links"><button type="button" id="open-status">Fuentes e incidencias</button><button type="button" id="install-help">Añadir al móvil</button><a href="https://github.com/IgnacioGarijo/cine-madrid">Proyecto ↗</a></div><p id="offline-label" class="fine" hidden>Sin conexión · Última cartelera guardada</p></footer>
 
 <dialog id="calendar-dialog" class="calendar-dialog" aria-labelledby="calendar-dialog-title">
   <div class="dialog-header"><h2 id="calendar-dialog-title">Calendario</h2><button type="button" data-close="calendar-dialog" class="collapse-calendar">Replegar calendario</button></div>
@@ -90,12 +91,6 @@
   <p id="favorite-search-status" class="fine" role="status"></p><div id="catalog" class="favorite-search"></div><div id="favorite-pagination" class="actions"></div>
   <a id="request-favorite" class="button primary" hidden target="_blank" rel="noopener">Buscar en TMDB ↗</a>
   <p class="fine" id="favorite-help">Las sugerencias instantáneas de TMDB se activarán al conectar el servicio de Cloudflare. Mientras tanto, puedes buscar mediante GitHub. Guardar una película en la lista pública requiere confirmar con la cuenta propietaria; la clave de TMDB permanece protegida.</p>
-</dialog>
-<dialog id="owner-dialog" class="install-dialog" aria-labelledby="owner-title">
-  <div class="dialog-header"><h2 id="owner-title">Tu lista de favoritas</h2><button type="button" data-close="owner-dialog" aria-label="Cerrar acceso">✕</button></div>
-  <p>Introduce tu contraseña para editar la lista. Este dispositivo recordará el acceso durante 30 días.</p>
-  <form id="owner-form"><label>Contraseña<input id="owner-password" type="password" autocomplete="current-password" required maxlength="256"></label><button id="owner-submit" class="primary" type="submit">Continuar</button></form>
-  <p id="owner-error" role="status" class="fine"></p>
 </dialog>
 <dialog id="install-dialog" class="install-dialog" aria-labelledby="install-title"><div class="dialog-header"><h2 id="install-title">Cine Madrid en tu móvil</h2><button type="button" data-close="install-dialog" class="icon-button" aria-label="Cerrar instrucciones">✕</button></div><img src="icons/icon-192.png" width="72" height="72" alt="Icono de Cine Madrid"><p>Un icono en tu pantalla de inicio y acceso en una ventana propia.</p><div><h3>Android</h3><p>Abre esta web en Chrome y utiliza el menú <strong>Instalar aplicación</strong> o <strong>Añadir a pantalla de inicio</strong>.</p></div><div><h3>iPhone</h3><p>Abre esta web en Safari. Pulsa <strong>Compartir → Añadir a pantalla de inicio</strong> y confirma. Si aparece «Abrir como app web», actívalo.</p></div><p class="fine">Tras una primera visita con conexión podrás consultar la última cartelera guardada. Los horarios y enlaces de entradas necesitan conexión para comprobar cambios.</p></dialog>
 </body>

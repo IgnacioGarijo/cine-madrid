@@ -1,7 +1,8 @@
-import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.9.0';
+import {createAccount} from './account.js?v=0.10.0';
+import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.10.0';
 
-import {addressCandidates, validOrigin} from './search-utils.js?v=0.9.0';
-import {posterURL} from './poster-utils.js?v=0.9.0';
+import {addressCandidates, validOrigin} from './search-utils.js?v=0.10.0';
+import {posterURL} from './poster-utils.js?v=0.10.0';
 
 const $ = selector => document.querySelector(selector);
 const all = selector => [...document.querySelectorAll(selector)];
@@ -36,7 +37,8 @@ let data, catalog = [], watch = [], origin = stored('cm-origin', null);
 let offlineData = false, installPrompt = null;
 let filmDaySelections = new WeakMap();
 let searchApi = '', liveFavoriteResults = null, favoriteTimer, favoriteController, favoriteSequence = 0, favoriteError = '';
-let favoritesApi = '', publicFavorites = false, ownerSession = stored('cm-owner-session',null), pendingFavoriteAction = null, favoriteSaving = false;
+let favoritesApi = '', favoriteSaving = false;
+let accountClient=null, accountUser=null, accountEpoch=0, legacyFavorites=[], guestOrigin=origin, accountsEnabled=false;
 let addressTimer, addressController, addressSequence = 0;
 let selectedCinemas = new Set(), selectedCategories = new Set(['repertory_events','premiere','unclassified']), favoriteSearches = [], favoritePage = 1;
 const categories = [['repertory_events','Repos. y eventos'],['premiere','Estrenos'],['unclassified','Por clasificar']];
@@ -250,43 +252,67 @@ function setView(name, updateHash = true) {
 function favoriteRequest(movie, operation = 'Añadir', page = 1) {
   return 'https://github.com/IgnacioGarijo/cine-madrid/issues/new?' + new URLSearchParams({template:'favorita.yml',operation,movie,page:String(page)});
 }
-function ownerToken() {return ownerSession?.expires>Date.now() ? ownerSession.token : '';}
-function renderOwnerAccess() {
-  $('#owner-access').hidden=!favoritesApi || publicFavorites;
-  $('#owner-access').textContent=ownerToken() ? 'Cerrar acceso de edición' : 'Acceso de edición';
-}
-function requestOwnerAccess(action=null) {
-  pendingFavoriteAction=action;$('#owner-password').value='';$('#owner-error').textContent='';
-  $('#owner-dialog').showModal();$('#owner-password').focus();
+async function accountRequest(path,options={}) {
+  const epoch=accountEpoch;
+  const {data:{session},error}=await accountClient.auth.getSession();
+  if(error || !session || epoch!==accountEpoch)throw Error('signed_out');
+  const response=await fetch(new URL('/me/'+path,favoritesApi),{...options,cache:'no-store',
+    headers:{'Content-Type':'application/json',Authorization:'Bearer '+session.access_token}});
+  if(epoch!==accountEpoch)throw Error('account_changed');
+  if(!response.ok)throw Error(response.status===401 ? 'signed_out' : 'request_failed');
+  const value=await response.json();
+  if(epoch!==accountEpoch)throw Error('account_changed');
+  return value;
 }
 async function loadFavorites() {
+  if(accountsEnabled){
+    if(!accountUser)return;
+    const movies=await accountRequest('favorites');
+    if(!Array.isArray(movies))throw Error('invalid_favorites');
+    watch=movies;renderWatch();renderCatalog();return;
+  }
   const response=await fetch(favoritesApi || 'favorites.json',{cache:'no-store'});
   if(!response.ok)throw Error('favorites_unavailable');
   const movies=await response.json();if(!Array.isArray(movies))throw Error('invalid_favorites');
-  watch=movies;store('cm-watch-cache',movies);renderWatch();renderCatalog();
+  watch=movies;renderWatch();renderCatalog();
+}
+function renderAccount(){
+  $('#account-label').textContent=accountUser ? 'Tu cuenta · '+(accountUser.user_metadata?.full_name || accountUser.email || 'Sesión iniciada') : 'Entra para guardar tus favoritas y tu origen en todos tus dispositivos.';
+  $('#google-login').hidden=!!accountUser;$('#google-login').disabled=!accountClient;
+  $('#account-logout').hidden=!accountUser;
+  $('#import-favorites').hidden=!accountUser || !legacyFavorites.some(movie=>!watch.some(item=>item.id===movie.id));
+  $('#import-origin').hidden=!accountUser || !!origin || !validOrigin(guestOrigin);
+  $('#add-favorite').disabled=accountsEnabled && !accountUser;
+
+}
+async function applyAccount(user){
+  if(user?.id===accountUser?.id){renderAccount();return;}
+  ++accountEpoch;accountUser=user;watch=[];origin=null;favoriteSaving=false;
+  addressController?.abort();++addressSequence;$('#address-suggestions').replaceChildren();$('#origin').value='';
+  $('#watch-status').textContent='';$('#origin-status').textContent='';
+  renderAccount();renderWatch();renderCatalog();if(data)render();
+  if(!user)return;
+  const epoch=accountEpoch;
+  try{
+    await loadFavorites();const profile=await accountRequest('profile');
+    if(epoch!==accountEpoch)return;
+    origin=validOrigin(profile.origin) ? profile.origin : null;$('#origin').value=origin?.label || '';
+    renderAccount();if(data)render();
+  }catch{if(epoch===accountEpoch)$('#watch-status').textContent='No se pudo sincronizar tu cuenta. Comprueba la conexión y vuelve a abrir la página.';}
 }
 async function changeFavorite(movie,remove=false) {
   if(favoriteSaving)return;
-  if(!publicFavorites && !ownerToken()) {requestOwnerAccess(()=>changeFavorite(movie,remove));return;}
-  favoriteSaving=true;renderCatalog();renderWatch();let failure='';
-  const status=$('#watch-status');status.textContent=remove ? 'Quitando película…' : 'Guardando película…';
-  $('#favorite-search-status').textContent=status.textContent;
-  try {
-    const response=await fetch(favoritesApi+(remove ? '/'+movie.tmdb_id : ''),{
-      method:remove?'DELETE':'POST',headers:{'Content-Type':'application/json',...(!publicFavorites?{Authorization:'Bearer '+ownerToken()}:{})},
-      ...(remove ? {} : {body:JSON.stringify({tmdb_id:movie.tmdb_id})})});
-    if(response.status===401) {
-      ownerSession=null;store('cm-owner-session',null);requestOwnerAccess(()=>changeFavorite(movie,remove));return;
-    }
-    if(!response.ok)throw Error('save_failed');
-    const movies=await response.json();if(!Array.isArray(movies))throw Error('save_failed');
-    watch=movies;store('cm-watch-cache',movies);
-    status.textContent=(remove ? 'Quitada: ' : 'Guardada: ')+movie.title+'.';
+  if(!accountUser){$('#watch-status').textContent='Entra con Google para guardar películas.';return;}
+  const epoch=accountEpoch;favoriteSaving=true;renderCatalog();renderWatch();
+  $('#watch-status').textContent=remove ? 'Quitando película…' : 'Guardando película…';
+  try{
+    const movies=await accountRequest('favorites'+(remove ? '/'+movie.tmdb_id : ''),{
+      method:remove?'DELETE':'POST',...(remove ? {} : {body:JSON.stringify({tmdb_id:movie.tmdb_id})})});
+    if(!Array.isArray(movies))throw Error('save_failed');
+    watch=movies;$('#watch-status').textContent=(remove ? 'Quitada: ' : 'Guardada: ')+movie.title+'.';
     if(!remove)$('#favorite-dialog').close();
-  } catch {
-    failure='No se pudo guardar el cambio. Tu lista conserva el estado anterior. Vuelve a intentarlo.';
-    status.textContent=failure;
-  } finally {favoriteSaving=false;renderWatch();renderOwnerAccess();renderCatalog();if(failure)$('#favorite-search-status').textContent=failure;}
+  }catch{if(epoch===accountEpoch)$('#watch-status').textContent='No se pudo guardar el cambio. Vuelve a intentarlo.';}
+  finally{if(epoch===accountEpoch){favoriteSaving=false;renderWatch();renderCatalog();renderAccount();}}
 }
 function renderWatch() {
   const box = $('#watchlist'); box.replaceChildren();
@@ -300,7 +326,8 @@ function renderWatch() {
     } else row.append(name,link('Quitar ↗',favoriteRequest(movie.id,'Quitar'),'favorite-remove'));
     box.append(row);
   }
-  if (!watch.length) box.append(el('li','Todavía no hay películas guardadas.','empty'));
+  if (!watch.length) box.append(el('li',accountsEnabled && !accountUser ? 'Tu lista aparecerá al iniciar sesión.' : 'Todavía no hay películas guardadas.','empty'));
+  if(accountsEnabled)renderAccount();
 }
 function renderCatalog() {
   const box = $('#catalog'); box.replaceChildren();$('#favorite-pagination').replaceChildren();
@@ -389,15 +416,23 @@ async function boot() {
     const searchConfig=responses[5].ok ? await responses[5].json() : {};
     searchApi=searchConfig.tmdb_api_url || '';
     favoritesApi=searchConfig.favorites_api_url || '';
-    publicFavorites=searchConfig.public_favorites === true;
-    renderOwnerAccess();
-    if(favoritesApi) {
-      watch=stored('cm-watch-cache',watch);
-      try {await loadFavorites();} catch {$('#watch-status').textContent='Sin conexión con tu lista. Se muestra la última copia guardada.';}
+
+    accountsEnabled=!!searchConfig.supabase_url;
+    legacyFavorites=watch;watch=[];
+    $('#favorite-help').textContent='Busca una película de TMDB y pulsa Añadir para guardarla en tu cuenta.';
+    if(accountsEnabled){
+      try{
+        accountClient=await createAccount(searchConfig);
+        const {data:{session},error}=await accountClient.auth.getSession();
+        if(error)throw error;
+        if(session?.user)await applyAccount(session.user);
+        accountClient.auth.onAuthStateChange((_event,session)=>{
+          // Avoid awaiting other auth calls inside Supabase's session lock.
+          setTimeout(()=>applyAccount(session?.user || null),0);
+        });
+      }catch{$('#watch-status').textContent='No se pudo iniciar el acceso a las cuentas. Recarga con conexión.';}
     }
-    if (searchApi) $('#favorite-help').textContent='Escribe un título y selecciona una película de todo TMDB. Guardarla en la lista pública se confirma con tu cuenta de GitHub. La clave permanece protegida en el servidor.';
-    if(favoritesApi)$('#favorite-help').textContent='Busca una película y pulsa Añadir. El acceso de edición se recuerda durante 30 días en este dispositivo.';
-    if(publicFavorites)$('#favorite-help').textContent='Busca una película y pulsa Añadir. La lista es pública y se comparte entre todos los dispositivos.';
+    renderAccount();
     const posts = responses[2].ok ? await responses[2].json() : [];
     $('#updated').textContent = 'Último intento: ' + new Date(data.generated_at).toLocaleString('es-ES');
     const active = data.sources.filter(s => s.status === 'ok').length;
@@ -477,22 +512,8 @@ $('#issue-filter').onchange = renderIncidents;
 $('#catalog-query').oninput = () => {clearTimeout(favoriteTimer);favoriteController?.abort();favoriteSequence++;favoritePage=1;favoriteError='';liveFavoriteResults=null;renderCatalog();if(searchApi) favoriteTimer=setTimeout(queryFavoriteSuggestions,450);};
 setInterval(refreshFavoriteSearches,15000);window.addEventListener('focus',refreshFavoriteSearches);
 $('#add-favorite').onclick = () => { $('#catalog-query').value = '';favoritePage=1;favoriteError='';liveFavoriteResults=null;renderCatalog(); $('#favorite-dialog').showModal(); $('#catalog-query').focus(); };
-$('#owner-access').onclick=()=>{
-  if(ownerToken()) {ownerSession=null;store('cm-owner-session',null);renderOwnerAccess();$('#watch-status').textContent='Acceso de edición cerrado en este dispositivo.';}
-  else requestOwnerAccess();
-};
-$('#owner-form').onsubmit=async event=>{
-  event.preventDefault();const button=$('#owner-submit');button.disabled=true;$('#owner-error').textContent='Comprobando acceso…';
-  try {
-    const response=await fetch(new URL('/session',favoritesApi),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({secret:$('#owner-password').value})});
-    if(!response.ok) {$('#owner-error').textContent=response.status===429 ? 'Demasiados intentos. Espera un minuto y vuelve a probar.' : response.status===401 ? 'La contraseña no es correcta.' : 'No se pudo conectar. Vuelve a intentarlo.';return;}
-    ownerSession=await response.json();store('cm-owner-session',ownerSession);$('#owner-password').value='';$('#owner-dialog').close();renderOwnerAccess();
-    const action=pendingFavoriteAction;pendingFavoriteAction=null;if(action)await action();
-  } catch {$('#owner-error').textContent='No se pudo conectar. Vuelve a intentarlo.';}
-  finally {button.disabled=false;}
-};
-$('#owner-dialog').addEventListener('close',()=>{$('#owner-password').value='';});
 async function selectOrigin(candidate) {
+  const epoch=accountEpoch;
   try {
     if (!validOrigin(candidate)) {
       $('#origin-status').textContent='Comprobando dirección…';
@@ -502,12 +523,16 @@ async function selectOrigin(candidate) {
       candidate={...candidate,lat:Number(point.lat),lon:Number(point.lng)};
     }
     if (!validOrigin(candidate)) throw new Error();
-    origin={lat:candidate.lat,lon:candidate.lon,label:candidate.label};
-    const saved=store('cm-origin',origin);$('#origin').value=candidate.label;
-    $('#origin-status').textContent=saved ? 'Origen guardado en este navegador.' : 'Origen aplicado; el navegador no permite guardarlo.';
+    const point={lat:candidate.lat,lon:candidate.lon,label:candidate.label};
+    if(epoch!==accountEpoch)return;
+    if(accountUser){await accountRequest('profile',{method:'PUT',body:JSON.stringify({origin:point})});}
+    else{guestOrigin=point;store('cm-origin',point);}
+    if(epoch!==accountEpoch)return;origin=point;
+    $('#origin').value=candidate.label;renderAccount();
+    $('#origin-status').textContent=accountUser ? 'Origen guardado en tu cuenta.' : 'Origen guardado en este navegador. Entra para sincronizarlo.';
     $('#address-suggestions').replaceChildren();$('#location-settings').open=false;render();
     $('#filters .cinema-dropdown summary').focus();
-  } catch {$('#origin-status').textContent='No se pudo comprobar esa dirección. Añade el número o prueba otra opción.';}
+  } catch {if(epoch===accountEpoch)$('#origin-status').textContent='No se pudo comprobar o guardar esa dirección. Vuelve a intentarlo.';}
 }
 async function lookupAddresses() {
   addressController?.abort();const controller=new AbortController();addressController=controller;
@@ -528,10 +553,37 @@ async function lookupAddresses() {
 }
 $('#origin').oninput=()=>{clearTimeout(addressTimer);addressController?.abort();addressSequence++;$('#address-suggestions').replaceChildren();$('#origin-status').textContent='';if($('#origin').value.trim().length>=4) addressTimer=setTimeout(lookupAddresses,650);};
 $('#origin-form').onsubmit=event=>{event.preventDefault();clearTimeout(addressTimer);lookupAddresses();};
-$('#clear-origin').onclick=()=>{
-  clearTimeout(addressTimer);addressController?.abort();addressSequence++;origin=null;try{localStorage.removeItem('cm-origin');}catch{}
-  $('#origin').value='';$('#address-suggestions').replaceChildren();$('#origin-status').textContent='Origen eliminado.';render();
+$('#clear-origin').onclick=async()=>{
+  const epoch=accountEpoch;
+  try{
+    if(accountUser)await accountRequest('profile',{method:'PUT',body:JSON.stringify({origin:null})});
+    else{guestOrigin=null;try{localStorage.removeItem('cm-origin');}catch{}}
+    if(epoch!==accountEpoch)return;
+    clearTimeout(addressTimer);addressController?.abort();addressSequence++;origin=null;
+    $('#origin').value='';$('#address-suggestions').replaceChildren();$('#origin-status').textContent='Origen eliminado.';renderAccount();render();
+  }catch{if(epoch===accountEpoch)$('#origin-status').textContent='No se pudo borrar el origen. Vuelve a intentarlo.';}
 };
+$('#google-login').onclick=async()=>{
+  $('#google-login').disabled=true;
+  try{
+    const {error}=await accountClient.auth.signInWithOAuth({provider:'google',options:{redirectTo:new URL('./',location.href).href,queryParams:{prompt:'select_account'}}});
+    if(error)throw error;
+  }catch{$('#watch-status').textContent='No se pudo abrir Google. Comprueba la configuración de acceso.';$('#google-login').disabled=false;}
+};
+$('#account-logout').onclick=async()=>{
+  try{
+    const {error}=await accountClient.auth.signOut({scope:'local'});if(error)throw error;
+    await applyAccount(null);$('#favorite-dialog').close();
+  }catch{$('#watch-status').textContent='No se pudo cerrar la sesión. Vuelve a intentarlo.';}
+};
+$('#import-favorites').onclick=async()=>{
+  const epoch=accountEpoch;$('#import-favorites').disabled=true;
+  try{watch=await accountRequest('import',{method:'POST'});renderWatch();renderAccount();$('#watch-status').textContent='Favoritas anteriores importadas a tu cuenta.';}
+  catch{if(epoch===accountEpoch)$('#watch-status').textContent='No se pudieron importar las favoritas. Vuelve a intentarlo.';}
+  finally{$('#import-favorites').disabled=false;}
+};
+$('#import-origin').onclick=()=>selectOrigin(guestOrigin);
+
 
 window.addEventListener('beforeinstallprompt', event => { event.preventDefault(); installPrompt = event; });
 async function install() {
