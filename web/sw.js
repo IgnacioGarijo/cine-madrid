@@ -1,9 +1,9 @@
 /* Only public assets under this project's path are cached. API requests and ticket sites are never intercepted. */
-const VERSION = 'cine-madrid-0.8.2';
+const VERSION = 'cine-madrid-0.9.0';
 const STATIC = VERSION + '-shell';
 const DATA = 'cine-madrid-data-v1';
 const ROOT = new URL('./', self.location.href);
-const SHELL = ['./', 'images/cinema-paradiso.jpg', 'index.html', 'style.css?v=0.8.2', 'app.js?v=0.8.2', 'calendar-utils.js?v=0.8.2', 'search-utils.js?v=0.8.2',
+const SHELL = ['./', 'images/cinema-paradiso.jpg', 'index.html', 'style.css?v=0.9.0', 'app.js?v=0.9.0', 'calendar-utils.js?v=0.9.0', 'search-utils.js?v=0.9.0', 'poster-utils.js?v=0.9.0',
   'manifest.webmanifest', 'icons/icon.svg', 'icons/icon-192.png', 'icons/icon-512.png',
   'icons/icon-maskable-512.png', 'icons/apple-touch-icon.png', 'icons/tmdb.svg'].map(path => new URL(path, ROOT).href);
 const PUBLIC_DATA = ['data.json', 'search-config.json', 'favorite-searches.json', 'favorites.json', 'catalog.json', 'newsletters.json', 'calendario.ics'];

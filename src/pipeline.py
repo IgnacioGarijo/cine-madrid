@@ -4,10 +4,10 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from .core import ROOT,MADRID,Incidents,now,read_json,write_json,trusted_identity,normalize,clean_title
 from .sources import Fetcher,PAZ_URL,CLASSIC_URL,SOURCE_ID,parse_paz,classic_members
-from .tmdb import enrich
+from .tmdb import enrich,refresh_posters
 from .adapters import read_cinema
 
-def run(refresh=True, newsletter=False):
+def run(refresh=True, newsletter=False, posters_only=False):
     path=ROOT/'data/public.json'
     old=read_json(path,{})
     incidents=Incidents(old.get('incidents',[]))
@@ -66,7 +66,7 @@ def run(refresh=True, newsletter=False):
         if unchanged:unchanged_ids.add(movie['id'])
         if refresh and unchanged and previous.get('identity_status')=='verified':
             for field in ['canonical_id','tmdb_id','identity_status','identity_evidence','canonical_title','original_title',
-                          'year','aliases','tmdb_url','tmdb_runtime','tmdb_releases','vote_count','vote_average']:
+                          'year','aliases','tmdb_url','tmdb_runtime','tmdb_releases','vote_count','vote_average','poster_path']:
                 if field in previous: movie[field]=previous[field]
         identity=trusted_identity(movie,catalog)
         if identity and movie.get('identity_status')!='verified':
@@ -79,6 +79,10 @@ def run(refresh=True, newsletter=False):
         tmdb_status=enrich(movies,sessions,cache,rules,incidents)
         write_json(ROOT/'data/tmdb_cache.json',cache)
         if tmdb_status['status']=='ok':checked.add('tmdb')
+    if posters_only:
+        cache=read_json(ROOT/'data/tmdb_cache.json',{})
+        if refresh_posters(movies,cache,incidents):checked.add('tmdb-posters')
+        write_json(ROOT/'data/tmdb_cache.json',cache)
     movie_map={m['id']:m for m in movies}
     for s in sessions:
         m=movie_map.get(s['movie_id'],{})
@@ -102,7 +106,7 @@ def run(refresh=True, newsletter=False):
             incidents.add(cinema['id'],'source_pending',cinema['id'],cinema.get('reading_note','Fuente pendiente de integrar; no se incluyen sus sesiones.'),cinema.get('url',''),'info')
     inventory_ids={c['id'] for c in cinemas}
     checked.update(i['source_id'] for i in old.get('incidents',[]) if i['code']=='source_pending' and i['source_id'] not in inventory_ids)
-    data=dict(version='0.8.2',generated_at=now(),coverage_complete=False,cinemas=cinemas,sources=sources,
+    data=dict(version='0.9.0',generated_at=now(),coverage_complete=False,cinemas=cinemas,sources=sources,
               movies=movies,sessions=sessions,incidents=incidents.finish(checked),agent_status='waiting_for_copilot',tmdb=tmdb_status)
     write_json(path,data)
     build(data,newsletter)
@@ -167,5 +171,5 @@ def build(data,newsletter=False):
     write_json(dist/'newsletters.json',[read_json(p) for p in sorted(posts.glob('*.json'),reverse=True)])
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--build-only',action='store_true');parser.add_argument('--newsletter',action='store_true')
-    args=parser.parse_args();run(not args.build_only,args.newsletter)
+    parser=argparse.ArgumentParser();parser.add_argument('--build-only',action='store_true');parser.add_argument('--newsletter',action='store_true');parser.add_argument('--posters-only',action='store_true')
+    args=parser.parse_args();run(not (args.build_only or args.posters_only),args.newsletter,args.posters_only)

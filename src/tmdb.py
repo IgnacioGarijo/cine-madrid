@@ -107,10 +107,37 @@ def slim_movie(payload):
     directors=[c['name'] for c in payload.get('credits',{}).get('crew',[]) if c.get('job')=='Director']
     return dict(id='tmdb:'+str(payload['id']),tmdb_id=payload['id'],title=payload.get('title') or payload['original_title'],
                 original_title=payload.get('original_title',''),year=int(payload['release_date'][:4]) if payload.get('release_date') else None,
-                director=', '.join(directors),directors=directors,runtime=payload.get('runtime'),
+                director=', '.join(directors),directors=directors,runtime=payload.get('runtime'),poster_path=payload.get('poster_path'),
                 aliases=sorted({t['title'] for t in payload.get('alternative_titles',{}).get('titles',[]) if t.get('title')}
                                | {t.get('data',{}).get('title') for t in payload.get('translations',{}).get('translations',[]) if t.get('data',{}).get('title')}),
                 releases=releases,source_url='https://www.themoviedb.org/movie/'+str(payload['id']),fetched_at=now())
+
+def refresh_posters(movies,cache,incidents,token=None):
+    """Backfill existing verified identities without re-reading cinemas or reclassifying."""
+    client=Client(token if token is not None else os.getenv('TMDB_READ_TOKEN',''),cache,request_budget=1000)
+    posters={};failed=False
+    for movie in movies:
+        if movie.get('identity_status')!='verified' or not movie.get('tmdb_id'):
+            movie.pop('poster_path',None);continue
+        key=str(movie['tmdb_id'])
+        if key not in posters:
+            cached=client.cache['movies'].get(key,{})
+            try:
+                if 'poster_path' not in cached:
+                    params={} if cached.get('fetched_at') else {'append_to_response':'credits,alternative_titles,release_dates'}
+                    payload=client.get('movie/'+key,language='es-ES',**params)
+                    if not cached.get('fetched_at'):cached=slim_movie(payload)
+                    cached.update(poster_path=payload.get('poster_path'),poster_checked_at=now())
+                    client.cache['movies'][key]=cached
+                posters[key]=cached['poster_path']
+            except TMDBError as exc:
+                failed=True
+                incidents.add('tmdb-posters','posters_unavailable','service','No se pudieron completar los carteles de TMDB ('+str(exc)+'). Se conservan los carteles guardados.','https://www.themoviedb.org/','warning')
+                if str(exc) in ('not_configured','authentication_failed','request_budget'):break
+                continue
+        movie['poster_path']=posters[key]
+    print('Carteles TMDB: '+str(sum(bool(path) for path in posters.values()))+' películas únicas; '+str(client.requests)+' consultas.',flush=True)
+    return not failed
 
 class Client:
     def __init__(self,token,cache,request_budget=300):
@@ -159,9 +186,9 @@ class Client:
         self.cache['movies'][str(movie['tmdb_id'])]=movie
         return movie
     def statistics(self,movie):
-        if not self.fresh({'fetched_at':movie.get('statistics_checked_at','1970-01-01T00:00:00+00:00')},days=1):
+        if 'poster_path' not in movie or not self.fresh({'fetched_at':movie.get('statistics_checked_at','1970-01-01T00:00:00+00:00')},days=1):
             value=self.get('movie/'+str(movie['tmdb_id']),language='es-ES')
-            movie.update(vote_count=value.get('vote_count'),vote_average=value.get('vote_average'),statistics_checked_at=now())
+            movie.update(vote_count=value.get('vote_count'),vote_average=value.get('vote_average'),poster_path=value.get('poster_path'),statistics_checked_at=now())
             self.cache['movies'][str(movie['tmdb_id'])]=movie
         return movie
 
@@ -205,7 +232,7 @@ def enrich(movies,sessions,cache,config,incidents,token=None):
             if code in ('not_configured','authentication_failed','request_budget'):break
             continue
         if not identity:
-            for field in ['canonical_id','tmdb_id','identity_evidence','canonical_title','original_title','aliases','tmdb_url','year']:
+            for field in ['canonical_id','tmdb_id','identity_evidence','canonical_title','original_title','aliases','tmdb_url','year','poster_path']:
                 movie.pop(field,None)
             movie.update(identity_status='needs_review',identity_reason=evidence,identity_candidates=candidates[:6])
             incidents.add('tmdb','identity_'+evidence,movie['id'],'Identidad pendiente: '+movie['title']+' ('+evidence+').',movie['source_url'],'info')
@@ -217,7 +244,7 @@ def enrich(movies,sessions,cache,config,incidents,token=None):
         movie.update(canonical_id=identity['id'],tmdb_id=identity['tmdb_id'],identity_status='verified',identity_evidence=evidence,
                      canonical_title=identity['title'],original_title=identity['original_title'],year=identity['year'],
                      aliases=identity['aliases'],tmdb_url=identity['source_url'],tmdb_runtime=identity.get('runtime'),tmdb_releases=identity['releases'])
-        movie.update(vote_count=identity.get('vote_count'),vote_average=identity.get('vote_average'))
+        movie.update(vote_count=identity.get('vote_count'),vote_average=identity.get('vote_average'),poster_path=identity.get('poster_path'))
         movie.pop('identity_candidates',None);movie.pop('identity_reason',None)
         for session in (s for s in sessions if s['movie_id']==movie['id']):
             source_label=source_category or session.get('source_category',session['category'])

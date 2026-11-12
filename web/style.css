@@ -111,3 +111,22 @@ header { width:100%; min-height:280px; align-items:flex-end; padding:32px max(32
 .mini-calendar .mini-day.selected,.mini-calendar .mini-day.selected:hover { background:var(--orange); color:#fff; border-color:var(--orange); box-shadow:0 0 0 1px var(--orange); opacity:1; }
 .calendar-grid .calendar-day.selected { background:var(--orange); border-color:var(--orange); color:#fff; }
 .calendar-grid .calendar-day.selected .day-count { color:#fff; }
+
+/* One complete title beside a single canonical TMDB poster; only directors truncate. */
+.movie-heading { display:grid; grid-template-columns:80px minmax(0,1fr); align-items:center; gap:16px; padding:14px; white-space:normal; overflow:visible; }
+.film-poster { width:80px; aspect-ratio:2/3; border-radius:5px; background:#ffffff10; overflow:hidden; display:grid; place-items:center; }
+.film-poster img { display:block; width:100%; height:100%; object-fit:contain; }
+.poster-placeholder { color:#b4c3ce; font-size:34px; font-weight:300; }
+.film-heading-copy { min-width:0; }
+.movie-heading h3 { display:block; margin:0; font-size:23px; line-height:1.25; white-space:normal; overflow:visible; text-overflow:clip; overflow-wrap:anywhere; letter-spacing:-.4px; }
+.film-credits { display:flex; align-items:baseline; gap:8px; min-width:0; margin-top:12px; color:#dde6ed; font-size:13px; line-height:1.5; }
+.film-year,.film-credit-separator { flex-shrink:0; }
+.film-year { font-variant-numeric:tabular-nums; }
+.film-director { display:block; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+@media(max-width:759px) {
+  .movie-heading { grid-template-columns:64px minmax(0,1fr); gap:12px; padding:12px; }
+  .film-poster { width:64px; }.movie-heading h3 { font-size:20px; line-height:1.25; }.film-credits { font-size:12px; gap:6px; margin-top:10px; }
+}
+@media(max-width:360px) {
+  .movie-heading { grid-template-columns:56px minmax(0,1fr); gap:10px; padding:10px; }.film-poster { width:56px; }.movie-heading h3 { font-size:18px; }
+}

@@ -1,7 +1,7 @@
 import unittest
 from datetime import date
 from unittest.mock import patch
-from src.tmdb import Client,TMDBError,identity_match,classify,title_variants,enrich
+from src.tmdb import Client,TMDBError,identity_match,classify,title_variants,enrich,refresh_posters
 from src.core import Incidents
 
 CONFIG={'repertory_min_days':365,'current_release_max_days':180,'request_budget':300}
@@ -107,5 +107,29 @@ class TMDBTests(unittest.TestCase):
         client=Client('test',{});m=movie()
         client.statistics(m);client.statistics(m)
         self.assertEqual(m['vote_count'],5000);self.assertEqual(m['vote_average'],8.1);self.assertEqual(get.call_count,1)
+
+    @patch('src.tmdb.Client.get',return_value={'poster_path':'/akira.jpg'})
+    def test_posters_unify_sources_by_verified_id_and_persist_in_cache(self,get):
+        from src.core import now
+        cached=movie();cached['fetched_at']=now()
+        cache={'movies':{'149':cached}}
+        records=[dict(id='a',tmdb_id=149,identity_status='verified'),dict(id='b',tmdb_id=149,identity_status='verified'),dict(id='ambiguous',poster_path='/wrong.jpg')]
+        self.assertTrue(refresh_posters(records,cache,Incidents(),token='test'))
+        self.assertEqual(records[0]['poster_path'],records[1]['poster_path'])
+        self.assertNotIn('poster_path',records[2]);self.assertEqual(get.call_count,1)
+        refresh_posters(records,cache,Incidents(),token='test');self.assertEqual(get.call_count,1)
+
+    @patch('src.tmdb.Client.get',side_effect=TMDBError('network_error'))
+    def test_failed_poster_lookup_preserves_identity_and_previous_poster(self,get):
+        record=dict(id='a',tmdb_id=149,identity_status='verified',poster_path='/previous.jpg')
+        self.assertFalse(refresh_posters([record],{},Incidents(),token='test'))
+        self.assertEqual(record['poster_path'],'/previous.jpg');self.assertEqual(record['identity_status'],'verified')
+
+    @patch('src.tmdb.Client.get',return_value={'id':149,'title':'Akira','poster_path':None})
+    def test_missing_poster_is_cached_without_creating_incomplete_movie_records(self,get):
+        records=[dict(tmdb_id=149,identity_status='verified')];cache={}
+        refresh_posters(records,cache,Incidents(),token='test')
+        self.assertIsNone(records[0]['poster_path']);self.assertIn('fetched_at',cache['movies']['149'])
+        refresh_posters(records,cache,Incidents(),token='test');self.assertEqual(get.call_count,1)
 
 if __name__=='__main__':unittest.main()

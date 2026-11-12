@@ -1,6 +1,7 @@
-import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.8.2';
+import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.9.0';
 
-import {addressCandidates, validOrigin} from './search-utils.js?v=0.8.2';
+import {addressCandidates, validOrigin} from './search-utils.js?v=0.9.0';
+import {posterURL} from './poster-utils.js?v=0.9.0';
 
 const $ = selector => document.querySelector(selector);
 const all = selector => [...document.querySelectorAll(selector)];
@@ -68,12 +69,20 @@ function renderSessions(target, sessions, {contextSessions=sessions}={}) {
     const first = group.sessions[0], movie = data.movies.find(m => m.id === first.movie_id) || {};
     const article = el('article',undefined,'film movie-group'), heading = el('div',undefined,'movie-heading');
     const title = movie.canonical_title || first.title;
-    heading.append(el('h3',title));
-    const meta = [movie.year || first.year, movie.director || first.director].filter(Boolean).join(' · ');
-    const metadata = el('p',undefined,'meta');
-    if (meta) metadata.append(el('span',meta));
-    metadata.title=meta;
-    if (metadata.childNodes.length) heading.append(metadata);
+    const artwork=el('div',undefined,'film-poster');artwork.setAttribute('aria-hidden','true');
+    const poster=posterURL(movie.identity_status==='verified' ? movie.poster_path : null);
+    if(poster) {
+      const img=el('img');img.src=poster;img.alt='';img.width=80;img.height=120;img.loading='lazy';img.decoding='async';
+      img.onerror=()=>{artwork.replaceChildren(el('span','▧','poster-placeholder'));artwork.classList.add('missing-poster');};artwork.append(img);
+    } else {artwork.append(el('span','▧','poster-placeholder'));artwork.classList.add('missing-poster');}
+    const copy=el('div',undefined,'film-heading-copy');copy.append(el('h3',title));
+    const year=movie.year || first.year, director=movie.director || first.director;
+    const credits=el('div',undefined,'film-credits');
+    if(year)credits.append(el('span',String(year),'film-year'));
+    if(year && director){const separator=el('span','·','film-credit-separator');separator.setAttribute('aria-hidden','true');credits.append(separator);}
+    if(director){const name=el('span',director,'film-director');name.title=director;credits.append(name);}
+    if(credits.childNodes.length)copy.append(credits);
+    heading.append(artwork,copy);
     article.append(heading);
     const available=context.get(group.key) || group.sessions;
     const dates=filmDays(available), dateControl=el('label',undefined,'movie-date-control'), dateSelect=el('select');
