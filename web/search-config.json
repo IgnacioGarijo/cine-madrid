@@ -1,1 +1,1 @@
-{"tmdb_api_url": "https://cine-madrid-tmdb.garijo-io.workers.dev/search", "favorites_api_url": "https://cine-madrid-tmdb.garijo-io.workers.dev/favorites", "public_favorites": true}
+{"tmdb_api_url": "https://cine-madrid-tmdb.garijo-io.workers.dev/search", "favorites_api_url": "https://cine-madrid-tmdb.garijo-io.workers.dev/favorites", "public_favorites": false, "supabase_url": "https://pwsgkteftgodyynoxfgg.supabase.co", "supabase_publishable_key": "sb_publishable_1NHYJPD4I8su_FOCbGr55Q_o3MwCAFG"}
