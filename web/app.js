@@ -1,8 +1,8 @@
-import {createAccount} from './account.js?v=0.11.0';
-import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.11.0';
+import {createAccount} from './account.js?v=0.11.1';
+import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.11.1';
 
-import {addressCandidates, validOrigin} from './search-utils.js?v=0.11.0';
-import {posterURL} from './poster-utils.js?v=0.11.0';
+import {addressCandidates, validOrigin} from './search-utils.js?v=0.11.1';
+import {posterURL} from './poster-utils.js?v=0.11.1';
 
 const $ = selector => document.querySelector(selector);
 const all = selector => [...document.querySelectorAll(selector)];
@@ -63,8 +63,9 @@ function gcal(session, cinema) {
 
 function renderSessions(target, sessions, {contextSessions=sessions}={}) {
   target.replaceChildren();
-  const groups = groupFilms(sessions,values().sort || 'time');
-  const context=new Map(groupFilms(contextSessions,values().sort || 'time').map(group=>[group.key,group.sessions]));
+  const order=values().sort || 'votes', proximity={origin,cinemas:data.cinemas};
+  const groups = groupFilms(sessions,order,new Date(),proximity);
+  const context=new Map(groupFilms(contextSessions,order,new Date(),proximity).map(group=>[group.key,group.sessions]));
   if (!filmDaySelections.has(target)) filmDaySelections.set(target,new Map());
   const selections=filmDaySelections.get(target);
   for (const group of groups) {
@@ -176,6 +177,11 @@ function values() {
   return {...Object.fromEntries(all('#filters [data-filter], #sort').map(input => [input.dataset.filter,input.value])),cinemas:[...selectedCinemas],categories:[...selectedCategories]};
 }
 function syncFilters() {
+  const hasOrigin=validOrigin(origin);
+  for(const option of all('#sort option[value="distance"], #calendar-sort option[value="distance"]')){
+    option.disabled=!hasOrigin;option.title=hasOrigin ? 'Cine más cercano con sesiones que cumplen los filtros' : 'Guarda una dirección en Cuenta para ordenar por proximidad';
+  }
+  if(!hasOrigin && $('#sort').value==='distance')$('#sort').value='votes';
   const filters = values();
   for (const input of all('#calendar-filters [data-filter]')) input.value = filters[input.dataset.filter] || '';
   const count = ['version','format','after','before'].filter(key => filters[key]).length;
@@ -493,7 +499,7 @@ $('#toggle-filters').onclick = () => {
   const expanded = $('#toggle-filters').getAttribute('aria-expanded') === 'true';
   $('#toggle-filters').setAttribute('aria-expanded', String(!expanded)); $('#advanced-filters').hidden = expanded;
 };
-$('#reset-filters').onclick = () => { all('#filters [data-filter], #sort').forEach(input => {input.value = input.id==='sort' ? 'time' : '';});selectedCinemas.clear();selectedCategories=new Set(categories.map(([key])=>key));filmDaySelections=new WeakMap();render(); };
+$('#reset-filters').onclick = () => { all('#filters [data-filter], #sort').forEach(input => {input.value = input.id==='sort' ? 'votes' : '';});selectedCinemas.clear();selectedCategories=new Set(categories.map(([key])=>key));filmDaySelections=new WeakMap();render(); };
 $('#sort').onchange=render;
 all('[data-cinema-action]').forEach(button => {button.onclick=()=>{selectedCinemas=new Set(button.dataset.cinemaAction==='nearby' ? nearbyCinemas(data.cinemas.filter(c=>c.status==='active'),origin) : []);render();};});
 $('#calendar-clear-day').onclick = () => setDay('');

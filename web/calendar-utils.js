@@ -35,8 +35,10 @@ export function rankCinemas(cinemas, origin) {
 export function nearbyCinemas(cinemas, origin, radius=2) {
   return cinemas.filter(cinema => distanceKm(origin,cinema)!==null && distanceKm(origin,cinema)<=radius).map(cinema => cinema.id);
 }
-export function groupFilms(sessions, order='time', now=new Date()) {
+export function groupFilms(sessions, order='votes', now=new Date(), {origin=null,cinemas=[]}={}) {
   const groups=new Map();
+  const distances=new Map(cinemas.map(cinema=>[cinema.id,distanceKm(origin,cinema)]));
+  if(order==='distance' && ![origin?.lat,origin?.lon].every(Number.isFinite))order='votes';
   for (const session of sessions) {
     // A verified identity unites cinemas and title aliases. Unresolved homonyms remain separate.
     const key=session.canonical_id && session.identity_status==='verified' ? session.canonical_id : session.source_work_id || session.movie_id;
@@ -49,9 +51,13 @@ export function groupFilms(sessions, order='time', now=new Date()) {
   }
   const result=[...groups.values()].map(group => {
     const list=[...group.slots.values()].sort((a,b)=>a.start.localeCompare(b.start));
-    return {key:group.key,sessions:list,vote_count:group.vote_count,next:Math.min(...list.map(s=>new Date(s.start).getTime()).filter(time=>time>=now.getTime())),first:list[0].start};
+    const future=list.filter(session=>new Date(session.start)>=now);
+    const nearest=Math.min(...(future.length ? future : list).map(session=>distances.get(session.cinema_id) ?? Infinity));
+    return {key:group.key,sessions:list,vote_count:group.vote_count,nearest,next:Math.min(...list.map(s=>new Date(s.start).getTime()).filter(time=>time>=now.getTime())),first:list[0].start};
   });
-  return result.sort((a,b) => (order==='votes' ? (b.vote_count ?? -1)-(a.vote_count ?? -1) : 0) || a.next-b.next || a.first.localeCompare(b.first));
+  return result.sort((a,b) => (order==='distance' ? a.nearest-b.nearest : 0)
+    || (order==='votes' || order==='distance' ? (b.vote_count ?? -1)-(a.vote_count ?? -1) : 0)
+    || a.next-b.next || a.first.localeCompare(b.first));
 }
 
 export function filmDays(sessions) {

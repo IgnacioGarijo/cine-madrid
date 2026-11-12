@@ -74,6 +74,22 @@ test('cinemas rank by distance with unknown coordinates last and near selection 
   assert.deepEqual(nearbyCinemas(cinemas,origin),['near']);
 });
 
+test('default film order is vote count and proximity uses the nearest matching future cinema',()=>{
+  const now=new Date('2026-11-12T12:00:00Z'),origin={lat:40,lon:-3};
+  const cinemas=[{id:'near',lat:40.005,lon:-3},{id:'far',lat:40.1,lon:-3}];
+  const base={start:'2026-11-13T20:00:00+01:00'};
+  const sessions=[{...base,movie_id:'popular',cinema_id:'far',vote_count:5000},
+    {...base,movie_id:'close',cinema_id:'near',vote_count:5},{...base,movie_id:'close',cinema_id:'far',vote_count:5},
+    {...base,movie_id:'unknown-location',cinema_id:'unknown',vote_count:9000}];
+  assert.deepEqual(groupFilms(sessions,undefined,now).map(g=>g.key),['unknown-location','popular','close']);
+  assert.deepEqual(groupFilms(sessions,'distance',now,{origin,cinemas}).map(g=>g.key),['close','popular','unknown-location']);
+  assert.deepEqual(groupFilms(sessions,'distance',now,{cinemas}).map(g=>g.key),['unknown-location','popular','close']);
+  const filtered=sessions.filter(s=>s.cinema_id!=='near');
+  assert.deepEqual(groupFilms(filtered,'distance',now,{origin,cinemas}).map(g=>g.key),['popular','close','unknown-location']);
+  const past={...base,movie_id:'popular',cinema_id:'near',vote_count:5000,start:'2026-11-12T09:00:00+01:00'};
+  assert.deepEqual(groupFilms([...sessions,past],'distance',now,{origin,cinemas}).map(g=>g.key),['close','popular','unknown-location']);
+});
+
 test('film date defaults to the calendar date or next performance and allows its own override',()=>{
   const sessions=[{start:'2026-11-11T12:00:00+01:00'},{start:'2026-11-12T19:30:00+01:00'},{start:'2026-11-15T20:00:00+01:00'}];
   const now=new Date('2026-11-11T15:00:00+01:00');
