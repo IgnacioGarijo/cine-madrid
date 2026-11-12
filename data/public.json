@@ -1,6 +1,6 @@
 {
-  "version": "0.8.2",
-  "generated_at": "2026-11-11T18:04:33+01:00",
+  "version": "0.9.0",
+  "generated_at": "2026-11-12T09:55:29+01:00",
   "coverage_complete": false,
   "cinemas": [
     {
@@ -903,7 +903,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/a8MvsDCP3sv0WXNW3I0ainSuLcd.jpg"
     },
     {
       "id": "verdi-madrid:film:9c0a43f6ad857d40f5ea",
@@ -953,7 +954,8 @@
         }
       ],
       "vote_count": 5,
-      "vote_average": 9.4
+      "vote_average": 9.4,
+      "poster_path": "/dRfDBbdVFsiRAKC5dhKcsIlPJI5.jpg"
     },
     {
       "id": "verdi-madrid:film:7071f49a3177cc8c8b63",
@@ -986,7 +988,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/xr6F0DzTVi6sbfjuYwrqBBKhHm7.jpg"
     },
     {
       "id": "verdi-madrid:film:ef3cfa9d83d996d207dc",
@@ -1449,7 +1452,8 @@
         }
       ],
       "vote_count": 13,
-      "vote_average": 8.038
+      "vote_average": 8.038,
+      "poster_path": "/l4q1gziNMhpVQAzCIwmtbLSB1T9.jpg"
     },
     {
       "id": "verdi-madrid:film:88b99d9f2cdd9f77ecac",
@@ -1875,7 +1879,8 @@
         }
       ],
       "vote_count": 4733,
-      "vote_average": 7.963
+      "vote_average": 7.963,
+      "poster_path": "/rzOQHh5Utbr3x0UvKIbIU5pVA0f.jpg"
     },
     {
       "id": "verdi-madrid:film:d6eca9c858fa8af349fd",
@@ -2333,7 +2338,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/uj4EuGmFNAc4CHBVEtRZ04MXzka.jpg"
     },
     {
       "id": "verdi-madrid:film:47726718aa6f49ca3e9b",
@@ -2475,7 +2481,8 @@
         }
       ],
       "vote_count": 99,
-      "vote_average": 6.742
+      "vote_average": 6.742,
+      "poster_path": "/j1IyFWFgfvLno4SnQudoQdLikY2.jpg"
     },
     {
       "id": "verdi-madrid:film:dbb7afa5895f8c4122ab",
@@ -2513,7 +2520,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/g8JgLE6obZIf57O8nfBTSHHEQ27.jpg"
     },
     {
       "id": "verdi-madrid:film:993e54266f13c382a31e",
@@ -2760,7 +2768,8 @@
         }
       ],
       "vote_count": 113,
-      "vote_average": 6.9
+      "vote_average": 6.9,
+      "poster_path": "/LdKLipXCdKHNXxUxn8l7UTdnXJ.jpg"
     },
     {
       "id": "verdi-madrid:film:715ccffd9a341ea90343",
@@ -2843,7 +2852,8 @@
         }
       ],
       "vote_count": 7,
-      "vote_average": 7.5
+      "vote_average": 7.5,
+      "poster_path": "/xGM7CSviGJRv0q63lwQx9vCzFYc.jpg"
     },
     {
       "id": "verdi-madrid:film:447d440d1cc160e1c8f1",
@@ -3514,7 +3524,8 @@
         }
       ],
       "vote_count": 208,
-      "vote_average": 8.0
+      "vote_average": 8.0,
+      "poster_path": "/t1azKLExwUxKj6v6m2L535evuRa.jpg"
     },
     {
       "id": "verdi-madrid:film:ac599ceb6a88532ad7a2",
@@ -4131,7 +4142,8 @@
         }
       ],
       "vote_count": 208,
-      "vote_average": 8.0
+      "vote_average": 8.0,
+      "poster_path": "/t1azKLExwUxKj6v6m2L535evuRa.jpg"
     },
     {
       "id": "verdi-madrid:film:9eae3688ab6dbe64ab12",
@@ -4561,7 +4573,8 @@
         }
       ],
       "vote_count": 945,
-      "vote_average": 7.202
+      "vote_average": 7.202,
+      "poster_path": "/21JnfyCARiRkms9AZHtTXiZKbIj.jpg"
     },
     {
       "id": "verdi-madrid:film:327ebf9dfeeb59ce2dda",
@@ -4838,7 +4851,8 @@
         }
       ],
       "vote_count": 61,
-      "vote_average": 7.328
+      "vote_average": 7.328,
+      "poster_path": "/ajiSFBxo1h0MNbu7q9I5aSVHUgE.jpg"
     },
     {
       "id": "verdi-madrid:film:4a2e89513fb16827ee6e",
@@ -4958,7 +4972,8 @@
         }
       ],
       "vote_count": 68,
-      "vote_average": 7.2
+      "vote_average": 7.2,
+      "poster_path": "/jwRMUI6rGjAwkXHEqBlSnViT6gG.jpg"
     },
     {
       "id": "verdi-madrid:film:aee8dfdd0119e433b35f",
@@ -5141,7 +5156,8 @@
         }
       ],
       "vote_count": 25,
-      "vote_average": 7.4
+      "vote_average": 7.4,
+      "poster_path": "/hs9huYKLyKdcI8LJw9DZ8eiW850.jpg"
     },
     {
       "id": "verdi-madrid:film:c9ca22d85c95504b656d",
@@ -5412,7 +5428,8 @@
         }
       ],
       "vote_count": 3887,
-      "vote_average": 7.789
+      "vote_average": 7.789,
+      "poster_path": "/iNwzpNGTt6hTjbj0KDl08O6gJCi.jpg"
     },
     {
       "id": "verdi-madrid:film:ff0c92cb03f51c1cb0ef",
@@ -5461,7 +5478,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/6CWXhVFfin3zh1LZ5HsWnzTXTPN.jpg"
     },
     {
       "id": "verdi-madrid:film:cf4d10526216e8c856b6",
@@ -5851,7 +5869,8 @@
         }
       ],
       "vote_count": 163,
-      "vote_average": 7.2
+      "vote_average": 7.2,
+      "poster_path": "/9BvQHFAQ3BhKk5NSYxtYSMn5lrb.jpg"
     },
     {
       "id": "verdi-madrid:film:fa64ab57063986880c9b",
@@ -6365,7 +6384,8 @@
         }
       ],
       "vote_count": 137,
-      "vote_average": 8.1
+      "vote_average": 8.1,
+      "poster_path": "/bLDrHn76oiNYiELv1qw3Tfdkqc8.jpg"
     },
     {
       "id": "verdi-madrid:film:9f5832f1d59e3ffaa05b",
@@ -6510,7 +6530,8 @@
         }
       ],
       "vote_count": 225,
-      "vote_average": 7.269
+      "vote_average": 7.269,
+      "poster_path": "/ku7zVdj7yUZn71cG6YvCoC3Rxjm.jpg"
     },
     {
       "id": "verdi-madrid:film:eff9e8711556fb5e501c",
@@ -6610,7 +6631,8 @@
         }
       ],
       "vote_count": 411,
-      "vote_average": 7.343
+      "vote_average": 7.343,
+      "poster_path": "/8uTYxMcJTIv7sJCEyvPssoDcn9.jpg"
     },
     {
       "id": "verdi-madrid:film:77e262f58f3f578008ff",
@@ -6706,7 +6728,8 @@
         }
       ],
       "vote_count": 142,
-      "vote_average": 7.7
+      "vote_average": 7.7,
+      "poster_path": "/kp3TpqkiDgRkLSJgrnWdGXGl7hD.jpg"
     },
     {
       "id": "verdi-madrid:film:79072b23f9e86622e16a",
@@ -7220,7 +7243,8 @@
         }
       ],
       "vote_count": 137,
-      "vote_average": 8.1
+      "vote_average": 8.1,
+      "poster_path": "/bLDrHn76oiNYiELv1qw3Tfdkqc8.jpg"
     },
     {
       "id": "hielo:6211",
@@ -7837,7 +7861,8 @@
         }
       ],
       "vote_count": 208,
-      "vote_average": 8.0
+      "vote_average": 8.0,
+      "poster_path": "/t1azKLExwUxKj6v6m2L535evuRa.jpg"
     },
     {
       "id": "hielo:6288",
@@ -7875,7 +7900,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/7338FnwdzX9oNpODZIJH1OliUGV.jpg"
     },
     {
       "id": "hielo:6280",
@@ -8167,7 +8193,8 @@
         }
       ],
       "vote_count": 20,
-      "vote_average": 7.1
+      "vote_average": 7.1,
+      "poster_path": "/8TW5oOMZbxaMFVgletpW0bxd2Aa.jpg"
     },
     {
       "id": "hielo:6274",
@@ -8205,7 +8232,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/6CWXhVFfin3zh1LZ5HsWnzTXTPN.jpg"
     },
     {
       "id": "hielo:6255",
@@ -8325,7 +8353,8 @@
         }
       ],
       "vote_count": 68,
-      "vote_average": 7.2
+      "vote_average": 7.2,
+      "poster_path": "/jwRMUI6rGjAwkXHEqBlSnViT6gG.jpg"
     },
     {
       "id": "hielo:6285",
@@ -8360,7 +8389,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/WGH8A7l5pQHlO13A7QJ2t4mjvN.jpg"
     },
     {
       "id": "hielo:6286",
@@ -8788,7 +8818,8 @@
         }
       ],
       "vote_count": 33,
-      "vote_average": 7.7
+      "vote_average": 7.7,
+      "poster_path": "/nzL1ySE6vdmR6RxXhE7gLggkp41.jpg"
     },
     {
       "id": "hielo:6232",
@@ -9248,7 +9279,8 @@
         }
       ],
       "vote_count": 143,
-      "vote_average": 7.78
+      "vote_average": 7.78,
+      "poster_path": "/2B7ZSUutCgwUAE5U0X7WlD8yiun.jpg"
     },
     {
       "id": "hielo:6229",
@@ -9286,7 +9318,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/a8MvsDCP3sv0WXNW3I0ainSuLcd.jpg"
     },
     {
       "id": "hielo:6279",
@@ -9324,7 +9357,8 @@
         }
       ],
       "vote_count": 1,
-      "vote_average": 9.5
+      "vote_average": 9.5,
+      "poster_path": "/bJh97VEUn9TWygQSrOOyJrwQXek.jpg"
     },
     {
       "id": "hielo:3921",
@@ -9808,7 +9842,8 @@
         }
       ],
       "vote_count": 945,
-      "vote_average": 7.202
+      "vote_average": 7.202,
+      "poster_path": "/21JnfyCARiRkms9AZHtTXiZKbIj.jpg"
     },
     {
       "id": "hielo:6264",
@@ -10198,7 +10233,8 @@
         }
       ],
       "vote_count": 163,
-      "vote_average": 7.2
+      "vote_average": 7.2,
+      "poster_path": "/9BvQHFAQ3BhKk5NSYxtYSMn5lrb.jpg"
     },
     {
       "id": "hielo:6261",
@@ -10796,7 +10832,8 @@
         }
       ],
       "vote_count": 425,
-      "vote_average": 7.426
+      "vote_average": 7.426,
+      "poster_path": "/6ihSDJlBNcvoTWzSA0jonZyOXTs.jpg"
     },
     {
       "id": "hielo:6265",
@@ -11148,7 +11185,8 @@
         }
       ],
       "vote_count": 248,
-      "vote_average": 8.5
+      "vote_average": 8.5,
+      "poster_path": "/sJ1uZ4DKsjs2iqLtCX46TifxqoE.jpg"
     },
     {
       "id": "hielo:6263",
@@ -11271,7 +11309,8 @@
         }
       ],
       "vote_count": 225,
-      "vote_average": 7.269
+      "vote_average": 7.269,
+      "poster_path": "/ku7zVdj7yUZn71cG6YvCoC3Rxjm.jpg"
     },
     {
       "id": "hielo:4381",
@@ -11315,7 +11354,8 @@
         }
       ],
       "vote_count": 5,
-      "vote_average": 5.6
+      "vote_average": 5.6,
+      "poster_path": "/ozr5OyKt1whnfuLei2viZsS38Kp.jpg"
     },
     {
       "id": "hielo:6266",
@@ -11350,7 +11390,8 @@
         }
       ],
       "vote_count": 3,
-      "vote_average": 7.7
+      "vote_average": 7.7,
+      "poster_path": "/ncJXMB0MbDiXIpqCdNSN4MYRe3k.jpg"
     },
     {
       "id": "hielo:6276",
@@ -11396,7 +11437,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/gv9Mmo1jhwtHfEoNKIUVy1EWzpg.jpg"
     },
     {
       "id": "hielo:6278",
@@ -11673,7 +11715,8 @@
         }
       ],
       "vote_count": 61,
-      "vote_average": 7.328
+      "vote_average": 7.328,
+      "poster_path": "/ajiSFBxo1h0MNbu7q9I5aSVHUgE.jpg"
     },
     {
       "id": "hielo:2404",
@@ -11769,7 +11812,8 @@
         }
       ],
       "vote_count": 5111,
-      "vote_average": 7.9
+      "vote_average": 7.9,
+      "poster_path": "/2WvrGAnKtHrb20nHLd38RyhIj0Q.jpg"
     },
     {
       "id": "hielo:6292",
@@ -12067,7 +12111,8 @@
         }
       ],
       "vote_count": 6,
-      "vote_average": 8.333
+      "vote_average": 8.333,
+      "poster_path": "/gnG15MkiNeObCoPbHcLUX4zrNWh.jpg"
     },
     {
       "id": "hielo:6299",
@@ -12581,7 +12626,8 @@
         }
       ],
       "vote_count": 137,
-      "vote_average": 8.1
+      "vote_average": 8.1,
+      "poster_path": "/bLDrHn76oiNYiELv1qw3Tfdkqc8.jpg"
     },
     {
       "id": "hielo:6300",
@@ -12849,7 +12895,8 @@
         }
       ],
       "vote_count": 2,
-      "vote_average": 9.0
+      "vote_average": 9.0,
+      "poster_path": "/xS35fgWgRdF2em5MGxg5WG9dPKd.jpg"
     },
     {
       "id": "hielo:6298",
@@ -13013,7 +13060,8 @@
         }
       ],
       "vote_count": 22,
-      "vote_average": 6.5
+      "vote_average": 6.5,
+      "poster_path": "/tEpDFz33WclWa0c1rxLhqM2DNFE.jpg"
     },
     {
       "id": "hielo:6297",
@@ -13084,7 +13132,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/g8JgLE6obZIf57O8nfBTSHHEQ27.jpg"
     },
     {
       "id": "hielo:6170",
@@ -13284,7 +13333,8 @@
         }
       ],
       "vote_count": 2800,
-      "vote_average": 8.2
+      "vote_average": 8.2,
+      "poster_path": "/hjo6BPzCuhUkpSzxElOQ68mydrx.jpg"
     },
     {
       "id": "hielo:6302",
@@ -13747,7 +13797,8 @@
         }
       ],
       "vote_count": 13,
-      "vote_average": 8.038
+      "vote_average": 8.038,
+      "poster_path": "/l4q1gziNMhpVQAzCIwmtbLSB1T9.jpg"
     },
     {
       "id": "hielo:6192",
@@ -14397,7 +14448,8 @@
         }
       ],
       "vote_count": 40705,
-      "vote_average": 8.373
+      "vote_average": 8.373,
+      "poster_path": "/tXQvtRWfkUUnWJAn2tN3jERIUG.jpg"
     },
     {
       "id": "hielo:6284",
@@ -14632,7 +14684,8 @@
         }
       ],
       "vote_count": 1136,
-      "vote_average": 7.665
+      "vote_average": 7.665,
+      "poster_path": "/6jicxcrfFZpXIBgQidj3uouwsiP.jpg"
     },
     {
       "id": "hielo:4405",
@@ -14742,7 +14795,8 @@
         }
       ],
       "vote_count": 990,
-      "vote_average": 7.427
+      "vote_average": 7.427,
+      "poster_path": "/ptBljoTY9KrAIOZcULsIs2J3fGc.jpg"
     },
     {
       "id": "hielo:5823",
@@ -15033,7 +15087,8 @@
         }
       ],
       "vote_count": 827,
-      "vote_average": 8.24
+      "vote_average": 8.24,
+      "poster_path": "/pmjSjZtFOYDWhAs4B2AbBE8hTQf.jpg"
     },
     {
       "id": "hielo:5820",
@@ -15306,7 +15361,8 @@
         }
       ],
       "vote_count": 117,
-      "vote_average": 6.8
+      "vote_average": 6.8,
+      "poster_path": "/gF6Ijrq5bixh4qemCuroRwXtbBc.jpg"
     },
     {
       "id": "hielo:6272",
@@ -15384,7 +15440,8 @@
         }
       ],
       "vote_count": 13,
-      "vote_average": 6.7
+      "vote_average": 6.7,
+      "poster_path": "/lF9amilOGIudUIq6NgDnz2YrPPa.jpg"
     },
     {
       "id": "hielo:3877",
@@ -15660,7 +15717,8 @@
         }
       ],
       "vote_count": 5953,
-      "vote_average": 6.844
+      "vote_average": 6.844,
+      "poster_path": "/lHXuDik0kJobNsr5U4VQT4XQ8rK.jpg"
     },
     {
       "id": "hielo:6283",
@@ -15775,7 +15833,8 @@
         }
       ],
       "vote_count": 663,
-      "vote_average": 5.803
+      "vote_average": 5.803,
+      "poster_path": "/gtuJeNsG4Z15OLQViOzg5y2uHUu.jpg"
     },
     {
       "id": "hielo:5376",
@@ -16187,7 +16246,8 @@
         }
       ],
       "vote_count": 23076,
-      "vote_average": 7.838
+      "vote_average": 7.838,
+      "poster_path": "/bVG48kmXuLaZYgPfSCmhs6EYFbX.jpg"
     },
     {
       "id": "hielo:6281",
@@ -16516,7 +16576,8 @@
         }
       ],
       "vote_count": 2841,
-      "vote_average": 8.187
+      "vote_average": 8.187,
+      "poster_path": "/2kJMgHi8vNY8a0UJiBU3HEyiqOa.jpg"
     },
     {
       "id": "hielo:3718",
@@ -17148,7 +17209,8 @@
         }
       ],
       "vote_count": 15621,
-      "vote_average": 7.937
+      "vote_average": 7.937,
+      "poster_path": "/pBA2J6iQMiP5Zd4ewMKdOWfq1HV.jpg"
     },
     {
       "id": "hielo:5675",
@@ -17546,7 +17608,8 @@
         }
       ],
       "vote_count": 9583,
-      "vote_average": 7.848
+      "vote_average": 7.848,
+      "poster_path": "/e25EHAVCA16rnbeAYl8qrSrc942.jpg"
     },
     {
       "id": "hielo:5973",
@@ -18004,7 +18067,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/uj4EuGmFNAc4CHBVEtRZ04MXzka.jpg"
     },
     {
       "id": "hielo:5566",
@@ -18082,7 +18146,8 @@
         }
       ],
       "vote_count": 887,
-      "vote_average": 8.051
+      "vote_average": 8.051,
+      "poster_path": "/ylExFY65lH1WIg7KQrTa8Zqz6nc.jpg"
     },
     {
       "id": "hielo:6243",
@@ -18398,7 +18463,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/7bQczUMnjz8iwxNP9YrmLkfI8od.jpg"
     },
     {
       "id": "hielo:6194",
@@ -18703,7 +18769,8 @@
         }
       ],
       "vote_count": 7264,
-      "vote_average": 7.147
+      "vote_average": 7.147,
+      "poster_path": "/73Lf0JYHyWyZQGu04wvzzM3hh0l.jpg"
     },
     {
       "id": "hielo:6262",
@@ -19525,7 +19592,8 @@
         }
       ],
       "vote_count": 208,
-      "vote_average": 8.0
+      "vote_average": 8.0,
+      "poster_path": "/t1azKLExwUxKj6v6m2L535evuRa.jpg"
     },
     {
       "id": "paz:113311",
@@ -19563,7 +19631,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/6CWXhVFfin3zh1LZ5HsWnzTXTPN.jpg"
     },
     {
       "id": "paz:113285",
@@ -19601,7 +19670,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/7338FnwdzX9oNpODZIJH1OliUGV.jpg"
     },
     {
       "id": "paz:113315",
@@ -19721,7 +19791,8 @@
         }
       ],
       "vote_count": 68,
-      "vote_average": 7.2
+      "vote_average": 7.2,
+      "poster_path": "/jwRMUI6rGjAwkXHEqBlSnViT6gG.jpg"
     },
     {
       "id": "paz:109595",
@@ -19759,7 +19830,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/a8MvsDCP3sv0WXNW3I0ainSuLcd.jpg"
     },
     {
       "id": "paz:111285",
@@ -20189,7 +20261,8 @@
         }
       ],
       "vote_count": 945,
-      "vote_average": 7.202
+      "vote_average": 7.202,
+      "poster_path": "/21JnfyCARiRkms9AZHtTXiZKbIj.jpg"
     },
     {
       "id": "paz:112601",
@@ -20312,7 +20385,8 @@
         }
       ],
       "vote_count": 225,
-      "vote_average": 7.269
+      "vote_average": 7.269,
+      "poster_path": "/ku7zVdj7yUZn71cG6YvCoC3Rxjm.jpg"
     },
     {
       "id": "paz:18111",
@@ -20408,7 +20482,8 @@
         }
       ],
       "vote_count": 5111,
-      "vote_average": 7.9
+      "vote_average": 7.9,
+      "poster_path": "/2WvrGAnKtHrb20nHLd38RyhIj0Q.jpg"
     },
     {
       "id": "paz:113321",
@@ -20435,7 +20510,8 @@
       "tmdb_runtime": 0,
       "tmdb_releases": [],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/g98gqevY5wjiaXeY44EeZusDAHz.jpg"
     },
     {
       "id": "paz:111711",
@@ -20825,7 +20901,8 @@
         }
       ],
       "vote_count": 163,
-      "vote_average": 7.2
+      "vote_average": 7.2,
+      "poster_path": "/9BvQHFAQ3BhKk5NSYxtYSMn5lrb.jpg"
     },
     {
       "id": "paz:113441",
@@ -21061,7 +21138,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/2r09thBfqsWkoyGVtrxc00uYpSy.jpg"
     },
     {
       "id": "paz:111419",
@@ -21121,7 +21199,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/yWIMk0hCyPacK6Sy8OXehdiJnTC.jpg"
     },
     {
       "id": "paz:115145",
@@ -21584,7 +21663,8 @@
         }
       ],
       "vote_count": 13,
-      "vote_average": 8.038
+      "vote_average": 8.038,
+      "poster_path": "/l4q1gziNMhpVQAzCIwmtbLSB1T9.jpg"
     },
     {
       "id": "paz:105357",
@@ -21786,7 +21866,8 @@
         }
       ],
       "vote_count": 2800,
-      "vote_average": 8.2
+      "vote_average": 8.2,
+      "poster_path": "/hjo6BPzCuhUkpSzxElOQ68mydrx.jpg"
     },
     {
       "id": "paz:115179",
@@ -21824,7 +21905,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/g8JgLE6obZIf57O8nfBTSHHEQ27.jpg"
     },
     {
       "id": "paz:111197",
@@ -22579,7 +22661,8 @@
         }
       ],
       "vote_count": 393,
-      "vote_average": 6.1
+      "vote_average": 6.1,
+      "poster_path": "/8UTCpwvHxWPllCJ7YnaCbffmYyD.jpg"
     },
     {
       "id": "paz:16959",
@@ -23218,7 +23301,8 @@
         }
       ],
       "vote_count": 40705,
-      "vote_average": 8.373
+      "vote_average": 8.373,
+      "poster_path": "/tXQvtRWfkUUnWJAn2tN3jERIUG.jpg"
     },
     {
       "id": "paz:104073",
@@ -23404,7 +23488,8 @@
         }
       ],
       "vote_count": 4091,
-      "vote_average": 6.33
+      "vote_average": 6.33,
+      "poster_path": "/92Lqy293CqAExYXlqDc456eYCWp.jpg"
     },
     {
       "id": "paz:23223",
@@ -23592,7 +23677,8 @@
         }
       ],
       "vote_count": 1136,
-      "vote_average": 7.665
+      "vote_average": 7.665,
+      "poster_path": "/6jicxcrfFZpXIBgQidj3uouwsiP.jpg"
     },
     {
       "id": "paz:22371",
@@ -23702,7 +23788,8 @@
         }
       ],
       "vote_count": 990,
-      "vote_average": 7.427
+      "vote_average": 7.427,
+      "poster_path": "/ptBljoTY9KrAIOZcULsIs2J3fGc.jpg"
     },
     {
       "id": "paz:113305",
@@ -24044,7 +24131,8 @@
         }
       ],
       "vote_count": 2841,
-      "vote_average": 8.187
+      "vote_average": 8.187,
+      "poster_path": "/2kJMgHi8vNY8a0UJiBU3HEyiqOa.jpg"
     },
     {
       "id": "paz:105135",
@@ -24687,7 +24775,8 @@
         }
       ],
       "vote_count": 15621,
-      "vote_average": 7.937
+      "vote_average": 7.937,
+      "poster_path": "/pBA2J6iQMiP5Zd4ewMKdOWfq1HV.jpg"
     },
     {
       "id": "paz:17997",
@@ -25074,7 +25163,8 @@
         }
       ],
       "vote_count": 9583,
-      "vote_average": 7.848
+      "vote_average": 7.848,
+      "poster_path": "/e25EHAVCA16rnbeAYl8qrSrc942.jpg"
     },
     {
       "id": "paz:115387",
@@ -25119,7 +25209,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/gVsYOcAMzPdPPJA5uIxewgzO1PO.jpg"
     },
     {
       "id": "paz:111417",
@@ -25301,7 +25392,8 @@
         }
       ],
       "vote_count": 6441,
-      "vote_average": 7.543
+      "vote_average": 7.543,
+      "poster_path": "/nXqhkF0tJ1K2fglVMgimVZd5kMH.jpg"
     },
     {
       "id": "paz:72108",
@@ -25381,7 +25473,8 @@
         }
       ],
       "vote_count": 887,
-      "vote_average": 8.051
+      "vote_average": 8.051,
+      "poster_path": "/ylExFY65lH1WIg7KQrTa8Zqz6nc.jpg"
     },
     {
       "id": "paz:108191",
@@ -25828,7 +25921,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/uj4EuGmFNAc4CHBVEtRZ04MXzka.jpg"
     },
     {
       "id": "paz:8612",
@@ -26122,7 +26216,8 @@
         }
       ],
       "vote_count": 7264,
-      "vote_average": 7.147
+      "vote_average": 7.147,
+      "poster_path": "/73Lf0JYHyWyZQGu04wvzzM3hh0l.jpg"
     },
     {
       "id": "paz:104075",
@@ -26378,7 +26473,8 @@
         }
       ],
       "vote_count": 3572,
-      "vote_average": 6.598
+      "vote_average": 6.598,
+      "poster_path": "/p0TgEBfbOgWP6xZgSt2T7Ee78vx.jpg"
     },
     {
       "id": "paz:105137",
@@ -26665,7 +26761,8 @@
         }
       ],
       "vote_count": 3781,
-      "vote_average": 6.957
+      "vote_average": 6.957,
+      "poster_path": "/gGg2haDaZF3vklYQXPPQ6ccCNj0.jpg"
     },
     {
       "id": "paz:105227",
@@ -26956,7 +27053,8 @@
         }
       ],
       "vote_count": 3262,
-      "vote_average": 8.084
+      "vote_average": 8.084,
+      "poster_path": "/fCWd45ybxghuvaeSMcBsLFKY6PG.jpg"
     },
     {
       "id": "paz:105225",
@@ -27473,7 +27571,8 @@
         }
       ],
       "vote_count": 12349,
-      "vote_average": 7.594
+      "vote_average": 7.594,
+      "poster_path": "/wnps5IL8YpeJpZvciDRXt7yZF8a.jpg"
     },
     {
       "id": "renoir-princesa:film:8bad897e94c4c81471ff",
@@ -28071,7 +28170,8 @@
         }
       ],
       "vote_count": 425,
-      "vote_average": 7.426
+      "vote_average": 7.426,
+      "poster_path": "/6ihSDJlBNcvoTWzSA0jonZyOXTs.jpg"
     },
     {
       "id": "renoir-princesa:film:95bdaeb64278ae98f7c5",
@@ -28620,7 +28720,8 @@
         }
       ],
       "vote_count": 511,
-      "vote_average": 7.5
+      "vote_average": 7.5,
+      "poster_path": "/koqE0V2IgIPVy5o2vVkoGJvnB8b.jpg"
     },
     {
       "id": "renoir-princesa:film:05aa424b2028204c27c9",
@@ -28941,7 +29042,8 @@
         }
       ],
       "vote_count": 140,
-      "vote_average": 7.0
+      "vote_average": 7.0,
+      "poster_path": "/xT7yxocpGjqzalCUTr9IFDf8Oyb.jpg"
     },
     {
       "id": "renoir-princesa:film:c6092e303a72b5b85b10",
@@ -28979,7 +29081,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/gDsAXwxRwH9nQCv1z5GvqVwPnTI.jpg"
     },
     {
       "id": "renoir-princesa:film:f85c46983e126803edc5",
@@ -29097,7 +29200,8 @@
         }
       ],
       "vote_count": 1,
-      "vote_average": 9.5
+      "vote_average": 9.5,
+      "poster_path": "/bJh97VEUn9TWygQSrOOyJrwQXek.jpg"
     },
     {
       "id": "renoir-princesa:film:599d9cd0d56122bdd483",
@@ -29714,7 +29818,8 @@
         }
       ],
       "vote_count": 208,
-      "vote_average": 8.0
+      "vote_average": 8.0,
+      "poster_path": "/t1azKLExwUxKj6v6m2L535evuRa.jpg"
     },
     {
       "id": "renoir-princesa:film:93070f29095073c68988",
@@ -30144,7 +30249,8 @@
         }
       ],
       "vote_count": 945,
-      "vote_average": 7.202
+      "vote_average": 7.202,
+      "poster_path": "/21JnfyCARiRkms9AZHtTXiZKbIj.jpg"
     },
     {
       "id": "renoir-princesa:film:fe753f85fe08f8b136ea",
@@ -30177,7 +30283,8 @@
         }
       ],
       "vote_count": 5,
-      "vote_average": 5.6
+      "vote_average": 5.6,
+      "poster_path": "/ozr5OyKt1whnfuLei2viZsS38Kp.jpg"
     },
     {
       "id": "renoir-princesa:film:b2bf2ed966ce67bf58ac",
@@ -30519,7 +30626,8 @@
         }
       ],
       "vote_count": 652,
-      "vote_average": 6.8
+      "vote_average": 6.8,
+      "poster_path": "/q4C2Kbc1eGOTCUdMetsjvhxUhMV.jpg"
     },
     {
       "id": "renoir-princesa:film:f8c34894c137c7d8e71e",
@@ -30639,7 +30747,8 @@
         }
       ],
       "vote_count": 68,
-      "vote_average": 7.2
+      "vote_average": 7.2,
+      "poster_path": "/jwRMUI6rGjAwkXHEqBlSnViT6gG.jpg"
     },
     {
       "id": "renoir-princesa:film:7efe0744d0820ff9e3dd",
@@ -30677,7 +30786,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/7338FnwdzX9oNpODZIJH1OliUGV.jpg"
     },
     {
       "id": "renoir-princesa:film:00c51af4d33ce3f7d43e",
@@ -31067,7 +31177,8 @@
         }
       ],
       "vote_count": 163,
-      "vote_average": 7.2
+      "vote_average": 7.2,
+      "poster_path": "/9BvQHFAQ3BhKk5NSYxtYSMn5lrb.jpg"
     },
     {
       "id": "renoir-princesa:film:3e38ef83a9d9ab64c422",
@@ -31352,7 +31463,8 @@
         }
       ],
       "vote_count": 44,
-      "vote_average": 7.557
+      "vote_average": 7.557,
+      "poster_path": "/ewPz6uvKrbKlQrLRi1r9NTZQLzN.jpg"
     },
     {
       "id": "renoir-princesa:film:578e1aa7e6ab487b4de9",
@@ -31704,7 +31816,8 @@
         }
       ],
       "vote_count": 248,
-      "vote_average": 8.5
+      "vote_average": 8.5,
+      "poster_path": "/sJ1uZ4DKsjs2iqLtCX46TifxqoE.jpg"
     },
     {
       "id": "renoir-princesa:film:993e54266f13c382a31e",
@@ -31951,7 +32064,8 @@
         }
       ],
       "vote_count": 113,
-      "vote_average": 6.9
+      "vote_average": 6.9,
+      "poster_path": "/LdKLipXCdKHNXxUxn8l7UTdnXJ.jpg"
     },
     {
       "id": "renoir-princesa:film:8c88efa7fcc286a5dfc5",
@@ -32153,7 +32267,8 @@
         }
       ],
       "vote_count": 2142,
-      "vote_average": 7.6
+      "vote_average": 7.6,
+      "poster_path": "/evvT3HUwoQYoPQXWFO10R6AvhxG.jpg"
     },
     {
       "id": "renoir-princesa:film:c27d26629f78d02310af",
@@ -32180,7 +32295,8 @@
       "tmdb_runtime": 78,
       "tmdb_releases": [],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/6eJaRsrcmguzLDAGP1nWXzLDYTY.jpg"
     },
     {
       "id": "renoir-princesa:film:561324243edc2a08f7ff",
@@ -32416,7 +32532,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/2r09thBfqsWkoyGVtrxc00uYpSy.jpg"
     },
     {
       "id": "renoir-princesa:film:166c88a917e520842df4",
@@ -32930,7 +33047,8 @@
         }
       ],
       "vote_count": 137,
-      "vote_average": 8.1
+      "vote_average": 8.1,
+      "poster_path": "/bLDrHn76oiNYiELv1qw3Tfdkqc8.jpg"
     },
     {
       "id": "renoir-princesa:film:aa92c98909e8b868019a",
@@ -33141,7 +33259,8 @@
         }
       ],
       "vote_count": 668,
-      "vote_average": 7.926
+      "vote_average": 7.926,
+      "poster_path": "/xYWPyzDfCmX6xK51wwGNkQNA9fv.jpg"
     },
     {
       "id": "renoir-plaza-espa-a:film:7b8dc44cf96cf6935283",
@@ -33179,7 +33298,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/a8MvsDCP3sv0WXNW3I0ainSuLcd.jpg"
     },
     {
       "id": "renoir-plaza-espa-a:film:f23960ee4783f3fdf265",
@@ -33850,7 +33970,8 @@
         }
       ],
       "vote_count": 208,
-      "vote_average": 8.0
+      "vote_average": 8.0,
+      "poster_path": "/t1azKLExwUxKj6v6m2L535evuRa.jpg"
     },
     {
       "id": "renoir-plaza-espa-a:film:93070f29095073c68988",
@@ -34280,7 +34401,8 @@
         }
       ],
       "vote_count": 945,
-      "vote_average": 7.202
+      "vote_average": 7.202,
+      "poster_path": "/21JnfyCARiRkms9AZHtTXiZKbIj.jpg"
     },
     {
       "id": "renoir-plaza-espa-a:film:caa558a523dc31523878",
@@ -34391,7 +34513,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/6CWXhVFfin3zh1LZ5HsWnzTXTPN.jpg"
     },
     {
       "id": "renoir-plaza-espa-a:film:2b9bae883945055beebb",
@@ -34514,7 +34637,8 @@
         }
       ],
       "vote_count": 225,
-      "vote_average": 7.269
+      "vote_average": 7.269,
+      "poster_path": "/ku7zVdj7yUZn71cG6YvCoC3Rxjm.jpg"
     },
     {
       "id": "renoir-plaza-espa-a:film:60f55c5f42d38e9969cf",
@@ -34600,7 +34724,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/eS83uVLN6OAH5ZLrUPyoWDVXI2b.jpg"
     },
     {
       "id": "renoir-plaza-espa-a:film:fbe44316a67a76d57641",
@@ -34638,7 +34763,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/g8JgLE6obZIf57O8nfBTSHHEQ27.jpg"
     },
     {
       "id": "renoir-retiro:film:599d9cd0d56122bdd483",
@@ -35255,7 +35381,8 @@
         }
       ],
       "vote_count": 208,
-      "vote_average": 8.0
+      "vote_average": 8.0,
+      "poster_path": "/t1azKLExwUxKj6v6m2L535evuRa.jpg"
     },
     {
       "id": "renoir-retiro:film:93070f29095073c68988",
@@ -35685,7 +35812,8 @@
         }
       ],
       "vote_count": 945,
-      "vote_average": 7.202
+      "vote_average": 7.202,
+      "poster_path": "/21JnfyCARiRkms9AZHtTXiZKbIj.jpg"
     },
     {
       "id": "renoir-retiro:film:bfb2e5af9fe283437a85",
@@ -35723,7 +35851,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/6CWXhVFfin3zh1LZ5HsWnzTXTPN.jpg"
     },
     {
       "id": "renoir-retiro:film:00c51af4d33ce3f7d43e",
@@ -36113,7 +36242,8 @@
         }
       ],
       "vote_count": 163,
-      "vote_average": 7.2
+      "vote_average": 7.2,
+      "poster_path": "/9BvQHFAQ3BhKk5NSYxtYSMn5lrb.jpg"
     },
     {
       "id": "renoir-retiro:film:2b9bae883945055beebb",
@@ -36236,7 +36366,8 @@
         }
       ],
       "vote_count": 225,
-      "vote_average": 7.269
+      "vote_average": 7.269,
+      "poster_path": "/ku7zVdj7yUZn71cG6YvCoC3Rxjm.jpg"
     },
     {
       "id": "renoir-retiro:film:dbe68219dff0ec2c34e9",
@@ -36351,7 +36482,8 @@
         }
       ],
       "vote_count": 614,
-      "vote_average": 7.743
+      "vote_average": 7.743,
+      "poster_path": "/zkmDkZNPM8zgfLgKHEQFLXGrf8Q.jpg"
     },
     {
       "id": "renoir-retiro:film:166c88a917e520842df4",
@@ -36865,7 +36997,8 @@
         }
       ],
       "vote_count": 137,
-      "vote_average": 8.1
+      "vote_average": 8.1,
+      "poster_path": "/bLDrHn76oiNYiELv1qw3Tfdkqc8.jpg"
     },
     {
       "id": "renoir-retiro:film:fbe44316a67a76d57641",
@@ -36903,7 +37036,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/g8JgLE6obZIf57O8nfBTSHHEQ27.jpg"
     },
     {
       "id": "conde-duque-auditorio-morasol:film:1705cfa8a09b2f877035",
@@ -37535,7 +37669,8 @@
         }
       ],
       "vote_count": 163,
-      "vote_average": 7.2
+      "vote_average": 7.2,
+      "poster_path": "/9BvQHFAQ3BhKk5NSYxtYSMn5lrb.jpg"
     },
     {
       "id": "conde-duque-auditorio-morasol:film:7ba5a2b6f8ade3fab3a9",
@@ -37677,7 +37812,8 @@
         }
       ],
       "vote_count": 68,
-      "vote_average": 7.2
+      "vote_average": 7.2,
+      "poster_path": "/jwRMUI6rGjAwkXHEqBlSnViT6gG.jpg"
     },
     {
       "id": "cine-capitol:film:578e1aa7e6ab487b4de9",
@@ -38029,7 +38165,8 @@
         }
       ],
       "vote_count": 248,
-      "vote_average": 8.5
+      "vote_average": 8.5,
+      "poster_path": "/sJ1uZ4DKsjs2iqLtCX46TifxqoE.jpg"
     },
     {
       "id": "cinesa-proyecciones:film:e7741068395a7555dc12",
@@ -38647,7 +38784,8 @@
         }
       ],
       "vote_count": 208,
-      "vote_average": 8.0
+      "vote_average": 8.0,
+      "poster_path": "/t1azKLExwUxKj6v6m2L535evuRa.jpg"
     },
     {
       "id": "cinesa-proyecciones:film:fe13197e16856454b831",
@@ -38940,7 +39078,8 @@
         }
       ],
       "vote_count": 20,
-      "vote_average": 7.1
+      "vote_average": 7.1,
+      "poster_path": "/8TW5oOMZbxaMFVgletpW0bxd2Aa.jpg"
     },
     {
       "id": "cinesa-proyecciones:film:81d3b06e7267d7cdf448",
@@ -38979,7 +39118,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/6CWXhVFfin3zh1LZ5HsWnzTXTPN.jpg"
     },
     {
       "id": "cinesa-proyecciones:film:578e1aa7e6ab487b4de9",
@@ -39332,7 +39472,8 @@
         }
       ],
       "vote_count": 248,
-      "vote_average": 8.5
+      "vote_average": 8.5,
+      "poster_path": "/sJ1uZ4DKsjs2iqLtCX46TifxqoE.jpg"
     },
     {
       "id": "cinesa-proyecciones:film:00c51af4d33ce3f7d43e",
@@ -39723,7 +39864,8 @@
         }
       ],
       "vote_count": 163,
-      "vote_average": 7.2
+      "vote_average": 7.2,
+      "poster_path": "/9BvQHFAQ3BhKk5NSYxtYSMn5lrb.jpg"
     },
     {
       "id": "cinesa-proyecciones:film:f8c34894c137c7d8e71e",
@@ -39844,7 +39986,8 @@
         }
       ],
       "vote_count": 68,
-      "vote_average": 7.2
+      "vote_average": 7.2,
+      "poster_path": "/jwRMUI6rGjAwkXHEqBlSnViT6gG.jpg"
     },
     {
       "id": "cinesa-proyecciones:film:8bad897e94c4c81471ff",
@@ -40443,7 +40586,8 @@
         }
       ],
       "vote_count": 425,
-      "vote_average": 7.426
+      "vote_average": 7.426,
+      "poster_path": "/6ihSDJlBNcvoTWzSA0jonZyOXTs.jpg"
     },
     {
       "id": "cinesa-proyecciones:film:0263d79dfbc68cd1cb97",
@@ -40904,7 +41048,8 @@
         }
       ],
       "vote_count": 143,
-      "vote_average": 7.78
+      "vote_average": 7.78,
+      "poster_path": "/2B7ZSUutCgwUAE5U0X7WlD8yiun.jpg"
     },
     {
       "id": "cinesa-proyecciones:film:292e11fa5813333a1eba",
@@ -41494,7 +41639,8 @@
         }
       ],
       "vote_count": 4612,
-      "vote_average": 8.019
+      "vote_average": 8.019,
+      "poster_path": "/9aeb5U0saB7Tuu0QITaoENZBxFF.jpg"
     },
     {
       "id": "cinesa-proyecciones:film:f85c46983e126803edc5",
@@ -41916,7 +42062,8 @@
         }
       ],
       "vote_count": 607,
-      "vote_average": 7.4
+      "vote_average": 7.4,
+      "poster_path": "/ya8iLCNyoVpBO7B7JrNJVj3g7tK.jpg"
     },
     {
       "id": "cinesa-proyecciones:film:78e7f73e611e6e5745ea",
@@ -41955,7 +42102,8 @@
         }
       ],
       "vote_count": 1,
-      "vote_average": 9.5
+      "vote_average": 9.5,
+      "poster_path": "/bJh97VEUn9TWygQSrOOyJrwQXek.jpg"
     },
     {
       "id": "cinesa-proyecciones:film:8eb74c404ce681c4bfb8",
@@ -42298,7 +42446,8 @@
         }
       ],
       "vote_count": 6,
-      "vote_average": 8.333
+      "vote_average": 8.333,
+      "poster_path": "/gnG15MkiNeObCoPbHcLUX4zrNWh.jpg"
     },
     {
       "id": "cinesa-principe-p-o-isense:film:fe13197e16856454b831",
@@ -42591,7 +42740,8 @@
         }
       ],
       "vote_count": 20,
-      "vote_average": 7.1
+      "vote_average": 7.1,
+      "poster_path": "/8TW5oOMZbxaMFVgletpW0bxd2Aa.jpg"
     },
     {
       "id": "cinesa-principe-p-o-isense:film:e7741068395a7555dc12",
@@ -43209,7 +43359,8 @@
         }
       ],
       "vote_count": 208,
-      "vote_average": 8.0
+      "vote_average": 8.0,
+      "poster_path": "/t1azKLExwUxKj6v6m2L535evuRa.jpg"
     },
     {
       "id": "cinesa-principe-p-o-isense:film:578e1aa7e6ab487b4de9",
@@ -43562,7 +43713,8 @@
         }
       ],
       "vote_count": 248,
-      "vote_average": 8.5
+      "vote_average": 8.5,
+      "poster_path": "/sJ1uZ4DKsjs2iqLtCX46TifxqoE.jpg"
     },
     {
       "id": "cinesa-principe-p-o-isense:film:8bad897e94c4c81471ff",
@@ -44161,7 +44313,8 @@
         }
       ],
       "vote_count": 425,
-      "vote_average": 7.426
+      "vote_average": 7.426,
+      "poster_path": "/6ihSDJlBNcvoTWzSA0jonZyOXTs.jpg"
     },
     {
       "id": "cinesa-principe-p-o-isense:film:7402151a5a8353450f67",
@@ -44200,7 +44353,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/7338FnwdzX9oNpODZIJH1OliUGV.jpg"
     },
     {
       "id": "cinesa-principe-p-o-isense:film:a0dc578405ded9b3d6ad",
@@ -44595,7 +44749,8 @@
         }
       ],
       "vote_count": 607,
-      "vote_average": 7.4
+      "vote_average": 7.4,
+      "poster_path": "/ya8iLCNyoVpBO7B7JrNJVj3g7tK.jpg"
     },
     {
       "id": "cinesa-principe-p-o-isense:film:0263d79dfbc68cd1cb97",
@@ -45056,7 +45211,8 @@
         }
       ],
       "vote_count": 143,
-      "vote_average": 7.78
+      "vote_average": 7.78,
+      "poster_path": "/2B7ZSUutCgwUAE5U0X7WlD8yiun.jpg"
     },
     {
       "id": "cinesa-principe-p-o-isense:film:78e7f73e611e6e5745ea",
@@ -45095,7 +45251,8 @@
         }
       ],
       "vote_count": 1,
-      "vote_average": 9.5
+      "vote_average": 9.5,
+      "poster_path": "/bJh97VEUn9TWygQSrOOyJrwQXek.jpg"
     },
     {
       "id": "cinesa-principe-p-o-isense:film:f8c34894c137c7d8e71e",
@@ -45216,7 +45373,8 @@
         }
       ],
       "vote_count": 68,
-      "vote_average": 7.2
+      "vote_average": 7.2,
+      "poster_path": "/jwRMUI6rGjAwkXHEqBlSnViT6gG.jpg"
     },
     {
       "id": "cinesa-principe-p-o-isense:film:8eb74c404ce681c4bfb8",
@@ -45332,7 +45490,8 @@
         }
       ],
       "vote_count": 5,
-      "vote_average": 5.6
+      "vote_average": 5.6,
+      "poster_path": "/ozr5OyKt1whnfuLei2viZsS38Kp.jpg"
     },
     {
       "id": "cinesa-principe-p-o-isense:film:ac7ec8c6401132baad5b",
@@ -45740,7 +45899,8 @@
         }
       ],
       "vote_count": 228,
-      "vote_average": 5.805
+      "vote_average": 5.805,
+      "poster_path": "/USCOKXrHBCeeK96qXmS0NyDHYL.jpg"
     },
     {
       "id": "cinesa-principe-p-o-isense:film:bdc570468d6ea5b985ec",
@@ -46370,7 +46530,8 @@
         }
       ],
       "vote_count": 2015,
-      "vote_average": 7.5
+      "vote_average": 7.5,
+      "poster_path": "/vrLEVObLGbUinE4sC4Lqao2dK0E.jpg"
     },
     {
       "id": "cinesa-principe-p-o-isense:film:00c51af4d33ce3f7d43e",
@@ -46761,7 +46922,8 @@
         }
       ],
       "vote_count": 163,
-      "vote_average": 7.2
+      "vote_average": 7.2,
+      "poster_path": "/9BvQHFAQ3BhKk5NSYxtYSMn5lrb.jpg"
     },
     {
       "id": "cinesa-principe-p-o-isense:film:d61b00668a22974866dc",
@@ -47049,7 +47211,8 @@
         }
       ],
       "vote_count": 6,
-      "vote_average": 8.333
+      "vote_average": 8.333,
+      "poster_path": "/gnG15MkiNeObCoPbHcLUX4zrNWh.jpg"
     },
     {
       "id": "cinesa-m-ndez-lvaro-isense:film:e7741068395a7555dc12",
@@ -47667,7 +47830,8 @@
         }
       ],
       "vote_count": 208,
-      "vote_average": 8.0
+      "vote_average": 8.0,
+      "poster_path": "/t1azKLExwUxKj6v6m2L535evuRa.jpg"
     },
     {
       "id": "cinesa-m-ndez-lvaro-isense:film:fe13197e16856454b831",
@@ -47960,7 +48124,8 @@
         }
       ],
       "vote_count": 20,
-      "vote_average": 7.1
+      "vote_average": 7.1,
+      "poster_path": "/8TW5oOMZbxaMFVgletpW0bxd2Aa.jpg"
     },
     {
       "id": "cinesa-m-ndez-lvaro-isense:film:81d3b06e7267d7cdf448",
@@ -47999,7 +48164,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/6CWXhVFfin3zh1LZ5HsWnzTXTPN.jpg"
     },
     {
       "id": "cinesa-m-ndez-lvaro-isense:film:578e1aa7e6ab487b4de9",
@@ -48352,7 +48518,8 @@
         }
       ],
       "vote_count": 248,
-      "vote_average": 8.5
+      "vote_average": 8.5,
+      "poster_path": "/sJ1uZ4DKsjs2iqLtCX46TifxqoE.jpg"
     },
     {
       "id": "cinesa-m-ndez-lvaro-isense:film:7402151a5a8353450f67",
@@ -48391,7 +48558,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/7338FnwdzX9oNpODZIJH1OliUGV.jpg"
     },
     {
       "id": "cinesa-m-ndez-lvaro-isense:film:0263d79dfbc68cd1cb97",
@@ -48852,7 +49020,8 @@
         }
       ],
       "vote_count": 143,
-      "vote_average": 7.78
+      "vote_average": 7.78,
+      "poster_path": "/2B7ZSUutCgwUAE5U0X7WlD8yiun.jpg"
     },
     {
       "id": "cinesa-m-ndez-lvaro-isense:film:6b2df73ea7ec2078ad0d",
@@ -49281,7 +49450,8 @@
         }
       ],
       "vote_count": 33,
-      "vote_average": 7.7
+      "vote_average": 7.7,
+      "poster_path": "/nzL1ySE6vdmR6RxXhE7gLggkp41.jpg"
     },
     {
       "id": "cinesa-m-ndez-lvaro-isense:film:85f6c0e94532f453adb0",
@@ -49317,7 +49487,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/WGH8A7l5pQHlO13A7QJ2t4mjvN.jpg"
     },
     {
       "id": "cinesa-m-ndez-lvaro-isense:film:8bad897e94c4c81471ff",
@@ -49916,7 +50087,8 @@
         }
       ],
       "vote_count": 425,
-      "vote_average": 7.426
+      "vote_average": 7.426,
+      "poster_path": "/6ihSDJlBNcvoTWzSA0jonZyOXTs.jpg"
     },
     {
       "id": "cinesa-m-ndez-lvaro-isense:film:78e7f73e611e6e5745ea",
@@ -49955,7 +50127,8 @@
         }
       ],
       "vote_count": 1,
-      "vote_average": 9.5
+      "vote_average": 9.5,
+      "poster_path": "/bJh97VEUn9TWygQSrOOyJrwQXek.jpg"
     },
     {
       "id": "cinesa-m-ndez-lvaro-isense:film:fe753f85fe08f8b136ea",
@@ -49989,7 +50162,8 @@
         }
       ],
       "vote_count": 5,
-      "vote_average": 5.6
+      "vote_average": 5.6,
+      "poster_path": "/ozr5OyKt1whnfuLei2viZsS38Kp.jpg"
     },
     {
       "id": "cinesa-m-ndez-lvaro-isense:film:8eb74c404ce681c4bfb8",
@@ -50439,7 +50613,8 @@
         }
       ],
       "vote_count": 607,
-      "vote_average": 7.4
+      "vote_average": 7.4,
+      "poster_path": "/ya8iLCNyoVpBO7B7JrNJVj3g7tK.jpg"
     },
     {
       "id": "cinesa-m-ndez-lvaro-isense:film:f8c34894c137c7d8e71e",
@@ -50560,7 +50735,8 @@
         }
       ],
       "vote_count": 68,
-      "vote_average": 7.2
+      "vote_average": 7.2,
+      "poster_path": "/jwRMUI6rGjAwkXHEqBlSnViT6gG.jpg"
     },
     {
       "id": "cinesa-m-ndez-lvaro-isense:film:3bbddb0f6863bb53b5a0",
@@ -50846,7 +51022,8 @@
         }
       ],
       "vote_count": 44,
-      "vote_average": 7.557
+      "vote_average": 7.557,
+      "poster_path": "/ewPz6uvKrbKlQrLRi1r9NTZQLzN.jpg"
     },
     {
       "id": "cinesa-m-ndez-lvaro-isense:film:f85c46983e126803edc5",
@@ -51281,7 +51458,8 @@
         }
       ],
       "vote_count": 228,
-      "vote_average": 5.805
+      "vote_average": 5.805,
+      "poster_path": "/USCOKXrHBCeeK96qXmS0NyDHYL.jpg"
     },
     {
       "id": "cinesa-m-ndez-lvaro-isense:film:bdc570468d6ea5b985ec",
@@ -51911,7 +52089,8 @@
         }
       ],
       "vote_count": 2015,
-      "vote_average": 7.5
+      "vote_average": 7.5,
+      "poster_path": "/vrLEVObLGbUinE4sC4Lqao2dK0E.jpg"
     },
     {
       "id": "cinesa-m-ndez-lvaro-isense:film:f0febd1c4e48abbd54c2",
@@ -52274,7 +52453,8 @@
         }
       ],
       "vote_count": 226,
-      "vote_average": 6.347
+      "vote_average": 6.347,
+      "poster_path": "/2kdEEUkbkJe08kTDMCUbBrZ71Aw.jpg"
     },
     {
       "id": "cinesa-m-ndez-lvaro-isense:film:00c51af4d33ce3f7d43e",
@@ -52665,7 +52845,8 @@
         }
       ],
       "vote_count": 163,
-      "vote_average": 7.2
+      "vote_average": 7.2,
+      "poster_path": "/9BvQHFAQ3BhKk5NSYxtYSMn5lrb.jpg"
     },
     {
       "id": "cinesa-m-ndez-lvaro-isense:film:7b8dc44cf96cf6935283",
@@ -52704,7 +52885,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/a8MvsDCP3sv0WXNW3I0ainSuLcd.jpg"
     },
     {
       "id": "cinesa-m-ndez-lvaro-isense:film:687277d2d81aedc881a3",
@@ -52828,7 +53010,8 @@
         }
       ],
       "vote_count": 225,
-      "vote_average": 7.269
+      "vote_average": 7.269,
+      "poster_path": "/ku7zVdj7yUZn71cG6YvCoC3Rxjm.jpg"
     },
     {
       "id": "cinesa-m-ndez-lvaro-isense:film:d61b00668a22974866dc",
@@ -53116,7 +53299,8 @@
         }
       ],
       "vote_count": 6,
-      "vote_average": 8.333
+      "vote_average": 8.333,
+      "poster_path": "/gnG15MkiNeObCoPbHcLUX4zrNWh.jpg"
     },
     {
       "id": "cinesa-las-rosas:film:fe13197e16856454b831",
@@ -53409,7 +53593,8 @@
         }
       ],
       "vote_count": 20,
-      "vote_average": 7.1
+      "vote_average": 7.1,
+      "poster_path": "/8TW5oOMZbxaMFVgletpW0bxd2Aa.jpg"
     },
     {
       "id": "cinesa-las-rosas:film:e7741068395a7555dc12",
@@ -54027,7 +54212,8 @@
         }
       ],
       "vote_count": 208,
-      "vote_average": 8.0
+      "vote_average": 8.0,
+      "poster_path": "/t1azKLExwUxKj6v6m2L535evuRa.jpg"
     },
     {
       "id": "cinesa-las-rosas:film:a0dc578405ded9b3d6ad",
@@ -54422,7 +54608,8 @@
         }
       ],
       "vote_count": 607,
-      "vote_average": 7.4
+      "vote_average": 7.4,
+      "poster_path": "/ya8iLCNyoVpBO7B7JrNJVj3g7tK.jpg"
     },
     {
       "id": "cinesa-las-rosas:film:8bad897e94c4c81471ff",
@@ -55021,7 +55208,8 @@
         }
       ],
       "vote_count": 425,
-      "vote_average": 7.426
+      "vote_average": 7.426,
+      "poster_path": "/6ihSDJlBNcvoTWzSA0jonZyOXTs.jpg"
     },
     {
       "id": "cinesa-las-rosas:film:78e7f73e611e6e5745ea",
@@ -55060,7 +55248,8 @@
         }
       ],
       "vote_count": 1,
-      "vote_average": 9.5
+      "vote_average": 9.5,
+      "poster_path": "/bJh97VEUn9TWygQSrOOyJrwQXek.jpg"
     },
     {
       "id": "cinesa-las-rosas:film:578e1aa7e6ab487b4de9",
@@ -55413,7 +55602,8 @@
         }
       ],
       "vote_count": 248,
-      "vote_average": 8.5
+      "vote_average": 8.5,
+      "poster_path": "/sJ1uZ4DKsjs2iqLtCX46TifxqoE.jpg"
     },
     {
       "id": "cinesa-las-rosas:film:f8c34894c137c7d8e71e",
@@ -55534,7 +55724,8 @@
         }
       ],
       "vote_count": 68,
-      "vote_average": 7.2
+      "vote_average": 7.2,
+      "poster_path": "/jwRMUI6rGjAwkXHEqBlSnViT6gG.jpg"
     },
     {
       "id": "cinesa-las-rosas:film:0263d79dfbc68cd1cb97",
@@ -55995,7 +56186,8 @@
         }
       ],
       "vote_count": 143,
-      "vote_average": 7.78
+      "vote_average": 7.78,
+      "poster_path": "/2B7ZSUutCgwUAE5U0X7WlD8yiun.jpg"
     },
     {
       "id": "cinesa-las-rosas:film:f85c46983e126803edc5",
@@ -56355,7 +56547,8 @@
         }
       ],
       "vote_count": 61,
-      "vote_average": 7.328
+      "vote_average": 7.328,
+      "poster_path": "/ajiSFBxo1h0MNbu7q9I5aSVHUgE.jpg"
     },
     {
       "id": "cinesa-las-rosas:film:ac7ec8c6401132baad5b",
@@ -56763,7 +56956,8 @@
         }
       ],
       "vote_count": 228,
-      "vote_average": 5.805
+      "vote_average": 5.805,
+      "poster_path": "/USCOKXrHBCeeK96qXmS0NyDHYL.jpg"
     },
     {
       "id": "cinesa-las-rosas:film:d61b00668a22974866dc",
@@ -57051,7 +57245,8 @@
         }
       ],
       "vote_count": 6,
-      "vote_average": 8.333
+      "vote_average": 8.333,
+      "poster_path": "/gnG15MkiNeObCoPbHcLUX4zrNWh.jpg"
     },
     {
       "id": "cinesa-la-gavia:film:fe13197e16856454b831",
@@ -57344,7 +57539,8 @@
         }
       ],
       "vote_count": 20,
-      "vote_average": 7.1
+      "vote_average": 7.1,
+      "poster_path": "/8TW5oOMZbxaMFVgletpW0bxd2Aa.jpg"
     },
     {
       "id": "cinesa-la-gavia:film:e7741068395a7555dc12",
@@ -57962,7 +58158,8 @@
         }
       ],
       "vote_count": 208,
-      "vote_average": 8.0
+      "vote_average": 8.0,
+      "poster_path": "/t1azKLExwUxKj6v6m2L535evuRa.jpg"
     },
     {
       "id": "cinesa-la-gavia:film:a0dc578405ded9b3d6ad",
@@ -58357,7 +58554,8 @@
         }
       ],
       "vote_count": 607,
-      "vote_average": 7.4
+      "vote_average": 7.4,
+      "poster_path": "/ya8iLCNyoVpBO7B7JrNJVj3g7tK.jpg"
     },
     {
       "id": "cinesa-la-gavia:film:78e7f73e611e6e5745ea",
@@ -58396,7 +58594,8 @@
         }
       ],
       "vote_count": 1,
-      "vote_average": 9.5
+      "vote_average": 9.5,
+      "poster_path": "/bJh97VEUn9TWygQSrOOyJrwQXek.jpg"
     },
     {
       "id": "cinesa-la-gavia:film:8bad897e94c4c81471ff",
@@ -58995,7 +59194,8 @@
         }
       ],
       "vote_count": 425,
-      "vote_average": 7.426
+      "vote_average": 7.426,
+      "poster_path": "/6ihSDJlBNcvoTWzSA0jonZyOXTs.jpg"
     },
     {
       "id": "cinesa-la-gavia:film:578e1aa7e6ab487b4de9",
@@ -59348,7 +59548,8 @@
         }
       ],
       "vote_count": 248,
-      "vote_average": 8.5
+      "vote_average": 8.5,
+      "poster_path": "/sJ1uZ4DKsjs2iqLtCX46TifxqoE.jpg"
     },
     {
       "id": "cinesa-la-gavia:film:8eb74c404ce681c4bfb8",
@@ -59864,7 +60065,8 @@
         }
       ],
       "vote_count": 143,
-      "vote_average": 7.78
+      "vote_average": 7.78,
+      "poster_path": "/2B7ZSUutCgwUAE5U0X7WlD8yiun.jpg"
     },
     {
       "id": "cinesa-la-gavia:film:f8c34894c137c7d8e71e",
@@ -59985,7 +60187,8 @@
         }
       ],
       "vote_count": 68,
-      "vote_average": 7.2
+      "vote_average": 7.2,
+      "poster_path": "/jwRMUI6rGjAwkXHEqBlSnViT6gG.jpg"
     },
     {
       "id": "cinesa-la-gavia:film:f85c46983e126803edc5",
@@ -60375,7 +60578,8 @@
         }
       ],
       "vote_count": 226,
-      "vote_average": 6.347
+      "vote_average": 6.347,
+      "poster_path": "/2kdEEUkbkJe08kTDMCUbBrZ71Aw.jpg"
     },
     {
       "id": "cinesa-la-gavia:film:00c51af4d33ce3f7d43e",
@@ -60766,7 +60970,8 @@
         }
       ],
       "vote_count": 163,
-      "vote_average": 7.2
+      "vote_average": 7.2,
+      "poster_path": "/9BvQHFAQ3BhKk5NSYxtYSMn5lrb.jpg"
     },
     {
       "id": "cinesa-la-gavia:film:ac7ec8c6401132baad5b",
@@ -61174,7 +61379,8 @@
         }
       ],
       "vote_count": 228,
-      "vote_average": 5.805
+      "vote_average": 5.805,
+      "poster_path": "/USCOKXrHBCeeK96qXmS0NyDHYL.jpg"
     },
     {
       "id": "cinesa-la-gavia:film:d61b00668a22974866dc",
@@ -61462,7 +61668,8 @@
         }
       ],
       "vote_count": 6,
-      "vote_average": 8.333
+      "vote_average": 8.333,
+      "poster_path": "/gnG15MkiNeObCoPbHcLUX4zrNWh.jpg"
     },
     {
       "id": "cinesa-manoteras:film:e7741068395a7555dc12",
@@ -62080,7 +62287,8 @@
         }
       ],
       "vote_count": 208,
-      "vote_average": 8.0
+      "vote_average": 8.0,
+      "poster_path": "/t1azKLExwUxKj6v6m2L535evuRa.jpg"
     },
     {
       "id": "cinesa-manoteras:film:fe13197e16856454b831",
@@ -62373,7 +62581,8 @@
         }
       ],
       "vote_count": 20,
-      "vote_average": 7.1
+      "vote_average": 7.1,
+      "poster_path": "/8TW5oOMZbxaMFVgletpW0bxd2Aa.jpg"
     },
     {
       "id": "cinesa-manoteras:film:578e1aa7e6ab487b4de9",
@@ -62726,7 +62935,8 @@
         }
       ],
       "vote_count": 248,
-      "vote_average": 8.5
+      "vote_average": 8.5,
+      "poster_path": "/sJ1uZ4DKsjs2iqLtCX46TifxqoE.jpg"
     },
     {
       "id": "cinesa-manoteras:film:a0dc578405ded9b3d6ad",
@@ -63121,7 +63331,8 @@
         }
       ],
       "vote_count": 607,
-      "vote_average": 7.4
+      "vote_average": 7.4,
+      "poster_path": "/ya8iLCNyoVpBO7B7JrNJVj3g7tK.jpg"
     },
     {
       "id": "cinesa-manoteras:film:81d3b06e7267d7cdf448",
@@ -63160,7 +63371,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/6CWXhVFfin3zh1LZ5HsWnzTXTPN.jpg"
     },
     {
       "id": "cinesa-manoteras:film:6b2df73ea7ec2078ad0d",
@@ -63589,7 +63801,8 @@
         }
       ],
       "vote_count": 33,
-      "vote_average": 7.7
+      "vote_average": 7.7,
+      "poster_path": "/nzL1ySE6vdmR6RxXhE7gLggkp41.jpg"
     },
     {
       "id": "cinesa-manoteras:film:00c51af4d33ce3f7d43e",
@@ -63980,7 +64193,8 @@
         }
       ],
       "vote_count": 163,
-      "vote_average": 7.2
+      "vote_average": 7.2,
+      "poster_path": "/9BvQHFAQ3BhKk5NSYxtYSMn5lrb.jpg"
     },
     {
       "id": "cinesa-manoteras:film:ef780feb07b9b45432d2",
@@ -64411,7 +64625,8 @@
         }
       ],
       "vote_count": 945,
-      "vote_average": 7.202
+      "vote_average": 7.202,
+      "poster_path": "/21JnfyCARiRkms9AZHtTXiZKbIj.jpg"
     },
     {
       "id": "cinesa-manoteras:film:0263d79dfbc68cd1cb97",
@@ -64872,7 +65087,8 @@
         }
       ],
       "vote_count": 143,
-      "vote_average": 7.78
+      "vote_average": 7.78,
+      "poster_path": "/2B7ZSUutCgwUAE5U0X7WlD8yiun.jpg"
     },
     {
       "id": "cinesa-manoteras:film:7402151a5a8353450f67",
@@ -64911,7 +65127,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/7338FnwdzX9oNpODZIJH1OliUGV.jpg"
     },
     {
       "id": "cinesa-manoteras:film:8eb74c404ce681c4bfb8",
@@ -65005,7 +65222,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/a8MvsDCP3sv0WXNW3I0ainSuLcd.jpg"
     },
     {
       "id": "cinesa-manoteras:film:292e11fa5813333a1eba",
@@ -65595,7 +65813,8 @@
         }
       ],
       "vote_count": 4612,
-      "vote_average": 8.019
+      "vote_average": 8.019,
+      "poster_path": "/9aeb5U0saB7Tuu0QITaoENZBxFF.jpg"
     },
     {
       "id": "cinesa-manoteras:film:f8c34894c137c7d8e71e",
@@ -65716,7 +65935,8 @@
         }
       ],
       "vote_count": 68,
-      "vote_average": 7.2
+      "vote_average": 7.2,
+      "poster_path": "/jwRMUI6rGjAwkXHEqBlSnViT6gG.jpg"
     },
     {
       "id": "cinesa-manoteras:film:8bad897e94c4c81471ff",
@@ -66315,7 +66535,8 @@
         }
       ],
       "vote_count": 425,
-      "vote_average": 7.426
+      "vote_average": 7.426,
+      "poster_path": "/6ihSDJlBNcvoTWzSA0jonZyOXTs.jpg"
     },
     {
       "id": "cinesa-manoteras:film:85f6c0e94532f453adb0",
@@ -66351,7 +66572,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/WGH8A7l5pQHlO13A7QJ2t4mjvN.jpg"
     },
     {
       "id": "cinesa-manoteras:film:993e54266f13c382a31e",
@@ -66599,7 +66821,8 @@
         }
       ],
       "vote_count": 113,
-      "vote_average": 6.9
+      "vote_average": 6.9,
+      "poster_path": "/LdKLipXCdKHNXxUxn8l7UTdnXJ.jpg"
     },
     {
       "id": "cinesa-manoteras:film:f85c46983e126803edc5",
@@ -66665,7 +66888,8 @@
         }
       ],
       "vote_count": 1,
-      "vote_average": 9.5
+      "vote_average": 9.5,
+      "poster_path": "/bJh97VEUn9TWygQSrOOyJrwQXek.jpg"
     },
     {
       "id": "cinesa-manoteras:film:fe753f85fe08f8b136ea",
@@ -66699,7 +66923,8 @@
         }
       ],
       "vote_count": 5,
-      "vote_average": 5.6
+      "vote_average": 5.6,
+      "poster_path": "/ozr5OyKt1whnfuLei2viZsS38Kp.jpg"
     },
     {
       "id": "cinesa-manoteras:film:3bbddb0f6863bb53b5a0",
@@ -66985,7 +67210,8 @@
         }
       ],
       "vote_count": 44,
-      "vote_average": 7.557
+      "vote_average": 7.557,
+      "poster_path": "/ewPz6uvKrbKlQrLRi1r9NTZQLzN.jpg"
     },
     {
       "id": "cinesa-manoteras:film:687277d2d81aedc881a3",
@@ -67109,7 +67335,8 @@
         }
       ],
       "vote_count": 225,
-      "vote_average": 7.269
+      "vote_average": 7.269,
+      "poster_path": "/ku7zVdj7yUZn71cG6YvCoC3Rxjm.jpg"
     },
     {
       "id": "cinesa-manoteras:film:51a01d6de6a318687866",
@@ -67452,7 +67679,8 @@
         }
       ],
       "vote_count": 6,
-      "vote_average": 8.333
+      "vote_average": 8.333,
+      "poster_path": "/gnG15MkiNeObCoPbHcLUX4zrNWh.jpg"
     },
     {
       "id": "cineteca:film:38903f2965247f5100d8",
@@ -67717,7 +67945,8 @@
         }
       ],
       "vote_count": 1,
-      "vote_average": 8.0
+      "vote_average": 8.0,
+      "poster_path": "/kYjCmL8sg17zoKtm5Pb6Cn4H0nB.jpg"
     },
     {
       "id": "cineteca:film:6929c602adde1b6d9af1",
@@ -67856,7 +68085,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/6Nd3otBHLSFpI4HA5prxJB3fKPz.jpg"
     },
     {
       "id": "cineteca:film:da218f34712538f65ed9",
@@ -67891,7 +68121,8 @@
         }
       ],
       "vote_count": 1,
-      "vote_average": 6.0
+      "vote_average": 6.0,
+      "poster_path": "/oiyKZhOBO72GARfymmeY3rm1HF4.jpg"
     },
     {
       "id": "cineteca:film:e6ca45dd9bad2243dfca",
@@ -67950,7 +68181,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/nDtlD60o7siXg6zI4MRNra5m8d4.jpg"
     },
     {
       "id": "cineteca:film:384972692b4cf64e43be",
@@ -68021,7 +68253,8 @@
       "tmdb_runtime": 45,
       "tmdb_releases": [],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": null
     },
     {
       "id": "cineteca:film:b27a8c56e4141b5d064d",
@@ -68056,7 +68289,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/6B2nylE9aq62aVnQlL3Qz4gKQ5e.jpg"
     },
     {
       "id": "cineteca:film:cda4fd92b7d89d9056a7",
@@ -68452,7 +68686,8 @@
         }
       ],
       "vote_count": 4,
-      "vote_average": 6.0
+      "vote_average": 6.0,
+      "poster_path": "/pe0MudvC8VOoTtAMCTIfHqrRo8o.jpg"
     },
     {
       "id": "cineteca:film:8ad5a84d6b693d7cee0f",
@@ -68505,7 +68740,8 @@
         }
       ],
       "vote_count": 2,
-      "vote_average": 8.5
+      "vote_average": 8.5,
+      "poster_path": "/ahuoVKlDHO61k7HbcbvUGsOPMiq.jpg"
     },
     {
       "id": "cineteca:film:bb7efd392522ddb33a52",
@@ -68545,7 +68781,8 @@
         }
       ],
       "vote_count": 16,
-      "vote_average": 5.9
+      "vote_average": 5.9,
+      "poster_path": "/nUj6PzDZDDvCPjyRGHgy5DiFAcN.jpg"
     },
     {
       "id": "cineteca:film:f57a219e1f85357a8a10",
@@ -68626,7 +68863,8 @@
       "tmdb_runtime": 93,
       "tmdb_releases": [],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/iXYVBc5EzSt2LuI3zgBhVucu4E9.jpg"
     },
     {
       "id": "cineteca:film:a47d8ca379625ec44426",
@@ -68659,7 +68897,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/7OrOyDGt5WlzvTiRX4U2Lx9eCYg.jpg"
     },
     {
       "id": "cineteca:film:95f595a2d6518aacaa3a",
@@ -68742,7 +68981,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/k4vBytB6iP5FmADWtMTtr0tvfvw.jpg"
     },
     {
       "id": "cineteca:film:374e36516e8d4a92f646",
@@ -68814,7 +69054,8 @@
       "tmdb_runtime": 93,
       "tmdb_releases": [],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/gPsYctBvmSPlmv8hlm7ImEbUQCL.jpg"
     },
     {
       "id": "cineteca:film:ea4172acb80788f6528b",
@@ -68856,7 +69097,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/d1wUbc4Jufy7rUzM8amQAvjRkSX.jpg"
     },
     {
       "id": "cineteca:film:035f3a214aacf6b1cd43",
@@ -68913,7 +69155,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": null
     },
     {
       "id": "cineteca:film:93f331f9060e3991643a",
@@ -68958,7 +69201,8 @@
         }
       ],
       "vote_count": 1,
-      "vote_average": 7.0
+      "vote_average": 7.0,
+      "poster_path": "/aJvxTjLGJXfs9Kv0Nfa5AdOlLUS.jpg"
     },
     {
       "id": "cineteca:film:4611807a5fa9c1812f32",
@@ -69556,7 +69800,8 @@
         }
       ],
       "vote_count": 65,
-      "vote_average": 7.6
+      "vote_average": 7.6,
+      "poster_path": "/flnb7COkqD4dZNZiCacNkai22vz.jpg"
     },
     {
       "id": "cineteca:film:500f10e9dedfa209e30c",
@@ -69619,7 +69864,8 @@
         }
       ],
       "vote_count": 1,
-      "vote_average": 10.0
+      "vote_average": 10.0,
+      "poster_path": "/eXeQscX8CHbp2orMEF33d4OAshA.jpg"
     },
     {
       "id": "cineteca:film:56ca79a2725b6d0832fa",
@@ -69676,7 +69922,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/2LF4F3L4oY16g43iCdXIn7ALkoM.jpg"
     },
     {
       "id": "cineteca:film:b40e66f56b67728df99f",
@@ -69754,7 +70001,8 @@
         }
       ],
       "vote_count": 1,
-      "vote_average": 4.5
+      "vote_average": 4.5,
+      "poster_path": "/yjNjdYCSogOhQAMKShhk0nuGYNn.jpg"
     },
     {
       "id": "cineteca:film:dc866fcf21430818b560",
@@ -69851,7 +70099,8 @@
         }
       ],
       "vote_count": 4,
-      "vote_average": 8.2
+      "vote_average": 8.2,
+      "poster_path": "/oWjPRefnIrVCU7KeRyyeJ87cNro.jpg"
     },
     {
       "id": "cineteca:film:7e1eebf8839d9cb499de",
@@ -69906,7 +70155,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/j9rQbXBKAY21X5Y10Oie1XejcV2.jpg"
     },
     {
       "id": "cineteca:film:3b7fe48257c7c577db7a",
@@ -69939,7 +70189,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/vTBWEBx9NRrjJx8V0VajlQL7bnx.jpg"
     },
     {
       "id": "cineteca:film:e62dfa4796f25fa68aae",
@@ -69977,7 +70228,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/wkSaw5nAURqcBHmJ538BiMtpvye.jpg"
     },
     {
       "id": "cineteca:film:f0ebb83abf86dbb9ed65",
@@ -70021,7 +70273,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": null
     },
     {
       "id": "artistic-metropol:film:b4b968c587960b4e32e3",
@@ -70054,7 +70307,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/110q3gqaq5PMkoeBPIucqmDRaQ5.jpg"
     },
     {
       "id": "artistic-metropol:film:4388babf1ee56a8bddcc",
@@ -70301,7 +70555,8 @@
         }
       ],
       "vote_count": 113,
-      "vote_average": 6.9
+      "vote_average": 6.9,
+      "poster_path": "/LdKLipXCdKHNXxUxn8l7UTdnXJ.jpg"
     },
     {
       "id": "artistic-metropol:film:951289a4933c809b0dbf",
@@ -70394,7 +70649,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/mO2OqwqlCcBZ3QYcxIfafW37Uey.jpg"
     },
     {
       "id": "artistic-metropol:film:02cd0dfc72ae4cce219a",
@@ -70673,7 +70929,8 @@
         }
       ],
       "vote_count": 87,
-      "vote_average": 7.6
+      "vote_average": 7.6,
+      "poster_path": "/cDsSmzUa9pwr3ZWa7XiypywiMdy.jpg"
     },
     {
       "id": "artistic-metropol:film:69603321810699f1adc5",
@@ -70733,7 +70990,8 @@
         }
       ],
       "vote_count": 99,
-      "vote_average": 6.7
+      "vote_average": 6.7,
+      "poster_path": "/6lXdhIj9Ryg33Eizeg2adl6F8Rd.jpg"
     },
     {
       "id": "artistic-metropol:film:994c49e29e41dac4fcea",
@@ -70829,7 +71087,8 @@
         }
       ],
       "vote_count": 5111,
-      "vote_average": 7.9
+      "vote_average": 7.9,
+      "poster_path": "/2WvrGAnKtHrb20nHLd38RyhIj0Q.jpg"
     },
     {
       "id": "artistic-metropol:film:7b355c62f05fbcf90d85",
@@ -71083,7 +71342,8 @@
         }
       ],
       "vote_count": 174,
-      "vote_average": 5.902
+      "vote_average": 5.902,
+      "poster_path": "/iuWjbhgwjE4GIegCxWcu70d9FUl.jpg"
     },
     {
       "id": "artistic-metropol:film:1b90a7a669d2cfcee0f9",
@@ -71248,7 +71508,8 @@
         }
       ],
       "vote_count": 89,
-      "vote_average": 6.9
+      "vote_average": 6.9,
+      "poster_path": "/pblghrfHa2XvNE5lDYq2vVMyVoh.jpg"
     },
     {
       "id": "artistic-metropol:film:ee51cd99bfda88eb62fb",
@@ -71444,7 +71705,8 @@
         }
       ],
       "vote_count": 1600,
-      "vote_average": 4.87
+      "vote_average": 4.87,
+      "poster_path": "/unUZcKhI54Op76n1yhBnG3Z9kJz.jpg"
     },
     {
       "id": "artistic-metropol:film:e4ea15f64b54e4a9145e",
@@ -71706,7 +71968,8 @@
         }
       ],
       "vote_count": 1508,
-      "vote_average": 7.3
+      "vote_average": 7.3,
+      "poster_path": "/kTVEsT1Jvml9AzUcGRrvB9Q6pSA.jpg"
     },
     {
       "id": "artistic-metropol:film:5d0526c40247478e53f4",
@@ -71769,7 +72032,8 @@
         }
       ],
       "vote_count": 113,
-      "vote_average": 5.221
+      "vote_average": 5.221,
+      "poster_path": "/wbzblY8OJsXbrIEpXU7IgaxQMEx.jpg"
     },
     {
       "id": "artistic-metropol:film:35975ef2a85ee4286c95",
@@ -71979,7 +72243,8 @@
         }
       ],
       "vote_count": 127,
-      "vote_average": 5.453
+      "vote_average": 5.453,
+      "poster_path": "/caqqCAlRtcWhfmTmUTga0HwDzmj.jpg"
     },
     {
       "id": "artistic-metropol:film:17ca499f66ab13f1e41b",
@@ -72226,7 +72491,8 @@
         }
       ],
       "vote_count": 113,
-      "vote_average": 6.9
+      "vote_average": 6.9,
+      "poster_path": "/LdKLipXCdKHNXxUxn8l7UTdnXJ.jpg"
     },
     {
       "id": "artistic-metropol:film:98b5a997016e4f6cb8db",
@@ -72407,7 +72673,8 @@
         }
       ],
       "vote_count": 1323,
-      "vote_average": 5.149
+      "vote_average": 5.149,
+      "poster_path": "/cYxBSKEpjfFzvZWkNabgBkMCC5i.jpg"
     },
     {
       "id": "artistic-metropol:film:0189eaaac5dbfeb6e0d1",
@@ -72505,7 +72772,8 @@
         }
       ],
       "vote_count": 4,
-      "vote_average": 8.1
+      "vote_average": 8.1,
+      "poster_path": "/cP197uAp0E3AeOBHSOlcaVzS2n4.jpg"
     },
     {
       "id": "cine-estudio:film:b4d33c3a6d29c21f79ac",
@@ -72812,7 +73080,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/8qwnjSldZjF3axsjTYgFJquU6lm.jpg"
     },
     {
       "id": "cine-estudio:film:9eb18864e5a1e08bbd7a",
@@ -72860,7 +73129,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/yYLldrDwXwlF8a7DA0hhGGlAJNn.jpg"
     },
     {
       "id": "cine-estudio:film:03bdd6c7cf92363f7b75",
@@ -73003,7 +73273,8 @@
         }
       ],
       "vote_count": 5,
-      "vote_average": 7.2
+      "vote_average": 7.2,
+      "poster_path": "/pQrlFAiakpphxCrR5lmHT3GR7Td.jpg"
     },
     {
       "id": "cine-estudio:film:c1551d02e111e1f594f9",
@@ -73758,7 +74029,8 @@
         }
       ],
       "vote_count": 393,
-      "vote_average": 6.1
+      "vote_average": 6.1,
+      "poster_path": "/8UTCpwvHxWPllCJ7YnaCbffmYyD.jpg"
     },
     {
       "id": "cine-estudio:film:8fa8e0a5867e60cbc9c1",
@@ -73856,7 +74128,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/lyLZDgacnDkTFWIkWr9iiASLb4z.jpg"
     },
     {
       "id": "cine-estudio:film:99de42e68de64687aa8f",
@@ -74063,7 +74336,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/agQGw5Cux2CYaxI8UHlLbta2bgw.jpg"
     },
     {
       "id": "cine-estudio:film:cae9af69b0641c9bd1e2",
@@ -74228,7 +74502,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/gjeWXZ2O7aD9xoKilncp6K8DmkT.jpg"
     },
     {
       "id": "cine-estudio:film:4875653158cbfcfe7ce8",
@@ -74389,7 +74664,8 @@
         }
       ],
       "vote_count": 7,
-      "vote_average": 8.0
+      "vote_average": 8.0,
+      "poster_path": "/rPsBg6qUjYFd0uVaw75dQngXOko.jpg"
     },
     {
       "id": "cine-estudio:film:06893742955597c31bc5",
@@ -74538,7 +74814,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/5uQ3m7Qt4rj73ubBylu0lzElbL8.jpg"
     },
     {
       "id": "cine-estudio:film:2e63a64396d55f76a08f",
@@ -74667,7 +74944,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/f2MApfmXnpDnWhLEA0k6bZo8kOl.jpg"
     },
     {
       "id": "kinepolis-ciudad-imagen:film:e7741068395a7555dc12",
@@ -75285,7 +75563,8 @@
         }
       ],
       "vote_count": 208,
-      "vote_average": 8.0
+      "vote_average": 8.0,
+      "poster_path": "/t1azKLExwUxKj6v6m2L535evuRa.jpg"
     },
     {
       "id": "kinepolis-ciudad-imagen:film:fe13197e16856454b831",
@@ -75578,7 +75857,8 @@
         }
       ],
       "vote_count": 20,
-      "vote_average": 7.1
+      "vote_average": 7.1,
+      "poster_path": "/8TW5oOMZbxaMFVgletpW0bxd2Aa.jpg"
     },
     {
       "id": "kinepolis-ciudad-imagen:film:578e1aa7e6ab487b4de9",
@@ -75931,7 +76211,8 @@
         }
       ],
       "vote_count": 248,
-      "vote_average": 8.5
+      "vote_average": 8.5,
+      "poster_path": "/sJ1uZ4DKsjs2iqLtCX46TifxqoE.jpg"
     },
     {
       "id": "kinepolis-ciudad-imagen:film:292e11fa5813333a1eba",
@@ -76521,7 +76802,8 @@
         }
       ],
       "vote_count": 4612,
-      "vote_average": 8.019
+      "vote_average": 8.019,
+      "poster_path": "/9aeb5U0saB7Tuu0QITaoENZBxFF.jpg"
     },
     {
       "id": "kinepolis-ciudad-imagen:film:0263d79dfbc68cd1cb97",
@@ -76982,7 +77264,8 @@
         }
       ],
       "vote_count": 143,
-      "vote_average": 7.78
+      "vote_average": 7.78,
+      "poster_path": "/2B7ZSUutCgwUAE5U0X7WlD8yiun.jpg"
     },
     {
       "id": "kinepolis-ciudad-imagen:film:a0dc578405ded9b3d6ad",
@@ -77377,7 +77660,8 @@
         }
       ],
       "vote_count": 607,
-      "vote_average": 7.4
+      "vote_average": 7.4,
+      "poster_path": "/ya8iLCNyoVpBO7B7JrNJVj3g7tK.jpg"
     },
     {
       "id": "kinepolis-ciudad-imagen:film:81d3b06e7267d7cdf448",
@@ -77416,7 +77700,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/6CWXhVFfin3zh1LZ5HsWnzTXTPN.jpg"
     },
     {
       "id": "kinepolis-ciudad-imagen:film:6b2df73ea7ec2078ad0d",
@@ -77845,7 +78130,8 @@
         }
       ],
       "vote_count": 33,
-      "vote_average": 7.7
+      "vote_average": 7.7,
+      "poster_path": "/nzL1ySE6vdmR6RxXhE7gLggkp41.jpg"
     },
     {
       "id": "kinepolis-ciudad-imagen:film:78e7f73e611e6e5745ea",
@@ -77884,7 +78170,8 @@
         }
       ],
       "vote_count": 1,
-      "vote_average": 9.5
+      "vote_average": 9.5,
+      "poster_path": "/bJh97VEUn9TWygQSrOOyJrwQXek.jpg"
     },
     {
       "id": "kinepolis-ciudad-imagen:film:7402151a5a8353450f67",
@@ -77923,7 +78210,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/7338FnwdzX9oNpODZIJH1OliUGV.jpg"
     },
     {
       "id": "kinepolis-ciudad-imagen:film:8bad897e94c4c81471ff",
@@ -78522,7 +78810,8 @@
         }
       ],
       "vote_count": 425,
-      "vote_average": 7.426
+      "vote_average": 7.426,
+      "poster_path": "/6ihSDJlBNcvoTWzSA0jonZyOXTs.jpg"
     },
     {
       "id": "kinepolis-ciudad-imagen:film:8465b5214f1f2f86239f",
@@ -78882,7 +79171,8 @@
         }
       ],
       "vote_count": 663,
-      "vote_average": 7.003
+      "vote_average": 7.003,
+      "poster_path": "/5j1YUuamobLACkzlkzvWfNuzFNg.jpg"
     },
     {
       "id": "kinepolis-ciudad-imagen:film:fe753f85fe08f8b136ea",
@@ -78916,7 +79206,8 @@
         }
       ],
       "vote_count": 5,
-      "vote_average": 5.6
+      "vote_average": 5.6,
+      "poster_path": "/ozr5OyKt1whnfuLei2viZsS38Kp.jpg"
     },
     {
       "id": "kinepolis-ciudad-imagen:film:8eb74c404ce681c4bfb8",
@@ -79092,7 +79383,8 @@
         }
       ],
       "vote_count": 68,
-      "vote_average": 7.2
+      "vote_average": 7.2,
+      "poster_path": "/jwRMUI6rGjAwkXHEqBlSnViT6gG.jpg"
     },
     {
       "id": "kinepolis-ciudad-imagen:film:f85c46983e126803edc5",
@@ -79462,7 +79754,8 @@
         }
       ],
       "vote_count": 652,
-      "vote_average": 6.8
+      "vote_average": 6.8,
+      "poster_path": "/q4C2Kbc1eGOTCUdMetsjvhxUhMV.jpg"
     },
     {
       "id": "kinepolis-ciudad-imagen:film:00c51af4d33ce3f7d43e",
@@ -79853,7 +80146,8 @@
         }
       ],
       "vote_count": 163,
-      "vote_average": 7.2
+      "vote_average": 7.2,
+      "poster_path": "/9BvQHFAQ3BhKk5NSYxtYSMn5lrb.jpg"
     },
     {
       "id": "kinepolis-ciudad-imagen:film:b58d1137a5ea5cc590e3",
@@ -80037,7 +80331,8 @@
         }
       ],
       "vote_count": 94,
-      "vote_average": 8.213
+      "vote_average": 8.213,
+      "poster_path": "/71G1b8bqa7gzP9yU7q2fgNf2t0D.jpg"
     },
     {
       "id": "kinepolis-ciudad-imagen:film:f16abe59f8a751ea52b0",
@@ -80202,7 +80497,8 @@
         }
       ],
       "vote_count": 22,
-      "vote_average": 6.5
+      "vote_average": 6.5,
+      "poster_path": "/tEpDFz33WclWa0c1rxLhqM2DNFE.jpg"
     },
     {
       "id": "kinepolis-ciudad-imagen:film:d61b00668a22974866dc",
@@ -80490,7 +80786,8 @@
         }
       ],
       "vote_count": 6,
-      "vote_average": 8.333
+      "vote_average": 8.333,
+      "poster_path": "/gnG15MkiNeObCoPbHcLUX4zrNWh.jpg"
     },
     {
       "id": "kinepolis-ciudad-imagen:film:561324243edc2a08f7ff",
@@ -80727,7 +81024,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/2r09thBfqsWkoyGVtrxc00uYpSy.jpg"
     },
     {
       "id": "kinepolis-ciudad-imagen:film:25dd3fb7d7203c5b0f60",
@@ -80824,7 +81122,8 @@
         }
       ],
       "vote_count": 142,
-      "vote_average": 7.7
+      "vote_average": 7.7,
+      "poster_path": "/kp3TpqkiDgRkLSJgrnWdGXGl7hD.jpg"
     },
     {
       "id": "kinepolis-ciudad-imagen:film:5c735e2ae408a82e6b43",
@@ -81339,7 +81638,8 @@
         }
       ],
       "vote_count": 137,
-      "vote_average": 8.1
+      "vote_average": 8.1,
+      "poster_path": "/bLDrHn76oiNYiELv1qw3Tfdkqc8.jpg"
     },
     {
       "id": "kinepolis-ciudad-imagen:film:3f05e3a6c61a0dae31d4",
@@ -81617,7 +81917,8 @@
         }
       ],
       "vote_count": 61,
-      "vote_average": 7.328
+      "vote_average": 7.328,
+      "poster_path": "/ajiSFBxo1h0MNbu7q9I5aSVHUgE.jpg"
     },
     {
       "id": "cinesa-parquesur:film:e7741068395a7555dc12",
@@ -82235,7 +82536,8 @@
         }
       ],
       "vote_count": 208,
-      "vote_average": 8.0
+      "vote_average": 8.0,
+      "poster_path": "/t1azKLExwUxKj6v6m2L535evuRa.jpg"
     },
     {
       "id": "cinesa-parquesur:film:fe13197e16856454b831",
@@ -82528,7 +82830,8 @@
         }
       ],
       "vote_count": 20,
-      "vote_average": 7.1
+      "vote_average": 7.1,
+      "poster_path": "/8TW5oOMZbxaMFVgletpW0bxd2Aa.jpg"
     },
     {
       "id": "cinesa-parquesur:film:8bad897e94c4c81471ff",
@@ -83127,7 +83430,8 @@
         }
       ],
       "vote_count": 425,
-      "vote_average": 7.426
+      "vote_average": 7.426,
+      "poster_path": "/6ihSDJlBNcvoTWzSA0jonZyOXTs.jpg"
     },
     {
       "id": "cinesa-parquesur:film:0263d79dfbc68cd1cb97",
@@ -83588,7 +83892,8 @@
         }
       ],
       "vote_count": 143,
-      "vote_average": 7.78
+      "vote_average": 7.78,
+      "poster_path": "/2B7ZSUutCgwUAE5U0X7WlD8yiun.jpg"
     },
     {
       "id": "cinesa-parquesur:film:a0dc578405ded9b3d6ad",
@@ -83983,7 +84288,8 @@
         }
       ],
       "vote_count": 607,
-      "vote_average": 7.4
+      "vote_average": 7.4,
+      "poster_path": "/ya8iLCNyoVpBO7B7JrNJVj3g7tK.jpg"
     },
     {
       "id": "cinesa-parquesur:film:ac7ec8c6401132baad5b",
@@ -84391,7 +84697,8 @@
         }
       ],
       "vote_count": 228,
-      "vote_average": 5.805
+      "vote_average": 5.805,
+      "poster_path": "/USCOKXrHBCeeK96qXmS0NyDHYL.jpg"
     },
     {
       "id": "cinesa-parquesur:film:fe753f85fe08f8b136ea",
@@ -84425,7 +84732,8 @@
         }
       ],
       "vote_count": 5,
-      "vote_average": 5.6
+      "vote_average": 5.6,
+      "poster_path": "/ozr5OyKt1whnfuLei2viZsS38Kp.jpg"
     },
     {
       "id": "cinesa-parquesur:film:6b2df73ea7ec2078ad0d",
@@ -84854,7 +85162,8 @@
         }
       ],
       "vote_count": 33,
-      "vote_average": 7.7
+      "vote_average": 7.7,
+      "poster_path": "/nzL1ySE6vdmR6RxXhE7gLggkp41.jpg"
     },
     {
       "id": "cinesa-parquesur:film:78e7f73e611e6e5745ea",
@@ -84893,7 +85202,8 @@
         }
       ],
       "vote_count": 1,
-      "vote_average": 9.5
+      "vote_average": 9.5,
+      "poster_path": "/bJh97VEUn9TWygQSrOOyJrwQXek.jpg"
     },
     {
       "id": "cinesa-parquesur:film:f8c34894c137c7d8e71e",
@@ -85014,7 +85324,8 @@
         }
       ],
       "vote_count": 68,
-      "vote_average": 7.2
+      "vote_average": 7.2,
+      "poster_path": "/jwRMUI6rGjAwkXHEqBlSnViT6gG.jpg"
     },
     {
       "id": "cinesa-parquesur:film:8eb74c404ce681c4bfb8",
@@ -85487,7 +85798,8 @@
         }
       ],
       "vote_count": 163,
-      "vote_average": 7.2
+      "vote_average": 7.2,
+      "poster_path": "/9BvQHFAQ3BhKk5NSYxtYSMn5lrb.jpg"
     },
     {
       "id": "cinesa-parquesur:film:d61b00668a22974866dc",
@@ -85775,7 +86087,8 @@
         }
       ],
       "vote_count": 6,
-      "vote_average": 8.333
+      "vote_average": 8.333,
+      "poster_path": "/gnG15MkiNeObCoPbHcLUX4zrNWh.jpg"
     },
     {
       "id": "cinesa-heron-city-las-rozas:film:e7741068395a7555dc12",
@@ -86393,7 +86706,8 @@
         }
       ],
       "vote_count": 208,
-      "vote_average": 8.0
+      "vote_average": 8.0,
+      "poster_path": "/t1azKLExwUxKj6v6m2L535evuRa.jpg"
     },
     {
       "id": "cinesa-heron-city-las-rozas:film:fe13197e16856454b831",
@@ -86686,7 +87000,8 @@
         }
       ],
       "vote_count": 20,
-      "vote_average": 7.1
+      "vote_average": 7.1,
+      "poster_path": "/8TW5oOMZbxaMFVgletpW0bxd2Aa.jpg"
     },
     {
       "id": "cinesa-heron-city-las-rozas:film:578e1aa7e6ab487b4de9",
@@ -87039,7 +87354,8 @@
         }
       ],
       "vote_count": 248,
-      "vote_average": 8.5
+      "vote_average": 8.5,
+      "poster_path": "/sJ1uZ4DKsjs2iqLtCX46TifxqoE.jpg"
     },
     {
       "id": "cinesa-heron-city-las-rozas:film:292e11fa5813333a1eba",
@@ -87629,7 +87945,8 @@
         }
       ],
       "vote_count": 4612,
-      "vote_average": 8.019
+      "vote_average": 8.019,
+      "poster_path": "/9aeb5U0saB7Tuu0QITaoENZBxFF.jpg"
     },
     {
       "id": "cinesa-heron-city-las-rozas:film:a0dc578405ded9b3d6ad",
@@ -88024,7 +88341,8 @@
         }
       ],
       "vote_count": 607,
-      "vote_average": 7.4
+      "vote_average": 7.4,
+      "poster_path": "/ya8iLCNyoVpBO7B7JrNJVj3g7tK.jpg"
     },
     {
       "id": "cinesa-heron-city-las-rozas:film:0263d79dfbc68cd1cb97",
@@ -88485,7 +88803,8 @@
         }
       ],
       "vote_count": 143,
-      "vote_average": 7.78
+      "vote_average": 7.78,
+      "poster_path": "/2B7ZSUutCgwUAE5U0X7WlD8yiun.jpg"
     },
     {
       "id": "cinesa-heron-city-las-rozas:film:ef780feb07b9b45432d2",
@@ -88916,7 +89235,8 @@
         }
       ],
       "vote_count": 945,
-      "vote_average": 7.202
+      "vote_average": 7.202,
+      "poster_path": "/21JnfyCARiRkms9AZHtTXiZKbIj.jpg"
     },
     {
       "id": "cinesa-heron-city-las-rozas:film:81d3b06e7267d7cdf448",
@@ -88955,7 +89275,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/6CWXhVFfin3zh1LZ5HsWnzTXTPN.jpg"
     },
     {
       "id": "cinesa-heron-city-las-rozas:film:7402151a5a8353450f67",
@@ -88994,7 +89315,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/7338FnwdzX9oNpODZIJH1OliUGV.jpg"
     },
     {
       "id": "cinesa-heron-city-las-rozas:film:8701e3287a16ea530226",
@@ -89405,7 +89727,8 @@
         }
       ],
       "vote_count": 163,
-      "vote_average": 7.2
+      "vote_average": 7.2,
+      "poster_path": "/9BvQHFAQ3BhKk5NSYxtYSMn5lrb.jpg"
     },
     {
       "id": "cinesa-heron-city-las-rozas:film:78e7f73e611e6e5745ea",
@@ -89444,7 +89767,8 @@
         }
       ],
       "vote_count": 1,
-      "vote_average": 9.5
+      "vote_average": 9.5,
+      "poster_path": "/bJh97VEUn9TWygQSrOOyJrwQXek.jpg"
     },
     {
       "id": "cinesa-heron-city-las-rozas:film:f8c34894c137c7d8e71e",
@@ -89565,7 +89889,8 @@
         }
       ],
       "vote_count": 68,
-      "vote_average": 7.2
+      "vote_average": 7.2,
+      "poster_path": "/jwRMUI6rGjAwkXHEqBlSnViT6gG.jpg"
     },
     {
       "id": "cinesa-heron-city-las-rozas:film:7b8dc44cf96cf6935283",
@@ -89604,7 +89929,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/a8MvsDCP3sv0WXNW3I0ainSuLcd.jpg"
     },
     {
       "id": "cinesa-heron-city-las-rozas:film:05aa424b2028204c27c9",
@@ -89926,7 +90252,8 @@
         }
       ],
       "vote_count": 140,
-      "vote_average": 7.0
+      "vote_average": 7.0,
+      "poster_path": "/xT7yxocpGjqzalCUTr9IFDf8Oyb.jpg"
     },
     {
       "id": "cinesa-heron-city-las-rozas:film:8465b5214f1f2f86239f",
@@ -90286,7 +90613,8 @@
         }
       ],
       "vote_count": 663,
-      "vote_average": 7.003
+      "vote_average": 7.003,
+      "poster_path": "/5j1YUuamobLACkzlkzvWfNuzFNg.jpg"
     },
     {
       "id": "cinesa-heron-city-las-rozas:film:8eb74c404ce681c4bfb8",
@@ -91021,7 +91349,8 @@
         }
       ],
       "vote_count": 6699,
-      "vote_average": 8.474
+      "vote_average": 8.474,
+      "poster_path": "/tluwRNA7k0XfTtDkdLYKX1KOSCJ.jpg"
     },
     {
       "id": "cinesa-heron-city-las-rozas:film:8bad897e94c4c81471ff",
@@ -91620,7 +91949,8 @@
         }
       ],
       "vote_count": 425,
-      "vote_average": 7.426
+      "vote_average": 7.426,
+      "poster_path": "/6ihSDJlBNcvoTWzSA0jonZyOXTs.jpg"
     },
     {
       "id": "cinesa-heron-city-las-rozas:film:85f6c0e94532f453adb0",
@@ -91656,7 +91986,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/WGH8A7l5pQHlO13A7QJ2t4mjvN.jpg"
     },
     {
       "id": "cinesa-heron-city-las-rozas:film:6b2df73ea7ec2078ad0d",
@@ -92085,7 +92416,8 @@
         }
       ],
       "vote_count": 33,
-      "vote_average": 7.7
+      "vote_average": 7.7,
+      "poster_path": "/nzL1ySE6vdmR6RxXhE7gLggkp41.jpg"
     },
     {
       "id": "cinesa-heron-city-las-rozas:film:fe753f85fe08f8b136ea",
@@ -92119,7 +92451,8 @@
         }
       ],
       "vote_count": 5,
-      "vote_average": 5.6
+      "vote_average": 5.6,
+      "poster_path": "/ozr5OyKt1whnfuLei2viZsS38Kp.jpg"
     },
     {
       "id": "cinesa-heron-city-las-rozas:film:7d236d10705285108b6f",
@@ -92582,7 +92915,8 @@
         }
       ],
       "vote_count": 228,
-      "vote_average": 5.805
+      "vote_average": 5.805,
+      "poster_path": "/USCOKXrHBCeeK96qXmS0NyDHYL.jpg"
     },
     {
       "id": "cinesa-heron-city-las-rozas:film:f85c46983e126803edc5",
@@ -92733,7 +93067,8 @@
         }
       ],
       "vote_count": 225,
-      "vote_average": 7.269
+      "vote_average": 7.269,
+      "poster_path": "/ku7zVdj7yUZn71cG6YvCoC3Rxjm.jpg"
     },
     {
       "id": "cinesa-heron-city-las-rozas:film:b2bf2ed966ce67bf58ac",
@@ -93076,7 +93411,8 @@
         }
       ],
       "vote_count": 652,
-      "vote_average": 6.8
+      "vote_average": 6.8,
+      "poster_path": "/q4C2Kbc1eGOTCUdMetsjvhxUhMV.jpg"
     },
     {
       "id": "cinesa-heron-city-las-rozas:film:bdc570468d6ea5b985ec",
@@ -93706,7 +94042,8 @@
         }
       ],
       "vote_count": 2015,
-      "vote_average": 7.5
+      "vote_average": 7.5,
+      "poster_path": "/vrLEVObLGbUinE4sC4Lqao2dK0E.jpg"
     },
     {
       "id": "cinesa-heron-city-las-rozas:film:34c1c91d11abbb3a8d30",
@@ -94004,7 +94341,8 @@
         }
       ],
       "vote_count": 44,
-      "vote_average": 7.557
+      "vote_average": 7.557,
+      "poster_path": "/ewPz6uvKrbKlQrLRi1r9NTZQLzN.jpg"
     },
     {
       "id": "cinesa-heron-city-las-rozas:film:f0febd1c4e48abbd54c2",
@@ -94367,7 +94705,8 @@
         }
       ],
       "vote_count": 226,
-      "vote_average": 6.347
+      "vote_average": 6.347,
+      "poster_path": "/2kdEEUkbkJe08kTDMCUbBrZ71Aw.jpg"
     },
     {
       "id": "cinesa-heron-city-las-rozas:film:c6092e303a72b5b85b10",
@@ -94406,7 +94745,8 @@
         }
       ],
       "vote_count": 0,
-      "vote_average": 0.0
+      "vote_average": 0.0,
+      "poster_path": "/gDsAXwxRwH9nQCv1z5GvqVwPnTI.jpg"
     },
     {
       "id": "cinesa-heron-city-las-rozas:film:3f05e3a6c61a0dae31d4",
@@ -94684,7 +95024,8 @@
         }
       ],
       "vote_count": 61,
-      "vote_average": 7.328
+      "vote_average": 7.328,
+      "poster_path": "/ajiSFBxo1h0MNbu7q9I5aSVHUgE.jpg"
     },
     {
       "id": "cinesa-heron-city-las-rozas:film:d61b00668a22974866dc",
@@ -94972,7 +95313,8 @@
         }
       ],
       "vote_count": 6,
-      "vote_average": 8.333
+      "vote_average": 8.333,
+      "poster_path": "/gnG15MkiNeObCoPbHcLUX4zrNWh.jpg"
     }
   ],
   "sessions": [
@@ -196408,7 +196750,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T18:04:33+01:00"
+      "last_seen": "2026-11-12T09:55:29+01:00"
     },
     {
       "id": "8a35a59be91f13903dbc",
@@ -196420,7 +196762,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T18:04:33+01:00"
+      "last_seen": "2026-11-12T09:55:29+01:00"
     },
     {
       "id": "df4aa23399014e2f3bd4",
@@ -196432,7 +196774,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T18:04:33+01:00"
+      "last_seen": "2026-11-12T09:55:29+01:00"
     },
     {
       "id": "ebc649834e6fedce2d13",
@@ -196444,7 +196786,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T18:04:33+01:00"
+      "last_seen": "2026-11-12T09:55:29+01:00"
     },
     {
       "id": "6873a16f2283362c4a5c",
@@ -196456,7 +196798,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T18:04:33+01:00"
+      "last_seen": "2026-11-12T09:55:29+01:00"
     },
     {
       "id": "336026ead85aaac2b222",
@@ -196468,7 +196810,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T18:04:33+01:00"
+      "last_seen": "2026-11-12T09:55:29+01:00"
     },
     {
       "id": "50c1a9ad7d4d769e96b7",
@@ -196480,7 +196822,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T18:04:33+01:00"
+      "last_seen": "2026-11-12T09:55:29+01:00"
     },
     {
       "id": "7448c7ab7c92f4a72cc6",
@@ -196492,7 +196834,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T18:04:33+01:00"
+      "last_seen": "2026-11-12T09:55:29+01:00"
     },
     {
       "id": "5c328c7a7d4064810b9e",
@@ -196504,7 +196846,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T18:04:33+01:00"
+      "last_seen": "2026-11-12T09:55:29+01:00"
     },
     {
       "id": "575e1760db312a380162",
@@ -196516,7 +196858,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T18:04:33+01:00"
+      "last_seen": "2026-11-12T09:55:29+01:00"
     },
     {
       "id": "1ea1f27517fb1ae61a45",
@@ -196528,7 +196870,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T18:04:33+01:00"
+      "last_seen": "2026-11-12T09:55:29+01:00"
     },
     {
       "id": "e5204de8f75353b0405c",
@@ -196540,7 +196882,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T18:04:33+01:00"
+      "last_seen": "2026-11-12T09:55:29+01:00"
     },
     {
       "id": "990f6ea2975c271bc62c",
@@ -196552,7 +196894,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T18:04:33+01:00"
+      "last_seen": "2026-11-12T09:55:29+01:00"
     },
     {
       "id": "8a3efbed11ad0852a9f2",
@@ -196564,7 +196906,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T18:04:33+01:00"
+      "last_seen": "2026-11-12T09:55:29+01:00"
     },
     {
       "id": "229dcfc5303461a3a0bc",
@@ -196576,7 +196918,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T18:04:33+01:00"
+      "last_seen": "2026-11-12T09:55:29+01:00"
     },
     {
       "id": "df463e05c7328d4a6c74",
@@ -196588,7 +196930,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T18:04:33+01:00"
+      "last_seen": "2026-11-12T09:55:29+01:00"
     },
     {
       "id": "eb1754405d6f212e909c",
@@ -196600,7 +196942,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-11T18:04:33+01:00"
+      "last_seen": "2026-11-12T09:55:29+01:00"
     },
     {
       "id": "c5a24392b2b63d3e4002",
