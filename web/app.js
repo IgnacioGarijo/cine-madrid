@@ -1,8 +1,8 @@
-import {createAccount} from './account.js?v=0.10.0';
-import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.10.0';
+import {createAccount} from './account.js?v=0.10.1';
+import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.10.1';
 
-import {addressCandidates, validOrigin} from './search-utils.js?v=0.10.0';
-import {posterURL} from './poster-utils.js?v=0.10.0';
+import {addressCandidates, validOrigin} from './search-utils.js?v=0.10.1';
+import {posterURL} from './poster-utils.js?v=0.10.1';
 
 const $ = selector => document.querySelector(selector);
 const all = selector => [...document.querySelectorAll(selector)];
@@ -237,7 +237,7 @@ function render() {
   renderCalendar();
 }
 function setView(name, updateHash = true) {
-  if (!['cartelera','pendientes','boletin','estado'].includes(name)) name = 'cartelera';
+  if (!['cartelera','pendientes','boletin','cuenta','estado'].includes(name)) name = 'cartelera';
   all('.view').forEach(view => { view.hidden = view.id !== name; });
   all('nav [data-view]').forEach(button => {
     const active = button.dataset.view === name;
@@ -277,7 +277,8 @@ async function loadFavorites() {
   watch=movies;renderWatch();renderCatalog();
 }
 function renderAccount(){
-  $('#account-label').textContent=accountUser ? 'Tu cuenta · '+(accountUser.user_metadata?.full_name || accountUser.email || 'Sesión iniciada') : 'Entra para guardar tus favoritas y tu origen en todos tus dispositivos.';
+  $('#origin-summary').textContent=origin ? 'Mi origen · '+origin.label : 'Mi origen';
+  $('#account-label').textContent=accountUser ? 'Tu cuenta · '+(accountUser.user_metadata?.full_name || accountUser.email || 'Sesión iniciada') : 'Entra para sincronizar tus favoritas y tu origen.';
   $('#google-login').hidden=!!accountUser;$('#google-login').disabled=!accountClient;
   $('#account-logout').hidden=!accountUser;
   $('#import-favorites').hidden=!accountUser || !legacyFavorites.some(movie=>!watch.some(item=>item.id===movie.id));
@@ -430,7 +431,7 @@ async function boot() {
           // Avoid awaiting other auth calls inside Supabase's session lock.
           setTimeout(()=>applyAccount(session?.user || null),0);
         });
-      }catch{$('#watch-status').textContent='No se pudo iniciar el acceso a las cuentas. Recarga con conexión.';}
+      }catch{$('#account-status').textContent='No se pudo iniciar el acceso a las cuentas. Recarga con conexión.';}
     }
     renderAccount();
     const posts = responses[2].ok ? await responses[2].json() : [];
@@ -507,7 +508,7 @@ $('#mini-previous-month').onclick=()=>shiftMonth(-1);
 $('#mini-next-month').onclick=()=>shiftMonth(1);
 all('[data-close]').forEach(button => {button.onclick = () => $('#' + button.dataset.close).close();});
 all('dialog').forEach(dialog => {dialog.onclick = event => {if (event.target === dialog && (event.clientX < dialog.getBoundingClientRect().left || event.clientX > dialog.getBoundingClientRect().right || event.clientY < dialog.getBoundingClientRect().top || event.clientY > dialog.getBoundingClientRect().bottom)) dialog.close();};});
-$('#show-location').onclick = () => { $('#location-settings').open = true; $('#origin').focus(); };
+$('#show-location').onclick = () => { setView('cuenta'); $('#location-settings').open = true; $('#origin').focus(); };
 $('#issue-filter').onchange = renderIncidents;
 $('#catalog-query').oninput = () => {clearTimeout(favoriteTimer);favoriteController?.abort();favoriteSequence++;favoritePage=1;favoriteError='';liveFavoriteResults=null;renderCatalog();if(searchApi) favoriteTimer=setTimeout(queryFavoriteSuggestions,450);};
 setInterval(refreshFavoriteSearches,15000);window.addEventListener('focus',refreshFavoriteSearches);
@@ -531,7 +532,7 @@ async function selectOrigin(candidate) {
     $('#origin').value=candidate.label;renderAccount();
     $('#origin-status').textContent=accountUser ? 'Origen guardado en tu cuenta.' : 'Origen guardado en este navegador. Entra para sincronizarlo.';
     $('#address-suggestions').replaceChildren();$('#location-settings').open=false;render();
-    $('#filters .cinema-dropdown summary').focus();
+    $('#origin-summary').focus();
   } catch {if(epoch===accountEpoch)$('#origin-status').textContent='No se pudo comprobar o guardar esa dirección. Vuelve a intentarlo.';}
 }
 async function lookupAddresses() {
@@ -568,13 +569,13 @@ $('#google-login').onclick=async()=>{
   try{
     const {error}=await accountClient.auth.signInWithOAuth({provider:'google',options:{redirectTo:new URL('./',location.href).href,queryParams:{prompt:'select_account'}}});
     if(error)throw error;
-  }catch{$('#watch-status').textContent='No se pudo abrir Google. Comprueba la configuración de acceso.';$('#google-login').disabled=false;}
+  }catch{$('#account-status').textContent='No se pudo abrir Google. Comprueba la configuración de acceso.';$('#google-login').disabled=false;}
 };
 $('#account-logout').onclick=async()=>{
   try{
     const {error}=await accountClient.auth.signOut({scope:'local'});if(error)throw error;
     await applyAccount(null);$('#favorite-dialog').close();
-  }catch{$('#watch-status').textContent='No se pudo cerrar la sesión. Vuelve a intentarlo.';}
+  }catch{$('#account-status').textContent='No se pudo cerrar la sesión. Vuelve a intentarlo.';}
 };
 $('#import-favorites').onclick=async()=>{
   const epoch=accountEpoch;$('#import-favorites').disabled=true;

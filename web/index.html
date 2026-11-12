@@ -12,8 +12,8 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-  <link rel="stylesheet" href="style.css?v=0.10.0">
-  <script src="app.js?v=0.10.0" type="module"></script>
+  <link rel="stylesheet" href="style.css?v=0.10.1">
+  <script src="app.js?v=0.10.1" type="module"></script>
 </head>
 <body>
 <a class="skip-link" href="#cartelera">Ir a la cartelera</a>
@@ -22,8 +22,7 @@
   <button id="install-button" class="install-button" aria-label="Instalar Cine Madrid como app"><span aria-hidden="true">↧</span><span>Instalar</span></button>
 </header>
 <main>
-  <div class="account-bar"><p id="account-label" class="fine">Conectando con las cuentas…</p><button id="google-login" type="button" disabled>Entrar con Google</button><button id="account-logout" type="button" hidden>Cerrar sesión</button></div>
-  <nav aria-label="Secciones principales"><button data-view="cartelera" class="active" aria-current="page">Cartelera</button><button data-view="pendientes">Favoritas</button><button data-view="boletin">Boletín</button></nav>
+
 
   <section id="cartelera" class="view" aria-label="Cartelera y calendario">
     <form id="filters" class="filters" role="search">
@@ -41,13 +40,6 @@
         <div class="filter-actions"><button type="button" id="reset-filters">Limpiar filtros</button></div>
       </div>
     </form>
-    <details class="location" id="location-settings"><summary>Mi origen</summary>
-      <p>Con tu cuenta, el origen se sincroniza entre dispositivos. Sin iniciar sesión se guarda solo en este navegador. Al escribir se consulta CartoCiudad (IGN). Elige una dirección reconocida para guardarla.</p>
-      <form id="origin-form"><label>Dirección de origen<input id="origin" autocomplete="off" placeholder="Calle y número, Madrid" aria-controls="address-suggestions" aria-autocomplete="list"></label><button class="primary" type="submit">Buscar dirección</button><button type="button" id="clear-origin">Borrar origen</button></form>
-      <button id="import-origin" type="button" hidden>Usar el origen de este navegador</button><div id="address-suggestions" class="address-suggestions" aria-label="Direcciones reconocidas"></div><p id="origin-status" aria-live="polite"></p>
-      <p class="fine"><a href="https://www.cartociudad.es/" target="_blank" rel="noopener">Direcciones: CartoCiudad · IGN/CNIG</a>. Distancias en línea recta.</p>
-      <p class="legend"><span>🟢 Hasta 1 km</span><span>🟡 1–2 km</span><span>🟠 2–4 km</span><span>🟣 Más de 4 km</span></p>
-    </details>
     <div class="session-layout">
       <aside class="calendar-aside" aria-label="Calendario compacto">
         <div id="calendar-preview" class="calendar-preview">
@@ -65,10 +57,27 @@
     <p id="watch-status" role="status" class="fine"></p>
   </section>
   <section id="boletin" class="view" hidden><h2>El boletín</h2><p>Reposiciones, eventos especiales y próximos ciclos.</p><div id="newsletters"></div></section>
+  <section id="cuenta" class="view account-view" hidden aria-labelledby="account-title">
+    <h2 id="account-title">Cuenta</h2>
+    <div class="account-panel">
+  <div class="account-bar"><p id="account-label" class="fine">Conectando con las cuentas…</p><button id="google-login" type="button" disabled>Entrar con Google</button><button id="account-logout" type="button" hidden>Cerrar sesión</button></div>
+      <p id="account-status" role="status" class="fine"></p>
+    </div>
+    <details class="location" id="location-settings" open><summary id="origin-summary">Mi origen</summary>
+      <p>Guarda tu origen para ver los cines ordenados por cercanía.</p>
+      <form id="origin-form"><label>Dirección de origen<input id="origin" autocomplete="off" placeholder="Calle y número, Madrid" aria-controls="address-suggestions" aria-autocomplete="list"></label><button class="primary" type="submit">Buscar dirección</button><button type="button" id="clear-origin">Borrar origen</button></form>
+      <button id="import-origin" type="button" hidden>Usar el origen de este navegador</button><div id="address-suggestions" class="address-suggestions" aria-label="Direcciones reconocidas"></div><p id="origin-status" aria-live="polite"></p>
+      <p class="fine"><a href="https://www.cartociudad.es/" target="_blank" rel="noopener">Direcciones: CartoCiudad · IGN/CNIG</a>. Distancias en línea recta.</p>
+      <p class="legend"><span>🟢 Hasta 1 km</span><span>🟡 1–2 km</span><span>🟠 2–4 km</span><span>🟣 Más de 4 km</span></p>
+    </details>
+    <p class="fine account-privacy">Con tu cuenta, tus favoritas y tu origen se sincronizan entre dispositivos. Sin iniciar sesión, el origen se guarda en este navegador.</p>
+  </section>
   <section id="estado" class="view" hidden tabindex="-1"><div class="section-title"><h2>Fuentes e incidencias</h2><button type="button" data-go="cartelera">Volver a Cartelera</button></div><p id="coverage" class="notice"></p><p id="updated" class="fine"></p><p id="connection-status" class="fine"></p><p id="agent-status" class="fine"></p><div class="section-title"><h3>Inventario de espacios</h3><span id="inventory-count" class="fine"></span></div><p class="fine">Inventario provisional por contrastar. «Pendiente» significa que aún no recogemos sus sesiones, no que el cine esté cerrado.</p><div id="sources" class="source-list"></div><div class="section-title"><h3>Registro de incidencias</h3><select id="issue-filter" aria-label="Estado de incidencia"><option value="open">Abiertas</option><option value="resolved">Resueltas</option><option value="">Todas</option></select></div><div id="incidents"></div><div class="tmdb-credit"><a href="https://www.themoviedb.org" target="_blank" rel="noopener"><img src="icons/tmdb.svg" alt="The Movie Database (TMDB)"></a><p>This product uses the TMDB API but is not endorsed or certified by TMDB.</p><p>Identificación por título o alias y dirección. Reposición automática: estreno comercial al menos un año antes de la sesión; las premières de festivales no bastan. Los casos intermedios quedan pendientes de revisión.</p></div></section>
   <div id="fatal" role="alert" hidden></div>
 </main>
-<footer><div><span>Cine Madrid <b aria-hidden="true">✳</b></span><span class="version">v0.10.0</span></div><div class="footer-links"><button type="button" id="open-status">Fuentes e incidencias</button><button type="button" id="install-help">Añadir al móvil</button><a href="https://github.com/IgnacioGarijo/cine-madrid">Proyecto ↗</a></div><p id="offline-label" class="fine" hidden>Sin conexión · Última cartelera guardada</p></footer>
+<footer><div><span>Cine Madrid <b aria-hidden="true">✳</b></span><span class="version">v0.10.1</span></div><div class="footer-links"><button type="button" id="open-status">Fuentes e incidencias</button><button type="button" id="install-help">Añadir al móvil</button><a href="https://github.com/IgnacioGarijo/cine-madrid">Proyecto ↗</a></div><p id="offline-label" class="fine" hidden>Sin conexión · Última cartelera guardada</p></footer>
+
+<nav class="bottom-nav" aria-label="Secciones principales"><button type="button" data-view="cartelera" class="active" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 4v16M17 4v16M3 9h4M3 15h4M17 9h4M17 15h4"/></svg><span>Cartelera</span></button><button type="button" data-view="pendientes"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg><span>Favoritas</span></button><button type="button" data-view="boletin"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h3M14 15h2M8 18h3M14 18h2"/></svg><span>Boletín</span></button><button type="button" data-view="cuenta"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg><span>Cuenta</span></button></nav>
 
 <dialog id="calendar-dialog" class="calendar-dialog" aria-labelledby="calendar-dialog-title">
   <div class="dialog-header"><h2 id="calendar-dialog-title">Calendario</h2><button type="button" data-close="calendar-dialog" class="collapse-calendar">Replegar calendario</button></div>

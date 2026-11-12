@@ -132,3 +132,22 @@ header { width:100%; min-height:280px; align-items:flex-end; padding:32px max(32
 }
 
 .account-bar{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;margin:.5rem 0 .8rem}.account-bar p{flex:1 1 180px;margin:0;overflow-wrap:anywhere}.account-bar button{font-size:.8rem;padding:.5rem .7rem}#import-favorites,#import-origin{margin:.4rem 0 .8rem}button:disabled{opacity:.6;cursor:default}
+
+/* App navigation stays within thumb reach, including installed iPhone safe areas. */
+body{padding-bottom:calc(80px + env(safe-area-inset-bottom,0px))}
+html{scroll-padding-bottom:calc(90px + env(safe-area-inset-bottom,0px))}
+nav.bottom-nav{position:fixed;inset:auto 0 0;z-index:10;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;width:100%;margin:0;border:0;border-top:1px solid var(--line);background:var(--paper);box-shadow:0 -4px 20px #293f4e08;padding:6px max(12px,calc((100vw - 560px)/2)) calc(6px + env(safe-area-inset-bottom,0px))}
+.bottom-nav button{flex-direction:column;gap:4px;min-height:58px;padding:7px 2px;border:0;border-radius:12px;font-size:11px;line-height:1.2;color:var(--muted)}
+.bottom-nav button svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.bottom-nav button.active{color:var(--orange);background:#954c5910;font-weight:700;border:0}
+.account-view{max-width:640px;margin:0 auto}
+.account-view h2{margin-top:0}
+.account-panel{padding:18px;border:1px solid var(--line);border-radius:16px;background:var(--white)}
+.account-panel .account-bar{margin:0;gap:14px}
+.account-panel .account-bar p{flex-basis:100%}
+.account-panel #google-login{background:var(--ink);color:var(--white);border-color:var(--ink);font-size:14px}
+.account-panel #account-status:empty{display:none}
+.account-view .location,.account-view .location:not([open]){display:block;margin-top:18px;border:1px solid var(--line);border-radius:16px;padding:8px 18px;background:var(--white)}
+.account-view .location summary{overflow-wrap:anywhere}
+.account-view .location p{margin-top:6px}
+.account-privacy{padding:0 4px;line-height:1.6}
