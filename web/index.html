@@ -42,7 +42,7 @@
       </div>
     </form>
     <details class="location" id="location-settings"><summary>Mi origen</summary>
-      <p>La dirección se guarda solo en este navegador. Al escribir se consulta CartoCiudad (IGN). Elige una dirección reconocida para guardarla.</p>
+      <p>Con tu cuenta, el origen se sincroniza entre dispositivos. Sin iniciar sesión se guarda solo en este navegador. Al escribir se consulta CartoCiudad (IGN). Elige una dirección reconocida para guardarla.</p>
       <form id="origin-form"><label>Dirección de origen<input id="origin" autocomplete="off" placeholder="Calle y número, Madrid" aria-controls="address-suggestions" aria-autocomplete="list"></label><button class="primary" type="submit">Buscar dirección</button><button type="button" id="clear-origin">Borrar origen</button></form>
       <button id="import-origin" type="button" hidden>Usar el origen de este navegador</button><div id="address-suggestions" class="address-suggestions" aria-label="Direcciones reconocidas"></div><p id="origin-status" aria-live="polite"></p>
       <p class="fine"><a href="https://www.cartociudad.es/" target="_blank" rel="noopener">Direcciones: CartoCiudad · IGN/CNIG</a>. Distancias en línea recta.</p>
@@ -61,7 +61,7 @@
 
   <section id="pendientes" class="view" hidden>
     <div class="section-title"><h2>Películas favoritas</h2><button id="add-favorite" type="button" class="primary">+ Añadir película</button></div>
-    <p class="fine">Lista pública · la misma desde cualquier dispositivo.</p><button id="import-favorites" type="button" hidden>Importar las favoritas anteriores</button><ul id="watchlist" class="favorite-list"></ul>
+    <p class="fine">Tu lista personal · sincronizada entre dispositivos.</p><button id="import-favorites" type="button" hidden>Importar las favoritas anteriores</button><ul id="watchlist" class="favorite-list"></ul>
     <p id="watch-status" role="status" class="fine"></p>
   </section>
   <section id="boletin" class="view" hidden><h2>El boletín</h2><p>Reposiciones, eventos especiales y próximos ciclos.</p><div id="newsletters"></div></section>
@@ -90,7 +90,7 @@
   <label>Película<input id="catalog-query" type="search" placeholder="Buscar en todo TMDB…" autocomplete="off"></label>
   <p id="favorite-search-status" class="fine" role="status"></p><div id="catalog" class="favorite-search"></div><div id="favorite-pagination" class="actions"></div>
   <a id="request-favorite" class="button primary" hidden target="_blank" rel="noopener">Buscar en TMDB ↗</a>
-  <p class="fine" id="favorite-help">Las sugerencias instantáneas de TMDB se activarán al conectar el servicio de Cloudflare. Mientras tanto, puedes buscar mediante GitHub. Guardar una película en la lista pública requiere confirmar con la cuenta propietaria; la clave de TMDB permanece protegida.</p>
+  <p class="fine" id="favorite-help">Busca una película de TMDB y pulsa Añadir para guardarla en tu cuenta.</p>
 </dialog>
 <dialog id="install-dialog" class="install-dialog" aria-labelledby="install-title"><div class="dialog-header"><h2 id="install-title">Cine Madrid en tu móvil</h2><button type="button" data-close="install-dialog" class="icon-button" aria-label="Cerrar instrucciones">✕</button></div><img src="icons/icon-192.png" width="72" height="72" alt="Icono de Cine Madrid"><p>Un icono en tu pantalla de inicio y acceso en una ventana propia.</p><div><h3>Android</h3><p>Abre esta web en Chrome y utiliza el menú <strong>Instalar aplicación</strong> o <strong>Añadir a pantalla de inicio</strong>.</p></div><div><h3>iPhone</h3><p>Abre esta web en Safari. Pulsa <strong>Compartir → Añadir a pantalla de inicio</strong> y confirma. Si aparece «Abrir como app web», actívalo.</p></div><p class="fine">Tras una primera visita con conexión podrás consultar la última cartelera guardada. Los horarios y enlaces de entradas necesitan conexión para comprobar cambios.</p></dialog>
 </body>
