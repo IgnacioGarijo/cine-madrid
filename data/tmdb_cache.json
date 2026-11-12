@@ -3669,7 +3669,7 @@
     },
     "operacosifantuttedirectodesdetheroyalopera": {
       "results": [],
-      "fetched_at": "2026-11-11T15:40:28+01:00"
+      "fetched_at": "2026-11-12T16:32:34+01:00"
     },
     "laodisea": {
       "results": [
@@ -3699,12 +3699,12 @@
           "original_title": "La Odisea de Kamatsu"
         },
         {
-          "id": 999140,
-          "title": "La odisea de Dandelion",
-          "original_title": "Planètes"
+          "id": 597639,
+          "title": "La Odisea de los Lunnis",
+          "original_title": "La Odisea de los Lunnis"
         }
       ],
-      "fetched_at": "2026-11-11T15:40:30+01:00"
+      "fetched_at": "2026-11-12T16:32:37+01:00"
     },
     "enelcorazondelabestia": {
       "results": [
@@ -3714,7 +3714,7 @@
           "original_title": "Heart of the Beast"
         }
       ],
-      "fetched_at": "2026-11-11T15:40:32+01:00"
+      "fetched_at": "2026-11-12T16:32:36+01:00"
     },
     "veritylasombradeunengano": {
       "results": [
@@ -3724,7 +3724,7 @@
           "original_title": "Verity"
         }
       ],
-      "fetched_at": "2026-11-11T15:40:33+01:00"
+      "fetched_at": "2026-11-12T16:32:39+01:00"
     },
     "laotramadre": {
       "results": [
@@ -3732,6 +3732,11 @@
           "id": 1400837,
           "title": "La otra madre",
           "original_title": "Other Mommy"
+        },
+        {
+          "id": 715758,
+          "title": "La otra madre",
+          "original_title": "Another Mother"
         },
         {
           "id": 261463,
@@ -3742,14 +3747,9 @@
           "id": 87116,
           "title": "La otra madre",
           "original_title": "Visages d'enfants"
-        },
-        {
-          "id": 715758,
-          "title": "La otra madre",
-          "original_title": "Another Mother"
         }
       ],
-      "fetched_at": "2026-11-11T15:40:33+01:00"
+      "fetched_at": "2026-11-12T16:32:38+01:00"
     },
     "residentevil": {
       "results": [
@@ -3779,12 +3779,12 @@
           "original_title": "Resident Evil: Extinction"
         },
         {
-          "id": 1083862,
-          "title": "Resident Evil: Death Island",
-          "original_title": "バイオハザード：デスアイランド"
+          "id": 400136,
+          "title": "Resident Evil: Vendetta",
+          "original_title": "バイオハザード ヴェンデッタ"
         }
       ],
-      "fetched_at": "2026-11-11T15:40:35+01:00"
+      "fetched_at": "2026-11-12T16:32:37+01:00"
     },
     "streetfighter": {
       "results": [
@@ -3819,15 +3819,15 @@
           "original_title": "ストリートファイター II MOVIE"
         }
       ],
-      "fetched_at": "2026-11-11T15:40:36+01:00"
+      "fetched_at": "2026-11-12T16:32:38+01:00"
     },
     "mailinthespiral": {
       "results": [],
-      "fetched_at": "2026-11-11T15:40:41+01:00"
+      "fetched_at": "2026-11-12T16:32:42+01:00"
     },
     "silviacriatura": {
       "results": [],
-      "fetched_at": "2026-11-11T15:40:42+01:00"
+      "fetched_at": "2026-11-12T16:32:43+01:00"
     },
     "ovnisavistamientosextranosenmadrid2026": {
       "results": [
@@ -3837,11 +3837,11 @@
           "original_title": "Ovnis: Avistamientos Extraños en Madrid"
         }
       ],
-      "fetched_at": "2026-11-11T15:40:47+01:00"
+      "fetched_at": "2026-11-12T16:32:46+01:00"
     },
     "avistamientosextranosenmadrid2026": {
       "results": [],
-      "fetched_at": "2026-11-11T15:40:47+01:00"
+      "fetched_at": "2026-11-12T16:32:47+01:00"
     },
     "ovnisavistamientosextranosenmadrid": {
       "results": [
@@ -3851,7 +3851,7 @@
           "original_title": "Ovnis: Avistamientos Extraños en Madrid"
         }
       ],
-      "fetched_at": "2026-11-11T15:40:47+01:00"
+      "fetched_at": "2026-11-12T16:32:47+01:00"
     },
     "avistamientosextranosenmadrid": {
       "results": [
@@ -3861,7 +3861,7 @@
           "original_title": "Ovnis: Avistamientos Extraños en Madrid"
         }
       ],
-      "fetched_at": "2026-11-11T15:40:48+01:00"
+      "fetched_at": "2026-11-12T16:32:47+01:00"
     },
     "tadeojonesylalamparamaravillosa": {
       "results": [
@@ -3871,7 +3871,7 @@
           "original_title": "Tadeo Jones y La Lámpara Maravillosa"
         }
       ],
-      "fetched_at": "2026-11-11T15:40:50+01:00"
+      "fetched_at": "2026-11-12T16:32:39+01:00"
     },
     "coyotevsacme": {
       "results": [
@@ -3881,7 +3881,7 @@
           "original_title": "Coyote vs. Acme"
         }
       ],
-      "fetched_at": "2026-11-11T15:40:51+01:00"
+      "fetched_at": "2026-11-12T16:32:39+01:00"
     },
     "spidermanbrandnewday": {
       "results": [
@@ -3891,11 +3891,11 @@
           "original_title": "Spider-Man: Brand New Day"
         }
       ],
-      "fetched_at": "2026-11-11T15:40:51+01:00"
+      "fetched_at": "2026-11-12T16:32:49+01:00"
     },
     "elpoderdelrosario": {
       "results": [],
-      "fetched_at": "2026-11-11T15:40:52+01:00"
+      "fetched_at": "2026-11-12T16:32:40+01:00"
     },
     "aeternatemblorestremors": {
       "results": [],
@@ -7195,9 +7195,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1422041",
       "fetched_at": "2026-11-11T12:10:12+01:00",
-      "vote_count": 208,
+      "vote_count": 213,
       "vote_average": 8.0,
-      "statistics_checked_at": "2026-11-11T15:40:17+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:25+01:00",
       "poster_path": "/t1azKLExwUxKj6v6m2L535evuRa.jpg",
       "poster_checked_at": "2026-11-12T09:55:03+01:00"
     },
@@ -7227,9 +7227,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1522071",
       "fetched_at": "2026-11-11T12:10:13+01:00",
-      "vote_count": 0,
-      "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:18+01:00",
+      "vote_count": 1,
+      "vote_average": 6.0,
+      "statistics_checked_at": "2026-11-12T16:32:26+01:00",
       "poster_path": "/6CWXhVFfin3zh1LZ5HsWnzTXTPN.jpg",
       "poster_checked_at": "2026-11-12T09:55:05+01:00"
     },
@@ -7259,9 +7259,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1371661",
       "fetched_at": "2026-11-11T12:10:13+01:00",
-      "vote_count": 0,
-      "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:19+01:00",
+      "vote_count": 1,
+      "vote_average": 7.0,
+      "statistics_checked_at": "2026-11-12T16:32:27+01:00",
       "poster_path": "/7338FnwdzX9oNpODZIJH1OliUGV.jpg",
       "poster_checked_at": "2026-11-12T09:55:06+01:00"
     },
@@ -7778,9 +7778,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1241803",
       "fetched_at": "2026-11-11T12:10:14+01:00",
-      "vote_count": 68,
-      "vote_average": 7.2,
-      "statistics_checked_at": "2026-11-11T15:40:17+01:00",
+      "vote_count": 69,
+      "vote_average": 7.188,
+      "statistics_checked_at": "2026-11-12T16:32:25+01:00",
       "poster_path": "/jwRMUI6rGjAwkXHEqBlSnViT6gG.jpg",
       "poster_checked_at": "2026-11-12T09:55:04+01:00"
     },
@@ -8353,7 +8353,7 @@
       "fetched_at": "2026-11-11T12:10:15+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:15+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:23+01:00",
       "poster_path": "/a8MvsDCP3sv0WXNW3I0ainSuLcd.jpg",
       "poster_checked_at": "2026-11-12T09:55:01+01:00"
     },
@@ -8775,9 +8775,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/950028",
       "fetched_at": "2026-11-11T12:10:16+01:00",
-      "vote_count": 945,
-      "vote_average": 7.202,
-      "statistics_checked_at": "2026-11-11T15:40:17+01:00",
+      "vote_count": 954,
+      "vote_average": 7.208,
+      "statistics_checked_at": "2026-11-12T16:32:25+01:00",
       "poster_path": "/21JnfyCARiRkms9AZHtTXiZKbIj.jpg",
       "poster_checked_at": "2026-11-12T09:55:04+01:00"
     },
@@ -9509,9 +9509,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1503762",
       "fetched_at": "2026-11-11T12:10:17+01:00",
-      "vote_count": 163,
-      "vote_average": 7.2,
-      "statistics_checked_at": "2026-11-11T15:40:18+01:00",
+      "vote_count": 164,
+      "vote_average": 7.232,
+      "statistics_checked_at": "2026-11-12T16:32:26+01:00",
       "poster_path": "/9BvQHFAQ3BhKk5NSYxtYSMn5lrb.jpg",
       "poster_checked_at": "2026-11-12T09:55:05+01:00"
     },
@@ -9785,9 +9785,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1404684",
       "fetched_at": "2026-11-11T12:10:18+01:00",
-      "vote_count": 225,
-      "vote_average": 7.269,
-      "statistics_checked_at": "2026-11-11T15:40:19+01:00",
+      "vote_count": 227,
+      "vote_average": 7.284,
+      "statistics_checked_at": "2026-11-12T16:32:26+01:00",
       "poster_path": "/ku7zVdj7yUZn71cG6YvCoC3Rxjm.jpg",
       "poster_checked_at": "2026-11-12T09:55:05+01:00"
     },
@@ -9875,9 +9875,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/149",
       "fetched_at": "2026-11-11T12:10:18+01:00",
-      "vote_count": 5111,
-      "vote_average": 7.9,
-      "statistics_checked_at": "2026-11-11T15:40:22+01:00",
+      "vote_count": 5114,
+      "vote_average": 7.937,
+      "statistics_checked_at": "2026-11-12T16:32:28+01:00",
       "poster_path": "/2WvrGAnKtHrb20nHLd38RyhIj0Q.jpg",
       "poster_checked_at": "2026-11-12T09:55:08+01:00"
     },
@@ -10269,7 +10269,7 @@
       "fetched_at": "2026-11-11T12:10:20+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:26+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:32+01:00",
       "poster_path": "/g98gqevY5wjiaXeY44EeZusDAHz.jpg",
       "poster_checked_at": "2026-11-12T09:55:13+01:00"
     },
@@ -10629,7 +10629,7 @@
       "fetched_at": "2026-11-11T12:10:22+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:26+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:29+01:00",
       "poster_path": "/2r09thBfqsWkoyGVtrxc00uYpSy.jpg",
       "poster_checked_at": "2026-11-12T09:55:13+01:00"
     },
@@ -10744,7 +10744,7 @@
       "translations_checked": true,
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:26+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:33+01:00",
       "poster_path": "/yWIMk0hCyPacK6Sy8OXehdiJnTC.jpg",
       "poster_checked_at": "2026-11-12T09:55:13+01:00"
     },
@@ -11199,9 +11199,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1585239",
       "fetched_at": "2026-11-11T12:10:24+01:00",
-      "vote_count": 13,
-      "vote_average": 8.038,
-      "statistics_checked_at": "2026-11-11T15:40:15+01:00",
+      "vote_count": 18,
+      "vote_average": 7.8,
+      "statistics_checked_at": "2026-11-12T16:32:23+01:00",
       "poster_path": "/l4q1gziNMhpVQAzCIwmtbLSB1T9.jpg",
       "poster_checked_at": "2026-11-12T09:55:02+01:00"
     },
@@ -11487,9 +11487,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/5156",
       "fetched_at": "2026-11-11T12:10:26+01:00",
-      "vote_count": 2800,
-      "vote_average": 8.2,
-      "statistics_checked_at": "2026-11-11T15:40:23+01:00",
+      "vote_count": 2801,
+      "vote_average": 8.163,
+      "statistics_checked_at": "2026-11-12T16:32:30+01:00",
       "poster_path": "/hjo6BPzCuhUkpSzxElOQ68mydrx.jpg",
       "poster_checked_at": "2026-11-12T09:55:09+01:00"
     },
@@ -11521,7 +11521,7 @@
       "fetched_at": "2026-11-11T12:10:26+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:16+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:24+01:00",
       "poster_path": "/g8JgLE6obZIf57O8nfBTSHHEQ27.jpg",
       "poster_checked_at": "2026-11-12T09:55:03+01:00"
     },
@@ -12268,9 +12268,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1240889",
       "fetched_at": "2026-11-11T12:10:27+01:00",
-      "vote_count": 393,
+      "vote_count": 394,
       "vote_average": 6.1,
-      "statistics_checked_at": "2026-11-11T15:40:27+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:33+01:00",
       "poster_path": "/8UTCpwvHxWPllCJ7YnaCbffmYyD.jpg",
       "poster_checked_at": "2026-11-12T09:55:14+01:00"
     },
@@ -12901,9 +12901,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/27205",
       "fetched_at": "2026-11-11T12:10:27+01:00",
-      "vote_count": 40705,
+      "vote_count": 40711,
       "vote_average": 8.373,
-      "statistics_checked_at": "2026-11-11T15:40:23+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:30+01:00",
       "poster_path": "/tXQvtRWfkUUnWJAn2tN3jERIUG.jpg",
       "poster_checked_at": "2026-11-12T09:55:10+01:00"
     },
@@ -13589,7 +13589,7 @@
       "fetched_at": "2026-11-11T12:10:29+01:00",
       "vote_count": 4091,
       "vote_average": 6.33,
-      "statistics_checked_at": "2026-11-11T15:40:27+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:33+01:00",
       "poster_path": "/92Lqy293CqAExYXlqDc456eYCWp.jpg",
       "poster_checked_at": "2026-11-12T09:55:14+01:00"
     },
@@ -13973,9 +13973,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/990",
       "fetched_at": "2026-11-11T12:10:30+01:00",
-      "vote_count": 1136,
-      "vote_average": 7.665,
-      "statistics_checked_at": "2026-11-11T15:40:23+01:00",
+      "vote_count": 1138,
+      "vote_average": 7.663,
+      "statistics_checked_at": "2026-11-12T16:32:30+01:00",
       "poster_path": "/6jicxcrfFZpXIBgQidj3uouwsiP.jpg",
       "poster_checked_at": "2026-11-12T09:55:10+01:00"
     },
@@ -14079,7 +14079,7 @@
       "fetched_at": "2026-11-11T12:10:30+01:00",
       "vote_count": 990,
       "vote_average": 7.427,
-      "statistics_checked_at": "2026-11-11T15:40:23+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:30+01:00",
       "poster_path": "/ptBljoTY9KrAIOZcULsIs2J3fGc.jpg",
       "poster_checked_at": "2026-11-12T09:55:10+01:00"
     },
@@ -14400,9 +14400,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/284",
       "fetched_at": "2026-11-11T12:10:32+01:00",
-      "vote_count": 2841,
-      "vote_average": 8.187,
-      "statistics_checked_at": "2026-11-11T15:40:25+01:00",
+      "vote_count": 2844,
+      "vote_average": 8.185,
+      "statistics_checked_at": "2026-11-12T16:32:31+01:00",
       "poster_path": "/2kJMgHi8vNY8a0UJiBU3HEyiqOa.jpg",
       "poster_checked_at": "2026-11-12T09:55:12+01:00"
     },
@@ -15174,9 +15174,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/78",
       "fetched_at": "2026-11-11T12:10:33+01:00",
-      "vote_count": 15621,
+      "vote_count": 15628,
       "vote_average": 7.937,
-      "statistics_checked_at": "2026-11-11T15:40:25+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:32+01:00",
       "poster_path": "/pBA2J6iQMiP5Zd4ewMKdOWfq1HV.jpg",
       "poster_checked_at": "2026-11-12T09:55:12+01:00"
     },
@@ -16237,9 +16237,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/275",
       "fetched_at": "2026-11-11T12:10:35+01:00",
-      "vote_count": 9583,
-      "vote_average": 7.848,
-      "statistics_checked_at": "2026-11-11T15:40:25+01:00",
+      "vote_count": 9589,
+      "vote_average": 7.849,
+      "statistics_checked_at": "2026-11-12T16:32:32+01:00",
       "poster_path": "/e25EHAVCA16rnbeAYl8qrSrc942.jpg",
       "poster_checked_at": "2026-11-12T09:55:12+01:00"
     },
@@ -16396,7 +16396,7 @@
       "fetched_at": "2026-11-11T12:10:37+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:27+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:33+01:00",
       "poster_path": "/gVsYOcAMzPdPPJA5uIxewgzO1PO.jpg",
       "poster_checked_at": "2026-11-12T09:55:14+01:00"
     },
@@ -16592,9 +16592,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/856",
       "fetched_at": "2026-11-11T12:10:37+01:00",
-      "vote_count": 6441,
-      "vote_average": 7.543,
-      "statistics_checked_at": "2026-11-11T15:40:27+01:00",
+      "vote_count": 6445,
+      "vote_average": 7.544,
+      "statistics_checked_at": "2026-11-12T16:32:33+01:00",
       "poster_path": "/nXqhkF0tJ1K2fglVMgimVZd5kMH.jpg",
       "poster_checked_at": "2026-11-12T09:55:14+01:00"
     },
@@ -16666,7 +16666,7 @@
       "fetched_at": "2026-11-11T12:10:38+01:00",
       "vote_count": 887,
       "vote_average": 8.051,
-      "statistics_checked_at": "2026-11-11T15:40:25+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:32+01:00",
       "poster_path": "/ylExFY65lH1WIg7KQrTa8Zqz6nc.jpg",
       "poster_checked_at": "2026-11-12T09:55:12+01:00"
     },
@@ -17107,7 +17107,7 @@
       "fetched_at": "2026-11-11T12:10:38+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:16+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:24+01:00",
       "poster_path": "/uj4EuGmFNAc4CHBVEtRZ04MXzka.jpg",
       "poster_checked_at": "2026-11-12T09:55:02+01:00"
     },
@@ -17393,9 +17393,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/927",
       "fetched_at": "2026-11-11T12:10:39+01:00",
-      "vote_count": 7264,
+      "vote_count": 7269,
       "vote_average": 7.147,
-      "statistics_checked_at": "2026-11-11T15:40:26+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:32+01:00",
       "poster_path": "/73Lf0JYHyWyZQGu04wvzzM3hh0l.jpg",
       "poster_checked_at": "2026-11-12T09:55:13+01:00"
     },
@@ -17907,9 +17907,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/8413",
       "fetched_at": "2026-11-11T12:10:40+01:00",
-      "vote_count": 3572,
+      "vote_count": 3574,
       "vote_average": 6.598,
-      "statistics_checked_at": "2026-11-11T15:40:28+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:33+01:00",
       "poster_path": "/p0TgEBfbOgWP6xZgSt2T7Ee78vx.jpg",
       "poster_checked_at": "2026-11-12T09:55:14+01:00"
     },
@@ -18425,9 +18425,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/19",
       "fetched_at": "2026-11-11T12:12:56+01:00",
-      "vote_count": 3262,
+      "vote_count": 3263,
       "vote_average": 8.084,
-      "statistics_checked_at": "2026-11-11T15:40:28+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:34+01:00",
       "poster_path": "/fCWd45ybxghuvaeSMcBsLFKY6PG.jpg",
       "poster_checked_at": "2026-11-12T09:55:15+01:00"
     },
@@ -19104,7 +19104,7 @@
       "fetched_at": "2026-11-11T12:48:21+01:00",
       "vote_count": 5,
       "vote_average": 9.4,
-      "statistics_checked_at": "2026-11-11T15:40:15+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:23+01:00",
       "poster_path": "/dRfDBbdVFsiRAKC5dhKcsIlPJI5.jpg",
       "poster_checked_at": "2026-11-12T09:55:01+01:00"
     },
@@ -19175,7 +19175,7 @@
       "fetched_at": "2026-11-11T12:48:22+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:15+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:23+01:00",
       "poster_path": "/xr6F0DzTVi6sbfjuYwrqBBKhHm7.jpg",
       "poster_checked_at": "2026-11-12T09:55:02+01:00"
     },
@@ -19593,9 +19593,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/213",
       "fetched_at": "2026-11-11T12:48:22+01:00",
-      "vote_count": 4733,
+      "vote_count": 4734,
       "vote_average": 7.963,
-      "statistics_checked_at": "2026-11-11T15:40:15+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:24+01:00",
       "poster_path": "/rzOQHh5Utbr3x0UvKIbIU5pVA0f.jpg",
       "poster_checked_at": "2026-11-12T09:55:02+01:00"
     },
@@ -20543,7 +20543,7 @@
       "fetched_at": "2026-11-11T12:48:24+01:00",
       "vote_count": 99,
       "vote_average": 6.742,
-      "statistics_checked_at": "2026-11-11T15:40:16+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:24+01:00",
       "poster_path": "/j1IyFWFgfvLno4SnQudoQdLikY2.jpg",
       "poster_checked_at": "2026-11-12T09:55:02+01:00"
     },
@@ -20782,9 +20782,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1074074",
       "fetched_at": "2026-11-11T12:48:24+01:00",
-      "vote_count": 113,
-      "vote_average": 6.9,
-      "statistics_checked_at": "2026-11-11T15:40:16+01:00",
+      "vote_count": 114,
+      "vote_average": 6.921,
+      "statistics_checked_at": "2026-11-12T16:32:24+01:00",
       "poster_path": "/LdKLipXCdKHNXxUxn8l7UTdnXJ.jpg",
       "poster_checked_at": "2026-11-12T09:55:03+01:00"
     },
@@ -22270,7 +22270,7 @@
       "fetched_at": "2026-11-11T12:48:27+01:00",
       "vote_count": 61,
       "vote_average": 7.328,
-      "statistics_checked_at": "2026-11-11T15:40:17+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:25+01:00",
       "poster_path": "/ajiSFBxo1h0MNbu7q9I5aSVHUgE.jpg",
       "poster_checked_at": "2026-11-12T09:55:04+01:00"
     },
@@ -22446,8 +22446,8 @@
       "source_url": "https://www.themoviedb.org/movie/1437703",
       "fetched_at": "2026-11-11T12:48:27+01:00",
       "vote_count": 25,
-      "vote_average": 7.4,
-      "statistics_checked_at": "2026-11-11T15:40:18+01:00",
+      "vote_average": 7.44,
+      "statistics_checked_at": "2026-11-12T16:32:25+01:00",
       "poster_path": "/hs9huYKLyKdcI8LJw9DZ8eiW850.jpg",
       "poster_checked_at": "2026-11-12T09:55:04+01:00"
     },
@@ -22813,9 +22813,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/11621",
       "fetched_at": "2026-11-11T12:48:29+01:00",
-      "vote_count": 3887,
+      "vote_count": 3891,
       "vote_average": 7.789,
-      "statistics_checked_at": "2026-11-11T15:40:18+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:26+01:00",
       "poster_path": "/iNwzpNGTt6hTjbj0KDl08O6gJCi.jpg",
       "poster_checked_at": "2026-11-12T09:55:05+01:00"
     },
@@ -23321,9 +23321,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/891621",
       "fetched_at": "2026-11-11T12:48:29+01:00",
-      "vote_count": 137,
-      "vote_average": 8.1,
-      "statistics_checked_at": "2026-11-11T15:40:18+01:00",
+      "vote_count": 153,
+      "vote_average": 8.069,
+      "statistics_checked_at": "2026-11-12T16:32:26+01:00",
       "poster_path": "/bLDrHn76oiNYiELv1qw3Tfdkqc8.jpg",
       "poster_checked_at": "2026-11-12T09:55:05+01:00"
     },
@@ -23417,7 +23417,7 @@
       "fetched_at": "2026-11-11T12:48:30+01:00",
       "vote_count": 411,
       "vote_average": 7.343,
-      "statistics_checked_at": "2026-11-11T15:40:19+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:26+01:00",
       "poster_path": "/8uTYxMcJTIv7sJCEyvPssoDcn9.jpg",
       "poster_checked_at": "2026-11-12T09:55:06+01:00"
     },
@@ -23507,7 +23507,7 @@
       "fetched_at": "2026-11-11T12:48:30+01:00",
       "vote_count": 142,
       "vote_average": 7.7,
-      "statistics_checked_at": "2026-11-11T15:40:19+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:27+01:00",
       "poster_path": "/kp3TpqkiDgRkLSJgrnWdGXGl7hD.jpg",
       "poster_checked_at": "2026-11-12T09:55:06+01:00"
     },
@@ -23792,9 +23792,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1117898",
       "fetched_at": "2026-11-11T12:48:31+01:00",
-      "vote_count": 20,
-      "vote_average": 7.1,
-      "statistics_checked_at": "2026-11-11T15:40:20+01:00",
+      "vote_count": 22,
+      "vote_average": 7.205,
+      "statistics_checked_at": "2026-11-12T16:32:27+01:00",
       "poster_path": "/8TW5oOMZbxaMFVgletpW0bxd2Aa.jpg",
       "poster_checked_at": "2026-11-12T09:55:06+01:00"
     },
@@ -23823,7 +23823,7 @@
       "fetched_at": "2026-11-11T12:48:31+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:20+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:27+01:00",
       "poster_path": "/WGH8A7l5pQHlO13A7QJ2t4mjvN.jpg",
       "poster_checked_at": "2026-11-12T09:55:06+01:00"
     },
@@ -24243,9 +24243,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/656908",
       "fetched_at": "2026-11-11T12:48:31+01:00",
-      "vote_count": 33,
-      "vote_average": 7.7,
-      "statistics_checked_at": "2026-11-11T15:40:20+01:00",
+      "vote_count": 36,
+      "vote_average": 7.625,
+      "statistics_checked_at": "2026-11-12T16:32:27+01:00",
       "poster_path": "/nzL1ySE6vdmR6RxXhE7gLggkp41.jpg",
       "poster_checked_at": "2026-11-12T09:55:07+01:00"
     },
@@ -24697,9 +24697,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1381071",
       "fetched_at": "2026-11-11T12:48:32+01:00",
-      "vote_count": 143,
-      "vote_average": 7.78,
-      "statistics_checked_at": "2026-11-11T15:40:20+01:00",
+      "vote_count": 156,
+      "vote_average": 7.843,
+      "statistics_checked_at": "2026-11-12T16:32:36+01:00",
       "poster_path": "/2B7ZSUutCgwUAE5U0X7WlD8yiun.jpg",
       "poster_checked_at": "2026-11-12T09:55:07+01:00"
     },
@@ -26246,7 +26246,7 @@
       "fetched_at": "2026-11-11T12:48:32+01:00",
       "vote_count": 1,
       "vote_average": 9.5,
-      "statistics_checked_at": "2026-11-11T15:40:20+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:28+01:00",
       "poster_path": "/bJh97VEUn9TWygQSrOOyJrwQXek.jpg",
       "poster_checked_at": "2026-11-12T09:55:07+01:00"
     },
@@ -26957,9 +26957,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1400940",
       "fetched_at": "2026-11-11T12:48:34+01:00",
-      "vote_count": 425,
-      "vote_average": 7.426,
-      "statistics_checked_at": "2026-11-11T15:40:21+01:00",
+      "vote_count": 430,
+      "vote_average": 7.423,
+      "statistics_checked_at": "2026-11-12T16:32:28+01:00",
       "poster_path": "/6ihSDJlBNcvoTWzSA0jonZyOXTs.jpg",
       "poster_checked_at": "2026-11-12T09:55:07+01:00"
     },
@@ -27303,9 +27303,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/791523",
       "fetched_at": "2026-11-11T12:48:34+01:00",
-      "vote_count": 248,
-      "vote_average": 8.5,
-      "statistics_checked_at": "2026-11-11T15:40:21+01:00",
+      "vote_count": 259,
+      "vote_average": 8.477,
+      "statistics_checked_at": "2026-11-12T16:32:28+01:00",
       "poster_path": "/sJ1uZ4DKsjs2iqLtCX46TifxqoE.jpg",
       "poster_checked_at": "2026-11-12T09:55:08+01:00"
     },
@@ -27334,7 +27334,7 @@
       "fetched_at": "2026-11-11T12:48:34+01:00",
       "vote_count": 3,
       "vote_average": 7.7,
-      "statistics_checked_at": "2026-11-11T15:40:21+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:29+01:00",
       "poster_path": "/ncJXMB0MbDiXIpqCdNSN4MYRe3k.jpg",
       "poster_checked_at": "2026-11-12T09:55:08+01:00"
     },
@@ -27402,7 +27402,7 @@
       "fetched_at": "2026-11-11T12:48:35+01:00",
       "vote_count": 5,
       "vote_average": 5.6,
-      "statistics_checked_at": "2026-11-11T15:40:22+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:28+01:00",
       "poster_path": "/ozr5OyKt1whnfuLei2viZsS38Kp.jpg",
       "poster_checked_at": "2026-11-12T09:55:08+01:00"
     },
@@ -27681,9 +27681,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1567605",
       "fetched_at": "2026-11-11T12:48:35+01:00",
-      "vote_count": 6,
-      "vote_average": 8.333,
-      "statistics_checked_at": "2026-11-11T15:40:22+01:00",
+      "vote_count": 15,
+      "vote_average": 8.6,
+      "statistics_checked_at": "2026-11-12T16:32:29+01:00",
       "poster_path": "/gnG15MkiNeObCoPbHcLUX4zrNWh.jpg",
       "poster_checked_at": "2026-11-12T09:55:09+01:00"
     },
@@ -27943,9 +27943,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1437511",
       "fetched_at": "2026-11-11T12:48:36+01:00",
-      "vote_count": 2,
-      "vote_average": 9.0,
-      "statistics_checked_at": "2026-11-11T15:40:22+01:00",
+      "vote_count": 4,
+      "vote_average": 7.4,
+      "statistics_checked_at": "2026-11-12T16:32:29+01:00",
       "poster_path": "/xS35fgWgRdF2em5MGxg5WG9dPKd.jpg",
       "poster_checked_at": "2026-11-12T09:55:09+01:00"
     },
@@ -28230,7 +28230,7 @@
       "fetched_at": "2026-11-11T12:48:36+01:00",
       "vote_count": 22,
       "vote_average": 6.5,
-      "statistics_checked_at": "2026-11-11T15:40:22+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:29+01:00",
       "poster_path": "/tEpDFz33WclWa0c1rxLhqM2DNFE.jpg",
       "poster_checked_at": "2026-11-12T09:55:09+01:00"
     },
@@ -28854,9 +28854,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1377237",
       "fetched_at": "2026-11-11T12:48:38+01:00",
-      "vote_count": 827,
-      "vote_average": 8.24,
-      "statistics_checked_at": "2026-11-11T15:40:23+01:00",
+      "vote_count": 832,
+      "vote_average": 8.228,
+      "statistics_checked_at": "2026-11-12T16:32:30+01:00",
       "poster_path": "/pmjSjZtFOYDWhAs4B2AbBE8hTQf.jpg",
       "poster_checked_at": "2026-11-12T09:55:10+01:00"
     },
@@ -29112,7 +29112,7 @@
       "fetched_at": "2026-11-11T12:48:39+01:00",
       "vote_count": 117,
       "vote_average": 6.8,
-      "statistics_checked_at": "2026-11-11T15:40:24+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:30+01:00",
       "poster_path": "/gF6Ijrq5bixh4qemCuroRwXtbBc.jpg",
       "poster_checked_at": "2026-11-12T09:55:10+01:00"
     },
@@ -29224,7 +29224,7 @@
       "fetched_at": "2026-11-11T12:48:39+01:00",
       "vote_count": 13,
       "vote_average": 6.7,
-      "statistics_checked_at": "2026-11-11T15:40:24+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:31+01:00",
       "poster_path": "/lF9amilOGIudUIq6NgDnz2YrPPa.jpg",
       "poster_checked_at": "2026-11-12T09:55:11+01:00"
     },
@@ -29492,9 +29492,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/879",
       "fetched_at": "2026-11-11T12:48:40+01:00",
-      "vote_count": 5953,
+      "vote_count": 5956,
       "vote_average": 6.844,
-      "statistics_checked_at": "2026-11-11T15:40:24+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:31+01:00",
       "poster_path": "/lHXuDik0kJobNsr5U4VQT4XQ8rK.jpg",
       "poster_checked_at": "2026-11-12T09:55:11+01:00"
     },
@@ -29729,7 +29729,7 @@
       "fetched_at": "2026-11-11T12:48:41+01:00",
       "vote_count": 663,
       "vote_average": 5.803,
-      "statistics_checked_at": "2026-11-11T15:40:24+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:31+01:00",
       "poster_path": "/gtuJeNsG4Z15OLQViOzg5y2uHUu.jpg",
       "poster_checked_at": "2026-11-12T09:55:11+01:00"
     },
@@ -30133,9 +30133,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/22",
       "fetched_at": "2026-11-11T12:48:42+01:00",
-      "vote_count": 23076,
+      "vote_count": 23084,
       "vote_average": 7.838,
-      "statistics_checked_at": "2026-11-11T15:40:25+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:31+01:00",
       "poster_path": "/bVG48kmXuLaZYgPfSCmhs6EYFbX.jpg",
       "poster_checked_at": "2026-11-12T09:55:11+01:00"
     },
@@ -30446,7 +30446,7 @@
       "fetched_at": "2026-11-11T12:48:42+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:26+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:32+01:00",
       "poster_path": "/7bQczUMnjz8iwxNP9YrmLkfI8od.jpg",
       "poster_checked_at": "2026-11-12T09:55:12+01:00"
     },
@@ -31014,9 +31014,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1248832",
       "fetched_at": "2026-11-11T12:48:43+01:00",
-      "vote_count": 511,
-      "vote_average": 7.5,
-      "statistics_checked_at": "2026-11-11T15:40:28+01:00",
+      "vote_count": 513,
+      "vote_average": 7.497,
+      "statistics_checked_at": "2026-11-12T16:32:34+01:00",
       "poster_path": "/koqE0V2IgIPVy5o2vVkoGJvnB8b.jpg",
       "poster_checked_at": "2026-11-12T09:55:15+01:00"
     },
@@ -31525,7 +31525,7 @@
       "fetched_at": "2026-11-11T12:48:44+01:00",
       "vote_count": 140,
       "vote_average": 7.0,
-      "statistics_checked_at": "2026-11-11T15:40:28+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:34+01:00",
       "poster_path": "/xT7yxocpGjqzalCUTr9IFDf8Oyb.jpg",
       "poster_checked_at": "2026-11-12T09:55:15+01:00"
     },
@@ -31658,7 +31658,7 @@
       "fetched_at": "2026-11-11T12:48:45+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:29+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:35+01:00",
       "poster_path": "/gDsAXwxRwH9nQCv1z5GvqVwPnTI.jpg",
       "poster_checked_at": "2026-11-12T09:55:16+01:00"
     },
@@ -32139,9 +32139,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1564614",
       "fetched_at": "2026-11-11T12:48:46+01:00",
-      "vote_count": 652,
+      "vote_count": 653,
       "vote_average": 6.8,
-      "statistics_checked_at": "2026-11-11T15:40:29+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:35+01:00",
       "poster_path": "/q4C2Kbc1eGOTCUdMetsjvhxUhMV.jpg",
       "poster_checked_at": "2026-11-12T09:55:16+01:00"
     },
@@ -32542,9 +32542,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1195803",
       "fetched_at": "2026-11-11T12:48:47+01:00",
-      "vote_count": 44,
-      "vote_average": 7.557,
-      "statistics_checked_at": "2026-11-11T15:40:29+01:00",
+      "vote_count": 46,
+      "vote_average": 7.554,
+      "statistics_checked_at": "2026-11-12T16:32:35+01:00",
       "poster_path": "/ewPz6uvKrbKlQrLRi1r9NTZQLzN.jpg",
       "poster_checked_at": "2026-11-12T09:55:16+01:00"
     },
@@ -33458,7 +33458,7 @@
       "fetched_at": "2026-11-11T12:48:50+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:29+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:35+01:00",
       "poster_path": "/6eJaRsrcmguzLDAGP1nWXzLDYTY.jpg",
       "poster_checked_at": "2026-11-12T09:55:17+01:00"
     },
@@ -34093,7 +34093,7 @@
       "fetched_at": "2026-11-11T12:48:52+01:00",
       "vote_count": 668,
       "vote_average": 7.926,
-      "statistics_checked_at": "2026-11-11T15:40:30+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:36+01:00",
       "poster_path": "/xYWPyzDfCmX6xK51wwGNkQNA9fv.jpg",
       "poster_checked_at": "2026-11-12T09:55:17+01:00"
     },
@@ -34991,7 +34991,7 @@
       "fetched_at": "2026-11-11T12:48:55+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:30+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:36+01:00",
       "poster_path": "/eS83uVLN6OAH5ZLrUPyoWDVXI2b.jpg",
       "poster_checked_at": "2026-11-12T09:55:17+01:00"
     },
@@ -35452,7 +35452,7 @@
       "fetched_at": "2026-11-11T12:48:56+01:00",
       "vote_count": 1,
       "vote_average": 8.0,
-      "statistics_checked_at": "2026-11-11T15:40:38+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:40+01:00",
       "poster_path": "/kYjCmL8sg17zoKtm5Pb6Cn4H0nB.jpg",
       "poster_checked_at": "2026-11-12T09:55:18+01:00"
     },
@@ -35666,7 +35666,7 @@
       "fetched_at": "2026-11-11T12:48:59+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:38+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:40+01:00",
       "poster_path": "/6Nd3otBHLSFpI4HA5prxJB3fKPz.jpg",
       "poster_checked_at": "2026-11-12T09:55:19+01:00"
     },
@@ -35992,7 +35992,7 @@
       "fetched_at": "2026-11-11T12:49:01+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:39+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:40+01:00",
       "poster_path": "/nDtlD60o7siXg6zI4MRNra5m8d4.jpg",
       "poster_checked_at": "2026-11-12T09:55:19+01:00"
     },
@@ -36013,7 +36013,7 @@
       "fetched_at": "2026-11-11T12:49:02+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:39+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:40+01:00",
       "poster_path": null,
       "poster_checked_at": "2026-11-12T09:55:19+01:00"
     },
@@ -36065,7 +36065,7 @@
       "fetched_at": "2026-11-11T12:49:03+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:39+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:41+01:00",
       "poster_path": "/6B2nylE9aq62aVnQlL3Qz4gKQ5e.jpg",
       "poster_checked_at": "2026-11-12T09:55:20+01:00"
     },
@@ -37029,7 +37029,7 @@
       "fetched_at": "2026-11-11T12:49:06+01:00",
       "vote_count": 4,
       "vote_average": 6.0,
-      "statistics_checked_at": "2026-11-11T15:40:40+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:41+01:00",
       "poster_path": "/pe0MudvC8VOoTtAMCTIfHqrRo8o.jpg",
       "poster_checked_at": "2026-11-12T09:55:20+01:00"
     },
@@ -37175,7 +37175,7 @@
       "fetched_at": "2026-11-11T12:49:07+01:00",
       "vote_count": 2,
       "vote_average": 8.5,
-      "statistics_checked_at": "2026-11-11T15:40:40+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:41+01:00",
       "poster_path": "/ahuoVKlDHO61k7HbcbvUGsOPMiq.jpg",
       "poster_checked_at": "2026-11-12T09:55:20+01:00"
     },
@@ -37344,7 +37344,7 @@
       "fetched_at": "2026-11-11T12:49:08+01:00",
       "vote_count": 16,
       "vote_average": 5.9,
-      "statistics_checked_at": "2026-11-11T15:40:40+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:41+01:00",
       "poster_path": "/nUj6PzDZDDvCPjyRGHgy5DiFAcN.jpg",
       "poster_checked_at": "2026-11-12T09:55:20+01:00"
     },
@@ -37587,7 +37587,7 @@
       "fetched_at": "2026-11-11T12:49:10+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:40+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:41+01:00",
       "poster_path": "/iXYVBc5EzSt2LuI3zgBhVucu4E9.jpg",
       "poster_checked_at": "2026-11-12T09:55:20+01:00"
     },
@@ -37614,7 +37614,7 @@
       "fetched_at": "2026-11-11T12:49:11+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:40+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:42+01:00",
       "poster_path": "/7OrOyDGt5WlzvTiRX4U2Lx9eCYg.jpg",
       "poster_checked_at": "2026-11-12T09:55:21+01:00"
     },
@@ -37894,7 +37894,7 @@
       "fetched_at": "2026-11-11T12:49:13+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:41+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:42+01:00",
       "poster_path": "/k4vBytB6iP5FmADWtMTtr0tvfvw.jpg",
       "poster_checked_at": "2026-11-12T09:55:21+01:00"
     },
@@ -38010,7 +38010,7 @@
       "fetched_at": "2026-11-11T12:49:14+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:41+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:42+01:00",
       "poster_path": "/gPsYctBvmSPlmv8hlm7ImEbUQCL.jpg",
       "poster_checked_at": "2026-11-12T09:55:21+01:00"
     },
@@ -38046,7 +38046,7 @@
       "fetched_at": "2026-11-11T12:49:14+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:41+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:42+01:00",
       "poster_path": "/d1wUbc4Jufy7rUzM8amQAvjRkSX.jpg",
       "poster_checked_at": "2026-11-12T09:55:21+01:00"
     },
@@ -38075,7 +38075,7 @@
       "fetched_at": "2026-11-11T12:49:15+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:42+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:42+01:00",
       "poster_path": null,
       "poster_checked_at": "2026-11-12T09:55:22+01:00"
     },
@@ -38114,7 +38114,7 @@
       "fetched_at": "2026-11-11T12:49:15+01:00",
       "vote_count": 1,
       "vote_average": 7.0,
-      "statistics_checked_at": "2026-11-11T15:40:42+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:43+01:00",
       "poster_path": "/aJvxTjLGJXfs9Kv0Nfa5AdOlLUS.jpg",
       "poster_checked_at": "2026-11-12T09:55:22+01:00"
     },
@@ -39649,9 +39649,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1176962",
       "fetched_at": "2026-11-11T12:49:17+01:00",
-      "vote_count": 65,
-      "vote_average": 7.6,
-      "statistics_checked_at": "2026-11-11T15:40:42+01:00",
+      "vote_count": 66,
+      "vote_average": 7.629,
+      "statistics_checked_at": "2026-11-12T16:32:43+01:00",
       "poster_path": "/flnb7COkqD4dZNZiCacNkai22vz.jpg",
       "poster_checked_at": "2026-11-12T09:55:22+01:00"
     },
@@ -39945,7 +39945,7 @@
       "fetched_at": "2026-11-11T12:49:18+01:00",
       "vote_count": 1,
       "vote_average": 10.0,
-      "statistics_checked_at": "2026-11-11T15:40:42+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:43+01:00",
       "poster_path": "/eXeQscX8CHbp2orMEF33d4OAshA.jpg",
       "poster_checked_at": "2026-11-12T09:55:22+01:00"
     },
@@ -40012,7 +40012,7 @@
       "fetched_at": "2026-11-11T12:49:19+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:43+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:44+01:00",
       "poster_path": "/2LF4F3L4oY16g43iCdXIn7ALkoM.jpg",
       "poster_checked_at": "2026-11-12T09:55:23+01:00"
     },
@@ -40313,7 +40313,7 @@
       "translations_checked": true,
       "vote_count": 1,
       "vote_average": 4.5,
-      "statistics_checked_at": "2026-11-11T15:40:43+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:44+01:00",
       "poster_path": "/yjNjdYCSogOhQAMKShhk0nuGYNn.jpg",
       "poster_checked_at": "2026-11-12T09:55:23+01:00"
     },
@@ -40485,7 +40485,7 @@
       "fetched_at": "2026-11-11T12:49:23+01:00",
       "vote_count": 4,
       "vote_average": 8.2,
-      "statistics_checked_at": "2026-11-11T15:40:43+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:44+01:00",
       "poster_path": "/oWjPRefnIrVCU7KeRyyeJ87cNro.jpg",
       "poster_checked_at": "2026-11-12T09:55:23+01:00"
     },
@@ -40534,7 +40534,7 @@
       "fetched_at": "2026-11-11T12:49:23+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:43+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:44+01:00",
       "poster_path": "/j9rQbXBKAY21X5Y10Oie1XejcV2.jpg",
       "poster_checked_at": "2026-11-12T09:55:23+01:00"
     },
@@ -40656,7 +40656,7 @@
       "fetched_at": "2026-11-11T12:49:24+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:44+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:44+01:00",
       "poster_path": "/vTBWEBx9NRrjJx8V0VajlQL7bnx.jpg",
       "poster_checked_at": "2026-11-12T09:55:23+01:00"
     },
@@ -40688,7 +40688,7 @@
       "fetched_at": "2026-11-11T12:49:25+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:44+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:45+01:00",
       "poster_path": "/wkSaw5nAURqcBHmJ538BiMtpvye.jpg",
       "poster_checked_at": "2026-11-12T09:55:24+01:00"
     },
@@ -40715,7 +40715,7 @@
       "fetched_at": "2026-11-11T12:49:25+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:44+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:45+01:00",
       "poster_path": null,
       "poster_checked_at": "2026-11-12T09:55:24+01:00"
     },
@@ -41122,7 +41122,7 @@
       "fetched_at": "2026-11-11T12:49:29+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:44+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:34+01:00",
       "poster_path": "/mO2OqwqlCcBZ3QYcxIfafW37Uey.jpg",
       "poster_checked_at": "2026-11-12T09:55:24+01:00"
     },
@@ -41395,7 +41395,7 @@
       "fetched_at": "2026-11-11T12:49:29+01:00",
       "vote_count": 87,
       "vote_average": 7.6,
-      "statistics_checked_at": "2026-11-11T15:40:45+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:45+01:00",
       "poster_path": "/cDsSmzUa9pwr3ZWa7XiypywiMdy.jpg",
       "poster_checked_at": "2026-11-12T09:55:25+01:00"
     },
@@ -41449,7 +41449,7 @@
       "fetched_at": "2026-11-11T12:49:30+01:00",
       "vote_count": 99,
       "vote_average": 6.7,
-      "statistics_checked_at": "2026-11-11T15:40:45+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:45+01:00",
       "poster_path": "/6lXdhIj9Ryg33Eizeg2adl6F8Rd.jpg",
       "poster_checked_at": "2026-11-12T09:55:25+01:00"
     },
@@ -42302,7 +42302,7 @@
       "fetched_at": "2026-11-11T12:49:36+01:00",
       "vote_count": 89,
       "vote_average": 6.9,
-      "statistics_checked_at": "2026-11-11T15:40:45+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:45+01:00",
       "poster_path": "/pblghrfHa2XvNE5lDYq2vVMyVoh.jpg",
       "poster_checked_at": "2026-11-12T09:55:25+01:00"
     },
@@ -43316,9 +43316,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/11470",
       "fetched_at": "2026-11-11T12:49:38+01:00",
-      "vote_count": 1600,
+      "vote_count": 1601,
       "vote_average": 4.87,
-      "statistics_checked_at": "2026-11-11T15:40:46+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:46+01:00",
       "poster_path": "/unUZcKhI54Op76n1yhBnG3Z9kJz.jpg",
       "poster_checked_at": "2026-11-12T09:55:25+01:00"
     },
@@ -43737,9 +43737,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/21484",
       "fetched_at": "2026-11-11T12:49:40+01:00",
-      "vote_count": 1508,
-      "vote_average": 7.3,
-      "statistics_checked_at": "2026-11-11T15:40:46+01:00",
+      "vote_count": 1510,
+      "vote_average": 7.316,
+      "statistics_checked_at": "2026-11-12T16:32:46+01:00",
       "poster_path": "/kTVEsT1Jvml9AzUcGRrvB9Q6pSA.jpg",
       "poster_checked_at": "2026-11-12T09:55:26+01:00"
     },
@@ -44186,7 +44186,7 @@
       "fetched_at": "2026-11-11T12:49:42+01:00",
       "vote_count": 113,
       "vote_average": 5.221,
-      "statistics_checked_at": "2026-11-11T15:40:46+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:46+01:00",
       "poster_path": "/wbzblY8OJsXbrIEpXU7IgaxQMEx.jpg",
       "poster_checked_at": "2026-11-12T09:55:26+01:00"
     },
@@ -44644,7 +44644,7 @@
       "fetched_at": "2026-11-11T12:49:46+01:00",
       "vote_count": 127,
       "vote_average": 5.453,
-      "statistics_checked_at": "2026-11-11T15:40:46+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:46+01:00",
       "poster_path": "/caqqCAlRtcWhfmTmUTga0HwDzmj.jpg",
       "poster_checked_at": "2026-11-12T09:55:26+01:00"
     },
@@ -44763,9 +44763,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/10016",
       "fetched_at": "2026-11-11T12:49:47+01:00",
-      "vote_count": 1323,
-      "vote_average": 5.149,
-      "statistics_checked_at": "2026-11-11T15:40:46+01:00",
+      "vote_count": 1325,
+      "vote_average": 5.147,
+      "statistics_checked_at": "2026-11-12T16:32:46+01:00",
       "poster_path": "/cYxBSKEpjfFzvZWkNabgBkMCC5i.jpg",
       "poster_checked_at": "2026-11-12T09:55:26+01:00"
     },
@@ -44792,7 +44792,7 @@
       "fetched_at": "2026-11-11T12:49:47+01:00",
       "vote_count": 4,
       "vote_average": 8.1,
-      "statistics_checked_at": "2026-11-11T15:40:48+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:47+01:00",
       "poster_path": "/cP197uAp0E3AeOBHSOlcaVzS2n4.jpg",
       "poster_checked_at": "2026-11-12T09:55:27+01:00"
     },
@@ -45165,7 +45165,7 @@
       "fetched_at": "2026-11-11T12:49:49+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:48+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:47+01:00",
       "poster_path": "/8qwnjSldZjF3axsjTYgFJquU6lm.jpg",
       "poster_checked_at": "2026-11-12T09:55:27+01:00"
     },
@@ -45329,7 +45329,7 @@
       "fetched_at": "2026-11-11T12:49:50+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:48+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:48+01:00",
       "poster_path": "/yYLldrDwXwlF8a7DA0hhGGlAJNn.jpg",
       "poster_checked_at": "2026-11-12T09:55:27+01:00"
     },
@@ -45976,7 +45976,7 @@
       "fetched_at": "2026-11-11T12:49:52+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:49+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:48+01:00",
       "poster_path": "/lyLZDgacnDkTFWIkWr9iiASLb4z.jpg",
       "poster_checked_at": "2026-11-12T09:55:27+01:00"
     },
@@ -46420,7 +46420,7 @@
       "fetched_at": "2026-11-11T12:49:53+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:49+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:48+01:00",
       "poster_path": "/agQGw5Cux2CYaxI8UHlLbta2bgw.jpg",
       "poster_checked_at": "2026-11-12T09:55:28+01:00"
     },
@@ -46900,7 +46900,7 @@
       "fetched_at": "2026-11-11T12:49:57+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:49+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:48+01:00",
       "poster_path": "/gjeWXZ2O7aD9xoKilncp6K8DmkT.jpg",
       "poster_checked_at": "2026-11-12T09:55:28+01:00"
     },
@@ -47053,9 +47053,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1393615",
       "fetched_at": "2026-11-11T12:49:58+01:00",
-      "vote_count": 7,
+      "vote_count": 8,
       "vote_average": 8.0,
-      "statistics_checked_at": "2026-11-11T15:40:49+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:48+01:00",
       "poster_path": "/rPsBg6qUjYFd0uVaw75dQngXOko.jpg",
       "poster_checked_at": "2026-11-12T09:55:28+01:00"
     },
@@ -47199,7 +47199,7 @@
       "translations_checked": true,
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:50+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:49+01:00",
       "poster_path": "/5uQ3m7Qt4rj73ubBylu0lzElbL8.jpg",
       "poster_checked_at": "2026-11-12T09:55:28+01:00"
     },
@@ -47300,7 +47300,7 @@
       "fetched_at": "2026-11-11T12:49:58+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-11T15:40:50+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:49+01:00",
       "poster_path": "/f2MApfmXnpDnWhLEA0k6bZo8kOl.jpg",
       "poster_checked_at": "2026-11-12T09:55:29+01:00"
     },
@@ -47494,9 +47494,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/99",
       "fetched_at": "2026-11-11T12:54:12+01:00",
-      "vote_count": 2142,
-      "vote_average": 7.6,
-      "statistics_checked_at": "2026-11-11T15:40:29+01:00",
+      "vote_count": 2144,
+      "vote_average": 7.606,
+      "statistics_checked_at": "2026-11-12T16:32:35+01:00",
       "poster_path": "/evvT3HUwoQYoPQXWFO10R6AvhxG.jpg",
       "poster_checked_at": "2026-11-12T09:55:16+01:00"
     },
@@ -47666,7 +47666,7 @@
       "fetched_at": "2026-11-11T12:54:14+01:00",
       "vote_count": 614,
       "vote_average": 7.743,
-      "statistics_checked_at": "2026-11-11T15:40:30+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:36+01:00",
       "poster_path": "/zkmDkZNPM8zgfLgKHEQFLXGrf8Q.jpg",
       "poster_checked_at": "2026-11-12T09:55:17+01:00"
     },
@@ -48339,9 +48339,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1368337",
       "fetched_at": "2026-11-11T15:40:31+01:00",
-      "vote_count": 4612,
-      "vote_average": 8.019,
-      "statistics_checked_at": "2026-11-11T15:40:32+01:00",
+      "vote_count": 4682,
+      "vote_average": 8.0,
+      "statistics_checked_at": "2026-11-12T16:32:37+01:00",
       "poster_path": "/9aeb5U0saB7Tuu0QITaoENZBxFF.jpg",
       "poster_checked_at": "2026-11-12T09:55:17+01:00"
     },
@@ -49039,9 +49039,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1263337",
       "fetched_at": "2026-11-11T15:40:32+01:00",
-      "vote_count": 607,
-      "vote_average": 7.4,
-      "statistics_checked_at": "2026-11-11T15:40:33+01:00",
+      "vote_count": 666,
+      "vote_average": 7.5,
+      "statistics_checked_at": "2026-11-12T16:32:36+01:00",
       "poster_path": "/ya8iLCNyoVpBO7B7JrNJVj3g7tK.jpg",
       "poster_checked_at": "2026-11-12T09:55:18+01:00"
     },
@@ -49392,9 +49392,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1283515",
       "fetched_at": "2026-11-11T15:40:33+01:00",
-      "vote_count": 663,
-      "vote_average": 7.003,
-      "statistics_checked_at": "2026-11-11T15:40:33+01:00",
+      "vote_count": 675,
+      "vote_average": 6.996,
+      "statistics_checked_at": "2026-11-12T16:32:40+01:00",
       "poster_path": "/5j1YUuamobLACkzlkzvWfNuzFNg.jpg",
       "poster_checked_at": "2026-11-12T09:55:29+01:00"
     },
@@ -49793,9 +49793,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1400837",
       "fetched_at": "2026-11-11T15:40:34+01:00",
-      "vote_count": 228,
-      "vote_average": 5.805,
-      "statistics_checked_at": "2026-11-11T15:40:34+01:00",
+      "vote_count": 268,
+      "vote_average": 5.9,
+      "statistics_checked_at": "2026-11-12T16:32:38+01:00",
       "poster_path": "/USCOKXrHBCeeK96qXmS0NyDHYL.jpg",
       "poster_checked_at": "2026-11-12T09:55:18+01:00"
     },
@@ -50512,9 +50512,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1423191",
       "fetched_at": "2026-11-11T15:40:35+01:00",
-      "vote_count": 2015,
+      "vote_count": 2065,
       "vote_average": 7.5,
-      "statistics_checked_at": "2026-11-11T15:40:36+01:00",
+      "statistics_checked_at": "2026-11-12T16:32:38+01:00",
       "poster_path": "/vrLEVObLGbUinE4sC4Lqao2dK0E.jpg",
       "poster_checked_at": "2026-11-12T09:55:18+01:00"
     },
@@ -52074,9 +52074,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1153576",
       "fetched_at": "2026-11-11T15:40:37+01:00",
-      "vote_count": 226,
-      "vote_average": 6.347,
-      "statistics_checked_at": "2026-11-11T15:40:38+01:00",
+      "vote_count": 229,
+      "vote_average": 6.3,
+      "statistics_checked_at": "2026-11-12T16:32:38+01:00",
       "poster_path": "/2kdEEUkbkJe08kTDMCUbBrZ71Aw.jpg",
       "poster_checked_at": "2026-11-12T09:55:18+01:00"
     },
@@ -52584,9 +52584,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1187326",
       "fetched_at": "2026-11-11T15:40:50+01:00",
-      "vote_count": 94,
-      "vote_average": 8.213,
-      "statistics_checked_at": "2026-11-11T15:40:50+01:00",
+      "vote_count": 98,
+      "vote_average": 8.286,
+      "statistics_checked_at": "2026-11-12T16:32:39+01:00",
       "poster_path": "/71G1b8bqa7gzP9yU7q2fgNf2t0D.jpg",
       "poster_checked_at": "2026-11-12T09:55:29+01:00"
     },
@@ -53665,9 +53665,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/969681",
       "fetched_at": "2026-11-11T15:40:51+01:00",
-      "vote_count": 6699,
-      "vote_average": 8.474,
-      "statistics_checked_at": "2026-11-11T15:40:52+01:00",
+      "vote_count": 6743,
+      "vote_average": 8.472,
+      "statistics_checked_at": "2026-11-12T16:32:49+01:00",
       "poster_path": "/tluwRNA7k0XfTtDkdLYKX1KOSCJ.jpg",
       "poster_checked_at": "2026-11-12T09:55:29+01:00"
     },
@@ -84146,6 +84146,192 @@
       "releases": [],
       "source_url": "https://www.themoviedb.org/movie/1728322",
       "fetched_at": "2026-11-12T14:56:04+01:00"
+    },
+    "597639": {
+      "id": "tmdb:597639",
+      "tmdb_id": 597639,
+      "title": "La Odisea de los Lunnis",
+      "original_title": "La Odisea de los Lunnis",
+      "year": 2006,
+      "director": "Paola Callieri, Valentín Villagrasa, Roberto Domingo Maroto",
+      "directors": [
+        "Paola Callieri",
+        "Valentín Villagrasa",
+        "Roberto Domingo Maroto"
+      ],
+      "runtime": 113,
+      "poster_path": "/jaF4cBVBe9NqxwzVHvk79vdtBfR.jpg",
+      "aliases": [
+        "La Odisea de los Lunnis: la película de Ulises"
+      ],
+      "releases": [
+        {
+          "country": "ES",
+          "type": 5,
+          "date": "2006-11-21"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/597639",
+      "fetched_at": "2026-11-12T16:32:37+01:00"
+    },
+    "400136": {
+      "id": "tmdb:400136",
+      "tmdb_id": 400136,
+      "title": "Resident Evil: Vendetta",
+      "original_title": "バイオハザード ヴェンデッタ",
+      "year": 2017,
+      "director": "辻本貴則",
+      "directors": [
+        "辻本貴則"
+      ],
+      "runtime": 97,
+      "poster_path": "/r27iDZNaoyLJyKlD8eNchRtvq8C.jpg",
+      "aliases": [
+        "Baiohazādo Vendetta",
+        "Biohazard: Vendetta",
+        "Resident Evil (Animated) 3 Vendetta",
+        "Resident Evil 3 - Vendetta",
+        "Resident Evil: Vendetta",
+        "惡靈古堡：血仇",
+        "生化危机：复仇",
+        "生化危機：血仇殺戮",
+        "바이오하자드: 벤데타",
+        "바이오해저드: 벤데타"
+      ],
+      "releases": [
+        {
+          "country": "AE",
+          "type": 3,
+          "date": "2017-08-10"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2017-06-08"
+        },
+        {
+          "country": "BR",
+          "type": 5,
+          "date": "2017-07-26"
+        },
+        {
+          "country": "DE",
+          "type": 5,
+          "date": "2017-08-03"
+        },
+        {
+          "country": "ES",
+          "type": 5,
+          "date": "2017-07-26"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2017-06-26"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2021-05-31"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2017-09-06"
+        },
+        {
+          "country": "GB",
+          "type": 4,
+          "date": "2017-07-03"
+        },
+        {
+          "country": "GB",
+          "type": 5,
+          "date": "2017-07-17"
+        },
+        {
+          "country": "IE",
+          "type": 5,
+          "date": "2017-07-17"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "2017-05-27"
+        },
+        {
+          "country": "JP",
+          "type": 5,
+          "date": "2017-09-06"
+        },
+        {
+          "country": "KR",
+          "type": 4,
+          "date": "2017-10-10"
+        },
+        {
+          "country": "NL",
+          "type": 5,
+          "date": "2017-08-16"
+        },
+        {
+          "country": "PL",
+          "type": 4,
+          "date": "2021-05-01"
+        },
+        {
+          "country": "PL",
+          "type": 4,
+          "date": "2019-03-22"
+        },
+        {
+          "country": "PL",
+          "type": 4,
+          "date": "2019-03-29"
+        },
+        {
+          "country": "PL",
+          "type": 6,
+          "date": "2021-05-25"
+        },
+        {
+          "country": "SE",
+          "type": 5,
+          "date": "2017-07-17"
+        },
+        {
+          "country": "SK",
+          "type": 5,
+          "date": "2017-07-19"
+        },
+        {
+          "country": "TW",
+          "type": 3,
+          "date": "2017-06-02"
+        },
+        {
+          "country": "US",
+          "type": 2,
+          "date": "2017-06-19"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2017-06-20"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2017-07-18"
+        },
+        {
+          "country": "VN",
+          "type": 3,
+          "date": "2017-06-13"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/400136",
+      "fetched_at": "2026-11-12T16:32:37+01:00"
     }
   }
 }
