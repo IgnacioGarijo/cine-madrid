@@ -560,14 +560,15 @@
     "name": "Casa de América",
     "url": "https://www.casamerica.es/cine",
     "address": "Plaza de Cibeles, s/n",
-    "lat": null,
-    "lon": null,
+    "lat": 40.419969953227465,
+    "lon": -3.692066131373422,
     "status": "active",
     "inventory_status": "verified_venue",
     "provenance": "https://www.casamerica.es/cine",
     "municipality": "Madrid",
     "adapter": "casa_america",
-    "schedule_label": "Fuente oficial"
+    "schedule_label": "Fuente oficial",
+    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Palacio+de+Linares%2C+Madrid"
   },
   {
     "id": "instituto-frances",
