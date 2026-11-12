@@ -1,6 +1,6 @@
 {
   "version": "0.11.0",
-  "generated_at": "2026-11-12T14:56:04+01:00",
+  "generated_at": "2026-11-12T14:58:35+01:00",
   "coverage_complete": false,
   "cinemas": [
     {
@@ -564,14 +564,15 @@
       "name": "Casa de América",
       "url": "https://www.casamerica.es/cine",
       "address": "Plaza de Cibeles, s/n",
-      "lat": null,
-      "lon": null,
+      "lat": 40.419969953227465,
+      "lon": -3.692066131373422,
       "status": "active",
       "inventory_status": "verified_venue",
       "provenance": "https://www.casamerica.es/cine",
       "municipality": "Madrid",
       "adapter": "casa_america",
-      "schedule_label": "Fuente oficial"
+      "schedule_label": "Fuente oficial",
+      "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Palacio+de+Linares%2C+Madrid"
     },
     {
       "id": "instituto-frances",
@@ -397212,7 +397213,7 @@
       "severity": "info",
       "status": "open",
       "first_seen": "2026-11-11T11:10:18+01:00",
-      "last_seen": "2026-11-12T14:56:04+01:00"
+      "last_seen": "2026-11-12T14:58:35+01:00"
     },
     {
       "id": "c5a24392b2b63d3e4002",
