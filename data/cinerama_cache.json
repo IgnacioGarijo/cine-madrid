@@ -253,5 +253,15 @@
     "director": "Yuval Abraham, Rachel Szor",
     "duration": 80,
     "fetched_day": "2026-11-12"
+  },
+  "https://cinerama.es/peliculas/el-director/": {
+    "director": "Dani de la Orden",
+    "duration": null,
+    "fetched_day": "2026-11-13"
+  },
+  "https://cinerama.es/peliculas/como-robar-un-banco/": {
+    "director": "David Leitch",
+    "duration": 121,
+    "fetched_day": "2026-11-13"
   }
 }
