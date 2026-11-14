@@ -263,5 +263,25 @@
     "director": "David Leitch",
     "duration": 121,
     "fetched_day": "2026-11-13"
+  },
+  "https://cinerama.es/peliculas/rocky/": {
+    "director": "John G. Avildsen",
+    "duration": 119,
+    "fetched_day": "2026-11-14"
+  },
+  "https://cinerama.es/peliculas/the-hunger-games-sunrise-on-the-reaping/": {
+    "director": "Francis Lawrence",
+    "duration": 150,
+    "fetched_day": "2026-11-14"
+  },
+  "https://cinerama.es/peliculas/dune-1984/": {
+    "director": "David Lynch",
+    "duration": 136,
+    "fetched_day": "2026-11-14"
+  },
+  "https://cinerama.es/peliculas/erase-una-vez-en-hollywood/": {
+    "director": "Quentin Tarantino",
+    "duration": 161,
+    "fetched_day": "2026-11-14"
   }
 }
