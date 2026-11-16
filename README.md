@@ -10,6 +10,8 @@ Fuentes oficiales: Cine Paz, Palacio de Hielo, Verdi, Princesa y Renoir, Golem, 
 
 Fuentes alternativas atribuidas: Cinerama para Cinesa, Kinépolis y las cinco salas Yelmo (cuyo lector oficial está preparado, pero GitHub recibe un 403 al comprobar su robots.txt); Publicine complementa metadatos de las dos sedes de Embajadores, cuyas sesiones se leen de su taquilla ReservaEntradas; SensaCine para Palacio de la Prensa. Se conserva la atribución y no se presenta una alternativa como lectura de la web oficial.
 
+FilmAgenda complementa los lectores para las salas identificadas en `config/filmagenda_cinemas.json`. La credencial se guarda en el secreto de GitHub `FILMAGENDA_API_KEY`; el flujo verifica las sumas del manifiesto y de los datos, y nunca envía la credencial al enlace temporal de descarga. Se conservan la atribución CC BY 4.0, los enlaces de FilmAgenda y su fecha de publicación. La fuente es complementaria, puede tener un horizonte de fechas más corto y no confirma por sí sola la identidad en TMDB.
+
 Límites relevantes:
 
 - Palacio de la Prensa: la alternativa ofrece en HTML horarios del día; otras fechas sin horas generan incidencia, no sesiones inventadas.

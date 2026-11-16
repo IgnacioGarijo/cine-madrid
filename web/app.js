@@ -1,8 +1,8 @@
-import {createAccount} from './account.js?v=0.11.1';
-import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.11.1';
+import {createAccount} from './account.js?v=0.11.2';
+import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.11.2';
 
-import {addressCandidates, validOrigin} from './search-utils.js?v=0.11.1';
-import {posterURL} from './poster-utils.js?v=0.11.1';
+import {addressCandidates, validOrigin} from './search-utils.js?v=0.11.2';
+import {posterURL} from './poster-utils.js?v=0.11.2';
 
 const $ = selector => document.querySelector(selector);
 const all = selector => [...document.querySelectorAll(selector)];
@@ -460,6 +460,9 @@ async function boot() {
       $('#sources').append(row);
     }
     if (data.filmagenda?.attribution) {
+      const state=data.filmagenda.status === 'ok' ? 'Lectura correcta' : 'No se pudo actualizar';
+      const publication=data.filmagenda.published_at ? new Date(data.filmagenda.published_at).toLocaleString('es-ES') : 'fecha desconocida';
+      $('#sources').append(el('p',`FilmAgenda · ${state} · Datos publicados: ${publication}`,'fine'));
       const credit=el('p',data.filmagenda.attribution+' Datos adaptados y combinados con otras fuentes.','fine');
       credit.append(document.createTextNode(' · '),link('Licencia CC BY 4.0 ↗','https://creativecommons.org/licenses/by/4.0/'));
       $('#sources').append(credit);

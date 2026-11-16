@@ -51,6 +51,14 @@ test('offline navigation opens the saved app shell', async () => {
   const worker = await workerHarness();await worker.lifecycle('install');worker.setOffline(true);
   assert.equal(await (await worker.request('https://example.test/cine-madrid/','navigate')).text(),'shell');
 });
+test('the offline shell caches the same app revision referenced by the page', async () => {
+  const html=await fs.readFile(new URL('../web/index.html',import.meta.url),'utf8');
+  const match=html.match(/src="(app\.js\?v=[^"]+)"/);
+  assert.ok(match);
+  const worker=await workerHarness();await worker.lifecycle('install');worker.setOffline(true);
+  const url=new URL(match[1],'https://example.test/cine-madrid/').href;
+  assert.equal(await (await worker.request(url)).text(),'shell');
+});
 test('install manifest is relative to the GitHub Pages project and icons exist at actual sizes', async () => {
   const manifest = JSON.parse(await fs.readFile(new URL('../web/manifest.webmanifest',import.meta.url),'utf8'));
   const base='https://example.test/cine-madrid/manifest.webmanifest';

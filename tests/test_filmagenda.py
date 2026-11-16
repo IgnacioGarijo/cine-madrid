@@ -8,6 +8,7 @@ from unittest.mock import patch
 from src.filmagenda import BASE, FilmAgendaError, audit, download
 from src.filmagenda_merge import convert, merge
 from src.core import Incidents
+from src.tmdb import classify
 
 
 class Response:
@@ -99,6 +100,30 @@ class FilmAgendaTests(unittest.TestCase):
         row={'cinema_id':'paz','start':'2026-11-20T20:00:00+01:00','version':'VO'}
         result,count=merge([dict(row,id='1',movie_id='a')],[dict(row,id='2',movie_id='b')],[a,b])
         self.assertEqual(count,0);self.assertEqual(len(result),2)
+
+    def test_matching_session_can_corroborate_verified_identity_and_reissue(self):
+        original={'id':'a','title':'DOMINGO DE CLÁSICOS: MUERTE ENTRE LAS FLORES (VOSE)',
+                  'director':'','identity_status':'needs_review','identity_reason':'missing_director'}
+        provider={'id':'b','title':'Muerte entre las flores','director':'Ethan Coen, Joel Coen',
+                  'canonical_id':'tmdb:379','tmdb_id':379,'identity_status':'verified','year':1990,
+                  'tmdb_url':'https://www.themoviedb.org/movie/379',
+                  'tmdb_releases':[{'type':3,'date':'1990-10-26'}]}
+        row={'cinema_id':'embajadores','start':'2026-11-29T12:00:00+01:00','version':'VO'}
+        result,count=merge([dict(row,id='1',movie_id='a')],
+            [dict(row,id='2',movie_id='b',source_url='https://www.filmagenda.es/s/1?destination=film')],[original,provider])
+        self.assertEqual(count,1);self.assertEqual(len(result),1)
+        self.assertEqual(original['canonical_id'],'tmdb:379');self.assertEqual(original['identity_transferred_from'],'filmagenda')
+        category,_=classify({'releases':original['tmdb_releases'],'source_url':original['tmdb_url']},
+            date(2026,11,29),'unclassified',{'repertory_min_days':365,'current_release_max_days':90})
+        self.assertEqual(category,'repertory')
+
+    def test_conflicting_candidate_identities_remain_unverified(self):
+        original={'id':'a','title':'Akira','identity_status':'needs_review'}
+        b={'id':'b','title':'Akira','canonical_id':'tmdb:1','identity_status':'verified'}
+        c={'id':'c','title':'Akira','canonical_id':'tmdb:2','identity_status':'verified'}
+        row={'cinema_id':'paz','start':'2026-11-20T20:00:00+01:00','version':'VO','source_url':'https://www.filmagenda.es/s/1?destination=film'}
+        result,count=merge([dict(row,id='1',movie_id='a')],[dict(row,id='2',movie_id='b'),dict(row,id='3',movie_id='c')],[original,b,c])
+        self.assertEqual(original['identity_status'],'needs_review');self.assertEqual(count,0);self.assertEqual(len(result),3)
 
 
 if __name__=='__main__':unittest.main()

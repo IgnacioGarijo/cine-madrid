@@ -132,11 +132,25 @@ def run(refresh=True, newsletter=False, posters_only=False):
         write_json(ROOT/'data/tmdb_cache.json',cache)
     if refresh and filmagenda_meta:
         from .filmagenda_merge import merge
+        from .tmdb import classify
         primary=[s for s in sessions if s.get('provider')!='filmagenda']
         extra=[s for s in sessions if s.get('provider')=='filmagenda']
         sessions,duplicates=merge(primary,extra,movies)
         filmagenda_meta['duplicates_merged']=duplicates
         print(f"FilmAgenda: {duplicates} coincidencias unificadas con otras fuentes",flush=True)
+        transferred={m['id']:m for m in movies if m.get('identity_transferred_from')=='filmagenda'}
+        for incident_id,issue in list(incidents.current.items()):
+            if issue['source_id']=='tmdb' and issue['entity'] in transferred and issue['code'].startswith('identity_'):
+                del incidents.current[incident_id]
+        for session in sessions:
+            movie=transferred.get(session['movie_id'])
+            if not movie:continue
+            identity={'releases':movie.get('tmdb_releases',[]),'source_url':movie.get('tmdb_url','')}
+            category,evidence=classify(identity,datetime.fromisoformat(session['start']).date(),
+                session.get('source_category',session.get('category','unclassified')),rules)
+            session.update(category=category,classification_evidence=evidence)
+            if category=='unclassified':
+                incidents.add('tmdb','classification_pending',movie['id'],'Película identificada; falta confirmar el contexto del estreno: '+movie['title'],movie['source_url'],'info')
     movie_map={m['id']:m for m in movies}
     for s in sessions:
         m=movie_map.get(s['movie_id'],{})

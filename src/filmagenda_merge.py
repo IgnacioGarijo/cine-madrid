@@ -1,6 +1,7 @@
 """Normalize FilmAgenda showtimes and merge them without replacing cinema data."""
 from collections import defaultdict
 from datetime import datetime
+import re
 from urllib.parse import urlparse, parse_qs
 
 from .core import MADRID, normalize, clean_title
@@ -92,15 +93,49 @@ def same_film(a,b):
     return True
 
 
+def exact_titles(movie):
+    """Known programme prefixes and versions are not part of a film's title."""
+    values=[movie.get('title',''),movie.get('canonical_title',''),movie.get('original_title',''),*(movie.get('aliases') or [])]
+    result=set()
+    for value in values:
+        if not isinstance(value,str):continue
+        value=re.sub(r'^(?:DOMINGO DE CLÁSICOS|CICLO DE CINE PERUANO|PALESTINA EN PANTALLA|ESPACIO QUEER|LACA Y PALOMITAS)\s*:\s*','',value,flags=re.I)
+        value=re.sub(r'\s*\((?:VOSE|VO|VE|DOBLADA AL ESPAÑOL)\)\s*',' ',value,flags=re.I)
+        normalized=normalize(value)
+        if len(normalized)>=5:result.add(normalized)
+    return result
+
+
 def merge(primary, extra, movies):
     """Drop only matched same-cinema, same-time works; preserve conflicting versions."""
     by_slot=defaultdict(list);by_id={m['id']:m for m in movies}
     for session in primary:by_slot[(session['cinema_id'],session['start'])].append(session)
+    candidates=defaultdict(dict)
+    for session in extra:
+        film=by_id.get(session['movie_id'],{})
+        if film.get('identity_status')!='verified' or not film.get('canonical_id'):continue
+        for existing in by_slot[(session['cinema_id'],session['start'])]:
+            old=by_id.get(existing['movie_id'],{})
+            if old.get('identity_status')=='verified' or not same_film(old,film) or not exact_titles(old)&exact_titles(film):continue
+            candidates[existing['movie_id']][film['canonical_id']]=(film,session)
+    identity_fields=['canonical_id','tmdb_id','canonical_title','original_title','year','aliases','tmdb_url',
+                     'tmdb_runtime','tmdb_releases','vote_count','vote_average','poster_path']
+    for movie_id,choices in candidates.items():
+        if len(choices)!=1:continue
+        film,session=next(iter(choices.values()));old=by_id[movie_id]
+        for field in identity_fields:
+            if field in film:old[field]=film[field]
+        old['identity_status']='verified'
+        old['identity_evidence']={'rule':'verified_film_and_matching_cinema_session','provider':'FilmAgenda',
+                                  'source_url':session['source_url'],'film_evidence':film.get('identity_evidence')}
+        old['identity_transferred_from']='filmagenda'
+        old.pop('identity_reason',None);old.pop('identity_candidates',None)
     added=[];duplicates=0;superseded=set()
     for session in extra:
         film=by_id.get(session['movie_id'],{});matches=[]
         for existing in by_slot[(session['cinema_id'],session['start'])]:
             old=by_id.get(existing['movie_id'],{})
+            if len(candidates.get(existing['movie_id'],{}))>1:continue
             v1=existing.get('version');v2=session.get('version')
             if v1=='Doblada' and v2 in ('VO','VOSE') or v2=='Doblada' and v1 in ('VO','VOSE'):continue
             if same_film(old,film):matches.append(existing)
