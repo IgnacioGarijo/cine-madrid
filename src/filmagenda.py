@@ -121,6 +121,12 @@ def audit(pointer, manifest, records, today=None):
     lines.extend('Etiqueta '+tag+': '+str(count) for tag,count in sorted(annotations.items()))
     lines.extend('Sala '+str(venue_id)+' | '+str(name)+' | '+str(count) for (venue_id,name),count in sorted(venues.items()))
     lines.extend('Pase lejano '+day+' | '+title+' | '+name for day,title,name in sorted(future,reverse=True)[:15])
+    notices=0
+    for record in records:
+        for screening in record.get('screenings') or []:
+            for annotation in screening.get('annotations') or []:
+                if isinstance(annotation,dict) and annotation.get('tag')=='notice' and notices<3:
+                    lines.append('Ejemplo etiqueta '+json.dumps(annotation,ensure_ascii=False));notices+=1
     for record in records:
         film=record.get('film') or {}; titles=film.get('title') or {}
         title=titles.get('display') or titles.get('es') or titles.get('original') or ''
