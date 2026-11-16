@@ -119,6 +119,13 @@ def audit(pointer, manifest, records, today=None):
     lines.extend('Mes '+month+': '+str(count) for month,count in sorted(months.items()))
     lines.extend('Sala '+str(venue_id)+' | '+str(name)+' | '+str(count) for (venue_id,name),count in sorted(venues.items()))
     lines.extend('Pase lejano '+day+' | '+title+' | '+name for day,title,name in sorted(future,reverse=True)[:15])
+    for record in records:
+        film=record.get('film') or {}; titles=film.get('title') or {}
+        title=titles.get('display') or titles.get('es') or titles.get('original') or ''
+        if title.casefold() not in ('iron boy','muerte entre las flores','la bola negra'): continue
+        directors=[c for c in (film.get('research') or {}).get('credits',[]) if 'direct' in str(c.get('department','')).casefold() or 'director' in str(c.get('role','')).casefold()]
+        example=next((s for s in record.get('screenings',[]) if 'embajadores' in str((s.get('theater') or {}).get('id',''))),None)
+        lines.append('Ejemplo '+json.dumps({'film_id':film.get('id'),'title':titles,'year':film.get('year'),'tmdb_id':film.get('tmdb_id'),'directors':directors[:2],'screening':example},ensure_ascii=False))
     return '\n'.join(lines)
 
 
