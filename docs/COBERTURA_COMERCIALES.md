@@ -11,7 +11,7 @@ Ambos se verificaron mediante `Reader`/`Fetcher`, sin ejecutar el pipeline; `pyt
 
 ## Yelmo: cartelera oficial y alternativa
 
-Desde el 16 de noviembre de 2026 se consultan los horarios y las fichas del servicio de datos de la web oficial para Ideal, Islazul, Palafox, Plenilunio y La Vaguada, incluidas las fechas anunciadas con antelación. Si falla la lectura oficial, se registra una incidencia y se recurre a Cinerama, debidamente atribuido. Los siguientes datos de Cinerama corresponden a la comprobación anterior del 12 de noviembre.
+El lector de los horarios y fichas del servicio de datos oficial se ha comprobado localmente el 16 de noviembre de 2026 para Ideal, Islazul, Palafox, Plenilunio y La Vaguada, incluidas fechas anunciadas con antelación. Sin embargo, GitHub recibe un 403 al consultar robots.txt de la web de Yelmo, por lo que no puede usar actualmente ese lector. En ese caso se registra una incidencia y se recurre a Cinerama, debidamente atribuido. Los siguientes datos de Cinerama corresponden a la comprobación anterior del 12 de noviembre.
 
 El lector existente `cinerama` puede utilizarse con `booking_origins: ["https://cineyelmo.com/"]`, `schedule_label: "Cinerama · fuente alternativa"` y `reading_note: "Horarios de Cinerama (fuente alternativa); entradas enlazadas a la cadena original."`. Se comprobó cada cabecera, fechas completas, enlaces de compra y número de enlaces el 12 de noviembre. Los resultados y formatos se atribuyen a Cinerama; no se atribuye IMAX a pases sin indicación explícita.
 
