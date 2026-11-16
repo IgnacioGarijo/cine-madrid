@@ -2,12 +2,23 @@ import unittest
 from datetime import date
 from src.core import Incidents,trusted_identity
 from src.sources import parse_paz,parse_day,event_tags,classic_members
-from src.pipeline import calendar, same_session_from_other_source
+from src.pipeline import calendar, same_session_from_other_source, classify_recent_unresolved
 
 def html(title='Deseando amar', director='Wong Kar-wai', hour='20:00', day='Lunes 16/11'):
     return f'''<div class="rotulo_dia" data-num="0">{day}</div><div class="cines-0"><div class="horarios"><div class="peli"><a href="/es/detalles/123_1_Z_1/test"><b>{title}</b></a><p>de {director}</p><p>98 minutos</p></div><div class="horas"><a data-ho="777" href="https://tickets.example/a"><span>VOSE</span>{hour}</a></div></div></div>'''
 
 class PipelineTests(unittest.TestCase):
+    def test_recent_unresolved_uses_explicit_year_without_verifying_identity(self):
+        row={'start':'2026-11-17T20:00:00+01:00','category':'unclassified'}
+        classify_recent_unresolved(row,{'identity_status':'needs_review','source_year':2025})
+        self.assertEqual(row['category'],'premiere');self.assertTrue(row['classification_evidence']['provisional'])
+        row={'start':'2026-11-17T20:00:00+01:00','category':'unclassified'}
+        classify_recent_unresolved(row,{'identity_status':'needs_review','year':2025})
+        self.assertEqual(row['category'],'unclassified')
+        row={'start':'2026-11-17T20:00:00+01:00','category':'repertory'}
+        classify_recent_unresolved(row,{'identity_status':'verified','year':2025})
+        self.assertEqual(row['category'],'repertory')
+
     def test_stale_session_dedup_preserves_different_versions_and_rooms(self):
         previous={'source_url':'https://old.example/','version':'VOSE','room':'1'}
         self.assertTrue(same_session_from_other_source(previous,[{'source_url':'https://new.example/','version':'Sin especificar','room':''}]))

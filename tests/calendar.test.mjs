@@ -45,7 +45,8 @@ test('IMAX filter uses the individual session format, not the cinema facilities'
 
 test('multiple cinemas and the combined repertory/events filter preserve their union', () => {
   const source=[{id:1,cinema_id:'a',category:'repertory'},{id:2,cinema_id:'b',category:'premiere',special_tags:['live_music']},{id:3,cinema_id:'c',category:'repertory'},{id:4,cinema_id:'a',category:'premiere'}].map(s=>({...s,start:'2026-11-12T20:00:00+01:00'}));
-  assert.deepEqual(filterSessions(source,{cinemas:['a','b'],category:'repertory_events'},{today:'2026-11-11'}).map(s=>s.id),[1,2]);
+  assert.deepEqual(filterSessions(source,{cinemas:['a','b'],category:'repertory_events'},{today:'2026-11-11'}).map(s=>s.id),[1]);
+  assert.deepEqual(filterSessions(source,{cinemas:['a','b'],category:'premiere'},{today:'2026-11-11'}).map(s=>s.id),[2,4]);
 });
 
 test('category selections combine their union and an empty selection shows no films',()=>{

@@ -80,14 +80,24 @@ def identity_match(source, candidates):
 
 def classify(movie, session_day, source_category, config):
     """Only commercial theatrical dates count; a festival première is not enough."""
-    theatrical = [date.fromisoformat(r['date']) for r in movie.get('releases',[])
-                  if r['type'] in (2,3) and r.get('date') and r['date']<=session_day.isoformat()]
+    releases=[r for r in movie.get('releases',[]) if r['type'] in (2,3) and r.get('date') and r['date']<=session_day.isoformat()]
+    theatrical = [date.fromisoformat(r['date']) for r in releases]
     earliest = min(theatrical) if theatrical else None
+    spanish=[date.fromisoformat(r['date']) for r in releases if r.get('country')=='ES']
+    first_spanish=min(spanish) if spanish else None
+    if source_category=='repertory':
+        return 'repertory', {'rule':'cinema_classic_programme'}
+    if first_spanish and (session_day-first_spanish).days<=config['current_release_max_days']:
+        year=movie.get('year')
+        if not earliest or (session_day-earliest).days<config['repertory_min_days'] or isinstance(year,int) and session_day.year-1<=year<=session_day.year:
+            return 'premiere', {'rule':'recent_first_known_spanish_theatrical_release','first_spanish_theatrical_date':first_spanish.isoformat(),
+                                'first_theatrical_date':earliest.isoformat() if earliest else None,'tmdb_url':movie['source_url']}
+        # A missing older Spanish release can make a restoration look like a first release.
+        return 'unclassified', {'rule':'spanish_release_history_needs_review','first_spanish_theatrical_date':first_spanish.isoformat(),
+                                'first_theatrical_date':earliest.isoformat(),'tmdb_url':movie['source_url']}
     if earliest and (session_day-earliest).days>=config['repertory_min_days']:
         return 'repertory', {'rule':'prior_commercial_theatrical_release','first_theatrical_date':earliest.isoformat(),
                              'minimum_days':config['repertory_min_days'],'tmdb_url':movie['source_url']}
-    if source_category=='repertory':
-        return 'repertory', {'rule':'cinema_classic_programme'}
     if source_category=='premiere':
         return 'premiere', {'rule':'cinema_premiere_label','first_theatrical_date':earliest.isoformat() if earliest else None}
     # An identifiable work in its initial release window stays in current releases.

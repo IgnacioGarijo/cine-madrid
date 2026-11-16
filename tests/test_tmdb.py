@@ -74,13 +74,19 @@ class TMDBTests(unittest.TestCase):
         m=movie(releases=[{'country':'FR','type':1,'date':'2020-05-01'}])
         self.assertEqual(classify(m,date(2026,11,12),'unclassified',CONFIG)[0],'unclassified')
 
-    def test_first_distribution_in_spain_can_still_be_repertory(self):
-        m=movie(releases=[{'country':'JP','type':3,'date':'1988-07-16'},{'country':'ES','type':3,'date':'2026-11-12'}])
-        self.assertEqual(classify(m,date(2026,11,12),'premiere',CONFIG)[0],'repertory')
+    def test_recent_film_first_released_in_spain_is_premiere(self):
+        m=movie(title='Ratones al ataque',year=2025,releases=[{'country':'NO','type':3,'date':'2025-11-07'},{'country':'ES','type':3,'date':'2026-11-13'}])
+        category,evidence=classify(m,date(2026,11,17),'unclassified',CONFIG)
+        self.assertEqual(category,'premiere');self.assertEqual(evidence['first_spanish_theatrical_date'],'2026-11-13')
 
     def test_recent_reissue_does_not_erase_original_release(self):
-        m=movie(releases=[{'country':'JP','type':3,'date':'1988-07-16'},{'country':'ES','type':3,'date':'2026-11-01'}])
+        m=movie(releases=[{'country':'JP','type':3,'date':'1988-07-16'},{'country':'ES','type':3,'date':'1990-01-01'},{'country':'ES','type':3,'date':'2026-11-01'}])
         self.assertEqual(classify(m,date(2026,11,12),'unclassified',CONFIG)[1]['first_theatrical_date'],'1988-07-16')
+
+    def test_older_film_recent_spanish_date_without_earlier_spanish_history_is_ambiguous(self):
+        m=movie(releases=[{'country':'JP','type':3,'date':'1988-07-16'},{'country':'ES','type':3,'date':'2026-11-12'}])
+        self.assertEqual(classify(m,date(2026,11,12),'unclassified',CONFIG)[0],'unclassified')
+        self.assertEqual(classify(m,date(2026,11,12),'repertory',CONFIG)[0],'repertory')
 
     def test_intermediate_window_is_left_for_context_review(self):
         m=movie(releases=[{'country':'ES','type':3,'date':'2026-03-01'}])

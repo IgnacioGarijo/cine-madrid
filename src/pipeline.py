@@ -22,6 +22,15 @@ def same_session_from_other_source(previous, candidates):
     return False
 
 
+def classify_recent_unresolved(session, movie):
+    if session.get('category')!='unclassified':return
+    year=movie.get('year') if movie.get('identity_status')=='verified' else movie.get('source_year')
+    session_year=datetime.fromisoformat(session['start']).year
+    if isinstance(year,int) and not isinstance(year,bool) and session_year-1<=year<=session_year:
+        session['category']='premiere'
+        session['classification_evidence']={'rule':'recent_film_year_provisional','film_year':year,'provisional':True}
+
+
 def run(refresh=True, newsletter=False, posters_only=False):
     path=ROOT/'data/public.json'
     old=read_json(path,{})
@@ -164,6 +173,7 @@ def run(refresh=True, newsletter=False, posters_only=False):
         s['source_work_id']=m.get('source_work_id')
         # Explicit classic programmes remain independent classification evidence.
         if m.get('category'): s['category']=m['category']
+        classify_recent_unresolved(s,m)
         if refresh and m.get('identity_status')=='verified' and 'classification_evidence' not in s:
             previous_session=next((p for p in old.get('sessions',[]) if p['id']==s['id']),None)
             if previous_session and m['id'] in unchanged_ids:
