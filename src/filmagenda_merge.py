@@ -57,11 +57,19 @@ def convert(records, mapping, cinema_ids, today, incidents):
             annotations=show.get('annotations') or []
             detail=' '.join(str(a.get(k,'')) for a in annotations if isinstance(a,dict) for k in ('tag','label_es','detail_es'))
             tags=event_tags(detail)
+            for annotation in annotations:
+                if not isinstance(annotation,dict):continue
+                tag=annotation.get('tag')
+                if tag=='live_music' and 'live_music' not in tags:tags.append('live_music')
+                if tag=='coloquio' and 'discussion' not in tags:tags.append('discussion')
+                if tag=='presentation' and annotation.get('guests') and 'guests' not in tags:tags.append('guests')
+            uncertain=any(isinstance(a,dict) and a.get('tag')=='notice' and 'sinconfirmar' in normalize(str(a.get('label_es',''))) for a in annotations)
             sid='filmagenda:session:'+str(native)
             sessions[sid]={'id':sid,'source_id':cid,'cinema_id':cid,'movie_id':mid,'title':title.strip(),'director':director,
                 'start':start.isoformat(),'duration_minutes':duration,'booking_url':show['screening_url'],
                 'source_url':show['screening_url'],'version':version,'room':'','format':None,'status':'confirmed',
-                'stale':False,'source_category':'unclassified','category':'unclassified','special_tags':tags,'provider':'filmagenda'}
+                'stale':False,'source_category':'unclassified','category':'unclassified','special_tags':tags,'provider':'filmagenda',
+                'source_warning':uncertain}
             films[mid]=movie
     if invalid:incidents.add('filmagenda','partial_read','records',f'No se han incorporado {invalid} registros de FilmAgenda con datos incompletos o no reconocidos.','https://data.filmagenda.es/docs')
     if not sessions:raise ValueError('No hay sesiones reconocibles de los cines configurados.')
@@ -97,6 +105,12 @@ def merge(primary, extra, movies):
             if v1=='Doblada' and v2 in ('VO','VOSE') or v2=='Doblada' and v1 in ('VO','VOSE'):continue
             if same_film(old,film):matches.append(existing)
         if any(not x.get('stale') for x in matches):
+            for existing in matches:
+                if existing.get('stale'):continue
+                new_tags=[tag for tag in session.get('special_tags',[]) if tag not in existing.get('special_tags',[])]
+                if new_tags:
+                    existing['special_tags']=list(dict.fromkeys([*existing.get('special_tags',[]),*new_tags]))
+                    existing['annotation_source']='filmagenda'
             duplicates+=1
             continue
         superseded.update(x['id'] for x in matches)

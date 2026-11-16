@@ -69,12 +69,14 @@ class FilmAgendaTests(unittest.TestCase):
             'research':{'credits':[{'department':'directing','role':'director','name':'Katsuhiro Otomo'}]}},
             'screenings':[{'id':11,'film_id':42,'theater':{'id':'palafox','name':'Palafox'},
                 'showtime_local':'2027-01-20T19:30:00','timezone':'Europe/Madrid','version':'vose',
-                'screening_url':'https://www.filmagenda.es/s/11?destination=film&utm_source=partner_api'},
+                'screening_url':'https://www.filmagenda.es/s/11?destination=film&utm_source=partner_api',
+                'annotations':[{'tag':'notice','label_es':'Datos sin confirmar'},{'tag':'live_music','label_es':'Música'}]},
                 {'id':12,'film_id':42,'theater':{'id':'different'},'showtime_local':'2027-01-20T19:30:00',
                  'timezone':'Europe/Madrid','version':None,'screening_url':'https://www.filmagenda.es/s/12?destination=film'}]}
         sessions,movies=convert([record],{'palafox':'our-palafox'},{'our-palafox'},date(2026,11,16),Incidents())
         self.assertEqual(len(sessions),1);self.assertEqual(sessions[0]['cinema_id'],'our-palafox')
         self.assertEqual(sessions[0]['version'],'VO');self.assertEqual(sessions[0]['start'],'2027-01-20T19:30:00+01:00')
+        self.assertTrue(sessions[0]['source_warning']);self.assertIn('live_music',sessions[0]['special_tags'])
         self.assertEqual(movies[0]['source_year'],1988);self.assertEqual(movies[0]['director'],'Katsuhiro Otomo')
 
     def test_merge_preserves_source_priority_and_distinct_films_or_versions(self):
@@ -83,10 +85,11 @@ class FilmAgendaTests(unittest.TestCase):
                {'id':'another','title':'Otra película','director':'Otro'}]
         base={'cinema_id':'paz','start':'2026-11-20T20:00:00+01:00','version':'VOSE','stale':False}
         primary=[dict(base,id='primary',movie_id='p')]
-        extra=[dict(base,id='same',movie_id='f',version='VO'),dict(base,id='different-version',movie_id='f',version='Doblada'),
+        extra=[dict(base,id='same',movie_id='f',version='VO',special_tags=['discussion']),dict(base,id='different-version',movie_id='f',version='Doblada'),
                dict(base,id='different-film',movie_id='another')]
         result,count=merge(primary,extra,films)
         self.assertEqual(count,1);self.assertEqual([x['id'] for x in result],['primary','different-version','different-film'])
+        self.assertIn('discussion',result[0]['special_tags']);self.assertEqual(result[0]['annotation_source'],'filmagenda')
         result,count=merge([dict(primary[0],stale=True)],extra[:1],films)
         self.assertEqual(count,0);self.assertEqual([x['id'] for x in result],['same'])
 

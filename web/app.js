@@ -119,9 +119,11 @@ function renderSessions(target, sessions, {contextSessions=sessions}={}) {
           const version = [item.version !== 'Sin especificar' ? item.version : '',item.format,item.room ? 'Sala '+item.room : ''].filter(Boolean).join(' · ');
           if (version) slot.append(el('small',version));
           if (item.provider === 'filmagenda') slot.append(el('small','Fuente: FilmAgenda'));
+          else if (item.annotation_source === 'filmagenda') slot.append(el('small','Evento: FilmAgenda'));
+          if (item.source_warning) slot.append(el('small','Datos sin confirmar'));
           if (special) slot.append(el('span',item.special_tags.map(eventName).join(' · '),'event-label'));
           if (item.stale || offlineData) slot.append(el('small','Consultar cambios ↗'));
-          if (!item.stale && item.duration_minutes) slot.append(link('+ Calendario',gcal(item,cinema),'add-calendar'));
+          if (!item.stale && !item.source_warning && item.duration_minutes) slot.append(link('+ Calendario',gcal(item,cinema),'add-calendar'));
           else slot.append(link('Consultar ficha',item.source_url,'add-calendar'));
           slots.append(slot);
         }
