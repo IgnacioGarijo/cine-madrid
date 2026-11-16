@@ -132,7 +132,7 @@ def run(refresh=True, newsletter=False, posters_only=False):
     if refresh:
         cache=read_json(ROOT/'data/tmdb_cache.json',{})
         rules=read_json(ROOT/'config/classification.json')
-        tmdb_status=enrich(movies,sessions,cache,rules,incidents)
+        tmdb_status=enrich(movies,sessions,cache,rules,incidents,review_decisions=read_json(ROOT/'data/copilot_review.json',{}))
         write_json(ROOT/'data/tmdb_cache.json',cache)
         if tmdb_status['status']=='ok':checked.add('tmdb')
     if posters_only:

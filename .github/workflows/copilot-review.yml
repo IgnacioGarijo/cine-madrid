@@ -1,0 +1,76 @@
+name: Revisar identidades con Copilot
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 15 * * 4'
+permissions: {}
+concurrency:
+  group: pages-and-data
+  cancel-in-progress: false
+jobs:
+  suggest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      copilot-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: pip install -r requirements.txt
+      - name: Preparar casos
+        id: cases
+        run: |
+          python -m src.copilot_review prepare --directory "$RUNNER_TEMP/review"
+          echo "count=$(python -c 'import json,sys; print(len(json.load(open(sys.argv[1]))))' "$RUNNER_TEMP/review/batch.json")" >> "$GITHUB_OUTPUT"
+      - if: steps.cases.outputs.count != '0'
+        run: npm install -g @github/copilot
+      - name: Revisar un máximo de 20 casos
+        if: steps.cases.outputs.count != '0'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          copilot -p "$(cat "$RUNNER_TEMP/review/prompt.txt")" -s --no-ask-user \
+            --deny-tool='read,write,shell' --excluded-tools='web_fetch,web_search,task' \
+            --max-ai-credits 30 > "$RUNNER_TEMP/review/response.txt"
+      - if: steps.cases.outputs.count == '0'
+        run: echo '{"decisions":[]}' > "$RUNNER_TEMP/review/response.txt"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: revision-copilot
+          path: |
+            ${{ runner.temp }}/review/batch.json
+            ${{ runner.temp }}/review/response.txt
+          retention-days: 7
+  validate:
+    needs: suggest
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          name: revision-copilot
+          path: ${{ runner.temp }}/review
+      - name: Contrastar sugerencias con TMDB
+        run: python -m src.copilot_review validate --directory "$RUNNER_TEMP/review"
+      - name: Guardar decisiones contrastadas
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add data/copilot_review.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Guardar revisión de identidades"
+            git push
+          fi

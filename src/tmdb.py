@@ -227,7 +227,7 @@ class Client:
         candidates=[{'id':m['id'],'title':m['title'],'year':m.get('year'),'director':m['director'],'source_url':m['source_url']} for m in seen.values()]
         return None, 'not_found' if not seen else identity_match(source,list(seen.values()))[1], candidates
 
-def enrich(movies,sessions,cache,config,incidents,token=None):
+def enrich(movies,sessions,cache,config,incidents,token=None,review_decisions=None):
     token=token if token is not None else os.getenv('TMDB_READ_TOKEN','')
     client=Client(token,cache,config.get('request_budget',300))
     errors=[]; matched=0
@@ -241,6 +241,10 @@ def enrich(movies,sessions,cache,config,incidents,token=None):
             incidents.add('tmdb',code,'service','No se pudo consultar TMDB: '+code+'. Se conservan las identidades verificadas disponibles.','https://www.themoviedb.org/','error' if code=='authentication_failed' else 'warning')
             if code in ('not_configured','authentication_failed','request_budget'):break
             continue
+        if not identity and review_decisions:
+            from .copilot_review import reviewed_identity
+            identity,evidence_from_review=reviewed_identity(movie,candidates,cache,review_decisions)
+            if identity:evidence=evidence_from_review
         if not identity:
             for field in ['canonical_id','tmdb_id','identity_evidence','canonical_title','original_title','aliases','tmdb_url','year','poster_path']:
                 movie.pop(field,None)
