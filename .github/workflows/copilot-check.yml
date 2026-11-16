@@ -1,0 +1,19 @@
+name: Comprobar acceso a Copilot
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  copilot-requests: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install -g @github/copilot
+      - name: Comprobar solicitud limitada
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: copilot -p 'Responde solo con la palabra OK.' -s --no-ask-user --max-ai-credits 30
