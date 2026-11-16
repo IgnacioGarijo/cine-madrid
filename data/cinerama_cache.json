@@ -288,5 +288,20 @@
     "director": "Alejandro Amenábar",
     "duration": 126,
     "fetched_day": "2026-11-16"
+  },
+  "https://cinerama.es/peliculas/el-mal-padre/": {
+    "director": "Roberto Bueso",
+    "duration": null,
+    "fetched_day": "2026-11-17"
+  },
+  "https://cinerama.es/peliculas/iron-boy-le-corset/": {
+    "director": "Louis Clichy",
+    "duration": 90,
+    "fetched_day": "2026-11-17"
+  },
+  "https://cinerama.es/peliculas/rose/": {
+    "director": "Markus Schleinzer",
+    "duration": 94,
+    "fetched_day": "2026-11-17"
   }
 }

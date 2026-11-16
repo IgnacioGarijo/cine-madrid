@@ -9765,6 +9765,45 @@
         }
       ],
       "fetched_at": "2026-11-16T17:40:21+01:00"
+    },
+    "thefingnicolascageexperienceconair": {
+      "results": [],
+      "fetched_at": "2026-11-17T00:40:01+01:00"
+    },
+    "viva": {
+      "results": [
+        {
+          "id": 1474225,
+          "title": "Viva",
+          "original_title": "Viva"
+        },
+        {
+          "id": 1810,
+          "title": "¡Viva Zapata!",
+          "original_title": "Viva Zapata!"
+        },
+        {
+          "id": 11799,
+          "title": "¡Viva María!",
+          "original_title": "Viva Maria!"
+        },
+        {
+          "id": 26232,
+          "title": "Viva Cuba",
+          "original_title": "Viva Cuba"
+        },
+        {
+          "id": 2098,
+          "title": "Cita en Las Vegas (Viva Las Vegas)",
+          "original_title": "Viva Las Vegas"
+        },
+        {
+          "id": 359108,
+          "title": "Viva",
+          "original_title": "Viva"
+        }
+      ],
+      "fetched_at": "2026-11-17T00:40:02+01:00"
     }
   },
   "movies": {
@@ -128504,6 +128543,473 @@
       "vote_count": 0,
       "vote_average": 0.0,
       "statistics_checked_at": "2026-11-16T17:40:22+01:00"
+    },
+    "1474225": {
+      "id": "tmdb:1474225",
+      "tmdb_id": 1474225,
+      "title": "Viva",
+      "original_title": "Viva",
+      "year": 2026,
+      "director": "Aina Clotet",
+      "directors": [
+        "Aina Clotet"
+      ],
+      "runtime": 113,
+      "poster_path": "/wz7HsO4RQ5hCkW0Aavv6PoqR0Wo.jpg",
+      "aliases": [
+        "Alive",
+        "Oh Nora",
+        "Viva"
+      ],
+      "releases": [
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2026-06-19"
+        },
+        {
+          "country": "FR",
+          "type": 1,
+          "date": "2026-05-14"
+        },
+        {
+          "country": "FR",
+          "type": 1,
+          "date": "2026-06-11"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2027-01-16"
+        },
+        {
+          "country": "GB",
+          "type": 1,
+          "date": "2026-10-31"
+        },
+        {
+          "country": "IT",
+          "type": 1,
+          "date": "2026-11-29"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1474225",
+      "fetched_at": "2026-11-17T00:40:02+01:00",
+      "vote_count": 10,
+      "vote_average": 6.1,
+      "statistics_checked_at": "2026-11-17T00:40:03+01:00"
+    },
+    "1810": {
+      "id": "tmdb:1810",
+      "tmdb_id": 1810,
+      "title": "¡Viva Zapata!",
+      "original_title": "Viva Zapata!",
+      "year": 1952,
+      "director": "Elia Kazan",
+      "directors": [
+        "Elia Kazan"
+      ],
+      "runtime": 113,
+      "poster_path": "/vfarxn9ddiaZpRDml8FGhB46Qrc.jpg",
+      "aliases": [
+        "Beloved Tiger",
+        "Emiliano Zapata",
+        "Kakumeiji Sapata",
+        "The Life of Emiliano Zapata",
+        "The Tiger",
+        "Viva Zapata!/Živio Zapata!",
+        "Zapata",
+        "Zapata Muôn Năm",
+        "Zapata, the Little Tiger",
+        "Živeo Zapata"
+      ],
+      "releases": [
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "1952-09-02"
+        },
+        {
+          "country": "AT",
+          "type": 3,
+          "date": "1952-10-01"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "1953-03-05"
+        },
+        {
+          "country": "BE",
+          "type": 3,
+          "date": "1985-10-10"
+        },
+        {
+          "country": "CA",
+          "type": 3,
+          "date": "1952-02-29"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "1952-08-22"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "1952-10-03"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "1952-06-25"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "1952-12-15"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "1952-10-03"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "1965-06-25"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "1969-06-27"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "1952-09-18"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "1952-03-27"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2014-10-09"
+        },
+        {
+          "country": "HU",
+          "type": 3,
+          "date": "1974-08-19"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "1952-09-18"
+        },
+        {
+          "country": "IT",
+          "type": 6,
+          "date": "2022-11-01"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "1952-12-11"
+        },
+        {
+          "country": "KR",
+          "type": 5,
+          "date": "2003-11-03"
+        },
+        {
+          "country": "MX",
+          "type": 3,
+          "date": "1952-12-11"
+        },
+        {
+          "country": "NL",
+          "type": 5,
+          "date": "2012-04-06"
+        },
+        {
+          "country": "PE",
+          "type": 3,
+          "date": "1952-11-01"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "1952-12-08"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "1981-08-20"
+        },
+        {
+          "country": "RO",
+          "type": 3,
+          "date": "1971-03-24"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "1952-10-20"
+        },
+        {
+          "country": "TR",
+          "type": 3,
+          "date": "1953-12-31"
+        },
+        {
+          "country": "TR",
+          "type": 3,
+          "date": "2009-04-18"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "1952-02-07"
+        },
+        {
+          "country": "ZA",
+          "type": 3,
+          "date": "1952-08-22"
+        },
+        {
+          "country": "ZA",
+          "type": 3,
+          "date": "1952-09-05"
+        },
+        {
+          "country": "ZA",
+          "type": 3,
+          "date": "1952-11-07"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1810",
+      "fetched_at": "2026-11-17T00:40:02+01:00"
+    },
+    "11799": {
+      "id": "tmdb:11799",
+      "tmdb_id": 11799,
+      "title": "¡Viva María!",
+      "original_title": "Viva Maria!",
+      "year": 1965,
+      "director": "Louis Malle",
+      "directors": [
+        "Louis Malle"
+      ],
+      "runtime": 122,
+      "poster_path": "/m53Qdgzv0mXgFYkVZBbBMWAKqM9.jpg",
+      "aliases": [
+        "Viva Maria !",
+        "비바 마리아!"
+      ],
+      "releases": [
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "1966-01-22"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "1965-11-22"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2026-01-01"
+        },
+        {
+          "country": "FR",
+          "type": 6,
+          "date": "2025-12-22"
+        },
+        {
+          "country": "FR",
+          "type": 6,
+          "date": "2025-12-29"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "1965-12-18"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/11799",
+      "fetched_at": "2026-11-17T00:40:02+01:00"
+    },
+    "26232": {
+      "id": "tmdb:26232",
+      "tmdb_id": 26232,
+      "title": "Viva Cuba",
+      "original_title": "Viva Cuba",
+      "year": 2005,
+      "director": "Juan Carlos Cremata Malberti, Iraida Malberti Cabrera",
+      "directors": [
+        "Juan Carlos Cremata Malberti",
+        "Iraida Malberti Cabrera"
+      ],
+      "runtime": 93,
+      "poster_path": "/4OX4xxeQkGRkueEBxws7Nz02vQr.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2005-04-20"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/26232",
+      "fetched_at": "2026-11-17T00:40:03+01:00"
+    },
+    "2098": {
+      "id": "tmdb:2098",
+      "tmdb_id": 2098,
+      "title": "Cita en Las Vegas (Viva Las Vegas)",
+      "original_title": "Viva Las Vegas",
+      "year": 1964,
+      "director": "George Sidney",
+      "directors": [
+        "George Sidney"
+      ],
+      "runtime": 85,
+      "poster_path": "/jPdxn8DnSsheIaXXQi61YuEogAI.jpg",
+      "aliases": [
+        "Amor a Toda Velocidade",
+        "Elvis Presley - Viva Las Vegas",
+        "Love in Las Vegas",
+        "Meet In Las Vegas",
+        "Only Girl in Town",
+        "Да здравствует Лас-Вегас"
+      ],
+      "releases": [
+        {
+          "country": "AT",
+          "type": 3,
+          "date": "1964-08-01"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "1964-04-23"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "1964-06-28"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "1964-07-24"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "1964-05-20"
+        },
+        {
+          "country": "GB",
+          "type": 1,
+          "date": "1964-03-13"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "1964-03-20"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "1964-05-01"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "1966-01-01"
+        },
+        {
+          "country": "NO",
+          "type": 3,
+          "date": "1964-02-08"
+        },
+        {
+          "country": "TH",
+          "type": 3,
+          "date": "1964-02-08"
+        },
+        {
+          "country": "TR",
+          "type": 3,
+          "date": "1971-11-07"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "1964-05-20"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/2098",
+      "fetched_at": "2026-11-17T00:40:03+01:00"
+    },
+    "359108": {
+      "id": "tmdb:359108",
+      "tmdb_id": 359108,
+      "title": "Viva",
+      "original_title": "Viva",
+      "year": 2015,
+      "director": "Paddy Breathnach",
+      "directors": [
+        "Paddy Breathnach"
+      ],
+      "runtime": 100,
+      "poster_path": "/9JxpXK2FW2AtRRrcxK7nvROPgiV.jpg",
+      "aliases": [
+        "Live",
+        "Вива",
+        "变装皇后万万岁",
+        "古巴女孩"
+      ],
+      "releases": [
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2016-12-01"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2016-07-06"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "2015-11-08"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2016-10-13"
+        },
+        {
+          "country": "MX",
+          "type": 4,
+          "date": "2019-10-03"
+        },
+        {
+          "country": "US",
+          "type": 2,
+          "date": "2016-02-05"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/359108",
+      "fetched_at": "2026-11-17T00:40:03+01:00"
     }
   }
 }
