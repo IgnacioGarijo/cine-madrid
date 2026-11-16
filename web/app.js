@@ -1,8 +1,8 @@
-import {createAccount} from './account.js?v=0.11.3';
-import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.11.3';
+import {createAccount} from './account.js?v=0.11.4';
+import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.11.4';
 
-import {addressCandidates, validOrigin} from './search-utils.js?v=0.11.3';
-import {posterURL} from './poster-utils.js?v=0.11.3';
+import {addressCandidates, validOrigin} from './search-utils.js?v=0.11.4';
+import {posterURL} from './poster-utils.js?v=0.11.4';
 
 const $ = selector => document.querySelector(selector);
 const all = selector => [...document.querySelectorAll(selector)];
@@ -39,6 +39,7 @@ let filmDaySelections = new WeakMap();
 let searchApi = '', liveFavoriteResults = null, favoriteTimer, favoriteController, favoriteSequence = 0, favoriteError = '';
 let favoritesApi = '', favoriteSaving = false;
 let accountClient=null, accountUser=null, accountEpoch=0, legacyFavorites=[], guestOrigin=origin, accountsEnabled=false;
+let pushSubscription=null, pushBusy=false;
 let addressTimer, addressController, addressSequence = 0;
 let selectedCinemas = new Set(), selectedCategories = new Set(['repertory_events','premiere','unclassified']), favoriteSearches = [], favoritePage = 1;
 const categories = [['repertory_events','Repos. y eventos'],['premiere','Estrenos'],['unclassified','Por clasificar']];
@@ -293,6 +294,12 @@ function renderAccount(){
   $('#import-favorites').hidden=!accountUser || !legacyFavorites.some(movie=>!watch.some(item=>item.id===movie.id));
   $('#import-origin').hidden=!accountUser || !!origin || !validOrigin(guestOrigin);
   $('#add-favorite').disabled=accountsEnabled && !accountUser;
+  const pushSupported='serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window;
+  $('#push-toggle').disabled=!accountUser || !pushSupported || pushBusy;
+  $('#push-toggle').textContent=pushSubscription && stored('cm-push-owner',null)===accountUser?.id ? 'Desactivar notificaciones' : 'Activar notificaciones';
+  if(!pushSupported)$('#push-status').textContent='Este navegador no admite notificaciones. En iPhone, añade primero la web a la pantalla de inicio y ábrela desde allí.';
+  else if(!accountUser)$('#push-status').textContent='Inicia sesión para activar los avisos.';
+  else if($('#push-status').textContent==='Inicia sesión para activar los avisos.')$('#push-status').textContent='';
 
 }
 async function applyAccount(user){
@@ -301,6 +308,7 @@ async function applyAccount(user){
   addressController?.abort();++addressSequence;$('#address-suggestions').replaceChildren();$('#origin').value='';
   $('#watch-status').textContent='';$('#origin-status').textContent='';
   renderAccount();renderWatch();renderCatalog();if(data)render();
+  await syncPushState();
   if(!user)return;
   const epoch=accountEpoch;
   try{
@@ -310,6 +318,50 @@ async function applyAccount(user){
     renderAccount();if(data)render();
   }catch{if(epoch===accountEpoch)$('#watch-status').textContent='No se pudo sincronizar tu cuenta. Comprueba la conexión y vuelve a abrir la página.';}
 }
+async function syncPushState(){
+  if(!('serviceWorker' in navigator) || !('PushManager' in window))return;
+  const epoch=accountEpoch;
+  try{
+    const registration=await navigator.serviceWorker.getRegistration('./');
+    const subscription=registration ? await registration.pushManager.getSubscription() : null;
+    if(epoch!==accountEpoch)return;
+    const previousOwner=stored('cm-push-owner',null);
+    if(subscription && previousOwner && previousOwner!==accountUser?.id){
+      await subscription.unsubscribe();try{localStorage.removeItem('cm-push-owner');}catch{}
+      pushSubscription=null;
+    }else pushSubscription=subscription;
+    if(epoch===accountEpoch)renderAccount();
+  }catch{pushSubscription=null;renderAccount();}
+}
+function applicationKey(value){
+  const raw=atob(value.replaceAll('-','+').replaceAll('_','/')+'='.repeat((4-value.length%4)%4));
+  return Uint8Array.from(raw,c=>c.charCodeAt(0));
+}
+$('#push-toggle').onclick=async()=>{
+  if(!accountUser || pushBusy)return;
+  const epoch=accountEpoch;pushBusy=true;renderAccount();
+  try{
+    if(pushSubscription && stored('cm-push-owner',null)===accountUser.id){
+      await accountRequest('push',{method:'DELETE',body:JSON.stringify({endpoint:pushSubscription.endpoint})});
+      await pushSubscription.unsubscribe();pushSubscription=null;localStorage.removeItem('cm-push-owner');
+      $('#push-status').textContent='Avisos desactivados en este dispositivo.';
+    }else{
+      // iOS requires the permission request to originate from this button press.
+      const permission=await Notification.requestPermission();
+      if(permission!=='granted')throw Error('permission_denied');
+      const response=await fetch(new URL('/push-public-key',favoritesApi));
+      if(!response.ok)throw Error('unavailable');
+      const {public_key}=await response.json();
+      const registration=await navigator.serviceWorker.ready;
+      const subscription=await registration.pushManager.getSubscription() || await registration.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:applicationKey(public_key)});
+      await accountRequest('push',{method:'POST',body:JSON.stringify({subscription:subscription.toJSON()})});
+      if(epoch!==accountEpoch)return;
+      pushSubscription=subscription;store('cm-push-owner',accountUser.id);
+      $('#push-status').textContent='Avisos activados en este dispositivo.';
+    }
+  }catch(error){if(epoch===accountEpoch)$('#push-status').textContent=error.message==='permission_denied' ? 'El navegador no ha permitido las notificaciones. Revisa sus ajustes y vuelve a intentarlo.' : 'No se han podido cambiar los avisos. Comprueba la conexión y vuelve a intentarlo.';}
+  finally{pushBusy=false;renderAccount();}
+};
 async function changeFavorite(movie,remove=false) {
   if(favoriteSaving)return;
   if(!accountUser){$('#watch-status').textContent='Entra con Google para guardar películas.';return;}
@@ -600,6 +652,10 @@ $('#google-login').onclick=async()=>{
 };
 $('#account-logout').onclick=async()=>{
   try{
+    if(pushSubscription && stored('cm-push-owner',null)===accountUser?.id){
+      try{await accountRequest('push',{method:'DELETE',body:JSON.stringify({endpoint:pushSubscription.endpoint})});}catch{}
+      await pushSubscription.unsubscribe();pushSubscription=null;try{localStorage.removeItem('cm-push-owner');}catch{}
+    }
     const {error}=await accountClient.auth.signOut({scope:'local'});if(error)throw error;
     await applyAccount(null);$('#favorite-dialog').close();
   }catch{$('#account-status').textContent='No se pudo cerrar la sesión. Vuelve a intentarlo.';}

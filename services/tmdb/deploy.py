@@ -5,7 +5,7 @@ import requests
 
 ROOT=Path(__file__).resolve().parents[2]
 CONFIG=str(ROOT/'services/tmdb/wrangler.jsonc')
-SECRET_NAMES = ('CLOUDFLARE_API_TOKEN', 'CLOUDFLARE_ACCOUNT_ID', 'TMDB_READ_TOKEN', 'FAVORITES_OWNER_SECRET')
+SECRET_NAMES = ('CLOUDFLARE_API_TOKEN', 'CLOUDFLARE_ACCOUNT_ID', 'TMDB_READ_TOKEN', 'FAVORITES_OWNER_SECRET', 'PUSH_SERVER_SECRET', 'PUSH_PUBLIC_KEY', 'PUSH_PRIVATE_KEY')
 
 def safe_diagnostic(message):
     """Keep actionable CLI errors while masking credentials before logging."""
@@ -58,6 +58,10 @@ def main():
     if not match:raise SystemExit('No se reconoce la URL de despliegue; no se modifica la web.')
     base=match[0]
     run(['secret','put','TMDB_READ_TOKEN'],input=os.environ['TMDB_READ_TOKEN'])
+    if bool(os.getenv('PUSH_SERVER_SECRET')) != bool(os.getenv('PUSH_PUBLIC_KEY')):
+        raise SystemExit('La configuración de avisos móviles está incompleta.')
+    for name in ('PUSH_SERVER_SECRET','PUSH_PUBLIC_KEY'):
+        if os.getenv(name):run(['secret','put',name],input=os.environ[name])
     if os.getenv('FAVORITES_OWNER_SECRET'):
         run(['secret','put','FAVORITES_OWNER_SECRET'],input=os.environ['FAVORITES_OWNER_SECRET'])
     for attempt in range(6):
@@ -85,6 +89,15 @@ def main():
         for path in ['/me/favorites','/me/profile']:
             response=requests.get(base+path,headers=headers,timeout=15)
             if response.status_code!=401:raise SystemExit('La ruta privada no rechaza accesos sin sesión; no se publica Pages.')
+    if os.getenv('PUSH_PUBLIC_KEY'):
+        response=requests.get(base+'/push-public-key',headers={'Origin':settings['ALLOWED_ORIGIN']},timeout=15)
+        if not response.ok or response.json().get('public_key')!=os.environ['PUSH_PUBLIC_KEY']:
+            raise SystemExit('No se pudo verificar la configuración pública de avisos.')
+        response=requests.get(base+'/internal/push-feed',timeout=15)
+        if response.status_code!=401:raise SystemExit('La ruta interna de avisos no rechaza accesos sin autorización.')
+        response=requests.get(base+'/internal/push-feed',headers={'Authorization':'Bearer '+os.environ['PUSH_SERVER_SECRET']},timeout=15)
+        if not response.ok or not isinstance(response.json().get('subscriptions'),list):
+            raise SystemExit('No se pudo verificar el acceso privado al servicio de avisos.')
     (ROOT/'web/search-config.json').write_text(json.dumps(config)+'\n',encoding='utf-8')
     print('Servicio de sugerencias comprobado:',base)
 

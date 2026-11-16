@@ -19,6 +19,7 @@ function binding(Class){
 function fixture(){
   const env={ALLOWED_ORIGIN:origin,SUPABASE_URL:'https://project.supabase.co',SUPABASE_PUBLISHABLE_KEY:'public-test-key',
     ACCOUNTS:binding(AccountData),FAVORITES:binding(Favorites),TMDB_READ_TOKEN:'private-tmdb-token',
+    PUSH_PUBLIC_KEY:'test-public-key',PUSH_SERVER_SECRET:'test-server-secret-at-least-32-characters',
     SEARCH_RATE_LIMITER:{limit:async()=>({success:true})}};
   const deps={upstreamFetch:async(url,options)=>{
     if(String(url)==='https://project.supabase.co/auth/v1/user'){
@@ -78,4 +79,31 @@ test('auth outage and foreign origins fail closed without returning upstream err
     {upstreamFetch:async()=>new Response('upstream secret',{status:500})});
   assert.equal(response.status,503);assert.ok(!(await response.text()).includes('upstream secret'));
   assert.equal((await call('/me/profile')).headers.get('Access-Control-Allow-Origin'),origin);
+});
+
+test('push subscriptions stay isolated and the feed requires a server secret',async()=>{
+  const {env,call}=fixture();
+  const publicKey=Buffer.concat([Buffer.from([4]),Buffer.alloc(64,1)]).toString('base64url');
+  const subscription={endpoint:'https://fcm.googleapis.com/fcm/send/example',keys:{p256dh:publicKey,auth:Buffer.alloc(16,2).toString('base64url')}};
+  assert.equal((await call('/me/push',null,'POST',{subscription})).status,401);
+  assert.equal((await call('/me/push','alice','POST',{subscription:{...subscription,endpoint:'https://evil.example/steal'}})).status,400);
+  assert.equal((await call('/me/push','alice','POST',{subscription,user_id:ids.bob})).status,200);
+  assert.equal((await call('/me/favorites','alice','POST',{tmdb_id:149})).status,200);
+  const unauthorized=await handle(new Request('https://worker.test/internal/push-feed'),env);
+  assert.equal(unauthorized.status,401);
+  const feed=()=>handle(new Request('https://worker.test/internal/push-feed',{headers:{Authorization:'Bearer '+env.PUSH_SERVER_SECRET}}),env);
+  let payload=await (await feed()).json();assert.equal(payload.subscriptions.length,1);
+  assert.deepEqual(payload.subscriptions[0].favorites,['tmdb:149']);
+  assert.ok(!JSON.stringify(payload).includes(ids.alice));
+  const id=payload.subscriptions[0].id;
+  const ack=(current,day)=>handle(new Request('https://worker.test/internal/push-ack',{method:'POST',headers:{Authorization:'Bearer '+env.PUSH_SERVER_SECRET},body:JSON.stringify({id,current,day})}),env);
+  assert.equal((await ack(['tmdb:149'],'2026-11-17')).status,200);
+  assert.deepEqual((await (await feed()).json()).subscriptions[0].seen,{'tmdb:149':{misses:0,last_day:'2026-11-17'}});
+  await ack([],'2026-11-17');assert.deepEqual((await (await feed()).json()).subscriptions[0].seen,{'tmdb:149':{misses:0,last_day:'2026-11-17'}});
+  await ack([],'2026-11-18');assert.deepEqual((await (await feed()).json()).subscriptions[0].seen,{'tmdb:149':{misses:1,last_day:'2026-11-18'}});
+  await ack([],'2026-11-19');assert.deepEqual((await (await feed()).json()).subscriptions[0].seen,{});
+  await call('/me/push','bob','DELETE',{endpoint:subscription.endpoint});
+  assert.equal((await (await feed()).json()).subscriptions.length,1);
+  await call('/me/push','alice','DELETE',{endpoint:subscription.endpoint});
+  assert.equal((await (await feed()).json()).subscriptions.length,0);
 });

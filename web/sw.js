@@ -1,9 +1,9 @@
 /* Only public assets under this project's path are cached. API requests and ticket sites are never intercepted. */
-const VERSION = 'cine-madrid-0.11.3';
+const VERSION = 'cine-madrid-0.11.4';
 const STATIC = VERSION + '-shell';
 const DATA = 'cine-madrid-data-v1';
 const ROOT = new URL('./', self.location.href);
-const SHELL = ['account.js?v=0.11.3', 'vendor/supabase-2.119.0.js', './', 'images/cinema-paradiso.jpg', 'index.html', 'style.css?v=0.11.3', 'app.js?v=0.11.3', 'calendar-utils.js?v=0.11.3', 'search-utils.js?v=0.11.3', 'poster-utils.js?v=0.11.3',
+const SHELL = ['account.js?v=0.11.4', 'vendor/supabase-2.119.0.js', './', 'images/cinema-paradiso.jpg', 'index.html', 'style.css?v=0.11.4', 'app.js?v=0.11.4', 'calendar-utils.js?v=0.11.4', 'search-utils.js?v=0.11.4', 'poster-utils.js?v=0.11.4',
   'manifest.webmanifest', 'icons/icon.svg', 'icons/icon-192.png', 'icons/icon-512.png',
   'icons/icon-maskable-512.png', 'icons/apple-touch-icon.png', 'icons/tmdb.svg'].map(path => new URL(path, ROOT).href);
 const PUBLIC_DATA = ['data.json', 'search-config.json', 'favorite-searches.json', 'favorites.json', 'catalog.json', 'newsletters.json', 'calendario.ics'];
@@ -25,6 +25,29 @@ self.addEventListener('activate', event => {
     const names = await caches.keys();
     await Promise.all(names.filter(name => name.startsWith('cine-madrid-') && name !== STATIC && name !== DATA).map(name => caches.delete(name)));
     await self.clients.claim();
+  })());
+});
+self.addEventListener('push', event => {
+  let payload={};
+  try {payload=event.data?.json() || {};} catch {payload={};}
+  const title=typeof payload.title==='string' ? payload.title.slice(0,100) : 'Cine Madrid';
+  const body=typeof payload.body==='string' ? payload.body.slice(0,240) : 'Tienes novedades en tus favoritas.';
+  let target=ROOT.href;
+  try {const candidate=new URL(payload.url || ROOT.href,ROOT);if(candidate.origin===ROOT.origin && candidate.pathname.startsWith(ROOT.pathname))target=candidate.href;} catch {}
+  event.waitUntil(self.registration.showNotification(title,{body,icon:new URL('icons/icon-192.png',ROOT).href,
+    badge:new URL('icons/icon-192.png',ROOT).href,data:{url:target}}));
+});
+self.addEventListener('notificationclick', event => {
+  event.notification.close();
+  event.waitUntil((async()=>{
+    const target=event.notification.data?.url || ROOT.href;
+    for(const client of await self.clients.matchAll({type:'window',includeUncontrolled:true})){
+      if(new URL(client.url).origin===ROOT.origin && new URL(client.url).pathname.startsWith(ROOT.pathname)){
+        if(client.navigate)await client.navigate(target);
+        return client.focus();
+      }
+    }
+    return self.clients.openWindow(target);
   })());
 });
 async function networkFirst(request, cacheName, markOffline = false) {

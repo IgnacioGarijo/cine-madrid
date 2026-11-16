@@ -4,7 +4,7 @@ import fs from 'node:fs/promises';
 import vm from 'node:vm';
 
 async function workerHarness() {
-  const handlers = new Map(), stores = new Map();
+  const handlers = new Map(), stores = new Map(), notifications=[];
   let offline = false;
   const key = request => typeof request === 'string' ? request : request.url;
   const caches = {
@@ -24,12 +24,12 @@ async function workerHarness() {
   const context = {
     URL, Request, Response, Headers, caches,
     fetch: async () => {if (offline) throw new Error('No network'); return new Response('{"version":"fresh"}',{headers:{'Content-Type':'application/json'}});},
-    self: {location:{href:'https://example.test/cine-madrid/sw.js'},
+    self: {location:{href:'https://example.test/cine-madrid/sw.js'},registration:{showNotification:async(title,options)=>notifications.push({title,options})},
       addEventListener: (name,handler) => handlers.set(name,handler),
       skipWaiting:async()=>{}, clients:{claim:async()=>{}}}
   };
   vm.runInNewContext(await fs.readFile(new URL('../web/sw.js',import.meta.url),'utf8'),context);
-  return {handlers,stores,setOffline:value=>{offline=value;},async lifecycle(name) {let completion; handlers.get(name)({waitUntil:p=>{completion=p;}});await completion;},
+  return {handlers,stores,notifications,setOffline:value=>{offline=value;},async lifecycle(name) {let completion; handlers.get(name)({waitUntil:p=>{completion=p;}});await completion;},
     async request(url,mode='cors') {let response;handlers.get('fetch')({request:{url,mode,method:'GET'},respondWith:p=>{response=p;}});return response && await response;}};
 }
 
@@ -41,6 +41,13 @@ test('offline data retains content and explicitly identifies the cached response
   const cached = await worker.request(url);
   assert.equal(cached.headers.get('X-Cine-Madrid-Cache'),'offline');
   assert.deepEqual(await cached.json(),{version:'fresh'});
+});
+test('push displays a notification and rejects a foreign target',async()=>{
+  const worker=await workerHarness();let completion;
+  worker.handlers.get('push')({data:{json:()=>({title:'Una favorita',body:'Akira vuelve al cine',url:'https://evil.example/'})},waitUntil:p=>{completion=p;}});
+  await completion;assert.equal(worker.notifications.length,1);
+  assert.equal(worker.notifications[0].options.body,'Akira vuelve al cine');
+  assert.equal(worker.notifications[0].options.data.url,'https://example.test/cine-madrid/');
 });
 test('worker does not intercept other projects or external APIs and ticket sites', async () => {
   const worker = await workerHarness();

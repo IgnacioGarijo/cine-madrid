@@ -1,4 +1,5 @@
 import {Favorites,handleFavorites,body} from './favorites.mjs';
+import {registryFetch,accountPush} from './push.mjs';
 const json=(value,status=200)=>Response.json(value,{status,headers:{'Cache-Control':'no-store'}});
 
 // Separate durable objects and empty seeds prevent shared-list and account data mixing.
@@ -6,6 +7,7 @@ export class AccountData extends Favorites {
   constructor(state){super(state,[]);}
   async fetch(request){
     const path=new URL(request.url).pathname;
+    if(path.startsWith('/push-registry/'))return registryFetch(this.state,request);
     if(path==='/profile')return this.state.blockConcurrencyWhile(async()=>{
       if(request.method==='PUT')await this.state.storage.put('origin',await request.json());
       else if(request.method!=='GET')return json({error:'method_not_allowed'},405);
@@ -39,6 +41,7 @@ export async function handleAccount(request,env,{upstreamFetch=fetch}={}){
     if(!/^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/i.test(user.id || ''))return json({error:'unauthorized'},401);
   }catch{return json({error:'auth_unavailable'},503);}
   const account=env.ACCOUNTS.get(env.ACCOUNTS.idFromName('user:'+user.id));
+  if(path==='/me/push')return accountPush(request,env,user.id);
   if(path==='/me/profile'){
     if(request.method==='GET')return account.fetch(new Request('https://account/profile'));
     if(request.method!=='PUT')return json({error:'method_not_allowed'},405);

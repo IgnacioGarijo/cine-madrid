@@ -32,6 +32,8 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           TMDB_READ_TOKEN: ${{ secrets.TMDB_READ_TOKEN }}
           FAVORITES_OWNER_SECRET: ${{ secrets.FAVORITES_OWNER_SECRET }}
+          PUSH_SERVER_SECRET: ${{ secrets.PUSH_SERVER_SECRET }}
+          PUSH_PUBLIC_KEY: ${{ secrets.PUSH_PUBLIC_KEY }}
         run: python services/tmdb/deploy.py
       - run: python -m src.pipeline --build-only
       - name: Guardar conexión pública

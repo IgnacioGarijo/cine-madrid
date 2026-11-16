@@ -101,6 +101,12 @@ jobs:
       - name: Publicar GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Avisar de favoritas en cartelera
+        if: github.event_name == 'schedule' || github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && !inputs.build_only && !inputs.refresh_posters && inputs.favorite_search == '')
+        env:
+          PUSH_SERVER_SECRET: ${{ secrets.PUSH_SERVER_SECRET }}
+          PUSH_PRIVATE_KEY: ${{ secrets.PUSH_PRIVATE_KEY }}
+        run: python -m src.push_notifications
       - name: Confirmar cambio publicado
         if: github.event_name == 'issues'
         env:

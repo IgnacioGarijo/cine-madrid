@@ -3,11 +3,13 @@ const reply=(body,status,origin)=>new Response(JSON.stringify(body),{status,head
 import {handleAccount} from './accounts.mjs';
 export {AccountData} from './accounts.mjs';
 import {handleFavorites} from './favorites.mjs';
+import {internalPush} from './push.mjs';
 export {Favorites} from './favorites.mjs';
 
 export async function handle(request,env,{upstreamFetch=fetch,cache=globalThis.caches?.default}={}) {
   const url=new URL(request.url), allowed=env.ALLOWED_ORIGIN || 'https://ignaciogarijo.github.io';
   if (url.pathname==='/health' && request.method==='GET') return reply({ready:!!env.TMDB_READ_TOKEN},200,allowed);
+  if (url.pathname.startsWith('/internal/push-')) return internalPush(request,env);
   const accountRoute=url.pathname.startsWith('/me/');
   const favoritesRoute=url.pathname==='/favorites' || url.pathname==='/session' || /^\/favorites\/\d+$/.test(url.pathname);
   if ((favoritesRoute || accountRoute) && request.method!=='OPTIONS') {
@@ -17,6 +19,7 @@ export async function handle(request,env,{upstreamFetch=fetch,cache=globalThis.c
     return response;
   }
   if (request.headers.get('Origin')!==allowed) return reply({error:'origin_not_allowed'},403,allowed);
+  if (url.pathname==='/push-public-key' && request.method==='GET') return env.PUSH_PUBLIC_KEY ? reply({public_key:env.PUSH_PUBLIC_KEY},200,allowed) : reply({error:'not_configured'},503,allowed);
   if (request.method==='OPTIONS') return new Response(null,{status:204,headers:{'Access-Control-Allow-Origin':allowed,'Access-Control-Allow-Methods':'GET, POST, PUT, DELETE, OPTIONS','Access-Control-Allow-Headers':'Authorization, Content-Type','Access-Control-Max-Age':'600','Vary':'Origin'}});
   if (request.method!=='GET' || url.pathname!=='/search') return reply({error:'not_found'},404,allowed);
   const query=(url.searchParams.get('q') || '').trim(), rawPage=url.searchParams.get('page') || '1', page=Number(rawPage);
