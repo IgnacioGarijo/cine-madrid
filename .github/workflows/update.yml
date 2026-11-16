@@ -71,6 +71,7 @@ jobs:
         env:
           TMDB_READ_TOKEN: ${{ secrets.TMDB_READ_TOKEN }}
           FAVORITE_SEARCH: ${{ inputs.favorite_search }}
+          FILMAGENDA_API_KEY: ${{ secrets.FILMAGENDA_API_KEY }}
           PUBLISH_NEWSLETTER: ${{ inputs.newsletter || github.event.schedule == '17 17 * * 4' }}
           BUILD_ONLY: ${{ inputs.build_only }}
           REFRESH_POSTERS: ${{ inputs.refresh_posters }}

@@ -6,6 +6,8 @@ from datetime import date
 from unittest.mock import patch
 
 from src.filmagenda import BASE, FilmAgendaError, audit, download
+from src.filmagenda_merge import convert, merge
+from src.core import Incidents
 
 
 class Response:
@@ -60,6 +62,40 @@ class FilmAgendaTests(unittest.TestCase):
         self.pointer['manifest_sha256']='0'*64
         with self.assertRaisesRegex(FilmAgendaError,'integridad'):download(self.token,self.session)
         self.assertEqual(len(self.session.calls),2)
+
+    def test_convert_explicit_venue_and_original_language_without_assuming_subtitles(self):
+        record={'film':{'id':42,'film_url':'https://www.filmagenda.es/pelicula/42-akira?x=1',
+            'title':{'original':'Akira','display':'Akira'},'year':1988,'runtime_minutes':124,
+            'research':{'credits':[{'department':'directing','role':'director','name':'Katsuhiro Otomo'}]}},
+            'screenings':[{'id':11,'film_id':42,'theater':{'id':'palafox','name':'Palafox'},
+                'showtime_local':'2027-01-20T19:30:00','timezone':'Europe/Madrid','version':'vose',
+                'screening_url':'https://www.filmagenda.es/s/11?destination=film&utm_source=partner_api'},
+                {'id':12,'film_id':42,'theater':{'id':'different'},'showtime_local':'2027-01-20T19:30:00',
+                 'timezone':'Europe/Madrid','version':None,'screening_url':'https://www.filmagenda.es/s/12?destination=film'}]}
+        sessions,movies=convert([record],{'palafox':'our-palafox'},{'our-palafox'},date(2026,11,16),Incidents())
+        self.assertEqual(len(sessions),1);self.assertEqual(sessions[0]['cinema_id'],'our-palafox')
+        self.assertEqual(sessions[0]['version'],'VO');self.assertEqual(sessions[0]['start'],'2027-01-20T19:30:00+01:00')
+        self.assertEqual(movies[0]['source_year'],1988);self.assertEqual(movies[0]['director'],'Katsuhiro Otomo')
+
+    def test_merge_preserves_source_priority_and_distinct_films_or_versions(self):
+        films=[{'id':'p','title':'Akira','director':'Katsuhiro Otomo'},
+               {'id':'f','title':'Akira','director':'Katsuhiro Otomo'},
+               {'id':'another','title':'Otra película','director':'Otro'}]
+        base={'cinema_id':'paz','start':'2026-11-20T20:00:00+01:00','version':'VOSE','stale':False}
+        primary=[dict(base,id='primary',movie_id='p')]
+        extra=[dict(base,id='same',movie_id='f',version='VO'),dict(base,id='different-version',movie_id='f',version='Doblada'),
+               dict(base,id='different-film',movie_id='another')]
+        result,count=merge(primary,extra,films)
+        self.assertEqual(count,1);self.assertEqual([x['id'] for x in result],['primary','different-version','different-film'])
+        result,count=merge([dict(primary[0],stale=True)],extra[:1],films)
+        self.assertEqual(count,0);self.assertEqual([x['id'] for x in result],['same'])
+
+    def test_merge_does_not_combine_verified_homonyms(self):
+        a={'id':'a','title':'Akira','canonical_id':'tmdb:1','identity_status':'verified'}
+        b={'id':'b','title':'Akira','canonical_id':'tmdb:2','identity_status':'verified'}
+        row={'cinema_id':'paz','start':'2026-11-20T20:00:00+01:00','version':'VO'}
+        result,count=merge([dict(row,id='1',movie_id='a')],[dict(row,id='2',movie_id='b')],[a,b])
+        self.assertEqual(count,0);self.assertEqual(len(result),2)
 
 
 if __name__=='__main__':unittest.main()

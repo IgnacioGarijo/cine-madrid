@@ -118,6 +118,7 @@ function renderSessions(target, sessions, {contextSessions=sessions}={}) {
           slot.append(link(clock.format(new Date(item.start)),item.booking_url));
           const version = [item.version !== 'Sin especificar' ? item.version : '',item.format,item.room ? 'Sala '+item.room : ''].filter(Boolean).join(' · ');
           if (version) slot.append(el('small',version));
+          if (item.provider === 'filmagenda') slot.append(el('small','Fuente: FilmAgenda'));
           if (special) slot.append(el('span',item.special_tags.map(eventName).join(' · '),'event-label'));
           if (item.stale || offlineData) slot.append(el('small','Consultar cambios ↗'));
           if (!item.stale && item.duration_minutes) slot.append(link('+ Calendario',gcal(item,cinema),'add-calendar'));
@@ -455,6 +456,11 @@ async function boot() {
       if (cinema.reading_note) row.append(el('small',cinema.reading_note,'fine'));
       if (cinema.schedule_url) row.append(link('Horarios · '+(cinema.schedule_label || 'fuente alternativa'),cinema.schedule_url));
       $('#sources').append(row);
+    }
+    if (data.filmagenda?.attribution) {
+      const credit=el('p',data.filmagenda.attribution+' Datos adaptados y combinados con otras fuentes.','fine');
+      credit.append(document.createTextNode(' · '),link('Licencia CC BY 4.0 ↗','https://creativecommons.org/licenses/by/4.0/'));
+      $('#sources').append(credit);
     }
     for (const key of ['version','format','sort']) {
       const source = $('#' + key), target = $('#calendar-' + key); target.replaceChildren();

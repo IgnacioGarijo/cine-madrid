@@ -1,4 +1,5 @@
 import argparse
+import os
 import shutil
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -40,13 +41,14 @@ def run(refresh=True, newsletter=False, posters_only=False):
         except Exception:
             incidents.add('favorites','sync_failed','list','No se pudo actualizar la copia de la lista compartida; se conserva la última copia guardada.',favorites_url)
     sources=old.get('sources',[])
+    filmagenda_meta=old.get('filmagenda')
     if refresh:
         sessions=[];movies=[];sources=[]
         for cinema in cinemas:
             cid=cinema['id']
             if not cinema.get('adapter'):continue
             checked.add(cid)
-            previous=[x for x in old.get('sessions',[]) if x['cinema_id']==cid and x['start'][:10]>=today.isoformat()]
+            previous=[x for x in old.get('sessions',[]) if x['cinema_id']==cid and x['start'][:10]>=today.isoformat() and x.get('provider')!='filmagenda']
             prior_source=next((x for x in old.get('sources',[]) if x['id']==cid),{})
             try:
                 fresh,films,pages=read_cinema(cinema,today,incidents)
@@ -78,6 +80,30 @@ def run(refresh=True, newsletter=False, posters_only=False):
                 movies += [m for m in old.get('movies',[]) if m['id'] in film_ids]
                 sources.append(dict(id=cid,status='error',last_attempt=now(),last_success=prior_source.get('last_success'),url=cinema['url']))
                 print(f"Fuente {cid}: error {type(exc).__name__}",flush=True)
+        # FilmAgenda complements, rather than replaces, the primary cinema readers.
+        filmagenda_key=os.getenv('FILMAGENDA_API_KEY','')
+        if filmagenda_key or filmagenda_meta:
+            checked.add('filmagenda')
+            try:
+                from .filmagenda import download
+                from .filmagenda_merge import convert
+                pointer,manifest,records=download(filmagenda_key)
+                mapping=read_json(ROOT/'config/filmagenda_cinemas.json',{})
+                extra,extra_movies=convert(records,mapping,{c['id'] for c in cinemas},today,incidents)
+                for session in extra:session['last_seen']=now()
+                sessions+=extra;movies+=extra_movies
+                filmagenda_meta={'status':'ok','snapshot_version':pointer['snapshot_version'],'published_at':pointer['published_at'],
+                    'generated_at':manifest['generated_at'],'attribution':manifest['license']['attribution'],
+                    'license_url':manifest['license']['url'],'sessions_read':len(extra),'last_success':now()}
+                print(f"FilmAgenda: {len(extra)} sesiones de cines identificados",flush=True)
+            except Exception:
+                incidents.add('filmagenda','read_failed','snapshot','No se pudo actualizar FilmAgenda; se conservan sus últimos pases como no verificados.','https://data.filmagenda.es/docs','error')
+                previous_extra=[dict(x,stale=True,status='unverified') for x in old.get('sessions',[]) if x.get('provider')=='filmagenda' and x['start'][:10]>=today.isoformat()]
+                sessions+=previous_extra
+                extra_ids={x['movie_id'] for x in previous_extra}
+                movies += [m for m in old.get('movies',[]) if m['id'] in extra_ids]
+                filmagenda_meta=dict(filmagenda_meta or {},status='error')
+                print('FilmAgenda: lectura no disponible; se conservan los datos anteriores',flush=True)
     previous_movies={m['id']:m for m in old.get('movies',[])}
     unchanged_ids=set()
     for movie in movies:
@@ -104,6 +130,13 @@ def run(refresh=True, newsletter=False, posters_only=False):
         cache=read_json(ROOT/'data/tmdb_cache.json',{})
         if refresh_posters(movies,cache,incidents):checked.add('tmdb-posters')
         write_json(ROOT/'data/tmdb_cache.json',cache)
+    if refresh and filmagenda_meta:
+        from .filmagenda_merge import merge
+        primary=[s for s in sessions if s.get('provider')!='filmagenda']
+        extra=[s for s in sessions if s.get('provider')=='filmagenda']
+        sessions,duplicates=merge(primary,extra,movies)
+        filmagenda_meta['duplicates_merged']=duplicates
+        print(f"FilmAgenda: {duplicates} coincidencias unificadas con otras fuentes",flush=True)
     movie_map={m['id']:m for m in movies}
     for s in sessions:
         m=movie_map.get(s['movie_id'],{})
@@ -129,6 +162,7 @@ def run(refresh=True, newsletter=False, posters_only=False):
     checked.update(i['source_id'] for i in old.get('incidents',[]) if i['code']=='source_pending' and i['source_id'] not in inventory_ids)
     data=dict(version='0.11.1',generated_at=now(),coverage_complete=False,cinemas=cinemas,sources=sources,
               movies=movies,sessions=sessions,incidents=incidents.finish(checked),agent_status='waiting_for_copilot',tmdb=tmdb_status)
+    if filmagenda_meta:data['filmagenda']=filmagenda_meta
     write_json(path,data)
     build(data,newsletter)
     print(f"Sesiones: {len(sessions)} | películas: {len(movies)} | fuentes activas: {sum(s['status']=='ok' for s in sources)} | incidencias abiertas: {sum(i['status']=='open' for i in data['incidents'])}")

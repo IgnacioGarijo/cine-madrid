@@ -100,7 +100,7 @@ def download(token, session=None):
 def audit(pointer, manifest, records, today=None):
     """Summarize the actual snapshot, without dumping records or credentials."""
     today = today or date.today()
-    months=Counter(); venues=Counter(); future=[]
+    months=Counter(); venues=Counter(); annotations=Counter(); future=[]
     for record in records:
         film=record.get('film') or {}; title=(film.get('title') or {}).get('display') or (film.get('title') or {}).get('es') or (film.get('title') or {}).get('original') or ''
         for screening in record.get('screenings') or []:
@@ -109,6 +109,7 @@ def audit(pointer, manifest, records, today=None):
             except ValueError: continue
             if parsed<today: continue
             theater=screening.get('theater') or {}
+            annotations.update(str(a.get('tag','')) for a in screening.get('annotations') or [] if isinstance(a,dict) and a.get('tag'))
             months[day[:7]]+=1; venues[(theater.get('id',''),theater.get('name',''))]+=1
             future.append((day,title,theater.get('name','')))
     lines=['Versión: '+str(pointer.get('snapshot_version')),
@@ -117,6 +118,7 @@ def audit(pointer, manifest, records, today=None):
            'Atribución: '+manifest['license']['attribution'],
            'Películas: '+str(len(records)), 'Sesiones futuras: '+str(len(future))]
     lines.extend('Mes '+month+': '+str(count) for month,count in sorted(months.items()))
+    lines.extend('Etiqueta '+tag+': '+str(count) for tag,count in sorted(annotations.items()))
     lines.extend('Sala '+str(venue_id)+' | '+str(name)+' | '+str(count) for (venue_id,name),count in sorted(venues.items()))
     lines.extend('Pase lejano '+day+' | '+title+' | '+name for day,title,name in sorted(future,reverse=True)[:15])
     for record in records:

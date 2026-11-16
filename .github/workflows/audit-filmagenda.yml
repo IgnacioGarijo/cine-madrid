@@ -16,4 +16,24 @@ jobs:
       - name: Comprobar fechas y cobertura
         env:
           FILMAGENDA_API_KEY: ${{ secrets.FILMAGENDA_API_KEY }}
-        run: python -m src.filmagenda
+        run: |
+          python - <<'PY'
+          import os
+          from datetime import datetime
+          from src.core import MADRID, ROOT, Incidents, read_json
+          from src.filmagenda import download, audit
+          from src.filmagenda_merge import convert, merge
+          pointer, manifest, records = download(os.environ.get('FILMAGENDA_API_KEY',''))
+          print(audit(pointer, manifest, records))
+          cinemas=read_json(ROOT/'config/cinemas.json',[])
+          mapping=read_json(ROOT/'config/filmagenda_cinemas.json',{})
+          incidents=Incidents()
+          extra,films=convert(records,mapping,{c['id'] for c in cinemas},datetime.now(MADRID).date(),incidents)
+          data=read_json(ROOT/'data/public.json',{})
+          old=[s for s in data.get('sessions',[]) if s.get('provider')!='filmagenda']
+          joined,duplicates=merge(old,extra,data.get('movies',[])+films)
+          print('Conector: sesiones',len(extra),'películas',len(films),'coincidencias',duplicates,'incidencias',len(incidents.current))
+          for session in extra:
+              if session['title'].casefold()=='iron boy' and session['cinema_id']=='cines-embajadores':
+                  print('Comprobación Iron Boy:',session['start'],session['cinema_id'])
+          PY
