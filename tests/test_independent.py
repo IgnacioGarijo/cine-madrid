@@ -15,6 +15,22 @@ def make_reader(cid, fixture):
     return r
 
 class IndependentTests(unittest.TestCase):
+    def test_explicit_empty_film_page_is_not_an_incident(self):
+        import json
+        index='https://www.reservaentradas.com/cine/madrid/cineembajadores'
+        detail='https://www.reservaentradas.com/sesiones/madrid/cineembajadores/akira/123/'
+        empty='https://www.reservaentradas.com/sesiones/madrid/cineembajadores/otra/456/'
+        metadata=BASE+'cines-embajadores'
+        r=Reader({'id':'cines-embajadores','schedule_url':index,'metadata_url':metadata},date(2026,11,16),Incidents())
+        listings='<h1>CINE EMBAJADORES</h1><a href="'+detail+'">Akira</a><a href="'+empty+'">Otra</a>'
+        records={'884':{'location_id':'cineembajadores','item_name':'Akira','session_datetime':'2026-12-21T19:30'}}
+        page='<script>window.reAnalyticsSesiones = '+json.dumps(records)+';</script><a class="sesion" href="https://www.reservaentradas.com/entrada/madrid/cineembajadores/akira/884/">19:30</a>'
+        extra='<div id="adreca"><strong>Cines Embajadores</strong>Glorieta Santa María de la Cabeza 5</div>'
+        r.get=lambda url:{index:listings,detail:page,empty:'<p>No hay sesiones programadas.</p>',metadata:extra}[url]
+        reserva_embajadores(r)
+        self.assertEqual(len(r.result.sessions),1)
+        self.assertFalse(r.incidents.current)
+
     def test_ticket_schedules_include_future_dates_and_reject_other_venues(self):
         import json
         index='https://www.reservaentradas.com/cine/madrid/cineembajadores'

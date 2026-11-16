@@ -104,6 +104,8 @@ def reserva_embajadores(reader):
             page=reader.soup(url)
             analytics=next((s.get_text() for s in page.select('script') if 'window.reAnalyticsSesiones =' in s.get_text()),'')
             match=re.search(r'window\.reAnalyticsSesiones\s*=\s*(\{.*?\})\s*;',analytics,re.S)
+            if not match and 'nohaysesionesprogramadas' in normalize(text(page)) and not page.select('a.sesion[href]'):
+                continue
             if not match:raise ValueError('No se reconocen los datos de sesiones')
             sessions=json.loads(match[1])
             if not isinstance(sessions,dict):raise ValueError('Formato de sesiones no reconocido')
