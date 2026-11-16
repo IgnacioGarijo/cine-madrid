@@ -16,13 +16,21 @@ jobs:
         run: |
           python - <<'PY'
           import json
+          import requests
           from datetime import datetime
           from src.adapters import Reader
           from src.adapters_yelmo import read_official
           from src.core import MADRID, Incidents
+          for url in ['https://cineyelmo.com/robots.txt', 'https://api-g.cinepolis.com/robots.txt',
+                      'https://www.cinesa.es/robots.txt', 'https://kinepolis.es/robots.txt']:
+              try: print('Estado de robots:', url, requests.get(url, timeout=15).status_code)
+              except requests.RequestException as exc: print('Error de acceso:', url, type(exc).__name__)
           cinemas = json.load(open('config/cinemas.json', encoding='utf-8'))
           cinema = next(c for c in cinemas if c['id'] == 'cine-yelmo-palafox')
           reader = Reader(cinema, datetime.now(MADRID).date(), Incidents())
-          read_official(reader)
-          print('Sesiones oficiales:', len(reader.result.sessions))
+          try:
+              read_official(reader)
+              print('Sesiones oficiales:', len(reader.result.sessions))
+          except Exception as exc:
+              print('Lectura oficial no disponible:', type(exc).__name__, str(exc))
           PY
