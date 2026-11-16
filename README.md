@@ -8,7 +8,7 @@ El inventario ampliado contiene 42 recintos y 41 lectores configurados. Es un in
 
 Fuentes oficiales: Cine Paz, Palacio de Hielo, Verdi, Princesa y Renoir, Golem, Odeon Alcalá Norte, Capitol, Morasol, Cineteca, Artistic Metropol, Cine Estudio (CBA), Cine Doré, Sala Equis, Pequeño Cine Estudio, OCINE Caleido, Callao, Sala Berlanga, Casa de América, Instituto Francés, Academia de Cine, Museo Reina Sofía y Casa de México.
 
-Fuentes alternativas atribuidas: Cinerama para Cinesa, Kinépolis y los cinco Yelmo de Madrid; Publicine para las dos sedes de Embajadores; SensaCine para Palacio de la Prensa. Se conserva la atribución y no se presenta una alternativa como lectura de la web oficial.
+Fuentes alternativas atribuidas: Cinerama para Cinesa, Kinépolis y los cinco Yelmo de Madrid; Publicine complementa metadatos de las dos sedes de Embajadores, cuyas sesiones se leen de su taquilla ReservaEntradas; SensaCine para Palacio de la Prensa. Se conserva la atribución y no se presenta una alternativa como lectura de la web oficial.
 
 Límites relevantes:
 

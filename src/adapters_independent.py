@@ -1,9 +1,10 @@
 """Publicine schedules for the two distinct Embajadores cinemas."""
 import re
+import json
 from datetime import datetime, timedelta
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 from .adapters import text
-from .core import normalize
+from .core import normalize, clean_title
 from .sources import parse_day, event_tags
 
 VENUES = {
@@ -60,3 +61,63 @@ def publicine_embajadores(reader):
                 anchor = entry.find_parent('a')
                 booking = urljoin(url, anchor.get('data-href') or anchor.get('href') or '') if anchor else url
                 reader.result.add(title, start, film_url, director, duration, booking, version=version, tags=event_tags(title), work_id='publicine:'+film_url)
+
+
+def reserva_embajadores(reader):
+    """Official ticketing pages: one explicit date/time and booking URL per screening."""
+    locations={'cines-embajadores':('cineembajadores','cineembajadores'),
+               'cines-embajadores-r-o':('cineembajadoresrio','cineembajadoresrio')}
+    cid=reader.cinema['id'];slug,expected=locations[cid];index=reader.cinema['schedule_url']
+    soup=reader.soup(index)
+    if normalize(text(soup.select_one('h1')))!=expected:
+        raise ValueError('La taquilla no identifica inequívocamente la sede')
+    films={}
+    pattern=re.compile(r'^/(?:reservaentradas/)?sesiones/madrid/'+re.escape(slug)+r'/[^/]+/(\d+)/?$',re.I)
+    for a in soup.select('a[href]'):
+        target=urlparse(urljoin(index,a['href']))
+        match=pattern.fullmatch(target.path)
+        if target.hostname=='www.reservaentradas.com' and match:
+            films[match[1]]='https://www.reservaentradas.com'+target.path.replace('/reservaentradas/','/',1)
+    if not films:raise ValueError('No se reconocen las fichas de la taquilla')
+    # Publicine supplements missing directors only when title and director match unambiguously.
+    metadata={}
+    try:
+        alternative=reader.soup(reader.cinema['metadata_url'])
+        address=alternative.select_one('#adreca');name,street=VENUES[cid]
+        if not address or normalize(text(address.select_one('strong')))!=name or street not in normalize(text(address)):
+            raise ValueError('La fuente complementaria corresponde a otra sede')
+        for block in alternative.select('.sessions'):
+            heading=block.select_one('a[href] h2')
+            if not heading:continue
+            director='';duration=None
+            for label in block.select('span.up'):
+                value=str(label.next_sibling or '').strip()
+                if normalize(text(label))=='director':director=value
+                if normalize(text(label))=='duracion':
+                    duration_match=re.search(r'\d+',value)
+                    if duration_match:duration=int(duration_match[0])
+            if director:metadata.setdefault(normalize(clean_title(text(heading))),set()).add((director,duration))
+    except Exception:
+        reader.partial('metadata','No se pudo consultar la fuente complementaria de direcciones de películas.',reader.cinema['metadata_url'])
+    for film_id,url in films.items():
+        try:
+            page=reader.soup(url)
+            analytics=next((s.get_text() for s in page.select('script') if 'window.reAnalyticsSesiones =' in s.get_text()),'')
+            match=re.search(r'window\.reAnalyticsSesiones\s*=\s*(\{.*?\})\s*;',analytics,re.S)
+            if not match:raise ValueError('No se reconocen los datos de sesiones')
+            sessions=json.loads(match[1])
+            if not isinstance(sessions,dict):raise ValueError('Formato de sesiones no reconocido')
+            for native,record in sessions.items():
+                if record.get('location_id')!=slug or not str(native).isdigit():raise ValueError('Sesión atribuida a otra sede')
+                title=record.get('item_name','').strip();start=datetime.fromisoformat(record['session_datetime'])
+                booking=next((a for a in page.select('a.sesion[href]') if re.search(r'/'+re.escape(str(native))+r'/?(?:\?|$)',a['href'])),None)
+                if not title or booking is None:raise ValueError('Sesión sin título o enlace verificable')
+                target=urlparse(urljoin(index,booking['href']))
+                if target.hostname!='www.reservaentradas.com' or '/entrada/madrid/'+slug+'/' not in target.path:raise ValueError('Enlace de otra sede')
+                ticket='https://www.reservaentradas.com'+target.path.replace('/reservaentradas/','/',1)
+                if target.query:ticket+='?'+target.query
+                candidates=metadata.get(normalize(clean_title(title)),set());director,duration=next(iter(candidates)) if len(candidates)==1 else ('',None)
+                raw=record.get('item_category4','');version='VOSE' if 'vose' in normalize(raw) else 'Doblada' if 'doblada' in normalize(raw) else 'Sin especificar'
+                reader.result.add(title,start,url,director,duration,ticket,version,record.get('item_category5',''),native=native,tags=event_tags(title),work_id='reserva:'+slug+':'+film_id)
+        except Exception as exc:
+            reader.partial(film_id,'No se pudo leer una ficha de sesiones: '+str(exc)[:160],url)

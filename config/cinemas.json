@@ -110,11 +110,12 @@
     "inventory_status": "verified_venue",
     "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
     "municipality": "Madrid",
-    "adapter": "publicine_embajadores",
-    "schedule_url": "https://www.publicine.net/cartelera-cine/madrid/cines-embajadores",
-    "schedule_label": "Publicine · fuente alternativa",
-    "reading_note": "Horarios de Publicine; horizonte limitado a las fechas que publica la fuente.",
-    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Glorieta+de+Santa+Mar%C3%ADa+de+la+Cabeza%2C+5%2C+Madrid"
+    "adapter": "reserva_embajadores",
+    "schedule_url": "https://www.reservaentradas.com/cine/madrid/cineembajadores",
+    "schedule_label": "ReservaEntradas · taquilla del cine",
+    "reading_note": "Sesiones de la taquilla del cine, incluidas fechas anticipadas. Dirección cinematográfica y duración se complementan con Publicine cuando coinciden inequívocamente.",
+    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Glorieta+de+Santa+Mar%C3%ADa+de+la+Cabeza%2C+5%2C+Madrid",
+    "metadata_url": "https://www.publicine.net/cartelera-cine/madrid/cines-embajadores"
   },
   {
     "id": "cines-embajadores-r-o",
@@ -127,11 +128,12 @@
     "inventory_status": "verified_venue",
     "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
     "municipality": "Madrid",
-    "adapter": "publicine_embajadores",
-    "schedule_url": "https://www.publicine.net/cartelera-cine/madrid/cines-embajadores-rio",
-    "schedule_label": "Publicine · fuente alternativa",
-    "reading_note": "Horarios de Publicine; horizonte limitado a las fechas que publica la fuente.",
-    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Calle+de+Ercilla%2C+53%2C+Madrid"
+    "adapter": "reserva_embajadores",
+    "schedule_url": "https://www.reservaentradas.com/cine/madrid/cineembajadoresrio",
+    "schedule_label": "ReservaEntradas · taquilla del cine",
+    "reading_note": "Sesiones de la taquilla del cine, incluidas fechas anticipadas. Dirección cinematográfica y duración se complementan con Publicine cuando coinciden inequívocamente.",
+    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Calle+de+Ercilla%2C+53%2C+Madrid",
+    "metadata_url": "https://www.publicine.net/cartelera-cine/madrid/cines-embajadores-rio"
   },
   {
     "id": "conde-duque-auditorio-morasol",

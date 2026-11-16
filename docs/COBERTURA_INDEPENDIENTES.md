@@ -1,3 +1,7 @@
+# Actualización: 16 de noviembre de 2026
+
+Las dos sedes de Embajadores se leen ahora desde su taquilla de ReservaEntradas, incluidas sesiones anticipadas. Publicine se utiliza solo como apoyo para identificar director y duración cuando el título coincide inequívocamente. La conexión se comprueba por sede, fecha y enlace de cada pase; los fallos de fichas generan incidencias. El registro siguiente describe la integración anterior y sirve como histórico.
+
 # Cobertura de cines independientes
 
 Comprobación efectuada el 12 de noviembre de 2026. El lector `publicine_embajadores` utiliza `Reader.soup` y, por tanto, `Fetcher`, incluida la comprobación de robots.txt. La fuente de horarios es Publicine, no la página oficial. El año se infiere de la fecha de ejecución para fechas sin año mediante `parse_day` (incluido cambio de año); no se expande ningún intervalo como si fueran sesiones. Se conserva el enlace de Publicine a la ficha como `source_url` y su enlace de venta como `booking_url`. VOSE se registra cuando la fuente lo indica; DIGITAL no significa doblada. Dirección y duración proceden de Publicine. El lector verifica nombre y dirección antes de aceptar sesiones, y rechaza una sede equivocada.
