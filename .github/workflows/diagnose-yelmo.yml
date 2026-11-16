@@ -1,0 +1,28 @@
+name: Diagnóstico de lectura Yelmo
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - name: Comprobar lectura oficial
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import datetime
+          from src.adapters import Reader
+          from src.adapters_yelmo import read_official
+          from src.core import MADRID, Incidents
+          cinemas = json.load(open('config/cinemas.json', encoding='utf-8'))
+          cinema = next(c for c in cinemas if c['id'] == 'cine-yelmo-palafox')
+          reader = Reader(cinema, datetime.now(MADRID).date(), Incidents())
+          read_official(reader)
+          print('Sesiones oficiales:', len(reader.result.sessions))
+          PY
