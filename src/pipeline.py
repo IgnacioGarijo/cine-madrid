@@ -7,6 +7,20 @@ from .sources import Fetcher,PAZ_URL,CLASSIC_URL,SOURCE_ID,parse_paz,classic_mem
 from .tmdb import enrich,refresh_posters
 from .adapters import read_cinema
 
+def same_session_from_other_source(previous, candidates):
+    """Avoid retaining a stale copy when the same showing moved between sources."""
+    for current in candidates:
+        if previous.get('source_url') == current.get('source_url'): continue
+        old_room, new_room = previous.get('room'), current.get('room')
+        if old_room and new_room and normalize(str(old_room)) != normalize(str(new_room)): continue
+        old_director, new_director = previous.get('director'), current.get('director')
+        if old_director and new_director and normalize(old_director) != normalize(new_director): continue
+        old_version, new_version = previous.get('version'), current.get('version')
+        if old_version and new_version and old_version != 'Sin especificar' and new_version != 'Sin especificar' and old_version != new_version: continue
+        return True
+    return False
+
+
 def run(refresh=True, newsletter=False, posters_only=False):
     path=ROOT/'data/public.json'
     old=read_json(path,{})
@@ -41,13 +55,19 @@ def run(refresh=True, newsletter=False, posters_only=False):
                 if previous and (len(fresh)<len(previous)*.5 or partial):
                     if len(fresh)<len(previous)*.5:incidents.add(cid,'unexpected_drop','sessions','La fuente devuelve menos de la mitad de las sesiones anteriores; verificar cobertura.',cinema['url'])
                     known={x['id'] for x in fresh}
-                    missing=[dict(x,stale=True,status='unverified') for x in previous if x['id'] not in known]
+                    by_show={}
+                    for s in fresh:by_show.setdefault((normalize(clean_title(s['title'])),s['start']),[]).append(s)
+                    missing=[dict(x,stale=True,status='unverified') for x in previous if x['id'] not in known
+                             and not same_session_from_other_source(x,by_show.get((normalize(clean_title(x['title'])),x['start']),[]))]
                     fresh+=missing
                     film_ids={m['id'] for m in films}
                     films += [m for m in old.get('movies',[]) if m['id'] in {x['movie_id'] for x in missing} and m['id'] not in film_ids]
                 sessions+=fresh;movies+=films
                 partial=any(i['source_id']==cid and i['code'] in ('partial_read','unexpected_drop') for i in incidents.current.values())
-                sources.append(dict(id=cid,status='partial' if partial else 'ok' if fresh else 'empty',last_attempt=now(),last_success=now(),url=cinema.get('schedule_url',cinema['url']),source_label=cinema.get('schedule_label','Fuente oficial'),pages_read=len(pages),
+                source_url=cinema.get('schedule_url',cinema['url']);source_label=cinema.get('schedule_label','Fuente oficial')
+                if cinema.get('fallback_url') and any(not s.get('stale') and s.get('source_url')==cinema['fallback_url'] for s in fresh):
+                    source_url=cinema['fallback_url'];source_label='Cinerama · fuente alternativa'
+                sources.append(dict(id=cid,status='partial' if partial else 'ok' if fresh else 'empty',last_attempt=now(),last_success=now(),url=source_url,source_label=source_label,pages_read=len(pages),
                     first_session=min((x['start'] for x in fresh),default=None),last_session=max((x['start'] for x in fresh),default=None)))
                 print(f"Fuente {cid}: {len(fresh)} sesiones / {len(pages)} páginas",flush=True)
             except Exception as exc:

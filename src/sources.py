@@ -21,9 +21,11 @@ class Fetcher:
     def get(self, url):
         return self._request('GET', url)
 
-    def post(self, url, data=None, *, json=None):
+    def post(self, url, data=None, *, json=None, headers=None):
         """Public read-only form queries; caller must never submit a purchase."""
-        return self._request('POST', url, data=data, json=json)
+        kwargs = dict(data=data, json=json)
+        if headers is not None: kwargs['headers'] = headers
+        return self._request('POST', url, **kwargs)
 
     def _request(self, method, url, **kwargs):
         origin = urljoin(url, '/')

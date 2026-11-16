@@ -2,12 +2,19 @@ import unittest
 from datetime import date
 from src.core import Incidents,trusted_identity
 from src.sources import parse_paz,parse_day,event_tags,classic_members
-from src.pipeline import calendar
+from src.pipeline import calendar, same_session_from_other_source
 
 def html(title='Deseando amar', director='Wong Kar-wai', hour='20:00', day='Lunes 16/11'):
     return f'''<div class="rotulo_dia" data-num="0">{day}</div><div class="cines-0"><div class="horarios"><div class="peli"><a href="/es/detalles/123_1_Z_1/test"><b>{title}</b></a><p>de {director}</p><p>98 minutos</p></div><div class="horas"><a data-ho="777" href="https://tickets.example/a"><span>VOSE</span>{hour}</a></div></div></div>'''
 
 class PipelineTests(unittest.TestCase):
+    def test_stale_session_dedup_preserves_different_versions_and_rooms(self):
+        previous={'source_url':'https://old.example/','version':'VOSE','room':'1'}
+        self.assertTrue(same_session_from_other_source(previous,[{'source_url':'https://new.example/','version':'Sin especificar','room':''}]))
+        self.assertFalse(same_session_from_other_source(previous,[{'source_url':'https://new.example/','version':'Doblada','room':'1'}]))
+        self.assertFalse(same_session_from_other_source(previous,[{'source_url':'https://new.example/','version':'VOSE','room':'2'}]))
+        self.assertFalse(same_session_from_other_source(previous,[{'source_url':'https://old.example/','version':'VOSE','room':'1'}]))
+
     def test_advance_dates_not_array_offsets(self):
         sessions,_=parse_paz(html(),date(2026,11,11),Incidents())
         self.assertEqual(sessions[0]['start'],'2026-11-16T20:00:00+01:00')

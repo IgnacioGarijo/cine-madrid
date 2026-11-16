@@ -6,9 +6,9 @@ Cartelera de Madrid, reposiciones, favoritas personales y boletín. Web estátic
 
 El inventario ampliado contiene 42 recintos y 41 lectores configurados. Es un inventario contrastado, todavía no un censo exhaustivo de cualquier espacio que proyecte cine en Madrid. Incluye Madrid capital y los tres recintos IMAX acordados del entorno: Kinépolis Ciudad de la Imagen, Cinesa Parquesur y Cinesa Heron City Las Rozas. El formato IMAX se aplica solo a sesiones que lo indican expresamente.
 
-Fuentes oficiales: Cine Paz, Palacio de Hielo, Verdi, Princesa y Renoir, Golem, Odeon Alcalá Norte, Capitol, Morasol, Cineteca, Artistic Metropol, Cine Estudio (CBA), Cine Doré, Sala Equis, Pequeño Cine Estudio, OCINE Caleido, Callao, Sala Berlanga, Casa de América, Instituto Francés, Academia de Cine, Museo Reina Sofía y Casa de México.
+Fuentes oficiales: Cine Paz, Palacio de Hielo, Verdi, Princesa y Renoir, Golem, Odeon Alcalá Norte, Capitol, Morasol, Cineteca, Artistic Metropol, Cine Estudio (CBA), Cine Doré, Sala Equis, Pequeño Cine Estudio, OCINE Caleido, Callao, Sala Berlanga, Casa de América, Instituto Francés, Academia de Cine, Museo Reina Sofía, Casa de México y cinco salas de Cine Yelmo.
 
-Fuentes alternativas atribuidas: Cinerama para Cinesa, Kinépolis y los cinco Yelmo de Madrid; Publicine complementa metadatos de las dos sedes de Embajadores, cuyas sesiones se leen de su taquilla ReservaEntradas; SensaCine para Palacio de la Prensa. Se conserva la atribución y no se presenta una alternativa como lectura de la web oficial.
+Fuentes alternativas atribuidas: Cinerama para Cinesa y Kinépolis, y como respaldo cuando falle la lectura oficial de los cinco Yelmo; Publicine complementa metadatos de las dos sedes de Embajadores, cuyas sesiones se leen de su taquilla ReservaEntradas; SensaCine para Palacio de la Prensa. Se conserva la atribución y no se presenta una alternativa como lectura de la web oficial.
 
 Límites relevantes:
 

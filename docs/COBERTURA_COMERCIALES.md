@@ -9,7 +9,9 @@ Registrar `from .adapters_commercial import odeon, golem` después de definir la
 
 Ambos se verificaron mediante `Reader`/`Fetcher`, sin ejecutar el pipeline; `python -X utf8 -m unittest tests.test_commercial` pasa dos pruebas con fixtures.
 
-## Yelmo: alternativa Cinerama ya compatible
+## Yelmo: cartelera oficial y alternativa
+
+Desde el 16 de noviembre de 2026 se consultan los horarios y las fichas del servicio de datos de la web oficial para Ideal, Islazul, Palafox, Plenilunio y La Vaguada, incluidas las fechas anunciadas con antelación. Si falla la lectura oficial, se registra una incidencia y se recurre a Cinerama, debidamente atribuido. Los siguientes datos de Cinerama corresponden a la comprobación anterior del 12 de noviembre.
 
 El lector existente `cinerama` puede utilizarse con `booking_origins: ["https://cineyelmo.com/"]`, `schedule_label: "Cinerama · fuente alternativa"` y `reading_note: "Horarios de Cinerama (fuente alternativa); entradas enlazadas a la cadena original."`. Se comprobó cada cabecera, fechas completas, enlaces de compra y número de enlaces el 12 de noviembre. Los resultados y formatos se atribuyen a Cinerama; no se atribuye IMAX a pases sin indicación explícita.
 

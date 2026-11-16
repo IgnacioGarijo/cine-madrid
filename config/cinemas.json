@@ -346,22 +346,24 @@
     "address": "Calle del Doctor Cortezo, 6",
     "lat": 40.413811953336456,
     "lon": -3.7037999595065476,
-    "url": "https://yelmocines.es/",
+    "url": "https://cineyelmo.com/es?cinema=ideal-madrid",
     "status": "active",
     "inventory_status": "verified_venue",
     "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
     "municipality": "Madrid",
-    "adapter": "cinerama",
-    "schedule_url": "https://cinerama.es/cartelera/cine/yelmo-cines-ideal-madrid-v-o/",
-    "schedule_label": "Cinerama · fuente alternativa",
+    "adapter": "yelmo",
+    "schedule_url": "https://cineyelmo.com/es?cinema=ideal-madrid",
+    "schedule_label": "Cine Yelmo · fuente oficial",
     "source_names": [
       "Yelmo Ideal"
     ],
     "booking_origins": [
       "https://cineyelmo.com/"
     ],
-    "reading_note": "Horarios de Cinerama; las entradas enlazan a la cadena original.",
-    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Calle+del+Doctor+Cortezo%2C+6%2C+Madrid"
+    "reading_note": "Horarios de Cine Yelmo; Cinerama se usa como alternativa si falla la lectura oficial.",
+    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Calle+del+Doctor+Cortezo%2C+6%2C+Madrid",
+    "yelmo_id": "ideal-madrid",
+    "fallback_url": "https://cinerama.es/cartelera/cine/yelmo-cines-ideal-madrid-v-o/"
   },
   {
     "id": "cine-yelmo-islazul",
@@ -369,22 +371,24 @@
     "address": "Calle de la Calderilla, 1",
     "lat": 40.36500685746085,
     "lon": -3.7375927706409042,
-    "url": "https://yelmocines.es/",
+    "url": "https://cineyelmo.com/es?cinema=islazul-madrid",
     "status": "active",
     "inventory_status": "verified_venue",
     "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
     "municipality": "Madrid",
-    "adapter": "cinerama",
-    "schedule_url": "https://cinerama.es/cartelera/cine/yelmo-cines-islazul/",
-    "schedule_label": "Cinerama · fuente alternativa",
+    "adapter": "yelmo",
+    "schedule_url": "https://cineyelmo.com/es?cinema=islazul-madrid",
+    "schedule_label": "Cine Yelmo · fuente oficial",
     "source_names": [
       "Yelmo Islazul"
     ],
     "booking_origins": [
       "https://cineyelmo.com/"
     ],
-    "reading_note": "Horarios de Cinerama; las entradas enlazan a la cadena original.",
-    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Calle+de+la+Calderilla%2C+1%2C+Madrid"
+    "reading_note": "Horarios de Cine Yelmo; Cinerama se usa como alternativa si falla la lectura oficial.",
+    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Calle+de+la+Calderilla%2C+1%2C+Madrid",
+    "yelmo_id": "islazul-madrid",
+    "fallback_url": "https://cinerama.es/cartelera/cine/yelmo-cines-islazul/"
   },
   {
     "id": "cine-yelmo-palafox",
@@ -392,22 +396,24 @@
     "address": "Calle de Luchana, 15",
     "lat": 40.430080547877196,
     "lon": -3.7009447483070255,
-    "url": "https://yelmocines.es/",
+    "url": "https://cineyelmo.com/es?cinema=palafox-luxury-madrid",
     "status": "active",
     "inventory_status": "verified_venue",
     "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
     "municipality": "Madrid",
-    "adapter": "cinerama",
-    "schedule_url": "https://cinerama.es/cartelera/cine/yelmo-cines-luxury-palafox/",
-    "schedule_label": "Cinerama · fuente alternativa",
+    "adapter": "yelmo",
+    "schedule_url": "https://cineyelmo.com/es?cinema=palafox-luxury-madrid",
+    "schedule_label": "Cine Yelmo · fuente oficial",
     "source_names": [
       "Yelmo Palafox"
     ],
     "booking_origins": [
       "https://cineyelmo.com/"
     ],
-    "reading_note": "Horarios de Cinerama; las entradas enlazan a la cadena original.",
-    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Calle+de+Luchana%2C+15%2C+Madrid"
+    "reading_note": "Horarios de Cine Yelmo; Cinerama se usa como alternativa si falla la lectura oficial.",
+    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Calle+de+Luchana%2C+15%2C+Madrid",
+    "yelmo_id": "palafox-luxury-madrid",
+    "fallback_url": "https://cinerama.es/cartelera/cine/yelmo-cines-luxury-palafox/"
   },
   {
     "id": "cine-yelmo-plenilunio",
@@ -415,22 +421,24 @@
     "address": "Calle Aracne, s/n",
     "lat": 40.446875561617,
     "lon": -3.5866719584797,
-    "url": "https://yelmocines.es/",
+    "url": "https://cineyelmo.com/es?cinema=plenilunio-madrid",
     "status": "active",
     "inventory_status": "verified_venue",
     "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
     "municipality": "Madrid",
-    "adapter": "cinerama",
-    "schedule_url": "https://cinerama.es/cartelera/cine/yelmo-cines-plenilunio/",
-    "schedule_label": "Cinerama · fuente alternativa",
+    "adapter": "yelmo",
+    "schedule_url": "https://cineyelmo.com/es?cinema=plenilunio-madrid",
+    "schedule_label": "Cine Yelmo · fuente oficial",
     "source_names": [
       "Yelmo Plenilunio"
     ],
     "booking_origins": [
       "https://cineyelmo.com/"
     ],
-    "reading_note": "Horarios de Cinerama; las entradas enlazan a la cadena original.",
-    "coordinate_source": "https://cinerama.es/cartelera/cine/yelmo-cines-plenilunio/"
+    "reading_note": "Horarios de Cine Yelmo; Cinerama se usa como alternativa si falla la lectura oficial.",
+    "coordinate_source": "https://cinerama.es/cartelera/cine/yelmo-cines-plenilunio/",
+    "yelmo_id": "plenilunio-madrid",
+    "fallback_url": "https://cinerama.es/cartelera/cine/yelmo-cines-plenilunio/"
   },
   {
     "id": "peque-o-cine-estudio",
@@ -454,22 +462,24 @@
     "address": "Avenida de Monforte de Lemos, 36",
     "lat": 40.4792065549199,
     "lon": -3.7082713620899534,
-    "url": "https://www.yelmocines.es",
+    "url": "https://cineyelmo.com/es?cinema=la-vaguada-madrid",
     "status": "active",
     "inventory_status": "verified_venue",
     "provenance": "https://www.fiestadelcine.com/salas-adheridas/",
     "municipality": "Madrid",
-    "adapter": "cinerama",
-    "schedule_url": "https://cinerama.es/cartelera/cine/la-vaguada/",
-    "schedule_label": "Cinerama · fuente alternativa",
+    "adapter": "yelmo",
+    "schedule_url": "https://cineyelmo.com/es?cinema=la-vaguada-madrid",
+    "schedule_label": "Cine Yelmo · fuente oficial",
     "source_names": [
       "Yelmo La Vaguada"
     ],
     "booking_origins": [
       "https://cineyelmo.com/"
     ],
-    "reading_note": "Horarios de Cinerama; las entradas enlazan a la cadena original.",
-    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Avenida+de+Monforte+de+Lemos%2C+36%2C+Madrid"
+    "reading_note": "Horarios de Cine Yelmo; Cinerama se usa como alternativa si falla la lectura oficial.",
+    "coordinate_source": "https://www.cartociudad.es/geocoder/api/geocoder/find?q=Avenida+de+Monforte+de+Lemos%2C+36%2C+Madrid",
+    "yelmo_id": "la-vaguada-madrid",
+    "fallback_url": "https://cinerama.es/cartelera/cine/la-vaguada/"
   },
   {
     "id": "cine-dore",

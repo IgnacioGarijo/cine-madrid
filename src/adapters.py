@@ -284,6 +284,7 @@ ADAPTERS['cinerama']=cinerama
 
 # Imported on demand: modules reuse Reader helpers without a circular import at startup.
 ADDITIONAL_ADAPTERS={
+    'yelmo':'yelmo',
     'golem':'commercial','odeon':'commercial',
     'publicine_embajadores':'independent','reserva_embajadores':'independent','filmoteca':'cultural','casa_america':'cultural',
     'instituto_frances':'cultural','academia_cine':'cultural','reina_sofia':'cultural','casa_mexico':'cultural',
