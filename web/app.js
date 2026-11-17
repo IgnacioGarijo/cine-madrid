@@ -1,8 +1,8 @@
-import {createAccount} from './account.js?v=0.11.5';
-import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.11.5';
+import {createAccount} from './account.js?v=0.11.6';
+import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.11.6';
 
-import {addressCandidates, validOrigin} from './search-utils.js?v=0.11.5';
-import {posterURL} from './poster-utils.js?v=0.11.5';
+import {addressCandidates, validOrigin} from './search-utils.js?v=0.11.6';
+import {posterURL} from './poster-utils.js?v=0.11.6';
 
 const $ = selector => document.querySelector(selector);
 const all = selector => [...document.querySelectorAll(selector)];
@@ -217,7 +217,7 @@ function renderCalendar() {
     miniDay.setAttribute('aria-label',`${fmt.format(dayDate(cell.day))}, ${count} ${count===1?'sesión':'sesiones'}`);
     miniDay.setAttribute('aria-pressed',String(cell.day===selected));miniDay.disabled=cell.day<today;
     if(cell.day===today)miniDay.setAttribute('aria-current','date');
-    miniDay.onclick=()=>{setDay(cell.day);$('#mini-calendar').querySelector(`[data-day="${cell.day}"]`)?.focus({preventScroll:true});};
+    miniDay.onclick=()=>{setDay(cell.day === selected ? '' : cell.day);$('#mini-calendar').querySelector(`[data-day="${cell.day}"]`)?.focus({preventScroll:true});};
     mini.append(miniDay);
     const button = el('button', undefined, 'calendar-day' + classes);
     button.type = 'button'; button.dataset.day = cell.day;
@@ -228,7 +228,7 @@ function renderCalendar() {
     button.append(el('span', cell.number, 'day-number'));
     if (count) button.append(el('span', `${count} ${count === 1 ? 'sesión' : 'sesiones'}`, 'day-count'));
     button.onclick = () => {
-      setDay(cell.day);
+      setDay(cell.day === selected ? '' : cell.day);
       $('#calendar-dialog').close();
       $('#mini-calendar').querySelector(`[data-day="${cell.day}"]`)?.focus({preventScroll:true});
     };
