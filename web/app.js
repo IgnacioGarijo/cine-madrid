@@ -1,8 +1,8 @@
-import {createAccount} from './account.js?v=0.11.6';
-import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.11.6';
+import {createAccount} from './account.js?v=0.11.7';
+import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.11.7';
 
-import {addressCandidates, validOrigin} from './search-utils.js?v=0.11.6';
-import {posterURL} from './poster-utils.js?v=0.11.6';
+import {addressCandidates, validOrigin} from './search-utils.js?v=0.11.7';
+import {posterURL} from './poster-utils.js?v=0.11.7';
 
 const $ = selector => document.querySelector(selector);
 const all = selector => [...document.querySelectorAll(selector)];
@@ -41,8 +41,8 @@ let favoritesApi = '', favoriteSaving = false;
 let accountClient=null, accountUser=null, accountEpoch=0, legacyFavorites=[], guestOrigin=origin, accountsEnabled=false;
 let pushSubscription=null, pushBusy=false;
 let addressTimer, addressController, addressSequence = 0;
-let selectedCinemas = new Set(), selectedCategories = new Set(['repertory_events','premiere','unclassified']), favoriteSearches = [], favoritePage = 1;
-const categories = [['repertory_events','Repos. y eventos'],['premiere','Estrenos'],['unclassified','Por clasificar']];
+let selectedCinemas = new Set(), selectedCategories = new Set(['repertory_events','premiere']), favoriteSearches = [], favoritePage = 1;
+const categories = [['repertory_events','Repos. y eventos'],['premiere','Estrenos']];
 const eventName = tag => ({live_music:'Música en directo',discussion:'Coloquio',guests:'Con invitados',marathon:'Maratón o programa doble'}[tag] || tag);
 if (!Array.isArray(watch)) watch = [];
 const initialDay = madridDay();
@@ -163,7 +163,7 @@ function renderFilterChoices() {
     const box=$('#'+id);box.replaceChildren();
     for (const [key,name] of categories) {
       const button=el('button',name);button.type='button';button.setAttribute('aria-pressed',String(selectedCategories.has(key)));
-      button.title=key==='repertory_events'?'Reposiciones y eventos':key==='unclassified'?'Pendiente de clasificar':'Estrenos';
+      button.title=key==='repertory_events'?'Reposiciones y eventos':'Estrenos';
       button.onclick=()=>{selectedCategories.has(key)?selectedCategories.delete(key):selectedCategories.add(key);render();};box.append(button);
     }
   }

@@ -2,22 +2,35 @@ import unittest
 from datetime import date
 from src.core import Incidents,trusted_identity
 from src.sources import parse_paz,parse_day,event_tags,classic_members
-from src.pipeline import calendar, same_session_from_other_source, classify_recent_unresolved
+from src.pipeline import calendar, same_session_from_other_source, classify_unresolved_by_age
 
 def html(title='Deseando amar', director='Wong Kar-wai', hour='20:00', day='Lunes 16/11'):
     return f'''<div class="rotulo_dia" data-num="0">{day}</div><div class="cines-0"><div class="horarios"><div class="peli"><a href="/es/detalles/123_1_Z_1/test"><b>{title}</b></a><p>de {director}</p><p>98 minutos</p></div><div class="horas"><a data-ho="777" href="https://tickets.example/a"><span>VOSE</span>{hour}</a></div></div></div>'''
 
 class PipelineTests(unittest.TestCase):
-    def test_recent_unresolved_uses_explicit_year_without_verifying_identity(self):
+    def test_unresolved_uses_known_year_without_verifying_identity(self):
+        for year,expected in [(2026,'premiere'),(2025,'premiere'),(2024,'repertory'),(1988,'repertory')]:
+            row={'start':'2026-11-17T20:00:00+01:00','category':'unclassified'}
+            classify_unresolved_by_age(row,{'identity_status':'needs_review','source_year':year})
+            self.assertEqual(row['category'],expected);self.assertTrue(row['classification_evidence']['provisional'])
         row={'start':'2026-11-17T20:00:00+01:00','category':'unclassified'}
-        classify_recent_unresolved(row,{'identity_status':'needs_review','source_year':2025})
-        self.assertEqual(row['category'],'premiere');self.assertTrue(row['classification_evidence']['provisional'])
-        row={'start':'2026-11-17T20:00:00+01:00','category':'unclassified'}
-        classify_recent_unresolved(row,{'identity_status':'needs_review','year':2025})
+        classify_unresolved_by_age(row,{'identity_status':'needs_review','year':2025})
         self.assertEqual(row['category'],'unclassified')
         row={'start':'2026-11-17T20:00:00+01:00','category':'repertory'}
-        classify_recent_unresolved(row,{'identity_status':'verified','year':2025})
+        classify_unresolved_by_age(row,{'identity_status':'verified','year':2025})
         self.assertEqual(row['category'],'repertory')
+
+    def test_exact_two_year_boundary_and_provisional_recomputation(self):
+        movie={'identity_status':'verified','year':2024,'tmdb_releases':[{'type':3,'date':'2024-11-18'}]}
+        row={'start':'2026-11-17T20:00:00+01:00','category':'unclassified'}
+        classify_unresolved_by_age(row,movie)
+        self.assertEqual(row['category'],'premiere')
+        row['start']='2026-11-18T20:00:00+01:00'
+        classify_unresolved_by_age(row,movie)
+        self.assertEqual(row['category'],'repertory')
+        self.assertEqual(row['classification_evidence']['first_theatrical_date'],'2024-11-18')
+        classify_unresolved_by_age(row,{'identity_status':'needs_review'})
+        self.assertEqual(row['category'],'unclassified')
 
     def test_stale_session_dedup_preserves_different_versions_and_rooms(self):
         previous={'source_url':'https://old.example/','version':'VOSE','room':'1'}

@@ -2,5 +2,5 @@
   "repertory_min_days": 365,
   "current_release_max_days": 180,
   "request_budget": 1000,
-  "description": "La primera distribución comercial reciente en España se trata como estreno si corresponde a una película reciente. Una película del año de la sesión o del anterior sin clasificar se considera estreno provisional. Una reposición requiere estreno comercial anterior o evidencia de ciclo clásico. Una primera fecha española reciente de una obra antigua se deja sin clasificar si no puede descartarse que sea un reestreno. Las premières de festivales no bastan."
+  "description": "La primera distribución comercial reciente en España se trata como estreno si corresponde a una película reciente. Si aún está sin clasificar y se conoce su fecha, se considera estreno provisional si tiene menos de dos años y reposición provisional si tiene dos o más. Si solo se conoce el año, se aplica esa diferencia entre años como aproximación. Sin año fiable permanece sin clasificar. Las premières de festivales no bastan."
 }

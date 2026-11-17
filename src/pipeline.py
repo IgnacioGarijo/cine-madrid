@@ -1,7 +1,7 @@
 import argparse
 import os
 import shutil
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from .core import ROOT,MADRID,Incidents,now,read_json,write_json,trusted_identity,normalize,clean_title
 from .sources import Fetcher,PAZ_URL,CLASSIC_URL,SOURCE_ID,parse_paz,classic_members
@@ -22,13 +22,32 @@ def same_session_from_other_source(previous, candidates):
     return False
 
 
-def classify_recent_unresolved(session, movie):
-    if session.get('category')!='unclassified':return
-    year=movie.get('year') if movie.get('identity_status')=='verified' else movie.get('source_year')
-    session_year=datetime.fromisoformat(session['start']).year
-    if isinstance(year,int) and not isinstance(year,bool) and session_year-1<=year<=session_year:
-        session['category']='premiere'
-        session['classification_evidence']={'rule':'recent_film_year_provisional','film_year':year,'provisional':True}
+def classify_unresolved_by_age(session, movie):
+    """Classify only unresolved cases, retaining their provisional status and identity."""
+    evidence=session.get('classification_evidence') or {}
+    if session.get('category')!='unclassified' and not evidence.get('provisional'):return
+    screening=datetime.fromisoformat(session['start']).date()
+    verified=movie.get('identity_status')=='verified'
+    releases=[]
+    if verified:
+        for release in movie.get('tmdb_releases',[]):
+            if release.get('type') not in (2,3):continue
+            try: releases.append(date.fromisoformat(release.get('date','')))
+            except (TypeError,ValueError):continue
+    if releases:
+        first=min(releases)
+        try:threshold=first.replace(year=first.year+2)
+        except ValueError:threshold=first.replace(year=first.year+2,day=28)
+        session['category']='repertory' if screening>=threshold else 'premiere'
+        session['classification_evidence']={'rule':'film_release_age_provisional','first_theatrical_date':first.isoformat(),'provisional':True}
+        return
+    year=movie.get('year') if verified else movie.get('source_year')
+    if isinstance(year,int) and not isinstance(year,bool) and 1800<=year<=2200:
+        session['category']='repertory' if screening.year-year>=2 else 'premiere'
+        session['classification_evidence']={'rule':'film_year_age_provisional','film_year':year,'provisional':True}
+    elif evidence.get('provisional'):
+        session['category']='unclassified'
+        session.pop('classification_evidence',None)
 
 
 def run(refresh=True, newsletter=False, posters_only=False):
@@ -172,13 +191,16 @@ def run(refresh=True, newsletter=False, posters_only=False):
         s['vote_average']=m.get('vote_average')
         s['source_work_id']=m.get('source_work_id')
         # Explicit classic programmes remain independent classification evidence.
-        if m.get('category'): s['category']=m['category']
-        classify_recent_unresolved(s,m)
+        if m.get('category'):
+            s['category']=m['category']
+            if (s.get('classification_evidence') or {}).get('provisional'):
+                s['classification_evidence']={'rule':'cinema_programme_label'}
         if refresh and m.get('identity_status')=='verified' and 'classification_evidence' not in s:
             previous_session=next((p for p in old.get('sessions',[]) if p['id']==s['id']),None)
             if previous_session and m['id'] in unchanged_ids:
                 for field in ['category','classification_evidence']:
                     if field in previous_session:s[field]=previous_session[field]
+        classify_unresolved_by_age(s,m)
     for cinema in cinemas:
         if not cinema.get('adapter'):
             incidents.add(cinema['id'],'source_pending',cinema['id'],cinema.get('reading_note','Fuente pendiente de integrar; no se incluyen sus sesiones.'),cinema.get('url',''),'info')

@@ -52,7 +52,9 @@ test('multiple cinemas and the combined repertory/events filter preserve their u
 test('category selections combine their union and an empty selection shows no films',()=>{
   const sessions=[{id:1,category:'repertory'},{id:2,category:'premiere'},{id:3,category:'unclassified'},{id:4,category:'unclassified',special_tags:['live_music']}].map(s=>({...s,start:'2026-11-12T20:00:00+01:00'}));
   const options={today:'2026-11-11'};
-  assert.deepEqual(filterSessions(sessions,{categories:['repertory_events','premiere']},options).map(s=>s.id),[1,2,4]);
+  assert.deepEqual(filterSessions(sessions,{categories:['repertory_events','premiere']},options).map(s=>s.id),[1,2,3,4]);
+  assert.deepEqual(filterSessions(sessions,{categories:['repertory_events']},options).map(s=>s.id),[1,3,4]);
+  assert.deepEqual(filterSessions(sessions,{categories:['premiere']},options).map(s=>s.id),[2,3,4]);
   assert.deepEqual(filterSessions(sessions,{categories:[]},options),[]);
   assert.equal(filterSessions(sessions,{categories:['repertory_events','premiere','unclassified']},options).length,4);
 });
