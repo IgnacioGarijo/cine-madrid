@@ -42,7 +42,7 @@ def title_score(source, movie):
 
 def director_matches(source, movie):
     # Some venues write 'Kurosawa, Akira' or credit several directors together.
-    tokens=lambda value:set(re.findall(r'[a-z0-9]+',unicodedata.normalize('NFKD',value.casefold()).encode('ascii','ignore').decode()))
+    tokens=lambda value:set(re.findall(r'[a-z0-9]+',unicodedata.normalize('NFKD',value.casefold()).encode('ascii','ignore').decode()))-{'y','and','e'}
     credited=tokens(source.get('director',''))
     names=[tokens(d) for d in movie.get('directors',[])]
     return bool(credited and names and (credited in names or credited==set().union(*names)))
@@ -209,8 +209,6 @@ class Client:
                 'movies':[{k:m.get(k) for k in ['id','tmdb_id','title','original_title','year','director','source_url']} for m in movies],'searched_at':now()}
 
     def resolve(self,source):
-        if not source.get('director') and not source.get('source_year') and not re.search(r'\b(?:19|20)\d{2}\b',source['title']):
-            return None,'missing_director',[]
         seen={}; searched=[]
         for query in title_variants(source['title']):
             searched.append(query)
@@ -224,7 +222,7 @@ class Client:
             match,evidence=identity_match(source,list(seen.values()))
             if match: return match,evidence,[]
             if evidence=='ambiguous':break
-        candidates=[{'id':m['id'],'title':m['title'],'year':m.get('year'),'director':m['director'],'source_url':m['source_url']} for m in seen.values()]
+        candidates=[{'id':m['id'],'title':m['title'],'original_title':m.get('original_title',''),'year':m.get('year'),'director':m['director'],'source_url':m['source_url']} for m in seen.values()]
         return None, 'not_found' if not seen else identity_match(source,list(seen.values()))[1], candidates
 
 def enrich(movies,sessions,cache,config,incidents,token=None,review_decisions=None):

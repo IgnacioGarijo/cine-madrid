@@ -36,6 +36,16 @@ def classify_unresolved_by_age(session, movie):
             except (TypeError,ValueError):continue
     year=movie.get('year') if verified else movie.get('source_year')
     if verified and not isinstance(year,int):year=movie.get('source_year')
+    if not verified and not movie.get('director') and not year:
+        candidates=movie.get('identity_candidates',[])
+        current=datetime.now(MADRID).year
+        from .tmdb import title_variants
+        titles={normalize(v) for v in title_variants(movie.get('title',''))}
+        matches=[c for c in candidates if c.get('year')==current and any(normalize(c.get(k,'')) in titles for k in ('title','original_title') if c.get(k))]
+        if matches:
+            session['category']='premiere'
+            session['classification_evidence']={'rule':'current_year_title_candidate_provisional','film_year':current,'provisional':True,'candidate_ids':[c['id'] for c in matches]}
+            return
     # A modern theatrical date may be a rerelease of a much older film.
     if releases and isinstance(year,int) and not isinstance(year,bool) and year < min(releases).year-1:
         releases=[]
@@ -183,6 +193,18 @@ def run(refresh=True, newsletter=False, posters_only=False):
             session.update(category=category,classification_evidence=evidence)
             if category=='unclassified':
                 incidents.add('tmdb','classification_pending',movie['id'],'Película identificada; falta confirmar el contexto del estreno: '+movie['title'],movie['source_url'],'info')
+    # A year published by FilmAgenda can supplement the same title and director
+    # from another source, without asserting a new TMDB identity.
+    years_by_film={}
+    for m in movies:
+        if m.get('provider')!='filmagenda' or not m.get('director') or not isinstance(m.get('source_year'),int):continue
+        key=(normalize(clean_title(m.get('title',''))),normalize(m['director']))
+        years_by_film.setdefault(key,set()).add(m['source_year'])
+    for m in movies:
+        if m.get('source_year') or not m.get('director'):continue
+        key=(normalize(clean_title(m.get('title',''))),normalize(m['director']))
+        years=years_by_film.get(key,set())
+        if len(years)==1:m['source_year']=next(iter(years))
     movie_map={m['id']:m for m in movies}
     for s in sessions:
         m=movie_map.get(s['movie_id'],{})

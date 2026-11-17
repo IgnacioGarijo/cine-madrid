@@ -8,6 +8,19 @@ def html(title='Deseando amar', director='Wong Kar-wai', hour='20:00', day='Lune
     return f'''<div class="rotulo_dia" data-num="0">{day}</div><div class="cines-0"><div class="horarios"><div class="peli"><a href="/es/detalles/123_1_Z_1/test"><b>{title}</b></a><p>de {director}</p><p>98 minutos</p></div><div class="horas"><a data-ho="777" href="https://tickets.example/a"><span>VOSE</span>{hour}</a></div></div></div>'''
 
 class PipelineTests(unittest.TestCase):
+    def test_current_year_title_candidate_is_only_a_provisional_classification(self):
+        from datetime import datetime
+        from src.core import MADRID
+        year=datetime.now(MADRID).year
+        row={'start':f'{year}-12-15T20:00:00+01:00','category':'unclassified'}
+        movie={'title':'Prueba','identity_status':'needs_review','identity_candidates':[{'id':'tmdb:1','title':'Prueba','year':year}]}
+        classify_unresolved_by_age(row,movie)
+        self.assertEqual(row['category'],'premiere')
+        self.assertTrue(row['classification_evidence']['provisional'])
+        self.assertNotIn('canonical_id',movie)
+        row['category']='unclassified';movie['director']='Otra persona'
+        classify_unresolved_by_age(row,movie)
+        self.assertEqual(row['category'],'unclassified')
     def test_unresolved_uses_known_year_without_verifying_identity(self):
         for year,expected in [(2026,'premiere'),(2025,'premiere'),(2024,'repertory'),(1988,'repertory')]:
             row={'start':'2026-11-17T20:00:00+01:00','category':'unclassified'}
