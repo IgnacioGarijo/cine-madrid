@@ -34,6 +34,11 @@ def classify_unresolved_by_age(session, movie):
             if release.get('type') not in (2,3):continue
             try: releases.append(date.fromisoformat(release.get('date','')))
             except (TypeError,ValueError):continue
+    year=movie.get('year') if verified else movie.get('source_year')
+    if verified and not isinstance(year,int):year=movie.get('source_year')
+    # A modern theatrical date may be a rerelease of a much older film.
+    if releases and isinstance(year,int) and not isinstance(year,bool) and year < min(releases).year-1:
+        releases=[]
     if releases:
         first=min(releases)
         try:threshold=first.replace(year=first.year+2)
@@ -41,7 +46,6 @@ def classify_unresolved_by_age(session, movie):
         session['category']='repertory' if screening>=threshold else 'premiere'
         session['classification_evidence']={'rule':'film_release_age_provisional','first_theatrical_date':first.isoformat(),'provisional':True}
         return
-    year=movie.get('year') if verified else movie.get('source_year')
     if isinstance(year,int) and not isinstance(year,bool) and 1800<=year<=2200:
         session['category']='repertory' if screening.year-year>=2 else 'premiere'
         session['classification_evidence']={'rule':'film_year_age_provisional','film_year':year,'provisional':True}

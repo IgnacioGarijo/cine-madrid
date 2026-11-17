@@ -31,6 +31,10 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(row['classification_evidence']['first_theatrical_date'],'2024-11-18')
         classify_unresolved_by_age(row,{'identity_status':'needs_review'})
         self.assertEqual(row['category'],'unclassified')
+        older={'identity_status':'verified','year':1988,'tmdb_releases':[{'type':3,'date':'2026-11-01'}]}
+        classify_unresolved_by_age(row,older)
+        self.assertEqual(row['category'],'repertory')
+        self.assertEqual(row['classification_evidence']['film_year'],1988)
 
     def test_stale_session_dedup_preserves_different_versions_and_rooms(self):
         previous={'source_url':'https://old.example/','version':'VOSE','room':'1'}

@@ -81,7 +81,7 @@ header { width:100%; min-height:280px; align-items:flex-end; padding:32px max(32
 .primary:hover { background:#405b6e; }input,select { border-color:#cdd0d2; }dialog::backdrop { background:#25374688; }
 .filters { grid-template-columns:minmax(0,1fr) auto; align-items:center; gap:10px; }.filters .search-label input { height:48px; }.quick-controls>button { min-width:0; min-height:48px; white-space:nowrap; }
 .filters>.advanced-filters { grid-column:1/-1; }
-.category-options { display:grid; grid-template-columns:1.4fr 1fr; gap:6px; }.category-options button { min-width:0; white-space:nowrap; font-size:12px; padding:8px 6px; }
+.category-options { display:grid; grid-template-columns:1.4fr .8fr 1fr; gap:6px; }.category-options button { min-width:0; white-space:nowrap; font-size:12px; padding:8px 6px; }
 .results-heading { flex-wrap:nowrap; margin-bottom:6px; }.results-heading .sort-control { width:auto; max-width:195px; flex-shrink:1; }.sort-control select { min-height:40px; font-size:12px; padding:8px 25px 8px 10px; }
 .movie-heading { display:block; margin-bottom:8px; line-height:1.7; }.movie-heading h3 { display:inline; margin:0 10px 0 0; }.movie-heading .meta { display:inline; margin:0; }.movie-heading .meta>span { margin-right:10px; }.movie-heading .tmdb-film-link { white-space:nowrap; }
 .movie-date-control { margin:8px 0 7px; }
