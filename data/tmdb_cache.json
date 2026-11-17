@@ -24704,7 +24704,11 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1058424",
-      "fetched_at": "2026-11-11T12:48:25+01:00"
+      "fetched_at": "2026-11-11T12:48:25+01:00",
+      "vote_count": 685,
+      "vote_average": 6.831,
+      "poster_path": "/lkWqvj24NG3vEgu19ZQ9erG3Vj7.jpg",
+      "statistics_checked_at": "2026-11-17T01:01:36+01:00"
     },
     "616561": {
       "id": "tmdb:616561",
@@ -37979,7 +37983,11 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1755291",
-      "fetched_at": "2026-11-11T12:48:53+01:00"
+      "fetched_at": "2026-11-11T12:48:53+01:00",
+      "vote_count": 150,
+      "vote_average": 7.96,
+      "poster_path": "/urM4MnCGIsCxowqDnwExSUtVKAg.jpg",
+      "statistics_checked_at": "2026-11-17T01:01:37+01:00"
     },
     "1801889": {
       "id": "tmdb:1801889",
@@ -38906,7 +38914,11 @@
       "aliases": [],
       "releases": [],
       "source_url": "https://www.themoviedb.org/movie/1813379",
-      "fetched_at": "2026-11-11T12:48:58+01:00"
+      "fetched_at": "2026-11-11T12:48:58+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "poster_path": null,
+      "statistics_checked_at": "2026-11-17T01:01:37+01:00"
     },
     "1783255": {
       "id": "tmdb:1783255",
@@ -39874,7 +39886,11 @@
       ],
       "releases": [],
       "source_url": "https://www.themoviedb.org/movie/1801438",
-      "fetched_at": "2026-11-11T12:49:05+01:00"
+      "fetched_at": "2026-11-11T12:49:05+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "poster_path": "/3Mka9YnSLtoDJWmfnWKrEuDgwIN.jpg",
+      "statistics_checked_at": "2026-11-17T01:01:37+01:00"
     },
     "479764": {
       "id": "tmdb:479764",
@@ -50151,7 +50167,11 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1656571",
-      "fetched_at": "2026-11-11T12:49:57+01:00"
+      "fetched_at": "2026-11-11T12:49:57+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "poster_path": "/1uv8mwdhLLUnnYsDcTk8dsfdKzP.jpg",
+      "statistics_checked_at": "2026-11-17T01:01:37+01:00"
     },
     "1651231": {
       "id": "tmdb:1651231",
@@ -99253,7 +99273,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/721232",
-      "fetched_at": "2026-11-16T16:43:33+01:00"
+      "fetched_at": "2026-11-16T16:43:33+01:00",
+      "vote_count": 27,
+      "vote_average": 7.2,
+      "statistics_checked_at": "2026-11-17T01:01:38+01:00"
     },
     "14372": {
       "id": "tmdb:14372",
@@ -109871,7 +109894,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1562200",
-      "fetched_at": "2026-11-16T17:39:16+01:00"
+      "fetched_at": "2026-11-16T17:39:16+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-17T01:01:38+01:00"
     },
     "15139": {
       "id": "tmdb:15139",
