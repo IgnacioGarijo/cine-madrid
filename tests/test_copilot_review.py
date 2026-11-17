@@ -1,6 +1,9 @@
 import unittest
+from unittest.mock import patch
 
 from src.copilot_review import eligible, fingerprint, prepare, reviewed_identity, validate
+from src.core import Incidents
+from src.tmdb import enrich
 
 
 class CopilotReviewTests(unittest.TestCase):
@@ -41,6 +44,18 @@ class CopilotReviewTests(unittest.TestCase):
         self.assertEqual(validate({'decisions': []}, batch, self.public, self.cache, previous), previous)
         with self.assertRaises(ValueError):
             validate({}, batch, self.public, self.cache, previous)
+
+    def test_reviewed_identity_flows_into_classification(self):
+        self.candidate.update(tmdb_id=1, directors=['나홍진'], releases=[{'country': 'ES', 'type': 3, 'date': '2026-11-01'}])
+        session = {'movie_id': 'cinema:1', 'start': '2026-11-17T18:00:00+01:00', 'category': 'unclassified'}
+        decision = {fingerprint(self.movie): {'candidate_id': 'tmdb:1', 'reviewed_at': '2026-11-17'}}
+        with patch('src.tmdb.Client') as client:
+            client.return_value.resolve.return_value = (None, 'metadata_mismatch', [{'id': 'tmdb:1'}])
+            client.return_value.requests = 0
+            enrich([self.movie], [session], self.cache, {'current_release_max_days': 180, 'repertory_min_days': 365}, Incidents(), token='test', review_decisions=decision)
+        self.assertEqual(self.movie['identity_status'], 'verified')
+        self.assertEqual(self.movie['canonical_id'], 'tmdb:1')
+        self.assertEqual(session['category'], 'premiere')
 
 
 if __name__ == '__main__':

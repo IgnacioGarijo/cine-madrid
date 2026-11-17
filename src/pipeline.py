@@ -185,7 +185,8 @@ def run(refresh=True, newsletter=False, posters_only=False):
     inventory_ids={c['id'] for c in cinemas}
     checked.update(i['source_id'] for i in old.get('incidents',[]) if i['code']=='source_pending' and i['source_id'] not in inventory_ids)
     data=dict(version='0.11.1',generated_at=now(),coverage_complete=False,cinemas=cinemas,sources=sources,
-              movies=movies,sessions=sessions,incidents=incidents.finish(checked),agent_status='waiting_for_copilot',tmdb=tmdb_status)
+              movies=movies,sessions=sessions,incidents=incidents.finish(checked),
+              agent_status='copilot_review_enabled' if (ROOT/'data/copilot_review.json').exists() else 'waiting_for_copilot',tmdb=tmdb_status)
     if filmagenda_meta:data['filmagenda']=filmagenda_meta
     write_json(path,data)
     build(data,newsletter)

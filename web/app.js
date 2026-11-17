@@ -1,8 +1,8 @@
-import {createAccount} from './account.js?v=0.11.4';
-import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.11.4';
+import {createAccount} from './account.js?v=0.11.5';
+import {madridDay, filterSessions, countByDay, monthCells, distanceKm, rankCinemas, nearbyCinemas, groupFilms, filmDays, chooseFilmDay} from './calendar-utils.js?v=0.11.5';
 
-import {addressCandidates, validOrigin} from './search-utils.js?v=0.11.4';
-import {posterURL} from './poster-utils.js?v=0.11.4';
+import {addressCandidates, validOrigin} from './search-utils.js?v=0.11.5';
+import {posterURL} from './poster-utils.js?v=0.11.5';
 
 const $ = selector => document.querySelector(selector);
 const all = selector => [...document.querySelectorAll(selector)];
@@ -501,7 +501,8 @@ async function boot() {
     $('#coverage').textContent = `Cobertura parcial · ${active} fuente${active === 1 ? '' : 's'} leída${active === 1 ? '' : 's'} correctamente · ${data.cinemas.length} recintos en inventario. Consulta el detalle de lecturas parciales y fuentes pendientes debajo.`;
     $('#inventory-count').textContent = `${data.cinemas.length} espacios`;
     const tmdb = data.tmdb || {};
-    $('#agent-status').textContent = `TMDB: ${tmdb.status === 'ok' ? 'conectado' : tmdb.status === 'partial' ? 'lectura parcial' : 'pendiente o no disponible'} · ${tmdb.matched_movies || 0}/${tmdb.total_movies || data.movies.length} películas identificadas en la última consulta. Copilot sigue pendiente para las ambigüedades. Las identidades sin verificar no generan avisos de coincidencia.`;
+    const reviewStatus = data.agent_status === 'copilot_review_enabled' ? 'Copilot revisa semanalmente un lote de identidades pendientes, con comprobaciones adicionales.' : 'La revisión de identidades con Copilot está pendiente de conexión.';
+    $('#agent-status').textContent = `TMDB: ${tmdb.status === 'ok' ? 'conectado' : tmdb.status === 'partial' ? 'lectura parcial' : 'pendiente o no disponible'} · ${tmdb.matched_movies || 0}/${tmdb.total_movies || data.movies.length} películas identificadas en la última consulta. ${reviewStatus} Las identidades sin verificar no generan avisos de coincidencia.`;
     for (const cinema of data.cinemas) {
       const row = el('div',undefined,'source-row');
       const reading = data.sources.find(s => s.id === cinema.id);
