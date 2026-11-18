@@ -303,5 +303,35 @@
     "director": "Markus Schleinzer",
     "duration": 94,
     "fetched_day": "2026-11-17"
+  },
+  "https://cinerama.es/peliculas/hechos-probados/": {
+    "director": "Luis Arranz",
+    "duration": 109,
+    "fetched_day": "2026-11-18"
+  },
+  "https://cinerama.es/peliculas/ooh-la-la-quien-lo-hubiera-pensado/": {
+    "director": "Julien Hervé",
+    "duration": 91,
+    "fetched_day": "2026-11-18"
+  },
+  "https://cinerama.es/peliculas/club-kid/": {
+    "director": "Jordan Firstman",
+    "duration": 126,
+    "fetched_day": "2026-11-18"
+  },
+  "https://cinerama.es/peliculas/citas-la-pelicula/": {
+    "director": "Gemma Ferraté",
+    "duration": 87,
+    "fetched_day": "2026-11-18"
+  },
+  "https://cinerama.es/peliculas/ooh-la-la-cocorico/": {
+    "director": "Julien Hervé",
+    "duration": 92,
+    "fetched_day": "2026-11-18"
+  },
+  "https://cinerama.es/peliculas/willow-y-las-guardianas-de-los-cuatro-elementos/": {
+    "director": "Mike Marzuk",
+    "duration": 100,
+    "fetched_day": "2026-11-18"
   }
 }
