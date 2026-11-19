@@ -70,5 +70,45 @@
   "31d4068fc4d3435c3716": {
     "candidate_id": "tmdb:1704191",
     "reviewed_at": "2026-11-17T00:54:44+01:00"
+  },
+  "e9881a1335aa671d1f9d": {
+    "candidate_id": "tmdb:1058424",
+    "reviewed_at": "2026-11-19T23:40:59+01:00"
+  },
+  "1794291be9362151ea24": {
+    "candidate_id": "tmdb:1058424",
+    "reviewed_at": "2026-11-19T23:40:59+01:00"
+  },
+  "36abf6fb37686ca3bee8": {
+    "candidate_id": "tmdb:1649403",
+    "reviewed_at": "2026-11-19T23:40:59+01:00"
+  },
+  "3dad36f3f72fe98f8edc": {
+    "candidate_id": "tmdb:1263313",
+    "reviewed_at": "2026-11-19T23:40:59+01:00"
+  },
+  "63addc086f1c7a0735cb": {
+    "candidate_id": "tmdb:1755291",
+    "reviewed_at": "2026-11-19T23:40:59+01:00"
+  },
+  "63dd8892c5aa76f18efc": {
+    "candidate_id": "tmdb:1813385",
+    "reviewed_at": "2026-11-19T23:40:59+01:00"
+  },
+  "81d88dd270c6d1a84329": {
+    "candidate_id": "tmdb:1755291",
+    "reviewed_at": "2026-11-19T23:40:59+01:00"
+  },
+  "840b1a32aea4346e1e5a": {
+    "candidate_id": "tmdb:1813385",
+    "reviewed_at": "2026-11-19T23:40:59+01:00"
+  },
+  "8badb55108497d49b018": {
+    "candidate_id": "tmdb:1556887",
+    "reviewed_at": "2026-11-19T23:40:59+01:00"
+  },
+  "d135708fd7bb26dac8ec": {
+    "candidate_id": "tmdb:1755291",
+    "reviewed_at": "2026-11-19T23:40:59+01:00"
   }
 }
