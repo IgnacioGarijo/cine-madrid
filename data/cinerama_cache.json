@@ -338,5 +338,10 @@
     "director": "David Fincher",
     "duration": 141,
     "fetched_day": "2026-11-19"
+  },
+  "https://cinerama.es/peliculas/puedes-verlo-todo-you-can-see-everything/": {
+    "director": "Nathan Fielder, Lance Oppenheim",
+    "duration": 174,
+    "fetched_day": "2026-11-20"
   }
 }

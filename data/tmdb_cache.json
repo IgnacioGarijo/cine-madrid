@@ -2346,7 +2346,7 @@
     },
     "losdiasposibleslamoto": {
       "results": [],
-      "fetched_at": "2026-11-13T15:48:50+01:00"
+      "fetched_at": "2026-11-20T16:43:53+01:00"
     },
     "masqueunacasa": {
       "results": [
@@ -2598,7 +2598,7 @@
           "original_title": "Ucronia"
         }
       ],
-      "fetched_at": "2026-11-12T14:55:31+01:00"
+      "fetched_at": "2026-11-20T16:43:54+01:00"
     },
     "uneclipseyelcaos": {
       "results": [
@@ -12817,6 +12817,236 @@
     "lasmujeresdenegro": {
       "results": [],
       "fetched_at": "2026-11-20T00:44:57+01:00"
+    },
+    "cortosenelcineeldiamascorto": {
+      "results": [],
+      "fetched_at": "2026-11-20T16:43:49+01:00"
+    },
+    "losdiasposibles2026lamoto2026": {
+      "results": [],
+      "fetched_at": "2026-11-20T16:43:53+01:00"
+    },
+    "losdiasposibles": {
+      "results": [
+        {
+          "id": 1661372,
+          "title": "Los días posibles - Trilogía sobre la ternura",
+          "original_title": "Los días posibles - Trilogía sobre la ternura"
+        },
+        {
+          "id": 748529,
+          "title": "Posibles imágenes de militares durante la Guerra de los Cuatro Días",
+          "original_title": "Posibles imágenes de militares durante la Guerra de los Cuatro Días"
+        }
+      ],
+      "fetched_at": "2026-11-20T16:43:53+01:00"
+    },
+    "uchronia2026": {
+      "results": [],
+      "fetched_at": "2026-11-20T16:43:53+01:00"
+    },
+    "espantapajaros": {
+      "results": [
+        {
+          "id": 1072470,
+          "title": "El espantapájaros",
+          "original_title": "El espantapájaros"
+        },
+        {
+          "id": 31587,
+          "title": "El espantapájaros",
+          "original_title": "Scarecrow"
+        },
+        {
+          "id": 232491,
+          "title": "Espantapájaros",
+          "original_title": "Espantapájaros"
+        },
+        {
+          "id": 255880,
+          "title": "El espantapájaros",
+          "original_title": "El espantapájaros"
+        },
+        {
+          "id": 226948,
+          "title": "El espantapájaros",
+          "original_title": "Scarecrow"
+        },
+        {
+          "id": 336766,
+          "title": "La Leyenda del Espantapájaros",
+          "original_title": "La Leyenda del Espantapájaros"
+        }
+      ],
+      "fetched_at": "2026-11-20T16:43:56+01:00"
+    },
+    "historiasdelkronen": {
+      "results": [
+        {
+          "id": 98600,
+          "title": "Historias del Kronen",
+          "original_title": "Historias del Kronen"
+        }
+      ],
+      "fetched_at": "2026-11-20T16:43:58+01:00"
+    },
+    "jamonjamon": {
+      "results": [
+        {
+          "id": 4507,
+          "title": "Jamón, jamón",
+          "original_title": "Jamón, jamón"
+        },
+        {
+          "id": 410021,
+          "title": "Jamón",
+          "original_title": "Jamón"
+        },
+        {
+          "id": 1764936,
+          "title": "Jabon Jamón",
+          "original_title": "Jabon Jamón"
+        },
+        {
+          "id": 1211371,
+          "title": "Y un jamón",
+          "original_title": "Y un jamón"
+        },
+        {
+          "id": 1411482,
+          "title": "A Mamá con Jamón",
+          "original_title": "A Mamá con Jamón"
+        },
+        {
+          "id": 986336,
+          "title": "Jamón, a Story of Essence",
+          "original_title": "Jamón, a Story of Essence"
+        }
+      ],
+      "fetched_at": "2026-11-20T16:43:58+01:00"
+    },
+    "winnipegelbarcodelaesperanza": {
+      "results": [
+        {
+          "id": 815043,
+          "title": "Winnipeg, El Barco de la Esperanza",
+          "original_title": "Winnipeg, El Barco de la Esperanza"
+        }
+      ],
+      "fetched_at": "2026-11-20T16:44:00+01:00"
+    },
+    "10k": {
+      "results": [
+        {
+          "id": 1464859,
+          "title": "+10k",
+          "original_title": "+10k"
+        },
+        {
+          "id": 1324436,
+          "title": "10K Seguidores",
+          "original_title": "10K Seguidores"
+        },
+        {
+          "id": 1744463,
+          "title": "Can You Make £10k in 10 Days?",
+          "original_title": "Can You Make £10k in 10 Days?"
+        },
+        {
+          "id": 1171541,
+          "title": "Sniper. E.I.R.G. – Equipo de inteligencia y respuesta global",
+          "original_title": "Sniper: G.R.I.T. - Global Response & Intelligence Team"
+        },
+        {
+          "id": 39148,
+          "title": "Dragon Ball: El Camino Hacia el Más Fuerte",
+          "original_title": "ドラゴンボール 最強への道"
+        },
+        {
+          "id": 884333,
+          "title": "10 Steps to Love",
+          "original_title": "10 Steps to Love"
+        }
+      ],
+      "fetched_at": "2026-11-20T16:44:00+01:00"
+    },
+    "yellowletters": {
+      "results": [
+        {
+          "id": 1315657,
+          "title": "Yellow Letters",
+          "original_title": "Sarı Zarflar"
+        }
+      ],
+      "fetched_at": "2026-11-20T16:44:02+01:00"
+    },
+    "mailin": {
+      "results": [
+        {
+          "id": 1567783,
+          "title": "Mailin",
+          "original_title": "Mailin"
+        },
+        {
+          "id": 1372220,
+          "title": "Camino a Mailín",
+          "original_title": "Camino a Mailín"
+        }
+      ],
+      "fetched_at": "2026-11-20T16:44:02+01:00"
+    },
+    "anguitaelhombredelostressiglos": {
+      "results": [
+        {
+          "id": 1802792,
+          "title": "Anguita. El hombre de los tres siglos",
+          "original_title": "Anguita. El hombre de los tres siglos"
+        }
+      ],
+      "fetched_at": "2026-11-20T16:44:03+01:00"
+    },
+    "elrevisor": {
+      "results": [
+        {
+          "id": 1537005,
+          "title": "El Revisor",
+          "original_title": "El Revisor"
+        },
+        {
+          "id": 40206,
+          "title": "El inspector general",
+          "original_title": "The Inspector General"
+        }
+      ],
+      "fetched_at": "2026-11-20T16:44:03+01:00"
+    },
+    "elenaduqueelcinepintado": {
+      "results": [],
+      "fetched_at": "2026-11-20T16:44:04+01:00"
+    },
+    "godwillnothelp": {
+      "results": [
+        {
+          "id": 1457734,
+          "title": "Bog neće pomoći",
+          "original_title": "Bog neće pomoći"
+        }
+      ],
+      "fetched_at": "2026-11-20T16:44:04+01:00"
+    },
+    "larebeliondelascosas": {
+      "results": [],
+      "fetched_at": "2026-11-20T16:44:05+01:00"
+    },
+    "todoloquenovemos": {
+      "results": [
+        {
+          "id": 1465800,
+          "title": "Todo lo que no vemos",
+          "original_title": "Todo lo que no vemos"
+        }
+      ],
+      "fetched_at": "2026-11-20T16:44:05+01:00"
     }
   },
   "movies": {
@@ -47486,6 +47716,7 @@
         "Fil Ieropoulos"
       ],
       "runtime": 97,
+      "poster_path": "/j9rQbXBKAY21X5Y10Oie1XejcV2.jpg",
       "aliases": [
         "Uchronia: Parallel Histories of Queer Revolt"
       ],
@@ -47517,12 +47748,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1615764",
-      "fetched_at": "2026-11-11T12:49:23+01:00",
+      "fetched_at": "2026-11-20T16:43:54+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-12T16:32:44+01:00",
-      "poster_path": "/j9rQbXBKAY21X5Y10Oie1XejcV2.jpg",
-      "poster_checked_at": "2026-11-12T09:55:23+01:00"
+      "statistics_checked_at": "2026-11-20T16:43:55+01:00"
     },
     "593744": {
       "id": "tmdb:593744",
@@ -47535,6 +47764,7 @@
         "Christophe Goffette"
       ],
       "runtime": 0,
+      "poster_path": "/lTJFC3lJhoAw0WUZeovmnq26wJM.jpg",
       "aliases": [],
       "releases": [
         {
@@ -47544,7 +47774,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/593744",
-      "fetched_at": "2026-11-11T12:49:23+01:00"
+      "fetched_at": "2026-11-20T16:43:54+01:00"
     },
     "861637": {
       "id": "tmdb:861637",
@@ -47557,10 +47787,11 @@
         "Azin Feizabadi"
       ],
       "runtime": 0,
+      "poster_path": "/dgYVCPsCt0vYhkHi57PgpJYwW9Q.jpg",
       "aliases": [],
       "releases": [],
       "source_url": "https://www.themoviedb.org/movie/861637",
-      "fetched_at": "2026-11-11T12:49:23+01:00"
+      "fetched_at": "2026-11-20T16:43:54+01:00"
     },
     "824719": {
       "id": "tmdb:824719",
@@ -47573,6 +47804,7 @@
         "Kamila Kuc"
       ],
       "runtime": 4,
+      "poster_path": "/eBmiC7h9Knt2wXWtwdJ1sPtKoHz.jpg",
       "aliases": [],
       "releases": [
         {
@@ -47592,7 +47824,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/824719",
-      "fetched_at": "2026-11-11T12:49:24+01:00"
+      "fetched_at": "2026-11-20T16:43:54+01:00"
     },
     "866636": {
       "id": "tmdb:866636",
@@ -47605,6 +47837,7 @@
         "Arthur Pereira"
       ],
       "runtime": 8,
+      "poster_path": "/a7oZ1mnICxgZwdjg8vVSoGhK36J.jpg",
       "aliases": [
         "Uchrony"
       ],
@@ -47616,7 +47849,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/866636",
-      "fetched_at": "2026-11-11T12:49:24+01:00"
+      "fetched_at": "2026-11-20T16:43:54+01:00"
     },
     "1561574": {
       "id": "tmdb:1561574",
@@ -93537,7 +93770,7 @@
         "Nathan Fielder",
         "Lance Oppenheim"
       ],
-      "runtime": 174,
+      "runtime": 175,
       "poster_path": "/g2PKUCpDChvYvT7IaUOYfjO0mbG.jpg",
       "aliases": [
         "Her Şey Ortada",
@@ -93655,6 +93888,11 @@
         },
         {
           "country": "ES",
+          "type": 2,
+          "date": "2026-11-26"
+        },
+        {
+          "country": "ES",
           "type": 3,
           "date": "2026-12-25"
         },
@@ -93690,6 +93928,11 @@
         },
         {
           "country": "HK",
+          "type": 2,
+          "date": "2026-11-28"
+        },
+        {
+          "country": "HK",
           "type": 3,
           "date": "2026-12-03"
         },
@@ -93699,9 +93942,19 @@
           "date": "2026-11-01"
         },
         {
+          "country": "IE",
+          "type": 3,
+          "date": "2026-11-20"
+        },
+        {
           "country": "IL",
           "type": 3,
           "date": "2026-11-26"
+        },
+        {
+          "country": "IN",
+          "type": 3,
+          "date": "2026-11-27"
         },
         {
           "country": "IQ",
@@ -93717,6 +93970,11 @@
           "country": "IT",
           "type": 1,
           "date": "2026-11-26"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2026-11-27"
         },
         {
           "country": "KR",
@@ -93925,10 +94183,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1765072",
-      "fetched_at": "2026-11-13T15:48:00+01:00",
-      "vote_count": 133,
+      "fetched_at": "2026-11-20T16:43:47+01:00",
+      "vote_count": 137,
       "vote_average": 8.8,
-      "statistics_checked_at": "2026-11-19T17:01:16+01:00"
+      "statistics_checked_at": "2026-11-20T16:43:47+01:00"
     },
     "1736731": {
       "id": "tmdb:1736731",
@@ -94895,7 +95153,7 @@
     "1550356": {
       "id": "tmdb:1550356",
       "tmdb_id": 1550356,
-      "title": "El Director",
+      "title": "El director",
       "original_title": "El Director",
       "year": 2026,
       "director": "Dani de la Orden",
@@ -94914,14 +95172,14 @@
         {
           "country": "ES",
           "type": 3,
-          "date": "2026-11-27"
+          "date": "2026-11-20"
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1550356",
-      "fetched_at": "2026-11-13T15:48:24+01:00",
+      "fetched_at": "2026-11-20T16:43:47+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-19T17:01:24+01:00"
+      "statistics_checked_at": "2026-11-20T16:43:48+01:00"
     },
     "1820004": {
       "id": "tmdb:1820004",
@@ -94944,7 +95202,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1820004",
-      "fetched_at": "2026-11-13T15:48:24+01:00"
+      "fetched_at": "2026-11-20T16:43:48+01:00"
     },
     "841525": {
       "id": "tmdb:841525",
@@ -94959,16 +95217,23 @@
       ],
       "runtime": 0,
       "poster_path": "/tDhDdPHgcOn9Jsp4KIPzsVDtECb.jpg",
-      "aliases": [],
+      "aliases": [
+        "El Director, Las Siete Madres De Edipo"
+      ],
       "releases": [
         {
           "country": "MX",
           "type": 3,
           "date": "2020-12-31"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2023-11-08"
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/841525",
-      "fetched_at": "2026-11-13T15:48:24+01:00"
+      "fetched_at": "2026-11-20T16:43:48+01:00"
     },
     "1669682": {
       "id": "tmdb:1669682",
@@ -94985,7 +95250,7 @@
       "aliases": [],
       "releases": [],
       "source_url": "https://www.themoviedb.org/movie/1669682",
-      "fetched_at": "2026-11-13T15:48:25+01:00"
+      "fetched_at": "2026-11-20T16:43:48+01:00"
     },
     "1551049": {
       "id": "tmdb:1551049",
@@ -95008,7 +95273,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1551049",
-      "fetched_at": "2026-11-13T15:48:25+01:00"
+      "fetched_at": "2026-11-20T16:43:48+01:00"
     },
     "1441697": {
       "id": "tmdb:1441697",
@@ -95031,7 +95296,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1441697",
-      "fetched_at": "2026-11-13T15:48:25+01:00"
+      "fetched_at": "2026-11-20T16:43:48+01:00"
     },
     "11639": {
       "id": "tmdb:11639",
@@ -95153,12 +95418,12 @@
         {
           "country": "NL",
           "type": 5,
-          "date": "2009-09-01"
+          "date": "2009-11-05"
         },
         {
           "country": "NL",
           "type": 5,
-          "date": "2009-11-05"
+          "date": "2009-09-01"
         },
         {
           "country": "PT",
@@ -95183,17 +95448,17 @@
         {
           "country": "SE",
           "type": 5,
+          "date": "2009-09-23"
+        },
+        {
+          "country": "SE",
+          "type": 5,
           "date": "2018-03-05"
         },
         {
           "country": "SE",
           "type": 5,
           "date": "2004-09-01"
-        },
-        {
-          "country": "SE",
-          "type": 5,
-          "date": "2009-09-23"
         },
         {
           "country": "SU",
@@ -95212,10 +95477,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/11639",
-      "fetched_at": "2026-11-13T15:48:46+01:00",
-      "vote_count": 1344,
+      "fetched_at": "2026-11-20T16:43:49+01:00",
+      "vote_count": 1345,
       "vote_average": 7.162,
-      "statistics_checked_at": "2026-11-19T17:03:02+01:00"
+      "statistics_checked_at": "2026-11-20T16:43:49+01:00"
     },
     "627133": {
       "id": "tmdb:627133",
@@ -95248,7 +95513,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/627133",
-      "fetched_at": "2026-11-13T15:48:46+01:00"
+      "fetched_at": "2026-11-20T16:43:49+01:00"
     },
     "13597": {
       "id": "tmdb:13597",
@@ -95358,12 +95623,12 @@
         {
           "country": "NL",
           "type": 5,
-          "date": "2005-12-01"
+          "date": "2009-11-05"
         },
         {
           "country": "NL",
           "type": 5,
-          "date": "2009-11-05"
+          "date": "2005-12-01"
         },
         {
           "country": "PT",
@@ -95388,17 +95653,17 @@
         {
           "country": "SE",
           "type": 5,
+          "date": "2016-09-26"
+        },
+        {
+          "country": "SE",
+          "type": 5,
           "date": "2005-11-23"
         },
         {
           "country": "SE",
           "type": 5,
           "date": "2009-10-28"
-        },
-        {
-          "country": "SE",
-          "type": 5,
-          "date": "2016-09-26"
         },
         {
           "country": "SE",
@@ -95417,10 +95682,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/13597",
-      "fetched_at": "2026-11-13T15:48:47+01:00",
-      "vote_count": 2918,
+      "fetched_at": "2026-11-20T16:43:49+01:00",
+      "vote_count": 2919,
       "vote_average": 7.296,
-      "statistics_checked_at": "2026-11-19T17:03:04+01:00"
+      "statistics_checked_at": "2026-11-20T16:43:50+01:00"
     },
     "244316": {
       "id": "tmdb:244316",
@@ -95498,7 +95763,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/244316",
-      "fetched_at": "2026-11-13T15:48:47+01:00"
+      "fetched_at": "2026-11-20T16:43:50+01:00"
     },
     "145220": {
       "id": "tmdb:145220",
@@ -95670,10 +95935,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/145220",
-      "fetched_at": "2026-11-13T15:48:47+01:00",
-      "vote_count": 927,
-      "vote_average": 6.322,
-      "statistics_checked_at": "2026-11-19T17:03:06+01:00"
+      "fetched_at": "2026-11-20T16:43:50+01:00",
+      "vote_count": 929,
+      "vote_average": 6.321,
+      "statistics_checked_at": "2026-11-20T16:43:50+01:00"
     },
     "64328": {
       "id": "tmdb:64328",
@@ -95831,10 +96096,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/64328",
-      "fetched_at": "2026-11-13T15:48:50+01:00",
-      "vote_count": 1761,
+      "fetched_at": "2026-11-20T16:43:50+01:00",
+      "vote_count": 1762,
       "vote_average": 6.673,
-      "statistics_checked_at": "2026-11-19T17:03:11+01:00"
+      "statistics_checked_at": "2026-11-20T16:43:51+01:00"
     },
     "1548113": {
       "id": "tmdb:1548113",
@@ -96564,7 +96829,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1548113",
-      "fetched_at": "2026-11-13T15:48:50+01:00"
+      "fetched_at": "2026-11-20T16:43:50+01:00"
     },
     "10208": {
       "id": "tmdb:10208",
@@ -96665,7 +96930,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/10208",
-      "fetched_at": "2026-11-13T15:48:50+01:00"
+      "fetched_at": "2026-11-20T16:43:51+01:00"
     },
     "826914": {
       "id": "tmdb:826914",
@@ -96748,7 +97013,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/826914",
-      "fetched_at": "2026-11-13T15:48:50+01:00"
+      "fetched_at": "2026-11-20T16:43:51+01:00"
     },
     "10437": {
       "id": "tmdb:10437",
@@ -96872,10 +97137,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/10437",
-      "fetched_at": "2026-11-13T15:48:50+01:00",
+      "fetched_at": "2026-11-20T16:43:51+01:00",
       "vote_count": 1238,
       "vote_average": 7.458,
-      "statistics_checked_at": "2026-11-19T17:03:11+01:00"
+      "statistics_checked_at": "2026-11-20T16:43:52+01:00"
     },
     "11899": {
       "id": "tmdb:11899",
@@ -96932,10 +97197,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/11899",
-      "fetched_at": "2026-11-13T15:48:51+01:00",
+      "fetched_at": "2026-11-20T16:43:51+01:00",
       "vote_count": 440,
       "vote_average": 6.619,
-      "statistics_checked_at": "2026-11-19T17:03:11+01:00"
+      "statistics_checked_at": "2026-11-20T16:43:51+01:00"
     },
     "13247": {
       "id": "tmdb:13247",
@@ -96973,7 +97238,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/13247",
-      "fetched_at": "2026-11-13T15:48:51+01:00"
+      "fetched_at": "2026-11-20T16:43:52+01:00"
     },
     "10874": {
       "id": "tmdb:10874",
@@ -97065,10 +97330,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/10874",
-      "fetched_at": "2026-11-13T15:48:52+01:00",
+      "fetched_at": "2026-11-20T16:43:52+01:00",
       "vote_count": 497,
       "vote_average": 6.713,
-      "statistics_checked_at": "2026-11-19T17:03:11+01:00"
+      "statistics_checked_at": "2026-11-20T16:43:52+01:00"
     },
     "9479": {
       "id": "tmdb:9479",
@@ -97361,10 +97626,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/9479",
-      "fetched_at": "2026-11-13T15:48:53+01:00",
-      "vote_count": 10954,
+      "fetched_at": "2026-11-20T16:43:52+01:00",
+      "vote_count": 10958,
       "vote_average": 7.86,
-      "statistics_checked_at": "2026-11-19T17:03:13+01:00"
+      "statistics_checked_at": "2026-11-20T16:43:52+01:00"
     },
     "247182": {
       "id": "tmdb:247182",
@@ -97406,7 +97671,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/247182",
-      "fetched_at": "2026-11-13T15:49:06+01:00"
+      "fetched_at": "2026-11-20T16:43:55+01:00"
     },
     "1506401": {
       "id": "tmdb:1506401",
@@ -97438,6 +97703,11 @@
           "date": "2026-11-26"
         },
         {
+          "country": "RO",
+          "type": 4,
+          "date": "2026-11-27"
+        },
+        {
           "country": "SG",
           "type": 4,
           "date": "2026-11-27"
@@ -97449,10 +97719,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1506401",
-      "fetched_at": "2026-11-13T15:49:07+01:00",
+      "fetched_at": "2026-11-20T16:43:55+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-20T00:44:02+01:00"
+      "statistics_checked_at": "2026-11-20T16:43:56+01:00"
     },
     "181283": {
       "id": "tmdb:181283",
@@ -97608,7 +97878,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/181283",
-      "fetched_at": "2026-11-13T15:49:07+01:00"
+      "fetched_at": "2026-11-20T16:43:55+01:00"
     },
     "14574": {
       "id": "tmdb:14574",
@@ -97896,7 +98166,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/14574",
-      "fetched_at": "2026-11-13T15:49:07+01:00"
+      "fetched_at": "2026-11-20T16:43:55+01:00"
     },
     "250154": {
       "id": "tmdb:250154",
@@ -97919,7 +98189,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/250154",
-      "fetched_at": "2026-11-13T15:49:07+01:00"
+      "fetched_at": "2026-11-20T16:43:56+01:00"
     },
     "369299": {
       "id": "tmdb:369299",
@@ -97935,9 +98205,15 @@
       "poster_path": "/md3iYDpi6rlrAF6iyJyzdOzyUEV.jpg",
       "aliases": [
         "Che colpa ne ha il bambino?",
+        "I co my teraz zrobimy?",
         "Не обвинять Малыша?"
       ],
       "releases": [
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2016-12-24"
+        },
         {
           "country": "MX",
           "type": 1,
@@ -97952,10 +98228,25 @@
           "country": "NL",
           "type": 4,
           "date": "2016-12-22"
+        },
+        {
+          "country": "PE",
+          "type": 3,
+          "date": "2016-06-16"
+        },
+        {
+          "country": "PL",
+          "type": 3,
+          "date": "2016-12-22"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "2016-12-24"
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/369299",
-      "fetched_at": "2026-11-13T15:49:07+01:00"
+      "fetched_at": "2026-11-20T16:43:56+01:00"
     },
     "141": {
       "id": "tmdb:141",
@@ -134264,7 +134555,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/16",
-      "fetched_at": "2026-11-17T01:34:09+01:00"
+      "fetched_at": "2026-11-17T01:34:09+01:00",
+      "vote_count": 2117,
+      "vote_average": 7.825,
+      "statistics_checked_at": "2026-11-20T16:43:58+01:00"
     },
     "1232493": {
       "id": "tmdb:1232493",
@@ -136395,7 +136689,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1548336",
-      "fetched_at": "2026-11-17T01:34:24+01:00"
+      "fetched_at": "2026-11-17T01:34:24+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-20T16:44:04+01:00"
     },
     "304328": {
       "id": "tmdb:304328",
@@ -153604,7 +153901,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/11293",
-      "fetched_at": "2026-11-19T17:03:33+01:00"
+      "fetched_at": "2026-11-19T17:03:33+01:00",
+      "vote_count": 894,
+      "vote_average": 7.866,
+      "statistics_checked_at": "2026-11-20T16:43:56+01:00"
     },
     "212164": {
       "id": "tmdb:212164",
@@ -159525,6 +159825,1365 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/361710",
       "fetched_at": "2026-11-20T00:44:56+01:00"
+    },
+    "1661372": {
+      "id": "tmdb:1661372",
+      "tmdb_id": 1661372,
+      "title": "Los días posibles - Trilogía sobre la ternura",
+      "original_title": "Los días posibles - Trilogía sobre la ternura",
+      "year": 2026,
+      "director": "Rodrigo Guerrero",
+      "directors": [
+        "Rodrigo Guerrero"
+      ],
+      "runtime": 65,
+      "poster_path": "/qKJeFEGmaNs4ihPzYGZEcT1z9Oz.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "2026-04-17"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1661372",
+      "fetched_at": "2026-11-20T16:43:53+01:00"
+    },
+    "748529": {
+      "id": "tmdb:748529",
+      "tmdb_id": 748529,
+      "title": "Posibles imágenes de militares durante la Guerra de los Cuatro Días",
+      "original_title": "Posibles imágenes de militares durante la Guerra de los Cuatro Días",
+      "year": 1932,
+      "director": "Miguel Ángel Álvarez",
+      "directors": [
+        "Miguel Ángel Álvarez"
+      ],
+      "runtime": 1,
+      "poster_path": null,
+      "aliases": [],
+      "releases": [
+        {
+          "country": "EC",
+          "type": 3,
+          "date": "1932-09-12"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/748529",
+      "fetched_at": "2026-11-20T16:43:53+01:00"
+    },
+    "1072470": {
+      "id": "tmdb:1072470",
+      "tmdb_id": 1072470,
+      "title": "El espantapájaros",
+      "original_title": "El espantapájaros",
+      "year": 1962,
+      "director": "Pedro Balañà i Bonvehí",
+      "directors": [
+        "Pedro Balañà i Bonvehí"
+      ],
+      "runtime": 9,
+      "poster_path": null,
+      "aliases": [],
+      "releases": [
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "1962-10-12"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1072470",
+      "fetched_at": "2026-11-20T16:43:56+01:00"
+    },
+    "31587": {
+      "id": "tmdb:31587",
+      "tmdb_id": 31587,
+      "title": "El espantapájaros",
+      "original_title": "Scarecrow",
+      "year": 1973,
+      "director": "Jerry Schatzberg",
+      "directors": [
+        "Jerry Schatzberg"
+      ],
+      "runtime": 104,
+      "poster_path": "/fM8BDbWtvdhqNdUqwMKOtCThorE.jpg",
+      "aliases": [
+        "Asphaltblüten",
+        "Fugleskræmslet",
+        "L'Épouvantail",
+        "Пугало",
+        "流浪奇男子",
+        "허수아비"
+      ],
+      "releases": [
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "1974-01-01"
+        },
+        {
+          "country": "BR",
+          "type": 5,
+          "date": "2017-01-24"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "1973-11-02"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "1973-05-25"
+        },
+        {
+          "country": "FR",
+          "type": 1,
+          "date": "1973-05-18"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "1973-05-26"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "1973-09-13"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "1973-09-07"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "1973-09-22"
+        },
+        {
+          "country": "NL",
+          "type": 5,
+          "date": "2006-01-11"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "1974-01-02"
+        },
+        {
+          "country": "SE",
+          "type": 6,
+          "date": "1973-04-11"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "1973-04-11"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/31587",
+      "fetched_at": "2026-11-20T16:43:57+01:00",
+      "vote_count": 372,
+      "vote_average": 7.0,
+      "statistics_checked_at": "2026-11-20T16:43:57+01:00"
+    },
+    "232491": {
+      "id": "tmdb:232491",
+      "tmdb_id": 232491,
+      "title": "Espantapájaros",
+      "original_title": "Espantapájaros",
+      "year": 2012,
+      "director": "Ricardo del Conde",
+      "directors": [
+        "Ricardo del Conde"
+      ],
+      "runtime": 53,
+      "poster_path": "/1wZQwHlOws8OvXC8uPzMSKDhqLV.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "MX",
+          "type": 3,
+          "date": "2012-09-11"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/232491",
+      "fetched_at": "2026-11-20T16:43:57+01:00"
+    },
+    "255880": {
+      "id": "tmdb:255880",
+      "tmdb_id": 255880,
+      "title": "El espantapájaros",
+      "original_title": "El espantapájaros",
+      "year": 2003,
+      "director": "Gonzalo Zona",
+      "directors": [
+        "Gonzalo Zona"
+      ],
+      "runtime": 11,
+      "poster_path": "/gIf0IVNASQbbpC5Zsf5YQXeYqxa.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2003-06-04"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/255880",
+      "fetched_at": "2026-11-20T16:43:57+01:00"
+    },
+    "226948": {
+      "id": "tmdb:226948",
+      "tmdb_id": 226948,
+      "title": "El espantapájaros",
+      "original_title": "Scarecrow",
+      "year": 2013,
+      "director": "Sheldon Wilson",
+      "directors": [
+        "Sheldon Wilson"
+      ],
+      "runtime": 85,
+      "poster_path": "/2FNlOE060DyeT3T5hcR133lYebv.jpg",
+      "aliases": [
+        "Espantalho Assassino",
+        "La maldición del espantapájaros",
+        "Legenda o vraždícím strašákovi",
+        "Pole strachu",
+        "Scarecrow - Painajainen maissipellossa",
+        "Scarecrow : Das Grauen stirbt nie",
+        "Пугало"
+      ],
+      "releases": [
+        {
+          "country": "GB",
+          "type": 5,
+          "date": "2014-04-28"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2013-10-05"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/226948",
+      "fetched_at": "2026-11-20T16:43:57+01:00"
+    },
+    "336766": {
+      "id": "tmdb:336766",
+      "tmdb_id": 336766,
+      "title": "La Leyenda del Espantapájaros",
+      "original_title": "La Leyenda del Espantapájaros",
+      "year": 2005,
+      "director": "Marco Besas",
+      "directors": [
+        "Marco Besas"
+      ],
+      "runtime": 10,
+      "poster_path": "/1d2lWRqNpVBi2I3ITEVesbmwRSY.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2005-05-20"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/336766",
+      "fetched_at": "2026-11-20T16:43:57+01:00"
+    },
+    "98600": {
+      "id": "tmdb:98600",
+      "tmdb_id": 98600,
+      "title": "Historias del Kronen",
+      "original_title": "Historias del Kronen",
+      "year": 1995,
+      "director": "Montxo Armendáriz",
+      "directors": [
+        "Montxo Armendáriz"
+      ],
+      "runtime": 101,
+      "poster_path": "/vulTVwoMoy1IE1IRJhihHYQ6H2H.jpg",
+      "aliases": [
+        "Kronenin tarinoita",
+        "Opowiesci z Kronen",
+        "Treffpunkt Kronen-Bar",
+        "Истории из Кронена"
+      ],
+      "releases": [
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "1998-02-05"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "1995-04-29"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "1998-02-25"
+        },
+        {
+          "country": "RO",
+          "type": 3,
+          "date": "1995-04-29"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "1996-11-13"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/98600",
+      "fetched_at": "2026-11-20T16:43:58+01:00",
+      "vote_count": 57,
+      "vote_average": 5.991,
+      "statistics_checked_at": "2026-11-20T16:43:58+01:00"
+    },
+    "4507": {
+      "id": "tmdb:4507",
+      "tmdb_id": 4507,
+      "title": "Jamón, jamón",
+      "original_title": "Jamón, jamón",
+      "year": 1992,
+      "director": "Bigas Luna",
+      "directors": [
+        "Bigas Luna"
+      ],
+      "runtime": 95,
+      "poster_path": "/8SDnqxX2XMOEQMZhBAGMx3kPc8u.jpg",
+      "aliases": [
+        "A Tale of Ham and Passion",
+        "Surrendered",
+        "ハモンハモン"
+      ],
+      "releases": [
+        {
+          "country": "CA",
+          "type": 3,
+          "date": "1994-02-04"
+        },
+        {
+          "country": "CZ",
+          "type": 2,
+          "date": "2003-03-18"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "1993-05-13"
+        },
+        {
+          "country": "ES",
+          "type": 1,
+          "date": "1992-09-02"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "1992-09-03"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "1993-06-16"
+        },
+        {
+          "country": "GB",
+          "type": 2,
+          "date": "1993-06-04"
+        },
+        {
+          "country": "GB",
+          "type": 5,
+          "date": "2000-12-17"
+        },
+        {
+          "country": "IT",
+          "type": 1,
+          "date": "1992-09-11"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "1992-10-09"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "1994-02-26"
+        },
+        {
+          "country": "PL",
+          "type": 4,
+          "date": "2010-03-19"
+        },
+        {
+          "country": "RO",
+          "type": 2,
+          "date": "1992-09-03"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "1993-02-01"
+        },
+        {
+          "country": "US",
+          "type": 2,
+          "date": "1993-09-24"
+        },
+        {
+          "country": "US",
+          "type": 2,
+          "date": "1994-02-01"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/4507",
+      "fetched_at": "2026-11-20T16:43:58+01:00",
+      "vote_count": 424,
+      "vote_average": 6.222,
+      "statistics_checked_at": "2026-11-20T16:43:59+01:00"
+    },
+    "410021": {
+      "id": "tmdb:410021",
+      "tmdb_id": 410021,
+      "title": "Jamón",
+      "original_title": "Jamón",
+      "year": 2013,
+      "director": "Iria Lopez",
+      "directors": [
+        "Iria Lopez"
+      ],
+      "runtime": 8,
+      "poster_path": null,
+      "aliases": [],
+      "releases": [
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2013-01-01"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/410021",
+      "fetched_at": "2026-11-20T16:43:59+01:00"
+    },
+    "1764936": {
+      "id": "tmdb:1764936",
+      "tmdb_id": 1764936,
+      "title": "Jabon Jamón",
+      "original_title": "Jabon Jamón",
+      "year": 2025,
+      "director": "Jack Haven",
+      "directors": [
+        "Jack Haven"
+      ],
+      "runtime": 2,
+      "poster_path": "/uwp8Qatby3o1tpqBwOFBJ72AiZI.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2025-11-26"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1764936",
+      "fetched_at": "2026-11-20T16:43:59+01:00"
+    },
+    "1211371": {
+      "id": "tmdb:1211371",
+      "tmdb_id": 1211371,
+      "title": "Y un jamón",
+      "original_title": "Y un jamón",
+      "year": 2023,
+      "director": "Chus Verdú Seva, Sergio Balaguer Orfão",
+      "directors": [
+        "Chus Verdú Seva",
+        "Sergio Balaguer Orfão"
+      ],
+      "runtime": 10,
+      "poster_path": "/oA0OTxDpZgONQtoavPkFhhYClra.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "ES",
+          "type": 2,
+          "date": "2023-09-02"
+        },
+        {
+          "country": "MX",
+          "type": 2,
+          "date": "2023-11-17"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1211371",
+      "fetched_at": "2026-11-20T16:43:59+01:00"
+    },
+    "1411482": {
+      "id": "tmdb:1411482",
+      "tmdb_id": 1411482,
+      "title": "A Mamá con Jamón",
+      "original_title": "A Mamá con Jamón",
+      "year": 2024,
+      "director": "Marta Balón",
+      "directors": [
+        "Marta Balón"
+      ],
+      "runtime": 6,
+      "poster_path": "/9RgeC9HOt4PWvWBx2tlaSff0VK3.jpg",
+      "aliases": [
+        "To Mum with Ham"
+      ],
+      "releases": [
+        {
+          "country": "ES",
+          "type": 2,
+          "date": "2024-11-17"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1411482",
+      "fetched_at": "2026-11-20T16:43:59+01:00"
+    },
+    "986336": {
+      "id": "tmdb:986336",
+      "tmdb_id": 986336,
+      "title": "Jamón, a Story of Essence",
+      "original_title": "Jamón, a Story of Essence",
+      "year": null,
+      "director": "Alessandro Pugno",
+      "directors": [
+        "Alessandro Pugno"
+      ],
+      "runtime": 32,
+      "poster_path": "/a1LSDfw97Nl8ILyArqRHq37gvY8.jpg",
+      "aliases": [],
+      "releases": [],
+      "source_url": "https://www.themoviedb.org/movie/986336",
+      "fetched_at": "2026-11-20T16:43:59+01:00"
+    },
+    "815043": {
+      "id": "tmdb:815043",
+      "tmdb_id": 815043,
+      "title": "Winnipeg, El Barco de la Esperanza",
+      "original_title": "Winnipeg, El Barco de la Esperanza",
+      "year": 2026,
+      "director": "Beñat Beitia, Elio Quiroga",
+      "directors": [
+        "Beñat Beitia",
+        "Elio Quiroga"
+      ],
+      "runtime": 82,
+      "poster_path": "/kbyVwqt7QRW40YQJdMdBRka89Z4.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "CN",
+          "type": 1,
+          "date": "2026-06-16"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2026-07-10"
+        },
+        {
+          "country": "KR",
+          "type": 1,
+          "date": "2026-10-24"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/815043",
+      "fetched_at": "2026-11-20T16:44:00+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-20T16:44:00+01:00"
+    },
+    "1464859": {
+      "id": "tmdb:1464859",
+      "tmdb_id": 1464859,
+      "title": "+10k",
+      "original_title": "+10k",
+      "year": 2025,
+      "director": "Gala Hernández López",
+      "directors": [
+        "Gala Hernández López"
+      ],
+      "runtime": 33,
+      "poster_path": "/xNdaXyhOk0a8prB0Ss2lF1oW4GK.jpg",
+      "aliases": [
+        "Más 10K"
+      ],
+      "releases": [
+        {
+          "country": "FR",
+          "type": 1,
+          "date": "2025-05-22"
+        },
+        {
+          "country": "LT",
+          "type": 1,
+          "date": "2025-11-14"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1464859",
+      "fetched_at": "2026-11-20T16:44:00+01:00",
+      "vote_count": 2,
+      "vote_average": 4.5,
+      "statistics_checked_at": "2026-11-20T16:44:01+01:00"
+    },
+    "1324436": {
+      "id": "tmdb:1324436",
+      "tmdb_id": 1324436,
+      "title": "10K Seguidores",
+      "original_title": "10K Seguidores",
+      "year": 2024,
+      "director": "Sandrine López Sarango, ARIANA GUARNIZO",
+      "directors": [
+        "Sandrine López Sarango",
+        "ARIANA GUARNIZO"
+      ],
+      "runtime": 10,
+      "poster_path": "/xNKdvQM5HI2WwRIGaldTASBtVQq.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "PE",
+          "type": 1,
+          "date": "2024-08-09"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1324436",
+      "fetched_at": "2026-11-20T16:44:00+01:00"
+    },
+    "1744463": {
+      "id": "tmdb:1744463",
+      "tmdb_id": 1744463,
+      "title": "Can You Make £10k in 10 Days?",
+      "original_title": "Can You Make £10k in 10 Days?",
+      "year": 2026,
+      "director": "",
+      "directors": [],
+      "runtime": 47,
+      "poster_path": "/tCo8oQFccHcfrtW2mGgQXn8gBJX.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "GB",
+          "type": 6,
+          "date": "2026-01-09"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1744463",
+      "fetched_at": "2026-11-20T16:44:01+01:00"
+    },
+    "1171541": {
+      "id": "tmdb:1171541",
+      "tmdb_id": 1171541,
+      "title": "Sniper. E.I.R.G. – Equipo de inteligencia y respuesta global",
+      "original_title": "Sniper: G.R.I.T. - Global Response & Intelligence Team",
+      "year": 2023,
+      "director": "Oliver Thompson",
+      "directors": [
+        "Oliver Thompson"
+      ],
+      "runtime": 92,
+      "poster_path": "/X13cOdC037SHDHpzLMQDTJjfjU.jpg",
+      "aliases": [
+        "تک‌تیرانداز: G.R.I.T - تیم واکنش و اطلاعات جهانی"
+      ],
+      "releases": [
+        {
+          "country": "AU",
+          "type": 4,
+          "date": "2023-05-01"
+        },
+        {
+          "country": "DE",
+          "type": 4,
+          "date": "2023-11-23"
+        },
+        {
+          "country": "GB",
+          "type": 4,
+          "date": "2023-10-16"
+        },
+        {
+          "country": "KR",
+          "type": 4,
+          "date": "2023-09-11"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2023-09-26"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1171541",
+      "fetched_at": "2026-11-20T16:44:01+01:00"
+    },
+    "39148": {
+      "id": "tmdb:39148",
+      "tmdb_id": 39148,
+      "title": "Dragon Ball: El Camino Hacia el Más Fuerte",
+      "original_title": "ドラゴンボール 最強への道",
+      "year": 1996,
+      "director": "Shigeyasu Yamauchi",
+      "directors": [
+        "Shigeyasu Yamauchi"
+      ],
+      "runtime": 79,
+      "poster_path": "/sSdhAvMpKfqJ6DYUSkrWURt1L5Q.jpg",
+      "aliases": [
+        "Bola de Drac: El camí cap al més fort",
+        "Doragon Bōru　Saikyō e no Michi",
+        "Dragon Ball - Der Weg zur Macht",
+        "Dragon Ball - Film 04 - L'armée Du Ruban Rouge",
+        "Dragon Ball - La nascita degli eroi",
+        "Dragon Ball El camino hacia el más fuerte",
+        "Dragon Ball Movie 4 - The Path to Power",
+        "Dragon Ball: A Caminho do Poder",
+        "Dragon Ball: Em Busca do Poder",
+        "Dragon Ball: O Caminho do Poder",
+        "Dragon Ball: Saikyō e no Michi",
+        "Saikyō e no Michi",
+        "ドラゴンボール　最強への道",
+        "最強への道",
+        "龙珠剧场版4：最强之道",
+        "드래곤볼: 최강으로 가는 길 (극장판 4기)"
+      ],
+      "releases": [
+        {
+          "country": "CN",
+          "type": 3,
+          "date": "1996-03-04"
+        },
+        {
+          "country": "DE",
+          "type": 5,
+          "date": "2011-09-30"
+        },
+        {
+          "country": "DE",
+          "type": 5,
+          "date": "2020-07-20"
+        },
+        {
+          "country": "ES",
+          "type": 4,
+          "date": "2021-04-30"
+        },
+        {
+          "country": "ES",
+          "type": 4,
+          "date": "2025-02-22"
+        },
+        {
+          "country": "ES",
+          "type": 6,
+          "date": "2002-10-23"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2000-12-30"
+        },
+        {
+          "country": "FR",
+          "type": 6,
+          "date": "2026-05-06"
+        },
+        {
+          "country": "IT",
+          "type": 6,
+          "date": "2000-10-31"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "1996-03-04"
+        },
+        {
+          "country": "KR",
+          "type": 4,
+          "date": "2013-10-24"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2003-04-29"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/39148",
+      "fetched_at": "2026-11-20T16:44:01+01:00"
+    },
+    "884333": {
+      "id": "tmdb:884333",
+      "tmdb_id": 884333,
+      "title": "10 Steps to Love",
+      "original_title": "10 Steps to Love",
+      "year": 2021,
+      "director": "Elizabeth Snoderly",
+      "directors": [
+        "Elizabeth Snoderly"
+      ],
+      "runtime": 90,
+      "poster_path": "/7HsDLNSMP7KBtlIK1Q1Ojc6skZ2.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "BE",
+          "type": 6,
+          "date": "2023-10-10"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2021-09-14"
+        },
+        {
+          "country": "US",
+          "type": 6,
+          "date": "2023-08-28"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/884333",
+      "fetched_at": "2026-11-20T16:44:01+01:00"
+    },
+    "1315657": {
+      "id": "tmdb:1315657",
+      "tmdb_id": 1315657,
+      "title": "Yellow Letters",
+      "original_title": "Sarı Zarflar",
+      "year": 2026,
+      "director": "İlker Çatak",
+      "directors": [
+        "İlker Çatak"
+      ],
+      "runtime": 128,
+      "poster_path": "/taBK5pXtvKnSHY4XnlaO3jDv9FE.jpg",
+      "aliases": [
+        "Geltonieji laiškai",
+        "Sarı Zarflar",
+        "Sarı zərflər",
+        "Yellow Letters"
+      ],
+      "releases": [
+        {
+          "country": "AT",
+          "type": 3,
+          "date": "2026-04-10"
+        },
+        {
+          "country": "AU",
+          "type": 1,
+          "date": "2026-06-04"
+        },
+        {
+          "country": "AU",
+          "type": 1,
+          "date": "2026-08-08"
+        },
+        {
+          "country": "AU",
+          "type": 1,
+          "date": "2026-09-13"
+        },
+        {
+          "country": "BA",
+          "type": 1,
+          "date": "2026-08-21"
+        },
+        {
+          "country": "BE",
+          "type": 1,
+          "date": "2026-04-25"
+        },
+        {
+          "country": "BR",
+          "type": 1,
+          "date": "2026-10-03"
+        },
+        {
+          "country": "CA",
+          "type": 1,
+          "date": "2026-10-02"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "2026-03-05"
+        },
+        {
+          "country": "CZ",
+          "type": 1,
+          "date": "2026-07-03"
+        },
+        {
+          "country": "DE",
+          "type": 1,
+          "date": "2026-02-13"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2026-03-05"
+        },
+        {
+          "country": "EG",
+          "type": 1,
+          "date": "2026-10-20"
+        },
+        {
+          "country": "ES",
+          "type": 1,
+          "date": "2026-10-27"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2026-12-18"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "2026-09-04"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2026-04-01"
+        },
+        {
+          "country": "FR",
+          "type": 6,
+          "date": "2026-10-26"
+        },
+        {
+          "country": "ID",
+          "type": 2,
+          "date": "2026-05-29"
+        },
+        {
+          "country": "IL",
+          "type": 3,
+          "date": "2027-01-14"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2026-04-30"
+        },
+        {
+          "country": "KR",
+          "type": 1,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "LT",
+          "type": 1,
+          "date": "2026-10-01"
+        },
+        {
+          "country": "MY",
+          "type": 1,
+          "date": "2026-07-25"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2026-10-08"
+        },
+        {
+          "country": "PL",
+          "type": 1,
+          "date": "2026-07-25"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "2026-09-03"
+        },
+        {
+          "country": "RO",
+          "type": 1,
+          "date": "2026-06-14"
+        },
+        {
+          "country": "TH",
+          "type": 1,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "TR",
+          "type": 3,
+          "date": "2026-03-27"
+        },
+        {
+          "country": "UA",
+          "type": 1,
+          "date": "2026-06-14"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2026-10-16"
+        },
+        {
+          "country": "XC",
+          "type": 1,
+          "date": "2026-09-10"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1315657",
+      "fetched_at": "2026-11-20T16:44:02+01:00",
+      "vote_count": 52,
+      "vote_average": 7.0,
+      "statistics_checked_at": "2026-11-20T16:44:02+01:00"
+    },
+    "1567783": {
+      "id": "tmdb:1567783",
+      "tmdb_id": 1567783,
+      "title": "Mailin",
+      "original_title": "Mailin",
+      "year": 2026,
+      "director": "María Silvia Esteve",
+      "directors": [
+        "María Silvia Esteve"
+      ],
+      "runtime": 89,
+      "poster_path": "/wQpGvh5OAHFH7qC6mTGD68cMArp.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "AR",
+          "type": 1,
+          "date": "2026-08-29"
+        },
+        {
+          "country": "CH",
+          "type": 1,
+          "date": "2026-11-14"
+        },
+        {
+          "country": "CL",
+          "type": 1,
+          "date": "2026-11-26"
+        },
+        {
+          "country": "CR",
+          "type": 1,
+          "date": "2026-11-08"
+        },
+        {
+          "country": "ES",
+          "type": 1,
+          "date": "2026-05-14"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2026-11-27"
+        },
+        {
+          "country": "FR",
+          "type": 1,
+          "date": "2026-03-24"
+        },
+        {
+          "country": "GR",
+          "type": 1,
+          "date": "2026-03-06"
+        },
+        {
+          "country": "HR",
+          "type": 1,
+          "date": "2026-04-23"
+        },
+        {
+          "country": "IT",
+          "type": 1,
+          "date": "2026-05-30"
+        },
+        {
+          "country": "LU",
+          "type": 1,
+          "date": "2026-03-06"
+        },
+        {
+          "country": "MX",
+          "type": 1,
+          "date": "2026-04-23"
+        },
+        {
+          "country": "NL",
+          "type": 1,
+          "date": "2025-11-15"
+        },
+        {
+          "country": "SE",
+          "type": 1,
+          "date": "2026-01-24"
+        },
+        {
+          "country": "UA",
+          "type": 1,
+          "date": "2026-06-06"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1567783",
+      "fetched_at": "2026-11-20T16:44:02+01:00"
+    },
+    "1372220": {
+      "id": "tmdb:1372220",
+      "tmdb_id": 1372220,
+      "title": "Camino a Mailín",
+      "original_title": "Camino a Mailín",
+      "year": 2024,
+      "director": "Ana Cecilia Basualdo",
+      "directors": [
+        "Ana Cecilia Basualdo"
+      ],
+      "runtime": 78,
+      "poster_path": "/cbDR9EJwLRuCZ9rZSHSjYFpgz9O.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "2024-07-18"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1372220",
+      "fetched_at": "2026-11-20T16:44:02+01:00"
+    },
+    "1802792": {
+      "id": "tmdb:1802792",
+      "tmdb_id": 1802792,
+      "title": "Anguita. El hombre de los tres siglos",
+      "original_title": "Anguita. El hombre de los tres siglos",
+      "year": null,
+      "director": "Hugo Cabezas",
+      "directors": [
+        "Hugo Cabezas"
+      ],
+      "runtime": 89,
+      "poster_path": "/frLnw4oiwluG7Dd6SCipwbqOEuI.jpg",
+      "aliases": [],
+      "releases": [],
+      "source_url": "https://www.themoviedb.org/movie/1802792",
+      "fetched_at": "2026-11-20T16:44:03+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-20T16:44:03+01:00"
+    },
+    "1537005": {
+      "id": "tmdb:1537005",
+      "tmdb_id": 1537005,
+      "title": "El Revisor",
+      "original_title": "El Revisor",
+      "year": 2025,
+      "director": "Jandro",
+      "directors": [
+        "Jandro"
+      ],
+      "runtime": 5,
+      "poster_path": "/vnxfFg6LgaKrptJi9lYdMvdSYz9.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "ES",
+          "type": 1,
+          "date": "2025-10-27"
+        },
+        {
+          "country": "ES",
+          "type": 1,
+          "date": "2026-02-28"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1537005",
+      "fetched_at": "2026-11-20T16:44:03+01:00"
+    },
+    "40206": {
+      "id": "tmdb:40206",
+      "tmdb_id": 40206,
+      "title": "El inspector general",
+      "original_title": "The Inspector General",
+      "year": 1949,
+      "director": "Henry Koster",
+      "directors": [
+        "Henry Koster"
+      ],
+      "runtime": 105,
+      "poster_path": "/dIByv2Lz3Ixzb9raK8E9Lkhv73x.jpg",
+      "aliases": [
+        "Der Falsche Revisor",
+        "Der Generalinspektor"
+      ],
+      "releases": [
+        {
+          "country": "AT",
+          "type": 3,
+          "date": "1950-09-01"
+        },
+        {
+          "country": "AU",
+          "type": 5,
+          "date": "2000-01-01"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "1961-10-29"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "1950-05-05"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "1950-12-11"
+        },
+        {
+          "country": "NL",
+          "type": 5,
+          "date": "2004-01-01"
+        },
+        {
+          "country": "NL",
+          "type": 6,
+          "date": "2003-02-15"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "1949-12-30"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "1949-12-31"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "1995-05-05"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/40206",
+      "fetched_at": "2026-11-20T16:44:04+01:00"
+    },
+    "1457734": {
+      "id": "tmdb:1457734",
+      "tmdb_id": 1457734,
+      "title": "Bog neće pomoći",
+      "original_title": "Bog neće pomoći",
+      "year": 2025,
+      "director": "Hana Jušić",
+      "directors": [
+        "Hana Jušić"
+      ],
+      "runtime": 137,
+      "poster_path": "/z37qPY6qkFlqSVpqP4c1ZSV7Fl7.jpg",
+      "aliases": [
+        "Bog ne bo pomagal",
+        "Bog neće pomoći",
+        "Dumnezeu nu ne va ajuta",
+        "God Will Not Help",
+        "上帝不会帮忙",
+        "신은 돕지 않는다"
+      ],
+      "releases": [
+        {
+          "country": "BA",
+          "type": 1,
+          "date": "2025-08-20"
+        },
+        {
+          "country": "BG",
+          "type": 1,
+          "date": "2026-03-17"
+        },
+        {
+          "country": "CH",
+          "type": 1,
+          "date": "2025-08-08"
+        },
+        {
+          "country": "CN",
+          "type": 1,
+          "date": "2026-06-12"
+        },
+        {
+          "country": "HR",
+          "type": 1,
+          "date": "2025-11-10"
+        },
+        {
+          "country": "HR",
+          "type": 1,
+          "date": "2025-11-17"
+        },
+        {
+          "country": "HR",
+          "type": 3,
+          "date": "2025-11-27"
+        },
+        {
+          "country": "KR",
+          "type": 1,
+          "date": "2025-09-18"
+        },
+        {
+          "country": "TH",
+          "type": 1,
+          "date": "2025-10-11"
+        },
+        {
+          "country": "UY",
+          "type": 1,
+          "date": "2026-04-01"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1457734",
+      "fetched_at": "2026-11-20T16:44:04+01:00",
+      "translations_checked": true,
+      "vote_count": 3,
+      "vote_average": 7.3,
+      "statistics_checked_at": "2026-11-20T16:44:04+01:00"
+    },
+    "1465800": {
+      "id": "tmdb:1465800",
+      "tmdb_id": 1465800,
+      "title": "Todo lo que no vemos",
+      "original_title": "Todo lo que no vemos",
+      "year": 2025,
+      "director": "Alberto Arvelo",
+      "directors": [
+        "Alberto Arvelo"
+      ],
+      "runtime": 93,
+      "poster_path": "/5yvoRCS377OvnbTixnQmtMzrNUb.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2025-06-08"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1465800",
+      "fetched_at": "2026-11-20T16:44:05+01:00",
+      "vote_count": 1,
+      "vote_average": 10.0,
+      "statistics_checked_at": "2026-11-20T16:44:05+01:00"
     }
   }
 }
