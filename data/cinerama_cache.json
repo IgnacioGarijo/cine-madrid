@@ -256,13 +256,13 @@
   },
   "https://cinerama.es/peliculas/el-director/": {
     "director": "Dani de la Orden",
-    "duration": null,
-    "fetched_day": "2026-11-13"
+    "duration": 115,
+    "fetched_day": "2026-11-21"
   },
   "https://cinerama.es/peliculas/como-robar-un-banco/": {
     "director": "David Leitch",
     "duration": 121,
-    "fetched_day": "2026-11-13"
+    "fetched_day": "2026-11-21"
   },
   "https://cinerama.es/peliculas/rocky/": {
     "director": "John G. Avildsen",
@@ -343,5 +343,15 @@
     "director": "Nathan Fielder, Lance Oppenheim",
     "duration": 174,
     "fetched_day": "2026-11-20"
+  },
+  "https://cinerama.es/peliculas/focker-in-law-meet-the-parents-4/": {
+    "director": "John Hamburg",
+    "duration": 105,
+    "fetched_day": "2026-11-21"
+  },
+  "https://cinerama.es/peliculas/hexed-hechizo/": {
+    "director": "Jason Hand, Josie Trinidad, Fawn Veerasunthorn",
+    "duration": 110,
+    "fetched_day": "2026-11-21"
   }
 }
