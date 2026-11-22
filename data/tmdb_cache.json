@@ -2609,7 +2609,7 @@
           "original_title": "Ucronia"
         }
       ],
-      "fetched_at": "2026-11-20T16:43:54+01:00"
+      "fetched_at": "2026-11-22T15:48:49+01:00"
     },
     "uneclipseyelcaos": {
       "results": [
@@ -12849,7 +12849,7 @@
     },
     "cortosenelcineeldiamascorto": {
       "results": [],
-      "fetched_at": "2026-11-20T16:43:49+01:00"
+      "fetched_at": "2026-11-22T15:48:48+01:00"
     },
     "losdiasposibles2026lamoto2026": {
       "results": [],
@@ -12872,7 +12872,7 @@
     },
     "uchronia2026": {
       "results": [],
-      "fetched_at": "2026-11-20T16:43:53+01:00"
+      "fetched_at": "2026-11-22T15:48:49+01:00"
     },
     "espantapajaros": {
       "results": [
@@ -12887,6 +12887,11 @@
           "original_title": "Scarecrow"
         },
         {
+          "id": 226948,
+          "title": "El espantapájaros",
+          "original_title": "Scarecrow"
+        },
+        {
           "id": 232491,
           "title": "Espantapájaros",
           "original_title": "Espantapájaros"
@@ -12897,17 +12902,12 @@
           "original_title": "El espantapájaros"
         },
         {
-          "id": 226948,
-          "title": "El espantapájaros",
-          "original_title": "Scarecrow"
-        },
-        {
           "id": 336766,
           "title": "La Leyenda del Espantapájaros",
           "original_title": "La Leyenda del Espantapájaros"
         }
       ],
-      "fetched_at": "2026-11-20T16:43:56+01:00"
+      "fetched_at": "2026-11-22T15:48:50+01:00"
     },
     "historiasdelkronen": {
       "results": [
@@ -12917,7 +12917,7 @@
           "original_title": "Historias del Kronen"
         }
       ],
-      "fetched_at": "2026-11-20T16:43:58+01:00"
+      "fetched_at": "2026-11-22T15:48:51+01:00"
     },
     "jamonjamon": {
       "results": [
@@ -12952,7 +12952,7 @@
           "original_title": "Jamón, a Story of Essence"
         }
       ],
-      "fetched_at": "2026-11-20T16:43:58+01:00"
+      "fetched_at": "2026-11-22T15:48:51+01:00"
     },
     "winnipegelbarcodelaesperanza": {
       "results": [
@@ -12962,7 +12962,7 @@
           "original_title": "Winnipeg, El Barco de la Esperanza"
         }
       ],
-      "fetched_at": "2026-11-20T16:44:00+01:00"
+      "fetched_at": "2026-11-22T15:48:51+01:00"
     },
     "10k": {
       "results": [
@@ -12997,7 +12997,7 @@
           "original_title": "10 Steps to Love"
         }
       ],
-      "fetched_at": "2026-11-20T16:44:00+01:00"
+      "fetched_at": "2026-11-22T15:48:52+01:00"
     },
     "yellowletters": {
       "results": [
@@ -13007,7 +13007,7 @@
           "original_title": "Sarı Zarflar"
         }
       ],
-      "fetched_at": "2026-11-20T16:44:02+01:00"
+      "fetched_at": "2026-11-22T15:48:52+01:00"
     },
     "mailin": {
       "results": [
@@ -13022,7 +13022,7 @@
           "original_title": "Camino a Mailín"
         }
       ],
-      "fetched_at": "2026-11-20T16:44:02+01:00"
+      "fetched_at": "2026-11-22T15:48:52+01:00"
     },
     "anguitaelhombredelostressiglos": {
       "results": [
@@ -13032,7 +13032,7 @@
           "original_title": "Anguita. El hombre de los tres siglos"
         }
       ],
-      "fetched_at": "2026-11-20T16:44:03+01:00"
+      "fetched_at": "2026-11-22T15:48:52+01:00"
     },
     "elrevisor": {
       "results": [
@@ -13047,11 +13047,11 @@
           "original_title": "The Inspector General"
         }
       ],
-      "fetched_at": "2026-11-20T16:44:03+01:00"
+      "fetched_at": "2026-11-22T15:48:53+01:00"
     },
     "elenaduqueelcinepintado": {
       "results": [],
-      "fetched_at": "2026-11-20T16:44:04+01:00"
+      "fetched_at": "2026-11-22T15:48:53+01:00"
     },
     "godwillnothelp": {
       "results": [
@@ -13061,11 +13061,11 @@
           "original_title": "Bog neće pomoći"
         }
       ],
-      "fetched_at": "2026-11-20T16:44:04+01:00"
+      "fetched_at": "2026-11-22T15:48:53+01:00"
     },
     "larebeliondelascosas": {
       "results": [],
-      "fetched_at": "2026-11-20T16:44:05+01:00"
+      "fetched_at": "2026-11-22T15:48:53+01:00"
     },
     "todoloquenovemos": {
       "results": [
@@ -13075,7 +13075,7 @@
           "original_title": "Todo lo que no vemos"
         }
       ],
-      "fetched_at": "2026-11-20T16:44:05+01:00"
+      "fetched_at": "2026-11-22T15:48:54+01:00"
     },
     "lacaypalomitasthedoomgeneration": {
       "results": [],
@@ -47798,7 +47798,7 @@
       "fetched_at": "2026-11-20T16:43:54+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-20T16:43:55+01:00"
+      "statistics_checked_at": "2026-11-22T15:48:50+01:00"
     },
     "593744": {
       "id": "tmdb:593744",
@@ -94231,9 +94231,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1765072",
       "fetched_at": "2026-11-20T16:43:47+01:00",
-      "vote_count": 137,
+      "vote_count": 148,
       "vote_average": 8.8,
-      "statistics_checked_at": "2026-11-20T16:43:47+01:00"
+      "statistics_checked_at": "2026-11-22T15:48:47+01:00"
     },
     "1736731": {
       "id": "tmdb:1736731",
@@ -95224,9 +95224,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1550356",
       "fetched_at": "2026-11-20T16:43:47+01:00",
-      "vote_count": 0,
-      "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-20T16:43:48+01:00"
+      "vote_count": 1,
+      "vote_average": 6.5,
+      "statistics_checked_at": "2026-11-22T15:48:47+01:00"
     },
     "1820004": {
       "id": "tmdb:1820004",
@@ -95525,9 +95525,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/11639",
       "fetched_at": "2026-11-20T16:43:49+01:00",
-      "vote_count": 1345,
-      "vote_average": 7.162,
-      "statistics_checked_at": "2026-11-20T16:43:49+01:00"
+      "vote_count": 1347,
+      "vote_average": 7.164,
+      "statistics_checked_at": "2026-11-22T15:48:48+01:00"
     },
     "627133": {
       "id": "tmdb:627133",
@@ -95730,9 +95730,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/13597",
       "fetched_at": "2026-11-20T16:43:49+01:00",
-      "vote_count": 2919,
-      "vote_average": 7.296,
-      "statistics_checked_at": "2026-11-20T16:43:50+01:00"
+      "vote_count": 2925,
+      "vote_average": 7.3,
+      "statistics_checked_at": "2026-11-22T15:48:48+01:00"
     },
     "244316": {
       "id": "tmdb:244316",
@@ -95983,9 +95983,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/145220",
       "fetched_at": "2026-11-20T16:43:50+01:00",
-      "vote_count": 929,
+      "vote_count": 930,
       "vote_average": 6.321,
-      "statistics_checked_at": "2026-11-20T16:43:50+01:00"
+      "statistics_checked_at": "2026-11-22T15:48:48+01:00"
     },
     "64328": {
       "id": "tmdb:64328",
@@ -96146,7 +96146,7 @@
       "fetched_at": "2026-11-20T16:43:50+01:00",
       "vote_count": 1762,
       "vote_average": 6.673,
-      "statistics_checked_at": "2026-11-20T16:43:51+01:00"
+      "statistics_checked_at": "2026-11-22T15:48:49+01:00"
     },
     "1548113": {
       "id": "tmdb:1548113",
@@ -97187,7 +97187,7 @@
       "fetched_at": "2026-11-20T16:43:51+01:00",
       "vote_count": 1238,
       "vote_average": 7.458,
-      "statistics_checked_at": "2026-11-20T16:43:52+01:00"
+      "statistics_checked_at": "2026-11-22T15:48:49+01:00"
     },
     "11899": {
       "id": "tmdb:11899",
@@ -97247,7 +97247,7 @@
       "fetched_at": "2026-11-20T16:43:51+01:00",
       "vote_count": 440,
       "vote_average": 6.619,
-      "statistics_checked_at": "2026-11-20T16:43:51+01:00"
+      "statistics_checked_at": "2026-11-22T15:48:49+01:00"
     },
     "13247": {
       "id": "tmdb:13247",
@@ -97380,7 +97380,7 @@
       "fetched_at": "2026-11-20T16:43:52+01:00",
       "vote_count": 497,
       "vote_average": 6.713,
-      "statistics_checked_at": "2026-11-20T16:43:52+01:00"
+      "statistics_checked_at": "2026-11-22T15:48:49+01:00"
     },
     "9479": {
       "id": "tmdb:9479",
@@ -97674,9 +97674,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/9479",
       "fetched_at": "2026-11-20T16:43:52+01:00",
-      "vote_count": 10958,
-      "vote_average": 7.86,
-      "statistics_checked_at": "2026-11-20T16:43:52+01:00"
+      "vote_count": 10962,
+      "vote_average": 7.861,
+      "statistics_checked_at": "2026-11-22T15:48:49+01:00"
     },
     "247182": {
       "id": "tmdb:247182",
@@ -97769,7 +97769,7 @@
       "fetched_at": "2026-11-20T16:43:55+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-20T16:43:56+01:00"
+      "statistics_checked_at": "2026-11-22T15:48:50+01:00"
     },
     "181283": {
       "id": "tmdb:181283",
@@ -101171,7 +101171,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/443072",
-      "fetched_at": "2026-11-15T15:11:01+01:00"
+      "fetched_at": "2026-11-22T15:48:48+01:00"
     },
     "847": {
       "id": "tmdb:847",
@@ -134608,9 +134608,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/16",
       "fetched_at": "2026-11-17T01:34:09+01:00",
-      "vote_count": 2117,
-      "vote_average": 7.825,
-      "statistics_checked_at": "2026-11-20T16:43:58+01:00"
+      "vote_count": 2120,
+      "vote_average": 7.827,
+      "statistics_checked_at": "2026-11-22T15:48:50+01:00"
     },
     "1232493": {
       "id": "tmdb:1232493",
@@ -136744,7 +136744,7 @@
       "fetched_at": "2026-11-17T01:34:24+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-20T16:44:04+01:00"
+      "statistics_checked_at": "2026-11-22T15:48:53+01:00"
     },
     "304328": {
       "id": "tmdb:304328",
@@ -153955,9 +153955,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/11293",
       "fetched_at": "2026-11-19T17:03:33+01:00",
-      "vote_count": 894,
+      "vote_count": 895,
       "vote_average": 7.866,
-      "statistics_checked_at": "2026-11-20T16:43:56+01:00"
+      "statistics_checked_at": "2026-11-22T15:48:50+01:00"
     },
     "212164": {
       "id": "tmdb:212164",
@@ -160042,7 +160042,7 @@
       "fetched_at": "2026-11-20T16:43:57+01:00",
       "vote_count": 372,
       "vote_average": 7.0,
-      "statistics_checked_at": "2026-11-20T16:43:57+01:00"
+      "statistics_checked_at": "2026-11-22T15:48:50+01:00"
     },
     "232491": {
       "id": "tmdb:232491",
@@ -160198,7 +160198,7 @@
       "fetched_at": "2026-11-20T16:43:58+01:00",
       "vote_count": 57,
       "vote_average": 5.991,
-      "statistics_checked_at": "2026-11-20T16:43:58+01:00"
+      "statistics_checked_at": "2026-11-22T15:48:51+01:00"
     },
     "4507": {
       "id": "tmdb:4507",
@@ -160302,8 +160302,8 @@
       "source_url": "https://www.themoviedb.org/movie/4507",
       "fetched_at": "2026-11-20T16:43:58+01:00",
       "vote_count": 424,
-      "vote_average": 6.222,
-      "statistics_checked_at": "2026-11-20T16:43:59+01:00"
+      "vote_average": 6.2,
+      "statistics_checked_at": "2026-11-22T15:48:51+01:00"
     },
     "410021": {
       "id": "tmdb:410021",
@@ -160457,7 +160457,7 @@
       "fetched_at": "2026-11-20T16:44:00+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-20T16:44:00+01:00"
+      "statistics_checked_at": "2026-11-22T15:48:51+01:00"
     },
     "1464859": {
       "id": "tmdb:1464859",
@@ -160490,7 +160490,7 @@
       "fetched_at": "2026-11-20T16:44:00+01:00",
       "vote_count": 2,
       "vote_average": 4.5,
-      "statistics_checked_at": "2026-11-20T16:44:01+01:00"
+      "statistics_checked_at": "2026-11-22T15:48:52+01:00"
     },
     "1324436": {
       "id": "tmdb:1324436",
@@ -160897,9 +160897,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/1315657",
       "fetched_at": "2026-11-20T16:44:02+01:00",
-      "vote_count": 52,
-      "vote_average": 7.0,
-      "statistics_checked_at": "2026-11-20T16:44:02+01:00"
+      "vote_count": 53,
+      "vote_average": 7.047,
+      "statistics_checked_at": "2026-11-22T15:48:52+01:00"
     },
     "1567783": {
       "id": "tmdb:1567783",
@@ -161035,7 +161035,7 @@
       "fetched_at": "2026-11-20T16:44:03+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-20T16:44:03+01:00"
+      "statistics_checked_at": "2026-11-22T15:48:53+01:00"
     },
     "1537005": {
       "id": "tmdb:1537005",
@@ -161216,7 +161216,7 @@
       "translations_checked": true,
       "vote_count": 3,
       "vote_average": 7.3,
-      "statistics_checked_at": "2026-11-20T16:44:04+01:00"
+      "statistics_checked_at": "2026-11-22T15:48:53+01:00"
     },
     "1465800": {
       "id": "tmdb:1465800",
@@ -161242,7 +161242,7 @@
       "fetched_at": "2026-11-20T16:44:05+01:00",
       "vote_count": 1,
       "vote_average": 10.0,
-      "statistics_checked_at": "2026-11-20T16:44:05+01:00"
+      "statistics_checked_at": "2026-11-22T15:48:54+01:00"
     },
     "677922": {
       "id": "tmdb:677922",
@@ -162030,7 +162030,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/13552",
-      "fetched_at": "2026-11-21T15:54:20+01:00"
+      "fetched_at": "2026-11-21T15:54:20+01:00",
+      "vote_count": 338,
+      "vote_average": 6.476,
+      "statistics_checked_at": "2026-11-22T15:48:51+01:00"
     },
     "118624": {
       "id": "tmdb:118624",
