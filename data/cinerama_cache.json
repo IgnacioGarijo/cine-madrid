@@ -202,7 +202,7 @@
   "https://cinerama.es/peliculas/esta-soledad/": {
     "director": "Javier Giner",
     "duration": 110,
-    "fetched_day": "2026-11-11"
+    "fetched_day": "2026-11-24"
   },
   "https://cinerama.es/peliculas/la-violinista/": {
     "director": "Ervin Han, Raúl García",
@@ -287,7 +287,7 @@
   "https://cinerama.es/peliculas/tesis/": {
     "director": "Alejandro Amenábar",
     "duration": 126,
-    "fetched_day": "2026-11-16"
+    "fetched_day": "2026-11-24"
   },
   "https://cinerama.es/peliculas/el-mal-padre/": {
     "director": "Roberto Bueso",
@@ -353,5 +353,25 @@
     "director": "Jason Hand, Josie Trinidad, Fawn Veerasunthorn",
     "duration": 110,
     "fetched_day": "2026-11-21"
+  },
+  "https://cinerama.es/peliculas/sanguine/": {
+    "director": "Marion Le Corroller",
+    "duration": 101,
+    "fetched_day": "2026-11-24"
+  },
+  "https://cinerama.es/peliculas/la-maleta-de-alex/": {
+    "director": "Alejandro Cortés Calahorra",
+    "duration": 94,
+    "fetched_day": "2026-11-24"
+  },
+  "https://cinerama.es/peliculas/fatherland/": {
+    "director": "Paweł Pawlikowski",
+    "duration": 82,
+    "fetched_day": "2026-11-24"
+  },
+  "https://cinerama.es/peliculas/the-weight/": {
+    "director": "Padraic McKinley",
+    "duration": 112,
+    "fetched_day": "2026-11-24"
   }
 }
