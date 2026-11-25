@@ -291,18 +291,18 @@
   },
   "https://cinerama.es/peliculas/el-mal-padre/": {
     "director": "Roberto Bueso",
-    "duration": null,
-    "fetched_day": "2026-11-17"
+    "duration": 119,
+    "fetched_day": "2026-11-25"
   },
   "https://cinerama.es/peliculas/iron-boy-le-corset/": {
     "director": "Louis Clichy",
     "duration": 90,
-    "fetched_day": "2026-11-17"
+    "fetched_day": "2026-11-25"
   },
   "https://cinerama.es/peliculas/rose/": {
     "director": "Markus Schleinzer",
     "duration": 94,
-    "fetched_day": "2026-11-17"
+    "fetched_day": "2026-11-25"
   },
   "https://cinerama.es/peliculas/hechos-probados/": {
     "director": "Luis Arranz",
@@ -373,5 +373,20 @@
     "director": "Padraic McKinley",
     "duration": 112,
     "fetched_day": "2026-11-24"
+  },
+  "https://cinerama.es/peliculas/hermanas/": {
+    "director": "Ione Hernández Sáenz",
+    "duration": 100,
+    "fetched_day": "2026-11-25"
+  },
+  "https://cinerama.es/peliculas/entre-fronteras/": {
+    "director": "Mark Freiburger",
+    "duration": 90,
+    "fetched_day": "2026-11-25"
+  },
+  "https://cinerama.es/peliculas/un-hombre-en-un-puente/": {
+    "director": "David Martín de los Santos",
+    "duration": 117,
+    "fetched_day": "2026-11-25"
   }
 }
