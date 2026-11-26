@@ -307,22 +307,22 @@
   "https://cinerama.es/peliculas/hechos-probados/": {
     "director": "Luis Arranz",
     "duration": 109,
-    "fetched_day": "2026-11-18"
+    "fetched_day": "2026-11-26"
   },
   "https://cinerama.es/peliculas/ooh-la-la-quien-lo-hubiera-pensado/": {
     "director": "Julien Hervé",
     "duration": 91,
-    "fetched_day": "2026-11-18"
+    "fetched_day": "2026-11-26"
   },
   "https://cinerama.es/peliculas/club-kid/": {
     "director": "Jordan Firstman",
     "duration": 126,
-    "fetched_day": "2026-11-18"
+    "fetched_day": "2026-11-26"
   },
   "https://cinerama.es/peliculas/citas-la-pelicula/": {
     "director": "Gemma Ferraté",
     "duration": 87,
-    "fetched_day": "2026-11-18"
+    "fetched_day": "2026-11-26"
   },
   "https://cinerama.es/peliculas/ooh-la-la-cocorico/": {
     "director": "Julien Hervé",
@@ -332,7 +332,7 @@
   "https://cinerama.es/peliculas/willow-y-las-guardianas-de-los-cuatro-elementos/": {
     "director": "Mike Marzuk",
     "duration": 100,
-    "fetched_day": "2026-11-18"
+    "fetched_day": "2026-11-26"
   },
   "https://cinerama.es/peliculas/the-adventures-of-cliff-booth/": {
     "director": "David Fincher",
@@ -388,5 +388,15 @@
     "director": "David Martín de los Santos",
     "duration": 117,
     "fetched_day": "2026-11-25"
+  },
+  "https://cinerama.es/peliculas/primavera/": {
+    "director": "Damiano Michieletto",
+    "duration": 111,
+    "fetched_day": "2026-11-26"
+  },
+  "https://cinerama.es/peliculas/yeh-prem-mol-liya/": {
+    "director": "Sooraj Barjatya",
+    "duration": 173,
+    "fetched_day": "2026-11-26"
   }
 }
