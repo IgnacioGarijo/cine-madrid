@@ -3907,7 +3907,7 @@
           "original_title": "Spider-Man: Brand New Day"
         }
       ],
-      "fetched_at": "2026-11-25T18:32:04+01:00"
+      "fetched_at": "2026-11-27T17:54:35+01:00"
     },
     "elpoderdelrosario": {
       "results": [],
@@ -9846,11 +9846,11 @@
     },
     "teatroinfantilquemagiayoymiscircunstancias": {
       "results": [],
-      "fetched_at": "2026-11-17T01:33:58+01:00"
+      "fetched_at": "2026-11-27T17:54:35+01:00"
     },
     "quemagiayoymiscircunstancias": {
       "results": [],
-      "fetched_at": "2026-11-17T01:33:58+01:00"
+      "fetched_at": "2026-11-27T17:54:35+01:00"
     },
     "rompemadridabonogeneral": {
       "results": [],
@@ -14889,6 +14889,428 @@
         }
       ],
       "fetched_at": "2026-11-27T02:10:53+01:00"
+    },
+    "spidermanbrandnewdayreestreno": {
+      "results": [],
+      "fetched_at": "2026-11-27T17:54:34+01:00"
+    },
+    "brandnewdayreestreno": {
+      "results": [],
+      "fetched_at": "2026-11-27T17:54:35+01:00"
+    },
+    "reestreno": {
+      "results": [],
+      "fetched_at": "2026-11-27T17:54:35+01:00"
+    },
+    "carol": {
+      "results": [
+        {
+          "id": 258480,
+          "title": "Carol",
+          "original_title": "Carol"
+        },
+        {
+          "id": 17979,
+          "title": "Cuento de Navidad",
+          "original_title": "A Christmas Carol"
+        },
+        {
+          "id": 16716,
+          "title": "Un cuento de Navidad",
+          "original_title": "A Christmas Carol"
+        },
+        {
+          "id": 10437,
+          "title": "Los Teleñecos en Cuento de Navidad",
+          "original_title": "The Muppet Christmas Carol"
+        },
+        {
+          "id": 1001865,
+          "title": "Scrooge: Cuento de Navidad",
+          "original_title": "Scrooge: A Christmas Carol"
+        },
+        {
+          "id": 13189,
+          "title": "Un cuento de navidad",
+          "original_title": "A Christmas Carol"
+        }
+      ],
+      "fetched_at": "2026-11-27T17:54:35+01:00"
+    },
+    "losquesequedan": {
+      "results": [
+        {
+          "id": 840430,
+          "title": "Los que se quedan",
+          "original_title": "The Holdovers"
+        },
+        {
+          "id": 267960,
+          "title": "Los que se quedan",
+          "original_title": "Los que se quedan"
+        },
+        {
+          "id": 1719517,
+          "title": "Los que se quedan",
+          "original_title": "Los que se quedan"
+        }
+      ],
+      "fetched_at": "2026-11-27T17:54:36+01:00"
+    },
+    "theholidayvacaciones": {
+      "results": [
+        {
+          "id": 1581,
+          "title": "The Holiday (Vacaciones)",
+          "original_title": "The Holiday"
+        },
+        {
+          "id": 286488,
+          "title": "Los clásicos de vacaciones de Dreamworks",
+          "original_title": "Dreamworks: Holiday Classics"
+        },
+        {
+          "id": 263463,
+          "title": "Los Pingüinos de Madagascar - Operación: Vacaciones",
+          "original_title": "The Penguins of Madagascar: Operation Vacation"
+        }
+      ],
+      "fetched_at": "2026-11-27T17:54:37+01:00"
+    },
+    "vacaciones": {
+      "results": [
+        {
+          "id": 296099,
+          "title": "Vacaciones",
+          "original_title": "Vacation"
+        },
+        {
+          "id": 1581,
+          "title": "The Holiday (Vacaciones)",
+          "original_title": "The Holiday"
+        },
+        {
+          "id": 804,
+          "title": "Vacaciones en Roma",
+          "original_title": "Roman Holiday"
+        },
+        {
+          "id": 9530,
+          "title": "¡Vaya vacaciones!",
+          "original_title": "RV"
+        },
+        {
+          "id": 913616,
+          "title": "Vacaciones",
+          "original_title": "Vacaciones"
+        },
+        {
+          "id": 926924,
+          "title": "¡Vaya vacaciones!",
+          "original_title": "¡Vaya vacaciones!"
+        }
+      ],
+      "fetched_at": "2026-11-27T17:54:38+01:00"
+    },
+    "theholiday": {
+      "results": [
+        {
+          "id": 1581,
+          "title": "The Holiday (Vacaciones)",
+          "original_title": "The Holiday"
+        },
+        {
+          "id": 774752,
+          "title": "Guardianes de la Galaxia: especial felices fiestas",
+          "original_title": "The Guardians of the Galaxy Holiday Special"
+        },
+        {
+          "id": 134375,
+          "title": "Solo en casa 5",
+          "original_title": "Home Alone: The Holiday Heist"
+        },
+        {
+          "id": 531438,
+          "title": "Safari por Navidad",
+          "original_title": "Holiday in the Wild"
+        },
+        {
+          "id": 555850,
+          "title": "El calendario de Navidad",
+          "original_title": "The Holiday Calendar"
+        },
+        {
+          "id": 74849,
+          "title": "El especial navideño de Star Wars",
+          "original_title": "The Star Wars Holiday Special"
+        }
+      ],
+      "fetched_at": "2026-11-27T17:54:38+01:00"
+    },
+    "lagranfamilia": {
+      "results": [
+        {
+          "id": 215848,
+          "title": "La gran familia española",
+          "original_title": "La gran familia española"
+        },
+        {
+          "id": 161791,
+          "title": "La gran familia",
+          "original_title": "La gran familia"
+        },
+        {
+          "id": 1668404,
+          "title": "La Gran Familia",
+          "original_title": "La Gran Familia"
+        },
+        {
+          "id": 678517,
+          "title": "Comando negro: La gran familia",
+          "original_title": "Comando negro: La gran familia"
+        },
+        {
+          "id": 639721,
+          "title": "La familia Addams 2: La gran escapada",
+          "original_title": "The Addams Family 2"
+        },
+        {
+          "id": 929563,
+          "title": "Los Green en la gran ciudad, la película: Salvando el Greenverso",
+          "original_title": "Big City Greens the Movie: Spacecation"
+        }
+      ],
+      "fetched_at": "2026-11-27T17:54:39+01:00"
+    },
+    "hogardulcehogar": {
+      "results": [
+        {
+          "id": 228161,
+          "title": "Home: Hogar dulce hogar",
+          "original_title": "Home"
+        },
+        {
+          "id": 1698575,
+          "title": "Snoopy presenta: Hogar, dulce hogar",
+          "original_title": "Snoopy Presents: There's No Place Like Home, Snoopy"
+        },
+        {
+          "id": 927698,
+          "title": "Hogar, dulce hogar",
+          "original_title": "Hogar, dulce hogar"
+        },
+        {
+          "id": 1552,
+          "title": "Dulce hogar... ¡a veces!",
+          "original_title": "Parenthood"
+        },
+        {
+          "id": 537685,
+          "title": "Dulce Hogar",
+          "original_title": "Dulce Hogar"
+        },
+        {
+          "id": 48627,
+          "title": "Hogar, dulce hogar",
+          "original_title": "Room for One More"
+        }
+      ],
+      "fetched_at": "2026-11-27T17:54:42+01:00"
+    },
+    "losmonaguillos": {
+      "results": [],
+      "fetched_at": "2026-11-27T17:54:43+01:00"
+    },
+    "minghunposdatareflexionessobremioficio": {
+      "results": [],
+      "fetched_at": "2026-11-27T17:54:44+01:00"
+    },
+    "muchamierda": {
+      "results": [
+        {
+          "id": 1342131,
+          "title": "Mucha mierda",
+          "original_title": "Mucha mierda"
+        },
+        {
+          "id": 1517533,
+          "title": "Mucha Mierda",
+          "original_title": "Mucha Mierda"
+        },
+        {
+          "id": 1590977,
+          "title": "Mucha mierda",
+          "original_title": "Mucha mierda"
+        },
+        {
+          "id": 1789367,
+          "title": "Mucha mierda, Paco",
+          "original_title": "Mucha mierda, Paco"
+        },
+        {
+          "id": 1488311,
+          "title": "Break a Leg",
+          "original_title": "Break a Leg"
+        }
+      ],
+      "fetched_at": "2026-11-27T17:54:45+01:00"
+    },
+    "pasosperdidos": {
+      "results": [
+        {
+          "id": 1784044,
+          "title": "Pasos perdidos",
+          "original_title": "Pasos perdidos"
+        },
+        {
+          "id": 291592,
+          "title": "Los pasos perdidos",
+          "original_title": "Los pasos perdidos"
+        },
+        {
+          "id": 271136,
+          "title": "Los pasos perdidos",
+          "original_title": "Els passos perduts"
+        },
+        {
+          "id": 346921,
+          "title": "La sala de los pasos perdidos",
+          "original_title": "Sál ztracených kroků"
+        }
+      ],
+      "fetched_at": "2026-11-27T17:54:46+01:00"
+    },
+    "perdidadeequilibrio": {
+      "results": [],
+      "fetched_at": "2026-11-27T17:54:46+01:00"
+    },
+    "seccionoficialfescimed2026sesion1": {
+      "results": [],
+      "fetched_at": "2026-11-27T17:54:47+01:00"
+    },
+    "seccionoficialfescimedsesion1": {
+      "results": [],
+      "fetched_at": "2026-11-27T17:54:47+01:00"
+    },
+    "seccionoficialfescimed2026sesion2": {
+      "results": [],
+      "fetched_at": "2026-11-27T17:54:47+01:00"
+    },
+    "seccionoficialfescimedsesion2": {
+      "results": [],
+      "fetched_at": "2026-11-27T17:54:47+01:00"
+    },
+    "seccionoficialfescimed2026sesion3": {
+      "results": [],
+      "fetched_at": "2026-11-27T17:54:47+01:00"
+    },
+    "seccionoficialfescimedsesion3": {
+      "results": [],
+      "fetched_at": "2026-11-27T17:54:47+01:00"
+    },
+    "simonakossak": {
+      "results": [
+        {
+          "id": 1197671,
+          "title": "Simona Kossak",
+          "original_title": "Simona Kossak"
+        }
+      ],
+      "fetched_at": "2026-11-27T17:54:48+01:00"
+    },
+    "sonata": {
+      "results": [
+        {
+          "id": 8937,
+          "title": "Tokyo Sonata",
+          "original_title": "トウキョウソナタ"
+        },
+        {
+          "id": 12761,
+          "title": "Sonata de otoño",
+          "original_title": "Höstsonaten"
+        },
+        {
+          "id": 878828,
+          "title": "Sonata",
+          "original_title": "Sonata"
+        },
+        {
+          "id": 477036,
+          "title": "The Sonata",
+          "original_title": "The Sonata"
+        },
+        {
+          "id": 221416,
+          "title": "Sonata",
+          "original_title": "Sonata"
+        },
+        {
+          "id": 1403687,
+          "title": "Sonata",
+          "original_title": "Sonata"
+        }
+      ],
+      "fetched_at": "2026-11-27T17:54:48+01:00"
+    },
+    "viajealcuartodeunamadre": {
+      "results": [
+        {
+          "id": 533989,
+          "title": "Viaje al cuarto de una madre",
+          "original_title": "Viaje al cuarto de una madre"
+        }
+      ],
+      "fetched_at": "2026-11-27T17:54:50+01:00"
+    },
+    "losninossalvajes": {
+      "results": [
+        {
+          "id": 110198,
+          "title": "Los Niños Salvajes",
+          "original_title": "Els Nens Salvatges"
+        },
+        {
+          "id": 503447,
+          "title": "Wild Child: The Story of Feral Children",
+          "original_title": "Wild Child: The Story of Feral Children"
+        }
+      ],
+      "fetched_at": "2026-11-27T17:54:56+01:00"
+    },
+    "elnuevopezquefuma": {
+      "results": [],
+      "fetched_at": "2026-11-27T17:54:57+01:00"
+    },
+    "neveroff": {
+      "results": [
+        {
+          "id": 1203875,
+          "title": "Weird Al: Never Off Beat",
+          "original_title": "Weird Al: Never Off Beat"
+        },
+        {
+          "id": 1582253,
+          "title": "Never Put Off Till Tomorrow What Can be Done To-Day",
+          "original_title": "Never Put Off Till Tomorrow What Can be Done To-Day"
+        },
+        {
+          "id": 273886,
+          "title": "होलीडे",
+          "original_title": "होलीडे"
+        },
+        {
+          "id": 1358768,
+          "title": "来去少林",
+          "original_title": "来去少林"
+        },
+        {
+          "id": 931639,
+          "title": "Never Forget Tibet",
+          "original_title": "Never Forget Tibet"
+        }
+      ],
+      "fetched_at": "2026-11-27T17:54:57+01:00"
     }
   },
   "movies": {
@@ -63292,9 +63714,9 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/969681",
       "fetched_at": "2026-11-25T18:32:04+01:00",
-      "vote_count": 7107,
-      "vote_average": 8.454,
-      "statistics_checked_at": "2026-11-25T18:32:05+01:00"
+      "vote_count": 7141,
+      "vote_average": 8.5,
+      "statistics_checked_at": "2026-11-27T17:54:35+01:00"
     },
     "157336": {
       "id": "tmdb:157336",
@@ -95828,12 +96250,9 @@
       "runtime": 175,
       "poster_path": "/hcuFuAlGeQy1yKhd3I0hZ5sgCzl.jpg",
       "aliases": [
-        "Her Şey Ortada",
-        "Pamatysi viską",
-        "Zobaczysz wszystko",
         "אתם יכולים לראות הכל",
-        "一切如你所見",
-        "你能看見一切"
+        "你能看見一切",
+        "你能看见一切"
       ],
       "releases": [
         {
@@ -95855,6 +96274,11 @@
           "country": "AU",
           "type": 3,
           "date": "2026-11-12"
+        },
+        {
+          "country": "AZ",
+          "type": 3,
+          "date": "2026-11-19"
         },
         {
           "country": "BE",
@@ -95895,6 +96319,11 @@
           "country": "CA",
           "type": 3,
           "date": "2026-10-16"
+        },
+        {
+          "country": "CA",
+          "type": 4,
+          "date": "2026-11-24"
         },
         {
           "country": "CH",
@@ -96009,7 +96438,7 @@
         {
           "country": "IN",
           "type": 3,
-          "date": "2026-11-27"
+          "date": "2026-11-26"
         },
         {
           "country": "IQ",
@@ -96212,6 +96641,11 @@
           "date": "2026-12-04"
         },
         {
+          "country": "UA",
+          "type": 3,
+          "date": "2026-12-10"
+        },
+        {
           "country": "US",
           "type": 1,
           "date": "2026-09-06"
@@ -96232,16 +96666,21 @@
           "date": "2026-10-16"
         },
         {
+          "country": "US",
+          "type": 4,
+          "date": "2026-11-24"
+        },
+        {
           "country": "VN",
           "type": 3,
           "date": "2026-11-27"
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1765072",
-      "fetched_at": "2026-11-20T16:43:47+01:00",
-      "vote_count": 213,
+      "fetched_at": "2026-11-27T17:54:33+01:00",
+      "vote_count": 229,
       "vote_average": 8.6,
-      "statistics_checked_at": "2026-11-27T02:09:07+01:00"
+      "statistics_checked_at": "2026-11-27T17:54:33+01:00"
     },
     "1736731": {
       "id": "tmdb:1736731",
@@ -97209,7 +97648,7 @@
       "id": "tmdb:1550356",
       "tmdb_id": 1550356,
       "title": "El director",
-      "original_title": "El Director",
+      "original_title": "El director",
       "year": 2026,
       "director": "Dani de la Orden",
       "directors": [
@@ -97231,10 +97670,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1550356",
-      "fetched_at": "2026-11-20T16:43:47+01:00",
+      "fetched_at": "2026-11-27T17:54:33+01:00",
       "vote_count": 1,
       "vote_average": 6.5,
-      "statistics_checked_at": "2026-11-27T02:09:10+01:00"
+      "statistics_checked_at": "2026-11-27T17:54:34+01:00"
     },
     "1820004": {
       "id": "tmdb:1820004",
@@ -97257,7 +97696,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1820004",
-      "fetched_at": "2026-11-20T16:43:48+01:00"
+      "fetched_at": "2026-11-27T17:54:33+01:00"
     },
     "841525": {
       "id": "tmdb:841525",
@@ -97272,23 +97711,16 @@
       ],
       "runtime": 0,
       "poster_path": "/tDhDdPHgcOn9Jsp4KIPzsVDtECb.jpg",
-      "aliases": [
-        "El Director, Las Siete Madres De Edipo"
-      ],
+      "aliases": [],
       "releases": [
         {
           "country": "MX",
           "type": 3,
           "date": "2020-12-31"
-        },
-        {
-          "country": "US",
-          "type": 3,
-          "date": "2023-11-08"
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/841525",
-      "fetched_at": "2026-11-20T16:43:48+01:00"
+      "fetched_at": "2026-11-27T17:54:34+01:00"
     },
     "1669682": {
       "id": "tmdb:1669682",
@@ -97305,7 +97737,7 @@
       "aliases": [],
       "releases": [],
       "source_url": "https://www.themoviedb.org/movie/1669682",
-      "fetched_at": "2026-11-20T16:43:48+01:00"
+      "fetched_at": "2026-11-27T17:54:34+01:00"
     },
     "1551049": {
       "id": "tmdb:1551049",
@@ -97328,7 +97760,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1551049",
-      "fetched_at": "2026-11-20T16:43:48+01:00"
+      "fetched_at": "2026-11-27T17:54:34+01:00"
     },
     "1441697": {
       "id": "tmdb:1441697",
@@ -97351,7 +97783,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1441697",
-      "fetched_at": "2026-11-20T16:43:48+01:00"
+      "fetched_at": "2026-11-27T17:54:34+01:00"
     },
     "11639": {
       "id": "tmdb:11639",
@@ -97473,12 +97905,12 @@
         {
           "country": "NL",
           "type": 5,
-          "date": "2009-11-05"
+          "date": "2009-09-01"
         },
         {
           "country": "NL",
           "type": 5,
-          "date": "2009-09-01"
+          "date": "2009-11-05"
         },
         {
           "country": "PT",
@@ -97503,17 +97935,17 @@
         {
           "country": "SE",
           "type": 5,
+          "date": "2004-09-01"
+        },
+        {
+          "country": "SE",
+          "type": 5,
           "date": "2009-09-23"
         },
         {
           "country": "SE",
           "type": 5,
           "date": "2018-03-05"
-        },
-        {
-          "country": "SE",
-          "type": 5,
-          "date": "2004-09-01"
         },
         {
           "country": "SU",
@@ -97532,10 +97964,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/11639",
-      "fetched_at": "2026-11-20T16:43:49+01:00",
+      "fetched_at": "2026-11-27T17:54:40+01:00",
       "vote_count": 1348,
       "vote_average": 7.164,
-      "statistics_checked_at": "2026-11-27T02:10:06+01:00"
+      "statistics_checked_at": "2026-11-27T17:54:41+01:00"
     },
     "627133": {
       "id": "tmdb:627133",
@@ -97568,7 +98000,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/627133",
-      "fetched_at": "2026-11-20T16:43:49+01:00"
+      "fetched_at": "2026-11-27T17:54:41+01:00"
     },
     "13597": {
       "id": "tmdb:13597",
@@ -97713,12 +98145,12 @@
         {
           "country": "SE",
           "type": 5,
-          "date": "2005-11-23"
+          "date": "2009-10-28"
         },
         {
           "country": "SE",
           "type": 5,
-          "date": "2009-10-28"
+          "date": "2005-11-23"
         },
         {
           "country": "SE",
@@ -97737,10 +98169,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/13597",
-      "fetched_at": "2026-11-20T16:43:49+01:00",
+      "fetched_at": "2026-11-27T17:54:41+01:00",
       "vote_count": 2930,
       "vote_average": 7.297,
-      "statistics_checked_at": "2026-11-27T02:10:06+01:00"
+      "statistics_checked_at": "2026-11-27T17:54:41+01:00"
     },
     "244316": {
       "id": "tmdb:244316",
@@ -97818,7 +98250,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/244316",
-      "fetched_at": "2026-11-20T16:43:50+01:00"
+      "fetched_at": "2026-11-27T17:54:41+01:00"
     },
     "145220": {
       "id": "tmdb:145220",
@@ -97990,10 +98422,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/145220",
-      "fetched_at": "2026-11-20T16:43:50+01:00",
-      "vote_count": 930,
-      "vote_average": 6.321,
-      "statistics_checked_at": "2026-11-27T02:10:08+01:00"
+      "fetched_at": "2026-11-27T17:54:41+01:00",
+      "vote_count": 931,
+      "vote_average": 6.325,
+      "statistics_checked_at": "2026-11-27T17:54:41+01:00"
     },
     "64328": {
       "id": "tmdb:64328",
@@ -98151,10 +98583,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/64328",
-      "fetched_at": "2026-11-20T16:43:50+01:00",
+      "fetched_at": "2026-11-27T17:54:43+01:00",
       "vote_count": 1762,
       "vote_average": 6.673,
-      "statistics_checked_at": "2026-11-27T02:10:12+01:00"
+      "statistics_checked_at": "2026-11-27T17:54:43+01:00"
     },
     "1548113": {
       "id": "tmdb:1548113",
@@ -98884,7 +99316,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1548113",
-      "fetched_at": "2026-11-20T16:43:50+01:00"
+      "fetched_at": "2026-11-27T17:54:43+01:00"
     },
     "10208": {
       "id": "tmdb:10208",
@@ -98956,12 +99388,12 @@
         {
           "country": "NL",
           "type": 5,
-          "date": "2014-03-24"
+          "date": "2000-01-01"
         },
         {
           "country": "NL",
           "type": 5,
-          "date": "2000-01-01"
+          "date": "2014-03-24"
         },
         {
           "country": "NL",
@@ -98985,7 +99417,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/10208",
-      "fetched_at": "2026-11-20T16:43:51+01:00"
+      "fetched_at": "2026-11-27T17:54:43+01:00"
     },
     "826914": {
       "id": "tmdb:826914",
@@ -99068,7 +99500,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/826914",
-      "fetched_at": "2026-11-20T16:43:51+01:00"
+      "fetched_at": "2026-11-27T17:54:43+01:00"
     },
     "10437": {
       "id": "tmdb:10437",
@@ -99181,6 +99613,11 @@
           "date": "1994-12-23"
         },
         {
+          "country": "SE",
+          "type": 3,
+          "date": "1993-12-17"
+        },
+        {
           "country": "US",
           "type": 3,
           "date": "1992-12-11"
@@ -99192,10 +99629,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/10437",
-      "fetched_at": "2026-11-20T16:43:51+01:00",
+      "fetched_at": "2026-11-27T17:54:36+01:00",
       "vote_count": 1240,
       "vote_average": 7.461,
-      "statistics_checked_at": "2026-11-27T02:10:12+01:00"
+      "statistics_checked_at": "2026-11-27T17:54:44+01:00"
     },
     "11899": {
       "id": "tmdb:11899",
@@ -99252,10 +99689,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/11899",
-      "fetched_at": "2026-11-20T16:43:51+01:00",
-      "vote_count": 440,
-      "vote_average": 6.619,
-      "statistics_checked_at": "2026-11-27T02:10:12+01:00"
+      "fetched_at": "2026-11-27T17:54:44+01:00",
+      "vote_count": 441,
+      "vote_average": 6.618,
+      "statistics_checked_at": "2026-11-27T17:54:44+01:00"
     },
     "13247": {
       "id": "tmdb:13247",
@@ -99293,7 +99730,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/13247",
-      "fetched_at": "2026-11-20T16:43:52+01:00"
+      "fetched_at": "2026-11-27T17:54:44+01:00"
     },
     "10874": {
       "id": "tmdb:10874",
@@ -99385,10 +99822,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/10874",
-      "fetched_at": "2026-11-20T16:43:52+01:00",
+      "fetched_at": "2026-11-27T17:54:44+01:00",
       "vote_count": 497,
       "vote_average": 6.713,
-      "statistics_checked_at": "2026-11-27T02:10:13+01:00"
+      "statistics_checked_at": "2026-11-27T17:54:44+01:00"
     },
     "9479": {
       "id": "tmdb:9479",
@@ -99681,10 +100118,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/9479",
-      "fetched_at": "2026-11-20T16:43:52+01:00",
-      "vote_count": 10973,
+      "fetched_at": "2026-11-27T17:54:46+01:00",
+      "vote_count": 10974,
       "vote_average": 7.86,
-      "statistics_checked_at": "2026-11-27T02:10:15+01:00"
+      "statistics_checked_at": "2026-11-27T17:54:47+01:00"
     },
     "247182": {
       "id": "tmdb:247182",
@@ -99726,7 +100163,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/247182",
-      "fetched_at": "2026-11-20T16:43:55+01:00"
+      "fetched_at": "2026-11-27T17:54:54+01:00"
     },
     "1506401": {
       "id": "tmdb:1506401",
@@ -99738,10 +100175,17 @@
       "directors": [
         "Mariano Barroso"
       ],
-      "runtime": 0,
+      "runtime": 104,
       "poster_path": "/6wLVChqjN2qsZ3uolEmetkCuzeO.jpg",
-      "aliases": [],
+      "aliases": [
+        "Oğlumuz"
+      ],
       "releases": [
+        {
+          "country": "BR",
+          "type": 4,
+          "date": "2026-11-27"
+        },
         {
           "country": "ES",
           "type": 3,
@@ -99768,16 +100212,21 @@
           "date": "2026-11-27"
         },
         {
+          "country": "TR",
+          "type": 4,
+          "date": "2026-11-27"
+        },
+        {
           "country": "US",
           "type": 4,
           "date": "2026-11-27"
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1506401",
-      "fetched_at": "2026-11-20T16:43:55+01:00",
+      "fetched_at": "2026-11-27T17:54:54+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-26T18:11:25+01:00"
+      "statistics_checked_at": "2026-11-27T17:54:54+01:00"
     },
     "181283": {
       "id": "tmdb:181283",
@@ -99933,7 +100382,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/181283",
-      "fetched_at": "2026-11-20T16:43:55+01:00"
+      "fetched_at": "2026-11-27T17:54:54+01:00"
     },
     "14574": {
       "id": "tmdb:14574",
@@ -100221,7 +100670,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/14574",
-      "fetched_at": "2026-11-20T16:43:55+01:00"
+      "fetched_at": "2026-11-27T17:54:54+01:00"
     },
     "250154": {
       "id": "tmdb:250154",
@@ -100260,15 +100709,9 @@
       "poster_path": "/md3iYDpi6rlrAF6iyJyzdOzyUEV.jpg",
       "aliases": [
         "Che colpa ne ha il bambino?",
-        "I co my teraz zrobimy?",
         "Не обвинять Малыша?"
       ],
       "releases": [
-        {
-          "country": "FR",
-          "type": 3,
-          "date": "2016-12-24"
-        },
         {
           "country": "MX",
           "type": 1,
@@ -100283,25 +100726,10 @@
           "country": "NL",
           "type": 4,
           "date": "2016-12-22"
-        },
-        {
-          "country": "PE",
-          "type": 3,
-          "date": "2016-06-16"
-        },
-        {
-          "country": "PL",
-          "type": 3,
-          "date": "2016-12-22"
-        },
-        {
-          "country": "PT",
-          "type": 3,
-          "date": "2016-12-24"
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/369299",
-      "fetched_at": "2026-11-20T16:43:56+01:00"
+      "fetched_at": "2026-11-27T17:54:54+01:00"
     },
     "141": {
       "id": "tmdb:141",
@@ -161552,7 +161980,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1072470",
-      "fetched_at": "2026-11-20T16:43:56+01:00"
+      "fetched_at": "2026-11-27T17:54:50+01:00"
     },
     "31587": {
       "id": "tmdb:31587",
@@ -161642,10 +162070,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/31587",
-      "fetched_at": "2026-11-20T16:43:57+01:00",
+      "fetched_at": "2026-11-27T17:54:49+01:00",
       "vote_count": 374,
       "vote_average": 7.039,
-      "statistics_checked_at": "2026-11-27T02:10:24+01:00"
+      "statistics_checked_at": "2026-11-27T17:54:49+01:00"
     },
     "232491": {
       "id": "tmdb:232491",
@@ -161668,7 +162096,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/232491",
-      "fetched_at": "2026-11-20T16:43:57+01:00"
+      "fetched_at": "2026-11-27T17:54:50+01:00"
     },
     "255880": {
       "id": "tmdb:255880",
@@ -161691,7 +162119,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/255880",
-      "fetched_at": "2026-11-20T16:43:57+01:00"
+      "fetched_at": "2026-11-27T17:54:50+01:00"
     },
     "226948": {
       "id": "tmdb:226948",
@@ -161727,7 +162155,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/226948",
-      "fetched_at": "2026-11-20T16:43:57+01:00"
+      "fetched_at": "2026-11-27T17:54:49+01:00"
     },
     "336766": {
       "id": "tmdb:336766",
@@ -161750,7 +162178,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/336766",
-      "fetched_at": "2026-11-20T16:43:57+01:00"
+      "fetched_at": "2026-11-27T17:54:50+01:00"
     },
     "98600": {
       "id": "tmdb:98600",
@@ -161798,10 +162226,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/98600",
-      "fetched_at": "2026-11-20T16:43:58+01:00",
+      "fetched_at": "2026-11-27T17:54:51+01:00",
       "vote_count": 57,
       "vote_average": 5.991,
-      "statistics_checked_at": "2026-11-26T18:11:54+01:00"
+      "statistics_checked_at": "2026-11-27T17:54:51+01:00"
     },
     "4507": {
       "id": "tmdb:4507",
@@ -161903,10 +162331,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/4507",
-      "fetched_at": "2026-11-20T16:43:58+01:00",
-      "vote_count": 424,
-      "vote_average": 6.2,
-      "statistics_checked_at": "2026-11-26T18:11:54+01:00"
+      "fetched_at": "2026-11-27T17:54:51+01:00",
+      "vote_count": 425,
+      "vote_average": 6.224,
+      "statistics_checked_at": "2026-11-27T17:54:52+01:00"
     },
     "410021": {
       "id": "tmdb:410021",
@@ -161929,7 +162357,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/410021",
-      "fetched_at": "2026-11-20T16:43:59+01:00"
+      "fetched_at": "2026-11-27T17:54:51+01:00"
     },
     "1764936": {
       "id": "tmdb:1764936",
@@ -161952,7 +162380,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1764936",
-      "fetched_at": "2026-11-20T16:43:59+01:00"
+      "fetched_at": "2026-11-27T17:54:51+01:00"
     },
     "1211371": {
       "id": "tmdb:1211371",
@@ -161960,10 +162388,10 @@
       "title": "Y un jamón",
       "original_title": "Y un jamón",
       "year": 2023,
-      "director": "Chus Verdú Seva, Sergio Balaguer Orfão",
+      "director": "Sergio Balaguer Orfão, Chus Verdú Seva",
       "directors": [
-        "Chus Verdú Seva",
-        "Sergio Balaguer Orfão"
+        "Sergio Balaguer Orfão",
+        "Chus Verdú Seva"
       ],
       "runtime": 10,
       "poster_path": "/oA0OTxDpZgONQtoavPkFhhYClra.jpg",
@@ -161981,7 +162409,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1211371",
-      "fetched_at": "2026-11-20T16:43:59+01:00"
+      "fetched_at": "2026-11-27T17:54:52+01:00"
     },
     "1411482": {
       "id": "tmdb:1411482",
@@ -162006,7 +162434,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1411482",
-      "fetched_at": "2026-11-20T16:43:59+01:00"
+      "fetched_at": "2026-11-27T17:54:52+01:00"
     },
     "986336": {
       "id": "tmdb:986336",
@@ -162023,7 +162451,7 @@
       "aliases": [],
       "releases": [],
       "source_url": "https://www.themoviedb.org/movie/986336",
-      "fetched_at": "2026-11-20T16:43:59+01:00"
+      "fetched_at": "2026-11-27T17:54:52+01:00"
     },
     "815043": {
       "id": "tmdb:815043",
@@ -162031,10 +162459,10 @@
       "title": "Winnipeg, El Barco de la Esperanza",
       "original_title": "Winnipeg, El Barco de la Esperanza",
       "year": 2026,
-      "director": "Beñat Beitia, Elio Quiroga",
+      "director": "Elio Quiroga, Beñat Beitia",
       "directors": [
-        "Beñat Beitia",
-        "Elio Quiroga"
+        "Elio Quiroga",
+        "Beñat Beitia"
       ],
       "runtime": 82,
       "poster_path": "/kbyVwqt7QRW40YQJdMdBRka89Z4.jpg",
@@ -162057,10 +162485,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/815043",
-      "fetched_at": "2026-11-20T16:44:00+01:00",
+      "fetched_at": "2026-11-27T17:54:52+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-26T18:11:56+01:00"
+      "statistics_checked_at": "2026-11-27T17:54:52+01:00"
     },
     "1464859": {
       "id": "tmdb:1464859",
@@ -162090,10 +162518,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1464859",
-      "fetched_at": "2026-11-20T16:44:00+01:00",
+      "fetched_at": "2026-11-27T17:54:53+01:00",
       "vote_count": 2,
       "vote_average": 4.5,
-      "statistics_checked_at": "2026-11-26T18:11:58+01:00"
+      "statistics_checked_at": "2026-11-27T17:54:54+01:00"
     },
     "1324436": {
       "id": "tmdb:1324436",
@@ -162117,7 +162545,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1324436",
-      "fetched_at": "2026-11-20T16:44:00+01:00"
+      "fetched_at": "2026-11-27T17:54:53+01:00"
     },
     "1744463": {
       "id": "tmdb:1744463",
@@ -162138,7 +162566,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1744463",
-      "fetched_at": "2026-11-20T16:44:01+01:00"
+      "fetched_at": "2026-11-27T17:54:53+01:00"
     },
     "1171541": {
       "id": "tmdb:1171541",
@@ -162183,7 +162611,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1171541",
-      "fetched_at": "2026-11-20T16:44:01+01:00"
+      "fetched_at": "2026-11-27T17:54:53+01:00"
     },
     "39148": {
       "id": "tmdb:39148",
@@ -162278,7 +162706,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/39148",
-      "fetched_at": "2026-11-20T16:44:01+01:00"
+      "fetched_at": "2026-11-27T17:54:53+01:00"
     },
     "884333": {
       "id": "tmdb:884333",
@@ -162300,6 +162728,16 @@
           "date": "2023-10-10"
         },
         {
+          "country": "SK",
+          "type": 4,
+          "date": "2024-01-25"
+        },
+        {
+          "country": "SK",
+          "type": 6,
+          "date": "2026-08-22"
+        },
+        {
           "country": "US",
           "type": 4,
           "date": "2021-09-14"
@@ -162311,7 +162749,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/884333",
-      "fetched_at": "2026-11-20T16:44:01+01:00"
+      "fetched_at": "2026-11-27T17:54:53+01:00"
     },
     "1315657": {
       "id": "tmdb:1315657",
@@ -162564,6 +163002,11 @@
           "date": "2026-04-23"
         },
         {
+          "country": "HU",
+          "type": 1,
+          "date": "2026-11-19"
+        },
+        {
           "country": "IT",
           "type": 1,
           "date": "2026-05-30"
@@ -162595,7 +163038,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1567783",
-      "fetched_at": "2026-11-20T16:44:02+01:00"
+      "fetched_at": "2026-11-27T17:54:55+01:00"
     },
     "1372220": {
       "id": "tmdb:1372220",
@@ -162618,14 +163061,14 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1372220",
-      "fetched_at": "2026-11-20T16:44:02+01:00"
+      "fetched_at": "2026-11-27T17:54:55+01:00"
     },
     "1802792": {
       "id": "tmdb:1802792",
       "tmdb_id": 1802792,
       "title": "Anguita. El hombre de los tres siglos",
       "original_title": "Anguita. El hombre de los tres siglos",
-      "year": null,
+      "year": 2026,
       "director": "Hugo Cabezas",
       "directors": [
         "Hugo Cabezas"
@@ -162633,12 +163076,18 @@
       "runtime": 89,
       "poster_path": "/frLnw4oiwluG7Dd6SCipwbqOEuI.jpg",
       "aliases": [],
-      "releases": [],
+      "releases": [
+        {
+          "country": "ES",
+          "type": 1,
+          "date": "2026-11-10"
+        }
+      ],
       "source_url": "https://www.themoviedb.org/movie/1802792",
-      "fetched_at": "2026-11-20T16:44:03+01:00",
+      "fetched_at": "2026-11-27T17:54:55+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-26T18:12:23+01:00"
+      "statistics_checked_at": "2026-11-27T17:54:55+01:00"
     },
     "1537005": {
       "id": "tmdb:1537005",
@@ -162666,10 +163115,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1537005",
-      "fetched_at": "2026-11-20T16:44:03+01:00",
+      "fetched_at": "2026-11-27T17:54:55+01:00",
       "vote_count": 0,
       "vote_average": 0.0,
-      "statistics_checked_at": "2026-11-26T18:12:35+01:00"
+      "statistics_checked_at": "2026-11-27T17:54:56+01:00"
     },
     "40206": {
       "id": "tmdb:40206",
@@ -162740,7 +163189,7 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/40206",
-      "fetched_at": "2026-11-20T16:44:04+01:00"
+      "fetched_at": "2026-11-27T17:54:55+01:00"
     },
     "1457734": {
       "id": "tmdb:1457734",
@@ -162815,11 +163264,11 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1457734",
-      "fetched_at": "2026-11-20T16:44:04+01:00",
+      "fetched_at": "2026-11-27T17:54:56+01:00",
       "translations_checked": true,
       "vote_count": 3,
       "vote_average": 7.3,
-      "statistics_checked_at": "2026-11-26T18:12:36+01:00"
+      "statistics_checked_at": "2026-11-27T17:54:56+01:00"
     },
     "1465800": {
       "id": "tmdb:1465800",
@@ -162842,10 +163291,10 @@
         }
       ],
       "source_url": "https://www.themoviedb.org/movie/1465800",
-      "fetched_at": "2026-11-20T16:44:05+01:00",
+      "fetched_at": "2026-11-27T17:54:56+01:00",
       "vote_count": 1,
       "vote_average": 10.0,
-      "statistics_checked_at": "2026-11-26T18:12:37+01:00"
+      "statistics_checked_at": "2026-11-27T17:54:56+01:00"
     },
     "677922": {
       "id": "tmdb:677922",
@@ -186463,6 +186912,5960 @@
       ],
       "source_url": "https://www.themoviedb.org/movie/876996",
       "fetched_at": "2026-11-27T02:10:54+01:00"
+    },
+    "258480": {
+      "id": "tmdb:258480",
+      "tmdb_id": 258480,
+      "title": "Carol",
+      "original_title": "Carol",
+      "year": 2015,
+      "director": "Todd Haynes",
+      "directors": [
+        "Todd Haynes"
+      ],
+      "runtime": 118,
+      "poster_path": "/fjuwXnCTg54axtd4O3Mhpm5akts.jpg",
+      "aliases": [
+        "Carol - Iubire interzisa",
+        "Kerol",
+        "Kerola",
+        "The Price of Salt",
+        "Κάρολ",
+        "Карол",
+        "Каръл",
+        "Керол",
+        "Кэрол",
+        "Քերոլ",
+        "קרול",
+        "کارول",
+        "کاڕۆڵ",
+        "کیرول",
+        "ক্যারল",
+        "കരോൾ",
+        "แครอล รักเธอสุดหัวใจ",
+        "キャロル",
+        "卡罗",
+        "卡罗尔",
+        "卡露的情人",
+        "因為愛你",
+        "캐롤"
+      ],
+      "releases": [
+        {
+          "country": "AU",
+          "type": 1,
+          "date": "2015-10-18"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2016-01-14"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2016-01-14"
+        },
+        {
+          "country": "CA",
+          "type": 2,
+          "date": "2015-12-11"
+        },
+        {
+          "country": "CH",
+          "type": 1,
+          "date": "2015-09-29"
+        },
+        {
+          "country": "CH",
+          "type": 3,
+          "date": "2016-01-07"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2015-12-17"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "2016-03-10"
+        },
+        {
+          "country": "EE",
+          "type": 3,
+          "date": "2016-01-15"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2016-02-05"
+        },
+        {
+          "country": "FR",
+          "type": 1,
+          "date": "2015-05-17"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2016-01-13"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2022-02-27"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2016-05-12"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2016-05-17"
+        },
+        {
+          "country": "FR",
+          "type": 6,
+          "date": "2025-12-18"
+        },
+        {
+          "country": "GB",
+          "type": 1,
+          "date": "2015-10-14"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2015-11-27"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2015-12-03"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "2015-11-27"
+        },
+        {
+          "country": "IL",
+          "type": 3,
+          "date": "2016-02-18"
+        },
+        {
+          "country": "IT",
+          "type": 1,
+          "date": "2015-10-22"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2016-01-05"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "2016-02-11"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2016-02-04"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2021-01-27"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2015-12-17"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2025-12-18"
+        },
+        {
+          "country": "NL",
+          "type": 5,
+          "date": "2016-03-18"
+        },
+        {
+          "country": "NL",
+          "type": 6,
+          "date": "2018-01-06"
+        },
+        {
+          "country": "NZ",
+          "type": 3,
+          "date": "2016-02-11"
+        },
+        {
+          "country": "NZ",
+          "type": 5,
+          "date": "2025-03-06"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "2016-01-28"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "2015-12-25"
+        },
+        {
+          "country": "SG",
+          "type": 3,
+          "date": "2016-02-25"
+        },
+        {
+          "country": "TR",
+          "type": 3,
+          "date": "2016-02-05"
+        },
+        {
+          "country": "UA",
+          "type": 2,
+          "date": "2024-02-15"
+        },
+        {
+          "country": "UA",
+          "type": 3,
+          "date": "2016-03-10"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2015-11-08"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2015-09-04"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2015-10-11"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2015-10-09"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2015-11-16"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2015-10-23"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2015-10-25"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2015-10-28"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2015-11-05"
+        },
+        {
+          "country": "US",
+          "type": 2,
+          "date": "2015-11-20"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2016-01-15"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2016-03-04"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2016-10-09"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2016-03-15"
+        },
+        {
+          "country": "US",
+          "type": 6,
+          "date": "2016-10-08"
+        },
+        {
+          "country": "ZA",
+          "type": 3,
+          "date": "2015-12-16"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/258480",
+      "fetched_at": "2026-11-27T17:54:36+01:00"
+    },
+    "17979": {
+      "id": "tmdb:17979",
+      "tmdb_id": 17979,
+      "title": "Cuento de Navidad",
+      "original_title": "A Christmas Carol",
+      "year": 2009,
+      "director": "Robert Zemeckis",
+      "directors": [
+        "Robert Zemeckis"
+      ],
+      "runtime": 95,
+      "poster_path": "/meN97hs1BtmChq16NFhWxOI8och.jpg",
+      "aliases": [
+        "A Christmas Carol 3D",
+        "A Christmas Carol: An IMAX 3D Experience",
+        "Cuento de Navidad",
+        "Disney's A Christmas Carol",
+        "Disneys En julsaga",
+        "Milad Tarixçəsi",
+        "Opowieść Wigilijna",
+        "Tiếng Chuông Giáng Sinh",
+        "Коледна песен",
+        "საშობაო ზღაპარი",
+        "საშობაო ისტორია",
+        "საშობაო სიმღერა"
+      ],
+      "releases": [
+        {
+          "country": "AT",
+          "type": 4,
+          "date": "2009-11-05"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2009-11-05"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2009-11-06"
+        },
+        {
+          "country": "CA",
+          "type": 3,
+          "date": "2009-11-06"
+        },
+        {
+          "country": "CH",
+          "type": 4,
+          "date": "2009-11-05"
+        },
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "2009-11-19"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2009-11-05"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2009-11-13"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2009-11-25"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2009-11-04"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2009-12-24"
+        },
+        {
+          "country": "HU",
+          "type": 4,
+          "date": "2009-11-05"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "2009-11-04"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2009-12-03"
+        },
+        {
+          "country": "JP",
+          "type": 4,
+          "date": "2009-11-14"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2009-11-26"
+        },
+        {
+          "country": "KZ",
+          "type": 3,
+          "date": "2009-11-20"
+        },
+        {
+          "country": "LT",
+          "type": 3,
+          "date": "2009-11-20"
+        },
+        {
+          "country": "MX",
+          "type": 4,
+          "date": "2009-11-06"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2009-11-19"
+        },
+        {
+          "country": "NL",
+          "type": 5,
+          "date": "2010-12-08"
+        },
+        {
+          "country": "NL",
+          "type": 5,
+          "date": "2013-10-07"
+        },
+        {
+          "country": "NL",
+          "type": 6,
+          "date": "2013-12-26"
+        },
+        {
+          "country": "NO",
+          "type": 3,
+          "date": "2009-11-06"
+        },
+        {
+          "country": "PL",
+          "type": 3,
+          "date": "2009-11-20"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "2009-11-19"
+        },
+        {
+          "country": "RO",
+          "type": 3,
+          "date": "2009-11-04"
+        },
+        {
+          "country": "RU",
+          "type": 3,
+          "date": "2009-11-19"
+        },
+        {
+          "country": "RU",
+          "type": 5,
+          "date": "2010-11-09"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "2009-11-06"
+        },
+        {
+          "country": "SE",
+          "type": 5,
+          "date": "2010-11-17"
+        },
+        {
+          "country": "SK",
+          "type": 3,
+          "date": "2009-11-26"
+        },
+        {
+          "country": "TW",
+          "type": 3,
+          "date": "2009-11-06"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2009-11-06"
+        },
+        {
+          "country": "VN",
+          "type": 3,
+          "date": "2009-11-20"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/17979",
+      "fetched_at": "2026-11-27T17:54:36+01:00"
+    },
+    "16716": {
+      "id": "tmdb:16716",
+      "tmdb_id": 16716,
+      "title": "Un cuento de Navidad",
+      "original_title": "A Christmas Carol",
+      "year": 1999,
+      "director": "David Hugh Jones",
+      "directors": [
+        "David Hugh Jones"
+      ],
+      "runtime": 105,
+      "poster_path": "/oi1NcVDXlFEsdpLp37BJmFbVlg9.jpg",
+      "aliases": [
+        "A Christmas Carol - Die drei Weihnachtsgeister",
+        "A Christmas Carol: Die Drei Weihnachtsgeister",
+        "Charles Dickens - Eine Weihnachtsgeschichte",
+        "En julefortelling",
+        "TNT's A Christmas Carol",
+        "Un conte de Noël"
+      ],
+      "releases": [
+        {
+          "country": "DE",
+          "type": 6,
+          "date": "2002-12-24"
+        },
+        {
+          "country": "GB",
+          "type": 5,
+          "date": "2000-11-27"
+        },
+        {
+          "country": "IE",
+          "type": 5,
+          "date": "2000-11-27"
+        },
+        {
+          "country": "US",
+          "type": 6,
+          "date": "1999-12-05"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/16716",
+      "fetched_at": "2026-11-27T17:54:36+01:00"
+    },
+    "1001865": {
+      "id": "tmdb:1001865",
+      "tmdb_id": 1001865,
+      "title": "Scrooge: Cuento de Navidad",
+      "original_title": "Scrooge: A Christmas Carol",
+      "year": 2022,
+      "director": "Stephen Donnelly",
+      "directors": [
+        "Stephen Donnelly"
+      ],
+      "runtime": 97,
+      "poster_path": "/jqMEPeRCPJFAXE3ZqWv4eBrdCA4.jpg",
+      "aliases": [
+        "Scrooge: Cuento de Navidad",
+        "Scrooge: En julefortelling",
+        "Скрудж: Рождественская История",
+        "斯克鲁奇：圣诞颂歌"
+      ],
+      "releases": [
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2022-11-18"
+        },
+        {
+          "country": "DE",
+          "type": 4,
+          "date": "2022-12-02"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "2022-12-02"
+        },
+        {
+          "country": "ES",
+          "type": 4,
+          "date": "2022-12-02"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2022-12-02"
+        },
+        {
+          "country": "GB",
+          "type": 2,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "GB",
+          "type": 4,
+          "date": "2022-12-02"
+        },
+        {
+          "country": "GR",
+          "type": 4,
+          "date": "2022-12-02"
+        },
+        {
+          "country": "IE",
+          "type": 4,
+          "date": "2022-12-02"
+        },
+        {
+          "country": "IT",
+          "type": 4,
+          "date": "2022-12-02"
+        },
+        {
+          "country": "JP",
+          "type": 4,
+          "date": "2022-12-02"
+        },
+        {
+          "country": "KR",
+          "type": 4,
+          "date": "2022-12-02"
+        },
+        {
+          "country": "PL",
+          "type": 4,
+          "date": "2022-12-03"
+        },
+        {
+          "country": "RO",
+          "type": 4,
+          "date": "2022-12-02"
+        },
+        {
+          "country": "SG",
+          "type": 4,
+          "date": "2022-12-02"
+        },
+        {
+          "country": "US",
+          "type": 2,
+          "date": "2022-11-18"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2022-12-02"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1001865",
+      "fetched_at": "2026-11-27T17:54:36+01:00"
+    },
+    "13189": {
+      "id": "tmdb:13189",
+      "tmdb_id": 13189,
+      "title": "Un cuento de navidad",
+      "original_title": "A Christmas Carol",
+      "year": 1984,
+      "director": "Clive Donner",
+      "directors": [
+        "Clive Donner"
+      ],
+      "runtime": 100,
+      "poster_path": "/uRTI1i5X7UfTjOu6hW4SWcwVas3.jpg",
+      "aliases": [
+        "Charles Dickens' Eine Weihnachtsgeschichte",
+        "Eine Weihnachtsgeschichte",
+        "Un Cuento de Navidad"
+      ],
+      "releases": [
+        {
+          "country": "CA",
+          "type": 3,
+          "date": "1984-10-09"
+        },
+        {
+          "country": "DE",
+          "type": 6,
+          "date": "1991-12-24"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "1984-10-09"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "1985-11-20"
+        },
+        {
+          "country": "NL",
+          "type": 6,
+          "date": "1984-11-23"
+        },
+        {
+          "country": "SE",
+          "type": 5,
+          "date": "2008-12-03"
+        },
+        {
+          "country": "SE",
+          "type": 6,
+          "date": "2001-12-24"
+        },
+        {
+          "country": "US",
+          "type": 6,
+          "date": "1984-12-17"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/13189",
+      "fetched_at": "2026-11-27T17:54:36+01:00"
+    },
+    "840430": {
+      "id": "tmdb:840430",
+      "tmdb_id": 840430,
+      "title": "Los que se quedan",
+      "original_title": "The Holdovers",
+      "year": 2023,
+      "director": "Alexander Payne",
+      "directors": [
+        "Alexander Payne"
+      ],
+      "runtime": 133,
+      "poster_path": "/aZj21Kcmazecm6VDBn4bYU4evi3.jpg",
+      "aliases": [
+        "Barton Academy",
+        "Mahajäänud",
+        "Os Excluídos",
+        "Os Rejeitados",
+        "Winter Break",
+        "Zadržki",
+        "Залишені",
+        "جاماندگان",
+        "ฤดูหนาวนี้ไม่ไร้ไออุ่น",
+        "მიტოვებულები",
+        "留校联盟"
+      ],
+      "releases": [
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "2024-02-08"
+        },
+        {
+          "country": "AT",
+          "type": 3,
+          "date": "2024-01-25"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2024-01-11"
+        },
+        {
+          "country": "BE",
+          "type": 3,
+          "date": "2023-12-15"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2024-01-11"
+        },
+        {
+          "country": "CA",
+          "type": 1,
+          "date": "2023-09-10"
+        },
+        {
+          "country": "CA",
+          "type": 3,
+          "date": "2023-10-27"
+        },
+        {
+          "country": "CN",
+          "type": 4,
+          "date": "2024-09-27"
+        },
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "2024-02-22"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2024-01-25"
+        },
+        {
+          "country": "DE",
+          "type": 5,
+          "date": "2024-04-11"
+        },
+        {
+          "country": "DO",
+          "type": 3,
+          "date": "2024-02-08"
+        },
+        {
+          "country": "EE",
+          "type": 1,
+          "date": "2023-11-03"
+        },
+        {
+          "country": "EE",
+          "type": 3,
+          "date": "2024-01-26"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2024-01-03"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "2024-01-05"
+        },
+        {
+          "country": "FR",
+          "type": 1,
+          "date": "2023-10-15"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2023-12-13"
+        },
+        {
+          "country": "GB",
+          "type": 1,
+          "date": "2023-10-11"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2024-01-19"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2024-01-25"
+        },
+        {
+          "country": "HK",
+          "type": 3,
+          "date": "2024-03-07"
+        },
+        {
+          "country": "HU",
+          "type": 3,
+          "date": "2024-02-29"
+        },
+        {
+          "country": "ID",
+          "type": 3,
+          "date": "2024-02-23"
+        },
+        {
+          "country": "IE",
+          "type": 1,
+          "date": "2024-11-26"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "2024-01-19"
+        },
+        {
+          "country": "IL",
+          "type": 3,
+          "date": "2024-02-08"
+        },
+        {
+          "country": "IL",
+          "type": 4,
+          "date": "2024-05-09"
+        },
+        {
+          "country": "IN",
+          "type": 3,
+          "date": "2025-02-16"
+        },
+        {
+          "country": "IN",
+          "type": 4,
+          "date": "2024-06-16"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2024-01-18"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "2024-06-21"
+        },
+        {
+          "country": "KR",
+          "type": 1,
+          "date": "2023-10-07"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2024-02-21"
+        },
+        {
+          "country": "MX",
+          "type": 3,
+          "date": "2024-01-18"
+        },
+        {
+          "country": "MX",
+          "type": 4,
+          "date": "2024-09-06"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2024-01-11"
+        },
+        {
+          "country": "NZ",
+          "type": 4,
+          "date": "2024-06-01"
+        },
+        {
+          "country": "PE",
+          "type": 3,
+          "date": "2024-01-11"
+        },
+        {
+          "country": "PH",
+          "type": 4,
+          "date": "2024-08-31"
+        },
+        {
+          "country": "PL",
+          "type": 3,
+          "date": "2024-01-26"
+        },
+        {
+          "country": "PR",
+          "type": 2,
+          "date": "2023-11-23"
+        },
+        {
+          "country": "PR",
+          "type": 4,
+          "date": "2023-11-28"
+        },
+        {
+          "country": "PR",
+          "type": 4,
+          "date": "2023-12-29"
+        },
+        {
+          "country": "PR",
+          "type": 5,
+          "date": "2024-01-02"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "2024-02-14"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "2024-01-05"
+        },
+        {
+          "country": "SG",
+          "type": 2,
+          "date": "2024-01-11"
+        },
+        {
+          "country": "SK",
+          "type": 3,
+          "date": "2024-02-22"
+        },
+        {
+          "country": "TH",
+          "type": 2,
+          "date": "2024-02-22"
+        },
+        {
+          "country": "TW",
+          "type": 4,
+          "date": "2024-04-15"
+        },
+        {
+          "country": "UA",
+          "type": 3,
+          "date": "2024-02-29"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2023-08-31"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2023-10-28"
+        },
+        {
+          "country": "US",
+          "type": 2,
+          "date": "2023-10-27"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2023-11-10"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2023-11-28"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2023-12-29"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2024-04-29"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2024-01-02"
+        },
+        {
+          "country": "US",
+          "type": 6,
+          "date": "2025-06-28"
+        },
+        {
+          "country": "VE",
+          "type": 3,
+          "date": "2024-02-08"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/840430",
+      "fetched_at": "2026-11-27T17:54:37+01:00"
+    },
+    "267960": {
+      "id": "tmdb:267960",
+      "tmdb_id": 267960,
+      "title": "Los que se quedan",
+      "original_title": "Los que se quedan",
+      "year": 2009,
+      "director": "Juan Carlos Rulfo, Carlos Hagerman",
+      "directors": [
+        "Juan Carlos Rulfo",
+        "Carlos Hagerman"
+      ],
+      "runtime": 96,
+      "poster_path": "/4PIEcP9saKXUtK09iIQEKEXNORk.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "MX",
+          "type": 3,
+          "date": "2009-10-30"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/267960",
+      "fetched_at": "2026-11-27T17:54:37+01:00"
+    },
+    "1719517": {
+      "id": "tmdb:1719517",
+      "tmdb_id": 1719517,
+      "title": "Los que se quedan",
+      "original_title": "Los que se quedan",
+      "year": 2026,
+      "director": "Aldo M. V. Gallardo",
+      "directors": [
+        "Aldo M. V. Gallardo"
+      ],
+      "runtime": 3,
+      "poster_path": "/zHXjxnSWfQ4O4B68inSlnesINyk.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "MX",
+          "type": 4,
+          "date": "2026-06-14"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1719517",
+      "fetched_at": "2026-11-27T17:54:37+01:00"
+    },
+    "1581": {
+      "id": "tmdb:1581",
+      "tmdb_id": 1581,
+      "title": "The Holiday (Vacaciones)",
+      "original_title": "The Holiday",
+      "year": 2006,
+      "director": "Nancy Meyers",
+      "directors": [
+        "Nancy Meyers"
+      ],
+      "runtime": 135,
+      "poster_path": "/jGFqZ4bCAYaNZKHQKBZcTyrH1EV.jpg",
+      "aliases": [
+        "Amours longue distance",
+        "O Amor Não Tira Férias",
+        "Pocitnice",
+        "Puhkus",
+        "Tatil",
+        "Vacaciones",
+        "Љубав и празници",
+        "Ваканцията",
+        "Отпуск по обмену",
+        "Արձակուրդ փոխանակումով",
+        "恋爱没有假期",
+        "缘分精华游",
+        "로맨틱 홀리데이"
+      ],
+      "releases": [
+        {
+          "country": "AT",
+          "type": 4,
+          "date": "2006-12-15"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2006-12-26"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2006-12-22"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2026-12-10"
+        },
+        {
+          "country": "CH",
+          "type": 4,
+          "date": "2006-12-13"
+        },
+        {
+          "country": "CZ",
+          "type": 4,
+          "date": "2006-12-21"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2006-12-25"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2026-12-01"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "2006-12-08"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2006-12-05"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2006-12-27"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2015-01-01"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2021-01-01"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2022-10-15"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2010-09-01"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2007-06-27"
+        },
+        {
+          "country": "FR",
+          "type": 6,
+          "date": "2026-01-04"
+        },
+        {
+          "country": "FR",
+          "type": 6,
+          "date": "2026-11-12"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2006-12-08"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2006-12-14"
+        },
+        {
+          "country": "HU",
+          "type": 4,
+          "date": "2006-12-14"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "2006-12-08"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2007-02-09"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "2007-03-24"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2006-12-14"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2006-12-14"
+        },
+        {
+          "country": "NL",
+          "type": 5,
+          "date": "2010-09-02"
+        },
+        {
+          "country": "NL",
+          "type": 5,
+          "date": "2007-07-12"
+        },
+        {
+          "country": "NL",
+          "type": 6,
+          "date": "2009-02-01"
+        },
+        {
+          "country": "PL",
+          "type": 3,
+          "date": "2006-12-26"
+        },
+        {
+          "country": "RO",
+          "type": 4,
+          "date": "2006-12-08"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "2006-12-15"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2006-11-29"
+        },
+        {
+          "country": "US",
+          "type": 2,
+          "date": "2026-12-11"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2006-12-08"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2007-03-13"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1581",
+      "fetched_at": "2026-11-27T17:54:37+01:00"
+    },
+    "286488": {
+      "id": "tmdb:286488",
+      "tmdb_id": 286488,
+      "title": "Los clásicos de vacaciones de Dreamworks",
+      "original_title": "Dreamworks: Holiday Classics",
+      "year": 2012,
+      "director": "David Soren, Gary Trousdale, Tim Johnson",
+      "directors": [
+        "David Soren",
+        "Gary Trousdale",
+        "Tim Johnson"
+      ],
+      "runtime": 69,
+      "poster_path": "/mNB0AMOxTcg9celLOnltZMxxrqi.jpg",
+      "aliases": [
+        "DreamWorks Holiday Classics",
+        "Dreamworks Holiday Classics (Merry Madagascar + Shrek the Halls + Gift of the Night Fury)"
+      ],
+      "releases": [
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2012-10-30"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/286488",
+      "fetched_at": "2026-11-27T17:54:37+01:00"
+    },
+    "263463": {
+      "id": "tmdb:263463",
+      "tmdb_id": 263463,
+      "title": "Los Pingüinos de Madagascar - Operación: Vacaciones",
+      "original_title": "The Penguins of Madagascar: Operation Vacation",
+      "year": 2012,
+      "director": "",
+      "directors": [],
+      "runtime": 92,
+      "poster_path": "/sBDseTaGRoOPXA2JpnrQhUYboSF.jpg",
+      "aliases": [
+        "De Pinguïns van Madagascar - Operatie: Vakantie",
+        "Die Pinguine aus Madagascar - Operation: Ferienspaß",
+        "Los pingüinos de Madagascar - Operación vacaciones",
+        "Madagascar - Opération Vacances",
+        "The Penguins of Madagascar: Operation Holiday"
+      ],
+      "releases": [
+        {
+          "country": "DE",
+          "type": 4,
+          "date": "2012-04-12"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "2012-03-27"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "2012-04-04"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2012-02-14"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/263463",
+      "fetched_at": "2026-11-27T17:54:37+01:00"
+    },
+    "296099": {
+      "id": "tmdb:296099",
+      "tmdb_id": 296099,
+      "title": "Vacaciones",
+      "original_title": "Vacation",
+      "year": 2015,
+      "director": "John Francis Daley, Jonathan Goldstein",
+      "directors": [
+        "John Francis Daley",
+        "Jonathan Goldstein"
+      ],
+      "runtime": 99,
+      "poster_path": "/IgyiSl7RGALVxB64E3kKL5qbn3.jpg",
+      "aliases": [
+        "Bláznivá dovolenka",
+        "Brīvdienas",
+        "亲子乐胶游"
+      ],
+      "releases": [
+        {
+          "country": "AE",
+          "type": 3,
+          "date": "2015-08-12"
+        },
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "2015-07-29"
+        },
+        {
+          "country": "AT",
+          "type": 3,
+          "date": "2015-08-20"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2015-08-19"
+        },
+        {
+          "country": "BG",
+          "type": 3,
+          "date": "2015-08-27"
+        },
+        {
+          "country": "BO",
+          "type": 3,
+          "date": "2015-08-19"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2015-09-10"
+        },
+        {
+          "country": "CA",
+          "type": 3,
+          "date": "2015-07-28"
+        },
+        {
+          "country": "CL",
+          "type": 3,
+          "date": "2015-07-29"
+        },
+        {
+          "country": "CO",
+          "type": 3,
+          "date": "2015-08-19"
+        },
+        {
+          "country": "CY",
+          "type": 3,
+          "date": "2015-08-27"
+        },
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "2015-08-26"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2015-08-20"
+        },
+        {
+          "country": "DE",
+          "type": 5,
+          "date": "2016-01-07"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "2015-08-13"
+        },
+        {
+          "country": "EE",
+          "type": 3,
+          "date": "2015-08-27"
+        },
+        {
+          "country": "EG",
+          "type": 3,
+          "date": "2015-09-08"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2015-08-21"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "2015-08-14"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2015-08-19"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2015-08-21"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2015-09-03"
+        },
+        {
+          "country": "HK",
+          "type": 3,
+          "date": "2015-08-26"
+        },
+        {
+          "country": "HR",
+          "type": 3,
+          "date": "2015-09-02"
+        },
+        {
+          "country": "HU",
+          "type": 3,
+          "date": "2015-08-26"
+        },
+        {
+          "country": "ID",
+          "type": 3,
+          "date": "2015-10-20"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "2015-08-21"
+        },
+        {
+          "country": "IL",
+          "type": 3,
+          "date": "2015-08-05"
+        },
+        {
+          "country": "IN",
+          "type": 3,
+          "date": "2015-07-30"
+        },
+        {
+          "country": "IQ",
+          "type": 3,
+          "date": "2015-08-12"
+        },
+        {
+          "country": "IS",
+          "type": 3,
+          "date": "2015-08-11"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2015-08-12"
+        },
+        {
+          "country": "JP",
+          "type": 4,
+          "date": "2015-09-26"
+        },
+        {
+          "country": "KR",
+          "type": 4,
+          "date": "2015-11-03"
+        },
+        {
+          "country": "KZ",
+          "type": 3,
+          "date": "2015-08-26"
+        },
+        {
+          "country": "LB",
+          "type": 3,
+          "date": "2015-08-12"
+        },
+        {
+          "country": "LT",
+          "type": 3,
+          "date": "2015-08-28"
+        },
+        {
+          "country": "LV",
+          "type": 3,
+          "date": "2015-09-03"
+        },
+        {
+          "country": "MX",
+          "type": 3,
+          "date": "2015-08-13"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2015-09-09"
+        },
+        {
+          "country": "NL",
+          "type": 5,
+          "date": "2016-01-20"
+        },
+        {
+          "country": "NO",
+          "type": 3,
+          "date": "2015-08-04"
+        },
+        {
+          "country": "NZ",
+          "type": 3,
+          "date": "2015-08-19"
+        },
+        {
+          "country": "PA",
+          "type": 3,
+          "date": "2015-08-05"
+        },
+        {
+          "country": "PE",
+          "type": 3,
+          "date": "2015-08-19"
+        },
+        {
+          "country": "PH",
+          "type": 3,
+          "date": "2015-08-18"
+        },
+        {
+          "country": "PL",
+          "type": 3,
+          "date": "2015-09-03"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "2015-08-19"
+        },
+        {
+          "country": "RO",
+          "type": 3,
+          "date": "2015-08-13"
+        },
+        {
+          "country": "RU",
+          "type": 3,
+          "date": "2015-08-26"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "2015-09-11"
+        },
+        {
+          "country": "SE",
+          "type": 5,
+          "date": "2015-12-14"
+        },
+        {
+          "country": "SG",
+          "type": 3,
+          "date": "2015-08-05"
+        },
+        {
+          "country": "SI",
+          "type": 3,
+          "date": "2015-09-02"
+        },
+        {
+          "country": "SK",
+          "type": 3,
+          "date": "2015-08-26"
+        },
+        {
+          "country": "SK",
+          "type": 6,
+          "date": "2018-04-07"
+        },
+        {
+          "country": "TH",
+          "type": 3,
+          "date": "2015-09-02"
+        },
+        {
+          "country": "TR",
+          "type": 3,
+          "date": "2015-09-17"
+        },
+        {
+          "country": "TW",
+          "type": 3,
+          "date": "2015-07-28"
+        },
+        {
+          "country": "UA",
+          "type": 3,
+          "date": "2015-08-27"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2015-07-29"
+        },
+        {
+          "country": "UY",
+          "type": 3,
+          "date": "2015-08-12"
+        },
+        {
+          "country": "VE",
+          "type": 3,
+          "date": "2015-07-30"
+        },
+        {
+          "country": "ZA",
+          "type": 3,
+          "date": "2015-09-03"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/296099",
+      "fetched_at": "2026-11-27T17:54:38+01:00"
+    },
+    "804": {
+      "id": "tmdb:804",
+      "tmdb_id": 804,
+      "title": "Vacaciones en Roma",
+      "original_title": "Roman Holiday",
+      "year": 1953,
+      "director": "William Wyler",
+      "directors": [
+        "William Wyler"
+      ],
+      "runtime": 118,
+      "poster_path": "/lZOF4rMqgeNR4IvrYRJzkoJp4d4.jpg",
+      "aliases": [
+        "A Princesa e o Plebeu",
+        "La princesa que quería vivir",
+        "Loma Roomassa",
+        "Prinsessa på vift",
+        "Prinsessen holder fridag",
+        "Rzymskie wakacje",
+        "Vacaciones en Roma",
+        "Vacances Romaines",
+        "Vacantie te Rome",
+        "Vacanze Romane",
+        "Римска ваканция",
+        "羅馬假期",
+        "로마의 휴일"
+      ],
+      "releases": [
+        {
+          "country": "AT",
+          "type": 3,
+          "date": "1954-03-26"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "1953-09-02"
+        },
+        {
+          "country": "BE",
+          "type": 3,
+          "date": "1953-08-26"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "1953-10-05"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "1953-10-11"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "1953-08-26"
+        },
+        {
+          "country": "DK",
+          "type": 2,
+          "date": "1953-08-26"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "1953-08-26"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "1954-04-09"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2023-08-16"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2021-11-03"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2003-04-10"
+        },
+        {
+          "country": "GB",
+          "type": 2,
+          "date": "2023-02-03"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "1953-09-02"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2009-07-16"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2023-07-27"
+        },
+        {
+          "country": "HU",
+          "type": 3,
+          "date": "1958-07-31"
+        },
+        {
+          "country": "IT",
+          "type": 1,
+          "date": "1953-08-20"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "1954-04-27"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "1955-09-30"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2025-08-20"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2026-04-08"
+        },
+        {
+          "country": "KR",
+          "type": 6,
+          "date": "1974-03-03"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "1954-01-08"
+        },
+        {
+          "country": "NL",
+          "type": 5,
+          "date": "2005-02-16"
+        },
+        {
+          "country": "NL",
+          "type": 5,
+          "date": "2013-03-13"
+        },
+        {
+          "country": "PH",
+          "type": 3,
+          "date": "1954-01-27"
+        },
+        {
+          "country": "PH",
+          "type": 4,
+          "date": "2025-03-27"
+        },
+        {
+          "country": "PH",
+          "type": 6,
+          "date": "1996-11-14"
+        },
+        {
+          "country": "PL",
+          "type": 3,
+          "date": "1959-01-01"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "1953-11-24"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "1953-08-26"
+        },
+        {
+          "country": "SU",
+          "type": 3,
+          "date": "1960-06-13"
+        },
+        {
+          "country": "TH",
+          "type": 4,
+          "date": "2025-03-31"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "1953-09-02"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/804",
+      "fetched_at": "2026-11-27T17:54:38+01:00"
+    },
+    "9530": {
+      "id": "tmdb:9530",
+      "tmdb_id": 9530,
+      "title": "¡Vaya vacaciones!",
+      "original_title": "RV",
+      "year": 2006,
+      "director": "Barry Sonnenfeld",
+      "directors": [
+        "Barry Sonnenfeld"
+      ],
+      "runtime": 99,
+      "poster_path": "/7jqe3hw35Ygmr8LFxan9hWzhyd2.jpg",
+      "aliases": [
+        "Camping-car",
+        "Durdom na kolesah",
+        "Familj på väg",
+        "RV: Runaway Vacation",
+        "Runaway Vacation",
+        "¡Vaya vacaciones!",
+        "อาร์วี ซิ่งรถบ้านไปเถิดเถิง",
+        "休旅任务",
+        "房车之旅"
+      ],
+      "releases": [
+        {
+          "country": "AT",
+          "type": 4,
+          "date": "2006-09-22"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2006-06-01"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2006-06-29"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "2007-01-15"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2006-07-19"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2006-06-09"
+        },
+        {
+          "country": "HU",
+          "type": 4,
+          "date": "2006-10-31"
+        },
+        {
+          "country": "IE",
+          "type": 4,
+          "date": "2006-06-09"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2006-06-02"
+        },
+        {
+          "country": "PL",
+          "type": 4,
+          "date": "2006-12-11"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "2006-06-15"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2006-04-28"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/9530",
+      "fetched_at": "2026-11-27T17:54:38+01:00"
+    },
+    "913616": {
+      "id": "tmdb:913616",
+      "tmdb_id": 913616,
+      "title": "Vacaciones",
+      "original_title": "Vacaciones",
+      "year": 1947,
+      "director": "Luis Mottura",
+      "directors": [
+        "Luis Mottura"
+      ],
+      "runtime": 92,
+      "poster_path": "/llJ6Ot8Hg55zmJJ8NQN2pONEMe.jpg",
+      "aliases": [
+        "Más fuerte que el amor"
+      ],
+      "releases": [
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "1947-09-25"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/913616",
+      "fetched_at": "2026-11-27T17:54:38+01:00"
+    },
+    "926924": {
+      "id": "tmdb:926924",
+      "tmdb_id": 926924,
+      "title": "¡Vaya vacaciones!",
+      "original_title": "¡Vaya vacaciones!",
+      "year": 2023,
+      "director": "Víctor García León",
+      "directors": [
+        "Víctor García León"
+      ],
+      "runtime": 87,
+      "poster_path": "/4Ji9EP9bdyftAhGWNd1560Z5F1d.jpg",
+      "aliases": [
+        "No haberlos tenido",
+        "Vaya Vacaciones"
+      ],
+      "releases": [
+        {
+          "country": "BR",
+          "type": 4,
+          "date": "2026-01-29"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2023-04-21"
+        },
+        {
+          "country": "RU",
+          "type": 3,
+          "date": "2025-09-18"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/926924",
+      "fetched_at": "2026-11-27T17:54:38+01:00"
+    },
+    "774752": {
+      "id": "tmdb:774752",
+      "tmdb_id": 774752,
+      "title": "Guardianes de la Galaxia: especial felices fiestas",
+      "original_title": "The Guardians of the Galaxy Holiday Special",
+      "year": 2022,
+      "director": "James Gunn",
+      "directors": [
+        "James Gunn"
+      ],
+      "runtime": 45,
+      "poster_path": "/sjAPtPnAyIbYvCPcEsLQfBlL2ho.jpg",
+      "aliases": [
+        "A Marvel Studios Special Presentation: The Guardians of the Galaxy Holiday Special",
+        "Guardianes de la Galaxia: Especial Felices Fiestas",
+        "Guardians of the Galaxy Holiday Special",
+        "Guardiões da Galáxia: Especial de Natal",
+        "Marvel Studios Apresenta Um Especial: Guardiões da Galáxia: Especial de Festas",
+        "Marvel Studios présente : Les Gardiens de la Galaxie : Joyeuses Fêtes",
+        "Marvel Studios’ Special Presentation: The Guardians of the Galaxy Holiday Special",
+        "Une présentation spéciale de Marvel Studios : Les Gardiens de la Galaxie : Joyeuses Fêtes",
+        "Вартові галактики: Святковий спецвипуск",
+        "Вартові галактики: Спеціальний святковий випуск",
+        "Стражи Галактики: Рождество",
+        "אולפני מארוול מציגים: שומרי הגלאקסיה: ספיישל חג המולד",
+        "אולפני מארוול מציגים: שומרי הגלקסיה: ספיישל חג מולד",
+        "รวมพันธุ์นักสู้พิทักษ์จักรวาล ตอนพิเศษรับวันหยุด",
+        "ガーディアンズ・オブ・ギャラ クシー ホリデー・スペシャル",
+        "ガーディアンズ・オブ・ギャラ クシー ホリデー・スペシャル：2022",
+        "マーベル・スタジオ スペシャル・プレゼンテーション：ガーディアンズ・オブ・ギャラクシー ホリデー・スペシャル",
+        "銀河守護隊 假日特別版",
+        "银河护卫队：假日特辑",
+        "가디언즈 오브 갤럭시 홀리데이 스페셜"
+      ],
+      "releases": [
+        {
+          "country": "AD",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "AG",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "AI",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "AL",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "AR",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "AS",
+          "type": 4,
+          "date": "2022-11-24"
+        },
+        {
+          "country": "AT",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "AU",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "AW",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "BA",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "BB",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "BE",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "BG",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "BM",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "BO",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "BR",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "BS",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "BZ",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "CA",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "CC",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "CH",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "CK",
+          "type": 4,
+          "date": "2022-11-24"
+        },
+        {
+          "country": "CL",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "CN",
+          "type": 4,
+          "date": "2023-12-24"
+        },
+        {
+          "country": "CO",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "CR",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "CX",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "CZ",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "DE",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "DK",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "DM",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "DO",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "EC",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "EE",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "ES",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "FI",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "FK",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "FO",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "GB",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "GD",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "GF",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "GI",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "GL",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "GP",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "GR",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "GS",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "GT",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "GU",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "GY",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "HK",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "HN",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "HR",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "HT",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "HU",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "ID",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "IE",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "IL",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "IN",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "IO",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "IS",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "IT",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "JM",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "JP",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "KN",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "KR",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "KY",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "LC",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "LI",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "LT",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "LU",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "LV",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "MC",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "ME",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "MH",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "MK",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "MP",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "MQ",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "MS",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "MT",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "MU",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "MX",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "MY",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "NC",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "NF",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "NI",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "NL",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "NO",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "NU",
+          "type": 4,
+          "date": "2022-11-24"
+        },
+        {
+          "country": "NZ",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "PA",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "PE",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "PF",
+          "type": 4,
+          "date": "2022-11-24"
+        },
+        {
+          "country": "PH",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "PL",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "PM",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "PN",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "PR",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "PT",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "PY",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "RE",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "RO",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "RS",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "SE",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "SG",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "SH",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "SI",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "SJ",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "SK",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "SM",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "SR",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "SV",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "TC",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "TF",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "TH",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "TK",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "TR",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "TT",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "TW",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "UY",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "VA",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "VC",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "VE",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "VG",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "VI",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "VN",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "WF",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "YT",
+          "type": 4,
+          "date": "2022-11-25"
+        },
+        {
+          "country": "ZA",
+          "type": 4,
+          "date": "2022-11-25"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/774752",
+      "fetched_at": "2026-11-27T17:54:39+01:00"
+    },
+    "134375": {
+      "id": "tmdb:134375",
+      "tmdb_id": 134375,
+      "title": "Solo en casa 5",
+      "original_title": "Home Alone: The Holiday Heist",
+      "year": 2012,
+      "director": "Peter Hewitt",
+      "directors": [
+        "Peter Hewitt"
+      ],
+      "runtime": 90,
+      "poster_path": "/trLBVEUX8RyxDPoXY89HtFBY0aj.jpg",
+      "aliases": [
+        "Allein zu Haus 5",
+        "Allein zu Haus: Der Weihnachts-Coup",
+        "Ensam Hemma 5",
+        "Esqueceram de Mim 5: Sozinho no Natal",
+        "Evdə Tək: Bayram Oğurluğu",
+        "Finn sam w domu",
+        "Home Alone 5",
+        "Home Alone 5: Alone in the Dark",
+        "Home Alone 5: The Holiday Heist",
+        "Kevin - Allein zu Haus 5",
+        "Üksinda kodus 5",
+        "Μόνος στο σπίτι 5: Η ληστεία των Χριστουγέννων",
+        "Один удома 5",
+        "Один удома 5: Святкове пограбування",
+        "לבד בבית 5: שוד החג",
+        "Ở Nhà Một Mình 5: Phi Vụ Ngày Lễ",
+        "나 홀로 집에 5"
+      ],
+      "releases": [
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2012-12-03"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2013-11-11"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2015-05-03"
+        },
+        {
+          "country": "IT",
+          "type": 6,
+          "date": "2014-12-03"
+        },
+        {
+          "country": "KR",
+          "type": 4,
+          "date": "2023-01-01"
+        },
+        {
+          "country": "PL",
+          "type": 6,
+          "date": "2013-12-23"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "2012-12-03"
+        },
+        {
+          "country": "US",
+          "type": 6,
+          "date": "2012-11-25"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/134375",
+      "fetched_at": "2026-11-27T17:54:39+01:00"
+    },
+    "531438": {
+      "id": "tmdb:531438",
+      "tmdb_id": 531438,
+      "title": "Safari por Navidad",
+      "original_title": "Holiday in the Wild",
+      "year": 2019,
+      "director": "Ernie Barbarash",
+      "directors": [
+        "Ernie Barbarash"
+      ],
+      "runtime": 85,
+      "poster_path": "/cJHwSDugMi8zGt3wSTIqEgCv6fB.jpg",
+      "aliases": [
+        "Christmas In The Wild",
+        "Christmas in Africa",
+        "Safari por Navidad",
+        "Un safari per Natale",
+        "Una Navidad en África",
+        "크리스마스 인 아프리카"
+      ],
+      "releases": [
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2019-11-06"
+        },
+        {
+          "country": "BR",
+          "type": 4,
+          "date": "2019-11-06"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2019-11-01"
+        },
+        {
+          "country": "GB",
+          "type": 4,
+          "date": "2019-11-01"
+        },
+        {
+          "country": "IT",
+          "type": 4,
+          "date": "2019-11-01"
+        },
+        {
+          "country": "KR",
+          "type": 4,
+          "date": "2019-11-01"
+        },
+        {
+          "country": "PL",
+          "type": 4,
+          "date": "2019-11-01"
+        },
+        {
+          "country": "RO",
+          "type": 4,
+          "date": "2019-11-01"
+        },
+        {
+          "country": "SG",
+          "type": 4,
+          "date": "2019-11-01"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2019-11-01"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/531438",
+      "fetched_at": "2026-11-27T17:54:39+01:00"
+    },
+    "555850": {
+      "id": "tmdb:555850",
+      "tmdb_id": 555850,
+      "title": "El calendario de Navidad",
+      "original_title": "The Holiday Calendar",
+      "year": 2018,
+      "director": "Bradley Walsh",
+      "directors": [
+        "Bradley Walsh"
+      ],
+      "runtime": 94,
+      "poster_path": "/vtEzT3LluKKW0T9fcfzG7sdfkEh.jpg",
+      "aliases": [
+        "Christmas Calendar",
+        "Der Weihnachtkalender",
+        "Il calendario di Natale",
+        "Julekalenderen",
+        "Χριστουγεννιάτικο Ημερολόγιο"
+      ],
+      "releases": [
+        {
+          "country": "BR",
+          "type": 4,
+          "date": "2018-11-02"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2018-11-02"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2018-11-02"
+        },
+        {
+          "country": "GB",
+          "type": 4,
+          "date": "2018-11-02"
+        },
+        {
+          "country": "IT",
+          "type": 4,
+          "date": "2018-11-02"
+        },
+        {
+          "country": "PL",
+          "type": 4,
+          "date": "2018-11-02"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2018-11-02"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/555850",
+      "fetched_at": "2026-11-27T17:54:39+01:00"
+    },
+    "74849": {
+      "id": "tmdb:74849",
+      "tmdb_id": 74849,
+      "title": "El especial navideño de Star Wars",
+      "original_title": "The Star Wars Holiday Special",
+      "year": 1978,
+      "director": "Steve Binder",
+      "directors": [
+        "Steve Binder"
+      ],
+      "runtime": 97,
+      "poster_path": "/3vFFdLKigS3swN0pIBQbuRqSXIy.jpg",
+      "aliases": [
+        "El especial navideño de la Guerra de las Galaxias",
+        "El especial navideño de la Guerra de las Galaxias (The Star Wars Holiday Special)",
+        "Star Wars - The Holiday Special",
+        "The 'Star Wars' Christmas Special"
+      ],
+      "releases": [
+        {
+          "country": "AR",
+          "type": 6,
+          "date": "1978-12-01"
+        },
+        {
+          "country": "AU",
+          "type": 6,
+          "date": "1979-03-16"
+        },
+        {
+          "country": "CA",
+          "type": 6,
+          "date": "1978-11-17"
+        },
+        {
+          "country": "FR",
+          "type": 6,
+          "date": "1980-01-01"
+        },
+        {
+          "country": "MX",
+          "type": 6,
+          "date": "1978-12-01"
+        },
+        {
+          "country": "SE",
+          "type": 6,
+          "date": "1979-03-30"
+        },
+        {
+          "country": "US",
+          "type": 6,
+          "date": "1978-11-17"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/74849",
+      "fetched_at": "2026-11-27T17:54:39+01:00"
+    },
+    "215848": {
+      "id": "tmdb:215848",
+      "tmdb_id": 215848,
+      "title": "La gran familia española",
+      "original_title": "La gran familia española",
+      "year": 2013,
+      "director": "Daniel Sánchez Arévalo",
+      "directors": [
+        "Daniel Sánchez Arévalo"
+      ],
+      "runtime": 101,
+      "poster_path": "/35bNh92Bkhaq9IHBfo3kbIm6Pti.jpg",
+      "aliases": [
+        "Moj boljshaya ispanskaya semjya",
+        "My Family and Other Hooligans",
+        "The Big Spanish Family"
+      ],
+      "releases": [
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2013-09-13"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/215848",
+      "fetched_at": "2026-11-27T17:54:39+01:00"
+    },
+    "161791": {
+      "id": "tmdb:161791",
+      "tmdb_id": 161791,
+      "title": "La gran familia",
+      "original_title": "La gran familia",
+      "year": 1962,
+      "director": "Fernando Palacios, Rafael J. Salvia",
+      "directors": [
+        "Fernando Palacios",
+        "Rafael J. Salvia"
+      ],
+      "runtime": 104,
+      "poster_path": "/ioFdBpClOLHuW6xoOxKG8mD2Dmz.jpg",
+      "aliases": [
+        "A grande família",
+        "Diciotto con il nonno",
+        "Une famille explosive"
+      ],
+      "releases": [
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "1962-12-20"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "1965-04-07"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/161791",
+      "fetched_at": "2026-11-27T17:54:40+01:00"
+    },
+    "1668404": {
+      "id": "tmdb:1668404",
+      "tmdb_id": 1668404,
+      "title": "La Gran Familia",
+      "original_title": "La Gran Familia",
+      "year": 2026,
+      "director": "Matías Meyer",
+      "directors": [
+        "Matías Meyer"
+      ],
+      "runtime": 85,
+      "poster_path": "/rQIkPLuvsgZJCTl1uFQqWvBPli.jpg",
+      "aliases": [
+        "Üks suur perekond"
+      ],
+      "releases": [
+        {
+          "country": "EE",
+          "type": 1,
+          "date": "2026-11-17"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1668404",
+      "fetched_at": "2026-11-27T17:54:40+01:00"
+    },
+    "678517": {
+      "id": "tmdb:678517",
+      "tmdb_id": 678517,
+      "title": "Comando negro: La gran familia",
+      "original_title": "Comando negro: La gran familia",
+      "year": 2008,
+      "director": "Enrique Murillo",
+      "directors": [
+        "Enrique Murillo"
+      ],
+      "runtime": 90,
+      "poster_path": "/hXGywlZNd8UgYvDTmsN6ar8DNH6.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "MX",
+          "type": 3,
+          "date": "2008-01-01"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/678517",
+      "fetched_at": "2026-11-27T17:54:40+01:00"
+    },
+    "639721": {
+      "id": "tmdb:639721",
+      "tmdb_id": 639721,
+      "title": "La familia Addams 2: La gran escapada",
+      "original_title": "The Addams Family 2",
+      "year": 2021,
+      "director": "Greg Tiernan, Conrad Vernon",
+      "directors": [
+        "Greg Tiernan",
+        "Conrad Vernon"
+      ],
+      "runtime": 93,
+      "poster_path": "/esOfrTHCoGXbysiLGeimR8nT94q.jpg",
+      "aliases": [
+        "Addams Ailəsi 2",
+        "Addamsite perekond 2",
+        "Familia Addams 2",
+        "Familien Addams 2",
+        "La Familia Addams 2",
+        "La famille Addams 2 : une virée d'enfer",
+        "Los locos Addams 2",
+        "Rodzina Addamsów 2",
+        "The Addams Family op vakantie",
+        "Семейка Аддамс 2",
+        "משפחת אדמס 2",
+        "愛登士家庭2",
+        "爱登士家庭2",
+        "阿達一族2"
+      ],
+      "releases": [
+        {
+          "country": "AT",
+          "type": 3,
+          "date": "2021-11-19"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2022-01-06"
+        },
+        {
+          "country": "BE",
+          "type": 3,
+          "date": "2021-10-27"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2021-10-07"
+        },
+        {
+          "country": "BR",
+          "type": 4,
+          "date": "2021-12-23"
+        },
+        {
+          "country": "BR",
+          "type": 4,
+          "date": "2022-04-16"
+        },
+        {
+          "country": "CA",
+          "type": 3,
+          "date": "2021-10-01"
+        },
+        {
+          "country": "CH",
+          "type": 4,
+          "date": "2021-11-18"
+        },
+        {
+          "country": "CZ",
+          "type": 3,
+          "date": "2021-10-28"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2021-11-18"
+        },
+        {
+          "country": "DE",
+          "type": 4,
+          "date": "2022-03-03"
+        },
+        {
+          "country": "DE",
+          "type": 5,
+          "date": "2022-03-03"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "2021-10-07"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2021-10-08"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "2021-10-22"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2021-10-13"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2022-02-16"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2026-02-20"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2022-02-23"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2021-10-08"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2021-10-28"
+        },
+        {
+          "country": "HK",
+          "type": 3,
+          "date": "2021-10-09"
+        },
+        {
+          "country": "HU",
+          "type": 3,
+          "date": "2021-10-07"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "2021-10-08"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2021-10-28"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "2022-01-28"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2021-11-10"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2021-10-06"
+        },
+        {
+          "country": "PH",
+          "type": 4,
+          "date": "2026-10-23"
+        },
+        {
+          "country": "PL",
+          "type": 3,
+          "date": "2021-10-22"
+        },
+        {
+          "country": "RO",
+          "type": 3,
+          "date": "2021-10-01"
+        },
+        {
+          "country": "RU",
+          "type": 3,
+          "date": "2021-10-14"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "2021-10-29"
+        },
+        {
+          "country": "SG",
+          "type": 3,
+          "date": "2021-11-11"
+        },
+        {
+          "country": "SI",
+          "type": 3,
+          "date": "2021-10-21"
+        },
+        {
+          "country": "SK",
+          "type": 3,
+          "date": "2021-10-07"
+        },
+        {
+          "country": "TH",
+          "type": 3,
+          "date": "2021-12-30"
+        },
+        {
+          "country": "TR",
+          "type": 3,
+          "date": "2021-11-12"
+        },
+        {
+          "country": "TW",
+          "type": 3,
+          "date": "2021-12-30"
+        },
+        {
+          "country": "UA",
+          "type": 3,
+          "date": "2021-10-21"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2021-10-01"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2021-10-01"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2022-01-18"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/639721",
+      "fetched_at": "2026-11-27T17:54:40+01:00"
+    },
+    "929563": {
+      "id": "tmdb:929563",
+      "tmdb_id": 929563,
+      "title": "Los Green en la gran ciudad, la película: Salvando el Greenverso",
+      "original_title": "Big City Greens the Movie: Spacecation",
+      "year": 2024,
+      "director": "Anna O'Brian",
+      "directors": [
+        "Anna O'Brian"
+      ],
+      "runtime": 82,
+      "poster_path": "/iJlYUQt4ANDobF3Y9SlUJ0SbBMR.jpg",
+      "aliases": [
+        "Greenowie w wielkim mieście: Kosmiczne wakacje",
+        "格林一家进城趣",
+        "格林一家进城趣：太空假期"
+      ],
+      "releases": [
+        {
+          "country": "AS",
+          "type": 4,
+          "date": "2024-06-06"
+        },
+        {
+          "country": "AU",
+          "type": 4,
+          "date": "2024-06-07"
+        },
+        {
+          "country": "BR",
+          "type": 4,
+          "date": "2024-10-25"
+        },
+        {
+          "country": "CA",
+          "type": 4,
+          "date": "2024-06-07"
+        },
+        {
+          "country": "CC",
+          "type": 4,
+          "date": "2024-06-07"
+        },
+        {
+          "country": "CK",
+          "type": 4,
+          "date": "2024-06-06"
+        },
+        {
+          "country": "CX",
+          "type": 4,
+          "date": "2024-06-07"
+        },
+        {
+          "country": "DE",
+          "type": 4,
+          "date": "2024-06-06"
+        },
+        {
+          "country": "ES",
+          "type": 4,
+          "date": "2024-06-07"
+        },
+        {
+          "country": "GB",
+          "type": 4,
+          "date": "2024-06-07"
+        },
+        {
+          "country": "GI",
+          "type": 4,
+          "date": "2024-06-07"
+        },
+        {
+          "country": "GU",
+          "type": 4,
+          "date": "2024-06-07"
+        },
+        {
+          "country": "HK",
+          "type": 4,
+          "date": "2024-06-14"
+        },
+        {
+          "country": "IE",
+          "type": 4,
+          "date": "2024-06-07"
+        },
+        {
+          "country": "IL",
+          "type": 4,
+          "date": "2025-09-05"
+        },
+        {
+          "country": "IL",
+          "type": 6,
+          "date": "2024-08-30"
+        },
+        {
+          "country": "IO",
+          "type": 4,
+          "date": "2024-06-07"
+        },
+        {
+          "country": "KR",
+          "type": 4,
+          "date": "2024-07-05"
+        },
+        {
+          "country": "MH",
+          "type": 4,
+          "date": "2024-06-07"
+        },
+        {
+          "country": "MP",
+          "type": 4,
+          "date": "2024-06-07"
+        },
+        {
+          "country": "NF",
+          "type": 4,
+          "date": "2024-06-07"
+        },
+        {
+          "country": "NU",
+          "type": 4,
+          "date": "2024-06-06"
+        },
+        {
+          "country": "NZ",
+          "type": 4,
+          "date": "2024-06-07"
+        },
+        {
+          "country": "PN",
+          "type": 4,
+          "date": "2024-06-06"
+        },
+        {
+          "country": "PR",
+          "type": 4,
+          "date": "2024-06-07"
+        },
+        {
+          "country": "SG",
+          "type": 4,
+          "date": "2024-06-07"
+        },
+        {
+          "country": "SH",
+          "type": 4,
+          "date": "2024-06-07"
+        },
+        {
+          "country": "TK",
+          "type": 4,
+          "date": "2024-06-07"
+        },
+        {
+          "country": "TW",
+          "type": 4,
+          "date": "2024-06-14"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2024-06-07"
+        },
+        {
+          "country": "US",
+          "type": 6,
+          "date": "2024-06-06"
+        },
+        {
+          "country": "VI",
+          "type": 4,
+          "date": "2024-06-07"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/929563",
+      "fetched_at": "2026-11-27T17:54:40+01:00"
+    },
+    "228161": {
+      "id": "tmdb:228161",
+      "tmdb_id": 228161,
+      "title": "Home: Hogar dulce hogar",
+      "original_title": "Home",
+      "year": 2015,
+      "director": "Tim Johnson",
+      "directors": [
+        "Tim Johnson"
+      ],
+      "runtime": 94,
+      "poster_path": "/d4s4JbRnCepEnMSzN9t9RXdKfXc.jpg",
+      "aliases": [
+        "Dom",
+        "Domov",
+        "Happy Smekday!",
+        "Hjem",
+        "Home - No hay lugar como el hogar",
+        "Kodu",
+        "The True Meaning of Smekday",
+        "Дом 1",
+        "خانه",
+        "ホーム　宇宙人ブーヴのゆかいな大冒険",
+        "斯麦克节快乐",
+        "無敵安樂窩",
+        "瘋狂外星人",
+        "홈 1"
+      ],
+      "releases": [
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "2015-03-26"
+        },
+        {
+          "country": "AT",
+          "type": 3,
+          "date": "2015-03-26"
+        },
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2015-03-18"
+        },
+        {
+          "country": "BE",
+          "type": 3,
+          "date": "2015-03-31"
+        },
+        {
+          "country": "BR",
+          "type": 3,
+          "date": "2015-03-25"
+        },
+        {
+          "country": "CA",
+          "type": 3,
+          "date": "2015-03-27"
+        },
+        {
+          "country": "CH",
+          "type": 4,
+          "date": "2015-03-26"
+        },
+        {
+          "country": "CZ",
+          "type": 4,
+          "date": "2015-03-26"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "2015-03-26"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "2015-03-25"
+        },
+        {
+          "country": "EE",
+          "type": 3,
+          "date": "2015-03-20"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2015-03-19"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "2015-03-20"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2015-04-15"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2021-05-16"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2018-02-01"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2022-02-01"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2015-09-01"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2015-03-20"
+        },
+        {
+          "country": "GR",
+          "type": 3,
+          "date": "2015-04-02"
+        },
+        {
+          "country": "HK",
+          "type": 3,
+          "date": "2015-04-01"
+        },
+        {
+          "country": "HU",
+          "type": 3,
+          "date": "2015-03-26"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "2015-03-20"
+        },
+        {
+          "country": "IN",
+          "type": 3,
+          "date": "2015-03-26"
+        },
+        {
+          "country": "IT",
+          "type": 3,
+          "date": "2015-03-25"
+        },
+        {
+          "country": "JP",
+          "type": 4,
+          "date": "2016-07-06"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2015-05-21"
+        },
+        {
+          "country": "MY",
+          "type": 3,
+          "date": "2015-03-25"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2015-04-01"
+        },
+        {
+          "country": "NL",
+          "type": 5,
+          "date": "2015-07-29"
+        },
+        {
+          "country": "NO",
+          "type": 3,
+          "date": "2015-03-20"
+        },
+        {
+          "country": "NZ",
+          "type": 3,
+          "date": "2015-03-25"
+        },
+        {
+          "country": "PL",
+          "type": 3,
+          "date": "2015-04-10"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "2015-03-26"
+        },
+        {
+          "country": "RO",
+          "type": 3,
+          "date": "2015-03-26"
+        },
+        {
+          "country": "RU",
+          "type": 3,
+          "date": "2015-03-19"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "2015-03-27"
+        },
+        {
+          "country": "SG",
+          "type": 3,
+          "date": "2015-03-25"
+        },
+        {
+          "country": "TH",
+          "type": 3,
+          "date": "2015-03-25"
+        },
+        {
+          "country": "TW",
+          "type": 3,
+          "date": "2015-03-26"
+        },
+        {
+          "country": "UA",
+          "type": 3,
+          "date": "2015-03-19"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "2015-03-27"
+        },
+        {
+          "country": "VN",
+          "type": 3,
+          "date": "2015-03-26"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/228161",
+      "fetched_at": "2026-11-27T17:54:42+01:00"
+    },
+    "1698575": {
+      "id": "tmdb:1698575",
+      "tmdb_id": 1698575,
+      "title": "Snoopy presenta: Hogar, dulce hogar",
+      "original_title": "Snoopy Presents: There's No Place Like Home, Snoopy",
+      "year": 2026,
+      "director": "Ridd Sorensen",
+      "directors": [
+        "Ridd Sorensen"
+      ],
+      "runtime": 32,
+      "poster_path": "/dEXPxwI0yi41pwbG94I1PRaeVZq.jpg",
+      "aliases": [
+        "Snoopy Sunar: Ev Gibi Bir Yer Yok, Snoopy",
+        "There's No Place Like Home, Snoopy"
+      ],
+      "releases": [
+        {
+          "country": "AE",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "AG",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "AI",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "AL",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "AM",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "AO",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "AR",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "AS",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "AT",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "AU",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "AZ",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "BA",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "BB",
+          "type": 4,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "BE",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "BF",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "BG",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "BH",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "BJ",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "BM",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "BO",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "BR",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "BS",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "BT",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "BW",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "BY",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "BZ",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "CA",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "CD",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "CG",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "CH",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "CI",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "CL",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "CM",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "CO",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "CR",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "CV",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "CY",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "CZ",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "DE",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "DK",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "DM",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "DO",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "DZ",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "EC",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "EE",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "EG",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "ES",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "FI",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "FJ",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "FM",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "GA",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "GB",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "GD",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "GE",
+          "type": 4,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "GH",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "GM",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "GR",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "GT",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "GU",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "GW",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "GY",
+          "type": 4,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "HK",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "HN",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "HR",
+          "type": 4,
+          "date": "2026-09-14"
+        },
+        {
+          "country": "HU",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "ID",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "IE",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "IL",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "IN",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "IQ",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "IT",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "JM",
+          "type": 4,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "JO",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "JP",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "KE",
+          "type": 4,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "KG",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "KH",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "KN",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "KR",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "KW",
+          "type": 4,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "KY",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "KZ",
+          "type": 4,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "LA",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "LB",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "LC",
+          "type": 4,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "LK",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "LR",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "LT",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "LU",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "LV",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "LY",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "MA",
+          "type": 4,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "MD",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "ME",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "MG",
+          "type": 4,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "MK",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "ML",
+          "type": 4,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "MN",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "MO",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "MP",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "MR",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "MS",
+          "type": 4,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "MT",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "MU",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "MV",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "MW",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "MX",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "MY",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "MZ",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "NA",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "NE",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "NG",
+          "type": 4,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "NI",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "NL",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "NO",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "NP",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "NR",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "NZ",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "OM",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "PA",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "PE",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "PG",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "PH",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "PK",
+          "type": 4,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "PL",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "PR",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "PT",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "PW",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "PY",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "QA",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "RO",
+          "type": 4,
+          "date": "2026-09-14"
+        },
+        {
+          "country": "RS",
+          "type": 4,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "RU",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "RW",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "SA",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "SB",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "SC",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "SE",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "SG",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "SI",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "SK",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "SL",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "SN",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "SR",
+          "type": 4,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "ST",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "SV",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "SZ",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "TC",
+          "type": 4,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "TD",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "TH",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "TJ",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "TM",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "TN",
+          "type": 4,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "TO",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "TR",
+          "type": 4,
+          "date": "2026-09-17"
+        },
+        {
+          "country": "TT",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "TW",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "TZ",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "UA",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "UG",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "UZ",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "VC",
+          "type": 4,
+          "date": "2026-09-16"
+        },
+        {
+          "country": "VE",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "VG",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "VI",
+          "type": 4,
+          "date": "2026-07-30"
+        },
+        {
+          "country": "VN",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "VU",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "XK",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "YE",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "ZA",
+          "type": 4,
+          "date": "2026-07-31"
+        },
+        {
+          "country": "ZM",
+          "type": 4,
+          "date": "2026-09-15"
+        },
+        {
+          "country": "ZW",
+          "type": 4,
+          "date": "2026-07-31"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1698575",
+      "fetched_at": "2026-11-27T17:54:42+01:00"
+    },
+    "927698": {
+      "id": "tmdb:927698",
+      "tmdb_id": 927698,
+      "title": "Hogar, dulce hogar",
+      "original_title": "Hogar, dulce hogar",
+      "year": 1941,
+      "director": "Luis Moglia Barth",
+      "directors": [
+        "Luis Moglia Barth"
+      ],
+      "runtime": 80,
+      "poster_path": "/9M12JkC0IhsGRNSBTBRH4LxX0hL.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "1941-01-15"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/927698",
+      "fetched_at": "2026-11-27T17:54:42+01:00"
+    },
+    "1552": {
+      "id": "tmdb:1552",
+      "tmdb_id": 1552,
+      "title": "Dulce hogar... ¡a veces!",
+      "original_title": "Parenthood",
+      "year": 1989,
+      "director": "Ron Howard",
+      "directors": [
+        "Ron Howard"
+      ],
+      "runtime": 124,
+      "poster_path": "/eNOh81afmhNGJMSuHkUbSIQWBmt.jpg",
+      "aliases": [
+        "Dulce hogar... ¡a veces!",
+        "Lar, Doce Lar... às Vezes",
+        "温馨家庭"
+      ],
+      "releases": [
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "1989-10-26"
+        },
+        {
+          "country": "BE",
+          "type": 6,
+          "date": "1989-07-31"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "1990-06-07"
+        },
+        {
+          "country": "DK",
+          "type": 5,
+          "date": "1989-07-31"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "1989-07-31"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "1989-11-15"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "1990-01-12"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "1990-01-12"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "1989-10-05"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "1989-11-10"
+        },
+        {
+          "country": "NL",
+          "type": 5,
+          "date": "2003-05-22"
+        },
+        {
+          "country": "NL",
+          "type": 5,
+          "date": "2012-08-15"
+        },
+        {
+          "country": "NL",
+          "type": 6,
+          "date": "2003-06-05"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "1990-02-09"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "1989-11-10"
+        },
+        {
+          "country": "SE",
+          "type": 5,
+          "date": "2012-04-04"
+        },
+        {
+          "country": "SE",
+          "type": 5,
+          "date": "2012-07-25"
+        },
+        {
+          "country": "SE",
+          "type": 5,
+          "date": "1990-08-22"
+        },
+        {
+          "country": "SE",
+          "type": 6,
+          "date": "1991-09-07"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "1989-07-31"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1552",
+      "fetched_at": "2026-11-27T17:54:42+01:00"
+    },
+    "537685": {
+      "id": "tmdb:537685",
+      "tmdb_id": 537685,
+      "title": "Dulce Hogar",
+      "original_title": "Dulce Hogar",
+      "year": 2018,
+      "director": "Gio Olmos",
+      "directors": [
+        "Gio Olmos"
+      ],
+      "runtime": 9,
+      "poster_path": "/sD8PqWNK6YPKaEhnJ76WzbD8I2h.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "CA",
+          "type": 3,
+          "date": "2018-07-22"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/537685",
+      "fetched_at": "2026-11-27T17:54:42+01:00"
+    },
+    "48627": {
+      "id": "tmdb:48627",
+      "tmdb_id": 48627,
+      "title": "Hogar, dulce hogar",
+      "original_title": "Room for One More",
+      "year": 1952,
+      "director": "Norman Taurog",
+      "directors": [
+        "Norman Taurog"
+      ],
+      "runtime": 98,
+      "poster_path": "/g7RvuYrQj91ipc6dkd3JhfW8Atm.jpg",
+      "aliases": [
+        "Apithani oikogenia",
+        "Babas, mama kai Sia",
+        "C'è posto per tutti",
+        "Cette sacrée famille",
+        "Er kan er nog meer bij",
+        "Hogar, dulce hogar",
+        "Sempre Cabe Mais Um",
+        "Syv må man være",
+        "The Easy Way",
+        "Tilaa vielä yhdelle",
+        "Trångt om saligheten",
+        "Vater werden ist nicht schwer",
+        "Есть место еще для одного"
+      ],
+      "releases": [
+        {
+          "country": "AT",
+          "type": 3,
+          "date": "1953-09-01"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "1953-06-26"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "1952-06-23"
+        },
+        {
+          "country": "ES",
+          "type": 2,
+          "date": "1953-02-09"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "1952-10-24"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "1952-06-06"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "1952-10-24"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "1952-09-22"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "1952-01-10"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/48627",
+      "fetched_at": "2026-11-27T17:54:43+01:00"
+    },
+    "1342131": {
+      "id": "tmdb:1342131",
+      "tmdb_id": 1342131,
+      "title": "Mucha mierda",
+      "original_title": "Mucha mierda",
+      "year": 2025,
+      "director": "Alba Sotorra",
+      "directors": [
+        "Alba Sotorra"
+      ],
+      "runtime": 84,
+      "poster_path": "/nbRYgC2Kao0eU9W2RxwMS6oY7vc.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "ES",
+          "type": 1,
+          "date": "2025-02-07"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1342131",
+      "fetched_at": "2026-11-27T17:54:45+01:00",
+      "vote_count": 0,
+      "vote_average": 0.0,
+      "statistics_checked_at": "2026-11-27T17:54:45+01:00"
+    },
+    "1517533": {
+      "id": "tmdb:1517533",
+      "tmdb_id": 1517533,
+      "title": "Mucha Mierda",
+      "original_title": "Mucha Mierda",
+      "year": 2023,
+      "director": "María Fe Delgado",
+      "directors": [
+        "María Fe Delgado"
+      ],
+      "runtime": 16,
+      "poster_path": null,
+      "aliases": [],
+      "releases": [
+        {
+          "country": "PE",
+          "type": 4,
+          "date": "2023-12-05"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1517533",
+      "fetched_at": "2026-11-27T17:54:45+01:00"
+    },
+    "1590977": {
+      "id": "tmdb:1590977",
+      "tmdb_id": 1590977,
+      "title": "Mucha mierda",
+      "original_title": "Mucha mierda",
+      "year": null,
+      "director": "Antonia Otero",
+      "directors": [
+        "Antonia Otero"
+      ],
+      "runtime": 10,
+      "poster_path": "/uJoq6wlobZbx5mWzGn8PzX6jeWd.jpg",
+      "aliases": [],
+      "releases": [],
+      "source_url": "https://www.themoviedb.org/movie/1590977",
+      "fetched_at": "2026-11-27T17:54:45+01:00"
+    },
+    "1789367": {
+      "id": "tmdb:1789367",
+      "tmdb_id": 1789367,
+      "title": "Mucha mierda, Paco",
+      "original_title": "Mucha mierda, Paco",
+      "year": 2025,
+      "director": "Raúl Martos Moreno, Pablo Martos Moreno, Marina Artemis",
+      "directors": [
+        "Raúl Martos Moreno",
+        "Pablo Martos Moreno",
+        "Marina Artemis"
+      ],
+      "runtime": 6,
+      "poster_path": null,
+      "aliases": [],
+      "releases": [
+        {
+          "country": "ES",
+          "type": 4,
+          "date": "2025-09-27"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1789367",
+      "fetched_at": "2026-11-27T17:54:45+01:00"
+    },
+    "1488311": {
+      "id": "tmdb:1488311",
+      "tmdb_id": 1488311,
+      "title": "Break a Leg",
+      "original_title": "Break a Leg",
+      "year": 2025,
+      "director": "Jamie Howard, Nathaniel Mitchell, Teddy Bell",
+      "directors": [
+        "Jamie Howard",
+        "Nathaniel Mitchell",
+        "Teddy Bell"
+      ],
+      "runtime": 3,
+      "poster_path": "/zMRJBNpxadTQqEoFptiZf3hmmOz.jpg",
+      "aliases": [
+        "Hals- und Beinbruch",
+        "Mucha mierda",
+        "Tvi tvi",
+        "Πάμε γερά",
+        "千秋楽まで頑張って",
+        "頑張ってね"
+      ],
+      "releases": [
+        {
+          "country": "GB",
+          "type": 4,
+          "date": "2025-05-27"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1488311",
+      "fetched_at": "2026-11-27T17:54:45+01:00"
+    },
+    "1784044": {
+      "id": "tmdb:1784044",
+      "tmdb_id": 1784044,
+      "title": "Pasos perdidos",
+      "original_title": "Pasos perdidos",
+      "year": null,
+      "director": "Jose Antonio Torres Marquez",
+      "directors": [
+        "Jose Antonio Torres Marquez"
+      ],
+      "runtime": 82,
+      "poster_path": "/rqbTEsVFeye6SGFDU9J7OYFEPwq.jpg",
+      "aliases": [],
+      "releases": [],
+      "source_url": "https://www.themoviedb.org/movie/1784044",
+      "fetched_at": "2026-11-27T17:54:46+01:00"
+    },
+    "291592": {
+      "id": "tmdb:291592",
+      "tmdb_id": 291592,
+      "title": "Los pasos perdidos",
+      "original_title": "Los pasos perdidos",
+      "year": 2001,
+      "director": "Manane Rodríguez",
+      "directors": [
+        "Manane Rodríguez"
+      ],
+      "runtime": 93,
+      "poster_path": "/oFFjGyX04qXuPWVhWq04VC2bU53.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "AR",
+          "type": 3,
+          "date": "2001-08-09"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2001-11-09"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/291592",
+      "fetched_at": "2026-11-27T17:54:46+01:00"
+    },
+    "271136": {
+      "id": "tmdb:271136",
+      "tmdb_id": 271136,
+      "title": "Los pasos perdidos",
+      "original_title": "Els passos perduts",
+      "year": 2010,
+      "director": "Jordi Cadena",
+      "directors": [
+        "Jordi Cadena"
+      ],
+      "runtime": 93,
+      "poster_path": "/smzC4fRpVHIjCWgdtB4Mz1BCx31.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2010-06-04"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/271136",
+      "fetched_at": "2026-11-27T17:54:46+01:00"
+    },
+    "346921": {
+      "id": "tmdb:346921",
+      "tmdb_id": 346921,
+      "title": "La sala de los pasos perdidos",
+      "original_title": "Sál ztracených kroků",
+      "year": 1964,
+      "director": "Jaromil Jireš",
+      "directors": [
+        "Jaromil Jireš"
+      ],
+      "runtime": 12,
+      "poster_path": "/e4jMxGaquQdxNZZO7xtWCFR2Y0C.jpg",
+      "aliases": [
+        "Nádraží střed",
+        "The Hall of Lost Steps"
+      ],
+      "releases": [
+        {
+          "country": "XC",
+          "type": 1,
+          "date": "1960-12-31"
+        },
+        {
+          "country": "XC",
+          "type": 3,
+          "date": "1964-02-14"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/346921",
+      "fetched_at": "2026-11-27T17:54:46+01:00"
+    },
+    "1197671": {
+      "id": "tmdb:1197671",
+      "tmdb_id": 1197671,
+      "title": "Simona Kossak",
+      "original_title": "Simona Kossak",
+      "year": 2024,
+      "director": "Adrian Panek",
+      "directors": [
+        "Adrian Panek"
+      ],
+      "runtime": 100,
+      "poster_path": "/3oicBWwYFI5vn2RLhtGkIcKDCJD.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2024-12-13"
+        },
+        {
+          "country": "PL",
+          "type": 1,
+          "date": "2024-08-08"
+        },
+        {
+          "country": "PL",
+          "type": 1,
+          "date": "2024-07-21"
+        },
+        {
+          "country": "PL",
+          "type": 1,
+          "date": "2024-09-23"
+        },
+        {
+          "country": "PL",
+          "type": 1,
+          "date": "2024-08-15"
+        },
+        {
+          "country": "PL",
+          "type": 1,
+          "date": "2024-11-20"
+        },
+        {
+          "country": "PL",
+          "type": 1,
+          "date": "2024-11-21"
+        },
+        {
+          "country": "PL",
+          "type": 1,
+          "date": "2025-04-26"
+        },
+        {
+          "country": "PL",
+          "type": 1,
+          "date": "2025-07-01"
+        },
+        {
+          "country": "PL",
+          "type": 3,
+          "date": "2024-11-22"
+        },
+        {
+          "country": "PL",
+          "type": 4,
+          "date": "2025-02-20"
+        },
+        {
+          "country": "PL",
+          "type": 4,
+          "date": "2025-06-06"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1197671",
+      "fetched_at": "2026-11-27T17:54:48+01:00",
+      "vote_count": 14,
+      "vote_average": 7.3,
+      "statistics_checked_at": "2026-11-27T17:54:48+01:00"
+    },
+    "8937": {
+      "id": "tmdb:8937",
+      "tmdb_id": 8937,
+      "title": "Tokyo Sonata",
+      "original_title": "トウキョウソナタ",
+      "year": 2008,
+      "director": "Kiyoshi Kurosawa",
+      "directors": [
+        "Kiyoshi Kurosawa"
+      ],
+      "runtime": 119,
+      "poster_path": "/7JP0L21Syxkj1fjndrZk1gOb3bw.jpg",
+      "aliases": [
+        "Tôkyô sonata",
+        "도쿄 소나타"
+      ],
+      "releases": [
+        {
+          "country": "FR",
+          "type": 1,
+          "date": "2008-05-17"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2009-03-25"
+        },
+        {
+          "country": "HK",
+          "type": 1,
+          "date": "2008-10-10"
+        },
+        {
+          "country": "HK",
+          "type": 3,
+          "date": "2009-03-13"
+        },
+        {
+          "country": "JP",
+          "type": 3,
+          "date": "2008-09-27"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2009-03-19"
+        },
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2008-10-09"
+        },
+        {
+          "country": "US",
+          "type": 2,
+          "date": "2009-03-13"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/8937",
+      "fetched_at": "2026-11-27T17:54:48+01:00"
+    },
+    "12761": {
+      "id": "tmdb:12761",
+      "tmdb_id": 12761,
+      "title": "Sonata de otoño",
+      "original_title": "Höstsonaten",
+      "year": 1978,
+      "director": "Ingmar Bergman",
+      "directors": [
+        "Ingmar Bergman"
+      ],
+      "runtime": 99,
+      "poster_path": "/21seIfT4GgEnWSid2d6NuMxEy9l.jpg",
+      "aliases": [
+        "Güz Sonatı",
+        "Herbstsonate",
+        "Sinfonia d'autunno",
+        "Sonata de otoño",
+        "Sonata otoñal",
+        "Աշնանային Սոնատը",
+        "سونات پاییزی",
+        "秋日奏鸣曲",
+        "가을 소나타"
+      ],
+      "releases": [
+        {
+          "country": "CN",
+          "type": 1,
+          "date": "2026-10-16"
+        },
+        {
+          "country": "DE",
+          "type": 3,
+          "date": "1978-10-19"
+        },
+        {
+          "country": "DK",
+          "type": 3,
+          "date": "1978-10-08"
+        },
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "1979-03-05"
+        },
+        {
+          "country": "FI",
+          "type": 3,
+          "date": "1978-12-15"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "1978-10-11"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2021-05-01"
+        },
+        {
+          "country": "FR",
+          "type": 4,
+          "date": "2020-05-10"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2000-01-18"
+        },
+        {
+          "country": "FR",
+          "type": 5,
+          "date": "2014-04-29"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "1979-03-01"
+        },
+        {
+          "country": "GB",
+          "type": 5,
+          "date": "2003-06-18"
+        },
+        {
+          "country": "GB",
+          "type": 6,
+          "date": "1986-04-11"
+        },
+        {
+          "country": "GR",
+          "type": 4,
+          "date": "2019-08-22"
+        },
+        {
+          "country": "IE",
+          "type": 3,
+          "date": "1978-10-19"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2012-03-22"
+        },
+        {
+          "country": "MX",
+          "type": 3,
+          "date": "2018-07-17"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "1978-10-26"
+        },
+        {
+          "country": "NL",
+          "type": 3,
+          "date": "2010-08-19"
+        },
+        {
+          "country": "NL",
+          "type": 5,
+          "date": "2005-11-23"
+        },
+        {
+          "country": "NO",
+          "type": 2,
+          "date": "1978-10-08"
+        },
+        {
+          "country": "PT",
+          "type": 3,
+          "date": "1979-10-05"
+        },
+        {
+          "country": "SE",
+          "type": 3,
+          "date": "1978-10-08"
+        },
+        {
+          "country": "US",
+          "type": 3,
+          "date": "1978-10-08"
+        },
+        {
+          "country": "US",
+          "type": 5,
+          "date": "2018-11-20"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/12761",
+      "fetched_at": "2026-11-27T17:54:48+01:00"
+    },
+    "878828": {
+      "id": "tmdb:878828",
+      "tmdb_id": 878828,
+      "title": "Sonata",
+      "original_title": "Sonata",
+      "year": 2022,
+      "director": "Bartosz Blaschke",
+      "directors": [
+        "Bartosz Blaschke"
+      ],
+      "runtime": 118,
+      "poster_path": "/gw6bSipK4t21RtcNNzMeodjUWPr.jpg",
+      "aliases": [
+        "소나타"
+      ],
+      "releases": [
+        {
+          "country": "CA",
+          "type": 1,
+          "date": "2022-11-17"
+        },
+        {
+          "country": "IE",
+          "type": 1,
+          "date": "2023-03-13"
+        },
+        {
+          "country": "KR",
+          "type": 1,
+          "date": "2022-08-11"
+        },
+        {
+          "country": "MA",
+          "type": 1,
+          "date": "2023-05-27"
+        },
+        {
+          "country": "PL",
+          "type": 1,
+          "date": "2021-09-23"
+        },
+        {
+          "country": "PL",
+          "type": 1,
+          "date": "2021-11-18"
+        },
+        {
+          "country": "PL",
+          "type": 3,
+          "date": "2022-03-04"
+        },
+        {
+          "country": "PL",
+          "type": 4,
+          "date": "2022-08-03"
+        },
+        {
+          "country": "PL",
+          "type": 6,
+          "date": "2023-12-23"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/878828",
+      "fetched_at": "2026-11-27T17:54:48+01:00",
+      "vote_count": 10,
+      "vote_average": 7.5,
+      "statistics_checked_at": "2026-11-27T17:54:49+01:00"
+    },
+    "477036": {
+      "id": "tmdb:477036",
+      "tmdb_id": 477036,
+      "title": "The Sonata",
+      "original_title": "The Sonata",
+      "year": 2018,
+      "director": "Andrew Desmond",
+      "directors": [
+        "Andrew Desmond"
+      ],
+      "runtime": 88,
+      "poster_path": "/iiL3AWKPx6GIZN6AmmSq7pbtyc.jpg",
+      "aliases": [
+        "咒冥曲",
+        "奏冥曲"
+      ],
+      "releases": [
+        {
+          "country": "BE",
+          "type": 3,
+          "date": "2018-11-15"
+        },
+        {
+          "country": "DE",
+          "type": 5,
+          "date": "2021-01-07"
+        },
+        {
+          "country": "IE",
+          "type": 4,
+          "date": "2020-02-17"
+        },
+        {
+          "country": "JP",
+          "type": 4,
+          "date": "2020-01-03"
+        },
+        {
+          "country": "KR",
+          "type": 1,
+          "date": "2019-06-29"
+        },
+        {
+          "country": "KR",
+          "type": 3,
+          "date": "2020-03-05"
+        },
+        {
+          "country": "PT",
+          "type": 1,
+          "date": "2019-03-02"
+        },
+        {
+          "country": "RU",
+          "type": 3,
+          "date": "2018-11-15"
+        },
+        {
+          "country": "TW",
+          "type": 3,
+          "date": "2020-07-24"
+        },
+        {
+          "country": "US",
+          "type": 4,
+          "date": "2020-01-10"
+        },
+        {
+          "country": "VN",
+          "type": 3,
+          "date": "2020-06-12"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/477036",
+      "fetched_at": "2026-11-27T17:54:49+01:00"
+    },
+    "221416": {
+      "id": "tmdb:221416",
+      "tmdb_id": 221416,
+      "title": "Sonata",
+      "original_title": "Sonata",
+      "year": 2013,
+      "director": "Peque Gallaga, Lore Reyes",
+      "directors": [
+        "Peque Gallaga",
+        "Lore Reyes"
+      ],
+      "runtime": 110,
+      "poster_path": "/wSCSZZPqoKNy3VKhzv7tfA6fxxk.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "ES",
+          "type": 1,
+          "date": "2015-11-11"
+        },
+        {
+          "country": "KH",
+          "type": 1,
+          "date": "2019-03-10"
+        },
+        {
+          "country": "PH",
+          "type": 1,
+          "date": "2013-09-10"
+        },
+        {
+          "country": "PH",
+          "type": 3,
+          "date": "2013-09-10"
+        },
+        {
+          "country": "VN",
+          "type": 1,
+          "date": "2014-11-23"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/221416",
+      "fetched_at": "2026-11-27T17:54:49+01:00"
+    },
+    "1403687": {
+      "id": "tmdb:1403687",
+      "tmdb_id": 1403687,
+      "title": "Sonata",
+      "original_title": "Sonata",
+      "year": 2024,
+      "director": "Eljin Yoo",
+      "directors": [
+        "Eljin Yoo"
+      ],
+      "runtime": 20,
+      "poster_path": "/2OLqxhHOxGh3vbSmM1A1Ufiyd9V.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "US",
+          "type": 1,
+          "date": "2024-12-14"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1403687",
+      "fetched_at": "2026-11-27T17:54:49+01:00"
+    },
+    "533989": {
+      "id": "tmdb:533989",
+      "tmdb_id": 533989,
+      "title": "Viaje al cuarto de una madre",
+      "original_title": "Viaje al cuarto de una madre",
+      "year": 2018,
+      "director": "Celia Rico Clavellino",
+      "directors": [
+        "Celia Rico Clavellino"
+      ],
+      "runtime": 85,
+      "poster_path": "/nzzTJ9KCmnnEL61BCFSYH2l4Dra.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2018-10-05"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2019-10-02"
+        },
+        {
+          "country": "KR",
+          "type": 1,
+          "date": "2019-05-03"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/533989",
+      "fetched_at": "2026-11-27T17:54:51+01:00",
+      "vote_count": 40,
+      "vote_average": 6.2,
+      "statistics_checked_at": "2026-11-27T17:54:51+01:00"
+    },
+    "110198": {
+      "id": "tmdb:110198",
+      "tmdb_id": 110198,
+      "title": "Los Niños Salvajes",
+      "original_title": "Els Nens Salvatges",
+      "year": 2012,
+      "director": "Patricia Ferreira",
+      "directors": [
+        "Patricia Ferreira"
+      ],
+      "runtime": 95,
+      "poster_path": "/yUE9OJ5MRpQF4B7hZqyf1byjCE4.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "ES",
+          "type": 3,
+          "date": "2012-05-25"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/110198",
+      "fetched_at": "2026-11-27T17:54:57+01:00",
+      "vote_count": 18,
+      "vote_average": 6.1,
+      "statistics_checked_at": "2026-11-27T17:54:57+01:00"
+    },
+    "503447": {
+      "id": "tmdb:503447",
+      "tmdb_id": 503447,
+      "title": "Wild Child: The Story of Feral Children",
+      "original_title": "Wild Child: The Story of Feral Children",
+      "year": 2002,
+      "director": "Jonah Weston",
+      "directors": [
+        "Jonah Weston"
+      ],
+      "runtime": 44,
+      "poster_path": "/jNdQjZ1zs5luoMePjwKbSjuQmWu.jpg",
+      "aliases": [
+        "Niña salvaje: la historia de los niños salvajes"
+      ],
+      "releases": [
+        {
+          "country": "US",
+          "type": 6,
+          "date": "2002-01-01"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/503447",
+      "fetched_at": "2026-11-27T17:54:57+01:00"
+    },
+    "1203875": {
+      "id": "tmdb:1203875",
+      "tmdb_id": 1203875,
+      "title": "Weird Al: Never Off Beat",
+      "original_title": "Weird Al: Never Off Beat",
+      "year": 2023,
+      "director": "Roxane Schlumberger",
+      "directors": [
+        "Roxane Schlumberger"
+      ],
+      "runtime": 50,
+      "poster_path": "/jGyLxHtk48duP40feHV3AOfLIu.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "US",
+          "type": 6,
+          "date": "2023-04-01"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1203875",
+      "fetched_at": "2026-11-27T17:54:57+01:00"
+    },
+    "1582253": {
+      "id": "tmdb:1582253",
+      "tmdb_id": 1582253,
+      "title": "Never Put Off Till Tomorrow What Can be Done To-Day",
+      "original_title": "Never Put Off Till Tomorrow What Can be Done To-Day",
+      "year": 1938,
+      "director": "",
+      "directors": [],
+      "runtime": 6,
+      "poster_path": "/8UL0PVjf0TOWVyxNj8wliFLyUvO.jpg",
+      "aliases": [],
+      "releases": [
+        {
+          "country": "GB",
+          "type": 1,
+          "date": "1938-01-01"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1582253",
+      "fetched_at": "2026-11-27T17:54:58+01:00"
+    },
+    "273886": {
+      "id": "tmdb:273886",
+      "tmdb_id": 273886,
+      "title": "होलीडे",
+      "original_title": "होलीडे",
+      "year": 2014,
+      "director": "A.R. Murugadoss",
+      "directors": [
+        "A.R. Murugadoss"
+      ],
+      "runtime": 170,
+      "poster_path": "/8aPPza9BHumJYl0KAABmOdFbUjm.jpg",
+      "aliases": [
+        "Holiday",
+        "Holiday: A Soldier Is Never Off Duty"
+      ],
+      "releases": [
+        {
+          "country": "CA",
+          "type": 3,
+          "date": "2014-06-06"
+        },
+        {
+          "country": "DE",
+          "type": 6,
+          "date": "2016-08-28"
+        },
+        {
+          "country": "FR",
+          "type": 3,
+          "date": "2014-06-18"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2014-06-06"
+        },
+        {
+          "country": "IN",
+          "type": 3,
+          "date": "2014-06-06"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/273886",
+      "fetched_at": "2026-11-27T17:54:58+01:00"
+    },
+    "1358768": {
+      "id": "tmdb:1358768",
+      "tmdb_id": 1358768,
+      "title": "来去少林",
+      "original_title": "来去少林",
+      "year": 2003,
+      "director": "朱延平, Sen Dao",
+      "directors": [
+        "朱延平",
+        "Sen Dao"
+      ],
+      "runtime": 0,
+      "poster_path": "/ciuYp9d1FpHRErxsUuN6Jajqyqx.jpg",
+      "aliases": [
+        "I‘ll Never Let You Off",
+        "绝不放过你"
+      ],
+      "releases": [
+        {
+          "country": "HK",
+          "type": 3,
+          "date": "2003-09-05"
+        },
+        {
+          "country": "TW",
+          "type": 3,
+          "date": "2005-08-17"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/1358768",
+      "fetched_at": "2026-11-27T17:54:58+01:00"
+    },
+    "931639": {
+      "id": "tmdb:931639",
+      "tmdb_id": 931639,
+      "title": "Never Forget Tibet",
+      "original_title": "Never Forget Tibet",
+      "year": 2022,
+      "director": "Jean-Paul Mertinez",
+      "directors": [
+        "Jean-Paul Mertinez"
+      ],
+      "runtime": 94,
+      "poster_path": "/5tgbJLnqZoBgnjel40WnbqhYrBI.jpg",
+      "aliases": [
+        "An Officer & His Holiness",
+        "An Officer & His Holiness: The Dalai Lama's Secret Escape into Exile"
+      ],
+      "releases": [
+        {
+          "country": "AU",
+          "type": 3,
+          "date": "2022-12-08"
+        },
+        {
+          "country": "GB",
+          "type": 3,
+          "date": "2023-04-19"
+        },
+        {
+          "country": "US",
+          "type": 2,
+          "date": "2022-03-31"
+        }
+      ],
+      "source_url": "https://www.themoviedb.org/movie/931639",
+      "fetched_at": "2026-11-27T17:54:58+01:00"
     }
   }
 }
